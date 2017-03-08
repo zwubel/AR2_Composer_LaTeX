@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2017.1.2)  8 MAR 2017 12:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2017.1.2)  8 MAR 2017 14:32
 entering extended mode
 **./main.tex
 (main.tex
@@ -1021,6 +1021,9 @@ rref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
 Package hyperref Info: Option `breaklinks' set `true' on input line 4322.
+Package hyperref Info: Option `pdftoolbar' set `true' on input line 4322.
+Package hyperref Info: Option `colorlinks' set `true' on input line 4322.
+Package hyperref Info: Option `linktocpage' set `true' on input line 4322.
 Package hyperref Info: Hyper figures OFF on input line 4446.
 Package hyperref Info: Link nesting OFF on input line 4451.
 Package hyperref Info: Hyper index ON on input line 4454.
@@ -1043,7 +1046,7 @@ Package hyperref Info: Hyper figures OFF on input line 6298.
 Package hyperref Info: Link nesting OFF on input line 6303.
 Package hyperref Info: Hyper index ON on input line 6306.
 Package hyperref Info: backreferencing OFF on input line 6313.
-Package hyperref Info: Link coloring OFF on input line 6318.
+Package hyperref Info: Link coloring ON on input line 6316.
 Package hyperref Info: Link coloring with OCG OFF on input line 6323.
 Package hyperref Info: PDF/A mode OFF on input line 6328.
 LaTeX Info: Redefining \ref on input line 6368.
@@ -1111,20 +1114,20 @@ Document Style - pseudocode environments for use with the `algorithmicx' style
 ) (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
 
 
 Package scrpage2 Warning: seems you are using a constant headheight.
@@ -1198,7 +1201,7 @@ G,.JBIG2,.JB2,.eps]
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \AtBeginShipoutBox=\box40
-Package hyperref Info: Link coloring OFF on input line 37.
+Package hyperref Info: Link coloring ON on input line 48.
 
 (H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\latex\hyperref\name
 ref.sty
@@ -1210,19 +1213,14 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count168
 )
-LaTeX Info: Redefining \ref on input line 37.
-LaTeX Info: Redefining \pageref on input line 37.
-LaTeX Info: Redefining \nameref on input line 37.
+LaTeX Info: Redefining \ref on input line 48.
+LaTeX Info: Redefining \pageref on input line 48.
+LaTeX Info: Redefining \nameref on input line 48.
  (main.out) (main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
-LaTeX Font Info:    Try loading font information for T1+ppl on input line 39.
-
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\latex\psnfss\t1ppl.
-fd
-File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
-) (kapitel/deckblatt/deckblatt.tex
+ (kapitel/deckblatt/deckblatt.tex
 Package epstopdf Info: Source file: <Bilder/logo_TH.eps>
 (epstopdf)                    date: 2016-12-13 06:49:18
 (epstopdf)                    size: 531878 bytes
@@ -1241,68 +1239,44 @@ File: Bilder/logo_TH-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: Bilder/logo_TH-eps-converted-to.pdf used on input line
  3.
 (pdftex.def)             Requested size: 142.26378pt x 76.70409pt.
-LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 4.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <17.28> on input line 6.
+(Font)              <12> on input line 10.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 6.
+(Font)              <8> on input line 10.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 9.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 9.
-LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 15.
+(Font)              <6> on input line 10.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 24.
+(babel)             in language  on input line 25.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 24.
+(babel)             in language  on input line 25.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 24.
+(babel)             in language  on input line 25.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 24.
+(babel)             in language  on input line 25.
  [1
 
 {H:/LaTeX/_LaTeX_portable/MiKTeXPortable/texmfs/data/pdftex/config/pdftex.map} 
-<./Bilder/logo_TH-eps-converted-to.pdf>]) (main.toc
-Overfull \vbox (5.87987pt too high) has occurred while \output is active []
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 36.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 36.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 36.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 36.
-
-[2])
+<./Bilder/logo_TH-eps-converted-to.pdf>]) (main.toc)
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
 
-Overfull \vbox (5.87987pt too high) has occurred while \output is active []
+Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 47.
+(babel)             in language  on input line 58.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 47.
+(babel)             in language  on input line 58.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 47.
+(babel)             in language  on input line 58.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 47.
+(babel)             in language  on input line 58.
 
-[3] (kapitel/einleitung/einleitung.tex
+[2] (kapitel/einleitung/einleitung.tex
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
-
-Overfull \hbox (2.21619pt too wide) in paragraph at lines 2--5
-\T1/ppl/m/n/12 dem Er-schei-nen von Ocu-lus Rift, HTC Vi-ve und an-de-ren Virtu
-al-Reality-Headsets
- []
-
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 5.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1316,13 +1290,13 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
-) (kapitel/PM/pm.tex
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 1.
 )
-(kapitel/materialien/materialien.tex
+(kapitel/PM/pm.tex
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
+) (kapitel/materialien/materialien.tex
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1332,380 +1306,353 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 2.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 3.
+(babel)             in language  on input line 4.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 3.
+(babel)             in language  on input line 4.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 7.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 7.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 8.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 8.
 Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
-ine 3.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 5.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 5.
+ine 8.
 
-Overfull \vbox (5.87987pt too high) has occurred while \output is active []
+Overfull \hbox (4.4462pt too wide) in paragraph at lines 8--8
+[][][][]\T1/cmr/m/n/12 Laura  
+ []
+
+
+Overfull \hbox (4.4462pt too wide) in paragraph at lines 8--8
+[][][][]\T1/cmr/m/n/12 Laura  
+ []
+
+
+Overfull \hbox (4.4462pt too wide) in paragraph at lines 8--8
+[][][][]\T1/cmr/m/n/12 Laura  
+ []
+
+
+Overfull \hbox (4.4462pt too wide) in paragraph at lines 8--8
+[][][][]\T1/cmr/m/n/12 Laura  
+ []
+
+
+Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 7.
+(babel)             in language  on input line 11.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 7.
+(babel)             in language  on input line 11.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 7.
+(babel)             in language  on input line 11.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 7.
+(babel)             in language  on input line 11.
+
+[3]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 12.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 12.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 15.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 15.
+
+Overfull \hbox (4.4462pt too wide) in paragraph at lines 15--15
+[][][][]\T1/cmr/m/n/12 Laura  
+ []
+
+
+Overfull \hbox (4.4462pt too wide) in paragraph at lines 15--15
+[][][][]\T1/cmr/m/n/12 Laura  
+ []
+
+
+Overfull \hbox (4.4462pt too wide) in paragraph at lines 15--15
+[][][][]\T1/cmr/m/n/12 Laura  
+ []
+
+
+Overfull \hbox (4.4462pt too wide) in paragraph at lines 15--15
+[][][][]\T1/cmr/m/n/12 Laura  
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--19
+
+ []
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 20.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 20.
+
+Overfull \hbox (4.4462pt too wide) in paragraph at lines 20--20
+[][][][]\T1/cmr/m/n/12 Laura  
+ []
+
+
+Overfull \hbox (4.4462pt too wide) in paragraph at lines 20--20
+[][][][]\T1/cmr/m/n/12 Laura  
+ []
+
+
+Overfull \hbox (4.4462pt too wide) in paragraph at lines 20--20
+[][][][]\T1/cmr/m/n/12 Laura  
+ []
+
+
+Overfull \hbox (4.4462pt too wide) in paragraph at lines 20--20
+[][][][]\T1/cmr/m/n/12 Laura  
+ []
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 21.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 21.
+
+Overfull \hbox (4.4462pt too wide) in paragraph at lines 21--21
+[][][][]\T1/cmr/m/n/12 Laura  
+ []
+
+
+Overfull \hbox (4.4462pt too wide) in paragraph at lines 21--21
+[][][][]\T1/cmr/m/n/12 Laura  
+ []
+
+
+Overfull \hbox (4.4462pt too wide) in paragraph at lines 21--21
+[][][][]\T1/cmr/m/n/12 Laura  
+ []
+
+
+Overfull \hbox (4.4462pt too wide) in paragraph at lines 21--21
+[][][][]\T1/cmr/m/n/12 Laura  
+ []
+
+
+Overfull \vbox (2.60004pt too high) has occurred while \output is active []
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 24.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 24.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 24.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 24.
 
 [4]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 7.
+(babel)             in language  on input line 25.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 7.
+(babel)             in language  on input line 25.
 
-Overfull \hbox (4.4462pt too wide) in paragraph at lines 7--7
+Overfull \hbox (4.4462pt too wide) in paragraph at lines 25--25
 [][][][]\T1/cmr/m/n/12 Laura  
  []
 
 
-Overfull \hbox (4.4462pt too wide) in paragraph at lines 7--7
+Overfull \hbox (4.4462pt too wide) in paragraph at lines 25--25
 [][][][]\T1/cmr/m/n/12 Laura  
  []
 
 
-Overfull \hbox (4.4462pt too wide) in paragraph at lines 7--7
+Overfull \hbox (4.4462pt too wide) in paragraph at lines 25--25
 [][][][]\T1/cmr/m/n/12 Laura  
  []
 
 
-Overfull \hbox (4.4462pt too wide) in paragraph at lines 7--7
+Overfull \hbox (4.4462pt too wide) in paragraph at lines 25--25
 [][][][]\T1/cmr/m/n/12 Laura  
  []
 
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 11.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 11.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 26.
 
-Overfull \hbox (4.4462pt too wide) in paragraph at lines 11--11
-[][][][]\T1/cmr/m/n/12 Laura  
- []
-
-
-Overfull \hbox (4.4462pt too wide) in paragraph at lines 11--11
-[][][][]\T1/cmr/m/n/12 Laura  
- []
-
-
-Overfull \hbox (4.4462pt too wide) in paragraph at lines 11--11
-[][][][]\T1/cmr/m/n/12 Laura  
- []
-
-
-Overfull \hbox (4.4462pt too wide) in paragraph at lines 11--11
-[][][][]\T1/cmr/m/n/12 Laura  
- []
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 18.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 18.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 21.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 21.
-
-Overfull \hbox (4.4462pt too wide) in paragraph at lines 21--21
-[][][][]\T1/cmr/m/n/12 Laura  
- []
-
-
-Overfull \hbox (4.4462pt too wide) in paragraph at lines 21--21
-[][][][]\T1/cmr/m/n/12 Laura  
- []
-
-
-Overfull \hbox (4.4462pt too wide) in paragraph at lines 21--21
-[][][][]\T1/cmr/m/n/12 Laura  
- []
-
-
-Overfull \hbox (4.4462pt too wide) in paragraph at lines 21--21
-[][][][]\T1/cmr/m/n/12 Laura  
- []
-
-<Bilder/leap-motion.png, id=223, 273.02pt x 258.46562pt>
-File: Bilder/leap-motion.png Graphic file (type png)
-
-<use Bilder/leap-motion.png>
-Package pdftex.def Info: Bilder/leap-motion.png used on input line 25.
-(pdftex.def)             Requested size: 170.71652pt x 161.61554pt.
-
-Overfull \vbox (5.87987pt too high) has occurred while \output is active []
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 29.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 29.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 29.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 29.
-
-[5]
-Underfull \hbox (badness 10000) in paragraph at lines 30--33
-
- []
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 35.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 35.
-
-Overfull \hbox (4.4462pt too wide) in paragraph at lines 35--35
-[][][][]\T1/cmr/m/n/12 Laura  
- []
-
-
-Overfull \hbox (4.4462pt too wide) in paragraph at lines 35--35
-[][][][]\T1/cmr/m/n/12 Laura  
- []
-
-
-Overfull \hbox (4.4462pt too wide) in paragraph at lines 35--35
-[][][][]\T1/cmr/m/n/12 Laura  
- []
-
-
-Overfull \hbox (4.4462pt too wide) in paragraph at lines 35--35
-[][][][]\T1/cmr/m/n/12 Laura  
- []
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 36.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 36.
-
-Overfull \hbox (4.4462pt too wide) in paragraph at lines 36--36
-[][][][]\T1/cmr/m/n/12 Laura  
- []
-
-
-Overfull \hbox (4.4462pt too wide) in paragraph at lines 36--36
-[][][][]\T1/cmr/m/n/12 Laura  
- []
-
-
-Overfull \hbox (4.4462pt too wide) in paragraph at lines 36--36
-[][][][]\T1/cmr/m/n/12 Laura  
- []
-
-
-Overfull \hbox (4.4462pt too wide) in paragraph at lines 36--36
-[][][][]\T1/cmr/m/n/12 Laura  
- []
-
-
-Overfull \vbox (5.87987pt too high) has occurred while \output is active []
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 39.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 39.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 39.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 39.
-
-[6pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) 
-has been already used, duplicate ignored
-
-\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
-                                                  
-l.39 
-      <./Bilder/leap-motion.png>]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 40.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 40.
-
-Overfull \hbox (4.4462pt too wide) in paragraph at lines 40--40
-[][][][]\T1/cmr/m/n/12 Laura  
- []
-
-
-Overfull \hbox (4.4462pt too wide) in paragraph at lines 40--40
-[][][][]\T1/cmr/m/n/12 Laura  
- []
-
-
-Overfull \hbox (4.4462pt too wide) in paragraph at lines 40--40
-[][][][]\T1/cmr/m/n/12 Laura  
- []
-
-
-Overfull \hbox (4.4462pt too wide) in paragraph at lines 40--40
-[][][][]\T1/cmr/m/n/12 Laura  
- []
-
-<Bilder/tracking-marker.jpg, id=253, 3131.7pt x 4175.6pt>
+(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\latex\base\t1cmtt.f
+d
+File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+) <Bilder/tracking-marker.jpg, id=239, 3131.7pt x 4175.6pt>
 File: Bilder/tracking-marker.jpg Graphic file (type jpg)
 
 <use Bilder/tracking-marker.jpg>
-Package pdftex.def Info: Bilder/tracking-marker.jpg used on input line 46.
+Package pdftex.def Info: Bilder/tracking-marker.jpg used on input line 31.
 (pdftex.def)             Requested size: 170.71652pt x 160.90375pt.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 52.
+(babel)             in language  on input line 36.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 52.
+(babel)             in language  on input line 36.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 37.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 37.
 
-Overfull \hbox (4.1851pt too wide) in paragraph at lines 52--52
-[][][][]\T1/cmr/m/n/12 Lukas  
+Overfull \hbox (4.4462pt too wide) in paragraph at lines 37--37
+[][][][]\T1/cmr/m/n/12 Laura  
  []
 
 
-Overfull \hbox (4.1851pt too wide) in paragraph at lines 52--52
-[][][][]\T1/cmr/m/n/12 Lukas  
+Overfull \hbox (4.4462pt too wide) in paragraph at lines 37--37
+[][][][]\T1/cmr/m/n/12 Laura  
  []
 
 
-Overfull \hbox (4.1851pt too wide) in paragraph at lines 52--52
-[][][][]\T1/cmr/m/n/12 Lukas  
+Overfull \hbox (4.4462pt too wide) in paragraph at lines 37--37
+[][][][]\T1/cmr/m/n/12 Laura  
  []
 
 
-Overfull \hbox (4.1851pt too wide) in paragraph at lines 52--52
-[][][][]\T1/cmr/m/n/12 Lukas  
+Overfull \hbox (4.4462pt too wide) in paragraph at lines 37--37
+[][][][]\T1/cmr/m/n/12 Laura  
  []
 
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 55.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 55.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 58.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 58.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 59.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 59.
+<Bilder/leap-motion.png, id=243, 273.02pt x 258.46562pt>
+File: Bilder/leap-motion.png Graphic file (type png)
 
-Overfull \vbox (5.87987pt too high) has occurred while \output is active []
+<use Bilder/leap-motion.png>
+Package pdftex.def Info: Bilder/leap-motion.png used on input line 44.
+(pdftex.def)             Requested size: 170.71652pt x 161.61554pt.
+
+Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 60.
+(babel)             in language  on input line 48.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 60.
+(babel)             in language  on input line 48.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 60.
+(babel)             in language  on input line 48.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 60.
+(babel)             in language  on input line 48.
 
-[7pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) 
+[5pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) 
 has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.60 \subsubsection
-                   {Visual Studio} \todo {Laura} <./Bilder/tracking-marker.jpg>
-]
+l.48 
+      <./Bilder/tracking-marker.jpg>]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 60.
+(babel)             in language  on input line 49.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 60.
+(babel)             in language  on input line 49.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 51.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 51.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 52.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 52.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 54.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 54.
 
-Overfull \hbox (4.4462pt too wide) in paragraph at lines 60--60
+Overfull \hbox (4.4462pt too wide) in paragraph at lines 54--54
 [][][][]\T1/cmr/m/n/12 Laura  
  []
 
 
-Overfull \hbox (4.4462pt too wide) in paragraph at lines 60--60
+Overfull \hbox (4.4462pt too wide) in paragraph at lines 54--54
 [][][][]\T1/cmr/m/n/12 Laura  
  []
 
 
-Overfull \hbox (4.4462pt too wide) in paragraph at lines 60--60
+Overfull \hbox (4.4462pt too wide) in paragraph at lines 54--54
 [][][][]\T1/cmr/m/n/12 Laura  
  []
 
 
-Overfull \hbox (4.4462pt too wide) in paragraph at lines 60--60
+Overfull \hbox (4.4462pt too wide) in paragraph at lines 54--54
 [][][][]\T1/cmr/m/n/12 Laura  
  []
 
 
-LaTeX Warning: Marginpar on page 8 moved.
+LaTeX Warning: Marginpar on page 6 moved.
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 61.
+(babel)             in language  on input line 55.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 61.
+(babel)             in language  on input line 55.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 63.
+(babel)             in language  on input line 57.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 63.
+(babel)             in language  on input line 57.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 64.
+(babel)             in language  on input line 58.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 64.
+(babel)             in language  on input line 58.
 
-Overfull \hbox (4.4462pt too wide) in paragraph at lines 64--64
+Overfull \hbox (4.4462pt too wide) in paragraph at lines 58--58
 [][][][]\T1/cmr/m/n/12 Laura  
  []
 
 
-Overfull \hbox (4.4462pt too wide) in paragraph at lines 64--64
+Overfull \hbox (4.4462pt too wide) in paragraph at lines 58--58
 [][][][]\T1/cmr/m/n/12 Laura  
  []
 
 
-Overfull \hbox (4.4462pt too wide) in paragraph at lines 64--64
+Overfull \hbox (4.4462pt too wide) in paragraph at lines 58--58
 [][][][]\T1/cmr/m/n/12 Laura  
  []
 
 
-Overfull \hbox (4.4462pt too wide) in paragraph at lines 64--64
+Overfull \hbox (4.4462pt too wide) in paragraph at lines 58--58
 [][][][]\T1/cmr/m/n/12 Laura  
  []
 
 
-LaTeX Warning: Marginpar on page 8 moved.
+LaTeX Warning: Marginpar on page 6 moved.
+
+
+Overfull \vbox (2.60004pt too high) has occurred while \output is active []
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 66.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 66.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 66.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 66.
+
+[6pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) 
+has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.66 T
+      hrough this protocol, the service communicates with the Leap Motion Co...
+ <./Bilder/leap-motion.png>]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 70.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 70.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 72.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 72.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 73.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 73.
+
+Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 76.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 76.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 78.
+(babel)             in language  on input line 76.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 78.
+(babel)             in language  on input line 76.
 
-Overfull \vbox (5.87987pt too high) has occurred while \output is active []
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 79.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 79.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 79.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 79.
-
-[8]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 79.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 79.
-
-Overfull \vbox (5.87987pt too high) has occurred while \output is active []
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 82.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 82.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 82.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 82.
-
-[9]) (kapitel/system/system.tex
+[7]) (kapitel/system/system.tex
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1715,7 +1662,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 2.
 
-<kapitel/system/MP_Menu_Flowchart.pdf, id=282, 597.23125pt x 845.1575pt>
+<kapitel/system/MP_Menu_Flowchart.pdf, id=273, 597.23125pt x 845.1575pt>
 File: kapitel/system/MP_Menu_Flowchart.pdf Graphic file (type pdf)
 
 <use kapitel/system/MP_Menu_Flowchart.pdf>
@@ -1753,105 +1700,102 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
 )
-Overfull \vbox (5.87987pt too high) has occurred while \output is active []
+Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 58.
+(babel)             in language  on input line 69.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 58.
+(babel)             in language  on input line 69.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 58.
+(babel)             in language  on input line 69.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 58.
+(babel)             in language  on input line 69.
 
-[10]
-Overfull \vbox (5.87987pt too high) has occurred while \output is active []
+[8]
+Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 58.
+(babel)             in language  on input line 69.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 58.
+(babel)             in language  on input line 69.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 58.
+(babel)             in language  on input line 69.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 58.
+(babel)             in language  on input line 69.
 
-[11pdfTeX warning (ext4): destination with the same identifier (name{figure.3})
- has been already used, duplicate ignored
+[9pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) 
+has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.58 \newpage
+l.69 \newpage
               <./kapitel/system/MP_Menu_Flowchart.pdf>] (main.bbl
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 5.
-
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\latex\base\t1cmtt.f
-d
-File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
 Underfull \hbox (badness 10000) in paragraph at lines 14--18
-[]\T1/ppl/m/n/12 Leap Mo-ti-on Blog.  []$\T1/cmtt/m/n/12 http : / / blog . leap
-motion . com /
+[]\T1/cmr/m/n/12 Leap Mo-ti-on Blog.  [][]$\T1/cmtt/m/n/12 http : / / blog . le
+apmotion . com /
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 14--18
 \T1/cmtt/m/n/12 hardware-[]to-[]software-[]how-[]does-[]the-[]leap-[]motion-[]c
-ontroller-[]work/$[]\T1/ppl/m/n/12 .
+ontroller-[]work/$[][]\T1/cmr/m/n/12 .
  []
 
 )
-Overfull \vbox (5.87987pt too high) has occurred while \output is active []
+Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 61.
+(babel)             in language  on input line 72.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 61.
+(babel)             in language  on input line 72.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 61.
+(babel)             in language  on input line 72.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 61.
+(babel)             in language  on input line 72.
 
-[12]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 61.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 61.
+[10]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 72.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 72.
  (main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 61.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 61.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 72.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 72.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 5854C7BE1355E187EA9A67ED20D83A63;2426.
+(rerunfilecheck)             Checksum: F50CD4343D349AAADCCF74627BF77EE4;2470.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 19568 strings out of 493335
- 363583 string characters out of 3127639
- 491805 words of memory out of 3000000
- 22581 multiletter control sequences out of 15000+200000
- 21646 words of font info for 45 fonts, out of 3000000 for 9000
+ 19490 strings out of 493335
+ 362170 string characters out of 3127639
+ 475566 words of memory out of 3000000
+ 22518 multiletter control sequences out of 15000+200000
+ 14448 words of font info for 34 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,11n,76p,1054b,708s stack positions out of 5000i,500n,10000p,200000b,50000s
  <H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs/data\fonts\pk\ljfour\jknappe
-n\ec\dpi600\ectt1200.pk>{H:/LaTeX/_LaTeX_portable/MiKTeXPortable/texmfs/install
-/fonts/enc/dvips/fontname/8r.enc} <H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texm
-fs/data\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk> <H:\LaTeX\_LaTeX_portab
+n\ec\dpi600\ectt1200.pk> <H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs/data\f
+onts\pk\ljfour\jknappen\ec\dpi600\ecrm0800.pk> <H:\LaTeX\_LaTeX_portable\MiKTeX
+Portable\texmfs/data\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk> <H:\LaTeX\
+_LaTeX_portable\MiKTeXPortable\texmfs/data\fonts\pk\ljfour\jknappen\ec\dpi600\e
+csl1200.pk> <H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs/data\fonts\pk\ljfou
+r\jknappen\ec\dpi600\ecrm1200.pk> <H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texm
+fs/data\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk> <H:\LaTeX\_LaTeX_portab
 le\MiKTeXPortable\texmfs/data\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1728.pk> <
 H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs/data\fonts\pk\ljfour\jknappen\ec
-\dpi600\ecrm1200.pk> <H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs/data\fonts
-\pk\ljfour\jknappen\ec\dpi600\ecsl1200.pk> <H:\LaTeX\_LaTeX_portable\MiKTeXPort
-able\texmfs/data\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk><H:/LaTeX/_LaTe
-X_portable/MiKTeXPortable/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.
-pfb><H:/LaTeX/_LaTeX_portable/MiKTeXPortable/texmfs/install/fonts/type1/public/
-amsfonts/cm/cmmi12.pfb><H:/LaTeX/_LaTeX_portable/MiKTeXPortable/texmfs/install/
-fonts/type1/public/amsfonts/cm/cmr10.pfb><H:/LaTeX/_LaTeX_portable/MiKTeXPortab
-le/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb><H:/LaTeX/_LaTeX_port
-able/MiKTeXPortable/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy8.pfb><H:
+\dpi600\ecbx2488.pk><H:/LaTeX/_LaTeX_portable/MiKTeXPortable/texmfs/install/fon
+ts/type1/public/amsfonts/cm/cmbx12.pfb><H:/LaTeX/_LaTeX_portable/MiKTeXPortable
+/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi12.pfb><H:/LaTeX/_LaTeX_port
+able/MiKTeXPortable/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb><H:
 /LaTeX/_LaTeX_portable/MiKTeXPortable/texmfs/install/fonts/type1/public/amsfont
-s/cm/cmtt10.pfb><H:/LaTeX/_LaTeX_portable/MiKTeXPortable/texmfs/install/fonts/t
-ype1/urw/palatino/uplb8a.pfb><H:/LaTeX/_LaTeX_portable/MiKTeXPortable/texmfs/in
-stall/fonts/type1/urw/palatino/uplr8a.pfb><H:/LaTeX/_LaTeX_portable/MiKTeXPorta
-ble/texmfs/install/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (12 pages, 4165466 bytes).
+s/cm/cmr12.pfb><H:/LaTeX/_LaTeX_portable/MiKTeXPortable/texmfs/install/fonts/ty
+pe1/public/amsfonts/cm/cmr8.pfb><H:/LaTeX/_LaTeX_portable/MiKTeXPortable/texmfs
+/install/fonts/type1/public/amsfonts/cm/cmsy8.pfb><H:/LaTeX/_LaTeX_portable/MiK
+TeXPortable/texmfs/install/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on main.pdf (10 pages, 4150395 bytes).
 PDF statistics:
- 597 PDF objects out of 1000 (max. 8388607)
- 78 named destinations out of 1000 (max. 500000)
+ 663 PDF objects out of 1000 (max. 8388607)
+ 73 named destinations out of 1000 (max. 500000)
  327 words of extra memory for PDF output out of 10000 (max. 10000000)
 
