@@ -7,13 +7,13 @@ Die Anwendung, welche aus Unity\textsuperscript{\cite{website:Unity}} heraus ers
 \subsubsection{Computer zur Ausführung der Tracking-Anwendung}
 \subsubsection{HTC Vive} \todo {Laura}
 Bei der HTC Vive handelt es sich um ein Head-Mounted Display, welches von HTC in Kooperation mit Valve\textsuperscript{\cite{website:Valve}} produziert wird. Vorgestellt wurde dieses am 1. März 2015 im Vorfeld der Mobile World Congress\textsuperscript{\cite{website:mobileworldcongress}}.\\
-Die Auflösung des Displays beträgt insgesamt $2160x1200$ Pixel, was $1080x1200$ Pixeln pro Auge enstpricht. Die Brille bietet ein Sichtfeld von bis zu $110^\circ$ bei einer Bildwiederholrate von $90\,Hz$\textsuperscript{\cite{website:HTC_Vive}}. Zur Positionsbestimmung im Raum wird die Lighthousetechnologie von Valve genutzt. Zusätzlich sind neben einem Gyrosensor auch ein Beschleunigungsmesser und ein Laser-Positionsmesser verbaut. Mittels speziellen Game-Controllern wird eine Interaktion mit virtuellen Objekten ermöglicht. Die eingebaute Frontkamera wird für dieses Projekt nicht verwendet. Stattdessen wird auf die Ovrvision Pro zurückgegriffen, die im Folgenden in \ref{ovrvision} beschrieben wird.
+Die Auflösung des Displays beträgt insgesamt $2160\times1200$ Pixel, was $1080x1200$ Pixeln pro Auge enstpricht. Die Brille bietet ein Sichtfeld von bis zu $110^\circ$ bei einer Bildwiederholrate von $90\,Hz$\textsuperscript{\cite{website:HTC_Vive}}. Zur Positionsbestimmung im Raum wird die Lighthousetechnologie von Valve genutzt. Zusätzlich sind neben einem Gyrosensor auch ein Beschleunigungsmesser und ein Laser-Positionsmesser verbaut. Mittels speziellen Game-Controllern wird eine Interaktion mit virtuellen Objekten ermöglicht. Die eingebaute Frontkamera wird für dieses Projekt nicht verwendet. Stattdessen wird auf die Ovrvision Pro zurückgegriffen, die im Folgenden in \ref{ovrvision} beschrieben wird.
 
 \subsubsection{Spielfeldkamera} \todo {Vera}
 IDS uEye 164xLE
 
 \subsubsection{Leap Motion} \todo {Laura}	
-Bei der Leap Motion\textsuperscript{\cite{website:LeapMotion}} handelt sich um ein $7,6x3x1,3\,cm$ großes Gerät, welches es mit Hilfe von Sensoren möglich macht, Hand- und Fingerbewegungen als Eingabemöglichkeit zu nutzen. Die Idee dahinter ist, eine Eingabegerät analog zu Maus zu schaffen, welches keinen direkten Kontakt bzw. keine Berührung benötigt. Hergestellt wird die Leap Motion von der Firma Leap Motion, Inc., die ihren Hauptsitz in Amerika hat. Gegründet wurde die Firma am 1. November 2010. \\
+Bei der Leap Motion\textsuperscript{\cite{website:LeapMotion}} handelt sich um ein $7,6\times3\times1,3\,cm$ großes Gerät, welches es mit Hilfe von Sensoren möglich macht, Hand- und Fingerbewegungen als Eingabemöglichkeit zu nutzen. Die Idee dahinter ist, eine Eingabegerät analog zu Maus zu schaffen, welches keinen direkten Kontakt bzw. keine Berührung benötigt. Hergestellt wird die Leap Motion von der Firma Leap Motion, Inc., die ihren Hauptsitz in Amerika hat. Gegründet wurde die Firma am 1. November 2010. \\
 Wie auf Abbildung \ref{fig:leapMotion} erahnt werden kann, besteht das Gerät im wesentlich aus zwei integrierten weitwinkel Kameras und drei einfachen Infrarot LEDs. Die LEDs haben jeweils eine Wellenlänge von $850\,nm$. Der durch die beiden Kameras aufgespannte Interaktionsraum der Leap Motion ähnelt einer umgedrehten Pyramide, mit einem Flächeninhalt von knapp $243\,cm{^2}$. \\
 Für das Projekt wurde die Orion beta software, die in \ref{OBS} näher beschrieben wird. Diese Software ermöglicht unter anderem eine Erweiterung der Reichweite der Leap Motion von $60\,cm$ auf $80\,cm$. Diese Reichweite ist durch die Ausbreitung der LED Lichter räumlich begrenzt. Die Lichtintensität der LEDs ist wiederum durch den maximalen Strom, der über die USB-Verbindung fließt beschränkt. \\
 
@@ -34,17 +34,55 @@ Das System umfasst zwölf Marker über die das Tracking realisiert wird. Alle Ma
 	\end{figure}
 	
 \subsection{Obsolete Hardware}
-\subsubsection{Ovrvision Pro \label{ovrvision}} \todo {Laura}
-Bei der Ovrvision Pro handelt es sich um eine open-source Stereokamera, welche über USB 3.0 mit dem Rechner verbunden werden kann\textsuperscript{\cite{website:ovrvision}}. Sie ist kompatibel mit Programmen wie Unity, welches für das Projekt benutzt wurde und in \ref{unity} beschrieben wird. 
-\textcolor{red}{Nicht fertig. Brauchen wir das noch??}
-1280x960x2	45fps	H115 V105
+Im Laufe eines Projekts nach Art von MArC ist es kaum vermeidbar, dass die gesetzten Projektziele reevaluiert werden müssen. Die Gründe hierfür können vielfältig sein. Beispielsweise könnte die Fertigstellung eines bestimmten Teils des Projekts deutlich länger gedauert haben als geplant, oder es könnte sich herausgestellt haben, dass bestimmte Komponenten zueinander nicht kompatibel sind.
+
+Im vorliegenden Projekt trat eine Kombination der beiden oben genannten Gründe auf. Das Betreiben der Ovrvision Pro am US-Bus verschiedener während der Entwicklung verwendeter Rechner stellte sich als unberechenbar und damit leider unbenutzbar heraus. Die Kamera sorgte während der Ausführung von Unity dafür, dass mit allen anderen Geräten, die ebenfalls per USB angeschlossen waren, unterschiedlichste Probleme auftraten. Als die Situation nach dem Verbinden der Kamera in der teilweisen Zerstörung eines Mainboards gipfelte, wurde die Entscheidung getroffen, die Ovrvision nicht länger als Gerät in der Entwicklung zu verwenden.
+
+Stattdessen war zu diesem Zeitpunkt die Idee, eine gewöhnliche Webcam zu verwenden, um die Realisierung von Augmented Reality dennoch zu ermöglichen, wenn auch ohne den Stereo-3D-Effekt, welchen die Ovrvision nativ bereitgestellt hätte.
+
+Im weiteren Verlauf des Projekts führte eine lange Zeit ungeklärte, starke Abweichung der Positionen der realen und virtuellen Marker zur Neuordnung der Projektprioritäten. Dies hatte zur Folge, dass letztendlich auch die Webcam als Plattform für die Umsetzung der AR-Fähigkeiten von MArC aufgegeben wurde.
+
+Nachfolgend werden die Eigenschaften und technischen Daten beider Geräte kurz beschrieben.
+\subsubsection{Ovrvision Pro}\label{ovrvision}
+Die Ovrvision Pro ist eine kompakte Stereokamera, welche über USB 3.0 mit dem Rechner verbunden werden kann\textsuperscript{\cite{website:ovrvision}}. Sie ist kompatibel mit Programmen wie Unity, welches für das Projekt benutzt wurde und in \ref{unity} beschrieben wird.
+
+Die Bildmodi der Kamera sind in Tabelle~\ref{tab:ovrRes} aufgeführt.
+
+\begin{table}
+	\centering
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		\Absatzbox{}
+		\textbf{Örtliche Auflösung}& \textbf{Zeitliche} & \multicolumn{2}{c|}{\textbf{Bildwinkel}}\\
+		\cline{3-4}
+		\Absatzbox{}
+		\textbf{pro Auge}& \textbf{Auflösung} & \textbf{Horizontal} & \textbf{Vertikal}\\
+		\hline
+		$2560\times1920$ & $15$\,fps & $115^\circ$ & $105^\circ$\\
+		\hline
+		$1920\times1080$ & $30$\,fps & $87^\circ$ & $60^\circ$\\
+		\hline
+		$1280\times960$ & $45$\,fps & $115^\circ$ & $105^\circ$\\
+		\hline
+		$1280\times800$ & $60$\,fps & $115^\circ$ & $90^\circ$\\
+		\hline
+		$960\times950$ & $60$\,fps & $100^\circ$ & $98^\circ$\\
+		\hline
+		$640\times480$ & $90$\,fps & $115^\circ$ & $105^\circ$\\
+		\hline
+		$320\times240$ & $120$\,fps & $115^\circ$ & $105^\circ$\\
+		\hline
+	\end{tabular}
+	\caption{Bildmodi der Ovrvision Pro Stereokamera.\textsuperscript{\cite{website:ovrvisionProduct}}}
+	\label{tab:ovrRes}
+\end{table}
 
 \begin{figure}[H]
-		\center 
-		\includegraphics[width=6cm]{Bilder/leap-motion.png}
-			\label{fig:leapMotion}
-			\caption{Explosionszeichnung der Leap Motion.\textsuperscript{\cite{website:LeapMotionBlog}}}
-	\end{figure}
+	\centering
+	\includegraphics[width=6cm]{Bilder/leap-motion.png}			
+		\caption{Explosionszeichnung der Leap Motion.\textsuperscript{\cite{website:LeapMotionBlog}}}
+		\label{fig:leapMotion}
+\end{figure}
 	
 \subsubsection{Webcam}
 
