@@ -33,7 +33,7 @@ Das System umfasst zwölf Marker über die das Tracking realisiert wird. Alle Ma
 			\caption{Trackingmarker mit der ID \textcolor{red}{??}.}
 	\end{figure}
 	
-\subsection{Obsolete Hardware}
+\subsection{Obsolete Hardware}\label{sec:obsoleteHardware}
 Im Laufe eines Projekts nach Art von MArC ist es kaum vermeidbar, dass die gesetzten Projektziele reevaluiert werden müssen. Die Gründe hierfür können vielfältig sein. Beispielsweise könnte die Fertigstellung eines bestimmten Teils des Projekts deutlich länger gedauert haben als geplant, oder es könnte sich herausgestellt haben, dass bestimmte Komponenten zueinander nicht kompatibel sind.
 
 Im vorliegenden Projekt trat eine Kombination der beiden oben genannten Gründe auf. Das Betreiben der Ovrvision Pro am US-Bus verschiedener während der Entwicklung verwendeter Rechner stellte sich als unberechenbar und damit leider unbenutzbar heraus. Die Kamera sorgte während der Ausführung von Unity dafür, dass mit allen anderen Geräten, die ebenfalls per USB angeschlossen waren, unterschiedlichste Probleme auftraten. Als die Situation nach dem Verbinden der Kamera in der teilweisen Zerstörung eines Mainboards gipfelte, wurde die Entscheidung getroffen, die Ovrvision nicht länger als Gerät in der Entwicklung zu verwenden.
@@ -87,13 +87,21 @@ Die Bildmodi der Kamera sind in Tabelle~\ref{tab:ovrRes} aufgeführt.
 \subsubsection{Webcam}
 
 \subsection{Software}
-\subsubsection{Unity}\label{unity} \todo {Paul oder Lukas}
+\subsubsection{Unity}\label{unity}\todo[inline]{Paul oder Lukas}
+Unity ist eine sogenannte Spiel-Engine, also eine Entwicklungs- und Laufzeitumgebung, die speziell auf die Entwicklung von 3D-Spielen ausgelegt ist. Die Software wurde am 6. Juni 2005 veröffentlicht\textsuperscript{\cite{haas2014history}} und wird von Unity Technologies\textsuperscript{\cite{website:Unity}} entwickelt und vertrieben. In der Spieleentwicklung ist Unity weit verbreitet, so werden beispielsweise $34\,\%$ der kostenfreien Top-1000-Spiele im mobilen Sektor mit Unity entwickelt\textsuperscript{\cite{website:UnityPR}}.
 
-\subsubsection{Visual Studio} \todo {Laura}
-\subsubsection{OpenCV} \todo {Vera}
+Unity bietet eine sehr breite Plattformunterstützung\textsuperscript{\cite{website:UnityMultiPlatform}} und erlaubt ebenso die Entwicklung für Head-Mounted-Displays, wie etwa die Oculus Rift\textsuperscript{\cite{website:UnityOculus}\cite{website:UnityVRoverview}} oder auch die in diesem Projekt verwendete HTC Vive.\textsuperscript{\cite{website:UnityVRoverview}}
+
+Die zu Beginn des Projekts verwendete Stereo-Kamera Ovrvision Pro stellt ein Software-Development-Kit (SDK) für Unity (Version 5) zur Verfügung.\textsuperscript{\cite{website:ovrvisionSetup}} Da das endgültige Resultat des Projekts die Verwendung der Ovrvision Pro nicht mehr vorsieht, wie in~\ref{sec:obsoleteHardware} beschrieben, wird auf eine weitere Beschreibung dieses SDKs verzichtet.
+
+\subsubsection{Visual Studio} \todo[inline] {Laura}
+\subsubsection{OpenCV} \todo[inline] {Vera}
 Wo führen wir die dlls auf die du erzeugt hast??
-\subsubsection{Ovrvision Pro SDK} \todo {Paul oder Lukas}
-\subsubsection{Leap Motion SDK} \todo {Laura}
+
+% Wie in "`Unity"' oben beschrieben, denke ich, dass wir uns das folgende sparen können, oder?
+%\subsubsection{Ovrvision Pro SDK} \todo[inline] {Paul oder Lukas}
+
+\subsubsection{Leap Motion SDK} \todo[inline] {Laura}
 \textcolor{red}{
 Once the image data is streamed to your computer, it’s time for some heavy mathematical lifting. Despite popular misconceptions, the Leap Motion Controller doesn’t generate a depth map – instead it applies advanced algorithms to the raw sensor data.}
 
@@ -107,8 +115,8 @@ From there, the application logic ties into the Leap Motion input, allowing a mo
 
 \subsubsection{Orion Beta Software} \label{OBS}
 
-\subsubsection{uEye SDK}\todo {Vera}
-\subsubsection{Steam VR}\todo {Paul oder Lukas}
+\subsubsection{uEye SDK}\todo[inline] {Vera}
+\subsubsection{Steam VR}\todo[inline] {Paul oder Lukas}
 
 
 \newpage
