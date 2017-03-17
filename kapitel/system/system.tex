@@ -74,9 +74,10 @@ f & 0 & 0 & p_u \\
 0 & f & 0 & p_v \\
 0 & 0 & 1 & 0 \\
 \end{pmatrix} 
+~ ~ ~ ~ ~M_{intrinsisch} \in \mathbb{R}^{3x4}
 \end{equation}
 
-$M_{intrinsisch} \in \mathbb{R}^{3x4}$
+
 
 \begin{equation}
 \label{equ:Rotation}
@@ -85,20 +86,21 @@ R= R_\gamma ~R_\beta ~R_\alpha =
 r_{11} & r_{12} & r_{13} \\
 r_{21} & r_{22} & r_{23} \\
 r_{31} & r_{32} & r_{33} \\
-\end{pmatrix} 
+\end{pmatrix}
+~ ~ ~ ~ ~R \in \mathbb{R}^{3x3}
 \end{equation}
 
-$R \in \mathbb{R}^{3x3}$
+
 
 \begin{equation}
 \label{equ:Rotation}
 t=
 \begin{pmatrix}
 t_x & t_y & t_z
-\end{pmatrix} 
+\end{pmatrix}^T
+~ ~ ~ ~ ~t \in \mathbb{R}^{3x1} 
 \end{equation}
 
-$t \in \mathbb{R}^{3x1}$
 
 
 \begin{equation}
@@ -107,9 +109,10 @@ M_{extrinsisch}=
 \begin{pmatrix}
 R &|& t \\
 \end{pmatrix} 
+~ ~ ~ ~ ~M_{extrinsisch} \in \mathbb{R}^{3x4}
 \end{equation}
 
-$M_{extrinsisch} \in \mathbb{R}^{3x4}$
+
 
 
 
