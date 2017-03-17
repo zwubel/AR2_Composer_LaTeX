@@ -66,6 +66,51 @@ In Abbildung~\ref{fig:cameraCalib} sind die Zusammenhänge zwischen dem Projekti
 
 Die Kamerakalibrierung, die diesem Projekt zu Grunde liegt, ist als manuell einzustufen und wird, wenn gewünscht bzw. benötigt zu Beginn der eigentlichen Anwendung durchgeführt. Um die verschiedenen Koordinatensysteme auseinander zu halten, wird zu Beginn eine Notation festgelegt, die in Tabelle~\ref{tab:camCalibParam} eingesehen werden kann. Zusätzlich können in der Tabelle sowohl die einzelnen Koordinatensysteme, als auch die einzelnen Berechnungsschritte der Kamerakalibrierung nachvollzogen werden, die im Folgenden erläutert werden. \\
 
+\begin{equation}
+\label{equ:intrinsic}
+M_{intrinsisch} = 
+\begin{pmatrix}
+f & 0 & 0 & p_u \\
+0 & f & 0 & p_v \\
+0 & 0 & 1 & 0 \\
+\end{pmatrix} 
+\end{equation}
+
+$M_{intrinsisch} \in \mathbb{R}^{3x4}$
+
+\begin{equation}
+\label{equ:Rotation}
+R= R_\gamma  R_\beta  R_\alpha =
+\begin{pmatrix}
+r_{11} & r_{12} & r_{13} \\
+r_{21} & r_{22} & r_{23} \\
+r_{31} & r_{32} & r_{33} \\
+\end{pmatrix} 
+\end{equation}
+
+$R \in \mathbb{R}^{3x3}$
+
+\begin{equation}
+\label{equ:Rotation}
+t=
+\begin{pmatrix}
+t_x & t_y & t_z
+\end{pmatrix} 
+\end{equation}
+
+$t \in \mathbb{R}^{3x1}$
+
+
+\begin{equation}
+\label{equ:extrinsic}
+M_{extrinsisch}= 
+\begin{pmatrix}
+R &|& t \\
+\end{pmatrix} 
+\end{equation}
+
+$M_{extrinsisch} \in \mathbb{R}^{3x4}$
+
 
 
 \textcolor{red}{DIST auf Null gesetzt.}

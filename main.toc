@@ -32,10 +32,10 @@
 \contentsline {subsubsection}{\numberline {5.2.2}Ablauf der Men\IeC {\"u}f\IeC {\"u}hrung}{11}{subsubsection.5.2.2}
 \contentsline {subsection}{\numberline {5.3}Kalibrierung}{13}{subsection.5.3}
 \contentsline {subsubsection}{\numberline {5.3.1}Kamerakalibrierung}{13}{subsubsection.5.3.1}
-\contentsline {subsubsection}{\numberline {5.3.2}Kalibrierung des Arbeitsbereichs}{15}{subsubsection.5.3.2}
-\contentsline {subsubsection}{\numberline {5.3.3}Kalibrierungfehler}{15}{subsubsection.5.3.3}
-\contentsline {subsubsection}{\numberline {5.3.4}M\IeC {\"o}gliche Fehlerquellen}{15}{subsubsection.5.3.4}
-\contentsline {section}{\numberline {6}Auswertung}{15}{section.6}
-\contentsline {subsection}{\numberline {6.1}Testing durch unerfahrene Benutzer}{15}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}Testing durch Architekten}{15}{subsection.6.2}
-\contentsline {section}{\numberline {7}Zusammenfassung}{15}{section.7}
+\contentsline {subsubsection}{\numberline {5.3.2}Kalibrierung des Arbeitsbereichs}{16}{subsubsection.5.3.2}
+\contentsline {subsubsection}{\numberline {5.3.3}Kalibrierungfehler}{16}{subsubsection.5.3.3}
+\contentsline {subsubsection}{\numberline {5.3.4}M\IeC {\"o}gliche Fehlerquellen}{16}{subsubsection.5.3.4}
+\contentsline {section}{\numberline {6}Auswertung}{16}{section.6}
+\contentsline {subsection}{\numberline {6.1}Testing durch unerfahrene Benutzer}{16}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Testing durch Architekten}{16}{subsection.6.2}
+\contentsline {section}{\numberline {7}Zusammenfassung}{16}{section.7}
