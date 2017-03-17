@@ -50,8 +50,48 @@ Der nächste Schritt, die Kalibrierung des Arbeitsbereichs, bestimmt über Punkt
 Trotz einer sorgfältigen Umsetzung der in den nächsten beiden Kapiteln beschriebenen Kalibrierungsschritte, ist es nicht gelungen, den Aluminiumwürfel und den gerenderten Würfel vollständig zur Deckung zu bringen. Der entstandene Fehler sowie mögliche systembedingte Fehlerquellen werden in~\ref{sec:calibError} und in~\ref{sec:calibErrorSources} beschrieben. 
 
 \subsubsection{Kamerakalibrierung}\label{sec:camCalib}
-wie in \cite{Meisel:77890}.
 
+DIST auf Null gesetzt.
+\begin{figure}[H]
+		\center 
+		\includegraphics[width=0.65\textwidth , trim = 0mm 65mm 270mm 0mm, clip]{Bilder/cameraCalib.jpg}
+			\label{fig:cameraCalib}
+			\caption{Bildunterschrift. \cite{Meisel:77890}}
+	\end{figure}
+	
+\begin{table}
+	\centering
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		\Absatzbox{}
+		& \textbf{Transformation} & \textbf{Komponenten}&\textbf{Koordinaten}\\
+		\hline
+		$\overrightarrow{x}$ & &$x$,$y$,$z$& Weltkoordinaten\\
+		\cline{2-4}
+		$\downarrow$ & Koordinatentransformation & & \\
+		\cline{2-4}
+		$\overrightarrow{x}^P$ & &$x^P$,$y^P$,$z^P$& Projektionszentrumkoordinaten\\
+		\cline{2-4}
+		$\downarrow$ & Projektion & & \\
+		\cline{2-4}
+		$\overrightarrow{x}^P_Z$ & &$u^Z$,$v^Z$,$-c$& Projektionszentrumkoordinaten\\
+		\cline{2-4}
+		$\downarrow$ & Linsenverzeichnung & & \\
+		\cline{2-4}	
+		$\overrightarrow{x}^P_D$ & &$u^D$,$v^D$,$-c$& Verzeichnungskoordinaten \\
+		\cline{2-4}
+		$\downarrow$ & Bildebenenverkippung & & \\
+		\cline{2-4}		
+		$\overrightarrow{x}^V$ & &$u^V$,$v^V$,$-c^V$& Verkippungskoordinaten\\
+		\cline{2-4}
+		$\downarrow$ & Bildhauptpunktverschiebung & & \\
+		\cline{2-4}
+		$\overrightarrow{u}$ & &$u$,$v$ & Sensorkoordinaten\\
+		\hline
+	\end{tabular}
+	\caption{Parameter und Berechnungsschritte der Kamera Kalibrierung.\cite{Meisel:77890}}
+	\label{tab:camCalibParam}
+\end{table}
 
 \subsubsection{Kalibrierung des Arbeitsbereichs}\label{sec:planeCalib}
 \subsubsection{Kalibrierungfehler} \label{sec:calibError}
