@@ -51,13 +51,28 @@ Trotz einer sorgfältigen Umsetzung der in den nächsten beiden Kapiteln beschri
 
 \subsubsection{Kamerakalibrierung}\label{sec:camCalib}
 
-DIST auf Null gesetzt.
+Es gibt viele verschiedene wissenschaftliche Ausführungen über die Durchführung einer Kamerakalibrierung, wie z.B. \cite{5982395}, \cite{888718} und \cite{faugeras1993three}. Dabei unterscheidet man häufig zwischen automatischen und manuellen Kalibrierungen. \\
+In Abbildung~\ref{fig:cameraCalib} sind die Zusammenhänge zwischen dem Projektionszentrumkoordinatensystem der Kamera, sowie deren Bildebene und dem Weltkoordinatensystem zu sehen. Im Gegensatz zu der Abbildung und den erwähnten Kalibrierungsansätzen reicht die Umrechnung von Bildkoordinaten in Weltkoordinaten nicht aus. Es muss eine Umrechnung der Bildkoordinaten in den Unity Raum erfolgen, um zu gewährleisten, dass die gerenderten Würfel nachher deckungsgleich mit den Aluminiumwürfeln sind. Koordinaten des Unity Raumes werden im Folgenden Unitykoordinaten genannt.
+
+
+
+
+
+Im Folgenden wird die in diesem Projekt implementierte Kamerakalibrierung anhand von \cite{Meisel:77890} schrittweise erklärt. Sie ist als manuell einzustufen und wird, wenn gewünscht bzw. benötigt zu Beginn der eigentlichen Anwendung durchgeführt. \textcolor{red}{Bild! üblich und dann ergänzen mit Vive:}
+
+
+
+
+ In Tabelle~\ref{tab:camCalibParam} können sowohl die einzelnen Koordinatensysteme, als auch die einzelnen Berechnungsschritte der Kamerakalibrierung nachvollzogen werden. \\
+\textcolor{red}{DIST auf Null gesetzt.}
+
+
 \begin{figure}[H]
 		\center 
 		\includegraphics[width=0.65\textwidth , trim = 0mm 65mm 270mm 0mm, clip]{Bilder/cameraCalib.jpg}
+			\caption{Lage des Kamerakoordinatensystems in Bezug auf Projektionsebene und Weltkoordinatensystem. 					\cite{Meisel:77890}}
 			\label{fig:cameraCalib}
-			\caption{Lage des Kamerakoordinatensystems in Bezug auf Projektionsebene und Weltkoordinatensystem. \cite{Meisel:77890}}
-	\end{figure}
+	\end{figure}[H]
 	
 \begin{table}
 	\centering
