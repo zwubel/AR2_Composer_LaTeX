@@ -56,7 +56,7 @@ DIST auf Null gesetzt.
 		\center 
 		\includegraphics[width=0.65\textwidth , trim = 0mm 65mm 270mm 0mm, clip]{Bilder/cameraCalib.jpg}
 			\label{fig:cameraCalib}
-			\caption{Bildunterschrift. \cite{Meisel:77890}}
+			\caption{Lage des Kamerakoordinatensystems in Bezug auf Projektionsebene und Weltkoordinatensystem. \cite{Meisel:77890}}
 	\end{figure}
 	
 \begin{table}
@@ -64,29 +64,33 @@ DIST auf Null gesetzt.
 	\begin{tabular}{|c|c|c|c|}
 		\hline
 		\Absatzbox{}
-		& \textbf{Transformation} & \textbf{Komponenten}&\textbf{Koordinaten}\\
+		& \textbf{Koordinaten} & \textbf{Komponenten}&\textbf{Transformation}\\
 		\hline
-		$\overrightarrow{x}$ & &$x$,$y$,$z$& Weltkoordinaten\\
+		$\overrightarrow{u}$ & Sensorkoordinaten &$u$,$v$ & \\
 		\cline{2-4}
-		$\downarrow$ & Koordinatentransformation & & \\
-		\cline{2-4}
-		$\overrightarrow{x}^P$ & &$x^P$,$y^P$,$z^P$& Projektionszentrumkoordinaten\\
-		\cline{2-4}
-		$\downarrow$ & Projektion & & \\
-		\cline{2-4}
-		$\overrightarrow{x}^P_Z$ & &$u^Z$,$v^Z$,$-c$& Projektionszentrumkoordinaten\\
-		\cline{2-4}
-		$\downarrow$ & Linsenverzeichnung & & \\
-		\cline{2-4}	
-		$\overrightarrow{x}^P_D$ & &$u^D$,$v^D$,$-c$& Verzeichnungskoordinaten \\
-		\cline{2-4}
-		$\downarrow$ & Bildebenenverkippung & & \\
+		$\downarrow$ & & & Bildhauptpunktverschiebung\\
 		\cline{2-4}		
-		$\overrightarrow{x}^V$ & &$u^V$,$v^V$,$-c^V$& Verkippungskoordinaten\\
+		$\overrightarrow{x}^V$ &Verkippungskoordinaten &$u^V$,$v^V$,$-c^V$& \\
 		\cline{2-4}
-		$\downarrow$ & Bildhauptpunktverschiebung & & \\
+		$\downarrow$ & & & Bildebenenverkippung\\
+		\cline{2-4}	
+		$\overrightarrow{x}^P_D$ & Verzeichnungskoordinaten &$u^D$,$v^D$,$-c$& \\
 		\cline{2-4}
-		$\overrightarrow{u}$ & &$u$,$v$ & Sensorkoordinaten\\
+		$\downarrow$ & & & Linsenverzeichnung\\
+		\cline{2-4}
+		$\overrightarrow{x}^P_Z$ & Projektionszentrumkoordinaten &$u^Z$,$v^Z$,$-c$& \\
+		\cline{2-4}
+		$\downarrow$ & & & Projektion\\
+		\cline{2-4}
+		$\overrightarrow{x}^P$ & Projektionszentrumkoordinaten &$x^P$,$y^P$,$z^P$& \\
+		\cline{2-4}
+		$\downarrow$ & & & Koordinatentransformation\\
+		\cline{2-4}
+		$\overrightarrow{x}$ & Weltkoordinaten &$x$,$y$,$z$& \\
+		\cline{2-4}
+		$\downarrow$ & & & Koordinatentransformation\\
+		\cline{2-4}		
+		$\overrightarrow{x}^U$ & Unitykoordinaten &$x^U$,$y^U$,$z^U$& \\
 		\hline
 	\end{tabular}
 	\caption{Parameter und Berechnungsschritte der Kamera Kalibrierung.\cite{Meisel:77890}}
