@@ -101,17 +101,8 @@ Wo führen wir die dlls auf die du erzeugt hast??
 % Wie in "`Unity"' oben beschrieben, denke ich, dass wir uns das folgende sparen können, oder?
 %\subsubsection{Ovrvision Pro SDK} \todo[inline] {Paul oder Lukas}
 
-\subsubsection{Leap Motion SDK} \todo[inline] {Laura}
-\textcolor{red}{
-Once the image data is streamed to your computer, it’s time for some heavy mathematical lifting. Despite popular misconceptions, the Leap Motion Controller doesn’t generate a depth map – instead it applies advanced algorithms to the raw sensor data.}
+\subsubsection{Leap Motion SDK} \todo[inline] {Paul}
 
-The Leap Motion Service is the software on your computer that processes the images. After compensating for background objects (such as heads) and ambient environmental lighting, the images are analyzed to reconstruct a 3D representation of what the device sees.
-
-Next, the tracking layer matches the data to extract tracking information such as fingers and tools. Our tracking algorithms interpret the 3D data and infer the positions of occluded objects. Filtering techniques are applied to ensure smooth temporal coherence of the data. The Leap Motion Service then feeds the results – expressed as a series of frames, or snapshots, containing all of the tracking data – into a transport protocol.
-
-Through this protocol, the service communicates with the Leap Motion Control Panel, as well as native and web client libraries, through a local socket connection (TCP for native, WebSocket for web). The client library organizes the data into an object-oriented API structure, manages frame history, and provides helper functions and classes.
-
-From there, the application logic ties into the Leap Motion input, allowing a motion-controlled interactive experience. Next week, we’ll take a closer look at our SDK and getting started with our API.\textsuperscript{\cite{website:LeapMotionBlog}}
 
 \subsubsection{Orion Beta Software} \label{OBS}
 
