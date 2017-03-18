@@ -4,22 +4,43 @@ In den nachfolgenden Abschnitten, werden Werkzeuge und Hilfsmittel beschrieben, 
 \subsection{Hardware}
 Zur Ausführung der MArC-Software sind diverse Hardware-Komponenten Voraussetzung. Diese Komponenten werden nachfolgend beschrieben und deren Kontext im System näher erläutert.
 \subsubsection{Computer zur Ausführung der Unity-Simulation}
-Die Anwendung, welche aus Unity\textsuperscript{\cite{website:Unity}} heraus erstellt wurde, benötigt einen Host-Computer, welcher sowohl mit dem HTC Vive Head-Mounted Display kompatibel, als auch leistungsstark genug sein muss, um das Rendering der Simulation mit ausreichend hoher Bildrate ausführen zu können.
+Die Anwendung, welche aus Unity \cite{website:Unity} heraus erstellt wurde, benötigt einen Host-Computer, welcher sowohl mit dem HTC Vive Head-Mounted Display kompatibel, als auch leistungsstark genug sein muss, um das Rendering der Simulation mit ausreichend hoher Bildrate ausführen zu können.
 
-Für das vorliegende Projekt wurde seitens der Technischen Hochschule Köln ein Computer mit den folgenden Eigenschaften zur Verfügung gestellt:
+Für das vorliegende Projekt wurde seitens der Technischen Hochschule Köln ein Computer mit den  Eigenschaften aus Tabelle \ref{tab:UnityCompParam} zur Verfügung gestellt:
 \todo[inline]{Beim nächsten Mal in der TH nachschauen...}
-\begin{description}
-	\item[Prozessor:]
-	\item[Arbeitsspeicher:]
-	\item[Grafikkarte:]
-	\item[Betriebssystem:]
-	\item[Schnittstellen:]
-\end{description}
+
+
+\begin{table}
+	\centering
+	\begin{tabular}{|c|c|}
+		\hline
+		\Absatzbox{}
+		\textbf{NAME DES COMPUTERS}& \textbf{Beschreibung} \\
+		\hline
+		Prozessor & XXX \\
+		\hline
+		Arbeitsspeicher & XXX \\
+		\hline 
+		Grafikkarte & XXX\\
+		\hline
+		Betriebssystem &XXX \\
+		\hline
+		Schnittstellen & XXX \\
+		\hline
+	\end{tabular}
+	\caption{Auszug aus dem technischen Datenblatt des XXXX.}
+	\label{tab:UnityCompParam}
+\end{table}
+
 Die Hard- und Software-Voraussetzungen für die Ausführung der Unity-Anwendung in Verbindung mit der HTC Vive, welche in Tabelle~\ref{table:viveReq} aufgelistet sind, werden von dem verwendeten Computer übertroffen.
 
 \begin{table}
 	\centering
-	\begin{tabular}{l|l}
+	\begin{tabular}{|l|l|}
+		\hline
+		\Absatzbox{}
+		\textbf{HTC Vive}& \textbf{Systemvoraussetzungen} \\
+		\hline
 		Prozessor & mindestens Intel Core i5-4590 oder AMD FX 8350\\
 		\hline
 		Grafikkarte & mindestens NVIDIA GeForce™ GTX 1060\\
@@ -32,39 +53,110 @@ Die Hard- und Software-Voraussetzungen für die Ausführung der Unity-Anwendung 
 		USB & $1\times$ USB 2.0-Anschluss\\
 		\hline
 		Betriebssystem & Windows 7 SP1, Windows 8.1 oder Windows 10\\
+		\hline
 	\end{tabular}
-	\caption{HTC Vive Systemvoraussetzungen.\textsuperscript{\cite{website:HTC_Vive_Ready}}}
+	\caption{HTC Vive Systemvoraussetzungen. \cite{website:HTC_Vive_Ready}}
 	\label{table:viveReq}
 \end{table}
 
-\subsubsection{Computer zur Ausführung der Tracking-Anwendung}
-\subsubsection{HTC Vive} \todo[inline]{Laura}
-Bei der HTC Vive handelt es sich um ein Head-Mounted Display, welches von HTC in Kooperation mit Valve\textsuperscript{\cite{website:Valve}} produziert wird. Vorgestellt wurde dieses am 1. März 2015 im Vorfeld der Mobile World Congress\textsuperscript{\cite{website:mobileworldcongress}}.\\
-Die Auflösung des Displays beträgt insgesamt $2160\times1200$ Pixel, was $1080x1200$ Pixeln pro Auge enstpricht. Die Brille bietet ein Sichtfeld von bis zu $110^\circ$ bei einer Bildwiederholrate von $90\,Hz$\textsuperscript{\cite{website:HTC_Vive}}. Zur Positionsbestimmung im Raum wird die Lighthousetechnologie von Valve genutzt. Zusätzlich sind neben einem Gyrosensor auch ein Beschleunigungsmesser und ein Laser-Positionsmesser verbaut. Mittels speziellen Game-Controllern wird eine Interaktion mit virtuellen Objekten ermöglicht.
+\subsubsection{Computer zur Ausführung der Tracking-Anwendung}\todo[inline]{Vera}
 
-\subsubsection{Spielfeldkamera} \todo[inline]{Vera}
-IDS uEye 164xLE
+Auf Grund der begrenzten Bandbreite einer USB-Karte ist es zwingend notwendig einen weiteren Rechner an das Gesamtsystem zu koppeln, welcher ausschließlich für die Ansteuerung der uEye-Kamera und die Berechnungen des Tracking-Algorithmus zuständig ist. 
+An den Computer zur Ausführung der VR Umgebung sind gezwungenermaßen viele externe USB Komponenten, wie zum Beispiel die \textit{Leap Motion} und die \textit{HTC Vive}, angeschlossen. Dies führt zu einer hohen Auslastung der Bandbreite der USB-Karte und auf Grund dessen ist es nicht mehr möglich die uEye-Kamera mit der notwendigen maximalen Framerate zu betreiben. Somit wird für ein flüssiges und real-time fähiges Tracking der \textit{Acer E5-571G-795A} mit den Eigenschaften aus Tabelle \ref{tab:TrackingCompParam} verwendet.
+
+\begin{table}
+	\centering
+	\begin{tabular}{|c|c|}
+		\hline
+		\Absatzbox{}
+		\textbf{Acer E5-571G-795A}& \textbf{Beschreibung} \\
+		\hline
+		Prozessor & Intel Core i7-5500U CPU @ $2\times 2.4$GHz  \\
+		\hline
+		Arbeitsspeicher & $8.0$ GB \\
+		\hline 
+		Grafikkarte & NVIDIA GeForce 840M\\
+		\hline
+		Betriebssystem & Windows 10 Home, 64 bit \\
+		\hline
+		Schnittstellen & $2\times$ USB 2.0, $1\times$ USB 1.0, Netzwerkport ????\\
+		\hline
+	\end{tabular}
+	\caption{Auszug aus dem technischen Datenblatt des \textit{Acer E5-571G-795A}.}
+	\label{tab:TrackingCompParam}
+\end{table}
+
+
+\subsubsection{HTC Vive} \todo[inline]{Laura}
+Bei der HTC Vive handelt es sich um ein Head-Mounted Display, welches von HTC in Kooperation mit Valve\cite{website:Valve} produziert wird. Vorgestellt wurde dieses am 1. März 2015 im Vorfeld der Mobile World Congress \cite{website:mobileworldcongress}.\\
+Die Auflösung des Displays beträgt insgesamt $2160\times1200$ Pixel, was $1080x1200$ Pixeln pro Auge enstpricht. Die Brille bietet ein Sichtfeld von bis zu $110^\circ$ bei einer Bildwiederholrate von $90\,Hz$ \cite{website:HTC_Vive}. Zur Positionsbestimmung im Raum wird die Lighthousetechnologie von Valve genutzt. Zusätzlich sind neben einem Gyrosensor auch ein Beschleunigungsmesser und ein Laser-Positionsmesser verbaut. Mittels speziellen Game-Controllern wird eine Interaktion mit virtuellen Objekten ermöglicht.
+
+\subsubsection{IDS uEye 164LE-C} \todo[inline] {Vera}
+Die Kamera \textit{uEye 164LE-C} wurde vom Hersteller \textit{IDS Imaging Development Systems} entwickelt. Sie hat eine Auflösung von $1280 \times 1024$ Pixel und ermöglicht Live-Video-Aufnahmen im RGB Farbmodus mit maximal $25$ fps. Der integrierte CMOS Bildsensor wird im Rolling Shutter betrieben und ermöglicht Belichtungszeiten von $37\mu$s bis $10$s. Weiterführend kann sie universell mit allen gängigen Computern oder Systemen via USB 2.0 Schnittstelle verbunden werden \cite{website:UEyeTechSpec}.\\
+
+Die erforderliche Ansteuerung der \textit{uEye 164LE-C} erfolgt mit Hilfe der bereit gestellten \textit{IDS Software Suite}. In diese Suite ist die \textit{uEye-API} integriert, welche die Entwicklung von eigenen Programmen unter \textit{Windows} und \textit{Linux} mit den Programmiersprachen \textit{C}$++$, \textit{.NET}, \textit{C$\#$} oder \textit{C} ermöglicht \cite{website:IDSSuite}. Für das Tracking der Marker in \textit{MArC} wurde eine eigene Schnittstelle in \textit{C}$++$ erstellt, welche die Kamera im Live Modus mit den Parametern aus Tabelle \ref{tab:UeyeParam} initialisiert und steuert. 
+
+\begin{table}
+	\centering
+	\begin{tabular}{|c|c|}
+		\hline
+		\Absatzbox{}
+		\textbf{Parameter}& \textbf{Wert} \\
+		\hline
+		Pixel Clock & 37 ms \\
+		\hline
+		Frame Rate & 23 fps  \\
+		\hline 
+		Belichtungszeit & 40 ms\\
+		\hline
+		Gamma & 2.2 \\
+		\hline
+		Digitale Verstärkung & 20 \\
+		\hline
+	\end{tabular}
+	\caption{Parametrisierung der uEye Kamera für das Tracking.}
+	\label{tab:UeyeParam}
+\end{table}
 
 \subsubsection{Leap Motion} \todo[inline]{Laura}	
-Bei der Leap Motion\textsuperscript{\cite{website:LeapMotion}} handelt sich um ein $7,6\times3\times1,3\,cm$ großes Gerät, welches es mit Hilfe von Sensoren möglich macht, Hand- und Fingerbewegungen als Eingabemöglichkeit zu nutzen. Die Idee dahinter ist, eine Eingabegerät analog zu Maus zu schaffen, welches keinen direkten Kontakt bzw. keine Berührung benötigt. Hergestellt wird die Leap Motion von der Firma Leap Motion, Inc., die ihren Hauptsitz in Amerika hat. Gegründet wurde die Firma am 1. November 2010. \\
+Bei der Leap Motion \cite{website:LeapMotion} handelt sich um ein $7,6\times3\times1,3\,cm$ großes Gerät, welches es mit Hilfe von Sensoren möglich macht, Hand- und Fingerbewegungen als Eingabemöglichkeit zu nutzen. Die Idee dahinter ist, eine Eingabegerät analog zu Maus zu schaffen, welches keinen direkten Kontakt bzw. keine Berührung benötigt. Hergestellt wird die Leap Motion von der Firma Leap Motion, Inc., die ihren Hauptsitz in Amerika hat. Gegründet wurde die Firma am 1. November 2010. \\
 Wie auf Abbildung \ref{fig:leapMotion} erahnt werden kann, besteht das Gerät im wesentlich aus zwei integrierten weitwinkel Kameras und drei einfachen Infrarot LEDs. Die LEDs haben jeweils eine Wellenlänge von $850\,nm$. Der durch die beiden Kameras aufgespannte Interaktionsraum der Leap Motion ähnelt einer umgedrehten Pyramide, mit einem Flächeninhalt von knapp $243\,cm{^2}$. \\
 Für das Projekt wurde die Orion beta software, die in \ref{OBS} näher beschrieben wird. Diese Software ermöglicht unter anderem eine Erweiterung der Reichweite der Leap Motion von $60\,cm$ auf $80\,cm$. Diese Reichweite ist durch die Ausbreitung der LED Lichter räumlich begrenzt. Die Lichtintensität der LEDs ist wiederum durch den maximalen Strom, der über die USB-Verbindung fließt beschränkt. \\
 
-\subsection{Marker}\todo[inline]{Vera}
-\subsubsection{ArUco Marker}\todo[inline]{Vera}
-Da sowohl für die Marker, die für den eigentlichen Trackingalgorithmus verwendet werden, als auch für säntliche Marker, die zur Kalibrierung des Systems zum Einsatz kommen ArUco Marker verwendet werden, werden diese im Folgenden kurz erläutert.\\
-ArUco Marker bestehen ähnlich wie QR-Codes aus einer zweidimensionalen Matrix, aus schwarzen und weißen Quadraten, die die kodierten Daten binär darstellen. Die ArUco Bibliothek kann für Augmented Reality Anwendungen genutzt werden und basiert ausschließlich auf der OpenCV Bibliothek. 
- 
-\subsubsection{Trackingmarker}\todo[inline]{Laura}
-Das System umfasst zwölf Marker über die das Tracking realisiert wird. Alle Marker stimmen in Form und Farbe, sowie Material und Oberflächenbeschaffenheit überein. Sie sind würfelförmig und haben eine Kantenlänge von $46\,mm$. Die Kanten sind in einem Winkel von $45^\circ$ angefast. Die Marker bestehen aus Aluminium, welches glasperlgestrahlt ist um eine matte Oberfläche zu erzeugen. Auf die Oberseite des Markers ist mittig ein grünes Quadrat mit einer Kantenlänge von $40\,mm$ aufgebracht. Auf diesem ist, ebenfalls mittig, ein $35\,mm$ großer ARUCO-Marker, welcher aus dem $\texttt{DICT\_4X4\_50}$ generiert wurde und einen Rand von einem bit hat. Jeder Marker hat einen einzigartigen ARUCO-Marker, der einer Id von 1--12 entspricht.
+
+\subsubsection{ArUco Marker} \label{sec:aruco} \todo[inline]{Vera}
+Die ArUco Bibliothek ist ein Marker Tracking Modul von \textit{OpenCV} (siehe Kapitel \ref{sec:OpenCV}) kann für Augmented Reality (AR) Anwendungen genutzt werden und stellt für diese Anwendungen alle notwendigen Funktionalitäten zum Orten und Verifizieren der Codes sowie der anschließenden Pose Estimation der ermittelten Positionen zur Verfügung \cite{article:Aruco2014}. 
+Die Marker bestehen ähnlich wie QR-Codes aus einer zweidimensionalen Matrix, mit schwarzen oder weißen Feldern, welche die kodierten Daten binär, wie in Abbildung \ref{fig:AllUsedArucoMarker}, darstellen.  Weiterführend kann die Anzahl der Bits variabel gewählt werden (siehe Abbildung \ref{fig:SizesArucoMarker}), je nachdem wie groß die gefragte Markeranzahl ist oder deren erforderliche Erkennbarkeit in sehr großen Entfernungen sowie kleinen Bildern. Um diese Vielzahl an verschiedenen Größen und IDs händeln zu können wurden sogenannte Dictionarys eingeführt \cite{article:ArucoDictGarridoJurado2015}. Diese Dictionarys bestehen aus Markern mit gleicher Bit-Anzahl und sind zusätzlich auf eine maximalen Anzahl von IDs begrenzt um ein möglichst hohe Performanz zu gewährleisten.\\
 
 
-	\begin{figure}[H]
-		\center 
-		\includegraphics[trim = 0mm 280mm 0mm 150mm, clip, width=6cm]{Bilder/tracking-marker.jpg}			
-			\caption{Trackingmarker mit der ID \textcolor{red}{??}.}
-			\label{fig:marker}
-	\end{figure}
+\begin{figure}[H] 
+	\center 
+	\includegraphics[width=10cm]{Bilder/Aruco_marker.jpg}			
+	\caption{Alle genutzten 16 bit ArUco Marker des Prototypen. Links die zwölf IDs der Würfel Marker und rechts die ID, welche zur Kalibrierung benötigt wird. Die maximale Anzahl der Marker ist auf $50$ begrenzt.}
+	\label{fig:AllUsedArucoMarker}
+\end{figure}
+
+\begin{figure}[H] 
+	\center 
+	\includegraphics[width=7cm]{Bilder/VerschAruco.jpg}			
+	\caption{ArUco Marker mit unterschiedlicher Bitgröße. Von Links nach Rechts: $n=5$, $n=6$ und $n=8$. Quelle: \cite{article:Aruco2014}}
+	\label{fig:SizesArucoMarker}
+\end{figure}
+
+\subsubsection{Würfel Marker}
+
+In vielen VR oder AR Umgebungen müssen die Nutzer eines Systems häufig nach virtuellen Objekten zur Interaktion greifen, die nicht real existieren. Demzufolge greifen die Personen ins Leere, was häufig die Immersion stört und zu Irritationen und Unsicherheit führt.
+Um dem Nutzer des Systems \textit{MArC} für die Positionierung und Orientierung ein reales haptisches Feedback zu ermöglichen wurden zwölf Aluminumwürfel mit aufgeklebten Markern designt. Diese Würfel können beliebig innerhalb eines zuvor festgelegten Bereiches auf dem realen Tisch verschoben und rotiert werden. An der aktuellen Position und Orientierung des jeweiligen Markers wird in der VR ein explizit zugeordnetes Objekt gerendert. Diese Position wird mit Hilfe des Tracking-Algorithmus (siehe Kapitel \ref{sec:Tracking}) aus den Bildern der uEye Kamera ermittelt.
+Alle zwölf Marker stimmen mit der Form und Farbe, sowie Material und Oberflächenbeschaffenheit aus Abbildung \ref{fig:marker} überein. Sie haben eine Kantenlänge von $46\,mm$ und sind in einem Winkel von $45^\circ$ an allen Kanten gefräst. Das Aluminium ist glasperlgestrahlt um eine matte Oberfläche zu erzeugen, welche ungewollte Reflexionen und Überstrahlungen vermeidet, die unter Umständen den Tracking-Algorithmus beeinflussen können. Auf die Oberseite des Markers ist mittig ein leuchtend grünes Quadrat mit einer Kantenlänge von $40\,mm$ aufgebracht. Diese grüne Fläche wird für ein Green-Keying benötigt, welches die Verfolgung der Marker auch bei Bewegungsunschärfe ermöglicht. Ebenfalls mittig ist jeweils ein individueller $35\,mm$ großer ArUco-Marker plan befestigt. Alle verwendeten ArUco-Marker haben einen Rand von einem Bit hat und wurden jeweils aus dem Marker Dictionary $\texttt{DICT\_4X4\_50}$ des Arcuo Moduls \cite{website:ArucoDoc} generiert.
+
+	\begin{figure}[H] 
+	\center 
+	\includegraphics[trim = 0mm 280mm 0mm 150mm, clip, width=6cm]{Bilder/tracking-marker.jpg}			
+	\caption{Würfel Marker mit grüner Fläche und einem ArUco Marker, die mittig auf den Aluminumwürfel aufgebracht sind.}
+	\label{fig:marker}
+\end{figure}
+
+
 	
 \subsection{Obsolete Hardware}\label{sec:obsoleteHardware}
 Im Laufe eines Projekts nach Art von MArC ist es kaum vermeidbar, dass die gesetzten Projektziele reevaluiert werden müssen. Die Gründe hierfür können vielfältig sein. Beispielsweise könnte die Fertigstellung eines bestimmten Teils des Projekts deutlich länger gedauert haben als geplant, oder es könnte sich herausgestellt haben, dass bestimmte Komponenten zueinander nicht kompatibel sind.
@@ -77,7 +169,7 @@ Im weiteren Verlauf des Projekts führte eine lange Zeit ungeklärte, starke Abw
 
 Nachfolgend werden die Eigenschaften und technischen Daten beider Geräte kurz beschrieben.
 \subsubsection{Ovrvision Pro}\label{ovrvision}
-Die Ovrvision Pro ist eine kompakte Stereokamera, welche über USB 3.0 mit dem Rechner verbunden werden kann\textsuperscript{\cite{website:ovrvision}}. Sie ist kompatibel mit Programmen wie Unity, welches für das Projekt benutzt wurde und in \ref{unity} beschrieben wird.
+Die Ovrvision Pro ist eine kompakte Stereokamera, welche über USB 3.0 mit dem Rechner verbunden werden kann \cite{website:ovrvision}. Sie ist kompatibel mit Programmen wie Unity, welches für das Projekt benutzt wurde und in \ref{unity} beschrieben wird.
 
 Die Bildmodi der Kamera sind in Tabelle~\ref{tab:ovrRes} aufgeführt.
 
@@ -106,30 +198,35 @@ Die Bildmodi der Kamera sind in Tabelle~\ref{tab:ovrRes} aufgeführt.
 		$320\times240$\,px & $120$\,fps & $115^\circ$ & $105^\circ$\\
 		\hline
 	\end{tabular}
-	\caption{Bildmodi der Ovrvision Pro Stereokamera.\textsuperscript{\cite{website:ovrvisionProduct}}}
+	\caption{Bildmodi der Ovrvision Pro Stereokamera.
+		\cite{website:ovrvisionProduct}}
 	\label{tab:ovrRes}
 \end{table}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=6cm]{Bilder/leap-motion.png}			
-		\caption{Explosionszeichnung der Leap Motion.\textsuperscript{\cite{website:LeapMotionBlog}}}
+		\caption{Explosionszeichnung der Leap Motion.\cite{website:LeapMotionBlog}}
 		\label{fig:leapMotion}
 \end{figure}
 	
-\subsubsection{Webcam}
-
 \subsection{Software}
 \subsubsection{Unity}\label{unity}\todo[inline]{Paul oder Lukas}
-Unity ist eine sogenannte Spiel-Engine, also eine Entwicklungs- und Laufzeitumgebung, die speziell auf die Entwicklung von 3D-Spielen ausgelegt ist. Die Software wurde am 6. Juni 2005 veröffentlicht\textsuperscript{\cite{haas2014history}} und wird von Unity Technologies\textsuperscript{\cite{website:Unity}} entwickelt und vertrieben. In der Spieleentwicklung ist Unity weit verbreitet, so werden beispielsweise $34\,\%$ der kostenfreien Top-1000-Spiele im mobilen Sektor mit Unity entwickelt\textsuperscript{\cite{website:UnityPR}}.
+Unity ist eine sogenannte Spiel-Engine, also eine Entwicklungs- und Laufzeitumgebung, die speziell auf die Entwicklung von 3D-Spielen ausgelegt ist. Die Software wurde am 6. Juni 2005 veröffentlicht \cite{haas2014history} und wird von Unity Technologies \cite{website:Unity} entwickelt und vertrieben. In der Spieleentwicklung ist Unity weit verbreitet, so werden beispielsweise $34\,\%$ der kostenfreien Top-1000-Spiele im mobilen Sektor mit Unity entwickelt \cite{website:UnityPR}.
 
-Unity bietet eine sehr breite Plattformunterstützung\textsuperscript{\cite{website:UnityMultiPlatform}} und erlaubt ebenso die Entwicklung für Head-Mounted-Displays, wie etwa die Oculus Rift\textsuperscript{\cite{website:UnityOculus}\cite{website:UnityVRoverview}} oder auch die in diesem Projekt verwendete HTC Vive.\textsuperscript{\cite{website:UnityVRoverview}}
+Unity bietet eine sehr breite Plattformunterstützung \cite{website:UnityMultiPlatform} und erlaubt ebenso die Entwicklung für Head-Mounted-Displays, wie etwa die Oculus Rift \cite{website:UnityOculus}\cite{website:UnityVRoverview} oder auch die in diesem Projekt verwendete HTC Vive \cite{website:UnityVRoverview}.
 
-Die zu Beginn des Projekts verwendete Stereo-Kamera Ovrvision Pro stellt ein Software-Development-Kit (SDK) für Unity (Version 5) zur Verfügung.\textsuperscript{\cite{website:ovrvisionSetup}} Da das endgültige Resultat des Projekts die Verwendung der Ovrvision Pro nicht mehr vorsieht, wie in~\ref{sec:obsoleteHardware} beschrieben, wird auf eine weitere Beschreibung dieses SDKs verzichtet.
+Die zu Beginn des Projekts verwendete Stereo-Kamera Ovrvision Pro stellt ein Software-Development-Kit (SDK) für Unity (Version 5) zur Verfügung \cite{website:ovrvisionSetup}. Da das endgültige Resultat des Projekts die Verwendung der Ovrvision Pro nicht mehr vorsieht, wie in~\ref{sec:obsoleteHardware} beschrieben, wird auf eine weitere Beschreibung dieses SDKs verzichtet.
 
-\subsubsection{Visual Studio} \todo[inline] {Laura}
-\subsubsection{OpenCV} \todo[inline] {Vera}
-Wo führen wir die dlls auf die du erzeugt hast??
+\subsubsection{Visual Studio 2015} \todo[inline] {Vera}
+
+\textit{Micosoft Visual Studio 2015} ist eine verbreitete integrierte Entwicklungsumgebung (IDE), welche unter anderem die Programmiersprachen Visual Basic, Visual C$\#$, und Visual C++ unterstützt. Mit Hilfe dieser IDE kann ein Entwickler Win32/Win64 Anwendungen sowie weitere WebApps und Webservices \cite{website:VisuStud} programmieren sowie anschließend compilieren. Für \textit{MArC} wurde mit der Version $14.0.25123.00$ Update2 gearbeitet.
+
+\subsubsection{OpenCV} \label{sec:OpenCV} \todo[inline] {Vera}
+\textit{Open Source Computer Vision} (OpenCV) ist eine Open Source Bibliothek für Bild- und Videoverarbeitung in der Programmiersprache \textit{C}$++$. Vorgestellt wurde sie vor über zehn Jahren von \textit{Intel} und wird seitdem stetig von verschiedenen Programmierern weiterentwickelt. Diese Bibliothek stellt die gängigsten Algorithmen sowie aktuelle Entwicklungen der Bildverarbeitung zur Verfügung
+\cite{article:OpenCV}.\\
+Für dieses System ist vor allem das Modul \texttt{calib3d} \cite{website:Calib3dDoc} und das extra Modul \texttt{aruco} \cite{website:ArucoDoc} verwendet. Das erste Modul \texttt{calib3d}  bietet alle notwendigen Funktionen zur Erstellung, Verwendung und Weiterverarbeitung von intrinsischen und extrinsischen Kamerakalibrierungen an (siehe Kapitel \ref{sec:calib}). Während das Zweite alle benötigten Ressourcen und Funktionalitäten zum Tracken von \textit{ArUco} Markern zur Verfügung stellt (siehe Kapitel \ref{sec:aruco}).
+
 
 % Wie in "`Unity"' oben beschrieben, denke ich, dass wir uns das folgende sparen können, oder?
 %\subsubsection{Ovrvision Pro SDK} \todo[inline] {Paul oder Lukas}
@@ -139,8 +236,7 @@ Wo führen wir die dlls auf die du erzeugt hast??
 
 \subsubsection{Orion Beta Software} \label{OBS}
 
-\subsubsection{uEye SDK}\todo[inline] {Vera}
 \subsubsection{Steam VR}\todo[inline] {Paul oder Lukas}
-
+\subsubsection{TCP API}\todo[inline] {Laura oder Lukas}
 
 \newpage

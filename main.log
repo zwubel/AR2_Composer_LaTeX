@@ -1,16 +1,12 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2017.1.2)  18 MAR 2017 15:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.21)  18 MAR 2017 23:25
 entering extended mode
 **./main.tex
 (main.tex
-LaTeX2e <2016/03/31>
-Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
-
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\latex\base\article.
-cls
+LaTeX2e <2016/03/31> patch level 3
+Babel <3.9r> and hyphenation patterns for 72 language(s) loaded.
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\article.cls"
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\latex\base\size12.c
-lo
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size12.clo"
 File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -25,55 +21,53 @@ File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\latex\koma-script\s
-crpage2.sty
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\latex\koma-script\scrpage
+2.sty"
 Package: scrpage2 2016/06/14 v3.21 KOMA-Script package (page head and foot)
 )
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\latex\todonotes\tod
-onotes.sty
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\latex\todonotes\todonotes
+.sty"
 Package: todonotes 2015/07/09 .dtx Todonotes source and documentation.
 Package: todonotes 2012/07/25
 
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\latex\base\ifthen.s
-ty
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ifthen.sty"
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\latex\xkeyval\xkeyv
-al.sty
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.sty
+"
 Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\generic\xkeyval\xke
-yval.tex
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\generic\xkeyval\xkv
-utils.tex
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xkeyval\xkeyval.t
+ex"
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xkeyval\xkvutils.
+tex"
 \XKV@toks=\toks14
 \XKV@tempa@toks=\toks15
 
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\generic\xkeyval\key
-val.tex))
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xkeyval\keyval.te
+x"))
 \XKV@depth=\count87
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\latex\xcolor\xcolor
-.sty
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\latex\00miktex\colo
-r.cfg
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\color.
+cfg"
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
 
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\latex\pdftex-def\pd
-ftex.def
-File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-def\pdftex
+.def"
+File: pdftex.def 2016/07/10 v0.06j Graphics/color for pdfTeX
 
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\generic\oberdiek\in
-fwarerr.sty
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\infwarer
+r.sty"
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
 )
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\generic\oberdiek\lt
-xcmds.sty
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.
+sty"
 Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count88
@@ -88,70 +82,68 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\latex\pgf\frontendl
-ayer\tikz.sty
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\latex\pgf\basiclaye
-r\pgf.sty
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\latex\pgf\utilities
-\pgfrcs.sty
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\generic\pgf\utiliti
-es\pgfutil-common.tex
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\frontendlayer\t
+ikz.sty"
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\basiclayer\pgf.
+sty"
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\utilities\pgfrc
+s.sty"
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pgf
+util-common.tex"
 \pgfutil@everybye=\toks16
 \pgfutil@tempdima=\dimen103
 \pgfutil@tempdimb=\dimen104
 
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\generic\pgf\utiliti
-es\pgfutil-common-lists.tex))
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\generic\pgf\utiliti
-es\pgfutil-latex.def
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pgf
+util-common-lists.tex"))
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pgf
+util-latex.def"
 \pgfutil@abb=\box26
 
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\latex\ms\everyshi.s
-ty
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ms\everyshi.sty"
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 ))
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\generic\pgf\utiliti
-es\pgfrcs.code.tex
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pgf
+rcs.code.tex"
 Package: pgfrcs 2015/08/07 v3.0.1a (rcs-revision 1.31)
 ))
 Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
 
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\latex\pgf\basiclaye
-r\pgfcore.sty
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\latex\graphics\grap
-hicx.sty
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\basiclayer\pgfc
+ore.sty"
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphicx.s
+ty"
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\latex\graphics\grap
-hics.sty
-Package: graphics 2016/05/09 v1.0r Standard LaTeX Graphics (DPC,SPQR)
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphics.s
+ty"
+Package: graphics 2016/07/10 v1.0t Standard LaTeX Graphics (DPC,SPQR)
 
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\latex\graphics\trig
-.sty
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\trig.sty"
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\latex\00miktex\grap
-hics.cfg
-File: graphics.cfg 2016/01/02 v1.10 sample graphics configuration
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\graphi
+cs.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 96.
+Package graphics Info: Driver file: pdftex.def on input line 99.
 )
 \Gin@req@height=\dimen105
 \Gin@req@width=\dimen106
 )
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\latex\pgf\systemlay
-er\pgfsys.sty
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\generic\pgf\systeml
-ayer\pgfsys.code.tex
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\systemlayer\pgf
+sys.sty"
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\p
+gfsys.code.tex"
 Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
 
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\generic\pgf\utiliti
-es\pgfkeys.code.tex
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pgf
+keys.code.tex"
 \pgfkeys@pathtoks=\toks17
 \pgfkeys@temptoks=\toks18
 
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\generic\pgf\utiliti
-es\pgfkeysfiltered.code.tex
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pgf
+keysfiltered.code.tex"
 \pgfkeys@tmptoks=\toks19
 ))
 \pgf@x=\dimen107
@@ -172,42 +164,42 @@ es\pgfkeysfiltered.code.tex
 \t@pgf@tokb=\toks21
 \t@pgf@tokc=\toks22
 
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\generic\pgf\systeml
-ayer\pgf.cfg
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\p
+gf.cfg"
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
 )
 Driver file for pgf: pgfsys-pdftex.def
 
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\generic\pgf\systeml
-ayer\pgfsys-pdftex.def
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\p
+gfsys-pdftex.def"
 File: pgfsys-pdftex.def 2014/10/11  (rcs-revision 1.35)
 
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\generic\pgf\systeml
-ayer\pgfsys-common-pdf.def
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\p
+gfsys-common-pdf.def"
 File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
 )))
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\generic\pgf\systeml
-ayer\pgfsyssoftpath.code.tex
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\p
+gfsyssoftpath.code.tex"
 File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
 \pgfsyssoftpath@smallbuffer@items=\count93
 \pgfsyssoftpath@bigbuffer@items=\count94
 )
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\generic\pgf\systeml
-ayer\pgfsysprotocol.code.tex
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\p
+gfsysprotocol.code.tex"
 File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
 ))
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\generic\pgf\basicla
-yer\pgfcore.code.tex
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
+fcore.code.tex"
 Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
 
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\generic\pgf\math\pg
-fmath.code.tex
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\generic\pgf\math\pg
-fmathcalc.code.tex
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\generic\pgf\math\pg
-fmathutil.code.tex)
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\generic\pgf\math\pg
-fmathparser.code.tex
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath.
+code.tex"
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmathc
+alc.code.tex"
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmathu
+til.code.tex")
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmathp
+arser.code.tex"
 \pgfmath@dimen=\dimen115
 \pgfmath@count=\count95
 \pgfmath@box=\box27
@@ -215,30 +207,30 @@ fmathparser.code.tex
 \pgfmath@stack@operand=\toks24
 \pgfmath@stack@operation=\toks25
 )
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\generic\pgf\math\pg
-fmathfunctions.code.tex
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\generic\pgf\math\pg
-fmathfunctions.basic.code.tex)
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\generic\pgf\math\pg
-fmathfunctions.trigonometric.code.tex)
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\generic\pgf\math\pg
-fmathfunctions.random.code.tex)
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\generic\pgf\math\pg
-fmathfunctions.comparison.code.tex)
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\generic\pgf\math\pg
-fmathfunctions.base.code.tex)
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\generic\pgf\math\pg
-fmathfunctions.round.code.tex)
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\generic\pgf\math\pg
-fmathfunctions.misc.code.tex)
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\generic\pgf\math\pg
-fmathfunctions.integerarithmetics.code.tex)))
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\generic\pgf\math\pg
-fmathfloat.code.tex
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmathf
+unctions.code.tex"
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmathf
+unctions.basic.code.tex")
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmathf
+unctions.trigonometric.code.tex")
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmathf
+unctions.random.code.tex")
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmathf
+unctions.comparison.code.tex")
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmathf
+unctions.base.code.tex")
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmathf
+unctions.round.code.tex")
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmathf
+unctions.misc.code.tex")
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmathf
+unctions.integerarithmetics.code.tex")))
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmathf
+loat.code.tex"
 \c@pgfmathroundto@lastzeros=\count96
 ))
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\generic\pgf\basicla
-yer\pgfcorepoints.code.tex
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
+fcorepoints.code.tex"
 File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
 \pgf@picminx=\dimen116
 \pgf@picmaxx=\dimen117
@@ -255,128 +247,128 @@ File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
 \pgf@zx=\dimen128
 \pgf@zy=\dimen129
 )
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\generic\pgf\basicla
-yer\pgfcorepathconstruct.code.tex
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
+fcorepathconstruct.code.tex"
 File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
 \pgf@path@lastx=\dimen130
 \pgf@path@lasty=\dimen131
 )
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\generic\pgf\basicla
-yer\pgfcorepathusage.code.tex
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
+fcorepathusage.code.tex"
 File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
 \pgf@shorten@end@additional=\dimen132
 \pgf@shorten@start@additional=\dimen133
 )
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\generic\pgf\basicla
-yer\pgfcorescopes.code.tex
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
+fcorescopes.code.tex"
 File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
 \pgfpic=\box28
 \pgf@hbox=\box29
 \pgf@layerbox@main=\box30
 \pgf@picture@serial@count=\count97
 )
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\generic\pgf\basicla
-yer\pgfcoregraphicstate.code.tex
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
+fcoregraphicstate.code.tex"
 File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
 \pgflinewidth=\dimen134
 )
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\generic\pgf\basicla
-yer\pgfcoretransformations.code.tex
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
+fcoretransformations.code.tex"
 File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
 \pgf@pt@x=\dimen135
 \pgf@pt@y=\dimen136
 \pgf@pt@temp=\dimen137
 )
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\generic\pgf\basicla
-yer\pgfcorequick.code.tex
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
+fcorequick.code.tex"
 File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
 )
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\generic\pgf\basicla
-yer\pgfcoreobjects.code.tex
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
+fcoreobjects.code.tex"
 File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
 )
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\generic\pgf\basicla
-yer\pgfcorepathprocessing.code.tex
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
+fcorepathprocessing.code.tex"
 File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
 )
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\generic\pgf\basicla
-yer\pgfcorearrows.code.tex
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
+fcorearrows.code.tex"
 File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
 \pgfarrowsep=\dimen138
 )
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\generic\pgf\basicla
-yer\pgfcoreshade.code.tex
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
+fcoreshade.code.tex"
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
 \pgf@max=\dimen139
 \pgf@sys@shading@range@num=\count98
 )
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\generic\pgf\basicla
-yer\pgfcoreimage.code.tex
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
+fcoreimage.code.tex"
 File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
 
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\generic\pgf\basicla
-yer\pgfcoreexternal.code.tex
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
+fcoreexternal.code.tex"
 File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
 \pgfexternal@startupbox=\box31
 ))
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\generic\pgf\basicla
-yer\pgfcorelayers.code.tex
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
+fcorelayers.code.tex"
 File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
 )
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\generic\pgf\basicla
-yer\pgfcoretransparency.code.tex
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
+fcoretransparency.code.tex"
 File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
 )
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\generic\pgf\basicla
-yer\pgfcorepatterns.code.tex
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
+fcorepatterns.code.tex"
 File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
 )))
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\generic\pgf\modules
-\pgfmoduleshapes.code.tex
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\modules\pgfmo
+duleshapes.code.tex"
 File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
 \pgfnodeparttextbox=\box32
 )
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\generic\pgf\modules
-\pgfmoduleplot.code.tex
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\modules\pgfmo
+duleplot.code.tex"
 File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
 )
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\latex\pgf\compatibi
-lity\pgfcomp-version-0-65.sty
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\compatibility\p
+gfcomp-version-0-65.sty"
 Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
 \pgf@nodesepstart=\dimen140
 \pgf@nodesepend=\dimen141
 )
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\latex\pgf\compatibi
-lity\pgfcomp-version-1-18.sty
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\compatibility\p
+gfcomp-version-1-18.sty"
 Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
 ))
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\latex\pgf\utilities
-\pgffor.sty
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\latex\pgf\utilities
-\pgfkeys.sty
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\generic\pgf\utiliti
-es\pgfkeys.code.tex))
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\latex\pgf\math\pgfm
-ath.sty
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\generic\pgf\math\pg
-fmath.code.tex))
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\generic\pgf\utiliti
-es\pgffor.code.tex
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\utilities\pgffo
+r.sty"
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\utilities\pgfke
+ys.sty"
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pgf
+keys.code.tex"))
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\math\pgfmath.st
+y"
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath.
+code.tex"))
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pgf
+for.code.tex"
 Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
 
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\generic\pgf\math\pg
-fmath.code.tex)
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath.
+code.tex")
 \pgffor@iter=\dimen142
 \pgffor@skip=\dimen143
 \pgffor@stack=\toks26
 \pgffor@toks=\toks27
 ))
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\generic\pgf\fronten
-dlayer\tikz\tikz.code.tex
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer
+\tikz\tikz.code.tex"
 Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
 
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\generic\pgf\librari
-es\pgflibraryplothandlers.code.tex
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\pgf
+libraryplothandlers.code.tex"
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
 \pgf@plot@mark@count=\count99
 \pgfplotmarksize=\dimen144
@@ -396,8 +388,8 @@ File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
 \tikznumberofcurrentchild=\count102
 \tikz@fig@count=\count103
 
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\generic\pgf\modules
-\pgfmodulematrix.code.tex
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\modules\pgfmo
+dulematrix.code.tex"
 File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
 \pgfmatrixcurrentrow=\count104
 \pgfmatrixcurrentcolumn=\count105
@@ -405,16 +397,15 @@ File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
 )
 \tikz@expandcount=\count107
 
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\generic\pgf\fronten
-dlayer\tikz\libraries\tikzlibrarytopaths.code.tex
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer
+\tikz\libraries\tikzlibrarytopaths.code.tex"
 File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
 )))
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\generic\pgf\fronten
-dlayer\tikz\libraries\tikzlibrarypositioning.code.tex
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer
+\tikz\libraries\tikzlibrarypositioning.code.tex"
 File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.1a (rcs-revision 1.7)
 )
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\latex\tools\calc.st
-y
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\calc.sty"
 Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count108
 \calc@Bcount=\count109
@@ -429,12 +420,12 @@ LaTeX Info: Redefining \addtolength on input line 81.
 )
 \c@@todonotes@numberoftodonotes=\count111
 )
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\latex\amsfonts\amss
-ymb.sty
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amssymb.st
+y"
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\latex\amsfonts\amsf
-onts.sty
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.s
+ty"
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \@emptytoks=\toks28
 \symAMSa=\mathgroup4
@@ -442,30 +433,26 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\latex\amsmath\amsma
-th.sty
-Package: amsmath 2016/03/10 v2.15b AMS math features
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty
+"
+Package: amsmath 2016/06/28 v2.15d AMS math features
 \@mathmargin=\skip46
 
 For additional information on amsmath, use the `?' option.
-
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\latex\amsmath\amste
-xt.sty
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amstext.sty
+"
 Package: amstext 2000/06/29 v2.01 AMS text
-
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\latex\amsmath\amsge
-n.sty
+ ("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty
+"
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks29
 \ex@=\dimen153
 ))
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\latex\amsmath\amsbs
-y.sty
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen154
-)
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\latex\amsmath\amsop
-n.sty
+) ("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsopn.st
+y"
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count112
@@ -506,12 +493,12 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 635.
 LaTeX Info: Redefining \[ on input line 2739.
 LaTeX Info: Redefining \] on input line 2740.
 )
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\latex\caption\capti
-on.sty
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption.sty
+"
 Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
 
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\latex\caption\capti
-on3.sty
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption3.st
+y"
 Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 67.
 \captionmargin=\dimen162
@@ -524,52 +511,44 @@ Package caption3 Info: TeX engine: e-TeX on input line 67.
 )
 \c@ContinuedFloat=\count124
 )
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\generic\babel\babel
-.sty
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.sty"
 Package: babel 2016/04/23 3.9r The Babel package
 
 *************************************
 * Local config file bblopts.cfg used
 *
-
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\latex\arabi\bblopts
-.cfg
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\latex\arabi\bblopts.cfg"
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
  babel
 )
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\latex\babel-german\
-ngerman.ldf
-Language: ngerman 2013/12/13 v2.7 German support for babel (new orthography)
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\latex\babel-german\ngerma
+n.ldf"
+Language: ngerman 2016/11/02 v2.9 German support for babel (new orthography)
 
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\latex\babel-german\
-ngermanb.ldf
-Language: ngermanb 2013/12/13 v2.7 German support for babel (new orthography)
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\latex\babel-german\ngerma
+nb.ldf"
+Language: ngermanb 2016/11/02 v2.9 German support for babel (new orthography)
 
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\generic\babel\babel
-.def
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.def"
 File: babel.def 2016/04/23 3.9r Babel common definitions
 \babel@savecnt=\count125
 \U@D=\dimen169
 )
-\l@naustrian = a dialect from \language\l@ngerman 
-\l@nswissgerman = a dialect from \language\l@ngerman 
-Package babel Info: Making " an active character on input line 88.
+Package babel Info: Making " an active character on input line 125.
 )))
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\latex\base\inputenc
-.sty
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\inputenc.sty"
 Package: inputenc 2015/03/17 v1.2c Input encoding file
 \inpenc@prehook=\toks34
 \inpenc@posthook=\toks35
 
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\latex\base\utf8.def
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\utf8.def"
 File: utf8.def 2016/02/28 v1.1s UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
 
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\latex\base\t1enc.df
-u
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1enc.dfu"
 File: t1enc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
    defining Unicode char U+00A0 (decimal 160)
    defining Unicode char U+00A1 (decimal 161)
@@ -806,8 +785,7 @@ File: t1enc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
 Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
 
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\latex\base\ot1enc.d
-fu
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ot1enc.dfu"
 File: ot1enc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
    defining Unicode char U+00A0 (decimal 160)
    defining Unicode char U+00A1 (decimal 161)
@@ -848,8 +826,7 @@ File: ot1enc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
 Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
 
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\latex\base\omsenc.d
-fu
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omsenc.dfu"
 File: omsenc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
@@ -873,32 +850,32 @@ Now handling font encoding U ...
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
 ))
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\latex\oberdiek\grff
-ile.sty
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\grffile.st
+y"
 Package: grffile 2016/05/16 v1.17 Extended file name support for graphics (HO)
 
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\generic\oberdiek\if
-pdf.sty
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.st
+y"
 Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
 )
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\generic\ifxetex\ifx
-etex.sty
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.s
+ty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\latex\oberdiek\kvop
-tions.sty
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.
+sty"
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\generic\oberdiek\kv
-setkeys.sty
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\kvsetkey
+s.sty"
 Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\generic\oberdiek\et
-excmds.sty
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\etexcmds
+.sty"
 Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
 
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\generic\oberdiek\if
-luatex.sty
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifluatex
+.sty"
 Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
@@ -907,9 +884,9 @@ Package etexcmds Info: Could not find \expanded.
 (etexcmds)             that some package has redefined \expanded.
 (etexcmds)             In the latter case, load this package earlier.
 )))
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\generic\oberdiek\pd
-ftexcmds.sty
-Package: pdftexcmds 2016/05/10 v0.21 Utility functions of pdfTeX for LuaTeX (HO
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\pdftexcm
+ds.sty"
+Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
@@ -921,58 +898,56 @@ Package grffile Info: Option `extendedchars' is set to `false'.
 Package grffile Info: Option `space' is set to `true'.
 Package grffile Info: \Gin@ii of package `graphicx' fixed on input line 486.
 )
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\latex\setspace\sets
-pace.sty
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\latex\setspace\setspace.s
+ty"
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\latex\base\fontenc.
-sty
-Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\fontenc.sty"
+Package: fontenc 2016/06/19 v1.99m Standard LaTeX package
 
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\latex\base\t1enc.de
-f
-File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1enc.def"
+File: t1enc.def 2016/06/19 v1.99m Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 ))
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\latex\datetime\date
-time.sty
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\latex\datetime\datetime.s
+ty"
 Package: datetime 2015/03/20 v2.60 Date Time Package
 
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\latex\etoolbox\etoo
-lbox.sty
-Package: etoolbox 2016/12/01 v2.2b e-TeX tools for LaTeX (JAW)
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\latex\etoolbox\etoolbox.s
+ty"
+Package: etoolbox 2017/01/02 v2.4 e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count126
 )
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\latex\fmtcount\fmtc
-ount.sty
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fmtcount\fmtcount.s
+ty"
 Package: fmtcount 2015/05/05 v3.01
 
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\latex\fmtcount\fcpr
-efix.sty
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fmtcount\fcprefix.s
+ty"
 Package: fcprefix 2012/09/28
 
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\latex\fmtcount\fcnu
-mparser.sty
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fmtcount\fcnumparse
+r.sty"
 Package: fcnumparser 2012/09/28
 \fc@digit@counter=\count127
 ))
 \c@padzeroesN=\count128
 \fc@tmpcatcode=\count129
 
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\latex\fmtcount\fc-n
-german.def
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fmtcount\fc-ngerman
+.def"
 File: fc-ngerman.def 2012/06/18
 
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\latex\fmtcount\fc-g
-erman.def
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fmtcount\fc-german.
+def"
 File: fc-german.def 2014/06/09
 
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\latex\fmtcount\fc-g
-ermanb.def
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fmtcount\fc-germanb
+.def"
 File: fc-germanb.def 2013/08/17
 ))
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\latex\fmtcount\fc-n
-germanb.def
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fmtcount\fc-ngerman
+b.def"
 File: fc-ngermanb.def 2013/08/17
 ))
 \@DT@modctr=\count130
@@ -983,8 +958,8 @@ File: fc-ngermanb.def 2013/08/17
 \@DT@loopN=\count135
 \@DT@X=\count136
 )
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\latex\datetime\date
-time-defaults.sty
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\latex\datetime\datetime-d
+efaults.sty"
 Package: datetime-defaults 2013/09/10
 )
 \@day=\count137
@@ -1006,25 +981,20 @@ put line 308.
 \dayofweek=\count151
 LaTeX Info: Redefining \today on input line 736.
 
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\latex\datetime\dt-n
-austrian.def
-File: dt-naustrian.def 2013/09/10
-LaTeX Info: Redefining \datenaustrian on input line 64.
-)
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\latex\datetime\dt-n
-german.def
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\latex\datetime\dt-ngerman
+.def"
 File: dt-ngerman.def 2013/09/10
 LaTeX Info: Redefining \datengerman on input line 86.
 )
 \dt@a=\toks36
 \dt@b=\toks37
 )
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\latex\geometry\geom
-etry.sty
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.s
+ty"
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\generic\oberdiek\if
-vtex.sty
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.s
+ty"
 Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
@@ -1041,27 +1011,26 @@ Package ifvtex Info: VTeX not detected.
 \Gm@layoutvoffset=\dimen177
 \Gm@dimlist=\toks38
 
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\latex\geometry\geom
-etry.cfg))
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\latex\natbib\natbib
-.sty
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.c
+fg"))
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\latex\natbib\natbib.sty"
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip49
 \bibsep=\skip50
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count155
 )
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\latex\hyperref\hype
-rref.sty
-Package: hyperref 2016/05/05 v6.83n Hypertext links for LaTeX
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hyperref.s
+ty"
+Package: hyperref 2016/06/24 v6.83q Hypertext links for LaTeX
 
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\generic\oberdiek\ho
-bsub-hyperref.sty
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\hobsub-h
+yperref.sty"
 Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
 
 
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\generic\oberdiek\ho
-bsub-generic.sty
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\hobsub-g
+eneric.sty"
 Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
 Package hobsub Info: Skipping package `infwarerr' (already loaded).
@@ -1085,61 +1054,60 @@ Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
 Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
 Package: xcolor-patch 2016/05/16 xcolor patch
 Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
-Package: atbegshi 2016/05/16 v1.17 At begin shipout hook (HO)
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
 Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
 Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
 )
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\latex\oberdiek\auxh
-ook.sty
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\auxhook.st
+y"
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )
 \@linkdim=\dimen178
 \Hy@linkcounter=\count156
 \Hy@pagecounter=\count157
 
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\latex\hyperref\pd1e
-nc.def
-File: pd1enc.def 2016/05/05 v6.83n Hyperref: PDFDocEncoding definition (HO)
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def
+"
+File: pd1enc.def 2016/06/24 v6.83q Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
 \Hy@SavedSpaceFactor=\count158
 
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\latex\00miktex\hype
-rref.cfg
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\latex\00miktex\hyperref.c
+fg"
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
-Package hyperref Info: Option `breaklinks' set `true' on input line 4322.
-Package hyperref Info: Option `pdftoolbar' set `true' on input line 4322.
-Package hyperref Info: Option `colorlinks' set `true' on input line 4322.
-Package hyperref Info: Option `linktocpage' set `true' on input line 4322.
-Package hyperref Info: Hyper figures OFF on input line 4446.
-Package hyperref Info: Link nesting OFF on input line 4451.
-Package hyperref Info: Hyper index ON on input line 4454.
-Package hyperref Info: Plain pages OFF on input line 4461.
-Package hyperref Info: Backreferencing OFF on input line 4466.
+Package hyperref Info: Option `breaklinks' set `true' on input line 4362.
+Package hyperref Info: Option `pdftoolbar' set `true' on input line 4362.
+Package hyperref Info: Option `colorlinks' set `true' on input line 4362.
+Package hyperref Info: Option `linktocpage' set `true' on input line 4362.
+Package hyperref Info: Hyper figures OFF on input line 4486.
+Package hyperref Info: Link nesting OFF on input line 4491.
+Package hyperref Info: Hyper index ON on input line 4494.
+Package hyperref Info: Plain pages OFF on input line 4501.
+Package hyperref Info: Backreferencing OFF on input line 4506.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4691.
+Package hyperref Info: Bookmarks ON on input line 4735.
 \c@Hy@tempcnt=\count159
-
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\latex\url\url.sty
+ ("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\latex\url\url.sty"
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 5044.
+LaTeX Info: Redefining \url on input line 5088.
 \XeTeXLinkMargin=\dimen179
 \Fld@menulength=\count160
 \Field@Width=\dimen180
 \Fld@charsize=\dimen181
-Package hyperref Info: Hyper figures OFF on input line 6298.
-Package hyperref Info: Link nesting OFF on input line 6303.
-Package hyperref Info: Hyper index ON on input line 6306.
-Package hyperref Info: backreferencing OFF on input line 6313.
-Package hyperref Info: Link coloring ON on input line 6316.
-Package hyperref Info: Link coloring with OCG OFF on input line 6323.
-Package hyperref Info: PDF/A mode OFF on input line 6328.
-LaTeX Info: Redefining \ref on input line 6368.
-LaTeX Info: Redefining \pageref on input line 6372.
+Package hyperref Info: Hyper figures OFF on input line 6342.
+Package hyperref Info: Link nesting OFF on input line 6347.
+Package hyperref Info: Hyper index ON on input line 6350.
+Package hyperref Info: backreferencing OFF on input line 6357.
+Package hyperref Info: Link coloring ON on input line 6360.
+Package hyperref Info: Link coloring with OCG OFF on input line 6367.
+Package hyperref Info: PDF/A mode OFF on input line 6372.
+LaTeX Info: Redefining \ref on input line 6412.
+LaTeX Info: Redefining \pageref on input line 6416.
 \Hy@abspage=\count161
 \c@Item=\count162
 \c@Hfootnote=\count163
@@ -1148,22 +1116,22 @@ LaTeX Info: Redefining \pageref on input line 6372.
 Package hyperref Message: Driver (autodetected): hpdftex.
 
 
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\latex\hyperref\hpdf
-tex.def
-File: hpdftex.def 2016/05/05 v6.83n Hyperref driver for pdfTeX
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hpdftex.de
+f"
+File: hpdftex.def 2016/06/24 v6.83q Hyperref driver for pdfTeX
 \Fld@listcount=\count164
 \c@bookmark@seq@number=\count165
 
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\latex\oberdiek\reru
-nfilecheck.sty
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\rerunfilec
+heck.sty"
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
 \Hy@SectionHShift=\skip51
 )
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\latex\algorithmicx\
-algorithmicx.sty
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\latex\algorithmicx\algori
+thmicx.sty"
 Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
 
 Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
@@ -1177,9 +1145,8 @@ Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
 \c@ALG@storecount=\count171
 \c@ALG@tmpcounter=\count172
 \ALG@tmplength=\skip54
-)
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\latex\tools\multico
-l.sty
+) ("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\multicol.st
+y"
 Package: multicol 2016/04/07 v1.8p multicolumn formatting (FMi)
 \c@tracingmulticols=\count173
 \mult@box=\box39
@@ -1228,29 +1195,32 @@ Package: multicol 2016/04/07 v1.8p multicolumn formatting (FMi)
 \colbreak@box=\box64
 \mc@col@check@num=\count181
 )
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\latex\multirow\mult
-irow.sty
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\latex\multirow\multirow.s
+ty"
+Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
+\multirow@colwidth=\skip57
+\multirow@cntb=\count182
+\multirow@dima=\skip58
 \bigstrutjot=\dimen191
 )
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\latex\algorithms\al
-gorithm.sty
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\latex\algorithms\algorith
+m.sty"
 Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
 nment
 
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\latex\float\float.s
-ty
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\latex\float\float.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count182
+\c@float@type=\count183
 \float@exts=\toks39
 \float@box=\box65
 \@float@everytoks=\toks40
 \@floatcapt=\box66
 )
 \@float@every@algorithm=\toks41
-\c@algorithm=\count183
+\c@algorithm=\count184
 )
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\latex\algorithmicx\
-algpseudocode.sty
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\latex\algorithmicx\algpse
+udocode.sty"
 Package: algpseudocode 
 
 Document Style - pseudocode environments for use with the `algorithmicx' style
@@ -1285,34 +1255,36 @@ Package scrpage2 Warning: seems you are using a constant headheight.
 (scrpage2)                A better solution would be to use typearea package.
 
 
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\context\base\supp-p
-df.mkii
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mki
+i"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count184
+\scratchcounter=\count185
 \scratchdimen=\dimen192
 \scratchbox=\box67
-\nofMPsegments=\count185
-\nofMParguments=\count186
+\nofMPsegments=\count186
+\nofMParguments=\count187
 \everyMPshowfont=\toks42
-\MPscratchCnt=\count187
+\MPscratchCnt=\count188
 \MPscratchDim=\dimen193
-\MPnumerator=\count188
-\makeMPintoPDFobject=\count189
+\MPnumerator=\count189
+\makeMPintoPDFobject=\count190
 \everyMPtoPDFconversion=\toks43
-) ABD: EveryShipout initializing macros
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\latex\oberdiek\epst
-opdf-base.sty
+)
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-b
+ase.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\latex\oberdiek\grfe
-xt.sty
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty
+"
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 )
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
 Package grfext Info: Graphics extension search list:
 (grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
-)
+) ABD: EveryShipout initializing macros
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
@@ -1355,15 +1327,15 @@ Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box68
 Package hyperref Info: Link coloring ON on input line 54.
 
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\latex\hyperref\name
-ref.sty
-Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\nameref.st
+y"
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\generic\oberdiek\ge
-ttitlestring.sty
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\gettitle
+string.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count190
+\c@section@level=\count191
 )
 LaTeX Info: Redefining \ref on input line 54.
 LaTeX Info: Redefining \pageref on input line 54.
@@ -1374,17 +1346,17 @@ LaTeX Info: Redefining \nameref on input line 54.
 
  (kapitel/deckblatt/deckblatt.tex
 Package epstopdf Info: Source file: <Bilder/logo_TH.eps>
-(epstopdf)                    date: 2016-12-13 06:49:18
+(epstopdf)                    date: 2017-03-18 19:02:34
 (epstopdf)                    size: 531878 bytes
 (epstopdf)             Output file: <Bilder/logo_TH-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-12-13 06:49:18
+(epstopdf)                    date: 2017-03-18 19:02:34
 (epstopdf)                    size: 25846 bytes
 (epstopdf)             Command: <epstopdf --outfile=Bilder/logo_TH-eps-converte
 d-to.pdf Bilder/logo_TH.eps>
 (epstopdf)             \includegraphics on input line 3.
 Package epstopdf Info: Output file is already uptodate.
 
-<Bilder/logo_TH-eps-converted-to.pdf, id=166, 115.43124pt x 62.2325pt>
+<Bilder/logo_TH-eps-converted-to.pdf, id=214, 115.43124pt x 62.2325pt>
 File: Bilder/logo_TH-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Bilder/logo_TH-eps-converted-to.pdf>
@@ -1393,14 +1365,12 @@ Package pdftex.def Info: Bilder/logo_TH-eps-converted-to.pdf used on input line
 (pdftex.def)             Requested size: 142.26378pt x 76.70409pt.
 LaTeX Font Info:    Try loading font information for U+msa on input line 10.
 
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\latex\amsfonts\umsa
-.fd
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 10.
 
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\latex\amsfonts\umsb
-.fd
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 Package babel Info: Redefining ngerman shorthand "|
@@ -1411,20 +1381,21 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 25.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 25.
- [1
 
-{H:/LaTeX/_LaTeX_portable/MiKTeXPortable/texmfs/data/pdftex/config/pdftex.map} 
-<./Bilder/logo_TH-eps-converted-to.pdf>]) (main.toc
+[1
+
+{C:/Users/Vera/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./Bilder/log
+o_TH-eps-converted-to.pdf>]) (main.toc
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 32.
+(babel)             in language  on input line 33.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 32.
+(babel)             in language  on input line 33.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 32.
+(babel)             in language  on input line 33.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 32.
+(babel)             in language  on input line 33.
 
 [2])
 \tf@toc=\write5
@@ -1462,8 +1433,70 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
-)
-(kapitel/PM/pm.tex
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 3.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 3.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 4.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 4.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 5.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 5.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 6.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 6.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 7.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 7.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 9.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 9.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 10.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 10.
+
+Overfull \vbox (2.60004pt too high) has occurred while \output is active []
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 11.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 11.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 11.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 11.
+
+[4] <Bilder/BinMuster.jpg, id=299, 205.52531pt x 174.07227pt>
+File: Bilder/BinMuster.jpg Graphic file (type jpg)
+
+<use Bilder/BinMuster.jpg>
+Package pdftex.def Info: Bilder/BinMuster.jpg used on input line 15.
+(pdftex.def)             Requested size: 227.62204pt x 192.79486pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--18
+
+ []
+
+) (kapitel/PM/pm.tex
+Overfull \vbox (2.60004pt too high) has occurred while \output is active []
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
+
+[5]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1477,196 +1510,239 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 4.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 4.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 6.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 6.
 
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 6.
+(babel)             in language  on input line 36.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 6.
+(babel)             in language  on input line 36.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 6.
+(babel)             in language  on input line 36.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 6.
+(babel)             in language  on input line 36.
 
-[4]
+[6 <./Bilder/BinMuster.jpg>]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 6.
+(babel)             in language  on input line 62.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 6.
+(babel)             in language  on input line 62.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 40.
+(babel)             in language  on input line 90.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 40.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 41.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 41.
+(babel)             in language  on input line 90.
 
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 44.
+(babel)             in language  on input line 93.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 44.
+(babel)             in language  on input line 93.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 44.
+(babel)             in language  on input line 93.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 44.
+(babel)             in language  on input line 93.
 
-[5]
+[7]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 45.
+(babel)             in language  on input line 94.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 45.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 48.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 48.
+(babel)             in language  on input line 94.
 
-Underfull \hbox (badness 10000) in paragraph at lines 49--52
+Underfull \hbox (badness 10000) in paragraph at lines 95--96
 
  []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 53.
+(babel)             in language  on input line 121.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 53.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 54.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 54.
+(babel)             in language  on input line 121.
 
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 55.
+(babel)             in language  on input line 122.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 55.
+(babel)             in language  on input line 122.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 55.
+(babel)             in language  on input line 122.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 55.
+(babel)             in language  on input line 122.
 
-[6]
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 122--125
+
+ []
+
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 58.
+(babel)             in language  on input line 127.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 58.
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 59.
+(babel)             in language  on input line 127.
 
-(H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs\install\tex\latex\base\t1cmtt.f
-d
+Underfull \hbox (badness 10000) in paragraph at lines 128--130
+
+ []
+
+<Bilder/Aruco_marker.jpg, id=365, 542.7477pt x 344.487pt>
+File: Bilder/Aruco_marker.jpg Graphic file (type jpg)
+
+<use Bilder/Aruco_marker.jpg>
+Package pdftex.def Info: Bilder/Aruco_marker.jpg used on input line 134.
+(pdftex.def)             Requested size: 284.52756pt x 180.6008pt.
+
+Overfull \vbox (2.60004pt too high) has occurred while \output is active []
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 138.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 138.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 138.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 138.
+
+[9] <Bilder/VerschAruco.jpg, id=378, 205.02127pt x 61.50638pt>
+File: Bilder/VerschAruco.jpg Graphic file (type jpg)
+
+<use Bilder/VerschAruco.jpg>
+Package pdftex.def Info: Bilder/VerschAruco.jpg used on input line 141.
+(pdftex.def)             Requested size: 199.16928pt x 59.75212pt.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 146.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 146.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 150.
+
+
+("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-) <Bilder/tracking-marker.jpg, id=275, 3131.7pt x 4175.6pt>
+)
+Overfull \vbox (2.60004pt too high) has occurred while \output is active []
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 151.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 151.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 151.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 151.
+
+[10 <./Bilder/Aruco_marker.jpg> <./Bilder/VerschAruco.jpg>]
+<Bilder/tracking-marker.jpg, id=388, 3131.7pt x 4175.6pt>
 File: Bilder/tracking-marker.jpg Graphic file (type jpg)
 
 <use Bilder/tracking-marker.jpg>
-Package pdftex.def Info: Bilder/tracking-marker.jpg used on input line 64.
+Package pdftex.def Info: Bilder/tracking-marker.jpg used on input line 154.
 (pdftex.def)             Requested size: 170.71652pt x 160.90375pt.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 69.
+(babel)             in language  on input line 161.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 69.
+(babel)             in language  on input line 161.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 171.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 171.
 
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 72.
+(babel)             in language  on input line 173.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 72.
+(babel)             in language  on input line 173.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 72.
+(babel)             in language  on input line 173.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 72.
+(babel)             in language  on input line 173.
 
-[7 <./Bilder/tracking-marker.jpg>]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 79.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 79.
-
-<Bilder/leap-motion.png, id=291, 273.02pt x 258.46562pt>
+[11 <./Bilder/tracking-marker.jpg>]
+<Bilder/leap-motion.png, id=402, 273.02pt x 258.46562pt>
 File: Bilder/leap-motion.png Graphic file (type png)
 
 <use Bilder/leap-motion.png>
-Package pdftex.def Info: Bilder/leap-motion.png used on input line 115.
+Package pdftex.def Info: Bilder/leap-motion.png used on input line 208.
 (pdftex.def)             Requested size: 170.71652pt x 161.61554pt.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 213.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 213.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 214.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 214.
 
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 119.
+(babel)             in language  on input line 217.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 119.
+(babel)             in language  on input line 217.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 119.
+(babel)             in language  on input line 217.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 119.
+(babel)             in language  on input line 217.
 
-[8]
+[12 <./Bilder/leap-motion.png>]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 120.
+(babel)             in language  on input line 221.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 120.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 122.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 122.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 123.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 123.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 130.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 130.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 131.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 131.
+(babel)             in language  on input line 221.
 
-Overfull \vbox (2.60004pt too high) has occurred while \output is active []
+Overfull \hbox (1.33409pt too wide) in paragraph at lines 223--224
+\T1/cmr/m/n/12 und Vi-su-al C++ un-ter-stützt. Mit Hil-fe die-ser IDE kann ein 
+Ent-wick-ler Win32/Win64
+ []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 132.
+(babel)             in language  on input line 225.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 132.
+(babel)             in language  on input line 225.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 132.
+(babel)             in language  on input line 234.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 132.
-
-[9 <./Bilder/leap-motion.png>]
+(babel)             in language  on input line 234.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 137.
+(babel)             in language  on input line 237.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 137.
+(babel)             in language  on input line 237.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 140.
+(babel)             in language  on input line 239.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 140.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 142.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 142.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 143.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 143.
+(babel)             in language  on input line 239.
 
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 146.
+(babel)             in language  on input line 240.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 146.
+(babel)             in language  on input line 240.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 146.
+(babel)             in language  on input line 240.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 146.
+(babel)             in language  on input line 240.
 
-[10]) (kapitel/system/system.tex
+[13]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 240.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 240.
+
+Overfull \vbox (2.60004pt too high) has occurred while \output is active []
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 242.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 242.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 242.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 242.
+
+[14]) (kapitel/system/system.tex
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1676,15 +1752,19 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 3.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 5.
+(babel)             in language  on input line 4.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 5.
+(babel)             in language  on input line 4.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 8.
+(babel)             in language  on input line 6.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 8.
+(babel)             in language  on input line 6.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 9.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 9.
 LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <12> not available
-(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 11.
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 12.
 
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
@@ -1697,25 +1777,25 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 16.
 
-[11]
-Overfull \hbox (3.4146pt too wide) in paragraph at lines 18--19
+[15]
+Overfull \hbox (3.4146pt too wide) in paragraph at lines 19--20
 \T1/cmr/m/n/12 dass die Netz-werk-ver-bin-dung zum Com-pu-ter, auf dem die Trac
 king-Anwendung
  []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 22.
+(babel)             in language  on input line 23.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 22.
-<kapitel/system/MP_Menu_Flowchart.pdf, id=344, 597.23125pt x 845.1575pt>
+(babel)             in language  on input line 23.
+<kapitel/system/MP_Menu_Flowchart.pdf, id=465, 597.23125pt x 845.1575pt>
 File: kapitel/system/MP_Menu_Flowchart.pdf Graphic file (type pdf)
 
 <use kapitel/system/MP_Menu_Flowchart.pdf>
 Package pdftex.def Info: kapitel/system/MP_Menu_Flowchart.pdf used on input lin
-e 27.
+e 28.
 (pdftex.def)             Requested size: 307.038pt x 632.59854pt.
 
-Overfull \hbox (1.52356pt too wide) in paragraph at lines 38--39
+Overfull \hbox (1.52356pt too wide) in paragraph at lines 39--40
 \T1/cmtt/m/n/12 Calibration-InVS \T1/cmr/m/n/12 an-ge-zeigt, wel-ches auch auf-
 ge-ru-fen wird, wenn der Be-nut-zer \T1/cmr/m/it/12 Work-
  []
@@ -1732,7 +1812,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 40.
 
-[12]
+[16]
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
@@ -1744,40 +1824,65 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 40.
 
-[13 <./kapitel/system/MP_Menu_Flowchart.pdf>]
+[17 <./kapitel/system/MP_Menu_Flowchart.pdf>]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 46.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 46.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 47.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 47.
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 48.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 48.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 55.
+(babel)             in language  on input line 49.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 55.
+(babel)             in language  on input line 49.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 50.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 50.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 54.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 54.
 
-Underfull \hbox (badness 10000) in paragraph at lines 57--59
+Overfull \vbox (2.60004pt too high) has occurred while \output is active []
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 60.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 60.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 60.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 60.
+
+[18]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 60.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 60.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 61.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 61.
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--65
 
  []
 
-
-Overfull \vbox (2.60004pt too high) has occurred while \output is active []
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 59.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 59.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 59.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 59.
-
-[14] <Bilder/cameraCalib.jpg, id=386, 1867.97874pt x 1188.44pt>
+<Bilder/cameraCalib.jpg, id=503, 1867.97874pt x 1188.44pt>
 File: Bilder/cameraCalib.jpg Graphic file (type jpg)
 
 <use Bilder/cameraCalib.jpg>
-Package pdftex.def Info: Bilder/cameraCalib.jpg used on input line 62.
+Package pdftex.def Info: Bilder/cameraCalib.jpg used on input line 68.
 (pdftex.def)             Requested size: 277.41176pt x 253.12454pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 67--68
+Underfull \hbox (badness 10000) in paragraph at lines 73--74
 
  []
 
@@ -1785,31 +1890,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 67--68
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 102.
+(babel)             in language  on input line 74.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 102.
+(babel)             in language  on input line 74.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 102.
+(babel)             in language  on input line 74.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 102.
+(babel)             in language  on input line 74.
 
-[15 <./Bilder/cameraCalib.jpg>]
-Overfull \hbox (32.87944pt too wide) in paragraph at lines 127--159
+[19 <./Bilder/cameraCalib.jpg>]
+Overfull \hbox (32.87944pt too wide) in paragraph at lines 133--165
  [][] 
  []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 163.
+(babel)             in language  on input line 169.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 163.
+(babel)             in language  on input line 169.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 164.
+(babel)             in language  on input line 170.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 164.
+(babel)             in language  on input line 170.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 165.
+(babel)             in language  on input line 171.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 165.
+(babel)             in language  on input line 171.
 ) (kapitel/auswertung/auswertung.tex
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
@@ -1841,7 +1946,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 75.
 
-[16]
+[20]
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
@@ -1853,26 +1958,32 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 75.
 
-[17] (main.bbl
-Underfull \hbox (badness 4048) in paragraph at lines 32--37
+[21] (main.bbl
+Underfull \hbox (badness 10000) in paragraph at lines 4--8
+[]\T1/cmr/m/n/12 Unity.  [][]$\T1/cmtt/m/n/12 https : / / www . 1stvision . com
+ / cameras / IDS / dataman / uEyeLE _
+ []
+
+
+Underfull \hbox (badness 4048) in paragraph at lines 63--68
 []\T1/cmr/m/n/12 Leap Mo-ti-on.  Leap Mo-ti-on Blog.  [][]$\T1/cmtt/m/n/12 http
  : / / blog . leapmotion . com /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 32--37
+Underfull \hbox (badness 10000) in paragraph at lines 63--68
 \T1/cmtt/m/n/12 hardware-[]to-[]software-[]how-[]does-[]the-[]leap-[]motion-[]c
 ontroller-[]work/$[][]\T1/cmr/m/n/12 .
  []
 
 
-Underfull \hbox (badness 4995) in paragraph at lines 47--51
+Underfull \hbox (badness 4995) in paragraph at lines 85--89
 []\T1/cmr/m/n/12 Mobile World Con-gress.  Mo-bi-le World Con-gress.  [][]$\T1/c
 mtt/m/n/12 https : / / www .
  []
 
 
-Underfull \hbox (badness 3568) in paragraph at lines 53--58
+Underfull \hbox (badness 3568) in paragraph at lines 91--96
 []\T1/cmr/m/n/12 Oculus.  Ocu-lus -- Uni-ty In-tro.  [][]$\T1/cmtt/m/n/12 https
  : / / developer3 . oculus . com /
  []
@@ -1881,15 +1992,15 @@ Underfull \hbox (badness 3568) in paragraph at lines 53--58
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 108.
+(babel)             in language  on input line 102.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 108.
+(babel)             in language  on input line 102.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 108.
+(babel)             in language  on input line 102.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 108.
+(babel)             in language  on input line 102.
 
-[18])
+[22])
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
@@ -1901,56 +2012,77 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 78.
 
-[19]
+[23]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 78.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 78.
  (main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 78.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 78.
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: DD37FA090807D4342CDAC2248AE2B54F;2784.
 
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: EDA9C25A705299DAC99E14DEE4D12058;3757
+(rerunfilecheck)             After:  50797EE8F41100CF9052BF6781A919D2;3767.
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 21490 strings out of 493335
- 392759 string characters out of 3127639
- 480621 words of memory out of 3000000
- 24437 multiletter control sequences out of 15000+200000
+ 21636 strings out of 493366
+ 393000 string characters out of 3131358
+ 485015 words of memory out of 3000000
+ 24538 multiletter control sequences out of 15000+200000
  18433 words of font info for 47 fonts, out of 3000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 62i,22n,92p,1054b,611s stack positions out of 5000i,500n,10000p,200000b,50000s
- <H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs/data\fonts\pk\ljfour\jknappe
-n\ec\dpi600\ecti1200.pk> <H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs/data\f
-onts\pk\ljfour\jknappen\ec\dpi600\ectt1200.pk> <H:\LaTeX\_LaTeX_portable\MiKTeX
-Portable\texmfs/data\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0800.pk> <H:\LaTeX\
-_LaTeX_portable\MiKTeXPortable\texmfs/data\fonts\pk\ljfour\jknappen\ec\dpi600\e
-cbx1440.pk> <H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs/data\fonts\pk\ljfou
-r\jknappen\ec\dpi600\ecsl1200.pk> <H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texm
-fs/data\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk> <H:\LaTeX\_LaTeX_portab
-le\MiKTeXPortable\texmfs/data\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk> <
-H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs/data\fonts\pk\ljfour\jknappen\ec
-\dpi600\ecbx1728.pk> <H:\LaTeX\_LaTeX_portable\MiKTeXPortable\texmfs/data\fonts
-\pk\ljfour\jknappen\ec\dpi600\ecbx2488.pk><H:/LaTeX/_LaTeX_portable/MiKTeXPorta
-ble/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb><H:/LaTeX/_LaTeX_p
-ortable/MiKTeXPortable/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb
-><H:/LaTeX/_LaTeX_portable/MiKTeXPortable/texmfs/install/fonts/type1/public/ams
-fonts/cm/cmmi12.pfb><H:/LaTeX/_LaTeX_portable/MiKTeXPortable/texmfs/install/fon
-ts/type1/public/amsfonts/cm/cmmi8.pfb><H:/LaTeX/_LaTeX_portable/MiKTeXPortable/
-texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb><H:/LaTeX/_LaTeX_portab
-le/MiKTeXPortable/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb><H:/L
-aTeX/_LaTeX_portable/MiKTeXPortable/texmfs/install/fonts/type1/public/amsfonts/
-cm/cmr8.pfb><H:/LaTeX/_LaTeX_portable/MiKTeXPortable/texmfs/install/fonts/type1
-/public/amsfonts/cm/cmsy10.pfb><H:/LaTeX/_LaTeX_portable/MiKTeXPortable/texmfs/
-install/fonts/type1/public/amsfonts/cm/cmsy8.pfb><H:/LaTeX/_LaTeX_portable/MiKT
-eXPortable/texmfs/install/fonts/type1/public/amsfonts/cm/cmtt10.pfb><H:/LaTeX/_
-LaTeX_portable/MiKTeXPortable/texmfs/install/fonts/type1/public/amsfonts/symbol
-s/msbm10.pfb>
-Output written on main.pdf (19 pages, 4409431 bytes).
+ 1127 hyphenation exceptions out of 8191
+ 62i,22n,92p,1166b,611s stack positions out of 5000i,500n,10000p,200000b,50000s
+pdfTeX warning (dest): name{subsubsection.5.6.5} has been referenced but does
+ not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.5.6.4} has been referenced but does n
+ot exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.5.6.3} has been referenced but does n
+ot exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.5.6.2} has been referenced but does n
+ot exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.5.6.1} has been referenced but does n
+ot exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.5.6} has been referenced but does not ex
+ist, replaced by a fixed one
+
+ <C:\Users\Vera\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ect
+t1200.pk> <C:\Users\Vera\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\d
+pi600\ecrm0800.pk> <C:\Users\Vera\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jkna
+ppen\ec\dpi600\ecti1200.pk> <C:\Users\Vera\AppData\Local\MiKTeX\2.9\fonts\pk\lj
+four\jknappen\ec\dpi600\ecbx1440.pk> <C:\Users\Vera\AppData\Local\MiKTeX\2.9\fo
+nts\pk\ljfour\jknappen\ec\dpi600\ecsl1200.pk> <C:\Users\Vera\AppData\Local\MiKT
+eX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk> <C:\Users\Vera\AppData\L
+ocal\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk> <C:\Users\Vera\
+AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1728.pk> <C:\Us
+ers\Vera\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx2488.p
+k><C:/Users/Vera/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
+cm/cmbx12.pfb><C:/Users/Vera/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmex10.pfb><C:/Users/Vera/AppData/Local/Programs/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Vera/AppData/Local/Programs/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Vera/AppData/Local/P
+rograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Vera/AppD
+ata/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/User
+s/Vera/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pf
+b><C:/Users/Vera/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
+cm/cmsy10.pfb><C:/Users/Vera/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmsy8.pfb><C:/Users/Vera/AppData/Local/Programs/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/Vera/AppData/Local/Programs/MiKT
+eX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on main.pdf (23 pages, 4833630 bytes).
 PDF statistics:
- 887 PDF objects out of 1000 (max. 8388607)
- 107 named destinations out of 1000 (max. 500000)
- 370 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1066 PDF objects out of 1200 (max. 8388607)
+ 143 named destinations out of 1000 (max. 500000)
+ 481 words of extra memory for PDF output out of 10000 (max. 10000000)
 
