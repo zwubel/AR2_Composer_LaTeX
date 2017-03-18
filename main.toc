@@ -5,37 +5,37 @@
 \contentsline {section}{\numberline {2}Grundlagen}{4}{section.2}
 \contentsline {section}{\numberline {3}Projektmanagement}{4}{section.3}
 \contentsline {section}{\numberline {4}Materialien}{4}{section.4}
-\contentsline {subsection}{\numberline {4.1}Hardware}{4}{subsection.4.1}
-\contentsline {subsubsection}{\numberline {4.1.1}Computer zur Ausf\IeC {\"u}hrung der Unity-Simulation}{4}{subsubsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1}Hardware}{5}{subsection.4.1}
+\contentsline {subsubsection}{\numberline {4.1.1}Computer zur Ausf\IeC {\"u}hrung der Unity-Simulation}{5}{subsubsection.4.1.1}
 \contentsline {subsubsection}{\numberline {4.1.2}Computer zur Ausf\IeC {\"u}hrung der Tracking-Anwendung}{5}{subsubsection.4.1.2}
 \contentsline {subsubsection}{\numberline {4.1.3}HTC Vive}{5}{subsubsection.4.1.3}
-\contentsline {subsubsection}{\numberline {4.1.4}Spielfeldkamera}{5}{subsubsection.4.1.4}
-\contentsline {subsubsection}{\numberline {4.1.5}Leap Motion}{5}{subsubsection.4.1.5}
-\contentsline {subsection}{\numberline {4.2}Marker}{5}{subsection.4.2}
-\contentsline {subsubsection}{\numberline {4.2.1}ArUco Marker}{6}{subsubsection.4.2.1}
-\contentsline {subsubsection}{\numberline {4.2.2}Trackingmarker}{6}{subsubsection.4.2.2}
-\contentsline {subsection}{\numberline {4.3}Obsolete Hardware}{6}{subsection.4.3}
-\contentsline {subsubsection}{\numberline {4.3.1}Ovrvision Pro}{7}{subsubsection.4.3.1}
-\contentsline {subsubsection}{\numberline {4.3.2}Webcam}{8}{subsubsection.4.3.2}
-\contentsline {subsection}{\numberline {4.4}Software}{8}{subsection.4.4}
-\contentsline {subsubsection}{\numberline {4.4.1}Unity}{8}{subsubsection.4.4.1}
-\contentsline {subsubsection}{\numberline {4.4.2}Visual Studio}{8}{subsubsection.4.4.2}
-\contentsline {subsubsection}{\numberline {4.4.3}OpenCV}{9}{subsubsection.4.4.3}
-\contentsline {subsubsection}{\numberline {4.4.4}Leap Motion SDK}{9}{subsubsection.4.4.4}
-\contentsline {subsubsection}{\numberline {4.4.5}Orion Beta Software}{9}{subsubsection.4.4.5}
-\contentsline {subsubsection}{\numberline {4.4.6}uEye SDK}{9}{subsubsection.4.4.6}
-\contentsline {subsubsection}{\numberline {4.4.7}Steam VR}{9}{subsubsection.4.4.7}
-\contentsline {section}{\numberline {5}System}{10}{section.5}
-\contentsline {subsection}{\numberline {5.1}Starten des Systems}{10}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Men\IeC {\"u}f\IeC {\"u}hrung}{10}{subsection.5.2}
-\contentsline {subsubsection}{\numberline {5.2.1}Men\IeC {\"u}s}{10}{subsubsection.5.2.1}
-\contentsline {subsubsection}{\numberline {5.2.2}Ablauf der Men\IeC {\"u}f\IeC {\"u}hrung}{11}{subsubsection.5.2.2}
-\contentsline {subsection}{\numberline {5.3}Kalibrierung}{13}{subsection.5.3}
-\contentsline {subsubsection}{\numberline {5.3.1}Kamerakalibrierung}{13}{subsubsection.5.3.1}
-\contentsline {subsubsection}{\numberline {5.3.2}Kalibrierung des Arbeitsbereichs}{16}{subsubsection.5.3.2}
-\contentsline {subsubsection}{\numberline {5.3.3}Kalibrierungfehler}{16}{subsubsection.5.3.3}
-\contentsline {subsubsection}{\numberline {5.3.4}M\IeC {\"o}gliche Fehlerquellen}{16}{subsubsection.5.3.4}
-\contentsline {section}{\numberline {6}Auswertung}{16}{section.6}
-\contentsline {subsection}{\numberline {6.1}Testing durch unerfahrene Benutzer}{16}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}Testing durch Architekten}{16}{subsection.6.2}
-\contentsline {section}{\numberline {7}Zusammenfassung}{16}{section.7}
+\contentsline {subsubsection}{\numberline {4.1.4}Spielfeldkamera}{6}{subsubsection.4.1.4}
+\contentsline {subsubsection}{\numberline {4.1.5}Leap Motion}{6}{subsubsection.4.1.5}
+\contentsline {subsection}{\numberline {4.2}Marker}{6}{subsection.4.2}
+\contentsline {subsubsection}{\numberline {4.2.1}ArUco Marker}{7}{subsubsection.4.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2}Trackingmarker}{7}{subsubsection.4.2.2}
+\contentsline {subsection}{\numberline {4.3}Obsolete Hardware}{7}{subsection.4.3}
+\contentsline {subsubsection}{\numberline {4.3.1}Ovrvision Pro}{8}{subsubsection.4.3.1}
+\contentsline {subsubsection}{\numberline {4.3.2}Webcam}{9}{subsubsection.4.3.2}
+\contentsline {subsection}{\numberline {4.4}Software}{9}{subsection.4.4}
+\contentsline {subsubsection}{\numberline {4.4.1}Unity}{9}{subsubsection.4.4.1}
+\contentsline {subsubsection}{\numberline {4.4.2}Visual Studio}{9}{subsubsection.4.4.2}
+\contentsline {subsubsection}{\numberline {4.4.3}OpenCV}{10}{subsubsection.4.4.3}
+\contentsline {subsubsection}{\numberline {4.4.4}Leap Motion SDK}{10}{subsubsection.4.4.4}
+\contentsline {subsubsection}{\numberline {4.4.5}Orion Beta Software}{10}{subsubsection.4.4.5}
+\contentsline {subsubsection}{\numberline {4.4.6}uEye SDK}{10}{subsubsection.4.4.6}
+\contentsline {subsubsection}{\numberline {4.4.7}Steam VR}{10}{subsubsection.4.4.7}
+\contentsline {section}{\numberline {5}System}{11}{section.5}
+\contentsline {subsection}{\numberline {5.1}Starten des Systems}{11}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Men\IeC {\"u}f\IeC {\"u}hrung}{11}{subsection.5.2}
+\contentsline {subsubsection}{\numberline {5.2.1}Men\IeC {\"u}s}{11}{subsubsection.5.2.1}
+\contentsline {subsubsection}{\numberline {5.2.2}Ablauf der Men\IeC {\"u}f\IeC {\"u}hrung}{12}{subsubsection.5.2.2}
+\contentsline {subsection}{\numberline {5.3}Kalibrierung}{14}{subsection.5.3}
+\contentsline {subsubsection}{\numberline {5.3.1}Kamerakalibrierung}{14}{subsubsection.5.3.1}
+\contentsline {subsubsection}{\numberline {5.3.2}Kalibrierung des Arbeitsbereichs}{17}{subsubsection.5.3.2}
+\contentsline {subsubsection}{\numberline {5.3.3}Kalibrierungfehler}{17}{subsubsection.5.3.3}
+\contentsline {subsubsection}{\numberline {5.3.4}M\IeC {\"o}gliche Fehlerquellen}{17}{subsubsection.5.3.4}
+\contentsline {section}{\numberline {6}Auswertung}{17}{section.6}
+\contentsline {subsection}{\numberline {6.1}Testing durch unerfahrene Benutzer}{17}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Testing durch Architekten}{17}{subsection.6.2}
+\contentsline {section}{\numberline {7}Zusammenfassung}{17}{section.7}
