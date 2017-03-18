@@ -64,8 +64,9 @@ In Abbildung~\ref{fig:cameraCalib} sind die Zusammenhänge zwischen dem Projekti
 			\label{fig:cameraCalib}
 	\end{figure}
 
-Die Kamerakalibrierung, die diesem Projekt zu Grunde liegt, ist als manuell einzustufen und wird, wenn gewünscht bzw. benötigt zu Beginn der eigentlichen Anwendung durchgeführt. Um die verschiedenen Koordinatensysteme auseinander zu halten, wird zu Beginn eine Notation festgelegt, die in Tabelle~\ref{tab:camCalibParam} eingesehen werden kann. Zusätzlich können in der Tabelle sowohl die einzelnen Koordinatensysteme, als auch die einzelnen Berechnungsschritte der Kamerakalibrierung nachvollzogen werden, die im Folgenden erläutert werden. \\
+Die Kamerakalibrierung, die diesem Projekt zu Grunde liegt, ist als manuell einzustufen und wird, wenn gewünscht bzw. benötigt zu Beginn der eigentlichen Anwendung durchgeführt. Um die verschiedenen Koordinatensysteme auseinander zu halten, wird zu Beginn eine Notation festgelegt, die in Tabelle~\ref{tab:camCalibParam} eingesehen werden kann. Zusätzlich können in der Tabelle sowohl die einzelnen Koordinatensysteme, als auch die einzelnen Berechnungsschritte der Kamerakalibrierung nachvollzogen werden, die im Folgenden erläutert werden. Diese Schritte sind in der rechten Spalte der Tabelle durchnummeriert.\\
 
+Die ersten vier Schritte zur Kamerakalibrierung, die in Tabelle~\ref{tab:camCalibParam} zu sehen sind können alle mit Hilfe der intrinsischen Matrix, die in Formel~\ref{equ:intrinsic} zu sehen ist vollzogen werden. Neben der Bildhauptverschiebung und der Bildebenenverkippung, sorgt diese Matrix dafür, dass  die Linsenverzeichnung und die Projektion vollzogen werden. Dazu muss man ... 
 \begin{equation}
 \label{equ:intrinsic}
 M_{intrinsisch} = 
@@ -116,7 +117,7 @@ R &|& t \\
 
 
 
-\textcolor{red}{DIST auf Null gesetzt.}
+\textcolor{red}{DIST auf Null gesetzt.} \cite{7532899}
 
 
 
@@ -124,36 +125,36 @@ R &|& t \\
 \begin{table}
 	\centering
 	\renewcommand{\arraystretch}{1.4}
-	\begin{tabular}{|c|c|c|c|}
+	\begin{tabular}{|c|c|c|c|c|}
 		\hline
 		\Absatzbox{}
-		& \textbf{Koordinaten} & \textbf{Komponenten}&\textbf{Transformation}\\
+		& \textbf{Koordinaten} & \textbf{Komponenten}&\textbf{Transformation} &\\
 		\hline
-		$\overrightarrow{u}$ & Sensorkoordinaten &$u$,$v$ & \\
+		$\overrightarrow{u}$ & Sensorkoordinaten &$u$,$v$ & &\\
 		\cline{2-4}
-		$\downarrow$ & & & Bildhauptpunktverschiebung\\
+		$\downarrow$ & & & Bildhauptpunktverschiebung& 1\\
 		\cline{2-4}		
-		$\overrightarrow{x}^V$ &Verkippungskoordinaten &$u^V$,$v^V$,$-c^V$& \\
+		$\overrightarrow{x}^V$ &Verkippungskoordinaten &$u^V$,$v^V$,$-c^V$& &\\
 		\cline{2-4}
-		$\downarrow$ & & & Bildebenenverkippung\\
+		$\downarrow$ & & & Bildebenenverkippung& 2\\
 		\cline{2-4}	
-		$\overrightarrow{x}^P_D$ & Verzeichnungskoordinaten &$u^D$,$v^D$,$-c$& \\
+		$\overrightarrow{x}^P_D$ & Verzeichnungskoordinaten &$u^D$,$v^D$,$-c$& &\\
 		\cline{2-4}
-		$\downarrow$ & & & Linsenverzeichnung\\
+		$\downarrow$ & & & Linsenverzeichnung& 3\\
 		\cline{2-4}
-		$\overrightarrow{x}^P_Z$ & Projektionszentrumkoordinaten &$u^Z$,$v^Z$,$-c$& \\
+		$\overrightarrow{x}^P_Z$ & Projektionszentrumkoordinaten &$u^Z$,$v^Z$,$-c$& &\\
 		\cline{2-4}
-		$\downarrow$ & & & Projektion\\
+		$\downarrow$ & & & Projektion &4\\
 		\cline{2-4}
-		$\overrightarrow{x}^P$ & Projektionszentrumkoordinaten &$x^P$,$y^P$,$z^P$& \\
+		$\overrightarrow{x}^P$ & Projektionszentrumkoordinaten &$x^P$,$y^P$,$z^P$& &\\
 		\cline{2-4}
-		$\downarrow$ & & & Koordinatentransformation\\
+		$\downarrow$ & & & Koordinatentransformation& 6\\
 		\cline{2-4}
-		$\overrightarrow{x}$ & Weltkoordinaten &$x$,$y$,$z$& \\
+		$\overrightarrow{x}$ & Weltkoordinaten &$x$,$y$,$z$& & \\
 		\cline{2-4}
-		$\downarrow$ & & & Koordinatentransformation\\
+		$\downarrow$ & & & Koordinatentransformation &7\\
 		\cline{2-4}		
-		$\overrightarrow{x}^U$ & Unitykoordinaten &$x^U$,$y^U$,$z^U$& \\
+		$\overrightarrow{x}^U$ & Unitykoordinaten &$x^U$,$y^U$,$z^U$& &\\
 		\hline
 	\end{tabular}
 	\caption{Parameter und Berechnungsschritte der Kamera Kalibrierung.\cite{Meisel:77890}}
