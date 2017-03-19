@@ -64,9 +64,16 @@ In Abbildung~\ref{fig:cameraCalib} sind die Zusammenhänge zwischen dem Projekti
 			\label{fig:cameraCalib}
 	\end{figure}
 
-Die Kamerakalibrierung, die diesem Projekt zu Grunde liegt, ist als manuell einzustufen und wird, wenn gewünscht bzw. benötigt zu Beginn der eigentlichen Anwendung durchgeführt. Um die verschiedenen Koordinatensysteme auseinander zu halten, wird zu Beginn eine Notation festgelegt, die in Tabelle~\ref{tab:camCalibParam} eingesehen werden kann. Zusätzlich können in der Tabelle sowohl die einzelnen Koordinatensysteme, als auch die einzelnen Berechnungsschritte der Kamerakalibrierung nachvollzogen werden, die im Folgenden erläutert werden. Diese Schritte sind in der rechten Spalte der Tabelle durchnummeriert.\\
+Die Kamerakalibrierung, die diesem Projekt zu Grunde liegt, ist als manuell einzustufen und wird, wenn gewünscht bzw. benötigt zu Beginn der eigentlichen Anwendung durchgeführt. Um die verschiedenen Koordinatensysteme auseinander zu halten, wird zu Beginn eine Notation festgelegt, die in Tabelle~\ref{tab:camCalibParam} eingesehen werden kann. Zusätzlich können in der Tabelle sowohl die einzelnen Koordinatensysteme, als auch die einzelnen Berechnungsschritte der Kamerakalibrierung nachvollzogen werden, die im Folgenden erläutert werden. Diese Schritte sind in der rechten Spalte der Tabelle durchnummeriert, was keine Reihenfolge bei der Durchführung voraussetzen soll.\\
+
+Die einzelnen Schritte aus Tabelle~\ref{tab:camCalibParam} kann man in drei Abschnitte einteilen: 
+
+
+
 
 Die ersten vier Schritte zur Kamerakalibrierung, die in Tabelle~\ref{tab:camCalibParam} zu sehen sind können alle mit Hilfe der intrinsischen Matrix, die in Formel~\ref{equ:intrinsic} zu sehen ist vollzogen werden. Neben der Bildhauptverschiebung und der Bildebenenverkippung, sorgt diese Matrix dafür, dass  die Linsenverzeichnung und die Projektion vollzogen werden. Dazu muss man ... 
+
+
 \begin{equation}
 \label{equ:intrinsic}
 M_{intrinsisch} = 
@@ -102,7 +109,7 @@ t_x & t_y & t_z
 ~ ~ ~ ~ ~t \in \mathbb{R}^{3x1} 
 \end{equation}
 
-
+Homographie reicht nicht aus, weil nicht 2D->3D, sondern 3D nach 3D --> Affine Transformation
 
 \begin{equation}
 \label{equ:extrinsic}
