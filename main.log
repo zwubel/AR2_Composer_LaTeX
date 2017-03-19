@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.16)  19 MAR 2017 15:38
-=======
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.21)  19 MAR 2017 15:05
->>>>>>> 9a14a22be82741646137a6228e5255cb03bac418
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.16)  19 MAR 2017 15:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1284,11 +1280,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 12.
 
-<<<<<<< HEAD
-[4] <Bilder/BinMuster.jpg, id=301, 205.52531pt x 174.07227pt>
-=======
-[4] <Bilder/BinMuster.jpg, id=309, 205.52531pt x 174.07227pt>
->>>>>>> 9a14a22be82741646137a6228e5255cb03bac418
+[4] <Bilder/BinMuster.jpg, id=311, 205.52531pt x 174.07227pt>
 File: Bilder/BinMuster.jpg Graphic file (type jpg)
 
 <use Bilder/BinMuster.jpg>
@@ -1299,11 +1291,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--23
 
  []
 
-<<<<<<< HEAD
-) (./kapitel/PM/pm.tex
-=======
 
->>>>>>> 9a14a22be82741646137a6228e5255cb03bac418
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
@@ -1315,7 +1303,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 23.
 
-[5]) (kapitel/PM/pm.tex
+[5]) (./kapitel/PM/pm.tex
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1407,15 +1395,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 128--130
 
  []
 
-<<<<<<< HEAD
-<Bilder/Aruco_marker.jpg, id=368, 542.7477pt x 344.487pt>
-File: Bilder/Aruco_marker.jpg Graphic file (type jpg)
-
-<use Bilder/Aruco_marker.jpg>
-Package pdftex.def Info: Bilder/Aruco_marker.jpg used on input line 134.
-(pdftex.def)             Requested size: 284.52756pt x 180.6008pt.
-=======
->>>>>>> 9a14a22be82741646137a6228e5255cb03bac418
 
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
@@ -1428,18 +1407,14 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 130.
 
-[9] <Bilder/Aruco_marker.jpg, id=393, 542.7477pt x 344.487pt>
+[9] <Bilder/Aruco_marker.jpg, id=396, 542.7477pt x 344.487pt>
 File: Bilder/Aruco_marker.jpg Graphic file (type jpg)
 
 <use Bilder/Aruco_marker.jpg>
 Package pdftex.def Info: Bilder/Aruco_marker.jpg used on input line 134.
 (pdftex.def)             Requested size: 284.52756pt x 180.6008pt.
 
-<<<<<<< HEAD
-[9] <Bilder/VerschAruco.jpg, id=381, 205.02127pt x 61.50638pt>
-=======
-<Bilder/VerschAruco.jpg, id=394, 205.02127pt x 61.50638pt>
->>>>>>> 9a14a22be82741646137a6228e5255cb03bac418
+<Bilder/VerschAruco.jpg, id=397, 205.02127pt x 61.50638pt>
 File: Bilder/VerschAruco.jpg Graphic file (type jpg)
 
 <use Bilder/VerschAruco.jpg>
@@ -1467,11 +1442,7 @@ Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 151.
 
 [10 <./Bilder/Aruco_marker.jpg> <./Bilder/VerschAruco.jpg>]
-<<<<<<< HEAD
-<Bilder/tracking-marker.jpg, id=391, 3131.7pt x 4175.6pt>
-=======
-<Bilder/tracking-marker.jpg, id=407, 3131.7pt x 4175.6pt>
->>>>>>> 9a14a22be82741646137a6228e5255cb03bac418
+<Bilder/tracking-marker.jpg, id=410, 3131.7pt x 4175.6pt>
 File: Bilder/tracking-marker.jpg Graphic file (type jpg)
 
 <use Bilder/tracking-marker.jpg>
@@ -1494,16 +1465,12 @@ Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 165.
 
 [11 <./Bilder/tracking-marker.jpg>]
-<<<<<<< HEAD
-<Bilder/leap-motion.png, id=405, 273.02pt x 258.46562pt>
-=======
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 171.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 171.
 
-<Bilder/leap-motion.png, id=421, 273.02pt x 258.46562pt>
->>>>>>> 9a14a22be82741646137a6228e5255cb03bac418
+<Bilder/leap-motion.png, id=424, 273.02pt x 258.46562pt>
 File: Bilder/leap-motion.png Graphic file (type png)
 
 <use Bilder/leap-motion.png>
@@ -1595,22 +1562,14 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 3.
 
-<<<<<<< HEAD
-<Bilder/Aufbau_MArC.jpg, id=456, 1657.392pt x 793.5246pt>
-=======
-<Bilder/Aufbau_MArC.jpg, id=471, 1657.392pt x 793.5246pt>
->>>>>>> 9a14a22be82741646137a6228e5255cb03bac418
+<Bilder/Aufbau_MArC.jpg, id=475, 1657.392pt x 793.5246pt>
 File: Bilder/Aufbau_MArC.jpg Graphic file (type jpg)
 
 <use Bilder/Aufbau_MArC.jpg>
 Package pdftex.def Info: Bilder/Aufbau_MArC.jpg used on input line 6.
 (pdftex.def)             Requested size: 426.79135pt x 204.33789pt.
 
-<<<<<<< HEAD
-<Bilder/CalibController.jpg, id=457, 701.5008pt x 401.3394pt>
-=======
-<Bilder/CalibController.jpg, id=472, 701.5008pt x 401.3394pt>
->>>>>>> 9a14a22be82741646137a6228e5255cb03bac418
+<Bilder/CalibController.jpg, id=476, 701.5008pt x 401.3394pt>
 File: Bilder/CalibController.jpg Graphic file (type jpg)
 
 <use Bilder/CalibController.jpg>
@@ -1666,11 +1625,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 38.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 38.
-<<<<<<< HEAD
- <kapitel/system/MP_Menu_Flowchart.pdf, id=477, 597.23125pt x 845.1575pt>
-=======
- <kapitel/system/MP_Menu_Flowchart.pdf, id=492, 597.23125pt x 845.1575pt>
->>>>>>> 9a14a22be82741646137a6228e5255cb03bac418
+ <kapitel/system/MP_Menu_Flowchart.pdf, id=496, 597.23125pt x 845.1575pt>
 File: kapitel/system/MP_Menu_Flowchart.pdf Graphic file (type pdf)
 
 <use kapitel/system/MP_Menu_Flowchart.pdf>
@@ -1757,11 +1712,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 80.
 
-<<<<<<< HEAD
-[19] <Bilder/cameraCalib.jpg, id=518, 1867.97874pt x 1188.44pt>
-=======
-[19] <Bilder/cameraCalib.jpg, id=533, 1867.97874pt x 1188.44pt>
->>>>>>> 9a14a22be82741646137a6228e5255cb03bac418
+[19] <Bilder/cameraCalib.jpg, id=537, 1867.97874pt x 1188.44pt>
 File: Bilder/cameraCalib.jpg Graphic file (type jpg)
 
 <use Bilder/cameraCalib.jpg>
@@ -1781,7 +1732,6 @@ Overfull \hbox (32.87944pt too wide) in paragraph at lines 93--125
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-<<<<<<< HEAD
 (babel)             in language  on input line 132.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 132.
@@ -1793,26 +1743,12 @@ Package babel Info: Redefining ngerman shorthand "~
 [20 <./Bilder/cameraCalib.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 155--156
 
-=======
-(babel)             in language  on input line 107.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 107.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 107.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 107.
-
-[20 <./Bilder/cameraCalib.jpg>]
-Overfull \hbox (50.753pt too wide) in paragraph at lines 156--188
- [][] 
->>>>>>> 9a14a22be82741646137a6228e5255cb03bac418
  []
 
 
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-<<<<<<< HEAD
 (babel)             in language  on input line 158.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 158.
@@ -1835,20 +1771,6 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 234.
 ) (./kapitel/auswertung/auswertung.tex
-=======
-(babel)             in language  on input line 192.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 192.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 193.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 193.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 194.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 194.
-) (kapitel/auswertung/auswertung.tex
->>>>>>> 9a14a22be82741646137a6228e5255cb03bac418
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1910,33 +1832,25 @@ ontroller-[]work/$[][]\T1/cmr/m/n/12 .
  []
 
 
-<<<<<<< HEAD
-Underfull \hbox (badness 4995) in paragraph at lines 85--89
-=======
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 94.
+(babel)             in language  on input line 100.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 94.
+(babel)             in language  on input line 100.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 94.
+(babel)             in language  on input line 100.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 94.
+(babel)             in language  on input line 100.
 
-[23]
-Underfull \hbox (badness 4995) in paragraph at lines 122--126
->>>>>>> 9a14a22be82741646137a6228e5255cb03bac418
+[24]
+Underfull \hbox (badness 4995) in paragraph at lines 109--113
 []\T1/cmr/m/n/12 Mobile World Con-gress.  Mo-bi-le World Con-gress.  [][]$\T1/c
 mtt/m/n/12 https : / / www .
  []
 
 
-<<<<<<< HEAD
-Underfull \hbox (badness 3568) in paragraph at lines 91--96
-=======
-Underfull \hbox (badness 3568) in paragraph at lines 128--133
->>>>>>> 9a14a22be82741646137a6228e5255cb03bac418
+Underfull \hbox (badness 3568) in paragraph at lines 115--120
 []\T1/cmr/m/n/12 Oculus.  Ocu-lus -- Uni-ty In-tro.  [][]$\T1/cmtt/m/n/12 https
  : / / developer3 . oculus . com /
  []
@@ -1945,15 +1859,15 @@ Underfull \hbox (badness 3568) in paragraph at lines 128--133
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 189.
+(babel)             in language  on input line 195.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 189.
+(babel)             in language  on input line 195.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 189.
+(babel)             in language  on input line 195.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 189.
+(babel)             in language  on input line 195.
 
-[24])
+[25])
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
@@ -1965,29 +1879,20 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 80.
 
-[25]
-<<<<<<< HEAD
+[26]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 80.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 80.
  (./main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 80.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 80.
-=======
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 78.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 78.
- (main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 78.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 78.
->>>>>>> 9a14a22be82741646137a6228e5255cb03bac418
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 8355C38DB667F7ED8E5A3D31F5E72B1E;3715.
  ) 
 Here is how much of TeX's memory you used:
-<<<<<<< HEAD
- 21365 strings out of 493089
- 384365 string characters out of 6134842
- 482122 words of memory out of 5000000
- 24234 multiletter control sequences out of 15000+600000
+ 21402 strings out of 493089
+ 385613 string characters out of 6134842
+ 482266 words of memory out of 5000000
+ 24261 multiletter control sequences out of 15000+600000
  18433 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,22n,92p,1164b,613s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2013,46 +1918,10 @@ e/2015/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/
 exmf-dist/fonts/type1/public/cm-super/sfsl1200.pfb></usr/local/texlive/2015/tex
 mf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2015/texmf
 -dist/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on main.pdf (25 pages, 5031774 bytes).
+Output written on main.pdf (26 pages, 5042476 bytes).
 PDF statistics:
- 703 PDF objects out of 1000 (max. 8388607)
- 628 compressed objects within 7 object streams
- 145 named destinations out of 1000 (max. 500000)
-=======
- 21684 strings out of 493366
- 394516 string characters out of 3131358
- 486326 words of memory out of 3000000
- 24578 multiletter control sequences out of 15000+200000
- 18433 words of font info for 47 fonts, out of 3000000 for 9000
- 1127 hyphenation exceptions out of 8191
- 62i,22n,92p,1166b,611s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\Vera\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\e
-ctt1200.pk> <C:\Users\Vera\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec
-\dpi600\ecrm0800.pk> <C:\Users\Vera\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jk
-nappen\ec\dpi600\ecti1200.pk> <C:\Users\Vera\AppData\Local\MiKTeX\2.9\fonts\pk\
-ljfour\jknappen\ec\dpi600\ecbx1440.pk> <C:\Users\Vera\AppData\Local\MiKTeX\2.9\
-fonts\pk\ljfour\jknappen\ec\dpi600\ecsl1200.pk> <C:\Users\Vera\AppData\Local\Mi
-KTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk> <C:\Users\Vera\AppData
-\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk> <C:\Users\Ver
-a\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1728.pk> <C:\
-Users\Vera\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx2488
-.pk><C:/Users/Vera/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfont
-s/cm/cmbx12.pfb><C:/Users/Vera/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/cm/cmex10.pfb><C:/Users/Vera/AppData/Local/Programs/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Vera/AppData/Local/Programs/M
-iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Vera/AppData/Local
-/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Vera/Ap
-pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Us
-ers/Vera/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.
-pfb><C:/Users/Vera/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfont
-s/cm/cmsy10.pfb><C:/Users/Vera/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/cm/cmsy8.pfb><C:/Users/Vera/AppData/Local/Programs/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/Vera/AppData/Local/Programs/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (25 pages, 5059430 bytes).
-PDF statistics:
- 1113 PDF objects out of 1200 (max. 8388607)
- 151 named destinations out of 1000 (max. 500000)
->>>>>>> 9a14a22be82741646137a6228e5255cb03bac418
+ 727 PDF objects out of 1000 (max. 8388607)
+ 651 compressed objects within 7 object streams
+ 155 named destinations out of 1000 (max. 500000)
  491 words of extra memory for PDF output out of 10000 (max. 10000000)
 
