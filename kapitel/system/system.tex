@@ -1,3 +1,4 @@
+
 \section{System}\todo[inline]{Lukas}
 Die Benutzung von \textit{MArC} ist in der dem Programm mitgelieferten ReadMe-Datei beschrieben. Darin wird erklärt, welche Hard- und Software komponenten erforderlich sind, wie das System gestartet und kalibriert wird. Des weiteren enthält die ReadMe eine Übersicht über die enthaltenen Quellcode-Dateien.
 \subsection{Aufbau}\label{sec:Aufbau}\todo[inline]{Lukas und Vera}
@@ -11,7 +12,7 @@ Die Benutzung von \textit{MArC} ist in der dem Programm mitgelieferten ReadMe-Da
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=4in]{Bilder/CalibController.jpg}
-	\caption{Kalibrirungscontroller des \textit{MArC} System mit ArUco Marker.}
+	\caption{Kalibrierungscontroller des \textit{MArC} System mit ArUco Marker.}
 	\label{fig:KontrollerMarc}
 \end{figure}
 
@@ -34,6 +35,7 @@ Die folgenden Menüs sind Bestandteil der Menüführung:\todo[inline]{Screenshot
 	\item[\texttt{SocketNotReady}:] Warnt den Benutzer nach dem Verlassen des \texttt{Welcome}-Menüs, dass die Netzwerkverbindung zum Computer, auf dem die Tracking-Anwendung ausgeführt wird, nicht bereit ist. Nach Bestätigung dieses Hinweises durch einen Klick auf \texttt{Continue}, kehrt der Benutzer zum \texttt{Welcome}-Menü zurück. Anschließend kann der Vorgang fortgesetzt werden, wenn die Netzwerkverbindung hergestellt wurde. Andernfalls erscheint wieder \texttt{SocketNotReady}.
 	\item[\texttt{Welcome}:] Erscheint als erstes Menü. Hier erhält der Nutzer eine kurze Information darüber, wie die Anwendung heißt und wozu sie dient.
 \end{description}
+
 
 \subsubsection{Ablauf der Menüführung}\label{sec:menuAblauf}\todo[inline]{Lukas}
 Der Ablauf der Menüführung von \textit{MArC} ist in Abbildung~\ref{fig:menuFlow} dargestellt. Die einzelnen Menüs sind bereits in~\ref{sec:menus} beschrieben worden.
@@ -74,6 +76,7 @@ Sofern der HTC Vive Controller beim Aufruf von \texttt{doPlane\-Calibration\-InV
 \subsubsection{ArUco Marker Tracking}\todo[inline]{Vera}
 \subsubsection{Marker Objekt}\todo[inline]{Vera}
 \subsubsection{Zuordnung der Identitäten}\todo[inline]{Vera}
+
 
 
 \subsection{Kalibrierung}\label{sec:calib}\todo[inline]{Laura}
@@ -226,8 +229,6 @@ Die Umrechnung von Sensorkoordinaten in Weltkoordinaten kann dann mit der invert
 \overrightarrow{x} = M^{-1} \cdot \overrightarrow{u}
 \end{equation}
 
-
-
 \textcolor{red}{Umrechnung in Unitykoordinaten fehlt noch}
 %SCHRITT 3:Homographie reicht nicht aus, weil nicht 2D->3D, sondern 3D nach 3D --> Affine Transformation
 
@@ -235,12 +236,9 @@ Die Umrechnung von Sensorkoordinaten in Weltkoordinaten kann dann mit der invert
 
 
 
-
-	
-
-
 \subsubsection{Kalibrierung des Arbeitsbereichs}\label{sec:planeCalib} \todo[inline]{Laura}
 \subsubsection{Kalibrierungfehler} \label{sec:calibError}\todo[inline]{Laura}
 \subsubsection{Mögliche Fehlerquellen} \label{sec:calibErrorSources}\todo[inline]{Laura}
+
 
 
