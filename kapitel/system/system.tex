@@ -1,5 +1,5 @@
 \section{System}
-Die Benutzung von MArC ist in der dem Programm mitgelieferten ReadMe-Datei beschrieben. Darin wird erklärt, welche Hard- und Software komponenten erforderlich sind, wie das System gestartet und kalibriert wird. Des weiteren enthält die ReadMe eine Übersicht über die enthaltenen Quellcode-Dateien.
+Die Benutzung von \textit{MArC} ist in der dem Programm mitgelieferten ReadMe-Datei beschrieben. Darin wird erklärt, welche Hard- und Software komponenten erforderlich sind, wie das System gestartet und kalibriert wird. Des weiteren enthält die ReadMe eine Übersicht über die enthaltenen Quellcode-Dateien.
 \subsection{Aufbau}\label{sec:Aufbau}
 \begin{figure}[H]
 	\centering
@@ -36,7 +36,7 @@ Die folgenden Menüs sind Bestandteil der Menüführung:\todo[inline]{Screenshot
 \end{description}
 
 \subsubsection{Ablauf der Menüführung}\label{sec:menuAblauf}
-Der Ablauf der Menüführung von MArC ist in Abbildung~\ref{fig:menuFlow} dargestellt. Die einzelnen Menüs sind bereits in~\ref{sec:menus} beschrieben worden.
+Der Ablauf der Menüführung von \textit{MArC} ist in Abbildung~\ref{fig:menuFlow} dargestellt. Die einzelnen Menüs sind bereits in~\ref{sec:menus} beschrieben worden.
 
 \begin{figure}[htbp]
 	\centering
@@ -67,7 +67,7 @@ Sofern der HTC Vive Controller beim Aufruf von \texttt{doPlane\-Calibration\-InV
 
 
 \subsection{Kalibrierung}\label{sec:calib}
-Um das Ziel von MArC zu erreichen, an den Positionen der Aluminiumwürfel im Arbeitsbereich in der virtuellen Realität von Unity gerenderte Würfel darzustellen, muss das System kalibriert werden. Die Kalibrierung hat zum Ziel, eine Koordinatentransformation zu finden, die Positionen im Kamera-Koordinatensystem in das Unity-Koordinatensystem transformiert.
+Um das Ziel von \textit{MArC} zu erreichen, an den Positionen der Aluminiumwürfel im Arbeitsbereich in der virtuellen Realität von Unity gerenderte Würfel darzustellen, muss das System kalibriert werden. Die Kalibrierung hat zum Ziel, eine Koordinatentransformation zu finden, die Positionen im Kamera-Koordinatensystem in das Unity-Koordinatensystem transformiert.
 
 Zu diesem Zweck muss eine zweistufige Kalibrierung durchgeführt werden. Zunächst sorgt die Kamerakalibrierung dafür, dass Bildkoordinaten auf dem Sensor der Kamera in das 3D-Kamera-Koordinatensystem transformiert werden. Dafür wird sich einiger OpenCV-Funktionen in Verbindung mit AruCo-Markern bedient. Dieser Vorgang wird nachfolgend in~\ref{sec:camCalib} genauer beschrieben.\\
 Der nächste Schritt, die Kalibrierung des Arbeitsbereichs, bestimmt über Punkt-Korrespondenzen -- also in zwei verschiedenen Koordinatensystemen bekannte Punkte -- eine affine 3D-Transformation, welche die Abbildung vom Kamera-Koordinaten\-system auf das Unity-Koordinatensystem ermöglicht. Dieser Kalibrierungsschritt wird nachfolgend in~\ref{sec:planeCalib} näher beschrieben.\\
@@ -76,7 +76,7 @@ Trotz einer sorgfältigen Umsetzung der in den nächsten beiden Kapiteln beschri
 \subsubsection{Kamerakalibrierung}\label{sec:camCalib}
 
 Es gibt viele verschiedene wissenschaftliche Ausführungen über die Durchführung einer Kamerakalibrierung, wie z.B. \cite{5982395}, \cite{888718} und \cite{faugeras1993three}. Dabei unterscheidet man häufig zwischen automatischen und manuellen Kalibrierungen. \\
-In Abbildung~\ref{fig:cameraCalib} sind die Zusammenhänge zwischen dem Projektionszentrumkoordinatensystem der Kamera, sowie deren Bildebene und dem Weltkoordinatensystem zu sehen. Im Gegensatz zu der Abbildung und den erwähnten Kalibrierungsansätzen reicht die Umrechnung von Bildkoordinaten in Weltkoordinaten nicht aus. Es muss eine Umrechnung der Bildkoordinaten in den Unity Raum erfolgen, um zu gewährleisten, dass die gerenderten Würfel nachher deckungsgleich mit den Aluminiumwürfeln sind. Koordinaten des Unity Raumes werden im Folgenden Unitykoordinaten genannt.\\
+In Abbildung~\ref{fig:cameraCalib} sind die Zusammenhänge zwischen dem Projektionszentrumkoordinatensystem der Kamera, sowie deren Bildebene und dem Weltkoordinatensystem zu sehen. Im Gegensatz zu der Abbildung und den erwähnten Kalibrierungsansätzen reicht die Umrechnung von Bildkoordinaten in Weltkoordinaten, im vorliegenden Fall, nicht aus. Es muss eine Umrechnung der Bildkoordinaten in den Unity Raum erfolgen, um zu gewährleisten, dass die gerenderten Würfel anschließend deckungsgleich mit den Aluminiumwürfeln sind. Koordinaten des Unity Raumes werden im Folgenden Unitykoordinaten genannt.\\
 
 \begin{figure}[H]
 		\centering
@@ -85,26 +85,104 @@ In Abbildung~\ref{fig:cameraCalib} sind die Zusammenhänge zwischen dem Projekti
 			\label{fig:cameraCalib}
 	\end{figure}
 
-Die Kamerakalibrierung, die diesem Projekt zu Grunde liegt, ist als manuell einzustufen und wird, wenn gewünscht bzw. benötigt zu Beginn der eigentlichen Anwendung durchgeführt. Um die verschiedenen Koordinatensysteme auseinander zu halten, wird zu Beginn eine Notation festgelegt, die in Tabelle~\ref{tab:camCalibParam} eingesehen werden kann. Zusätzlich können in der Tabelle sowohl die einzelnen Koordinatensysteme, als auch die einzelnen Berechnungsschritte der Kamerakalibrierung nachvollzogen werden, die im Folgenden erläutert werden. Diese Schritte sind in der rechten Spalte der Tabelle durchnummeriert, was keine Reihenfolge bei der Durchführung voraussetzen soll.\\
+Die Kamerakalibrierung, die diesem Projekt zu Grunde liegt, ist als manuell einzustufen und kann, wenn gewünscht bzw. benötigt, zu Beginn der eigentlichen Anwendung durchgeführt werden. Um die verschiedenen Koordinatensysteme auseinander zu halten, wird zu Beginn eine Notation festgelegt, die in Tabelle~\ref{tab:camCalibParam} eingesehen werden kann. Zusätzlich können in der Tabelle sowohl die einzelnen Koordinatensysteme, als auch die einzelnen Berechnungsschritte der Kamerakalibrierung nachvollzogen werden, die im Folgenden erläutert werden. Lässt man die ersten zwei Zeilen der Tabelle weg, so ist eine Transformation von Weltkoordinaten $\overrightarrow{x}$ in Sensorkoordinaten $\overrightarrow{u}$ schematisch dargestellt. Dieses Schema muss für die Kamerkalibrierung von \textit{MaRC} invertiert werden und um die Koordinatentransformation in Unitykoordinaten ergänzt werden.  \\
 
-Die einzelnen Schritte aus Tabelle~\ref{tab:camCalibParam} kann man in drei Abschnitte einteilen: 
+\begin{table}
+	\centering
+	\renewcommand{\arraystretch}{1.4}
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		\Absatzbox{}
+		& \textbf{Koordinaten} & \textbf{Komponenten}&\textbf{Transformation}\\
+		\hline
+		$\overrightarrow{x}^U$ & Unitykoordinaten &$x^U$,$y^U$,$z^U$& \\
+		\cline{2-4}
+		$\downarrow$ & & & Koordinatentransformation\\
+		\cline{2-4}
+		$\overrightarrow{x}$ & Weltkoordinaten &$x$,$y$,$z$&  \\
+		\cline{2-4}
+		$\downarrow$ & & & Koordinatentransformation\\
+		\cline{2-4}
+		$\overrightarrow{x}^P$ & Projektionszentrumkoordinaten &$x^P$,$y^P$,$z^P$& \\
+		\cline{2-4}
+		$\downarrow$ & & & Projektion \\
+		\cline{2-4}
+		$\overrightarrow{x}^P_Z$ & Projektionszentrumkoordinaten &$u^Z$,$v^Z$,$-c$& \\
+		\cline{2-4}
+		$\downarrow$ & & & Linsenverzeichnung\\
+		\cline{2-4}	
+		$\overrightarrow{x}^P_D$ & Verzeichnungskoordinaten &$u^D$,$v^D$,$-c$& \\
+		\cline{2-4}
+		$\downarrow$ & & & Bildebenenverkippung\\
+		\cline{2-4}		
+		$\overrightarrow{x}^V$ &Verkippungskoordinaten &$u^V$,$v^V$,$-c^V$& \\
+		\cline{2-4}
+		$\downarrow$ & & & Bildhauptpunktverschiebung\\
+		\cline{2-4}	
+		$\overrightarrow{u}$ & Sensorkoordinaten &$u$,$v$ & \\
+		\hline
+	\end{tabular}
+	\caption{Parameter und Berechnungsschritte der Kamera Kalibrierung.\cite{Meisel:77890}}
+	\label{tab:camCalibParam}
+\end{table}
 
+Die einzelnen Schritte aus Tabelle~\ref{tab:camCalibParam} kann man in vier Abschnitte einteilen: \\
+Im ersten Abschnitt wird der Hauptpunkt so versetzt, dass der Koordinatenursprung des Kamerakoordinatensystems mit dem Bildkoordinatensystem übereinstimmt. Dies geschieht, indem man für die eine Achse $u^V = u - \Delta u$ und für die andere Achse entsprechend $v^V = v - \Delta v$ berechnet.\\
+Zusätzlich wird die Bildebene verkippt, so dass gilt $\overrightarrow{x}^V = R_v \cdot \overrightarrow{x}^P_D$. Bezeichnet $\varphi$ den Drehwinkel um die $x^P$-Achse und $\vartheta$ den Drehwinkel um die $y^{P'}$-Achse, so lässt sich $R_v$ wie folgt berechnen:
 
+\begin{equation}
+\label{equ:Rverkippt}
+R_v = 
+\begin{pmatrix}
+r_{v11} & r_{v12} & r_{v13} \\
+r_{v21} & r_{v22} & r_{v23} \\
+r_{v31} & r_{v32} & r_{v33} \\
+\end{pmatrix} = 
+\begin{pmatrix}
+cos\vartheta & sin\vartheta sin\varphi & -sin\vartheta cos\varphi \\
+0 & cos\varphi & sin\varphi\\
+sin\vartheta & -cos\vartheta sin\varphi & cos\vartheta cos\varphi \\
+\end{pmatrix} 
+~ ~ ~ ~ ~R_v \in \mathbb{R}^{3x3}
+\end{equation}
 
+Die negative verkippte Kamerakonstante $-c^V$ berechnet sich wie in~\citep{Meisel:77890} beschrieben nach der Formel:
 
-Die ersten vier Schritte zur Kamerakalibrierung, die in Tabelle~\ref{tab:camCalibParam} zu sehen sind können alle mit Hilfe der intrinsischen Matrix, die in Formel~\ref{equ:intrinsic} zu sehen ist vollzogen werden. Neben der Bildhauptverschiebung und der Bildebenenverkippung, sorgt diese Matrix dafür, dass  die Linsenverzeichnung und die Projektion vollzogen werden. Dazu muss man ... 
+\begin{equation}
+-c^V = - \frac{c+u^V \cdot r_{v13} + v^V \cdot r_{v23}}{r_{v33}}
+\end{equation}
 
+Im zweiten Schritt wird im Allgemeinem die Linsenverzeichnung herausgerechnet. Im vorliegenden Fall wurde bewusst auf diesen Schritt verzichtet und die zugehörigen Entzerrungskoeffizienten werden für alle weiteren Berechnungen auf null gesetzt. \textcolor{red}{Begründung??} \\
+
+Weil wie bereits beschrieben, die Linsenverzeichnung vernachlässigt wurde, kann man Schritt 1 und 2 zusammenfassen und vereinfacht darstellen. Dieser erste Schritt, also die Hauptpunktverschiebung und Bildebenenverkippung, lässt sich mit Hilfe der intrinsischen Kameramatrix $M_{intrinsisch}$ zusammenfassen. Diese beinhaltet neben der neben den Brennweiten $f_u$ und $f_v$ noch die Koordinaten des Hauptpunktes $u^V$ und $v^V$ in Bildkoordinaten.
 
 \begin{equation}
 \label{equ:intrinsic}
 M_{intrinsisch} = 
 \begin{pmatrix}
-f & 0 & 0 & p_u \\
-0 & f & 0 & p_v \\
+f_u & 0 & 0 & u^V \\
+0 & f_v & 0 & v^V\\
 0 & 0 & 1 & 0 \\
 \end{pmatrix} 
 ~ ~ ~ ~ ~M_{intrinsisch} \in \mathbb{R}^{3x4}
 \end{equation}
+
+
+Zu diesem Zeitpunkt sollte nun das Kamerakoordinatensystem mit dem Weltkoordinatensystem übereinstimmen und es kann sich im nächsten Schritt darum gekümmert werden, dass das Kamerakoordinatensystem verschoben und gedreht wird.
+
+
+
+
+
+Multipliziert man einen Punkt in Weltkoordinaten mit $M_{intrinsisch}$, so erhält man seine entsprechenden Bildkoordinaten, d.h. 
+
+Die Linsenverzeichnung die in Schritt 3 aufgeführt ist, kann als zweiter Abschnitt angesehen werden. Im vorliegenden Fall wird gänzlich auf diesen Schritt verzichtet 
+
+
+
+
+
+
 
 
 
@@ -150,44 +228,7 @@ R &|& t \\
 
 
 	
-\begin{table}
-	\centering
-	\renewcommand{\arraystretch}{1.4}
-	\begin{tabular}{|c|c|c|c|c|}
-		\hline
-		\Absatzbox{}
-		& \textbf{Koordinaten} & \textbf{Komponenten}&\textbf{Transformation} &\\
-		\hline
-		$\overrightarrow{u}$ & Sensorkoordinaten &$u$,$v$ & &\\
-		\cline{2-4}
-		$\downarrow$ & & & Bildhauptpunktverschiebung& 1\\
-		\cline{2-4}		
-		$\overrightarrow{x}^V$ &Verkippungskoordinaten &$u^V$,$v^V$,$-c^V$& &\\
-		\cline{2-4}
-		$\downarrow$ & & & Bildebenenverkippung& 2\\
-		\cline{2-4}	
-		$\overrightarrow{x}^P_D$ & Verzeichnungskoordinaten &$u^D$,$v^D$,$-c$& &\\
-		\cline{2-4}
-		$\downarrow$ & & & Linsenverzeichnung& 3\\
-		\cline{2-4}
-		$\overrightarrow{x}^P_Z$ & Projektionszentrumkoordinaten &$u^Z$,$v^Z$,$-c$& &\\
-		\cline{2-4}
-		$\downarrow$ & & & Projektion &4\\
-		\cline{2-4}
-		$\overrightarrow{x}^P$ & Projektionszentrumkoordinaten &$x^P$,$y^P$,$z^P$& &\\
-		\cline{2-4}
-		$\downarrow$ & & & Koordinatentransformation& 6\\
-		\cline{2-4}
-		$\overrightarrow{x}$ & Weltkoordinaten &$x$,$y$,$z$& & \\
-		\cline{2-4}
-		$\downarrow$ & & & Koordinatentransformation &7\\
-		\cline{2-4}		
-		$\overrightarrow{x}^U$ & Unitykoordinaten &$x^U$,$y^U$,$z^U$& &\\
-		\hline
-	\end{tabular}
-	\caption{Parameter und Berechnungsschritte der Kamera Kalibrierung.\cite{Meisel:77890}}
-	\label{tab:camCalibParam}
-\end{table}
+
 
 \subsubsection{Kalibrierung des Arbeitsbereichs}\label{sec:planeCalib}
 \subsubsection{Kalibrierungfehler} \label{sec:calibError}
