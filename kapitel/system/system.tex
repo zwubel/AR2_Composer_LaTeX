@@ -22,19 +22,118 @@ Nachdem sichergestellt wurde, dass alle in der ReadMe-Datei beschriebenen Voraus
 \subsection{Menüführung}\label{sec:menu}\todo[inline]{Lukas}
 Die Menüführung dient dazu, den Benutzer durch alle notwendigen Schritte zu leiten, die vor dem Starten der eigentlichen Simulation erforderlich sind. Im nachfolgenden Abschnitt~\ref{sec:menus} werden alle verfügbaren Menüs der Anwendung aufgelistet und kurz beschrieben, während im Abschnitt~\ref{sec:menuAblauf} der Ablauf der Menüführung erläutert wird.
 
-\subsubsection{Menüs}\label{sec:menus}\todo[inline]{Lukas}
-Die folgenden Menüs sind Bestandteil der Menüführung:\todo[inline]{Screenshots der Menüs einfügen?}\todo[inline]{Laura}
-\begin{description}
-	\item[\texttt{CalibDone}:] Wird aufgerufen, wenn die Kalibrierung des Arbeitsbereichs abgeschlossen ist. Es informiert den Benutzer, dass die Kalibrierung erfolgreich war und der Vorgang fortgesetzt werden kann.
-	\item[\texttt{CalibrateOrNot}:] Erscheint nach dem Verlassen des \texttt{Welcome}-Menüs und erlaubt dem Benutzer eine Kalibrierung durchzuführen oder eine bereits durchgeführte Kalibrierung zu laden.
-	\item[\texttt{ControllerNotFound}:] Warnt den Benutzer nach dem Starten der Kalibrierung, dass der HTC Vive Controller, welcher für die Kalibrierung benötigt wird, nicht eingeschaltet ist. Während das Menü angezeigt wird, kann der Benutzer den Controller einschalten und anschließend auf \texttt{Continue} klicken.
-	\item[\texttt{doPlaneCalibInVS}:] Dient dem Benutzer als Anleitung für die Durchführung der Arbeitsbereich-Kalibrierung. Diese wird in \ref{sec:planeCalib} genauer beschrieben.
-	\item[\texttt{doPoseCalibInVS}:] Dient dem Benutzer als Anleitung für die Durchführung der Kamera-Kalibrierung. Diese wird in \ref{sec:camCalib} genauer beschrieben.
-	\item[\texttt{SelectCalibrationTarget}:] Erlaubt die Auswahl der Art der Kalibrierung. Es kann hier entweder nur der Arbeitsbereich oder sowohl der Arbeitsbereich, als auch die Kamera kalibriert werden. Die Kalibrierung ist näher in \ref{sec:calib} beschrieben.
-	\item[\texttt{SetScale}:] Stellt das letzte Menü vor dem Starten der Simulation dar. In diesem kann der Benutzer den Maßstab der Gebäudesimulation einstellen und anschließend die Simulation starten.
-	\item[\texttt{SocketNotReady}:] Warnt den Benutzer nach dem Verlassen des \texttt{Welcome}-Menüs, dass die Netzwerkverbindung zum Computer, auf dem die Tracking-Anwendung ausgeführt wird, nicht bereit ist. Nach Bestätigung dieses Hinweises durch einen Klick auf \texttt{Continue}, kehrt der Benutzer zum \texttt{Welcome}-Menü zurück. Anschließend kann der Vorgang fortgesetzt werden, wenn die Netzwerkverbindung hergestellt wurde. Andernfalls erscheint wieder \texttt{SocketNotReady}.
-	\item[\texttt{Welcome}:] Erscheint als erstes Menü. Hier erhält der Nutzer eine kurze Information darüber, wie die Anwendung heißt und wozu sie dient.
-\end{description}
+\subsubsection{Menüs}\label{sec:menus}\todo[inline]{Laura}
+Die folgenden Menüs sind Bestandteil der Menüführung:
+
+\begin{minipage}{0.6\textwidth}
+	\begin{figure}[H] 
+		\includegraphics[width=0.9\textwidth]{Bilder/CalibDone.jpg}
+			\label{fig:CalibDone}
+	\end{figure}
+\end{minipage}
+\begin{minipage}{0.4\textwidth}
+	\texttt{CalibDone}:\\
+	Wird aufgerufen, wenn die Kalibrierung des Arbeitsbereichs abgeschlossen ist. Es informiert den Benutzer, dass die Kalibrierung erfolgreich war und der Vorgang fortgesetzt werden kann.
+\end{minipage}\\
+
+\begin{minipage}{0.6\textwidth}
+	\begin{figure}[H] 
+		\includegraphics[width=0.9\textwidth]{Bilder/CalibrateOrNot.jpg}
+			\label{fig:CalibrateOrNot}
+	\end{figure}
+\end{minipage}
+\begin{minipage}{0.4\textwidth}
+	\texttt{CalibrateOrNot}:\\
+	Erscheint nach dem Verlassen des \texttt{Welcome}-Menüs und erlaubt dem Benutzer eine Kalibrierung durchzuführen oder eine bereits durchgeführte Kalibrierung zu laden.
+\end{minipage}\\
+
+\begin{minipage}{0.6\textwidth}
+	\begin{figure}[H] 
+		\includegraphics[width=0.9\textwidth]{Bilder/ControllerNotFound.jpg}
+			\label{fig:ControllerNotFound}
+	\end{figure}
+\end{minipage}
+\begin{minipage}{0.4\textwidth}
+	\texttt{ControllerNotFound}:\\
+	Warnt den Benutzer nach dem Starten der Kalibrierung, dass der HTC Vive Controller, welcher für die Kalibrierung benötigt wird, nicht eingeschaltet ist. Während das Menü angezeigt wird, kann der Benutzer den Controller einschalten und anschließend auf \texttt{Continue} klicken.
+\end{minipage}\\
+
+\begin{minipage}{0.6\textwidth}
+	\begin{figure}[H] 
+		\includegraphics[width=0.9\textwidth]{Bilder/doPlaneCalibInVS.jpg}
+			\label{fig:doPlaneCalibInVS}
+	\end{figure}
+\end{minipage}
+\begin{minipage}{0.4\textwidth}
+	\texttt{doPlaneCalibInVS}:\\
+	Dient dem Benutzer als Anleitung für die Durchführung der Arbeitsbereich-Kalibrierung. Diese wird in \ref{sec:planeCalib} genauer beschrieben.
+\end{minipage}\\
+
+\begin{minipage}{0.6\textwidth}
+	\begin{figure}[H] 
+		\includegraphics[width=0.9\textwidth]{Bilder/doPoseCalibInVS.jpg}
+			\label{fig:doPoseCalibInVS}
+	\end{figure}
+\end{minipage}
+\begin{minipage}{0.4\textwidth}
+	\texttt{doPoseCalibInVS}:\\
+	Dient dem Benutzer als Anleitung für die Durchführung der Kamera-Kalibrierung. Diese wird in \ref{sec:camCalib} genauer beschrieben.
+\end{minipage}\\
+
+\begin{minipage}{0.6\textwidth}
+	\begin{figure}[H] 
+		\includegraphics[width=0.9\textwidth]{Bilder/SelectCalibrationTarget.jpg}
+			\label{fig:SelectCalibrationTarget}
+	\end{figure}
+\end{minipage}
+\begin{minipage}{0.4\textwidth}
+	\texttt{SelectCalibrationTarget}:\\
+	Erlaubt die Auswahl der Art der Kalibrierung. Es kann hier entweder nur der Arbeitsbereich oder sowohl der Arbeitsbereich, als auch die Kamera kalibriert werden. Die Kalibrierung ist näher in \ref{sec:calib} beschrieben.
+\end{minipage}\\
+
+\begin{minipage}{0.6\textwidth}
+	\begin{figure}[H] 
+		\includegraphics[width=0.9\textwidth]{Bilder/SetScale.jpg}
+			\label{fig:SetScale}
+	\end{figure}
+\end{minipage}
+\begin{minipage}{0.4\textwidth}
+	\texttt{SetScale}:\\
+	Stellt das letzte Menü vor dem Starten der Simulation dar. In diesem kann der Benutzer den Maßstab der Gebäudesimulation einstellen und anschließend die Simulation starten.
+\end{minipage}\\
+
+\begin{minipage}{0.6\textwidth}
+	\begin{figure}[H] 
+		\includegraphics[width=0.9\textwidth]{Bilder/SocketNotReady.jpg}
+			\label{fig:SocketNotReady}
+	\end{figure}
+\end{minipage}
+\begin{minipage}{0.4\textwidth}
+	\texttt{SocketNotReady}:\\
+	Warnt den Benutzer nach dem Verlassen des \texttt{Welcome}-Menüs, dass die Netzwerkverbindung zwischen den beiden Computern nicht bereit ist. Nach Bestätigung dieses Hinweises durch einen Klick auf \texttt{Continue}, kehrt der Benutzer zum \texttt{Welcome}-Menü zurück. %Anschließend kann der Vorgang fortgesetzt werden, wenn die Netzwerkverbindung hergestellt wurde. Andernfalls erscheint wieder \texttt{SocketNotReady}.
+\end{minipage}\\
+
+\begin{minipage}{0.6\textwidth}
+	\begin{figure}[H] 
+		\includegraphics[width=0.9\textwidth]{Bilder/Welcome.jpg}
+			\label{fig:Welcome}
+	\end{figure}
+\end{minipage}
+\begin{minipage}{0.4\textwidth}
+	\texttt{Welcome}:\\
+	Erscheint als erstes Menü. Hier erhält der Nutzer eine kurze Information darüber, wie die Anwendung heißt und wozu sie dient.
+\end{minipage}\\
+
+
+
+%\begin{description}
+
+	%\item[\texttt{doPoseCalibInVS}:] Dient dem Benutzer als Anleitung für die Durchführung der Kamera-Kalibrierung. Diese wird in \ref{sec:camCalib} genauer beschrieben.
+	%\item[\texttt{SelectCalibrationTarget}:] Erlaubt die Auswahl der Art der Kalibrierung. Es kann hier entweder nur der Arbeitsbereich oder sowohl der Arbeitsbereich, als auch die Kamera kalibriert werden. Die Kalibrierung ist näher in \ref{sec:calib} beschrieben.
+	%\item[\texttt{SetScale}:] Stellt das letzte Menü vor dem Starten der Simulation dar. In diesem kann der Benutzer den Maßstab der Gebäudesimulation einstellen und anschließend die Simulation starten.
+	%\item[\texttt{SocketNotReady}:] Warnt den Benutzer nach dem Verlassen des \texttt{Welcome}-Menüs, dass die Netzwerkverbindung zum Computer, auf dem die Tracking-Anwendung ausgeführt wird, nicht bereit ist. Nach Bestätigung dieses Hinweises durch einen Klick auf \texttt{Continue}, kehrt der Benutzer zum \texttt{Welcome}-Menü zurück. Anschließend kann der Vorgang fortgesetzt werden, wenn die Netzwerkverbindung hergestellt wurde. Andernfalls erscheint wieder \texttt{SocketNotReady}.
+	%\item[\texttt{Welcome}:] Erscheint als erstes Menü. Hier erhält der Nutzer eine kurze Information darüber, wie die Anwendung heißt und wozu sie dient.
+%\end{description}
 
 
 \subsubsection{Ablauf der Menüführung}\label{sec:menuAblauf}\todo[inline]{Lukas}
