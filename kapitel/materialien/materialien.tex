@@ -1,9 +1,9 @@
 \section{Materialien}
-In den nachfolgenden Abschnitten, werden Werkzeuge und Hilfsmittel beschrieben, die für die Fertigstellung des Projekts vonnöten waren.\\ Des weiteren werden auch Komponenten vorgestellt, die während der Projektlaufzeit erstellt wurden, wie etwa die Tracking-Marker (s. Abb.~\ref{fig:marker}).
+In den nachfolgenden Abschnitten, werden Werkzeuge und Hilfsmittel beschrieben, die für die Fertigstellung des Projekts vonnöten waren.\\ Des weiteren werden auch Komponenten vorgestellt, die während der Projektlaufzeit erstellt wurden, wie etwa die Würfel-Marker (s. Abb.~\ref{fig:marker}).
 
 \subsection{Hardware}
 Zur Ausführung der MArC-Software sind diverse Hardware-Komponenten Voraussetzung. Diese Komponenten werden nachfolgend beschrieben und deren Kontext im System näher erläutert.
-\subsubsection{Computer zur Ausführung der Unity-Simulation}
+\subsubsection{Computer zur Ausführung der Unity-Simulation}\todo[inline] {Lukas}
 Die Anwendung, welche aus Unity \cite{website:Unity} heraus erstellt wurde, benötigt einen Host-Computer, welcher sowohl mit dem HTC Vive Head-Mounted Display kompatibel, als auch leistungsstark genug sein muss, um das Rendering der Simulation mit ausreichend hoher Bildrate ausführen zu können.
 
 Für das vorliegende Projekt wurde seitens der Technischen Hochschule Köln ein Computer mit den  Eigenschaften aus Tabelle \ref{tab:UnityCompParam} zur Verfügung gestellt:
@@ -118,7 +118,7 @@ Die erforderliche Ansteuerung der \textit{uEye 164LE-C} erfolgt mit Hilfe der be
 	\label{tab:UeyeParam}
 \end{table}
 
-\subsubsection{Leap Motion} \todo[inline]{Laura}	
+\subsubsection{Leap Motion} \todo[inline]{Paul}	
 Bei der Leap Motion \cite{website:LeapMotion} handelt sich um ein $7,6\times3\times1,3\,cm$ großes Gerät, welches es mit Hilfe von Sensoren möglich macht, Hand- und Fingerbewegungen als Eingabemöglichkeit zu nutzen. Die Idee dahinter ist, eine Eingabegerät analog zu Maus zu schaffen, welches keinen direkten Kontakt bzw. keine Berührung benötigt. Hergestellt wird die Leap Motion von der Firma Leap Motion, Inc., die ihren Hauptsitz in Amerika hat. Gegründet wurde die Firma am 1. November 2010. \\
 Wie auf Abbildung \ref{fig:leapMotion} erahnt werden kann, besteht das Gerät im wesentlich aus zwei integrierten weitwinkel Kameras und drei einfachen Infrarot LEDs. Die LEDs haben jeweils eine Wellenlänge von $850\,nm$. Der durch die beiden Kameras aufgespannte Interaktionsraum der Leap Motion ähnelt einer umgedrehten Pyramide, mit einem Flächeninhalt von knapp $243\,cm{^2}$. \\
 Für das Projekt wurde die Orion beta software, die in \ref{OBS} näher beschrieben wird. Diese Software ermöglicht unter anderem eine Erweiterung der Reichweite der Leap Motion von $60\,cm$ auf $80\,cm$. Diese Reichweite ist durch die Ausbreitung der LED Lichter räumlich begrenzt. Die Lichtintensität der LEDs ist wiederum durch den maximalen Strom, der über die USB-Verbindung fließt beschränkt. \\
@@ -158,7 +158,7 @@ Alle zwölf Marker stimmen mit der Form und Farbe, sowie Material und Oberfläch
 
 
 	
-\subsection{Obsolete Hardware}\label{sec:obsoleteHardware}
+\subsection{Obsolete Hardware}\label{sec:obsoleteHardware}\todo[inline] {Lukas}
 Im Laufe eines Projekts nach Art von MArC ist es kaum vermeidbar, dass die gesetzten Projektziele reevaluiert werden müssen. Die Gründe hierfür können vielfältig sein. Beispielsweise könnte die Fertigstellung eines bestimmten Teils des Projekts deutlich länger gedauert haben als geplant, oder es könnte sich herausgestellt haben, dass bestimmte Komponenten zueinander nicht kompatibel sind.
 
 Im vorliegenden Projekt trat eine Kombination der beiden oben genannten Gründe auf. Das Betreiben der Ovrvision Pro am US-Bus verschiedener während der Entwicklung verwendeter Rechner stellte sich als unberechenbar und damit leider unbenutzbar heraus. Die Kamera sorgte während der Ausführung von Unity dafür, dass mit allen anderen Geräten, die ebenfalls per USB angeschlossen waren, unterschiedlichste Probleme auftraten. Als die Situation nach dem Verbinden der Kamera in der teilweisen Zerstörung eines Mainboards gipfelte, wurde die Entscheidung getroffen, die Ovrvision nicht länger als Gerät in der Entwicklung zu verwenden.
@@ -209,9 +209,9 @@ Die Bildmodi der Kamera sind in Tabelle~\ref{tab:ovrRes} aufgeführt.
 		\caption{Explosionszeichnung der Leap Motion.\cite{website:LeapMotionBlog}}
 		\label{fig:leapMotion}
 \end{figure}
-	
-\subsection{Software}
-\subsubsection{Unity}\label{unity}\todo[inline]{Paul oder Lukas}
+\subsubsection{Webcam}\label{sec:webcam} \todo[inline]{Vera}	
+\subsection{Software} \todo[inline]{Vera}
+\subsubsection{Unity}\label{sec:unity}\todo[inline]{Lukas}
 Unity ist eine sogenannte Spiel-Engine, also eine Entwicklungs- und Laufzeitumgebung, die speziell auf die Entwicklung von 3D-Spielen ausgelegt ist. Die Software wurde am 6. Juni 2005 veröffentlicht \cite{haas2014history} und wird von Unity Technologies \cite{website:Unity} entwickelt und vertrieben. In der Spieleentwicklung ist Unity weit verbreitet, so werden beispielsweise $34\,\%$ der kostenfreien Top-1000-Spiele im mobilen Sektor mit Unity entwickelt \cite{website:UnityPR}.
 
 Unity bietet eine sehr breite Plattformunterstützung \cite{website:UnityMultiPlatform} und erlaubt ebenso die Entwicklung für Head-Mounted-Displays, wie etwa die Oculus Rift \cite{website:UnityOculus}\cite{website:UnityVRoverview} oder auch die in diesem Projekt verwendete HTC Vive \cite{website:UnityVRoverview}.
@@ -234,9 +234,9 @@ Für dieses System ist vor allem das Modul \texttt{calib3d} \cite{website:Calib3
 \subsubsection{Leap Motion SDK} \todo[inline] {Paul}
 
 
-\subsubsection{Orion Beta Software} \label{OBS}
+\subsubsection{Orion Beta Software} \label{OBS}\todo[inline] {Paul}
 
-\subsubsection{Steam VR}\todo[inline] {Paul oder Lukas}
-\subsubsection{TCP API}\todo[inline] {Laura oder Lukas}
+\subsubsection{Steam VR}\todo[inline] {Paul}
+\subsubsection{Winsoc}\todo[inline] {Laura und Lukas}
 
 \newpage

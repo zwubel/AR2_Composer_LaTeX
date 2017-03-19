@@ -1,14 +1,12 @@
 \section{Grundlagen}
 %- Wissenschaftlicher Stand
-\subsection{Architektur AR Anwendungen}
-\subsection{Haptische Interaktionsmethoden in VR Umgebungen}
-\subsection{Handtracking Interaktionsmethoden}
-\subsection{Menüführung in VR Umgebungen}
-\subsection{Datenaustausch über internes Netzwerk}
-
-\subsection{Green-Keying}\label{sec:Green-Keying}
+\subsection{Architektur VR und MR Anwendungen}\todo[inline]{Lukas}
+\subsection{Haptische Interaktionsmethoden in VR Umgebungen}\todo[inline]{Laura}
+\subsection{Handtracking Interaktionsmethoden}\todo[inline]{Paul}
+\subsection{Menüführung in VR Umgebungen}\todo[inline]{Lukas}
+\subsection{Datenaustausch über internes Netzwerk}\todo[inline]{Laura}
+\subsection{Green-Keying}\label{sec:Green-Keying}\todo[inline]{Vera}
 \subsection{Marker Tracking} \label{sec:MarkerTracking}\todo[inline]{Vera}
-
 In einer VR oder AR Umgebung ist zur interaktiven Positionierung eines 3D Objektes die präzise Bestimmung der Orientierung und Position im 3D-Zielraum notwendig. Zur Lösung dieses Problems muss zunächst ein physisches Objekt in der realen Welt erkannt, zugeordnet und verfolgt werden. Demzufolge muss diese physische Objekt mit einer oder mehreren Videokamera aufgenommen werden. In den resultierenden Bildsequenzen können die physischen Objekte anhand von festgelegten Merkmalen erkannt werden. Diese Merkmalen können sowohl natürlicher Art sein oder in Form von künstlich erstellten Codes definiert sein. Ein Objekttracking mit natürlichen Merkmalen wird in der Literatur auch als \textit{Markerless Tracking} bezeichnet, während die Verwendung von Codes beziehungsweise Bildmarken als \textit{Markerbased Tracking} bekannt ist.\\
 Natürliche Merkmale zur Identifizierung der Objekte sind Textureigenschaften, Kanteninformationen oder bekannte Keypoints. Einige Autoren \cite{article:MarkerLessBarandiaran2010}\cite{article:MarkerLessWagner:}\cite{article:MarkerLessComport}\cite{article:MarkerLessLowe} arbeiten mit Keypoints, die sowohl in der Ausgangs- als auch in der Kamerawelt bekannt sind. Diese werden mit Hilfe einer Homographie zur Übereinstimmung gebracht. Daraus resultiert die notwendige Transformation zwischen den Welten. Andere verwenden sehr rechenintensive Kantenerkennungsalgorithmen, wie den \textit{Moving Edges Algorithm} \cite{article:MarkerLessEdgeMarchand}. Eine weitere Weiterentwicklung der Kantenbasierten Methoden ist das Modelbased Tracking bei dem die detektierten Kanten eines möglichen Kandiaten mit dem 3D-Kantenmodellen des zu verfolgenden Objektes abgeglichen wird \cite{article:MarkerLessModellVacchetti}\cite{article:MarkerLessEdgeAlvarez}\cite{article:MarkerLessEdgeWu}\cite{article:MarkerLessBlasko}. \\
 Im Gegensatz zu dem Markerbased Tracking benötigt diese Art des Trackings keine Veränderung der realen Welt und die Parameter, welche den Tracking-Algorithmus beeinflussen können nicht ohne weiteres kontrolliert werden \cite{article:MarkerLessBarandiaran2010}.
