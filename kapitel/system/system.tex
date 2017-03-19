@@ -126,7 +126,7 @@ Die Kamerakalibrierung, die diesem Projekt zu Grunde liegt, ist als manuell einz
 	\label{tab:camCalibParam}
 \end{table}
 
-Die einzelnen Schritte aus Tabelle~\ref{tab:camCalibParam} kann man in vier Abschnitte einteilen: \\
+Die einzelnen Schritte aus Tabelle~\ref{tab:camCalibParam} kann man in vier bzw. drei Abschnitte einteilen: \\
 Im ersten Abschnitt wird der Hauptpunkt so versetzt, dass der Koordinatenursprung des Kamerakoordinatensystems mit dem Bildkoordinatensystem übereinstimmt. Dies geschieht, indem man für die eine Achse $u^V = u - \Delta u$ und für die andere Achse entsprechend $v^V = v - \Delta v$ berechnet.\\
 Zusätzlich wird die Bildebene verkippt, so dass gilt $\overrightarrow{x}^V = R_v \cdot \overrightarrow{x}^P_D$. Bezeichnet $\varphi$ den Drehwinkel um die $x^P$-Achse und $\vartheta$ den Drehwinkel um die $y^{P'}$-Achse, so lässt sich $R_v$ wie folgt berechnen:
 
@@ -146,7 +146,7 @@ sin\vartheta & -cos\vartheta sin\varphi & cos\vartheta cos\varphi \\
 ~ ~ ~ ~ ~R_v \in \mathbb{R}^{3x3}
 \end{equation}
 
-Die negative verkippte Kamerakonstante $-c^V$ berechnet sich wie in~\citep{Meisel:77890} beschrieben nach der Formel:
+Die negative verkippte Kamerakonstante $-c^V$, die in Tabelle~\ref{tab:camCalibParam} aufgeführt ist, berechnet sich wie in~\citep{Meisel:77890} beschrieben nach der Formel:
 
 \begin{equation}
 -c^V = - \frac{c+u^V \cdot r_{v13} + v^V \cdot r_{v23}}{r_{v33}}
@@ -154,7 +154,7 @@ Die negative verkippte Kamerakonstante $-c^V$ berechnet sich wie in~\citep{Meise
 
 Im zweiten Schritt wird im Allgemeinem die Linsenverzeichnung herausgerechnet. Im vorliegenden Fall wurde bewusst auf diesen Schritt verzichtet und die zugehörigen Entzerrungskoeffizienten werden für alle weiteren Berechnungen auf null gesetzt. \textcolor{red}{Begründung??} \\
 
-Weil wie bereits beschrieben, die Linsenverzeichnung vernachlässigt wurde, kann man Schritt 1 und 2 zusammenfassen und vereinfacht darstellen. Dieser erste Schritt, also die Hauptpunktverschiebung und Bildebenenverkippung, lässt sich mit Hilfe der intrinsischen Kameramatrix $M_{intrinsisch}$ zusammenfassen. Diese beinhaltet neben der neben den Brennweiten $f_u$ und $f_v$ noch die Koordinaten des Hauptpunktes $u^V$ und $v^V$ in Bildkoordinaten.
+Weil wie bereits beschrieben, die Linsenverzeichnung vernachlässigt wurde, kann man Schritt 1 und 2 zu einem Schritt zusammenfassen und vereinfacht darstellen. Dieser erste Schritt, also die Hauptpunktverschiebung und Bildebenenverkippung, lässt sich mit Hilfe der intrinsischen Kameramatrix $M_{intrinsisch}$ zusammenfassen. Diese beinhaltet neben den Brennweiten $f_u$ und $f_v$ noch die Koordinaten des Hauptpunktes $u^V$ und $v^V$ in Bildkoordinaten und hat somit vier Freiheitsgrade.
 
 \begin{equation}
 \label{equ:intrinsic}
@@ -167,24 +167,7 @@ f_u & 0 & 0 & u^V \\
 ~ ~ ~ ~ ~M_{intrinsisch} \in \mathbb{R}^{3x4}
 \end{equation}
 
-
-Zu diesem Zeitpunkt sollte nun das Kamerakoordinatensystem mit dem Weltkoordinatensystem übereinstimmen und es kann sich im nächsten Schritt darum gekümmert werden, dass das Kamerakoordinatensystem verschoben und gedreht wird.
-
-
-
-
-
-Multipliziert man einen Punkt in Weltkoordinaten mit $M_{intrinsisch}$, so erhält man seine entsprechenden Bildkoordinaten, d.h. 
-
-Die Linsenverzeichnung die in Schritt 3 aufgeführt ist, kann als zweiter Abschnitt angesehen werden. Im vorliegenden Fall wird gänzlich auf diesen Schritt verzichtet 
-
-
-
-
-
-
-
-
+Zu diesem Zeitpunkt sollte nun das Kamerakoordinatensystem mit dem Weltkoordinatensystem übereinstimmen und es kann sich im nächsten Schritt darum gekümmert werden, dass das Kamerakoordinatensystem verschoben und gedreht wird. Während eine dreidimensionale Rotation im Allgemeinen mit Matrix $R$ aus Formel~\ref{equ:Rotation} beschrieben werden kann, reicht für die Translation ein Vektor, wie $t$ aus Formel~\ref{equ:Translation} aus.\
 
 \begin{equation}
 \label{equ:Rotation}
@@ -200,7 +183,7 @@ r_{31} & r_{32} & r_{33} \\
 
 
 \begin{equation}
-\label{equ:Rotation}
+\label{equ:Translation}
 t=
 \begin{pmatrix}
 t_x & t_y & t_z
@@ -208,7 +191,7 @@ t_x & t_y & t_z
 ~ ~ ~ ~ ~t \in \mathbb{R}^{3x1} 
 \end{equation}
 
-Homographie reicht nicht aus, weil nicht 2D->3D, sondern 3D nach 3D --> Affine Transformation
+Diese beiden Transformationen können wie in Formel~\ref{equ:extrinsic} zur extrinsischen Kameramatrix $M_{etrinsisch}$ zusammengefasst werden. Diese hat sechs Freiheitsgrade, nämlich drei für den Translationsvektor $t$ und drei für die Eulerwinkel der Rotationsmatrix $R$ für die dementsprechend gelten muss $R \in SO(3)$.
 
 \begin{equation}
 \label{equ:extrinsic}
@@ -219,11 +202,27 @@ R &|& t \\
 ~ ~ ~ ~ ~M_{extrinsisch} \in \mathbb{R}^{3x4}
 \end{equation}
 
+Schritt 1 und 2 lassen sich vereinfachen, indem man die intrinsische Kameramatrix $M_{intrinsisch}$ und die extrinsische Kameramatrix $M_{extrinisch}$ nach der Formel~\ref{equ:inAndEx} zu einer Matrix $M$ zusammenfasst.
+
+\begin{equation}
+\label{equ:inAndEx}
+M = M_{intrinsisch} \cdot M_{extrinsisch}~ ~ ~ ~ ~M\in \mathbb{R}^{3x4}
+\end{equation}
+
+Die Umrechnung von Sensorkoordinaten in Weltkoordinaten kann dann mit der invertierten Matrix $M$, wie in Formel~\ref{equ:SensInWorld} berechnet werden. \
+
+\begin{equation}
+\label{equ:SensInWorld}
+\overrightarrow{x} = M^{-1} \cdot \overrightarrow{u}
+\end{equation}
 
 
 
+\textcolor{red}{Umrechnung in Unitykoordinaten fehlt noch}
+%SCHRITT 3:Homographie reicht nicht aus, weil nicht 2D->3D, sondern 3D nach 3D --> Affine Transformation
 
-\textcolor{red}{DIST auf Null gesetzt.} \cite{7532899}
+%Entsprechend Formel~\ref{equ:SensInWorld} muss eine Transformationsmatrix von Weltkoordinaten in Unitykoordinaten gefunden werden. 
+
 
 
 
