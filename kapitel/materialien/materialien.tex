@@ -146,7 +146,7 @@ Die Marker bestehen ähnlich wie QR-Codes aus einer zweidimensionalen Matrix, mi
 	\label{fig:SizesArucoMarker}
 \end{figure}
 
-\subsubsection{Würfel Marker}\label{sec:WürfelMarker}
+\subsubsection{Würfel Marker}\label{sec:WürfelMarker} \todo[inline]{Vera}
 
 In vielen VR oder AR Umgebungen müssen die Nutzer eines Systems häufig nach virtuellen Objekten zur Interaktion greifen, die nicht real existieren. Demzufolge greifen die Personen ins Leere, was häufig die Immersion stört und zu Irritationen und Unsicherheit führt.
 Um dem Nutzer des Systems \textit{MArC} für die Positionierung und Orientierung ein reales haptisches Feedback zu ermöglichen wurden zwölf Aluminumwürfel mit aufgeklebten Markern designt. Diese Würfel können beliebig innerhalb eines zuvor festgelegten Bereiches auf dem realen Tisch verschoben und rotiert werden. An der aktuellen Position und Orientierung des jeweiligen Markers wird in der VR ein explizit zugeordnetes Objekt gerendert. Diese Position wird mit Hilfe des Tracking-Algorithmus (siehe Kapitel \ref{sec:Tracking}) aus den Bildern der uEye Kamera ermittelt.
@@ -212,8 +212,12 @@ Die Bildmodi der Kamera sind in Tabelle~\ref{tab:ovrRes} aufgeführt.
 		\caption{Explosionszeichnung der Leap Motion.\cite{website:LeapMotionBlog}}
 		\label{fig:leapMotion}
 \end{figure}
-\subsubsection{Webcam}\label{sec:webcam} \todo[inline]{Vera}	
+\subsubsection{Webcam}\label{sec:webcam} \todo[inline]{Vera}
+
+Die \textit{Creative Senz3D} ist eine RGB Kamera mit einer zusätzlichen Infrarot-Tiefenkamera. Das generierte RGB-Bild hat eine Auflösung von $1280\times720$ Pixel und das Tiefenbild von $320\times240$ Pixel bei einer Reichweite von $15-99\,$cm sowie einem Sichtfeld von $74^\circ$. Die Kamera wird über eine USB 2.0 Schnittstelle mit einem Computer verbunden und nimmt Videos mit einer Framerate von bis zu $30$ fps auf \cite{website:Senz3d}. Weiter ist es möglich die Kamera direkt aus Anwendungen per \textit{Intel Perceptual Computing SDK} anzusteuern.
+
 \subsection{Software} \todo[inline]{Vera}
+Zur Entwicklung der \textit{MArC}-Software sind diverse Software-Komponenten und Bibliotheken notwendig. Die Funktionalitäten und Verwendung dieser Komponenten werden in diesem Kapitel kurz erläutert.
 \subsubsection{Unity}\label{sec:unity}\todo[inline]{Lukas}
 Unity ist eine sogenannte Spiel-Engine, also eine Entwicklungs- und Laufzeitumgebung, die speziell auf die Entwicklung von 3D-Spielen ausgelegt ist. Die Software wurde am 6. Juni 2005 veröffentlicht \cite{haas2014history} und wird von Unity Technologies \cite{website:Unity} entwickelt und vertrieben. In der Spieleentwicklung ist Unity weit verbreitet, so werden beispielsweise $34\,\%$ der kostenfreien Top-1000-Spiele im mobilen Sektor mit Unity entwickelt \cite{website:UnityPR}.
 

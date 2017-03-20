@@ -1,0 +1,71 @@
+\select@language {ngerman}
+\contentsline {section}{\numberline {1}Einleitung}{5}{section.1}
+\contentsline {subsection}{\numberline {1.1}Motivation}{5}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Anwendungskontext}{5}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}Projektziel}{5}{subsection.1.3}
+\contentsline {section}{\numberline {2}Grundlagen}{6}{section.2}
+\contentsline {subsection}{\numberline {2.1}Architektur VR und MR Anwendungen}{6}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Haptische Interaktionsmethoden in VR Umgebungen}{6}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Handtracking Interaktionsmethoden}{6}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Men\IeC {\"u}f\IeC {\"u}hrung in VR Umgebungen}{6}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}Datenaustausch \IeC {\"u}ber internes Netzwerk}{6}{subsection.2.5}
+\contentsline {subsection}{\numberline {2.6}Green-Keying}{6}{subsection.2.6}
+\contentsline {subsection}{\numberline {2.7}Marker Tracking}{6}{subsection.2.7}
+\contentsline {section}{\numberline {3}Materialien}{8}{section.3}
+\contentsline {subsection}{\numberline {3.1}Hardware}{8}{subsection.3.1}
+\contentsline {subsubsection}{\numberline {3.1.1}Computer zur Ausf\IeC {\"u}hrung der Unity-Simulation}{8}{subsubsection.3.1.1}
+\contentsline {subsubsection}{\numberline {3.1.2}Computer zur Ausf\IeC {\"u}hrung der Tracking-Anwendung}{9}{subsubsection.3.1.2}
+\contentsline {subsubsection}{\numberline {3.1.3}HTC Vive}{9}{subsubsection.3.1.3}
+\contentsline {subsubsection}{\numberline {3.1.4}IDS uEye 164LE-C}{10}{subsubsection.3.1.4}
+\contentsline {subsubsection}{\numberline {3.1.5}Leap Motion}{11}{subsubsection.3.1.5}
+\contentsline {subsubsection}{\numberline {3.1.6}Leap Motion SDK}{11}{subsubsection.3.1.6}
+\contentsline {subsubsection}{\numberline {3.1.7}ArUco Marker}{11}{subsubsection.3.1.7}
+\contentsline {subsubsection}{\numberline {3.1.8}W\IeC {\"u}rfel Marker}{12}{subsubsection.3.1.8}
+\contentsline {subsection}{\numberline {3.2}Obsolete Hardware}{13}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}Ovrvision Pro}{14}{subsubsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2}Webcam}{14}{subsubsection.3.2.2}
+\contentsline {subsection}{\numberline {3.3}Software}{15}{subsection.3.3}
+\contentsline {subsubsection}{\numberline {3.3.1}Unity}{15}{subsubsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.2}Visual Studio 2015}{15}{subsubsection.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.3}OpenCV}{16}{subsubsection.3.3.3}
+\contentsline {subsubsection}{\numberline {3.3.4}Orion Beta Software}{16}{subsubsection.3.3.4}
+\contentsline {subsubsection}{\numberline {3.3.5}Steam VR}{16}{subsubsection.3.3.5}
+\contentsline {subsubsection}{\numberline {3.3.6}Winsoc}{16}{subsubsection.3.3.6}
+\contentsline {section}{\numberline {4}System}{17}{section.4}
+\contentsline {subsection}{\numberline {4.1}Aufbau}{17}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Systemvorraussetzung}{18}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Starten des Systems}{18}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Men\IeC {\"u}f\IeC {\"u}hrung}{18}{subsection.4.4}
+\contentsline {subsubsection}{\numberline {4.4.1}Men\IeC {\"u}s}{18}{subsubsection.4.4.1}
+\contentsline {subsubsection}{\numberline {4.4.2}Ablauf der Men\IeC {\"u}f\IeC {\"u}hrung}{19}{subsubsection.4.4.2}
+\contentsline {subsection}{\numberline {4.5}Toogle}{21}{subsection.4.5}
+\contentsline {subsection}{\numberline {4.6}Kontex Men\IeC {\"u}}{21}{subsection.4.6}
+\contentsline {subsubsection}{\numberline {4.6.1}Men\IeC {\"u}f\IeC {\"u}hrung}{21}{subsubsection.4.6.1}
+\contentsline {subsubsection}{\numberline {4.6.2}Architektur Berechnung}{21}{subsubsection.4.6.2}
+\contentsline {subsection}{\numberline {4.7}Table Men\IeC {\"u}}{21}{subsection.4.7}
+\contentsline {subsubsection}{\numberline {4.7.1}Szenen Management}{22}{subsubsection.4.7.1}
+\contentsline {subsubsection}{\numberline {4.7.2}Match Modus}{22}{subsubsection.4.7.2}
+\contentsline {subsection}{\numberline {4.8}Tracking Algorithmus}{22}{subsection.4.8}
+\contentsline {subsubsection}{\numberline {4.8.1}Green Keying}{22}{subsubsection.4.8.1}
+\contentsline {subsubsection}{\numberline {4.8.2}ArUco Marker Tracking}{22}{subsubsection.4.8.2}
+\contentsline {subsubsection}{\numberline {4.8.3}Marker Objekt}{22}{subsubsection.4.8.3}
+\contentsline {subsubsection}{\numberline {4.8.4}Zuordnung der Identit\IeC {\"a}ten}{22}{subsubsection.4.8.4}
+\contentsline {subsection}{\numberline {4.9}Kalibrierung}{22}{subsection.4.9}
+\contentsline {subsubsection}{\numberline {4.9.1}Kamerakalibrierung}{23}{subsubsection.4.9.1}
+\contentsline {subsubsection}{\numberline {4.9.2}Kalibrierung des Arbeitsbereichs}{26}{subsubsection.4.9.2}
+\contentsline {subsubsection}{\numberline {4.9.3}Kalibrierungfehler}{26}{subsubsection.4.9.3}
+\contentsline {subsubsection}{\numberline {4.9.4}M\IeC {\"o}gliche Fehlerquellen}{26}{subsubsection.4.9.4}
+\contentsline {section}{\numberline {5}Ausblick}{27}{section.5}
+\contentsline {subsection}{\numberline {5.1}Trackingmethoden}{27}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}AR Erweiterung mit der Webcam}{27}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Daten als Excel Tabelle}{27}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}Validierung}{27}{subsection.5.4}
+\contentsline {section}{\numberline {6}Projektmanagement}{27}{section.6}
+\contentsline {subsection}{\numberline {6.1}Zeitplanung}{27}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Gant Chart}{27}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Planungsmethoden}{27}{subsection.6.3}
+\contentsline {subsection}{\numberline {6.4}Reflexion}{27}{subsection.6.4}
+\contentsline {subsubsection}{\numberline {6.4.1}Kommuniktion im Team und nach Au\IeC {\ss }en}{27}{subsubsection.6.4.1}
+\contentsline {subsubsection}{\numberline {6.4.2}Probleme}{28}{subsubsection.6.4.2}
+\contentsline {section}{\numberline {7}Zusammenfassung}{28}{section.7}
+\contentsline {section}{\numberline {8}Steckbrief}{28}{section.8}
