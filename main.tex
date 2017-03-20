@@ -16,7 +16,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 \usepackage[space]{grffile}
- \usepackage{setspace}
+\usepackage{setspace}
 \usepackage[T1]{fontenc}
 \newcommand{\changefont}[3]{
 \fontfamily{#1} \fontseries{#2} \fontshape{#3} \selectfont}
@@ -38,11 +38,18 @@
 	urlcolor=blue,
 	linktocpage=true
 	]{hyperref}
- \usepackage{algorithmicx}
+\usepackage{algorithmicx}
 \usepackage{multicol}
 \usepackage{multirow}
  \usepackage[ruled]{algorithm}
 \usepackage{algpseudocode}
+\usepackage{pdfpages}
+\usepackage[
+	font=small,
+	labelfont=bf, 
+	format=plain,
+	indention=1cm
+	]{caption}
 \setlength{\parindent}{0pt} 
 \setlength{\parskip}{.5em}
 \usepackage{color}
@@ -70,7 +77,7 @@
 \input{kapitel/ausblick/ausblick.tex}
 \input{kapitel/PM/pm.tex}
 \input{kapitel/zusammenfassung/zusammenfassung.tex}
-
+\input{kapitel/anhang/anhang.tex}
 
 
 \newpage
