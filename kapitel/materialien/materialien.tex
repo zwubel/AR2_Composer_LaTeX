@@ -12,7 +12,7 @@ Für das vorliegende Projekt wurde seitens der Technischen Hochschule Köln ein 
 
 \begin{table}
 	\centering
-	\begin{tabular}{|c|c|}
+	\begin{tabular}{|l|l|}
 		\hline
 		\Absatzbox{}
 		\textbf{NAME DES COMPUTERS}& \textbf{Beschreibung} \\
@@ -123,8 +123,12 @@ Bei der Leap Motion \cite{website:LeapMotion} handelt sich um ein $7,6\times3\ti
 Wie auf Abbildung \ref{fig:leapMotion} erahnt werden kann, besteht das Gerät im wesentlich aus zwei integrierten weitwinkel Kameras und drei einfachen Infrarot LEDs. Die LEDs haben jeweils eine Wellenlänge von $850\,nm$. Der durch die beiden Kameras aufgespannte Interaktionsraum der Leap Motion ähnelt einer umgedrehten Pyramide, mit einem Flächeninhalt von knapp $243\,cm{^2}$. \\
 Für das Projekt wurde die Orion beta software, die in \ref{OBS} näher beschrieben wird. Diese Software ermöglicht unter anderem eine Erweiterung der Reichweite der Leap Motion von $60\,cm$ auf $80\,cm$. Diese Reichweite ist durch die Ausbreitung der LED Lichter räumlich begrenzt. Die Lichtintensität der LEDs ist wiederum durch den maximalen Strom, der über die USB-Verbindung fließt beschränkt. \\
 
-% Wie in "`Unity"' oben beschrieben, denke ich, dass wir uns das folgende sparen können, oder?
-%\subsubsection{Ovrvision Pro SDK} \todo[inline] {Paul oder Lukas}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=6cm]{Bilder/leap-motion.png}			
+		\caption{Explosionszeichnung der Leap Motion.~\cite{website:LeapMotionBlog}}
+		\label{fig:leapMotion}
+\end{figure}
 
 \subsubsection{Leap Motion SDK} \label{sec:LeapSDK}\todo[inline] {Paul}
 \subsubsection{ArUco Marker} \label{sec:aruco} \todo[inline]{Vera}
@@ -172,7 +176,7 @@ Im weiteren Verlauf des Projekts führte eine lange Zeit ungeklärte, starke Abw
 
 Nachfolgend werden die Eigenschaften und technischen Daten beider Geräte kurz beschrieben.
 \subsubsection{Ovrvision Pro}\label{sec:ovrvision}\todo[inline]{Lukas}
-Die Ovrvision Pro ist eine kompakte Stereokamera, welche über USB 3.0 mit dem Rechner verbunden werden kann \cite{website:ovrvision}. Sie ist kompatibel mit Programmen wie Unity, welches für das Projekt benutzt wurde und in \ref{unity} beschrieben wird.
+Die Ovrvision Pro ist eine kompakte Stereokamera, welche über USB 3.0 mit dem Rechner verbunden werden kann \cite{website:ovrvision}. Sie ist kompatibel mit Programmen wie Unity, welches für das Projekt benutzt wurde und in \ref{sec:unity} beschrieben wird.
 
 Die Bildmodi der Kamera sind in Tabelle~\ref{tab:ovrRes} aufgeführt.
 
@@ -201,20 +205,12 @@ Die Bildmodi der Kamera sind in Tabelle~\ref{tab:ovrRes} aufgeführt.
 		$320\times240$\,px & $120$\,fps & $115^\circ$ & $105^\circ$\\
 		\hline
 	\end{tabular}
-	\caption{Bildmodi der Ovrvision Pro Stereokamera.
-		\cite{website:ovrvisionProduct}}
+	\caption{Bildmodi der Ovrvision Pro Stereokamera.~\cite{website:ovrvisionProduct}}
 	\label{tab:ovrRes}
 \end{table}
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=6cm]{Bilder/leap-motion.png}			
-		\caption{Explosionszeichnung der Leap Motion.\cite{website:LeapMotionBlog}}
-		\label{fig:leapMotion}
-\end{figure}
 \subsubsection{Webcam}\label{sec:webcam} \todo[inline]{Vera}	
 \subsection{Software} \todo[inline]{Vera}
-\subsubsection{Unity}\label{sec:unity}\todo[inline]{Lukas}
+\subsubsection{Unity}\label{sec:unity}\todo[inline, color=green!40]{Lukas}
 Unity ist eine sogenannte Spiel-Engine, also eine Entwicklungs- und Laufzeitumgebung, die speziell auf die Entwicklung von 3D-Spielen ausgelegt ist. Die Software wurde am 6. Juni 2005 veröffentlicht \cite{haas2014history} und wird von Unity Technologies \cite{website:Unity} entwickelt und vertrieben. In der Spieleentwicklung ist Unity weit verbreitet, so werden beispielsweise $34\,\%$ der kostenfreien Top-1000-Spiele im mobilen Sektor mit Unity entwickelt \cite{website:UnityPR}.
 
 Unity bietet eine sehr breite Plattformunterstützung \cite{website:UnityMultiPlatform} und erlaubt ebenso die Entwicklung für Head-Mounted-Displays, wie etwa die Oculus Rift \cite{website:UnityOculus}\cite{website:UnityVRoverview} oder auch die in diesem Projekt verwendete HTC Vive \cite{website:UnityVRoverview}.

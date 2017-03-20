@@ -1,6 +1,7 @@
 
 \section{System}\todo[inline]{Lukas}
-Die Benutzung von \textit{MArC} ist in der dem Programm mitgelieferten ReadMe-Datei beschrieben. Darin wird erklärt, welche Hard- und Software komponenten erforderlich sind, wie das System gestartet und kalibriert wird. Des weiteren enthält die ReadMe eine Übersicht über die enthaltenen Quellcode-Dateien.
+Die Benutzung von \textit{MArC} ist in der dem Programm mitgelieferten ReadMe-Datei (vgl.~\ref{sec:readMe}) beschrieben. Darin wird erklärt, welche Hard- und Softwarekomponenten erforderlich sind, wie das System gestartet und kalibriert wird. Auf diese Aspekte wird in den folgenden Abschnitten näher eingegangen.\\ 
+Des weiteren enthält die ReadMe-Datei eine Übersicht über die enthaltenen Quellcode-Dateien.
 \subsection{Aufbau}\label{sec:Aufbau}\todo[inline]{Lukas und Vera}
 \begin{figure}[H]
 	\centering
@@ -16,18 +17,27 @@ Die Benutzung von \textit{MArC} ist in der dem Programm mitgelieferten ReadMe-Da
 	\label{fig:KontrollerMarc}
 \end{figure}
 
-\subsection{Systemvorraussetzung}\todo[inline]{Lukas}
-\subsection{Starten des Systems}\todo[inline]{Lukas}
-Nachdem sichergestellt wurde, dass alle in der ReadMe-Datei beschriebenen Voraussetzungen bestehen, kann das System gestartet werden, indem zunächst die Tracking-Anwendung (auf dem einen Computer) und anschließend die aus Unity heraus erstellte Anwendung (auf dem anderen Computer) gestartet wird. Auf letzterem Computer beginnt darauffolgend die Menüführung, welche in \ref{sec:menu} beschrieben ist. 
-\subsection{Menüführung}\label{sec:menu}\todo[inline]{Lukas}
+\subsection{Systemvoraussetzungen}\label{sec:sysVor}\todo[inline, color=green!40]{Lukas}
+Die Systemvoraussetzungen für \emph{MArC} sind in der ReadMe-Datei beschrieben, welche der im Projekt erstellten Software mitgeliefert ist. Die gesamte ReadMe-Datei ist in Abschnitt~\ref{sec:readMe} zu finden, außerdem enthält Abbildung~\ref{fig:marcReadMe} einen Ausschnitt der ReadMe-Datei, welcher die Voraussetzungen beschreibt, die vor dem Starten des Systems erfüllt sein müssen.
+
+\begin{figure}
+	\centering
+	\includegraphics[page=1, trim=1cm 12.25cm 1cm 5.25cm, clip, width=\textwidth]{kapitel/anhang/ReadMe.pdf} 
+	\caption{Auszug aus der \emph{MArC} ReadMe-Datei (vgl.~\ref{sec:readMe}).}
+	\label{fig:marcReadMe}
+\end{figure}
+
+\subsection{Starten des Systems}\todo[inline, color=green!40]{Lukas}
+Nachdem sichergestellt wurde, dass alle in~\ref{sec:sysVor} beschriebenen Voraussetzungen bestehen, kann das System gestartet werden, indem zunächst die Tracking-Anwendung (auf dem einen Computer, vgl.~\ref{sec:TrackingComp}) und anschließend die aus Unity heraus erstellte Anwendung (auf dem anderen Computer, vgl.~\ref{sec:UnityComp}) gestartet wird. Auf letzterem Computer beginnt darauffolgend die Menüführung, welche in \ref{sec:menu} beschrieben ist. 
+\subsection{Menüführung}\label{sec:menu}\todo[inline, color=green!40]{Lukas}
 Die Menüführung dient dazu, den Benutzer durch alle notwendigen Schritte zu leiten, die vor dem Starten der eigentlichen Simulation erforderlich sind. Im nachfolgenden Abschnitt~\ref{sec:menus} werden alle verfügbaren Menüs der Anwendung aufgelistet und kurz beschrieben, während im Abschnitt~\ref{sec:menuAblauf} der Ablauf der Menüführung erläutert wird.
 
-\subsubsection{Menüs}\label{sec:menus}\todo[inline]{Laura}
+\subsubsection{Menüs}\label{sec:menus}\todo[inline, color=green!40]{Lukas und Laura}
 Die folgenden Menüs sind Bestandteil der Menüführung:
 
 \begin{minipage}{0.6\textwidth}
 	\begin{figure}[H] 
-		\includegraphics[width=0.9\textwidth]{Bilder/CalibDone.jpg}
+		\includegraphics[trim=3cm 2cm 3cm 2cm, clip, width=0.9\textwidth]{Bilder/CalibDone.jpg}
 			\label{fig:CalibDone}
 	\end{figure}
 \end{minipage}
@@ -38,7 +48,7 @@ Die folgenden Menüs sind Bestandteil der Menüführung:
 
 \begin{minipage}{0.6\textwidth}
 	\begin{figure}[H] 
-		\includegraphics[width=0.9\textwidth]{Bilder/CalibrateOrNot.jpg}
+		\includegraphics[trim=3cm 2cm 2cm 2cm, clip, width=0.9\textwidth]{Bilder/CalibrateOrNot.jpg}
 			\label{fig:CalibrateOrNot}
 	\end{figure}
 \end{minipage}
@@ -49,7 +59,7 @@ Die folgenden Menüs sind Bestandteil der Menüführung:
 
 \begin{minipage}{0.6\textwidth}
 	\begin{figure}[H] 
-		\includegraphics[width=0.9\textwidth]{Bilder/ControllerNotFound.jpg}
+		\includegraphics[trim=3cm 1cm 3cm 3cm, clip, width=0.9\textwidth]{Bilder/ControllerNotFound.jpg}
 			\label{fig:ControllerNotFound}
 	\end{figure}
 \end{minipage}
@@ -60,7 +70,7 @@ Die folgenden Menüs sind Bestandteil der Menüführung:
 
 \begin{minipage}{0.6\textwidth}
 	\begin{figure}[H] 
-		\includegraphics[width=0.9\textwidth]{Bilder/doPlaneCalibInVS.jpg}
+		\includegraphics[trim=3cm 1cm 3cm 3cm, clip, width=0.9\textwidth]{Bilder/doPlaneCalibInVS.jpg}
 			\label{fig:doPlaneCalibInVS}
 	\end{figure}
 \end{minipage}
@@ -71,7 +81,7 @@ Die folgenden Menüs sind Bestandteil der Menüführung:
 
 \begin{minipage}{0.6\textwidth}
 	\begin{figure}[H] 
-		\includegraphics[width=0.9\textwidth]{Bilder/doPoseCalibInVS.jpg}
+		\includegraphics[trim=3cm 2cm 3cm 2cm, clip, width=0.9\textwidth]{Bilder/doPoseCalibInVS.jpg}
 			\label{fig:doPoseCalibInVS}
 	\end{figure}
 \end{minipage}
@@ -82,7 +92,7 @@ Die folgenden Menüs sind Bestandteil der Menüführung:
 
 \begin{minipage}{0.6\textwidth}
 	\begin{figure}[H] 
-		\includegraphics[width=0.9\textwidth]{Bilder/SelectCalibrationTarget.jpg}
+		\includegraphics[trim=3cm 1cm 3cm 3cm, clip, width=0.9\textwidth]{Bilder/SelectCalibrationTarget.jpg}
 			\label{fig:SelectCalibrationTarget}
 	\end{figure}
 \end{minipage}
@@ -93,7 +103,7 @@ Die folgenden Menüs sind Bestandteil der Menüführung:
 
 \begin{minipage}{0.6\textwidth}
 	\begin{figure}[H] 
-		\includegraphics[width=0.9\textwidth]{Bilder/SetScale.jpg}
+		\includegraphics[trim=3.5cm 1cm 2.5cm 3cm, clip, width=0.9\textwidth]{Bilder/SetScale.jpg}
 			\label{fig:SetScale}
 	\end{figure}
 \end{minipage}
@@ -104,7 +114,7 @@ Die folgenden Menüs sind Bestandteil der Menüführung:
 
 \begin{minipage}{0.6\textwidth}
 	\begin{figure}[H] 
-		\includegraphics[width=0.9\textwidth]{Bilder/SocketNotReady.jpg}
+		\includegraphics[trim=3cm 1cm 3cm 3cm, clip, width=0.9\textwidth]{Bilder/SocketNotReady.jpg}
 			\label{fig:SocketNotReady}
 	\end{figure}
 \end{minipage}
@@ -115,7 +125,7 @@ Die folgenden Menüs sind Bestandteil der Menüführung:
 
 \begin{minipage}{0.6\textwidth}
 	\begin{figure}[H] 
-		\includegraphics[width=0.9\textwidth]{Bilder/Welcome.jpg}
+		\includegraphics[trim=3cm 2cm 3cm 2cm, clip, width=0.9\textwidth]{Bilder/Welcome.jpg}
 			\label{fig:Welcome}
 	\end{figure}
 \end{minipage}
@@ -136,7 +146,7 @@ Die folgenden Menüs sind Bestandteil der Menüführung:
 %\end{description}
 
 
-\subsubsection{Ablauf der Menüführung}\label{sec:menuAblauf}\todo[inline]{Lukas}
+\subsubsection{Ablauf der Menüführung}\label{sec:menuAblauf}\todo[inline, color=green!40]{Lukas}
 Der Ablauf der Menüführung von \textit{MArC} ist in Abbildung~\ref{fig:menuFlow} dargestellt. Die einzelnen Menüs sind bereits in~\ref{sec:menus} beschrieben worden.
 
 \begin{figure}[htbp]

@@ -33,39 +33,41 @@
 \contentsline {subsubsection}{\numberline {3.3.6}Winsoc}{16}{subsubsection.3.3.6}
 \contentsline {section}{\numberline {4}System}{17}{section.4}
 \contentsline {subsection}{\numberline {4.1}Aufbau}{17}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Systemvorraussetzung}{18}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.2}Systemvoraussetzungen}{18}{subsection.4.2}
 \contentsline {subsection}{\numberline {4.3}Starten des Systems}{18}{subsection.4.3}
 \contentsline {subsection}{\numberline {4.4}Men\IeC {\"u}f\IeC {\"u}hrung}{18}{subsection.4.4}
-\contentsline {subsubsection}{\numberline {4.4.1}Men\IeC {\"u}s}{18}{subsubsection.4.4.1}
-\contentsline {subsubsection}{\numberline {4.4.2}Ablauf der Men\IeC {\"u}f\IeC {\"u}hrung}{20}{subsubsection.4.4.2}
-\contentsline {subsection}{\numberline {4.5}Toogle}{21}{subsection.4.5}
+\contentsline {subsubsection}{\numberline {4.4.1}Men\IeC {\"u}s}{19}{subsubsection.4.4.1}
+\contentsline {subsubsection}{\numberline {4.4.2}Ablauf der Men\IeC {\"u}f\IeC {\"u}hrung}{21}{subsubsection.4.4.2}
+\contentsline {subsection}{\numberline {4.5}Toogle}{23}{subsection.4.5}
 \contentsline {subsection}{\numberline {4.6}Kontex Men\IeC {\"u}}{23}{subsection.4.6}
 \contentsline {subsubsection}{\numberline {4.6.1}Men\IeC {\"u}f\IeC {\"u}hrung}{23}{subsubsection.4.6.1}
 \contentsline {subsubsection}{\numberline {4.6.2}Architektur Berechnung}{23}{subsubsection.4.6.2}
 \contentsline {subsection}{\numberline {4.7}Table Men\IeC {\"u}}{23}{subsection.4.7}
 \contentsline {subsubsection}{\numberline {4.7.1}Szenen Management}{23}{subsubsection.4.7.1}
-\contentsline {subsubsection}{\numberline {4.7.2}Match Modus}{23}{subsubsection.4.7.2}
-\contentsline {subsection}{\numberline {4.8}Tracking Algorithmus}{23}{subsection.4.8}
-\contentsline {subsubsection}{\numberline {4.8.1}Green Keying}{23}{subsubsection.4.8.1}
-\contentsline {subsubsection}{\numberline {4.8.2}ArUco Marker Tracking}{23}{subsubsection.4.8.2}
+\contentsline {subsubsection}{\numberline {4.7.2}Match Modus}{24}{subsubsection.4.7.2}
+\contentsline {subsection}{\numberline {4.8}Tracking Algorithmus}{24}{subsection.4.8}
+\contentsline {subsubsection}{\numberline {4.8.1}Green Keying}{24}{subsubsection.4.8.1}
+\contentsline {subsubsection}{\numberline {4.8.2}ArUco Marker Tracking}{24}{subsubsection.4.8.2}
 \contentsline {subsubsection}{\numberline {4.8.3}Marker Objekt}{24}{subsubsection.4.8.3}
 \contentsline {subsubsection}{\numberline {4.8.4}Zuordnung der Identit\IeC {\"a}ten}{24}{subsubsection.4.8.4}
 \contentsline {subsection}{\numberline {4.9}Kalibrierung}{24}{subsection.4.9}
-\contentsline {subsubsection}{\numberline {4.9.1}Kamerakalibrierung}{24}{subsubsection.4.9.1}
-\contentsline {subsubsection}{\numberline {4.9.2}Kalibrierung des Arbeitsbereichs}{27}{subsubsection.4.9.2}
-\contentsline {subsubsection}{\numberline {4.9.3}Kalibrierungfehler}{27}{subsubsection.4.9.3}
+\contentsline {subsubsection}{\numberline {4.9.1}Kamerakalibrierung}{25}{subsubsection.4.9.1}
+\contentsline {subsubsection}{\numberline {4.9.2}Kalibrierung des Arbeitsbereichs}{28}{subsubsection.4.9.2}
+\contentsline {subsubsection}{\numberline {4.9.3}Kalibrierungfehler}{28}{subsubsection.4.9.3}
 \contentsline {subsubsection}{\numberline {4.9.4}M\IeC {\"o}gliche Fehlerquellen}{28}{subsubsection.4.9.4}
 \contentsline {section}{\numberline {5}Ausblick}{28}{section.5}
 \contentsline {subsection}{\numberline {5.1}Trackingmethoden}{28}{subsection.5.1}
 \contentsline {subsection}{\numberline {5.2}AR Erweiterung mit der Webcam}{28}{subsection.5.2}
-\contentsline {subsection}{\numberline {5.3}Daten als Excel Tabelle}{28}{subsection.5.3}
-\contentsline {subsection}{\numberline {5.4}Validierung}{28}{subsection.5.4}
-\contentsline {section}{\numberline {6}Projektmanagement}{28}{section.6}
-\contentsline {subsection}{\numberline {6.1}Zeitplanung}{28}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}Gant Chart}{28}{subsection.6.2}
-\contentsline {subsection}{\numberline {6.3}Planungsmethoden}{28}{subsection.6.3}
+\contentsline {subsection}{\numberline {5.3}Daten als Excel Tabelle}{29}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}Validierung}{29}{subsection.5.4}
+\contentsline {section}{\numberline {6}Projektmanagement}{29}{section.6}
+\contentsline {subsection}{\numberline {6.1}Zeitplanung}{29}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Gant Chart}{29}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Planungsmethoden}{29}{subsection.6.3}
 \contentsline {subsection}{\numberline {6.4}Reflexion}{29}{subsection.6.4}
 \contentsline {subsubsection}{\numberline {6.4.1}Kommuniktion im Team und nach Au\IeC {\ss }en}{29}{subsubsection.6.4.1}
 \contentsline {subsubsection}{\numberline {6.4.2}Probleme}{29}{subsubsection.6.4.2}
 \contentsline {section}{\numberline {7}Zusammenfassung}{29}{section.7}
-\contentsline {section}{\numberline {8}Steckbrief}{29}{section.8}
+\contentsline {section}{\numberline {8}Steckbrief}{30}{section.8}
+\contentsline {section}{\numberline {9}Anhang}{30}{section.9}
+\contentsline {subsection}{\numberline {9.1}\emph {MArC} ReadMe-Datei}{30}{subsection.9.1}
