@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2017.1.2)  20 MAR 2017 10:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2017.1.2)  20 MAR 2017 11:02
 entering extended mode
 **./main.tex
 (main.tex
@@ -2743,12 +2743,16 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 87.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 87.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 68386092470713C071CAEBA35344BC26;5076.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 22579 strings out of 493335
- 413041 string characters out of 3127639
- 502637 words of memory out of 3000000
- 25358 multiletter control sequences out of 15000+200000
+ 22580 strings out of 493335
+ 413051 string characters out of 3127639
+ 502639 words of memory out of 3000000
+ 25359 multiletter control sequences out of 15000+200000
  22923 words of font info for 57 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,22n,92p,1166b,611s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2785,7 +2789,7 @@ table/MiKTeXPortable/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy6.pfb><H
 ts/cm/cmsy8.pfb><H:/LaTeX/_LaTeX_portable/MiKTeXPortable/texmfs/install/fonts/t
 ype1/public/amsfonts/cm/cmtt10.pfb><H:/LaTeX/_LaTeX_portable/MiKTeXPortable/tex
 mfs/install/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (40 pages, 7241162 bytes).
+Output written on main.pdf (40 pages, 7241163 bytes).
 PDF statistics:
  1580 PDF objects out of 1728 (max. 8388607)
  249 named destinations out of 1000 (max. 500000)
