@@ -10,8 +10,7 @@
 \contentsline {subsection}{\numberline {2.4}Men\IeC {\"u}f\IeC {\"u}hrung in VR Umgebungen}{7}{subsection.2.4}
 \contentsline {subsection}{\numberline {2.5}Netzwerkverbindung anhand ISO/OSI-7-Schichtenmodell}{7}{subsection.2.5}
 \contentsline {subsection}{\numberline {2.6}Bedienkonzepte in VR-Umgebungen}{8}{subsection.2.6}
-\contentsline {subsection}{\numberline {2.7}Green-Keying}{8}{subsection.2.7}
-\contentsline {subsection}{\numberline {2.8}Marker Tracking}{9}{subsection.2.8}
+\contentsline {subsection}{\numberline {2.7}Marker Tracking}{8}{subsection.2.7}
 \contentsline {section}{\numberline {3}Materialien}{11}{section.3}
 \contentsline {subsection}{\numberline {3.1}Hardware}{11}{subsection.3.1}
 \contentsline {subsubsection}{\numberline {3.1.1}Computer zur Ausf\IeC {\"u}hrung der Unity-Simulation}{11}{subsubsection.3.1.1}
@@ -34,6 +33,7 @@
 \contentsline {subsubsection}{\numberline {3.3.6}Windows Sockets (Winsock)}{19}{subsubsection.3.3.6}
 \contentsline {section}{\numberline {4}System}{20}{section.4}
 \contentsline {subsection}{\numberline {4.1}Aufbau}{20}{subsection.4.1}
+\contentsline {subsubsection}{\numberline {4.1.1}Tracking Aufbau}{20}{subsubsection.4.1.1}
 \contentsline {subsection}{\numberline {4.2}Systemvoraussetzungen}{21}{subsection.4.2}
 \contentsline {subsection}{\numberline {4.3}Netzwerk}{21}{subsection.4.3}
 \contentsline {subsection}{\numberline {4.4}Starten des Systems}{22}{subsection.4.4}
