@@ -33,6 +33,7 @@
 \BOOKMARK [1][-]{section.4}{System}{}% 33
 \BOOKMARK [2][-]{subsection.4.1}{Aufbau}{section.4}% 34
 \BOOKMARK [3][-]{subsubsection.4.1.1}{Tracking Aufbau}{subsection.4.1}% 35
+<<<<<<< HEAD
 \BOOKMARK [2][-]{subsection.4.2}{Systemvoraussetzungen}{section.4}% 36
 \BOOKMARK [2][-]{subsection.4.3}{Netzwerk}{section.4}% 37
 \BOOKMARK [2][-]{subsection.4.4}{Starten des Systems}{section.4}% 38
@@ -76,3 +77,51 @@
 \BOOKMARK [1][-]{section.9}{Steckbrief}{}% 76
 \BOOKMARK [1][-]{section.10}{Anhang}{}% 77
 \BOOKMARK [2][-]{subsection.10.1}{MArC ReadMe-Datei}{section.10}% 78
+=======
+\BOOKMARK [3][-]{subsubsection.4.1.2}{Unity Aufbau}{subsection.4.1}% 36
+\BOOKMARK [2][-]{subsection.4.2}{Systemvoraussetzungen}{section.4}% 37
+\BOOKMARK [2][-]{subsection.4.3}{Netzwerk}{section.4}% 38
+\BOOKMARK [3][-]{subsubsection.4.3.1}{Serverseitige Netzwerkanbindung}{subsection.4.3}% 39
+\BOOKMARK [3][-]{subsubsection.4.3.2}{Client-seitige Netzwerkanbindung}{subsection.4.3}% 40
+\BOOKMARK [2][-]{subsection.4.4}{Starten des Systems}{section.4}% 41
+\BOOKMARK [2][-]{subsection.4.5}{Men\374f\374hrung}{section.4}% 42
+\BOOKMARK [3][-]{subsubsection.4.5.1}{Men\374s}{subsection.4.5}% 43
+\BOOKMARK [3][-]{subsubsection.4.5.2}{Ablauf der Men\374f\374hrung}{subsection.4.5}% 44
+\BOOKMARK [2][-]{subsection.4.6}{Kontex Men\374}{section.4}% 45
+\BOOKMARK [2][-]{subsection.4.7}{Marker Handles}{section.4}% 46
+\BOOKMARK [3][-]{subsubsection.4.7.1}{Men\374f\374hrung}{subsection.4.7}% 47
+\BOOKMARK [3][-]{subsubsection.4.7.2}{Architektur Berechnung}{subsection.4.7}% 48
+\BOOKMARK [2][-]{subsection.4.8}{Table Men\374}{section.4}% 49
+\BOOKMARK [3][-]{subsubsection.4.8.1}{Szenen Management}{subsection.4.8}% 50
+\BOOKMARK [3][-]{subsubsection.4.8.2}{Speichern von Szenen}{subsection.4.8}% 51
+\BOOKMARK [3][-]{subsubsection.4.8.3}{Laden von Szenen}{subsection.4.8}% 52
+\BOOKMARK [3][-]{subsubsection.4.8.4}{Match Modus}{subsection.4.8}% 53
+\BOOKMARK [1][-]{section.5}{Tracking Programm}{}% 54
+\BOOKMARK [2][-]{subsection.5.1}{uEye Ansteuerung}{section.5}% 55
+\BOOKMARK [2][-]{subsection.5.2}{Kalibrierung}{section.5}% 56
+\BOOKMARK [3][-]{subsubsection.5.2.1}{Kamerakalibrierung}{subsection.5.2}% 57
+\BOOKMARK [3][-]{subsubsection.5.2.2}{Kalibrierung des Arbeitsbereichs}{subsection.5.2}% 58
+\BOOKMARK [3][-]{subsubsection.5.2.3}{Kalibrierungfehler}{subsection.5.2}% 59
+\BOOKMARK [3][-]{subsubsection.5.2.4}{M\366gliche Fehlerquellen}{subsection.5.2}% 60
+\BOOKMARK [2][-]{subsection.5.3}{Marker Detektion}{section.5}% 61
+\BOOKMARK [2][-]{subsection.5.4}{Green Keying}{section.5}% 62
+\BOOKMARK [2][-]{subsection.5.5}{ArUco Marker Tracking}{section.5}% 63
+\BOOKMARK [2][-]{subsection.5.6}{Marker Objekt}{section.5}% 64
+\BOOKMARK [2][-]{subsection.5.7}{Zuordnung der Identit\344ten}{section.5}% 65
+\BOOKMARK [1][-]{section.6}{Ausblick}{}% 66
+\BOOKMARK [2][-]{subsection.6.1}{Trackingmethoden}{section.6}% 67
+\BOOKMARK [2][-]{subsection.6.2}{AR Erweiterung mit der Webcam}{section.6}% 68
+\BOOKMARK [2][-]{subsection.6.3}{Daten als Excel Tabelle}{section.6}% 69
+\BOOKMARK [2][-]{subsection.6.4}{Validierung}{section.6}% 70
+\BOOKMARK [1][-]{section.7}{Projektmanagement}{}% 71
+\BOOKMARK [2][-]{subsection.7.1}{Zeitplanung}{section.7}% 72
+\BOOKMARK [2][-]{subsection.7.2}{Gant Chart}{section.7}% 73
+\BOOKMARK [2][-]{subsection.7.3}{Planungsmethoden}{section.7}% 74
+\BOOKMARK [2][-]{subsection.7.4}{Reflexion}{section.7}% 75
+\BOOKMARK [3][-]{subsubsection.7.4.1}{Kommuniktion im Team und nach Au\337en}{subsection.7.4}% 76
+\BOOKMARK [3][-]{subsubsection.7.4.2}{Probleme}{subsection.7.4}% 77
+\BOOKMARK [1][-]{section.8}{Zusammenfassung}{}% 78
+\BOOKMARK [1][-]{section.9}{Steckbrief}{}% 79
+\BOOKMARK [1][-]{section.10}{Anhang}{}% 80
+\BOOKMARK [2][-]{subsection.10.1}{MArC ReadMe-Datei}{section.10}% 81
+>>>>>>> 9e26b09bd8f65342ed300e5660b27b97267c15f8
