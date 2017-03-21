@@ -6,74 +6,71 @@
 \BOOKMARK [2][-]{subsection.2.1}{Architektur von Virtual-Reality-Anwendungen}{section.2}% 6
 \BOOKMARK [2][-]{subsection.2.2}{Haptische Interaktionsmethoden in VR Umgebungen}{section.2}% 7
 \BOOKMARK [2][-]{subsection.2.3}{Handtracking Interaktionsmethoden}{section.2}% 8
-<<<<<<< HEAD
 \BOOKMARK [2][-]{subsection.2.4}{Men\374f\374hrung in VR Umgebungen}{section.2}% 9
 \BOOKMARK [2][-]{subsection.2.5}{Netzwerkverbindung anhand ISO/OSI-7-Schichtenmodell}{section.2}% 10
-=======
-\BOOKMARK [2][-]{subsection.2.4}{Bedienkonzepte in VR-Umgebungen}{section.2}% 9
-\BOOKMARK [2][-]{subsection.2.5}{Datenaustausch \374ber internes Netzwerk}{section.2}% 10
->>>>>>> fa83b0f0e1bdaed8b5778e5f19b4dfef50e09c20
-\BOOKMARK [2][-]{subsection.2.6}{Green-Keying}{section.2}% 11
-\BOOKMARK [2][-]{subsection.2.7}{Marker Tracking}{section.2}% 12
-\BOOKMARK [1][-]{section.3}{Materialien}{}% 13
-\BOOKMARK [2][-]{subsection.3.1}{Hardware}{section.3}% 14
-\BOOKMARK [3][-]{subsubsection.3.1.1}{Computer zur Ausf\374hrung der Unity-Simulation}{subsection.3.1}% 15
-\BOOKMARK [3][-]{subsubsection.3.1.2}{Computer zur Ausf\374hrung der Tracking-Anwendung}{subsection.3.1}% 16
-\BOOKMARK [3][-]{subsubsection.3.1.3}{HTC Vive}{subsection.3.1}% 17
-\BOOKMARK [3][-]{subsubsection.3.1.4}{IDS uEye 164LE-C}{subsection.3.1}% 18
-\BOOKMARK [3][-]{subsubsection.3.1.5}{Leap Motion}{subsection.3.1}% 19
-\BOOKMARK [3][-]{subsubsection.3.1.6}{Leap Motion SDK}{subsection.3.1}% 20
-\BOOKMARK [3][-]{subsubsection.3.1.7}{ArUco Marker}{subsection.3.1}% 21
-\BOOKMARK [3][-]{subsubsection.3.1.8}{W\374rfel Marker}{subsection.3.1}% 22
-\BOOKMARK [2][-]{subsection.3.2}{Obsolete Hardware}{section.3}% 23
-\BOOKMARK [3][-]{subsubsection.3.2.1}{Ovrvision Pro}{subsection.3.2}% 24
-\BOOKMARK [3][-]{subsubsection.3.2.2}{Webcam}{subsection.3.2}% 25
-\BOOKMARK [2][-]{subsection.3.3}{Software}{section.3}% 26
-\BOOKMARK [3][-]{subsubsection.3.3.1}{Unity}{subsection.3.3}% 27
-\BOOKMARK [3][-]{subsubsection.3.3.2}{Visual Studio 2015}{subsection.3.3}% 28
-\BOOKMARK [3][-]{subsubsection.3.3.3}{OpenCV}{subsection.3.3}% 29
-\BOOKMARK [3][-]{subsubsection.3.3.4}{Orion Beta Software}{subsection.3.3}% 30
-\BOOKMARK [3][-]{subsubsection.3.3.5}{Steam VR}{subsection.3.3}% 31
-\BOOKMARK [3][-]{subsubsection.3.3.6}{Windows Sockets \(Winsock\)}{subsection.3.3}% 32
-\BOOKMARK [1][-]{section.4}{System}{}% 33
-\BOOKMARK [2][-]{subsection.4.1}{Aufbau}{section.4}% 34
-\BOOKMARK [2][-]{subsection.4.2}{Systemvoraussetzungen}{section.4}% 35
-\BOOKMARK [2][-]{subsection.4.3}{Starten des Systems}{section.4}% 36
-\BOOKMARK [2][-]{subsection.4.4}{Men\374f\374hrung}{section.4}% 37
-\BOOKMARK [3][-]{subsubsection.4.4.1}{Men\374s}{subsection.4.4}% 38
-\BOOKMARK [3][-]{subsubsection.4.4.2}{Ablauf der Men\374f\374hrung}{subsection.4.4}% 39
-\BOOKMARK [2][-]{subsection.4.5}{Toogle}{section.4}% 40
-\BOOKMARK [2][-]{subsection.4.6}{Kontex Men\374}{section.4}% 41
-\BOOKMARK [3][-]{subsubsection.4.6.1}{Men\374f\374hrung}{subsection.4.6}% 42
-\BOOKMARK [3][-]{subsubsection.4.6.2}{Architektur Berechnung}{subsection.4.6}% 43
-\BOOKMARK [2][-]{subsection.4.7}{Table Men\374}{section.4}% 44
-\BOOKMARK [3][-]{subsubsection.4.7.1}{Szenen Management}{subsection.4.7}% 45
-\BOOKMARK [3][-]{subsubsection.4.7.2}{Speichern von Szenen}{subsection.4.7}% 46
-\BOOKMARK [3][-]{subsubsection.4.7.3}{Laden von Szenen}{subsection.4.7}% 47
-\BOOKMARK [3][-]{subsubsection.4.7.4}{Match Modus}{subsection.4.7}% 48
-\BOOKMARK [2][-]{subsection.4.8}{Tracking Algorithmus}{section.4}% 49
-\BOOKMARK [3][-]{subsubsection.4.8.1}{Green Keying}{subsection.4.8}% 50
-\BOOKMARK [3][-]{subsubsection.4.8.2}{ArUco Marker Tracking}{subsection.4.8}% 51
-\BOOKMARK [3][-]{subsubsection.4.8.3}{Marker Objekt}{subsection.4.8}% 52
-\BOOKMARK [3][-]{subsubsection.4.8.4}{Zuordnung der Identit\344ten}{subsection.4.8}% 53
-\BOOKMARK [2][-]{subsection.4.9}{Kalibrierung}{section.4}% 54
-\BOOKMARK [3][-]{subsubsection.4.9.1}{Kamerakalibrierung}{subsection.4.9}% 55
-\BOOKMARK [3][-]{subsubsection.4.9.2}{Kalibrierung des Arbeitsbereichs}{subsection.4.9}% 56
-\BOOKMARK [3][-]{subsubsection.4.9.3}{Kalibrierungfehler}{subsection.4.9}% 57
-\BOOKMARK [3][-]{subsubsection.4.9.4}{M\366gliche Fehlerquellen}{subsection.4.9}% 58
-\BOOKMARK [1][-]{section.5}{Ausblick}{}% 59
-\BOOKMARK [2][-]{subsection.5.1}{Trackingmethoden}{section.5}% 60
-\BOOKMARK [2][-]{subsection.5.2}{AR Erweiterung mit der Webcam}{section.5}% 61
-\BOOKMARK [2][-]{subsection.5.3}{Daten als Excel Tabelle}{section.5}% 62
-\BOOKMARK [2][-]{subsection.5.4}{Validierung}{section.5}% 63
-\BOOKMARK [1][-]{section.6}{Projektmanagement}{}% 64
-\BOOKMARK [2][-]{subsection.6.1}{Zeitplanung}{section.6}% 65
-\BOOKMARK [2][-]{subsection.6.2}{Gant Chart}{section.6}% 66
-\BOOKMARK [2][-]{subsection.6.3}{Planungsmethoden}{section.6}% 67
-\BOOKMARK [2][-]{subsection.6.4}{Reflexion}{section.6}% 68
-\BOOKMARK [3][-]{subsubsection.6.4.1}{Kommuniktion im Team und nach Au\337en}{subsection.6.4}% 69
-\BOOKMARK [3][-]{subsubsection.6.4.2}{Probleme}{subsection.6.4}% 70
-\BOOKMARK [1][-]{section.7}{Zusammenfassung}{}% 71
-\BOOKMARK [1][-]{section.8}{Steckbrief}{}% 72
-\BOOKMARK [1][-]{section.9}{Anhang}{}% 73
-\BOOKMARK [2][-]{subsection.9.1}{MArC ReadMe-Datei}{section.9}% 74
+\BOOKMARK [2][-]{subsection.2.6}{Bedienkonzepte in VR-Umgebungen}{section.2}% 11
+\BOOKMARK [2][-]{subsection.2.7}{Green-Keying}{section.2}% 12
+\BOOKMARK [2][-]{subsection.2.8}{Marker Tracking}{section.2}% 13
+\BOOKMARK [1][-]{section.3}{Materialien}{}% 14
+\BOOKMARK [2][-]{subsection.3.1}{Hardware}{section.3}% 15
+\BOOKMARK [3][-]{subsubsection.3.1.1}{Computer zur Ausf\374hrung der Unity-Simulation}{subsection.3.1}% 16
+\BOOKMARK [3][-]{subsubsection.3.1.2}{Computer zur Ausf\374hrung der Tracking-Anwendung}{subsection.3.1}% 17
+\BOOKMARK [3][-]{subsubsection.3.1.3}{HTC Vive}{subsection.3.1}% 18
+\BOOKMARK [3][-]{subsubsection.3.1.4}{IDS uEye 164LE-C}{subsection.3.1}% 19
+\BOOKMARK [3][-]{subsubsection.3.1.5}{Leap Motion}{subsection.3.1}% 20
+\BOOKMARK [3][-]{subsubsection.3.1.6}{Leap Motion SDK}{subsection.3.1}% 21
+\BOOKMARK [3][-]{subsubsection.3.1.7}{ArUco Marker}{subsection.3.1}% 22
+\BOOKMARK [3][-]{subsubsection.3.1.8}{W\374rfel Marker}{subsection.3.1}% 23
+\BOOKMARK [2][-]{subsection.3.2}{Obsolete Hardware}{section.3}% 24
+\BOOKMARK [3][-]{subsubsection.3.2.1}{Ovrvision Pro}{subsection.3.2}% 25
+\BOOKMARK [3][-]{subsubsection.3.2.2}{Webcam}{subsection.3.2}% 26
+\BOOKMARK [2][-]{subsection.3.3}{Software}{section.3}% 27
+\BOOKMARK [3][-]{subsubsection.3.3.1}{Unity}{subsection.3.3}% 28
+\BOOKMARK [3][-]{subsubsection.3.3.2}{Visual Studio 2015}{subsection.3.3}% 29
+\BOOKMARK [3][-]{subsubsection.3.3.3}{OpenCV}{subsection.3.3}% 30
+\BOOKMARK [3][-]{subsubsection.3.3.4}{Orion Beta Software}{subsection.3.3}% 31
+\BOOKMARK [3][-]{subsubsection.3.3.5}{Steam VR}{subsection.3.3}% 32
+\BOOKMARK [3][-]{subsubsection.3.3.6}{Windows Sockets \(Winsock\)}{subsection.3.3}% 33
+\BOOKMARK [1][-]{section.4}{System}{}% 34
+\BOOKMARK [2][-]{subsection.4.1}{Aufbau}{section.4}% 35
+\BOOKMARK [2][-]{subsection.4.2}{Systemvoraussetzungen}{section.4}% 36
+\BOOKMARK [2][-]{subsection.4.3}{Netzwerk}{section.4}% 37
+\BOOKMARK [2][-]{subsection.4.4}{Starten des Systems}{section.4}% 38
+\BOOKMARK [2][-]{subsection.4.5}{Men\374f\374hrung}{section.4}% 39
+\BOOKMARK [3][-]{subsubsection.4.5.1}{Men\374s}{subsection.4.5}% 40
+\BOOKMARK [3][-]{subsubsection.4.5.2}{Ablauf der Men\374f\374hrung}{subsection.4.5}% 41
+\BOOKMARK [2][-]{subsection.4.6}{Toogle}{section.4}% 42
+\BOOKMARK [2][-]{subsection.4.7}{Kontex Men\374}{section.4}% 43
+\BOOKMARK [3][-]{subsubsection.4.7.1}{Men\374f\374hrung}{subsection.4.7}% 44
+\BOOKMARK [3][-]{subsubsection.4.7.2}{Architektur Berechnung}{subsection.4.7}% 45
+\BOOKMARK [2][-]{subsection.4.8}{Table Men\374}{section.4}% 46
+\BOOKMARK [3][-]{subsubsection.4.8.1}{Szenen Management}{subsection.4.8}% 47
+\BOOKMARK [3][-]{subsubsection.4.8.2}{Speichern von Szenen}{subsection.4.8}% 48
+\BOOKMARK [3][-]{subsubsection.4.8.3}{Laden von Szenen}{subsection.4.8}% 49
+\BOOKMARK [3][-]{subsubsection.4.8.4}{Match Modus}{subsection.4.8}% 50
+\BOOKMARK [2][-]{subsection.4.9}{Tracking Algorithmus}{section.4}% 51
+\BOOKMARK [3][-]{subsubsection.4.9.1}{Green Keying}{subsection.4.9}% 52
+\BOOKMARK [3][-]{subsubsection.4.9.2}{ArUco Marker Tracking}{subsection.4.9}% 53
+\BOOKMARK [3][-]{subsubsection.4.9.3}{Marker Objekt}{subsection.4.9}% 54
+\BOOKMARK [3][-]{subsubsection.4.9.4}{Zuordnung der Identit\344ten}{subsection.4.9}% 55
+\BOOKMARK [2][-]{subsection.4.10}{Kalibrierung}{section.4}% 56
+\BOOKMARK [3][-]{subsubsection.4.10.1}{Kamerakalibrierung}{subsection.4.10}% 57
+\BOOKMARK [3][-]{subsubsection.4.10.2}{Kalibrierung des Arbeitsbereichs}{subsection.4.10}% 58
+\BOOKMARK [3][-]{subsubsection.4.10.3}{Kalibrierungfehler}{subsection.4.10}% 59
+\BOOKMARK [3][-]{subsubsection.4.10.4}{M\366gliche Fehlerquellen}{subsection.4.10}% 60
+\BOOKMARK [1][-]{section.5}{Ausblick}{}% 61
+\BOOKMARK [2][-]{subsection.5.1}{Trackingmethoden}{section.5}% 62
+\BOOKMARK [2][-]{subsection.5.2}{AR Erweiterung mit der Webcam}{section.5}% 63
+\BOOKMARK [2][-]{subsection.5.3}{Daten als Excel Tabelle}{section.5}% 64
+\BOOKMARK [2][-]{subsection.5.4}{Validierung}{section.5}% 65
+\BOOKMARK [1][-]{section.6}{Projektmanagement}{}% 66
+\BOOKMARK [2][-]{subsection.6.1}{Zeitplanung}{section.6}% 67
+\BOOKMARK [2][-]{subsection.6.2}{Gant Chart}{section.6}% 68
+\BOOKMARK [2][-]{subsection.6.3}{Planungsmethoden}{section.6}% 69
+\BOOKMARK [2][-]{subsection.6.4}{Reflexion}{section.6}% 70
+\BOOKMARK [3][-]{subsubsection.6.4.1}{Kommuniktion im Team und nach Au\337en}{subsection.6.4}% 71
+\BOOKMARK [3][-]{subsubsection.6.4.2}{Probleme}{subsection.6.4}% 72
+\BOOKMARK [1][-]{section.7}{Zusammenfassung}{}% 73
+\BOOKMARK [1][-]{section.8}{Steckbrief}{}% 74
+\BOOKMARK [1][-]{section.9}{Anhang}{}% 75
+\BOOKMARK [2][-]{subsection.9.1}{MArC ReadMe-Datei}{section.9}% 76
