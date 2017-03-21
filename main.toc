@@ -9,8 +9,7 @@
 \contentsline {subsection}{\numberline {2.3}Handtracking Interaktionsmethoden}{7}{subsection.2.3}
 \contentsline {subsection}{\numberline {2.4}Men\IeC {\"u}f\IeC {\"u}hrung in VR Umgebungen}{7}{subsection.2.4}
 \contentsline {subsection}{\numberline {2.5}Datenaustausch \IeC {\"u}ber internes Netzwerk}{7}{subsection.2.5}
-\contentsline {subsection}{\numberline {2.6}Green-Keying}{7}{subsection.2.6}
-\contentsline {subsection}{\numberline {2.7}Marker Tracking}{7}{subsection.2.7}
+\contentsline {subsection}{\numberline {2.6}Marker Tracking}{7}{subsection.2.6}
 \contentsline {section}{\numberline {3}Materialien}{9}{section.3}
 \contentsline {subsection}{\numberline {3.1}Hardware}{9}{subsection.3.1}
 \contentsline {subsubsection}{\numberline {3.1.1}Computer zur Ausf\IeC {\"u}hrung der Unity-Simulation}{9}{subsubsection.3.1.1}
