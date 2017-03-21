@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.16)  21 MAR 2017 19:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.16)  21 MAR 2017 19:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1377,11 +1377,6 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 26.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 26.
-
-Overfull \hbox (2.45201pt too wide) in paragraph at lines 27--27
-[]\T1/cmr/bx/n/14.4 Netzwerkverbindung an-hand ISO/OSI-7-Schichtenmodell 
- []
-
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 27.
 Package babel Info: Redefining ngerman shorthand "~
@@ -2309,40 +2304,40 @@ Package babel Info: Redefining ngerman shorthand "~
 
 [36]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 458.
+(babel)             in language  on input line 460.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 458.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 461.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 461.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 462.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 462.
+(babel)             in language  on input line 460.
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 463.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 463.
 Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 464.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 464.
+Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 465.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 465.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 466.
+(babel)             in language  on input line 467.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 466.
+(babel)             in language  on input line 467.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 468.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 468.
 
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 468.
+(babel)             in language  on input line 470.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 468.
+(babel)             in language  on input line 470.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 468.
+(babel)             in language  on input line 470.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 468.
+(babel)             in language  on input line 470.
 
 [37]) (./kapitel/ausblick/ausblick.tex
 Package babel Info: Redefining ngerman shorthand "|
@@ -2782,7 +2777,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 88.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 88.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 88.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: BF7E3CA6013C9D37832DBF02392D0CE2;5440.
+(rerunfilecheck)             Checksum: DD289DAB69D1FDFF33EF42F03693FE25;5415.
 
 
 LaTeX Warning: There were undefined references.
@@ -2794,7 +2789,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  24031 strings out of 493089
  425087 string characters out of 6134842
- 518966 words of memory out of 5000000
+ 518941 words of memory out of 5000000
  26690 multiletter control sequences out of 15000+600000
  23263 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2827,7 +2822,7 @@ st/fonts/type1/public/cm-super/sfsl1200.pfb></usr/local/texlive/2015/texmf-dist
 onts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2015/texmf-dist/fon
 ts/type1/public/cm-super/sftt1200.pfb></usr/local/texlive/2015/texmf-dist/fonts
 /type1/public/esvect/vect10.pfb>
-Output written on main.pdf (50 pages, 7181672 bytes).
+Output written on main.pdf (50 pages, 7181852 bytes).
 PDF statistics:
  1266 PDF objects out of 1440 (max. 8388607)
  1114 compressed objects within 12 object streams

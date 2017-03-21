@@ -24,7 +24,7 @@ Die Entscheidung, für das vorliegende Projekt auf eine Desktop-VR-Anwendung zu 
 \subsection{Haptische Interaktionsmethoden in VR Umgebungen}\label{sec:HaptikAnwendungen}\todo[inline]{Laura}
 \subsection{Handtracking Interaktionsmethoden}\label{sec:HandtrackingAnwendungen}\todo[inline]{Paul}
 \subsection{Menüführung in VR Umgebungen}\label{sec:MenüAnwendungen}\todo[inline]{Lukas}
-\subsection{Netzwerkverbindung anhand ISO/OSI-7-Schichtenmodell}\label{sec:Netzwerk}\todo[inline, color=green]{Laura}
+\subsection{ISO/OSI-7-Schichtenmodell}\label{sec:Netzwerk}\todo[inline, color=green]{Laura}
 Um die Kommunikation zwischen unterschiedlichsten technischen Systemen zu ermöglichen und zu vereinheitlichen dient das \textit{ISO/OSI-7-Schichtenmodell} \cite{ITU}, welches in Tabelle~\ref{tab:Schichtenmodell} schematisch dargestellt ist. Um die Weiterentwicklung von Kommunikationsmodellen möglichst barrierefrei zu gestalten, sind in dem Modell sieben aufeinanderfolgende Schichten definiert worden, die für einen klar eingegrenzten Teilbereich der Kommunikation zuständig sind. Die Netzprotokolle, die in einer Schicht zum Einsatz kommen, müssen einheitliche Schnittstellen aufweisen, um einen reibungslosen Austausch zu gewährleisten. Entsprechende Beispiele sind der rechten Spalte von Tabelle~\ref{tab:Schichtenmodell} zu entnehmen.\\
 
 \begin{table}
@@ -54,7 +54,7 @@ Um die Kommunikation zwischen unterschiedlichsten technischen Systemen zu ermög
 	\label{tab:Schichtenmodell}
 \end{table}
 
-Während die Schichten 1-4 als transportorientierte Schichten einzustufen sind, können die verbleibenden Schichten 5-7 als anwendungsorientiert angesehen werden. Da der Austausch von Daten für die Umsetzung von \textit{MaRC} im Vordergrund steht, wird im Folgenden besonders auf die vierte Schicht eingegangen. Dabei werden die beiden Übertragungsprotokolle \textit{Transmission Control Protocol} (TCP) und \textit{User Datagram Protocol} (UDP) vorgestellt. Auf die Aufführung weiterer Übertragungsprotokolle wird bewusst verzichtet, da wie in Kapitel~\ref{sec:Winsock} beschrieben ist, die \textit{Winsock} API die Übertragung über diese beiden Protokolle ermöglicht.s\\
+Während die Schichten 1--4 als transportorientierte Schichten einzustufen sind, können die verbleibenden Schichten 5--7 als anwendungsorientiert angesehen werden. Da der Austausch von Daten für die Umsetzung von \textit{MaRC} im Vordergrund steht, wird im Folgenden besonders auf die vierte Schicht eingegangen. Dabei werden die beiden Übertragungsprotokolle \textit{Transmission Control Protocol} (TCP) und \textit{User Datagram Protocol} (UDP) vorgestellt. Auf die Aufführung weiterer Übertragungsprotokolle wird bewusst verzichtet, da wie in Kapitel~\ref{sec:Winsock} beschrieben ist, die \textit{Winsock} API die Übertragung über diese beiden Protokolle ermöglicht.s\\
 Die Transportschicht stellt eine logische Ende-zu-Ende-Verbindungen dar und dient als Bindeglied zwischen den transportorientierten und anwendungsorientierten Schichten \cite{ITU}.
 
 \begin{description}

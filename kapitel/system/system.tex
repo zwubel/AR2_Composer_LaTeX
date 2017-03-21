@@ -453,10 +453,15 @@ An diesem Punkt hat man die Kamerakoordinaten vollständig in Weltkoordinaten ü
 \subsubsection{Kalibrierung des Arbeitsbereichs}\label{sec:planeCalib} \todo[inline]{Laura}
 
 %Entsprechend Formel~\ref{equ:SensInWorld} muss für den letzten Schritt eine Transformationsmatrix von Weltkoordinaten in Unitykoordinaten gefunden werden. Dies geschieht indem man die korrespondierenden Koordinatenpaare einer Controllerposition in Unity und in bereits in Weltkoordinaten gebrachten Sensorkoordinaten ineinander überführt, d.h. eine affine Transformation durchführt. Die Controlerpositionen in Weltkoordinaten werden somit auf die in Unitykoordinaten abgebildet.
-\subsubsection{Kalibrierungfehler} \label{sec:calibError}\todo[inline, color=yellow]{Laura}
-In den Kapiteln~\ref{sec:camCalib} und~\ref{sec:planeCalib} wird der Algorithmus zur Berechnung der Koordinatentransformation von Kamerakoordinaten in Unitykoordinaten beschrieben. Beim Benutzen des fertig kalibrierten System  
+\subsubsection{Kalibrierungsfehler} \label{sec:calibError}\todo[inline, color=yellow]{Laura}
+In den Kapiteln~\ref{sec:camCalib} und~\ref{sec:planeCalib} wird der Algorithmus zur Berechnung der Koordinatentransformation von Kamerakoordinaten in Unitykoordinaten beschrieben. Beim Benutzen des fertig kalibrierten System fällt jedoch auf, dass die Aluminiumwürfel nicht an allen Positionen auf dem Spielfeld deckungsgleich mit ihrem gerenderten Pendant sind.  Bei genauerer Betrachtung \textcolor{red}{...Wie sieht Fehler aus? immer noch an kalibrierten Ecken und Diagonale ok?}\\
+Im nächsten Kapitel werden mögliche Gründe für diese fehlerhafte Abbildung aufgeführt und diskutiert. 
+
+
 \subsubsection{Mögliche Fehlerquellen} \label{sec:calibErrorSources}\todo[inline, color=yellow]{Laura}
 Der in~\ref{sec:calibError} beschriebene Fehler der bei der Abbildung von 
+
+Neben der Rechenungenauigkeit und Rundungsfehlern ...
 
 \subsection{Marker Detektion}
 \subsection{Green Keying}\todo[inline]{Vera}
