@@ -1,10 +1,10 @@
 \section{System}\todo[inline, color=green]{Lukas}
 Die Benutzung von \textit{MArC} ist in der dem Programm mitgelieferten ReadMe-Datei (vgl.~\ref{sec:readMe}) beschrieben. Darin wird erklärt, welche Hard- und Softwarekomponenten erforderlich sind und wie das System gestartet und kalibriert wird. Auf diese Aspekte wird in den folgenden Abschnitten näher eingegangen.\\ 
 Des weiteren enthält die ReadMe-Datei eine Übersicht über die enthaltenen Quellcode-Dateien.
-\subsection{Aufbau}\label{sec:Aufbau}\todo[inline]{Lukas und Vera}
-
-Der Aufbau von \textit{MArC} kann in zwei Teile aufgeteilt werden. Zum Einen den Part der für das Tracking der Würfel Marker verantwortlich und zum Anderen den zweiten Teil, welcher die VR Umgebung erzeugt und die notwendige Peripherie für die Interaktionen stellt.\\
-Wie in Abbildung \ref{fig:AufbauMarc} dargestellt ist wird senkrecht über einem beliebigen Tisch eine Kamera installiert, die Würfel Marker aus der Vogelperspektive filmt. Der Abstand der Kamera zum Tisch sollte so gewählt werden, dass die Aufnahmen scharf sind und sich die Nutzer nicht den Kopf daran stoßen können. Hier ist besonder Vorsicht geboten, da die Nutzer durch die \textit{HTC Vive} nicht die reale Umgebung sehen können. Für den Prototypen wurde eine \textit{IDS uEye 164LE-C} (siehe Kapitel \ref{sec:uEye}) verwendet und über eine USB 2.0 Schnittstelle an den Computer mit dem Tracking Algorithmus verbunden. Diese Kamera wird mit Hilfe der uEye-API vom Tracking Algorithmus im Live-Bild-Modus initialisiert und gesteuert. In diesen Live Bildern werden die Würfel Marker erkannt und verfolgt. Für jeden erkannten Würfel Marker werden alle relevanten Informationen über die TCP Netzwerkverbindung (siehe Kapitel \ref{sec:Netzwerk}) an den Computer zur Ausführung der Unity-Simulation (siehe Kapitel \ref{sec:UnityComp}) übertragen. Damit der Algorithmus einen Würfel Marker erkennt muss er in dem vorab definierten Spielfeld bewegt werden. Dieser Vorgang findet während der Kalibrierung des Arbeitsbereiches statt. Für diese Kalibrierung ist es notwendig den einzelnen \textit{ArUco} Marker aus Abbildung \ref{fig:AllUsedArucoMarker} mit der ID $49$ exakt wie in Abbildung \ref{fig:KontrollerMarc} auf den Controller der \textit{HTC Vice} zu montieren.
+\subsection{Aufbau}\label{sec:Aufbau}\todo[inline, color=yellow]{Lukas und Vera}
+Der Aufbau von \textit{MArC} kann in zwei Teile aufgeteilt werden. Zum Einen den Part der für das Tracking der Würfel Marker verantwortlich ist und zum Anderen den zweiten Teil, welcher die VR Umgebung erzeugt und die notwendige Peripherie für die Interaktionen stellt.\\
+\subsubsection{Tracking Aufbau}\todo[inline, color=green]{Vera}
+Wie in Abbildung \ref{fig:AufbauMarc} dargestellt ist wird senkrecht über einem beliebigen Tisch eine Kamera installiert, die Würfel Marker aus der Vogelperspektive filmt. Der Abstand zum Tisch sollte so gewählt werden, dass die Aufnahmen noch scharf sind und sich die Nutzer nicht den Kopf daran stoßen können. Hier ist besondere Vorsicht geboten, da die Nutzer durch die \textit{HTC Vive} nicht die reale Umgebung wahrnehmen können. Für den Prototypen wurde eine \textit{IDS uEye 164LE-C} (siehe Kapitel \ref{sec:uEye}) verwendet und über eine USB 2.0 Schnittstelle an den Computer mit dem Tracking Algorithmus verbunden. Diese Kamera wird mit Hilfe der uEye-API vom Tracking Algorithmus im Live-Bild-Modus initialisiert und gesteuert. In diesen Live Bildern werden die Würfel Marker erkannt und verfolgt. Für jeden erkannten Würfel Marker werden alle relevanten Informationen über die TCP Netzwerkverbindung (siehe Kapitel \ref{sec:Netzwerk}) an den Computer zur Ausführung der \textit{Unity}-Simulation (siehe Kapitel \ref{sec:UnityComp}) übertragen. Damit der Algorithmus einen Würfel Marker erkennt muss er in dem vorab definierten Spielfeld bewegt werden. Diese Festlegung findet während der Kalibrierung des Arbeitsbereiches statt. Für diese Kalibrierung ist es notwendig den einzelnen \textit{ArUco} Marker aus Abbildung \ref{fig:AllUsedArucoMarker} mit der ID $49$ exakt wie in Abbildung \ref{fig:KontrollerMarc} auf den Controller der \textit{HTC Vice} zu montieren, da nur so gewährleistet werden kann, dass die erkannte \textit{ArUco} Marker Position in der Kamerawelt mit den Controller Positionen in der \textit{Unity} Welt korrespondieren.
 
 \begin{figure}[H]
 	\centering
@@ -138,18 +138,6 @@ Die folgenden Menüs sind Bestandteil der Menüführung:
 	Erscheint als erstes Menü. Hier erhält der Nutzer eine kurze Information darüber, wie die Anwendung heißt und wozu sie dient.
 \end{minipage}\\
 
-
-
-%\begin{description}
-
-	%\item[\texttt{doPoseCalibInVS}:] Dient dem Benutzer als Anleitung für die Durchführung der Kamera-Kalibrierung. Diese wird in \ref{sec:camCalib} genauer beschrieben.
-	%\item[\texttt{SelectCalibrationTarget}:] Erlaubt die Auswahl der Art der Kalibrierung. Es kann hier entweder nur der Arbeitsbereich oder sowohl der Arbeitsbereich, als auch die Kamera kalibriert werden. Die Kalibrierung ist näher in \ref{sec:calib} beschrieben.
-	%\item[\texttt{SetScale}:] Stellt das letzte Menü vor dem Starten der Simulation dar. In diesem kann der Benutzer den Maßstab der Gebäudesimulation einstellen und anschließend die Simulation starten.
-	%\item[\texttt{SocketNotReady}:] Warnt den Benutzer nach dem Verlassen des \texttt{Welcome}-Menüs, dass die Netzwerkverbindung zum Computer, auf dem die Tracking-Anwendung ausgeführt wird, nicht bereit ist. Nach Bestätigung dieses Hinweises durch einen Klick auf \texttt{Continue}, kehrt der Benutzer zum \texttt{Welcome}-Menü zurück. Anschließend kann der Vorgang fortgesetzt werden, wenn die Netzwerkverbindung hergestellt wurde. Andernfalls erscheint wieder \texttt{SocketNotReady}.
-	%\item[\texttt{Welcome}:] Erscheint als erstes Menü. Hier erhält der Nutzer eine kurze Information darüber, wie die Anwendung heißt und wozu sie dient.
-%\end{description}
-
-
 \subsubsection{Ablauf der Menüführung}\label{sec:menuAblauf}\todo[inline, color=green]{Lukas}
 Der Ablauf der Menüführung von \textit{MArC} ist in Abbildung~\ref{fig:menuFlow} dargestellt. Die einzelnen Menüs sind bereits in~\ref{sec:menus} beschrieben worden.
 
@@ -180,10 +168,70 @@ Sofern der HTC Vive Controller beim Aufruf von \texttt{doPlane\-Calibration\-InV
 \subsubsection{Architektur Berechnung}\todo[inline]{Laura}
 
 
-\subsection{Table Menü}\todo[inline]{Paul}
-\subsubsection{Szenen Management}\todo[inline]{Paul}
-\subsubsection{Match Modus}\todo[inline]{Paul}
+\subsection{Table Menü}\todo[inline, color=yellow]{Paul}
+\label{TableMenü}
 
+Zur intuitiven Bedienung des \textit{MArC} wurden die Menüs, die während der Laufzeit benutzt werden können, auf dem Arbeitstisch platziert. Dies hat den Vorteil, dass zum einen diese Menüs permanent sichtbar sein können, ohne den Nutzer während der Arbeit zu stören und zum anderen ein haptisches Feedback bei der Nutzung möglich ist.\\
+Möchte der Nutzer die Menüs bedienen, so drückt er mit dem Finger, der durch die \textit{Leap Motion} getrackt wird auf die Buttons und damit gleichzeitig auf den Tisch. Dies erleichtert die Benutzung deutlich im Vergleich zu der Nutzung von Menüs die im Raum schweben.\\
+Im laufe der Entwicklung hat sich für das rechte Menü der Name \textit{Table Menü} etabliert. Im folgenden wird dessen Funktion im Detail erläutert.
+
+\subsubsection{Szenen Management}\todo[inline, color=green]{Paul}
+Eine Anforderung an das System war, dass der Nutzer erstellte Szenen abspeichern und wieder aufrufen können soll. Anhand des \textit{Table Menüs} ist dies möglich. Die Funktionen des Menüs sind:
+\begin{itemize}
+	\item Speichern von Szenen
+	\item Laden von Szenen und aufrufen des \textit{Match Modus} (s. Abschnitt \ref{MatchModus})
+	\item Scrollen durch die gespeicherten Szenen
+
+\end{itemize}
+
+
+
+\subsubsection{Speichern von Szenen}\todo[inline, color=green]{Paul}
+\label{Speichern}
+Möchte der Nutzer eine Szene speichern, so drückt er mit dem Finger auf den Button \glqq Save \grqq{}. \textit{MArC} speichert die aktuelle Szene automatisch in dem Ordner \glqq \textbackslash Resources\textbackslash saves\textbackslash Dateiname.xml\grqq{}.\\
+Der Dateiame setzt sich aus aktuellem Datum und aktueller Zeit zum Speicherzeitpunkt wie folgt zusammen:
+\begin{center}
+	\texttt{Tag-Monat-Jahr-Stunde-Minute-Sekunde.xml}
+\end{center}
+Durch diese Markierung können später Dateien identifiziert werden, die auch nur Sekunden hintereinander gespeichert wurde.\\
+Da innerhalb von \textit{Unity} eine hierarchiche Anordnung sämtlicher Elemente in Form eines Szenegraphen angewendet wird, bot sich eine Speicherung der Daten ebenfalls hierarchich in form eines XML Dokumentes an.\\
+Die \textit{Extensible markup language (XML)} beschreibt eine Klasse von Daten Objekten (XML Documents) und ermöglicht das hierarchiche Abspeichern von geparsten oder ungeparsten Daten \cite{bray1998extensible}. In \textit{C\#} sind Verarbeitungsklassen bereits implementiert. Mittels dieser sog. \textit{XML Prozessoren} wird ein Datenzugriff erleichtert.
+
+\paragraph{Dateiaufbau einer gespeicherten Szene}
+Das gesamte Dokument wird mit einem Hauptknoten  \texttt{ $<$AR2\_COMPOSERSCENE$>$} umspannt. Innerhalb diesem wird mit texttt{ $<$time$>$}
+ein Zeitstempel mit gespeichert, falls der Dateiname einmal umbenannt werden sollte.
+Anschließend folgt der  texttt{ $<$TableObject$>$} Knoten, innerhalb dessen die Marker gespeichert werden. Jeder Marker wird nach dem folgenden Schema gespeichert, welches den Aufbau in Unity repräsentiert:
+
+
+ \begin{lstlisting}
+	<Name>
+		<Kindknoten>
+		<PositionX>
+		<PositionY>
+		<PositionZ>
+		<RotationX>
+		<RotationY>
+		<RotationZ>
+		<ScaleX>
+		<ScaleY>
+		<ScaleZ>
+	</Name>
+ \end{lstlisting}
+
+Wobei sich dies als Kurzsschreibweise versteht, innerhalb der Positions/Rotations/Scale Knoten ist der entsprechende Wert eingetragen.
+
+\paragraph{Vorgehen der Speicherung}
+Das Skript \texttt{save.cs} ist für die Speicherung der Szenen verantwortlich. Zunächst wird der Zeitstempel gesoeichert und der Dateiname genertiert. Anschließend wird ein neues XML Dokument erstellt. An dieses wird zunächst der äußerste Knoten angehangen sowie der Zeitstempel. Anschließend wird die rekursive Funktion \texttt{traverseHierarchie} mit dem TableObject der Unity Szene aufgerufen und wird für jeden Kindknoten ausgeführt. \\
+Diese Funktion erstellt jeweils die Knoten für den Namen, die Position, Rotation und Skalierung. Die Werte werden mittels \texttt{Node.InnerText} in die Knoten gespeichert.\\
+Ist diese Funktion durch alle Kindknoten gegangen, wird am Ende noch die Skalierung der Szene in dem Knoten \texttt{globalBuildingScale} abgespeichert, damit dieser beim Laden der Szene rekonstruiert werden kann.
+
+\subsubsection{Laden von Szenen}\todo[inline]{Paul}
+
+
+
+
+\subsubsection{Match Modus}\todo[inline]{Paul}
+\label{MatchModus}
 \subsection{Tracking Algorithmus} \label{sec:Tracking}\todo[inline]{Vera}
 \subsubsection{Green Keying}\todo[inline]{Vera}
 \subsubsection{ArUco Marker Tracking}\todo[inline]{Vera}
