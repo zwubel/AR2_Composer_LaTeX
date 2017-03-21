@@ -227,7 +227,7 @@ Anschließend folgt der  texttt{ $<$TableObject$>$} Knoten, innerhalb dessen die
 Wobei sich dies als Kurzsschreibweise versteht, innerhalb der Positions/Rotations/Scale Knoten ist der entsprechende Wert eingetragen.
 
 \paragraph{Vorgehen der Speicherung}
-Das Skript \texttt{save.cs} ist für die Speicherung der Szenen verantwortlich. Zunächst wird der Zeitstempel gesoeichert und der Dateiname genertiert. Anschließend wird ein neues XML Dokument erstellt. An dieses wird zunächst der äußerste Knoten angehangen sowie der Zeitstempel. Anschließend wird die rekursive Funktion \texttt{traverseHierarchie} mit dem TableObject der Unity Szene aufgerufen und wird für jeden Kindknoten ausgeführt. \\
+Das Skript \texttt{save.cs} ist für die Speicherung der Szenen verantwortlich. Zunächst wird der Zeitstempel geseichert und der Dateiname genertiert. Anschließend wird ein neues XML Dokument erstellt. An dieses wird zunächst der äußerste Knoten angehangen sowie der Zeitstempel. Anschließend wird die rekursive Funktion \texttt{traverseHierarchie} mit dem TableObject der Unity Szene aufgerufen und wird für jeden Kindknoten ausgeführt. \\
 Diese Funktion erstellt jeweils die Knoten für den Namen, die Position, Rotation und Skalierung. Die Werte werden mittels \texttt{Node.InnerText} in die Knoten gespeichert.\\
 Ist diese Funktion durch alle Kindknoten gegangen, wird am Ende noch die Skalierung der Szene in dem Knoten \texttt{globalBuildingScale} abgespeichert, damit dieser beim Laden der Szene rekonstruiert werden kann.
 
@@ -238,13 +238,33 @@ Ist diese Funktion durch alle Kindknoten gegangen, wird am Ende noch die Skalier
 
 \subsubsection{Match Modus}\todo[inline]{Paul}
 \label{MatchModus}
-\subsection{Tracking Algorithmus} \label{sec:Tracking}\todo[inline]{Vera}
-\subsubsection{Green Keying}\todo[inline]{Vera}
-\subsubsection{ArUco Marker Tracking}\todo[inline]{Vera}
-\subsubsection{Marker Objekt}\todo[inline]{Vera}
-\subsubsection{Zuordnung der Identitäten}\todo[inline]{Vera}
+\section{Tracking Programm} \label{sec:Tracking}\todo[inline]{Vera}
+Zur Verfolgung und Positionsbestimmung der Würfel Marker (siehe Kapitel \ref{sec:WürfelMarker}) wurde ein Programm entwickelt, welche alle erforderlichen Resourcen und Funktionen bereit stellt und verknüpft. Zunächst muss die Initialisierung und der Zugriff der uEye Kamera (siehe Kapitel \ref{sec:uEye}) ermöglicht werden. Im Anschluss ist das Erstellen beziehungsweise laden aller relevanten Kalibrierungsinformationen unabdingbar. Nach erfolgreichem Abschluss beider Schritte führt das Programm  das Tracking der AruCo Marker und der grünen Rechtecke aus und steuert die Verwaltung und TCP Übertragung (siehe Kapitel \ref{sec:Netzwerk}) der Registrierten Würfel Marker Informationen. Diese Programm wurde in der IDE \textit{Visual Studio} (siehe Kapitel \ref{sec:VisualStudio}) in der Programmiersprache $C++$ entwickelt. Für die Entwicklungen wurden die uEye SDK, \textit{OpenCV} (siehe Kapitel \ref{sec:OpenCV}) sowie die Standardbibliothek \textit{Winsock} zur Hilfe genommen. In den folgenden Abschnitten wird die Vorgehensweise im Detail erklärt.
 
-
+\subsection{uEye Ansteuerung}\todo[inline]{Vera}
+Der erste Prozess des Tracking Programms ist die Initialisierung der uEye Kamera im Live-Bild-Modus. Mit Hilfe der vom Hersteller bereit gestellten SDK kann die Kamera mit allen benötigten Eigenschaften parametrisiert und alle notwendigen Speicher allokiert. Dies übernimmt die Funtion \texttt{inituEyeCam} in der Klasse \texttt{uEye\_input.cpp}. Die verwendeten Parameter können aus der Tabelle \ref{tab:UeyeParam} entnommen werden. Die Kamera wird mit dem maximalen Pixel Clock und der maximalen Framerate betrieben. Aus diesen Einstellungen ergibt sich auch die Belichtungszeit. Um einen höheren Kontrast zur Erkennung der Marker zu erzielen wurde zusätzlich das Hardware Signal zwanzigfach verstärkt.
+Im Live-Bild-Modus werden die generierten Aufnahmen fortlaufend in der selben Speicheradresse überschrieben. Auf diesen Speicherplatz kann das Programm jederzeit mit der Funktion \texttt{getCapturedFrame} zugreifen, die die aktuellste Aufnahme zur Weiterverarbeitung zurück gibt. Nach der Beendigung des Tracking Algorithmus wird zusätzlich noch die Funktion \texttt{exitCamera} bereit gestellt, welche den verwendeten allokierten Speicher wieder freigibt.
+\begin{table}
+	\centering
+	\begin{tabular}{|c|c|}
+		\hline
+		\Absatzbox{}
+		\textbf{Parameter}& \textbf{Wert} \\
+		\hline
+		Pixel Clock & 37 ms \\
+		\hline
+		Frame Rate & 23 fps  \\
+		\hline 
+		Belichtungszeit & 40 ms\\
+		\hline
+		Gamma & 2.2 \\
+		\hline
+		Digitale Verstärkung & 20 \\
+		\hline
+	\end{tabular}
+	\caption{Parametrisierung der uEye Kamera für das Tracking.}
+	\label{tab:UeyeParam}
+\end{table}
 
 \subsection{Kalibrierung}\label{sec:calib}\todo[inline, backgroundcolor=green]{Laura}
 Um das Ziel von \textit{MArC} zu erreichen, an den Positionen der Aluminiumwürfel im Arbeitsbereich in der virtuellen Realität von Unity gerenderte Würfel darzustellen, muss das System kalibriert werden. Die Kalibrierung hat zum Ziel, eine Koordinatentransformation zu finden, die Positionen im Kamera-Koordinatensystem in das Unity-Koordinatensystem transformiert.
@@ -404,5 +424,10 @@ An diesem Punkt hat man die Kamerakoordinaten vollständig in Weltkoordinaten ü
 \subsubsection{Kalibrierungfehler} \label{sec:calibError}\todo[inline]{Laura}
 \subsubsection{Mögliche Fehlerquellen} \label{sec:calibErrorSources}\todo[inline]{Laura}
 
+\subsection{Marker Detektion}
+\subsection{Green Keying}\todo[inline]{Vera}
+\subsection{ArUco Marker Tracking}\todo[inline]{Vera}
 
+\subsection{Marker Objekt}\todo[inline]{Vera}
+\subsection{Zuordnung der Identitäten}\todo[inline]{Vera}
 
