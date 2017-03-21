@@ -95,29 +95,8 @@ Zur Positionsbestimmung im Raum wird die Lighthousetechnologie von \textit{Valve
 \subsubsection{IDS uEye 164LE-C}\label{sec:uEye} \todo[inline, color=green] {Vera}
 Die Kamera \textit{uEye 164LE-C} wurde vom Hersteller \textit{IDS Imaging Development Systems} entwickelt. Sie hat eine Auflösung von $1280 \times 1024$ Pixel und ermöglicht Live-Video-Aufnahmen im RGB Farbmodus mit maximal $25$ fps. Der integrierte CMOS Bildsensor wird im Rolling Shutter betrieben und ermöglicht Belichtungszeiten von $37\mu$s bis $10$s. Weiterführend kann sie universell mit allen gängigen Computern oder Systemen via USB 2.0 Schnittstelle verbunden werden \cite{website:UEyeTechSpec}.\\
 
-Die erforderliche Ansteuerung der \textit{uEye 164LE-C} erfolgt mit Hilfe der bereit gestellten \textit{IDS Software Suite}. In diese Suite ist die \textit{uEye-API} integriert, welche die Entwicklung von eigenen Programmen unter \textit{Windows} und \textit{Linux} mit den Programmiersprachen \textit{C}$++$, \textit{.NET}, \textit{C$\#$} oder \textit{C} ermöglicht \cite{website:IDSSuite}. Für das Tracking der Marker in \textit{MArC} wurde eine eigene Schnittstelle in \textit{C}$++$ erstellt, welche die Kamera im Live Modus mit den Parametern aus Tabelle \ref{tab:UeyeParam} initialisiert und steuert. 
+Die erforderliche Ansteuerung der \textit{uEye 164LE-C} erfolgt mit Hilfe der bereit gestellten \textit{IDS Software Suite}. In diese Suite ist die \textit{uEye-API} integriert, welche die Entwicklung von eigenen Programmen unter \textit{Windows} und \textit{Linux} mit den Programmiersprachen \textit{C}$++$, \textit{.NET}, \textit{C$\#$} oder \textit{C} ermöglicht \cite{website:IDSSuite}. Für das Tracking der Marker in \textit{MArC} wurde eine eigene Schnittstelle in \textit{C}$++$ erstellt, welche die Kamera im Live Modus initialisiert und steuert. 
 
-\begin{table}
-	\centering
-	\begin{tabular}{|c|c|}
-		\hline
-		\Absatzbox{}
-		\textbf{Parameter}& \textbf{Wert} \\
-		\hline
-		Pixel Clock & 37 ms \\
-		\hline
-		Frame Rate & 23 fps  \\
-		\hline 
-		Belichtungszeit & 40 ms\\
-		\hline
-		Gamma & 2.2 \\
-		\hline
-		Digitale Verstärkung & 20 \\
-		\hline
-	\end{tabular}
-	\caption{Parametrisierung der uEye Kamera für das Tracking.}
-	\label{tab:UeyeParam}
-\end{table}
 
 \subsubsection{Leap Motion}\label{sec:LeapMotion} \todo[inline]{Paul}	
 Bei der Leap Motion \cite{website:LeapMotion} handelt sich um ein $7,6\times3\times1,3\,cm$ großes Gerät, welches es mit Hilfe von Sensoren möglich macht, Hand- und Fingerbewegungen als Eingabemöglichkeit zu nutzen. Die Idee dahinter ist, eine Eingabegerät analog zu Maus zu schaffen, welches keinen direkten Kontakt bzw. keine Berührung benötigt. Hergestellt wird die Leap Motion von der Firma Leap Motion, Inc., die ihren Hauptsitz in Amerika hat. Gegründet wurde die Firma am 1. November 2010. \\
