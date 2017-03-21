@@ -181,9 +181,69 @@ Sofern der HTC Vive Controller beim Aufruf von \texttt{doPlane\-Calibration\-InV
 
 
 \subsection{Table Menü}\todo[inline]{Paul}
-\subsubsection{Szenen Management}\todo[inline]{Paul}
-\subsubsection{Match Modus}\todo[inline]{Paul}
+\label{TableMenü}
 
+Zur intuitiven Bedienung des \textit{MArC} wurden die Menüs, die während der Laufzeit benutzt werden können, auf dem Arbeitstisch platziert. Dies hat den Vorteil, dass zum einen diese Menüs permanent sichtbar sein können, ohne den Nutzer während der Arbeit zu stören und zum anderen ein haptisches Feedback bei der Nutzung möglich ist.\\
+Möchte der Nutzer die Menüs bedienen, so drückt er mit dem Finger, der durch die \textit{Leap Motion} getrackt wird auf die Buttons und damit gleichzeitig auf den Tisch. Dies erleichtert die Benutzung deutlich im Vergleich zu der Nutzung von Menüs die im Raum schweben.\\
+Im laufe der Entwicklung hat sich für das rechte Menü der Name \textit{Table Menü} etabliert. Im folgenden wird dessen Funktion im Detail erläutert.
+
+\subsubsection{Szenen Management}\todo[inline]{Paul}
+Eine Anforderung an das System war, dass der Nutzer erstellte Szenen abspeichern und wieder aufrufen können soll. Anhand des \textit{Table Menüs} ist dies möglich. Die Funktionen des Menüs sind:
+\begin{itemize}
+	\item Speichern von Szenen
+	\item Laden von Szenen und aufrufen des \textit{Match Modus} (s. Abschnitt \ref{MatchModus})
+	\item Scrollen durch die gespeicherten Szenen
+
+\end{itemize}
+
+
+
+\subsubsection{Speichern von Szenen}\todo[inline]{Paul}
+\label{Speichern}
+Möchte der Nutzer eine Szene speichern, so drückt er mit dem Finger auf den Button \glqq Save \grqq{}. \textit{MArC} speichert die aktuelle Szene automatisch in dem Ordner \glqq \textbackslash Resources\textbackslash saves\textbackslash Dateiname.xml\grqq{}.\\
+Der Dateiame setzt sich aus aktuellem Datum und aktueller Zeit zum Speicherzeitpunkt wie folgt zusammen:
+\begin{center}
+	\texttt{Tag-Monat-Jahr-Stunde-Minute-Sekunde.xml}
+\end{center}
+Durch diese Markierung können später Dateien identifiziert werden, die auch nur Sekunden hintereinander gespeichert wurde.\\
+Da innerhalb von \textit{Unity} eine hierarchiche Anordnung sämtlicher Elemente in Form eines Szenegraphen angewendet wird, bot sich eine Speicherung der Daten ebenfalls hierarchich in form eines XML Dokumentes an.\\
+Die \textit{Extensible markup language (XML)} beschreibt eine Klasse von Daten Objekten (XML Documents) und ermöglicht das hierarchiche Abspeichern von geparsten oder ungeparsten Daten \cite{bray1998extensible}. In \textit{C\#} sind Verarbeitungsklassen bereits implementiert. Mittels dieser sog. \textit{XML Prozessoren} wird ein Datenzugriff erleichtert.
+
+\paragraph{Dateiaufbau einer gespeicherten Szene}
+Das gesamte Dokument wird mit einem Hauptknoten  \texttt{ $<$AR2\_COMPOSERSCENE$>$} umspannt. Innerhalb diesem wird mit texttt{ $<$time$>$}
+ein Zeitstempel mit gespeichert, falls der Dateiname einmal umbenannt werden sollte.
+Anschließend folgt der  texttt{ $<$TableObject$>$} Knoten, innerhalb dessen die Marker gespeichert werden. Jeder Marker wird nach dem folgenden Schema gespeichert, welches den Aufbau in Unity repräsentiert:
+
+
+ \begin{lstlisting}
+	<Name>
+		<Kindknoten>
+		<PositionX>
+		<PositionY>
+		<PositionZ>
+		<RotationX>
+		<RotationY>
+		<RotationZ>
+		<ScaleX>
+		<ScaleY>
+		<ScaleZ>
+	</Name>
+ \end{lstlisting}
+
+Wobei sich dies als Kurzsschreibweise versteht, innerhalb der Positions/Rotations/Scale Knoten ist der entsprechende Wert eingetragen.
+
+\paragraph{Vorgehen der Speicherung}
+Das Skript \texttt{save.cs} ist für die Speicherung der Szenen verantwortlich. Zunächst wird der Zeitstempel gesoeichert und der Dateiname genertiert. Anschließend wird ein neues XML Dokument erstellt. An dieses wird zunächst der äußerste Knoten angehangen sowie der Zeitstempel. Anschließend wird die rekursive Funktion \texttt{traverseHierarchie} mit dem TableObject der Unity Szene aufgerufen und wird für jeden Kindknoten ausgeführt. \\
+Diese Funktion erstellt jeweils die Knoten für den Namen, die Position, Rotation und Skalierung. Die Werte werden mittels \texttt{Node.InnerText} in die Knoten gespeichert.\\
+Ist diese Funktion durch alle Kindknoten gegangen, wird am Ende noch die Skalierung der Szene in dem Knoten \texttt{globalBuildingScale} abgespeichert, damit dieser beim Laden der Szene rekonstruiert werden kann.
+
+\subsubsection{Laden von Szenen}\todo[inline]{Paul}
+
+
+
+
+\subsubsection{Match Modus}\todo[inline]{Paul}
+\label{MatchModus}
 \subsection{Tracking Algorithmus} \label{sec:Tracking}\todo[inline]{Vera}
 \subsubsection{Green Keying}\todo[inline]{Vera}
 \subsubsection{ArUco Marker Tracking}\todo[inline]{Vera}
