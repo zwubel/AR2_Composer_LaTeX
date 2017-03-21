@@ -265,7 +265,7 @@ In Abbildung~\ref{fig:cameraCalib} sind die Zusammenhänge zwischen dem Projekti
 			\label{fig:cameraCalib}
 	\end{figure}
 
-Die Kamerakalibrierung, die diesem Projekt zu Grunde liegt, ist als manuell einzustufen und kann, wenn gewünscht bzw. benötigt, zu Beginn der eigentlichen Anwendung durchgeführt werden. Um die verschiedenen Koordinatensysteme auseinander zu halten, wird zu Beginn eine Notation festgelegt, die in Tabelle~\ref{tab:camCalibParam} eingesehen werden kann. Zusätzlich können in der Tabelle sowohl die einzelnen Koordinatensysteme, als auch die einzelnen Berechnungsschritte der Kamerakalibrierung nachvollzogen werden, die im Folgenden erläutert werden. Lässt man die ersten zwei Zeilen der Tabelle weg, so ist eine Transformation von Weltkoordinaten $\overrightarrow{x}$ in Kamerakoordinaten $\overrightarrow{u}$ schematisch dargestellt. Dieses Schema muss für die Kamerkalibrierung von \textit{MaRC} invertiert werden und um die Koordinatentransformation in Unitykoordinaten ergänzt werden.  \\
+Die Kamerakalibrierung, die diesem Projekt zu Grunde liegt, ist als manuell einzustufen und kann, wenn gewünscht bzw. benötigt, zu Beginn der eigentlichen Anwendung durchgeführt werden. Um die verschiedenen Koordinatensysteme auseinander zu halten, wird zu Beginn eine Notation festgelegt, die in Tabelle~\ref{tab:camCalibParam} eingesehen werden kann. Zusätzlich können in der Tabelle sowohl die einzelnen Koordinatensysteme, als auch die einzelnen Berechnungsschritte der Kamerakalibrierung nachvollzogen werden, die im Folgenden erläutert werden. Lässt man die ersten zwei Zeilen der Tabelle weg, so ist eine Transformation von Weltkoordinaten $\vv{x}$ in Kamerakoordinaten $\vv{u}$ schematisch dargestellt. Dieses Schema muss für die Kamerkalibrierung von \textit{MaRC} invertiert werden und um die Koordinatentransformation in Unitykoordinaten ergänzt werden.  \\
 
 \begin{table}
 	\centering
@@ -275,31 +275,31 @@ Die Kamerakalibrierung, die diesem Projekt zu Grunde liegt, ist als manuell einz
 		\Absatzbox{}
 		& \textbf{Koordinaten} & \textbf{Komponenten}&\textbf{Transformation}\\
 		\hline
-		$\overrightarrow{x}^U$ & Unity &$x^U$,$y^U$,$z^U$& \\
+		$\vv{x}^U$ & Unity &$x^U$,$y^U$,$z^U$& \\
 		\cline{2-4}
 		$\downarrow$ & & & Koordinatentransformation\\
 		\cline{2-4}
-		$\overrightarrow{x}$ & Welt &$x$,$y$,$z$&  \\
+		$\vv{x}$ & Welt &$x$,$y$,$z$&  \\
 		\cline{2-4}
 		$\downarrow$ & & & Koordinatentransformation\\
 		\cline{2-4}
-		$\overrightarrow{x}^P$ & Projektionszentrum &$x^P$,$y^P$,$z^P$& \\
+		$\vv{x}^P$ & Projektionszentrum &$x^P$,$y^P$,$z^P$& \\
 		\cline{2-4}
 		$\downarrow$ & & & Projektion \\
 		\cline{2-4}
-		$\overrightarrow{x}^P_Z$ & Projektionszentrum &$u^Z$,$v^Z$,$-c$& \\
+		$\vv{x}^P_Z$ & Projektionszentrum &$u^Z$,$v^Z$,$-c$& \\
 		\cline{2-4}
 		$\downarrow$ & & & Linsenverzeichnung\\
 		\cline{2-4}	
-		$\overrightarrow{x}^P_D$ & Verzeichnung &$u^D$,$v^D$,$-c$& \\
+		$\vv{x}^P_D$ & Verzeichnung &$u^D$,$v^D$,$-c$& \\
 		\cline{2-4}
 		$\downarrow$ & & & Bildebenenverkippung\\
 		\cline{2-4}		
-		$\overrightarrow{x}^V$ &Verkippung &$u^V$,$v^V$,$-c^V$& \\
+		$\vv{x}^V$ &Verkippung &$u^V$,$v^V$,$-c^V$& \\
 		\cline{2-4}
 		$\downarrow$ & & & Bildhauptpunktverschiebung\\
 		\cline{2-4}	
-		$\overrightarrow{u}$ & Sensor &$u$,$v$ & \\
+		$\vv{u}$ & Sensor &$u$,$v$ & \\
 		\hline
 	\end{tabular}
 	\caption{Parameter und Berechnungsschritte der Kamera Kalibrierung.\cite{Meisel:77890}}
@@ -308,7 +308,7 @@ Die Kamerakalibrierung, die diesem Projekt zu Grunde liegt, ist als manuell einz
 
 Die einzelnen Schritte aus Tabelle~\ref{tab:camCalibParam} kann man in vier bzw. drei Abschnitte einteilen: \\
 Im ersten Abschnitt wird der Hauptpunkt so versetzt, dass der Koordinatenursprung des Kamerakoordinatensystems mit dem Bildkoordinatensystem übereinstimmt. Dies geschieht, indem man für die eine Achse $u^V = u - \Delta u$ und für die andere Achse entsprechend $v^V = v - \Delta v$ berechnet.\\
-Zusätzlich wird die Bildebene verkippt, so dass gilt $\overrightarrow{x}^V = R_v \cdot \overrightarrow{x}^P_D$. Bezeichnet $\varphi$ den Drehwinkel um die $x^P$-Achse und $\vartheta$ den Drehwinkel um die $y^{P'}$-Achse, so lässt sich $R_v$ wie folgt berechnen:
+Zusätzlich wird die Bildebene verkippt, so dass gilt $\vv{x}^V = R_v \cdot \vv{x}^P_D$. Bezeichnet $\varphi$ den Drehwinkel um die $x^P$-Achse und $\vartheta$ den Drehwinkel um die $y^{P'}$-Achse, so lässt sich $R_v$ wie folgt berechnen:
 
 \begin{equation}
 \label{equ:Rverkippt}
@@ -392,7 +392,7 @@ Die Umrechnung von Kamerakoordinaten in Weltkoordinaten kann dann mit der invert
 
 \begin{equation}
 \label{equ:SensInWorld}
-\overrightarrow{x} = M^{-1} \cdot \overrightarrow{u}
+\vv{x} = M^{-1} \cdot \vv{u}
 \end{equation}
 
 An diesem Punkt hat man die Kamerakoordinaten vollständig in Weltkoordinaten überführt und sucht nun eine Transformationsmatrix um diese Punkte auf ihre korrespondierenden Punkte in Unitykoordinaten abzubilden. Die dazu benötigte affine 3D-Transformation wird in Kapitel \ref{sec:planeCalib} erläutert.
@@ -401,8 +401,10 @@ An diesem Punkt hat man die Kamerakoordinaten vollständig in Weltkoordinaten ü
 \subsubsection{Kalibrierung des Arbeitsbereichs}\label{sec:planeCalib} \todo[inline]{Laura}
 
 %Entsprechend Formel~\ref{equ:SensInWorld} muss für den letzten Schritt eine Transformationsmatrix von Weltkoordinaten in Unitykoordinaten gefunden werden. Dies geschieht indem man die korrespondierenden Koordinatenpaare einer Controllerposition in Unity und in bereits in Weltkoordinaten gebrachten Sensorkoordinaten ineinander überführt, d.h. eine affine Transformation durchführt. Die Controlerpositionen in Weltkoordinaten werden somit auf die in Unitykoordinaten abgebildet.
-\subsubsection{Kalibrierungfehler} \label{sec:calibError}\todo[inline]{Laura}
-\subsubsection{Mögliche Fehlerquellen} \label{sec:calibErrorSources}\todo[inline]{Laura}
+\subsubsection{Kalibrierungfehler} \label{sec:calibError}\todo[inline, color=yellow]{Laura}
+%Wie in den Kapiteln~\ref{sec:camCalib} und~\ref{sec:planeCalib} beschrieben, sollen
+\subsubsection{Mögliche Fehlerquellen} \label{sec:calibErrorSources}\todo[inline, color=yellow]{Laura}
+%Der in~\ref{sec:calibError} beschriebene Fehler der bei der Abbildung von 
 
 
-
+\newpage
