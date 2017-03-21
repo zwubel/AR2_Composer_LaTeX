@@ -45,8 +45,8 @@
 \contentsline {subsection}{\numberline {4.7}Table Men\IeC {\"u}}{26}{subsection.4.7}
 \contentsline {subsubsection}{\numberline {4.7.1}Szenen Management}{27}{subsubsection.4.7.1}
 \contentsline {subsubsection}{\numberline {4.7.2}Speichern von Szenen}{27}{subsubsection.4.7.2}
-\contentsline {paragraph}{Dateiaufbau einer gespeicherten Szene}{27}{section*.71}
-\contentsline {paragraph}{Vorgehen der Speicherung}{28}{section*.72}
+\contentsline {paragraph}{Dateiaufbau einer gespeicherten Szene}{27}{section*.73}
+\contentsline {paragraph}{Vorgehen der Speicherung}{28}{section*.74}
 \contentsline {subsubsection}{\numberline {4.7.3}Laden von Szenen}{28}{subsubsection.4.7.3}
 \contentsline {subsubsection}{\numberline {4.7.4}Match Modus}{28}{subsubsection.4.7.4}
 \contentsline {subsection}{\numberline {4.8}Tracking Algorithmus}{28}{subsection.4.8}
