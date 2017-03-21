@@ -371,9 +371,9 @@ r_{v21} & r_{v22} & r_{v23} \\
 r_{v31} & r_{v32} & r_{v33} \\
 \end{pmatrix} = 
 \begin{pmatrix}
-cos\vartheta & sin\vartheta sin\varphi & -sin\vartheta cos\varphi \\
-0 & cos\varphi & sin\varphi\\
-sin\vartheta & -cos\vartheta sin\varphi & cos\vartheta cos\varphi \\
+\cos\vartheta & \sin\vartheta \sin\varphi & -\sin\vartheta \cos\varphi \\
+0 & \cos\varphi & \sin\varphi\\
+\sin\vartheta & -\cos\vartheta \sin\varphi & \cos\vartheta \cos\varphi \\
 \end{pmatrix} 
 ~ ~ ~ ~ ~R_v \in \mathbb{R}^{3x3}
 \end{equation}
@@ -454,9 +454,9 @@ An diesem Punkt hat man die Kamerakoordinaten vollständig in Weltkoordinaten ü
 
 %Entsprechend Formel~\ref{equ:SensInWorld} muss für den letzten Schritt eine Transformationsmatrix von Weltkoordinaten in Unitykoordinaten gefunden werden. Dies geschieht indem man die korrespondierenden Koordinatenpaare einer Controllerposition in Unity und in bereits in Weltkoordinaten gebrachten Sensorkoordinaten ineinander überführt, d.h. eine affine Transformation durchführt. Die Controlerpositionen in Weltkoordinaten werden somit auf die in Unitykoordinaten abgebildet.
 \subsubsection{Kalibrierungfehler} \label{sec:calibError}\todo[inline, color=yellow]{Laura}
-%Wie in den Kapiteln~\ref{sec:camCalib} und~\ref{sec:planeCalib} beschrieben, sollen
+In den Kapiteln~\ref{sec:camCalib} und~\ref{sec:planeCalib} wird der Algorithmus zur Berechnung der Koordinatentransformation von Kamerakoordinaten in Unitykoordinaten beschrieben. Beim Benutzen des fertig kalibrierten System  
 \subsubsection{Mögliche Fehlerquellen} \label{sec:calibErrorSources}\todo[inline, color=yellow]{Laura}
-%Der in~\ref{sec:calibError} beschriebene Fehler der bei der Abbildung von 
+Der in~\ref{sec:calibError} beschriebene Fehler der bei der Abbildung von 
 
 \subsection{Marker Detektion}
 \subsection{Green Keying}\todo[inline]{Vera}
