@@ -30,6 +30,12 @@ Die Systemvoraussetzungen für \emph{MArC} sind in der ReadMe-Datei beschrieben,
 	\label{fig:marcReadMe}
 \end{figure}
 
+\subsection{Netzwerk}\todo[inline, color=yellow]{Lukas und Laura}
+
+Die in Kapitel \ref{sec:Winsock} beschriebene API verfügt, wie dort geschildert, über die Möglichkeit den Datentransport mittels TCP oder UDP umzusetzen. Für \emph{MaRC} wurde ein TCP-Socket-Netzwerk bestehend aus einem Server und einem Klienten verwendet, weil der der in~\ref{sec:Netzwerk} beschriebene Fehlerschutz des TCPs ausgenutzt werden sollte. Da die zu übertragenden Daten von \emph{MArC} in der Größe exakt definiert und hinreichend klein sind, wurde die etwas höhere Geschwindigkeit einer UDP-Socket-Verbindung als unnötig erachtet.
+
+\todo[inline, color=yellow]{Kann noch angepasst wereden und muss noch erweitert werden}
+
 \subsection{Starten des Systems}\todo[inline, color=green]{Lukas}
 Nachdem sichergestellt wurde, dass alle in~\ref{sec:sysVor} beschriebenen Voraussetzungen bestehen, kann das System gestartet werden, indem zunächst die Tracking-Anwendung (auf dem einen Computer, vgl.~\ref{sec:TrackingComp}) und anschließend die aus Unity heraus erstellte Anwendung (auf dem anderen Computer, vgl.~\ref{sec:UnityComp}) gestartet wird. Auf letzterem Computer beginnt darauffolgend die Menüführung, welche in \ref{sec:menu} beschrieben ist. 
 \subsection{Menüführung}\label{sec:menu}\todo[inline, color=green]{Lukas}
