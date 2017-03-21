@@ -40,40 +40,42 @@
 \contentsline {subsection}{\numberline {4.5}Men\IeC {\"u}f\IeC {\"u}hrung}{22}{subsection.4.5}
 \contentsline {subsubsection}{\numberline {4.5.1}Men\IeC {\"u}s}{23}{subsubsection.4.5.1}
 \contentsline {subsubsection}{\numberline {4.5.2}Ablauf der Men\IeC {\"u}f\IeC {\"u}hrung}{25}{subsubsection.4.5.2}
-\contentsline {subsection}{\numberline {4.6}Toogle}{27}{subsection.4.6}
-\contentsline {subsection}{\numberline {4.7}Kontex Men\IeC {\"u}}{27}{subsection.4.7}
-\contentsline {subsubsection}{\numberline {4.7.1}Men\IeC {\"u}f\IeC {\"u}hrung}{27}{subsubsection.4.7.1}
-\contentsline {subsubsection}{\numberline {4.7.2}Architektur Berechnung}{27}{subsubsection.4.7.2}
-\contentsline {subsection}{\numberline {4.8}Table Men\IeC {\"u}}{27}{subsection.4.8}
-\contentsline {subsubsection}{\numberline {4.8.1}Szenen Management}{28}{subsubsection.4.8.1}
-\contentsline {subsubsection}{\numberline {4.8.2}Speichern von Szenen}{28}{subsubsection.4.8.2}
-\contentsline {paragraph}{Dateiaufbau einer gespeicherten Szene}{28}{section*.74}
-\contentsline {paragraph}{Vorgehen der Speicherung}{29}{section*.75}
-\contentsline {subsubsection}{\numberline {4.8.3}Laden von Szenen}{29}{subsubsection.4.8.3}
-\contentsline {subsubsection}{\numberline {4.8.4}Match Modus}{29}{subsubsection.4.8.4}
-\contentsline {subsection}{\numberline {4.9}Tracking Algorithmus}{30}{subsection.4.9}
-\contentsline {subsubsection}{\numberline {4.9.1}Green Keying}{30}{subsubsection.4.9.1}
-\contentsline {subsubsection}{\numberline {4.9.2}ArUco Marker Tracking}{30}{subsubsection.4.9.2}
-\contentsline {subsubsection}{\numberline {4.9.3}Marker Objekt}{30}{subsubsection.4.9.3}
-\contentsline {subsubsection}{\numberline {4.9.4}Zuordnung der Identit\IeC {\"a}ten}{30}{subsubsection.4.9.4}
-\contentsline {subsection}{\numberline {4.10}Kalibrierung}{30}{subsection.4.10}
-\contentsline {subsubsection}{\numberline {4.10.1}Kamerakalibrierung}{31}{subsubsection.4.10.1}
-\contentsline {subsubsection}{\numberline {4.10.2}Kalibrierung des Arbeitsbereichs}{34}{subsubsection.4.10.2}
-\contentsline {subsubsection}{\numberline {4.10.3}Kalibrierungfehler}{34}{subsubsection.4.10.3}
-\contentsline {subsubsection}{\numberline {4.10.4}M\IeC {\"o}gliche Fehlerquellen}{34}{subsubsection.4.10.4}
-\contentsline {section}{\numberline {5}Ausblick}{34}{section.5}
-\contentsline {subsection}{\numberline {5.1}Trackingmethoden}{34}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}AR Erweiterung mit der Webcam}{34}{subsection.5.2}
-\contentsline {subsection}{\numberline {5.3}Daten als Excel Tabelle}{34}{subsection.5.3}
-\contentsline {subsection}{\numberline {5.4}Validierung}{34}{subsection.5.4}
-\contentsline {section}{\numberline {6}Projektmanagement}{35}{section.6}
-\contentsline {subsection}{\numberline {6.1}Zeitplanung}{35}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}Gant Chart}{35}{subsection.6.2}
-\contentsline {subsection}{\numberline {6.3}Planungsmethoden}{35}{subsection.6.3}
-\contentsline {subsection}{\numberline {6.4}Reflexion}{35}{subsection.6.4}
-\contentsline {subsubsection}{\numberline {6.4.1}Kommuniktion im Team und nach Au\IeC {\ss }en}{35}{subsubsection.6.4.1}
-\contentsline {subsubsection}{\numberline {6.4.2}Probleme}{35}{subsubsection.6.4.2}
-\contentsline {section}{\numberline {7}Zusammenfassung}{35}{section.7}
-\contentsline {section}{\numberline {8}Steckbrief}{35}{section.8}
-\contentsline {section}{\numberline {9}Anhang}{35}{section.9}
-\contentsline {subsection}{\numberline {9.1}\emph {MArC} ReadMe-Datei}{35}{subsection.9.1}
+\contentsline {subsection}{\numberline {4.6}Kontex Men\IeC {\"u}}{27}{subsection.4.6}
+\contentsline {subsection}{\numberline {4.7}Marker Handles}{27}{subsection.4.7}
+\contentsline {subsubsection}{\numberline {4.7.1}Men\IeC {\"u}f\IeC {\"u}hrung}{28}{subsubsection.4.7.1}
+\contentsline {subsubsection}{\numberline {4.7.2}Architektur Berechnung}{28}{subsubsection.4.7.2}
+\contentsline {subsection}{\numberline {4.8}Table Men\IeC {\"u}}{28}{subsection.4.8}
+\contentsline {subsubsection}{\numberline {4.8.1}Szenen Management}{29}{subsubsection.4.8.1}
+\contentsline {subsubsection}{\numberline {4.8.2}Speichern von Szenen}{29}{subsubsection.4.8.2}
+\contentsline {paragraph}{Dateiaufbau einer gespeicherten Szene}{29}{section*.74}
+\contentsline {paragraph}{Vorgehen der Speicherung}{30}{section*.75}
+\contentsline {paragraph}{Darstellen von gespeicherten Szenen}{30}{section*.76}
+\contentsline {subsubsection}{\numberline {4.8.3}Laden von Szenen}{30}{subsubsection.4.8.3}
+\contentsline {paragraph}{Vorgehen beim Laden}{31}{section*.78}
+\contentsline {subsubsection}{\numberline {4.8.4}Match Modus}{31}{subsubsection.4.8.4}
+\contentsline {subsection}{\numberline {4.9}Tracking Algorithmus}{32}{subsection.4.9}
+\contentsline {subsubsection}{\numberline {4.9.1}Green Keying}{32}{subsubsection.4.9.1}
+\contentsline {subsubsection}{\numberline {4.9.2}ArUco Marker Tracking}{32}{subsubsection.4.9.2}
+\contentsline {subsubsection}{\numberline {4.9.3}Marker Objekt}{32}{subsubsection.4.9.3}
+\contentsline {subsubsection}{\numberline {4.9.4}Zuordnung der Identit\IeC {\"a}ten}{32}{subsubsection.4.9.4}
+\contentsline {subsection}{\numberline {4.10}Kalibrierung}{32}{subsection.4.10}
+\contentsline {subsubsection}{\numberline {4.10.1}Kamerakalibrierung}{33}{subsubsection.4.10.1}
+\contentsline {subsubsection}{\numberline {4.10.2}Kalibrierung des Arbeitsbereichs}{36}{subsubsection.4.10.2}
+\contentsline {subsubsection}{\numberline {4.10.3}Kalibrierungfehler}{36}{subsubsection.4.10.3}
+\contentsline {subsubsection}{\numberline {4.10.4}M\IeC {\"o}gliche Fehlerquellen}{37}{subsubsection.4.10.4}
+\contentsline {section}{\numberline {5}Ausblick}{37}{section.5}
+\contentsline {subsection}{\numberline {5.1}Trackingmethoden}{37}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}AR Erweiterung mit der Webcam}{37}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Daten als Excel Tabelle}{37}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}Validierung}{37}{subsection.5.4}
+\contentsline {section}{\numberline {6}Projektmanagement}{37}{section.6}
+\contentsline {subsection}{\numberline {6.1}Zeitplanung}{37}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Gant Chart}{37}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Planungsmethoden}{37}{subsection.6.3}
+\contentsline {subsection}{\numberline {6.4}Reflexion}{38}{subsection.6.4}
+\contentsline {subsubsection}{\numberline {6.4.1}Kommuniktion im Team und nach Au\IeC {\ss }en}{38}{subsubsection.6.4.1}
+\contentsline {subsubsection}{\numberline {6.4.2}Probleme}{38}{subsubsection.6.4.2}
+\contentsline {section}{\numberline {7}Zusammenfassung}{38}{section.7}
+\contentsline {section}{\numberline {8}Steckbrief}{38}{section.8}
+\contentsline {section}{\numberline {9}Anhang}{38}{section.9}
+\contentsline {subsection}{\numberline {9.1}\emph {MArC} ReadMe-Datei}{38}{subsection.9.1}
