@@ -243,13 +243,13 @@ Die zu Beginn des Projekts verwendete Stereo-Kamera Ovrvision Pro stellt ein Sof
 \cite{article:OpenCV}.\\
 Für dieses System ist vor allem das Modul \texttt{calib3d} \cite{website:Calib3dDoc} und das extra Modul \texttt{aruco} \cite{website:ArucoDoc} verwendet. Das erste Modul \texttt{calib3d}  bietet alle notwendigen Funktionen zur Erstellung, Verwendung und Weiterverarbeitung von intrinsischen und extrinsischen Kamerakalibrierungen an (siehe Kapitel \ref{sec:calib}). Während das Zweite alle benötigten Ressourcen und Funktionalitäten zum Tracken von \textit{ArUco} Markern zur Verfügung stellt (siehe Kapitel \ref{sec:aruco}).
 
-
-
-
-
 \subsubsection{Orion Beta Software} \label{OBS}\todo[inline] {Paul}
 
 \subsubsection{Steam VR}\todo[inline] {Paul}
-\subsubsection{Winsoc}\todo[inline] {Laura und Lukas}
+\subsubsection{Windows Sockets (Winsock)}\todo[inline, color=yellow] {Laura und Lukas}
+Windows Sockets (abgekürzt Winsock) ist eine API für den Zugriff auf Netzwerkkomponenten in Microsoft Windows Betriebssystemen~\cite{quinn1998windows}. Winsock wird nativ in Microsoft Windows bereitgestellt.\\ 
+Für die unkomplizierte Übertragung zwischen zwei Anwendungen in einem lokalen Netzwerk bieten sich sowohl das Transmission Control Protocol (TCP), als auch das User Datagram Protocol (UDP) an. Das Erstellen von Netzwerk-Sockets für die Übertragung per TCP und UDP wird von Winsock ermöglicht.\\ 
+\todo[inline, color=yellow]{Evtl. muss das Nachfolgende auch in den Netzwerk-Teil in "`System"'}
+Für \emph{MArC} wurden aus Winsock Funktionen für die Übertragung in einem TCP-Socket-Netzwerk bestehend aus einem Server und einem Klienten verwendet, da die Übertragung per TCP im Vergleich zu UDP sicherstellt, dass gesendete Daten korrekt übertragen und empfangen werden.\todo[inline, color=yellow]{Hierfür zitierbare Quellen zu finden ist quasi unmöglich, wie sich herausstellt-.-} In einem TCP-Socket-Netzwerk sind Fehlererkennungs- und Korrekturmechanismen enthalten, die fehlerhafte Übertragungen der darunterliegenden Internet Protocol (IP) Schicht ausgleichen, also entweder korrigieren oder dafür sorgen, dass fehlerhafte Daten erneut übertragen werden. Da die zu übertragenden Daten von \emph{MArC} in der Größe exakt definiert und hinreichend klein sind, wurde die etwas höhere Geschwindigkeit einer UDP-Socket-Verbindung als unnötig erachtet.
 
 \newpage

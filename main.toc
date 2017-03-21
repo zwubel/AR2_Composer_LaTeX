@@ -7,7 +7,7 @@
 \contentsline {subsection}{\numberline {2.1}Architektur von Virtual-Reality-Anwendungen}{6}{subsection.2.1}
 \contentsline {subsection}{\numberline {2.2}Haptische Interaktionsmethoden in VR Umgebungen}{7}{subsection.2.2}
 \contentsline {subsection}{\numberline {2.3}Handtracking Interaktionsmethoden}{7}{subsection.2.3}
-\contentsline {subsection}{\numberline {2.4}Men\IeC {\"u}f\IeC {\"u}hrung in VR Umgebungen}{7}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.4}Bedienkonzepte in VR-Umgebungen}{7}{subsection.2.4}
 \contentsline {subsection}{\numberline {2.5}Datenaustausch \IeC {\"u}ber internes Netzwerk}{7}{subsection.2.5}
 \contentsline {subsection}{\numberline {2.6}Green-Keying}{7}{subsection.2.6}
 \contentsline {subsection}{\numberline {2.7}Marker Tracking}{7}{subsection.2.7}
@@ -30,7 +30,7 @@
 \contentsline {subsubsection}{\numberline {3.3.3}OpenCV}{17}{subsubsection.3.3.3}
 \contentsline {subsubsection}{\numberline {3.3.4}Orion Beta Software}{17}{subsubsection.3.3.4}
 \contentsline {subsubsection}{\numberline {3.3.5}Steam VR}{17}{subsubsection.3.3.5}
-\contentsline {subsubsection}{\numberline {3.3.6}Winsoc}{18}{subsubsection.3.3.6}
+\contentsline {subsubsection}{\numberline {3.3.6}Windows Sockets (Winsock)}{18}{subsubsection.3.3.6}
 \contentsline {section}{\numberline {4}System}{19}{section.4}
 \contentsline {subsection}{\numberline {4.1}Aufbau}{19}{subsection.4.1}
 \contentsline {subsection}{\numberline {4.2}Systemvoraussetzungen}{20}{subsection.4.2}
