@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.16)  21 MAR 2017 14:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.16)  21 MAR 2017 15:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1767,13 +1767,13 @@ Package babel Info: Redefining ngerman shorthand "~
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 35.
+(babel)             in language  on input line 36.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 35.
+(babel)             in language  on input line 36.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 35.
+(babel)             in language  on input line 36.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 35.
+(babel)             in language  on input line 36.
 
 [21 <./Bilder/Aufbau_MArC.jpg> <./Bilder/CalibController.jpg>]
 Package babel Info: Redefining ngerman shorthand "|
@@ -1788,13 +1788,13 @@ Package babel Info: Redefining ngerman shorthand "~
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 42.
+(babel)             in language  on input line 43.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 42.
+(babel)             in language  on input line 43.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 42.
+(babel)             in language  on input line 43.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 42.
+(babel)             in language  on input line 43.
 
 [22 <./kapitel/anhang/ReadMe.pdf
 
@@ -1806,7 +1806,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 45.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 45.
- <Bilder/CalibDone.jpg, id=751, 646.8923pt x 363.87692pt>
+ <Bilder/CalibDone.jpg, id=752, 646.8923pt x 363.87692pt>
 File: Bilder/CalibDone.jpg Graphic file (type jpg)
 
 <use Bilder/CalibDone.jpg>
@@ -1822,7 +1822,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 48--58
 
  []
 
-<Bilder/CalibrateOrNot.jpg, id=753, 646.8923pt x 363.87692pt>
+<Bilder/CalibrateOrNot.jpg, id=754, 646.8923pt x 363.87692pt>
 File: Bilder/CalibrateOrNot.jpg Graphic file (type jpg)
 
 <use Bilder/CalibrateOrNot.jpg>
@@ -1843,7 +1843,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 59--69
 
  []
 
-<Bilder/ControllerNotFound.jpg, id=755, 646.8923pt x 363.87692pt>
+<Bilder/ControllerNotFound.jpg, id=756, 646.8923pt x 363.87692pt>
 File: Bilder/ControllerNotFound.jpg Graphic file (type jpg)
 
 <use Bilder/ControllerNotFound.jpg>
@@ -1864,7 +1864,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 70--80
 
  []
 
-<Bilder/doPlaneCalibInVS.jpg, id=757, 646.8923pt x 363.87692pt>
+<Bilder/doPlaneCalibInVS.jpg, id=758, 646.8923pt x 363.87692pt>
 File: Bilder/doPlaneCalibInVS.jpg Graphic file (type jpg)
 
 <use Bilder/doPlaneCalibInVS.jpg>
@@ -2689,7 +2689,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  23953 strings out of 493089
  423959 string characters out of 6134842
- 516726 words of memory out of 5000000
+ 516725 words of memory out of 5000000
  26633 multiletter control sequences out of 15000+600000
  22923 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2721,7 +2721,7 @@ st/fonts/type1/public/cm-super/sfsl1200.pfb></usr/local/texlive/2015/texmf-dist
 /fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2015/texmf-dist/f
 onts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2015/texmf-dist/fon
 ts/type1/public/cm-super/sftt1200.pfb>
-Output written on main.pdf (46 pages, 7164314 bytes).
+Output written on main.pdf (46 pages, 7164281 bytes).
 PDF statistics:
  1218 PDF objects out of 1440 (max. 8388607)
  1072 compressed objects within 11 object streams
