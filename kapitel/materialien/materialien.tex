@@ -3,11 +3,11 @@ In den nachfolgenden Abschnitten, werden Werkzeuge und Hilfsmittel beschrieben, 
 
 \subsection{Hardware}
 Zur Ausführung der MArC-Software sind diverse Hardware-Komponenten Voraussetzung. Diese Komponenten werden nachfolgend beschrieben und deren Kontext im System näher erläutert.
-\subsubsection{Computer zur Ausführung der Unity-Simulation}\label{sec:UnityComp}\todo[inline] {Lukas}
+\subsubsection{Computer zur Ausführung der Unity-Simulation}\label{sec:UnityComp}\todo[inline, color=yellow] {Lukas}
 Die Anwendung, welche aus Unity \cite{website:Unity} heraus erstellt wurde, benötigt einen Host-Computer, welcher sowohl mit dem HTC Vive Head-Mounted Display kompatibel, als auch leistungsstark genug sein muss, um das Rendering der Simulation mit ausreichend hoher Bildrate ausführen zu können.
 
-Für das vorliegende Projekt wurde seitens der Technischen Hochschule Köln ein Computer mit den  Eigenschaften aus Tabelle \ref{tab:UnityCompParam} zur Verfügung gestellt:
-\todo[inline]{Beim nächsten Mal in der TH nachschauen...}
+Für das vorliegende Projekt wurde seitens der Technischen Hochschule Köln ein Computer zur Verfügung gestellt. Die technischen Daten des Geräts sind in Tabelle~\ref{tab:UnityCompParam} aufgeführt.
+\todo[inline, color=yellow]{Beim nächsten Mal in der TH nachschauen...}
 
 
 \begin{table}
@@ -148,17 +148,17 @@ Alle zwölf Marker stimmen mit der Form und Farbe, sowie Material und Oberfläch
 \subsection{Obsolete Hardware}\label{sec:obsoleteHardware}\todo[inline] {Lukas}
 Im Laufe eines Projekts nach Art von MArC ist es kaum vermeidbar, dass die gesetzten Projektziele reevaluiert werden müssen. Die Gründe hierfür können vielfältig sein. Beispielsweise könnte die Fertigstellung eines bestimmten Teils des Projekts deutlich länger gedauert haben als geplant, oder es könnte sich herausgestellt haben, dass bestimmte Komponenten zueinander nicht kompatibel sind.
 
-Im vorliegenden Projekt trat eine Kombination der beiden oben genannten Gründe auf. Das Betreiben der Ovrvision Pro am US-Bus verschiedener während der Entwicklung verwendeter Rechner stellte sich als unberechenbar und damit leider unbenutzbar heraus. Die Kamera sorgte während der Ausführung von Unity dafür, dass mit allen anderen Geräten, die ebenfalls per USB angeschlossen waren, unterschiedlichste Probleme auftraten. Als die Situation nach dem Verbinden der Kamera in der teilweisen Zerstörung eines Mainboards gipfelte, wurde die Entscheidung getroffen, die Ovrvision nicht länger als Gerät in der Entwicklung zu verwenden.
+Im vorliegenden Projekt trat eine Kombination der beiden oben genannten Gründe auf. Das Betreiben der Ovrvision Pro Stereokamera, welche in Abschnitt~\ref{sec:ovrvision} kurz vorgestellt wird, am US-Bus verschiedener während der Entwicklung verwendeter Rechner stellte sich als unberechenbar und damit leider unbenutzbar heraus. Die Kamera sorgte während der Ausführung von Unity dafür, dass mit allen anderen Geräten, die ebenfalls per USB angeschlossen waren, unterschiedlichste Probleme auftraten. Als die Situation nach dem Verbinden der Kamera in der teilweisen Zerstörung eines Mainboards gipfelte, wurde die Entscheidung getroffen, die Ovrvision nicht länger als Gerät in der Entwicklung zu verwenden.
 
 Stattdessen war zu diesem Zeitpunkt die Idee, eine gewöhnliche Webcam zu verwenden, um die Realisierung von Augmented Reality dennoch zu ermöglichen, wenn auch ohne den Stereo-3D-Effekt, welchen die Ovrvision nativ bereitgestellt hätte.
 
 Im weiteren Verlauf des Projekts führte eine lange Zeit ungeklärte, starke Abweichung der Positionen der realen und virtuellen Marker zur Neuordnung der Projektprioritäten. Dies hatte zur Folge, dass letztendlich auch die Webcam als Plattform für die Umsetzung der AR-Fähigkeiten von MArC aufgegeben wurde.
 
 Nachfolgend werden die Eigenschaften und technischen Daten beider Geräte kurz beschrieben.
-\subsubsection{Ovrvision Pro}\label{sec:ovrvision}\todo[inline]{Lukas}
-Die Ovrvision Pro ist eine kompakte Stereokamera, welche über USB 3.0 mit dem Rechner verbunden werden kann \cite{website:ovrvision}. Sie ist kompatibel mit Programmen wie Unity, welches für das Projekt benutzt wurde und in \ref{sec:unity} beschrieben wird.
+\subsubsection{Ovrvision Pro}\label{sec:ovrvision}\todo[inline, color=green]{Lukas}
+Die Ovrvision Pro (vgl. Abb.~\ref{fig:ovr}) ist eine kompakte Stereokamera, welche über USB 3.0 mit einem Computer verbunden wird.~\cite{website:ovrvision} Für die Kamera ist eine Vielzahl an Software-Development-Kits (SDKs) für verschiedene Plattformen und Frameworks, wie etwa Microsoft Windows, Linux, Apple Mac OS X, Unreal Engine oder Unity verfügbar.~\cite{website:ovrvisionSetup}
 
-Die Bildmodi der Kamera sind in Tabelle~\ref{tab:ovrRes} aufgeführt.
+Die Ovrvision Pro ist speziell auf Augmented Reality (AR) Anwendungen ausgelegt. So unterstützt die Kamera natives Stereo-3D und bietet auch Bildmodi mit hohen Bildwiederholraten, welche für die Verwendung mit VR-Hardware wie Oculus Rift oder HTC Vive notwendig sind, um die Immersion des Benutzers nicht durch zu träge Bewegungswiedergabe zu beeinflussen. Die unterstützten Bildmodi der Kamera sind in Tabelle~\ref{tab:ovrRes} aufgeführt. Wie aus Abschnitt~\ref{sec:Vive} hervorgeht, stellt die HTC Vive Bildinhalte mit $1080\times1200$\,Pixeln pro Auge bei $90$\,Hz Bildwiederholrate da. Diese Leistung wird von der Ovrvision Pro nicht erreicht.
 
 \begin{table}
 	\centering
@@ -192,9 +192,9 @@ Die Bildmodi der Kamera sind in Tabelle~\ref{tab:ovrRes} aufgeführt.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=6cm]{Bilder/leap-motion.png}			
-		\caption{Explosionszeichnung der Leap Motion.\cite{website:LeapMotionBlog}}
-		\label{fig:leapMotion}
+	\includegraphics[width=\textwidth]{Bilder/ovr.jpg}			
+		\caption{Ovrvision Pro Stereokamera montiert an Oculus Rift (links) und HTC Vive (rechts).~\cite{website:ovrvision}}
+		\label{fig:ovr}
 \end{figure}
 \subsubsection{Webcam}\label{sec:webcam} \todo[inline, color=green]{Vera}
 
@@ -225,7 +225,7 @@ Für dieses System ist vor allem das Modul \texttt{calib3d} \cite{website:Calib3
 \subsubsection{Orion Beta Software} \label{OBS}\todo[inline] {Paul}
 
 \subsubsection{Steam VR}\todo[inline] {Paul}
-\subsubsection{Windows Sockets (Winsock)}\label{sec:Winsock}todo[inline, color=yellow] {Lukas}
+\subsubsection{Windows Sockets (Winsock)}\label{sec:Winsock}\todo[inline, color=green] {Lukas}
 Windows Sockets (abgekürzt Winsock) ist eine API für den Zugriff auf Netzwerkkomponenten in Microsoft Windows Betriebssystemen~\cite{quinn1998windows}. Winsock wird nativ in Microsoft Windows bereitgestellt.\\ 
-Für die unkomplizierte Übertragung zwischen zwei Anwendungen in einem lokalen Netzwerk bieten sich sowohl das TCP, als auch das UDP an. Das Erstellen von Netzwerk-Sockets für die Übertragung per TCP und UDP wird von Winsock ermöglicht.\\ 
+Für die unkomplizierte Übertragung zwischen zwei Anwendungen in einem lokalen Netzwerk bieten sich sowohl das \emph{Transmission Control Protocol} (TCP), als auch das User \emph{User Datagram Protocol} (UDP) an. Das Erstellen von Netzwerk-Sockets für die Übertragung per TCP und UDP wird von Winsock ermöglicht.\\ Die Umsetzung der Netzwerkverbindung in \emph{MArC} wird in Abschnitt~\ref{sec:netzwerk} näher beschrieben.
 \newpage
