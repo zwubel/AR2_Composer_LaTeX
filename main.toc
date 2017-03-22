@@ -3,14 +3,13 @@
 \contentsline {subsection}{\numberline {1.1}Motivation}{5}{subsection.1.1}
 \contentsline {subsection}{\numberline {1.2}Anwendungskontext}{5}{subsection.1.2}
 \contentsline {subsection}{\numberline {1.3}Projektziel}{5}{subsection.1.3}
-\contentsline {section}{\numberline {2}Grundlagen}{6}{section.2}
+\contentsline {section}{\numberline {2}Grundlagen}{5}{section.2}
 \contentsline {subsection}{\numberline {2.1}Architektur von Virtual-Reality-Anwendungen}{6}{subsection.2.1}
 \contentsline {subsection}{\numberline {2.2}Haptische Interaktionsmethoden in VR Umgebungen}{7}{subsection.2.2}
 \contentsline {subsection}{\numberline {2.3}Handtracking Interaktionsmethoden}{7}{subsection.2.3}
-\contentsline {subsection}{\numberline {2.4}Men\IeC {\"u}f\IeC {\"u}hrung in VR Umgebungen}{7}{subsection.2.4}
-\contentsline {subsection}{\numberline {2.5}ISO/OSI-7-Schichtenmodell}{7}{subsection.2.5}
-\contentsline {subsection}{\numberline {2.6}Bedienkonzepte in VR-Umgebungen}{8}{subsection.2.6}
-\contentsline {subsection}{\numberline {2.7}Marker Tracking}{8}{subsection.2.7}
+\contentsline {subsection}{\numberline {2.4}ISO/OSI-7-Schichtenmodell}{7}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}Bedienkonzepte in VR-Umgebungen}{8}{subsection.2.5}
+\contentsline {subsection}{\numberline {2.6}Marker Tracking}{8}{subsection.2.6}
 \contentsline {section}{\numberline {3}Materialien}{11}{section.3}
 \contentsline {subsection}{\numberline {3.1}Hardware}{11}{subsection.3.1}
 \contentsline {subsubsection}{\numberline {3.1.1}Computer zur Ausf\IeC {\"u}hrung der Unity-Simulation}{11}{subsubsection.3.1.1}
@@ -29,60 +28,6 @@
 \contentsline {subsubsection}{\numberline {3.3.2}Visual Studio 2015}{19}{subsubsection.3.3.2}
 \contentsline {subsubsection}{\numberline {3.3.3}OpenCV}{19}{subsubsection.3.3.3}
 \contentsline {subsubsection}{\numberline {3.3.4}Orion Beta Software}{19}{subsubsection.3.3.4}
-<<<<<<< HEAD
-\contentsline {subsubsection}{\numberline {3.3.5}Steam VR}{19}{subsubsection.3.3.5}
-\contentsline {subsubsection}{\numberline {3.3.6}Windows Sockets (Winsock)}{19}{subsubsection.3.3.6}
-\contentsline {section}{\numberline {4}System}{20}{section.4}
-\contentsline {subsection}{\numberline {4.1}Aufbau}{20}{subsection.4.1}
-\contentsline {subsubsection}{\numberline {4.1.1}Tracking Aufbau}{20}{subsubsection.4.1.1}
-\contentsline {subsection}{\numberline {4.2}Systemvoraussetzungen}{21}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Netzwerk}{21}{subsection.4.3}
-\contentsline {subsection}{\numberline {4.4}Starten des Systems}{22}{subsection.4.4}
-\contentsline {subsection}{\numberline {4.5}Men\IeC {\"u}f\IeC {\"u}hrung}{22}{subsection.4.5}
-\contentsline {subsubsection}{\numberline {4.5.1}Men\IeC {\"u}s}{23}{subsubsection.4.5.1}
-\contentsline {subsubsection}{\numberline {4.5.2}Ablauf der Men\IeC {\"u}f\IeC {\"u}hrung}{25}{subsubsection.4.5.2}
-\contentsline {subsection}{\numberline {4.6}Kontex Men\IeC {\"u}}{27}{subsection.4.6}
-\contentsline {subsection}{\numberline {4.7}Marker Handles}{27}{subsection.4.7}
-\contentsline {subsubsection}{\numberline {4.7.1}Men\IeC {\"u}f\IeC {\"u}hrung}{28}{subsubsection.4.7.1}
-\contentsline {subsubsection}{\numberline {4.7.2}Architektur Berechnung}{28}{subsubsection.4.7.2}
-\contentsline {subsection}{\numberline {4.8}Table Men\IeC {\"u}}{28}{subsection.4.8}
-\contentsline {subsubsection}{\numberline {4.8.1}Szenen Management}{29}{subsubsection.4.8.1}
-\contentsline {subsubsection}{\numberline {4.8.2}Speichern von Szenen}{29}{subsubsection.4.8.2}
-\contentsline {paragraph}{Dateiaufbau einer gespeicherten Szene}{29}{section*.73}
-\contentsline {paragraph}{Vorgehen der Speicherung}{30}{section*.74}
-\contentsline {paragraph}{Darstellen von gespeicherten Szenen}{30}{section*.75}
-\contentsline {subsubsection}{\numberline {4.8.3}Laden von Szenen}{30}{subsubsection.4.8.3}
-\contentsline {paragraph}{Vorgehen beim Laden}{31}{section*.77}
-\contentsline {subsubsection}{\numberline {4.8.4}Match Modus}{31}{subsubsection.4.8.4}
-\contentsline {section}{\numberline {5}Tracking Programm}{32}{section.5}
-\contentsline {subsection}{\numberline {5.1}uEye Ansteuerung}{32}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Kalibrierung}{33}{subsection.5.2}
-\contentsline {subsubsection}{\numberline {5.2.1}Kamerakalibrierung}{33}{subsubsection.5.2.1}
-\contentsline {subsubsection}{\numberline {5.2.2}Kalibrierung des Arbeitsbereichs}{36}{subsubsection.5.2.2}
-\contentsline {subsubsection}{\numberline {5.2.3}Kalibrierungsfehler}{37}{subsubsection.5.2.3}
-\contentsline {subsubsection}{\numberline {5.2.4}M\IeC {\"o}gliche Fehlerquellen}{37}{subsubsection.5.2.4}
-\contentsline {subsection}{\numberline {5.3}Marker Detektion}{37}{subsection.5.3}
-\contentsline {subsection}{\numberline {5.4}Green Keying}{37}{subsection.5.4}
-\contentsline {subsection}{\numberline {5.5}ArUco Marker Tracking}{37}{subsection.5.5}
-\contentsline {subsection}{\numberline {5.6}Marker Objekt}{37}{subsection.5.6}
-\contentsline {subsection}{\numberline {5.7}Zuordnung der Identit\IeC {\"a}ten}{37}{subsection.5.7}
-\contentsline {section}{\numberline {6}Ausblick}{38}{section.6}
-\contentsline {subsection}{\numberline {6.1}Trackingmethoden}{38}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}AR Erweiterung mit der Webcam}{38}{subsection.6.2}
-\contentsline {subsection}{\numberline {6.3}Daten als Excel Tabelle}{38}{subsection.6.3}
-\contentsline {subsection}{\numberline {6.4}Validierung}{38}{subsection.6.4}
-\contentsline {section}{\numberline {7}Projektmanagement}{38}{section.7}
-\contentsline {subsection}{\numberline {7.1}Zeitplanung}{38}{subsection.7.1}
-\contentsline {subsection}{\numberline {7.2}Gant Chart}{38}{subsection.7.2}
-\contentsline {subsection}{\numberline {7.3}Planungsmethoden}{38}{subsection.7.3}
-\contentsline {subsection}{\numberline {7.4}Reflexion}{38}{subsection.7.4}
-\contentsline {subsubsection}{\numberline {7.4.1}Kommuniktion im Team und nach Au\IeC {\ss }en}{38}{subsubsection.7.4.1}
-\contentsline {subsubsection}{\numberline {7.4.2}Probleme}{39}{subsubsection.7.4.2}
-\contentsline {section}{\numberline {8}Zusammenfassung}{39}{section.8}
-\contentsline {section}{\numberline {9}Steckbrief}{39}{section.9}
-\contentsline {section}{\numberline {10}Anhang}{39}{section.10}
-\contentsline {subsection}{\numberline {10.1}\emph {MArC} ReadMe-Datei}{39}{subsection.10.1}
-=======
 \contentsline {subsubsection}{\numberline {3.3.5}Steam VR}{20}{subsubsection.3.3.5}
 \contentsline {subsubsection}{\numberline {3.3.6}Windows Sockets (Winsock)}{20}{subsubsection.3.3.6}
 \contentsline {section}{\numberline {4}System}{21}{section.4}
@@ -115,27 +60,26 @@
 \contentsline {subsection}{\numberline {5.2}Kalibrierung}{34}{subsection.5.2}
 \contentsline {subsubsection}{\numberline {5.2.1}Kamerakalibrierung}{34}{subsubsection.5.2.1}
 \contentsline {subsubsection}{\numberline {5.2.2}Kalibrierung des Arbeitsbereichs}{38}{subsubsection.5.2.2}
-\contentsline {subsubsection}{\numberline {5.2.3}Kalibrierungfehler}{38}{subsubsection.5.2.3}
+\contentsline {subsubsection}{\numberline {5.2.3}Kalibrierungsfehler}{38}{subsubsection.5.2.3}
 \contentsline {subsubsection}{\numberline {5.2.4}M\IeC {\"o}gliche Fehlerquellen}{38}{subsubsection.5.2.4}
 \contentsline {subsection}{\numberline {5.3}Marker Detektion}{38}{subsection.5.3}
 \contentsline {subsection}{\numberline {5.4}Green Keying}{38}{subsection.5.4}
 \contentsline {subsection}{\numberline {5.5}ArUco Marker Tracking}{38}{subsection.5.5}
-\contentsline {subsection}{\numberline {5.6}Marker Objekt}{38}{subsection.5.6}
-\contentsline {subsection}{\numberline {5.7}Zuordnung der Identit\IeC {\"a}ten}{38}{subsection.5.7}
-\contentsline {section}{\numberline {6}Ausblick}{39}{section.6}
-\contentsline {subsection}{\numberline {6.1}Trackingmethoden}{39}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}AR Erweiterung mit der Webcam}{39}{subsection.6.2}
-\contentsline {subsection}{\numberline {6.3}Daten als Excel Tabelle}{39}{subsection.6.3}
-\contentsline {subsection}{\numberline {6.4}Validierung}{39}{subsection.6.4}
-\contentsline {section}{\numberline {7}Projektmanagement}{39}{section.7}
-\contentsline {subsection}{\numberline {7.1}Zeitplanung}{39}{subsection.7.1}
-\contentsline {subsection}{\numberline {7.2}Gant Chart}{39}{subsection.7.2}
-\contentsline {subsection}{\numberline {7.3}Planungsmethoden}{39}{subsection.7.3}
-\contentsline {subsection}{\numberline {7.4}Reflexion}{39}{subsection.7.4}
-\contentsline {subsubsection}{\numberline {7.4.1}Kommuniktion im Team und nach Au\IeC {\ss }en}{39}{subsubsection.7.4.1}
-\contentsline {subsubsection}{\numberline {7.4.2}Probleme}{40}{subsubsection.7.4.2}
-\contentsline {section}{\numberline {8}Zusammenfassung}{40}{section.8}
-\contentsline {section}{\numberline {9}Steckbrief}{40}{section.9}
-\contentsline {section}{\numberline {10}Anhang}{40}{section.10}
-\contentsline {subsection}{\numberline {10.1}\emph {MArC} ReadMe-Datei}{40}{subsection.10.1}
->>>>>>> 9e26b09bd8f65342ed300e5660b27b97267c15f8
+\contentsline {subsection}{\numberline {5.6}Marker Objekt}{39}{subsection.5.6}
+\contentsline {subsection}{\numberline {5.7}Zuordnung der Identit\IeC {\"a}ten}{39}{subsection.5.7}
+\contentsline {section}{\numberline {6}Ausblick}{40}{section.6}
+\contentsline {subsection}{\numberline {6.1}Trackingmethoden}{40}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}AR Erweiterung mit der Webcam}{40}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Daten als Excel Tabelle}{40}{subsection.6.3}
+\contentsline {subsection}{\numberline {6.4}Validierung}{40}{subsection.6.4}
+\contentsline {section}{\numberline {7}Projektmanagement}{40}{section.7}
+\contentsline {subsection}{\numberline {7.1}Zeitplanung}{40}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}Gant Chart}{40}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.3}Planungsmethoden}{40}{subsection.7.3}
+\contentsline {subsection}{\numberline {7.4}Reflexion}{40}{subsection.7.4}
+\contentsline {subsubsection}{\numberline {7.4.1}Kommuniktion im Team und nach Au\IeC {\ss }en}{40}{subsubsection.7.4.1}
+\contentsline {subsubsection}{\numberline {7.4.2}Probleme}{41}{subsubsection.7.4.2}
+\contentsline {section}{\numberline {8}Zusammenfassung}{41}{section.8}
+\contentsline {section}{\numberline {9}Steckbrief}{41}{section.9}
+\contentsline {section}{\numberline {10}Anhang}{41}{section.10}
+\contentsline {subsection}{\numberline {10.1}\emph {MArC} ReadMe-Datei}{41}{subsection.10.1}

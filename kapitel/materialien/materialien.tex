@@ -2,7 +2,7 @@
 In den nachfolgenden Abschnitten, werden Werkzeuge und Hilfsmittel beschrieben, die für die Fertigstellung des Projekts vonnöten waren.\\ Des weiteren werden auch Komponenten vorgestellt, die während der Projektlaufzeit erstellt wurden, wie etwa die Würfel-Marker (s. Abb.~\ref{fig:marker}).
 
 \subsection{Hardware}
-Zur Ausführung der MArC-Software sind diverse Hardware-Komponenten Voraussetzung. Diese Komponenten werden nachfolgend beschrieben und deren Kontext im System näher erläutert.
+Zur Ausführung der \emph{MArC}-Software sind diverse Hardware-Komponenten Voraussetzung. Diese Komponenten werden nachfolgend beschrieben und deren Kontext im System näher erläutert.
 \subsubsection{Computer zur Ausführung der Unity-Simulation}\label{sec:UnityComp}\todo[inline, color=yellow] {Lukas}
 Die Anwendung, welche aus Unity \cite{website:Unity} heraus erstellt wurde, benötigt einen Host-Computer, welcher sowohl mit dem HTC Vive Head-Mounted Display kompatibel, als auch leistungsstark genug sein muss, um das Rendering der Simulation mit ausreichend hoher Bildrate ausführen zu können.
 
@@ -145,20 +145,20 @@ Alle zwölf Marker stimmen mit der Form und Farbe, sowie Material und Oberfläch
 
 
 	
-\subsection{Obsolete Hardware}\label{sec:obsoleteHardware}\todo[inline] {Lukas}
-Im Laufe eines Projekts nach Art von MArC ist es kaum vermeidbar, dass die gesetzten Projektziele reevaluiert werden müssen. Die Gründe hierfür können vielfältig sein. Beispielsweise könnte die Fertigstellung eines bestimmten Teils des Projekts deutlich länger gedauert haben als geplant, oder es könnte sich herausgestellt haben, dass bestimmte Komponenten zueinander nicht kompatibel sind.
+\subsection{Obsolete Hardware}\label{sec:obsoleteHardware}\todo[inline, color=green] {Lukas}
+Im Laufe eines Projekts nach Art von \emph{MArC} ist es kaum vermeidbar, dass die gesetzten Projektziele reevaluiert werden müssen. Die Gründe hierfür können vielfältig sein. Beispielsweise könnte die Fertigstellung eines bestimmten Teils des Projekts deutlich länger gedauert haben als geplant, oder es könnte sich herausgestellt haben, dass bestimmte Komponenten zueinander nicht kompatibel sind.
 
-Im vorliegenden Projekt trat eine Kombination der beiden oben genannten Gründe auf. Das Betreiben der Ovrvision Pro Stereokamera, welche in Abschnitt~\ref{sec:ovrvision} kurz vorgestellt wird, am US-Bus verschiedener während der Entwicklung verwendeter Rechner stellte sich als unberechenbar und damit leider unbenutzbar heraus. Die Kamera sorgte während der Ausführung von Unity dafür, dass mit allen anderen Geräten, die ebenfalls per USB angeschlossen waren, unterschiedlichste Probleme auftraten. Als die Situation nach dem Verbinden der Kamera in der teilweisen Zerstörung eines Mainboards gipfelte, wurde die Entscheidung getroffen, die Ovrvision nicht länger als Gerät in der Entwicklung zu verwenden.
+Im vorliegenden Projekt trat eine Kombination der beiden oben genannten Gründe auf. Das Betreiben der \emph{Ovrvision Pro} Stereokamera, welche in Abschnitt~\ref{sec:ovrvision} kurz vorgestellt wird, am US-Bus verschiedener während der Entwicklung verwendeter Computer stellte sich als unberechenbar und damit leider unbenutzbar heraus. Die Kamera sorgte während der Ausführung von Unity dafür, dass mit allen anderen Geräten, die ebenfalls per USB angeschlossen waren, unterschiedlichste Probleme auftraten. Als die Situation nach dem Verbinden der Kamera in der teilweisen Zerstörung eines Mainboards gipfelte, wurde die Entscheidung getroffen, die \emph{Ovrvision Pro} nicht länger als Gerät in der Entwicklung von \emph{MArC} zu verwenden.
 
-Stattdessen war zu diesem Zeitpunkt die Idee, eine gewöhnliche Webcam zu verwenden, um die Realisierung von Augmented Reality dennoch zu ermöglichen, wenn auch ohne den Stereo-3D-Effekt, welchen die Ovrvision nativ bereitgestellt hätte.
+Stattdessen reifte zu diesem Zeitpunkt die Idee, eine gewöhnliche Webcam zu verwenden, um die Realisierung von Augmented Reality dennoch zu ermöglichen, wenn auch ohne den Stereo-3D-Effekt, welchen die \emph{Ovrvision Pro} nativ bereitgestellt hätte.
 
-Im weiteren Verlauf des Projekts führte eine lange Zeit ungeklärte, starke Abweichung der Positionen der realen und virtuellen Marker zur Neuordnung der Projektprioritäten. Dies hatte zur Folge, dass letztendlich auch die Webcam als Plattform für die Umsetzung der AR-Fähigkeiten von MArC aufgegeben wurde.
+Im weiteren Verlauf des Projekts führte eine, lange Zeit ungeklärte, starke Abweichung der Positionen der realen und virtuellen Marker zur Neuordnung der Projektprioritäten. Dies hatte zur Folge, dass letztendlich auch die Webcam als Plattform für die Umsetzung der AR-Fähigkeiten von \emph{MArC} aufgegeben wurde und stattdessen auf eine reine VR-Lösung der Projekt-Problemstellung umgeschwenkt wurde.
 
 Nachfolgend werden die Eigenschaften und technischen Daten beider Geräte kurz beschrieben.
 \subsubsection{Ovrvision Pro}\label{sec:ovrvision}\todo[inline, color=green]{Lukas}
-Die Ovrvision Pro (vgl. Abb.~\ref{fig:ovr}) ist eine kompakte Stereokamera, welche über USB 3.0 mit einem Computer verbunden wird.~\cite{website:ovrvision} Für die Kamera ist eine Vielzahl an Software-Development-Kits (SDKs) für verschiedene Plattformen und Frameworks, wie etwa Microsoft Windows, Linux, Apple Mac OS X, Unreal Engine oder Unity verfügbar.~\cite{website:ovrvisionSetup}
+Die \emph{Ovrvision Pro} (vgl. Abb.~\ref{fig:ovr}) ist eine kompakte Stereokamera, welche über USB 3.0 mit einem Computer verbunden wird.~\cite{website:ovrvision} Für die Kamera ist eine Vielzahl an Software-Development-Kits (SDKs) für verschiedene Plattformen und Frameworks, wie etwa Microsoft Windows, Linux, Apple Mac OS X, Unreal Engine oder Unity verfügbar.~\cite{website:ovrvisionSetup}
 
-Die Ovrvision Pro ist speziell auf Augmented Reality (AR) Anwendungen ausgelegt. So unterstützt die Kamera natives Stereo-3D und bietet auch Bildmodi mit hohen Bildwiederholraten, welche für die Verwendung mit VR-Hardware wie Oculus Rift oder HTC Vive notwendig sind, um die Immersion des Benutzers nicht durch zu träge Bewegungswiedergabe zu beeinflussen. Die unterstützten Bildmodi der Kamera sind in Tabelle~\ref{tab:ovrRes} aufgeführt. Wie aus Abschnitt~\ref{sec:Vive} hervorgeht, stellt die HTC Vive Bildinhalte mit $1080\times1200$\,Pixeln pro Auge bei $90$\,Hz Bildwiederholrate da. Diese Leistung wird von der Ovrvision Pro nicht erreicht.
+Die \emph{Ovrvision Pro} ist speziell auf Augmented Reality (AR) Anwendungen ausgelegt. So unterstützt die Kamera natives Stereo-3D und bietet auch Bildmodi mit hohen Bildwiederholraten, welche für die Verwendung mit VR-Hardware wie Oculus Rift oder HTC Vive notwendig sind, um die Immersion des Benutzers nicht durch zu träge Bewegungswiedergabe zu beeinflussen. Die unterstützten Bildmodi der Kamera sind in Tabelle~\ref{tab:ovrRes} aufgeführt. Wie aus Abschnitt~\ref{sec:Vive} hervorgeht, stellt die HTC Vive Bildinhalte mit $1080\times1200$\,Pixeln pro Auge bei $90$\,Hz Bildwiederholrate da. Diese Leistung wird von der \emph{Ovrvision Pro} nicht erreicht.
 
 \begin{table}
 	\centering
@@ -185,7 +185,7 @@ Die Ovrvision Pro ist speziell auf Augmented Reality (AR) Anwendungen ausgelegt.
 		$320\times240$\,px & $120$\,fps & $115^\circ$ & $105^\circ$\\
 		\hline
 	\end{tabular}
-	\caption{Bildmodi der Ovrvision Pro Stereokamera.~\cite{website:ovrvisionProduct}}
+	\caption{Bildmodi der \emph{Ovrvision Pro} Stereokamera.~\cite{website:ovrvisionProduct}}
 	\label{tab:ovrRes}
 \end{table}
 
@@ -193,7 +193,7 @@ Die Ovrvision Pro ist speziell auf Augmented Reality (AR) Anwendungen ausgelegt.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\textwidth]{Bilder/ovr.jpg}			
-		\caption{Ovrvision Pro Stereokamera montiert an Oculus Rift (links) und HTC Vive (rechts).~\cite{website:ovrvision}}
+		\caption{\emph{Ovrvision Pro} Stereokamera montiert an \emph{Oculus Rift} (links) und \emph{HTC Vive} (rechts).~\cite{website:ovrvision}}
 		\label{fig:ovr}
 \end{figure}
 \subsubsection{Webcam}\label{sec:webcam} \todo[inline, color=green]{Vera}
@@ -211,7 +211,7 @@ Unity ist eine sogenannte Spiel-Engine, also eine Entwicklungs- und Laufzeitumge
 
 Unity bietet eine sehr breite Plattformunterstützung \cite{website:UnityMultiPlatform} und erlaubt ebenso die Entwicklung für Head-Mounted-Displays, wie etwa die Oculus Rift \cite{website:UnityOculus}\cite{website:UnityVRoverview} oder auch die in diesem Projekt verwendete HTC Vive \cite{website:UnityVRoverview}.
 
-Die zu Beginn des Projekts verwendete Stereo-Kamera Ovrvision Pro stellt ein Software-Development-Kit (SDK) für Unity (Version 5) zur Verfügung \cite{website:ovrvisionSetup}. Da das endgültige Resultat des Projekts die Verwendung der Ovrvision Pro nicht mehr vorsieht, wie in~\ref{sec:obsoleteHardware} beschrieben, wird auf eine weitere Beschreibung dieses SDKs verzichtet.
+Die zu Beginn des Projekts verwendete Stereo-Kamera \emph{Ovrvision Pro} stellt ein Software-Development-Kit (SDK) für Unity (Version 5) zur Verfügung \cite{website:ovrvisionSetup}. Da das endgültige Resultat des Projekts die Verwendung der \emph{Ovrvision Pro} nicht mehr vorsieht, wie in~\ref{sec:obsoleteHardware} beschrieben, wird auf eine weitere Beschreibung dieses SDKs verzichtet.
 
 \subsubsection{Visual Studio 2015}\label{sec:VisualStudio} \todo[inline, color=green] {Vera}
 
