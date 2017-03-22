@@ -9,7 +9,7 @@
 \contentsline {subsection}{\numberline {2.3}Handtracking Interaktionsmethoden}{7}{subsection.2.3}
 \contentsline {subsection}{\numberline {2.4}ISO/OSI-7-Schichtenmodell}{7}{subsection.2.4}
 \contentsline {subsection}{\numberline {2.5}Bedienkonzepte in VR-Umgebungen}{8}{subsection.2.5}
-\contentsline {subsection}{\numberline {2.6}Marker Tracking}{8}{subsection.2.6}
+\contentsline {subsection}{\numberline {2.6}Marker Tracking}{9}{subsection.2.6}
 \contentsline {section}{\numberline {3}Materialien}{11}{section.3}
 \contentsline {subsection}{\numberline {3.1}Hardware}{11}{subsection.3.1}
 \contentsline {subsubsection}{\numberline {3.1.1}Computer zur Ausf\IeC {\"u}hrung der Unity-Simulation}{11}{subsubsection.3.1.1}
@@ -42,7 +42,7 @@
 \contentsline {subsection}{\numberline {4.5}Men\IeC {\"u}f\IeC {\"u}hrung}{24}{subsection.4.5}
 \contentsline {subsubsection}{\numberline {4.5.1}Men\IeC {\"u}s}{24}{subsubsection.4.5.1}
 \contentsline {subsubsection}{\numberline {4.5.2}Ablauf der Men\IeC {\"u}f\IeC {\"u}hrung}{26}{subsubsection.4.5.2}
-\contentsline {subsection}{\numberline {4.6}Kontex Men\IeC {\"u}}{28}{subsection.4.6}
+\contentsline {subsection}{\numberline {4.6}Kontextmen\IeC {\"u}}{28}{subsection.4.6}
 \contentsline {subsection}{\numberline {4.7}Marker Handles}{28}{subsection.4.7}
 \contentsline {subsubsection}{\numberline {4.7.1}Men\IeC {\"u}f\IeC {\"u}hrung}{29}{subsubsection.4.7.1}
 \contentsline {subsubsection}{\numberline {4.7.2}Architektur Berechnung}{29}{subsubsection.4.7.2}
@@ -65,7 +65,7 @@
 \contentsline {subsection}{\numberline {5.3}Marker Detektion}{38}{subsection.5.3}
 \contentsline {subsection}{\numberline {5.4}Green Keying}{38}{subsection.5.4}
 \contentsline {subsection}{\numberline {5.5}ArUco Marker Tracking}{38}{subsection.5.5}
-\contentsline {subsection}{\numberline {5.6}Marker Objekt}{39}{subsection.5.6}
+\contentsline {subsection}{\numberline {5.6}Marker Objekt}{38}{subsection.5.6}
 \contentsline {subsection}{\numberline {5.7}Zuordnung der Identit\IeC {\"a}ten}{39}{subsection.5.7}
 \contentsline {section}{\numberline {6}Ausblick}{40}{section.6}
 \contentsline {subsection}{\numberline {6.1}Trackingmethoden}{40}{subsection.6.1}
