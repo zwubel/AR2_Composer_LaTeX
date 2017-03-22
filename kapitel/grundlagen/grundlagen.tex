@@ -21,7 +21,22 @@ Die Entscheidung, für das vorliegende Projekt auf eine Desktop-VR-Anwendung zu 
 	\item Und schließlich sollte \emph{MArC} die Basis bereitstellen, um später auch mit mehreren Benutzern verwendet werden zu können.
 \end{itemize}
 
-\subsection{Haptische Interaktionsmethoden in VR Umgebungen}\label{sec:HaptikAnwendungen}\todo[inline]{Laura}
+\subsection{Haptische Interaktionsmethoden in VR Umgebungen}\label{sec:HaptikAnwendungen}\todo[inline, color=yellow]{Laura}
+Um das Eintauchen in die virtuelle Welt zu erleichtern, kann es bei manchen VR-Anwendungen sinnvoll sein, dem Benutzer eine Form von haptischem Feedback zu geben. Die meisten Systeme haben ihren Ansatzpunkt an den Fingern, oder genauer gesagt an den Fingerspitzen. Es gibt aber auch Systeme die mehrere Parts des Körpers oder sogar den ganzen Körper mit einbeziehen.\\
+Man unterscheidet zwischen \textit{Active Feedback Devices} und \textit{Passive Feedback Devices}. Während die aktive Variante dynamisch veränderliche Kräfte erzeugt, die dem Benutzer entgegenwirken, werden die passiven Varianten immer nur durch den Benutzer selber bewegt \cite{Haptic}.\\
+Um eine genauere Unterteilung vorzunehmen, kann man die verschiedenen Systeme zudem nach den einzelnen haptischen Wahrnehmungen unterteilen. Eine mögliche Aufteilung ist im Folgenden zu sehen.
+
+\begin{description}
+	\item[Force Feedback Systeme:] Ausübung eines Kraftvektors auf eine Körperstelle des Benutzers, um seine Bewegung zu erschweren oder aktiv eine Bewegung zu erzwingen. \textcolor{red}{Beispiel?}
+	\item[Tactile Feedback Systeme:] Stimulation der Berührungsempfindung der Haut. Im Allgemeinen wird ein variabler Druck auf eine Hautstelle ausgeübt, welcher nicht direkt von der Bewegung des Körperteils abhängig ist.\textcolor{red}{Beispiel?}
+	\item[Greifen:] Kann als Kombination der beiden vorangegangen Ansätze angesehen werden. Befindet sich ein virtueller Gegenstand in der Hand so soll hierbei verhindert werden können, dass der Benutzer seine Hand schließt. \textcolor{red}{Beispiel?}
+\end{description}
+
+Bei den oben aufgelisteten Formen von haptischer Interaktion wird davon ausgegangen, dass der Gegenstand um den es geht rein virtueller Natur ist. Eine Besonderheit an \textit{MaRC} ist, dass es sich um reale Objekte (siehe Kapitel \ref{sec:WürfelMarker}) handelt, an der Position virtuelle Objekte gerendert werden können. In diesem \textit{Mixed Reality}--System hat der Benutzer also einen realen haptischen Eindruck. Der reale Würfel dient somit als Anfasser und bietet die Möglichkeit das virtuelle Objekt, was durchaus kleiner oder größer als sein reales Pendant sein kann, zu transformieren. 
+
+%In manchen Fällen kann es schwierig sein eine eindeutige Zuordnung des Systems zu einer der Kategorien zu finden.
+
+
 \subsection{Handtracking Interaktionsmethoden}\label{sec:HandtrackingAnwendungen}\todo[inline]{Paul}
 \subsection{ISO/OSI-7-Schichtenmodell}\label{sec:Netzwerk}\todo[inline, color=green]{Laura}
 Um die Kommunikation zwischen unterschiedlichsten technischen Systemen zu ermöglichen und zu vereinheitlichen dient das \textit{ISO/OSI-7-Schichtenmodell} \cite{ITU}, welches in Tabelle~\ref{tab:Schichtenmodell} schematisch dargestellt ist. Um die Weiterentwicklung von Kommunikationsmodellen möglichst barrierefrei zu gestalten, sind in dem Modell sieben aufeinanderfolgende Schichten definiert worden, die für einen klar eingegrenzten Teilbereich der Kommunikation zuständig sind. Die Netzprotokolle, die in einer Schicht zum Einsatz kommen, müssen einheitliche Schnittstellen aufweisen, um einen reibungslosen Austausch zu gewährleisten. Entsprechende Beispiele sind der rechten Spalte von Tabelle~\ref{tab:Schichtenmodell} zu entnehmen.\\

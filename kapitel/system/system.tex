@@ -463,10 +463,18 @@ Im nächsten Kapitel werden mögliche Gründe für diese fehlerhafte Abbildung a
 
 
 \subsubsection{Mögliche Fehlerquellen} \label{sec:calibErrorSources}\todo[inline, color=yellow]{Laura}
-Der in~\ref{sec:calibError} beschriebene Fehler der bei der Abbildung von 
+Bei der Registrierung der Würfelobjekte kommt es zu dem in~\ref{sec:calibError} beschriebenen Fehler. Im Allgemeinen kann bei der  
+Neben der Rechenungenauigkeit und Rundungsfehlern, die sich über die diversen Rechenschritte hinweg aufaddieren, werden hier systembedingte mögliche Fehlerquellen, für den in Kapitel~\ref{sec:calibError} beschriebenen Fehler, aufgeführt. \\
+1) Zum Einen Tracking Vive
+2) Lösen DLT
+3) Fehlerfortpflanzung
+4) Inside out
+5) Trackingfehler
+6) Kamerauflösung begrenzt
 
-Neben der Rechenungenauigkeit und Rundungsfehlern ...
 
+Zusätzliche Registrierungsfehler können durch Latenz entstehen. Nämlich immer dann, wenn eine Zeitdifferenz zwischen der Messung der Position in Kamerakoordinaten und der eigentlichen Darstellung nach entsprechender
+Verarbeitung entsteht. Solche Systemverzögerungen werden allerdings nur bei Bewegungen sichtbar und sind deshalb für die beobachteten Fehler bei ruhendem Aluminiumwürfel nicht als mögliche Fehlerquelle auszumachen. 
 \subsection{Marker Detektion}
 \subsection{Green Keying}\todo[inline]{Vera}
 \subsection{ArUco Marker Tracking}\todo[inline]{Vera}
