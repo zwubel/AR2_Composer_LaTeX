@@ -2,164 +2,84 @@
 \contentsline {section}{\numberline {1}Einleitung}{5}{section.1}
 \contentsline {subsection}{\numberline {1.1}Motivation}{5}{subsection.1.1}
 \contentsline {subsection}{\numberline {1.2}Anwendungskontext}{5}{subsection.1.2}
-\contentsline {subsection}{\numberline {1.3}Projektziel}{5}{subsection.1.3}
-\contentsline {section}{\numberline {2}Grundlagen}{5}{section.2}
-\contentsline {subsection}{\numberline {2.1}Architektur von Virtual-Reality-Anwendungen}{6}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Haptische Interaktionsmethoden in VR Umgebungen}{7}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}Handtracking Interaktionsmethoden}{7}{subsection.2.3}
-\contentsline {subsection}{\numberline {2.4}ISO/OSI-7-Schichtenmodell}{8}{subsection.2.4}
-\contentsline {subsection}{\numberline {2.5}Bedienkonzepte in VR-Umgebungen}{9}{subsection.2.5}
-<<<<<<< HEAD
-\contentsline {subsection}{\numberline {2.6}Marker Tracking}{10}{subsection.2.6}
-=======
-\contentsline {subsection}{\numberline {2.6}Marker Tracking}{9}{subsection.2.6}
-<<<<<<< HEAD
-\contentsline {section}{\numberline {3}Materialien}{11}{section.3}
-\contentsline {subsection}{\numberline {3.1}Hardware}{11}{subsection.3.1}
-\contentsline {subsubsection}{\numberline {3.1.1}Computer zur Ausf\IeC {\"u}hrung der Unity-Simulation}{11}{subsubsection.3.1.1}
-\contentsline {subsubsection}{\numberline {3.1.2}Computer zur Ausf\IeC {\"u}hrung der Tracking-Anwendung}{11}{subsubsection.3.1.2}
-\contentsline {subsubsection}{\numberline {3.1.3}HTC Vive}{12}{subsubsection.3.1.3}
-\contentsline {subsubsection}{\numberline {3.1.4}IDS uEye 164LE-C}{13}{subsubsection.3.1.4}
-\contentsline {subsubsection}{\numberline {3.1.5}Leap Motion}{13}{subsubsection.3.1.5}
-\contentsline {subsubsection}{\numberline {3.1.6}Leap Motion SDK}{14}{subsubsection.3.1.6}
-\contentsline {subsubsection}{\numberline {3.1.7}ArUco Marker}{14}{subsubsection.3.1.7}
-\contentsline {subsubsection}{\numberline {3.1.8}W\IeC {\"u}rfel Marker}{15}{subsubsection.3.1.8}
-\contentsline {subsection}{\numberline {3.2}Obsolete Hardware}{16}{subsection.3.2}
-\contentsline {subsubsection}{\numberline {3.2.1}Ovrvision Pro}{17}{subsubsection.3.2.1}
-\contentsline {subsubsection}{\numberline {3.2.2}Webcam}{18}{subsubsection.3.2.2}
-\contentsline {subsection}{\numberline {3.3}Software}{18}{subsection.3.3}
-\contentsline {subsubsection}{\numberline {3.3.1}Unity}{18}{subsubsection.3.3.1}
-\contentsline {subsubsection}{\numberline {3.3.2}Visual Studio 2015}{19}{subsubsection.3.3.2}
-\contentsline {subsubsection}{\numberline {3.3.3}OpenCV}{19}{subsubsection.3.3.3}
-\contentsline {subsubsection}{\numberline {3.3.4}Orion Beta Software}{19}{subsubsection.3.3.4}
-\contentsline {subsubsection}{\numberline {3.3.5}Steam VR}{20}{subsubsection.3.3.5}
-\contentsline {subsubsection}{\numberline {3.3.6}Windows Sockets (Winsock)}{20}{subsubsection.3.3.6}
-\contentsline {section}{\numberline {4}System}{21}{section.4}
-\contentsline {subsection}{\numberline {4.1}Aufbau}{21}{subsection.4.1}
-\contentsline {subsubsection}{\numberline {4.1.1}Tracking Aufbau}{21}{subsubsection.4.1.1}
-\contentsline {subsubsection}{\numberline {4.1.2}Unity Aufbau}{22}{subsubsection.4.1.2}
-\contentsline {subsection}{\numberline {4.2}Systemvoraussetzungen}{23}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Netzwerk}{24}{subsection.4.3}
-\contentsline {subsubsection}{\numberline {4.3.1}Serverseitige Netzwerkanbindung}{24}{subsubsection.4.3.1}
-\contentsline {subsubsection}{\numberline {4.3.2}Client-seitige Netzwerkanbindung}{24}{subsubsection.4.3.2}
-\contentsline {subsection}{\numberline {4.4}Starten des Systems}{24}{subsection.4.4}
-\contentsline {subsection}{\numberline {4.5}Men\IeC {\"u}f\IeC {\"u}hrung}{25}{subsection.4.5}
-\contentsline {subsubsection}{\numberline {4.5.1}Men\IeC {\"u}s}{25}{subsubsection.4.5.1}
-\contentsline {subsubsection}{\numberline {4.5.2}Ablauf der Men\IeC {\"u}f\IeC {\"u}hrung}{27}{subsubsection.4.5.2}
-\contentsline {subsection}{\numberline {4.6}Kontextmen\IeC {\"u}}{29}{subsection.4.6}
-\contentsline {subsection}{\numberline {4.7}Marker Handles}{29}{subsection.4.7}
-\contentsline {subsubsection}{\numberline {4.7.1}Men\IeC {\"u}f\IeC {\"u}hrung}{30}{subsubsection.4.7.1}
-\contentsline {subsubsection}{\numberline {4.7.2}Architektur Berechnung}{30}{subsubsection.4.7.2}
-\contentsline {subsection}{\numberline {4.8}Table Men\IeC {\"u}}{30}{subsection.4.8}
-\contentsline {subsubsection}{\numberline {4.8.1}Szenen Management}{31}{subsubsection.4.8.1}
-\contentsline {subsubsection}{\numberline {4.8.2}Speichern von Szenen}{31}{subsubsection.4.8.2}
-\contentsline {paragraph}{Dateiaufbau einer gespeicherten Szene}{31}{section*.76}
-\contentsline {paragraph}{Vorgehen der Speicherung}{32}{section*.77}
-\contentsline {paragraph}{Darstellen von gespeicherten Szenen}{32}{section*.78}
-\contentsline {subsubsection}{\numberline {4.8.3}Laden von Szenen}{32}{subsubsection.4.8.3}
-\contentsline {paragraph}{Vorgehen beim Laden}{33}{section*.80}
-\contentsline {subsubsection}{\numberline {4.8.4}Match Modus}{33}{subsubsection.4.8.4}
-\contentsline {section}{\numberline {5}Tracking Programm}{34}{section.5}
-\contentsline {subsection}{\numberline {5.1}uEye Ansteuerung}{34}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Kalibrierung}{35}{subsection.5.2}
-\contentsline {subsubsection}{\numberline {5.2.1}Kamerakalibrierung}{35}{subsubsection.5.2.1}
-\contentsline {subsubsection}{\numberline {5.2.2}Kalibrierung des Arbeitsbereichs}{39}{subsubsection.5.2.2}
-\contentsline {subsubsection}{\numberline {5.2.3}Kalibrierungsfehler}{39}{subsubsection.5.2.3}
-\contentsline {subsubsection}{\numberline {5.2.4}M\IeC {\"o}gliche Fehlerquellen}{39}{subsubsection.5.2.4}
-\contentsline {subsection}{\numberline {5.3}Marker Detektion}{39}{subsection.5.3}
-\contentsline {subsection}{\numberline {5.4}Green Keying}{39}{subsection.5.4}
-\contentsline {subsection}{\numberline {5.5}ArUco Marker Tracking}{39}{subsection.5.5}
-\contentsline {subsection}{\numberline {5.6}Marker Objekt}{39}{subsection.5.6}
-\contentsline {subsection}{\numberline {5.7}Zuordnung der Identit\IeC {\"a}ten}{40}{subsection.5.7}
-\contentsline {section}{\numberline {6}Ausblick}{41}{section.6}
-\contentsline {subsection}{\numberline {6.1}Trackingmethoden}{41}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}AR Erweiterung mit der Webcam}{41}{subsection.6.2}
-\contentsline {subsection}{\numberline {6.3}Daten als Excel Tabelle}{41}{subsection.6.3}
-\contentsline {subsection}{\numberline {6.4}Validierung}{41}{subsection.6.4}
-\contentsline {section}{\numberline {7}Projektmanagement}{41}{section.7}
-\contentsline {subsection}{\numberline {7.1}Zeitplanung}{41}{subsection.7.1}
-\contentsline {subsection}{\numberline {7.2}Gant Chart}{41}{subsection.7.2}
-\contentsline {subsection}{\numberline {7.3}Planungsmethoden}{41}{subsection.7.3}
-\contentsline {subsection}{\numberline {7.4}Reflexion}{41}{subsection.7.4}
-\contentsline {subsubsection}{\numberline {7.4.1}Kommuniktion im Team und nach Au\IeC {\ss }en}{41}{subsubsection.7.4.1}
-\contentsline {subsubsection}{\numberline {7.4.2}Probleme}{42}{subsubsection.7.4.2}
-\contentsline {section}{\numberline {8}Zusammenfassung}{42}{section.8}
-\contentsline {section}{\numberline {9}Steckbrief}{42}{section.9}
-\contentsline {section}{\numberline {10}Anhang}{42}{section.10}
-\contentsline {subsection}{\numberline {10.1}\emph {MArC} ReadMe-Datei}{42}{subsection.10.1}
-=======
->>>>>>> bf1c1efd57ed79c4c40fce54835cbafa0ec40fd3
-\contentsline {section}{\numberline {3}Materialien}{12}{section.3}
-\contentsline {subsection}{\numberline {3.1}Hardware}{12}{subsection.3.1}
-\contentsline {subsubsection}{\numberline {3.1.1}Computer zur Ausf\IeC {\"u}hrung der Unity-Simulation}{12}{subsubsection.3.1.1}
-\contentsline {subsubsection}{\numberline {3.1.2}Computer zur Ausf\IeC {\"u}hrung der Tracking-Anwendung}{12}{subsubsection.3.1.2}
-\contentsline {subsubsection}{\numberline {3.1.3}HTC Vive}{13}{subsubsection.3.1.3}
-\contentsline {subsubsection}{\numberline {3.1.4}IDS uEye 164LE-C}{14}{subsubsection.3.1.4}
-\contentsline {subsubsection}{\numberline {3.1.5}Leap Motion}{14}{subsubsection.3.1.5}
-\contentsline {subsubsection}{\numberline {3.1.6}Leap Motion SDK}{15}{subsubsection.3.1.6}
-\contentsline {subsubsection}{\numberline {3.1.7}ArUco Marker}{15}{subsubsection.3.1.7}
-\contentsline {subsubsection}{\numberline {3.1.8}W\IeC {\"u}rfel Marker}{16}{subsubsection.3.1.8}
-\contentsline {subsection}{\numberline {3.2}Obsolete Hardware}{17}{subsection.3.2}
-\contentsline {subsubsection}{\numberline {3.2.1}Ovrvision Pro}{18}{subsubsection.3.2.1}
-\contentsline {subsubsection}{\numberline {3.2.2}Webcam}{19}{subsubsection.3.2.2}
-\contentsline {subsection}{\numberline {3.3}Software}{19}{subsection.3.3}
-\contentsline {subsubsection}{\numberline {3.3.1}Unity}{19}{subsubsection.3.3.1}
-\contentsline {subsubsection}{\numberline {3.3.2}Visual Studio 2015}{20}{subsubsection.3.3.2}
-\contentsline {subsubsection}{\numberline {3.3.3}OpenCV}{20}{subsubsection.3.3.3}
-\contentsline {subsubsection}{\numberline {3.3.4}Orion Beta Software}{20}{subsubsection.3.3.4}
-\contentsline {subsubsection}{\numberline {3.3.5}Steam VR}{21}{subsubsection.3.3.5}
-\contentsline {subsubsection}{\numberline {3.3.6}Windows Sockets (Winsock)}{21}{subsubsection.3.3.6}
-\contentsline {section}{\numberline {4}System}{22}{section.4}
-\contentsline {subsection}{\numberline {4.1}Aufbau}{22}{subsection.4.1}
-\contentsline {subsubsection}{\numberline {4.1.1}Tracking Aufbau}{22}{subsubsection.4.1.1}
-\contentsline {subsubsection}{\numberline {4.1.2}Unity Aufbau}{23}{subsubsection.4.1.2}
-\contentsline {subsection}{\numberline {4.2}Systemvoraussetzungen}{24}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Netzwerk}{25}{subsection.4.3}
-\contentsline {subsubsection}{\numberline {4.3.1}Serverseitige Netzwerkanbindung}{25}{subsubsection.4.3.1}
-\contentsline {subsubsection}{\numberline {4.3.2}Client-seitige Netzwerkanbindung}{25}{subsubsection.4.3.2}
-\contentsline {subsection}{\numberline {4.4}Starten des Systems}{25}{subsection.4.4}
-\contentsline {subsection}{\numberline {4.5}Men\IeC {\"u}f\IeC {\"u}hrung}{25}{subsection.4.5}
-\contentsline {subsubsection}{\numberline {4.5.1}Men\IeC {\"u}s}{26}{subsubsection.4.5.1}
-\contentsline {subsubsection}{\numberline {4.5.2}Ablauf der Men\IeC {\"u}f\IeC {\"u}hrung}{28}{subsubsection.4.5.2}
-\contentsline {subsection}{\numberline {4.6}Kontextmen\IeC {\"u}}{30}{subsection.4.6}
-\contentsline {subsection}{\numberline {4.7}Marker Handles}{30}{subsection.4.7}
-\contentsline {subsubsection}{\numberline {4.7.1}Men\IeC {\"u}f\IeC {\"u}hrung}{31}{subsubsection.4.7.1}
-\contentsline {subsubsection}{\numberline {4.7.2}Architektur Berechnung}{31}{subsubsection.4.7.2}
-\contentsline {subsection}{\numberline {4.8}Table Men\IeC {\"u}}{31}{subsection.4.8}
-\contentsline {subsubsection}{\numberline {4.8.1}Szenen Management}{31}{subsubsection.4.8.1}
-\contentsline {subsubsection}{\numberline {4.8.2}Speichern von Szenen}{32}{subsubsection.4.8.2}
-\contentsline {paragraph}{Dateiaufbau einer gespeicherten Szene}{32}{section*.77}
-\contentsline {paragraph}{Vorgehen der Speicherung}{32}{section*.78}
-\contentsline {paragraph}{Darstellen von gespeicherten Szenen}{33}{section*.79}
-\contentsline {subsubsection}{\numberline {4.8.3}Laden von Szenen}{33}{subsubsection.4.8.3}
-\contentsline {paragraph}{Vorgehen beim Laden}{33}{section*.81}
-\contentsline {subsubsection}{\numberline {4.8.4}Match Modus}{34}{subsubsection.4.8.4}
-\contentsline {section}{\numberline {5}Tracking Programm}{34}{section.5}
-\contentsline {subsection}{\numberline {5.1}uEye Ansteuerung}{35}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Kalibrierung}{35}{subsection.5.2}
-\contentsline {subsubsection}{\numberline {5.2.1}Kamerakalibrierung}{36}{subsubsection.5.2.1}
-\contentsline {subsubsection}{\numberline {5.2.2}Kalibrierung des Arbeitsbereichs}{39}{subsubsection.5.2.2}
-\contentsline {subsubsection}{\numberline {5.2.3}Kalibrierungsfehler}{39}{subsubsection.5.2.3}
-\contentsline {subsubsection}{\numberline {5.2.4}M\IeC {\"o}gliche Fehlerquellen}{40}{subsubsection.5.2.4}
-\contentsline {subsection}{\numberline {5.3}Marker Detektion}{40}{subsection.5.3}
-\contentsline {subsection}{\numberline {5.4}Green Keying}{40}{subsection.5.4}
-\contentsline {subsection}{\numberline {5.5}ArUco Marker Tracking}{40}{subsection.5.5}
-\contentsline {subsection}{\numberline {5.6}Marker Objekt}{40}{subsection.5.6}
-\contentsline {subsection}{\numberline {5.7}Zuordnung der Identit\IeC {\"a}ten}{41}{subsection.5.7}
-\contentsline {section}{\numberline {6}Ausblick}{42}{section.6}
-\contentsline {subsection}{\numberline {6.1}Trackingmethoden}{42}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}AR Erweiterung mit der Webcam}{42}{subsection.6.2}
-\contentsline {subsection}{\numberline {6.3}Daten als Excel Tabelle}{42}{subsection.6.3}
-\contentsline {subsection}{\numberline {6.4}Validierung}{42}{subsection.6.4}
-\contentsline {section}{\numberline {7}Projektmanagement}{42}{section.7}
-\contentsline {subsection}{\numberline {7.1}Zeitplanung}{42}{subsection.7.1}
-\contentsline {subsection}{\numberline {7.2}Gant Chart}{42}{subsection.7.2}
-\contentsline {subsection}{\numberline {7.3}Planungsmethoden}{42}{subsection.7.3}
-\contentsline {subsection}{\numberline {7.4}Reflexion}{42}{subsection.7.4}
-\contentsline {subsubsection}{\numberline {7.4.1}Kommuniktion im Team und nach Au\IeC {\ss }en}{42}{subsubsection.7.4.1}
-\contentsline {subsubsection}{\numberline {7.4.2}Probleme}{43}{subsubsection.7.4.2}
-\contentsline {section}{\numberline {8}Zusammenfassung}{43}{section.8}
-\contentsline {section}{\numberline {9}Steckbrief}{43}{section.9}
-\contentsline {section}{\numberline {10}Anhang}{43}{section.10}
-\contentsline {subsection}{\numberline {10.1}\emph {MArC} ReadMe-Datei}{43}{subsection.10.1}
->>>>>>> 20264ee761a77bbf7ec8f06ad8a678e3d594ac9b
+\contentsline {subsection}{\numberline {1.3}Projektziel}{6}{subsection.1.3}
+\contentsline {section}{\numberline {2}Grundlagen}{6}{section.2}
+\contentsline {subsection}{\numberline {2.1}Architektur von Virtual-Reality-Anwendungen}{7}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Haptische Interaktionsmethoden in VR Umgebungen}{8}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Handtracking Interaktionsmethoden}{8}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}ISO/OSI-7-Schichtenmodell}{9}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}Bedienkonzepte in VR-Umgebungen}{10}{subsection.2.5}
+\contentsline {subsection}{\numberline {2.6}Marker Tracking}{11}{subsection.2.6}
+\contentsline {section}{\numberline {3}Materialien}{13}{section.3}
+\contentsline {subsection}{\numberline {3.1}Hardware}{13}{subsection.3.1}
+\contentsline {subsubsection}{\numberline {3.1.1}Computer zur Ausf\IeC {\"u}hrung der Unity-Simulation}{13}{subsubsection.3.1.1}
+\contentsline {subsubsection}{\numberline {3.1.2}Computer zur Ausf\IeC {\"u}hrung der Tracking-Anwendung}{13}{subsubsection.3.1.2}
+\contentsline {subsubsection}{\numberline {3.1.3}HTC Vive}{14}{subsubsection.3.1.3}
+\contentsline {subsubsection}{\numberline {3.1.4}IDS uEye 164LE-C}{15}{subsubsection.3.1.4}
+\contentsline {subsubsection}{\numberline {3.1.5}Leap Motion}{15}{subsubsection.3.1.5}
+\contentsline {subsubsection}{\numberline {3.1.6}Leap Motion SDK}{16}{subsubsection.3.1.6}
+\contentsline {subsubsection}{\numberline {3.1.7}ArUco Marker}{16}{subsubsection.3.1.7}
+\contentsline {subsubsection}{\numberline {3.1.8}W\IeC {\"u}rfel Marker}{17}{subsubsection.3.1.8}
+\contentsline {subsection}{\numberline {3.2}Obsolete Hardware}{18}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}Ovrvision Pro}{19}{subsubsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2}Webcam}{20}{subsubsection.3.2.2}
+\contentsline {subsection}{\numberline {3.3}Software}{20}{subsection.3.3}
+\contentsline {subsubsection}{\numberline {3.3.1}Unity}{20}{subsubsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.2}Visual Studio 2015}{21}{subsubsection.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.3}OpenCV}{21}{subsubsection.3.3.3}
+\contentsline {subsubsection}{\numberline {3.3.4}Orion Beta Software}{21}{subsubsection.3.3.4}
+\contentsline {subsubsection}{\numberline {3.3.5}Steam VR}{22}{subsubsection.3.3.5}
+\contentsline {subsubsection}{\numberline {3.3.6}Windows Sockets (Winsock)}{22}{subsubsection.3.3.6}
+\contentsline {section}{\numberline {4}System}{23}{section.4}
+\contentsline {subsection}{\numberline {4.1}Aufbau}{23}{subsection.4.1}
+\contentsline {subsubsection}{\numberline {4.1.1}Tracking Aufbau}{23}{subsubsection.4.1.1}
+\contentsline {subsubsection}{\numberline {4.1.2}Unity Aufbau}{24}{subsubsection.4.1.2}
+\contentsline {subsection}{\numberline {4.2}Systemvoraussetzungen}{25}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Netzwerk}{26}{subsection.4.3}
+\contentsline {subsubsection}{\numberline {4.3.1}Serverseitige Netzwerkanbindung}{26}{subsubsection.4.3.1}
+\contentsline {subsubsection}{\numberline {4.3.2}Client-seitige Netzwerkanbindung}{26}{subsubsection.4.3.2}
+\contentsline {subsection}{\numberline {4.4}Starten des Systems}{26}{subsection.4.4}
+\contentsline {subsection}{\numberline {4.5}Men\IeC {\"u}f\IeC {\"u}hrung}{26}{subsection.4.5}
+\contentsline {subsubsection}{\numberline {4.5.1}Men\IeC {\"u}s}{27}{subsubsection.4.5.1}
+\contentsline {subsubsection}{\numberline {4.5.2}Ablauf der Men\IeC {\"u}f\IeC {\"u}hrung}{29}{subsubsection.4.5.2}
+\contentsline {subsection}{\numberline {4.6}Kontextmen\IeC {\"u}}{31}{subsection.4.6}
+\contentsline {subsection}{\numberline {4.7}Marker Handles}{31}{subsection.4.7}
+\contentsline {subsubsection}{\numberline {4.7.1}Men\IeC {\"u}f\IeC {\"u}hrung}{32}{subsubsection.4.7.1}
+\contentsline {subsubsection}{\numberline {4.7.2}Architektur Berechnung}{32}{subsubsection.4.7.2}
+\contentsline {subsection}{\numberline {4.8}Table Men\IeC {\"u}}{32}{subsection.4.8}
+\contentsline {subsubsection}{\numberline {4.8.1}Szenen Management}{32}{subsubsection.4.8.1}
+\contentsline {subsubsection}{\numberline {4.8.2}Speichern von Szenen}{33}{subsubsection.4.8.2}
+\contentsline {paragraph}{Dateiaufbau einer gespeicherten Szene}{33}{section*.76}
+\contentsline {paragraph}{Vorgehen der Speicherung}{33}{section*.77}
+\contentsline {paragraph}{Darstellen von gespeicherten Szenen}{34}{section*.78}
+\contentsline {subsubsection}{\numberline {4.8.3}Laden von Szenen}{34}{subsubsection.4.8.3}
+\contentsline {paragraph}{Vorgehen beim Laden}{34}{section*.80}
+\contentsline {subsubsection}{\numberline {4.8.4}Match Modus}{35}{subsubsection.4.8.4}
+\contentsline {section}{\numberline {5}Tracking Programm}{35}{section.5}
+\contentsline {subsection}{\numberline {5.1}uEye Ansteuerung}{36}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Kalibrierung}{36}{subsection.5.2}
+\contentsline {subsubsection}{\numberline {5.2.1}Kamerakalibrierung}{37}{subsubsection.5.2.1}
+\contentsline {subsubsection}{\numberline {5.2.2}Kalibrierung des Arbeitsbereichs}{40}{subsubsection.5.2.2}
+\contentsline {subsubsection}{\numberline {5.2.3}Kalibrierungsfehler}{41}{subsubsection.5.2.3}
+\contentsline {subsubsection}{\numberline {5.2.4}M\IeC {\"o}gliche Fehlerquellen}{41}{subsubsection.5.2.4}
+\contentsline {subsection}{\numberline {5.3}Marker Detektion}{42}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}Green Keying}{42}{subsection.5.4}
+\contentsline {subsection}{\numberline {5.5}ArUco Marker Tracking}{42}{subsection.5.5}
+\contentsline {subsection}{\numberline {5.6}Marker Objekt}{42}{subsection.5.6}
+\contentsline {subsection}{\numberline {5.7}Zuordnung der Identit\IeC {\"a}ten}{42}{subsection.5.7}
+\contentsline {section}{\numberline {6}Ausblick}{43}{section.6}
+\contentsline {subsection}{\numberline {6.1}Trackingmethoden}{43}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}AR Erweiterung mit der Webcam}{43}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Daten als Excel Tabelle}{43}{subsection.6.3}
+\contentsline {subsection}{\numberline {6.4}Validierung}{43}{subsection.6.4}
+\contentsline {section}{\numberline {7}Projektmanagement}{43}{section.7}
+\contentsline {subsection}{\numberline {7.1}Zeitplanung}{43}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}Gant Chart}{43}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.3}Planungsmethoden}{43}{subsection.7.3}
+\contentsline {subsection}{\numberline {7.4}Reflexion}{43}{subsection.7.4}
+\contentsline {subsubsection}{\numberline {7.4.1}Kommuniktion im Team und nach Au\IeC {\ss }en}{43}{subsubsection.7.4.1}
+\contentsline {subsubsection}{\numberline {7.4.2}Probleme}{44}{subsubsection.7.4.2}
+\contentsline {section}{\numberline {8}Zusammenfassung}{44}{section.8}
+\contentsline {section}{\numberline {9}Steckbrief}{44}{section.9}
+\contentsline {section}{\numberline {10}Anhang}{44}{section.10}
+\contentsline {subsection}{\numberline {10.1}\emph {MArC} ReadMe-Datei}{44}{subsection.10.1}
