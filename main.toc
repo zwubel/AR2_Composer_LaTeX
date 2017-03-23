@@ -7,9 +7,9 @@
 \contentsline {subsection}{\numberline {2.1}Architektur von Virtual-Reality-Anwendungen}{6}{subsection.2.1}
 \contentsline {subsection}{\numberline {2.2}Haptische Interaktionsmethoden in VR Umgebungen}{7}{subsection.2.2}
 \contentsline {subsection}{\numberline {2.3}Handtracking Interaktionsmethoden}{7}{subsection.2.3}
-\contentsline {subsection}{\numberline {2.4}ISO/OSI-7-Schichtenmodell}{7}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.4}ISO/OSI-7-Schichtenmodell}{8}{subsection.2.4}
 \contentsline {subsection}{\numberline {2.5}Bedienkonzepte in VR-Umgebungen}{9}{subsection.2.5}
-\contentsline {subsection}{\numberline {2.6}Marker Tracking}{9}{subsection.2.6}
+\contentsline {subsection}{\numberline {2.6}Marker Tracking}{10}{subsection.2.6}
 \contentsline {section}{\numberline {3}Materialien}{12}{section.3}
 \contentsline {subsection}{\numberline {3.1}Hardware}{12}{subsection.3.1}
 \contentsline {subsubsection}{\numberline {3.1.1}Computer zur Ausf\IeC {\"u}hrung der Unity-Simulation}{12}{subsubsection.3.1.1}

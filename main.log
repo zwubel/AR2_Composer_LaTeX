@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.16)  22 MAR 2017 21:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.16)  23 MAR 2017 10:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1363,18 +1363,13 @@ Package babel Info: Redefining ngerman shorthand "~
 
 [6]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 40.
+(babel)             in language  on input line 41.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 40.
+(babel)             in language  on input line 41.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 41.
+(babel)             in language  on input line 42.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 41.
-
-Underfull \hbox (badness 10000) in paragraph at lines 42--43
-
- []
-
+(babel)             in language  on input line 42.
 
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
@@ -1388,7 +1383,12 @@ Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 43.
 
 [7]
-Overfull \hbox (6.64307pt too wide) in paragraph at lines 71--73
+Underfull \hbox (badness 10000) in paragraph at lines 43--44
+
+ []
+
+
+Overfull \hbox (6.64307pt too wide) in paragraph at lines 72--74
 \T1/cmr/m/n/12 als Bin-de-glied zwi-schen den trans-por-t-ori-en-tier-ten und a
 n-wen-dungs-ori-en-tier-ten Schich-
  []
@@ -1397,23 +1397,23 @@ n-wen-dungs-ori-en-tier-ten Schich-
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 81.
+(babel)             in language  on input line 79.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 81.
+(babel)             in language  on input line 79.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 81.
+(babel)             in language  on input line 79.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 81.
+(babel)             in language  on input line 79.
 
 [8]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 82.
+(babel)             in language  on input line 83.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 82.
+(babel)             in language  on input line 83.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 94.
+(babel)             in language  on input line 95.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 94.
+(babel)             in language  on input line 95.
 
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
@@ -1427,7 +1427,7 @@ Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 96.
 
 [9]
-Overfull \hbox (8.58124pt too wide) in paragraph at lines 101--102
+Overfull \hbox (8.58124pt too wide) in paragraph at lines 102--103
 \T1/cmr/m/n/12 kann-te \T1/cmr/m/it/12 QR \T1/cmr/m/n/12 Ver-fah-ren, \T1/cmr/m
 /it/12 AR-Tool-Kit\T1/cmr/m/n/12 [[]], \T1/cmr/m/it/12 AR-Tool-Kit Plus\T1/cmr/
 m/n/12 [[]], \T1/cmr/m/it/12 ARTag \T1/cmr/m/n/12 [[]], \T1/cmr/m/it/12 Bi-nA-R
@@ -1438,31 +1438,31 @@ yID\T1/cmr/m/n/12 [[]]
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 102.
+(babel)             in language  on input line 103.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 102.
+(babel)             in language  on input line 103.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 102.
+(babel)             in language  on input line 103.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 102.
+(babel)             in language  on input line 103.
 
-[10] <Bilder/BinMuster.jpg, id=551, 155.10439pt x 122.21072pt>
+[10] <Bilder/BinMuster.jpg, id=546, 155.10439pt x 122.21072pt>
 File: Bilder/BinMuster.jpg Graphic file (type jpg)
 
 <use Bilder/BinMuster.jpg>
-Package pdftex.def Info: Bilder/BinMuster.jpg used on input line 106.
+Package pdftex.def Info: Bilder/BinMuster.jpg used on input line 107.
 (pdftex.def)             Requested size: 227.62204pt x 179.36041pt.
 
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 111.
+(babel)             in language  on input line 112.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 111.
+(babel)             in language  on input line 112.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 111.
+(babel)             in language  on input line 112.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 111.
+(babel)             in language  on input line 112.
 
 [11 <./Bilder/BinMuster.jpg>]) (./kapitel/materialien/materialien.tex
 Package babel Info: Redefining ngerman shorthand "|
@@ -2855,7 +2855,7 @@ LaTeX Warning: There were undefined references.
 Here is how much of TeX's memory you used:
  24067 strings out of 493089
  425838 string characters out of 6134842
- 519291 words of memory out of 5000000
+ 519293 words of memory out of 5000000
  26712 multiletter control sequences out of 15000+600000
  23263 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2888,7 +2888,7 @@ st/fonts/type1/public/cm-super/sfsl1200.pfb></usr/local/texlive/2015/texmf-dist
 onts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2015/texmf-dist/fon
 ts/type1/public/cm-super/sftt1200.pfb></usr/local/texlive/2015/texmf-dist/fonts
 /type1/public/esvect/vect10.pfb>
-Output written on main.pdf (55 pages, 7477908 bytes).
+Output written on main.pdf (55 pages, 7478485 bytes).
 PDF statistics:
  1322 PDF objects out of 1440 (max. 8388607)
  1164 compressed objects within 12 object streams
