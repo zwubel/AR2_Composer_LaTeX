@@ -39,7 +39,7 @@
 \contentsline {subsubsection}{\numberline {4.3.1}Serverseitige Netzwerkanbindung}{24}{subsubsection.4.3.1}
 \contentsline {subsubsection}{\numberline {4.3.2}Client-seitige Netzwerkanbindung}{24}{subsubsection.4.3.2}
 \contentsline {subsection}{\numberline {4.4}Starten des Systems}{24}{subsection.4.4}
-\contentsline {subsection}{\numberline {4.5}Men\IeC {\"u}f\IeC {\"u}hrung}{24}{subsection.4.5}
+\contentsline {subsection}{\numberline {4.5}Men\IeC {\"u}f\IeC {\"u}hrung}{25}{subsection.4.5}
 \contentsline {subsubsection}{\numberline {4.5.1}Men\IeC {\"u}s}{25}{subsubsection.4.5.1}
 \contentsline {subsubsection}{\numberline {4.5.2}Ablauf der Men\IeC {\"u}f\IeC {\"u}hrung}{27}{subsubsection.4.5.2}
 \contentsline {subsection}{\numberline {4.6}Kontextmen\IeC {\"u}}{29}{subsection.4.6}
@@ -47,39 +47,39 @@
 \contentsline {subsubsection}{\numberline {4.7.1}Men\IeC {\"u}f\IeC {\"u}hrung}{30}{subsubsection.4.7.1}
 \contentsline {subsubsection}{\numberline {4.7.2}Architektur Berechnung}{30}{subsubsection.4.7.2}
 \contentsline {subsection}{\numberline {4.8}Table Men\IeC {\"u}}{30}{subsection.4.8}
-\contentsline {subsubsection}{\numberline {4.8.1}Szenen Management}{30}{subsubsection.4.8.1}
+\contentsline {subsubsection}{\numberline {4.8.1}Szenen Management}{31}{subsubsection.4.8.1}
 \contentsline {subsubsection}{\numberline {4.8.2}Speichern von Szenen}{31}{subsubsection.4.8.2}
-\contentsline {paragraph}{Dateiaufbau einer gespeicherten Szene}{31}{section*.77}
-\contentsline {paragraph}{Vorgehen der Speicherung}{31}{section*.78}
-\contentsline {paragraph}{Darstellen von gespeicherten Szenen}{32}{section*.79}
+\contentsline {paragraph}{Dateiaufbau einer gespeicherten Szene}{31}{section*.76}
+\contentsline {paragraph}{Vorgehen der Speicherung}{32}{section*.77}
+\contentsline {paragraph}{Darstellen von gespeicherten Szenen}{32}{section*.78}
 \contentsline {subsubsection}{\numberline {4.8.3}Laden von Szenen}{32}{subsubsection.4.8.3}
-\contentsline {paragraph}{Vorgehen beim Laden}{32}{section*.81}
+\contentsline {paragraph}{Vorgehen beim Laden}{33}{section*.80}
 \contentsline {subsubsection}{\numberline {4.8.4}Match Modus}{33}{subsubsection.4.8.4}
-\contentsline {section}{\numberline {5}Tracking Programm}{33}{section.5}
+\contentsline {section}{\numberline {5}Tracking Programm}{34}{section.5}
 \contentsline {subsection}{\numberline {5.1}uEye Ansteuerung}{34}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Kalibrierung}{34}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.2}Kalibrierung}{35}{subsection.5.2}
 \contentsline {subsubsection}{\numberline {5.2.1}Kamerakalibrierung}{35}{subsubsection.5.2.1}
-\contentsline {subsubsection}{\numberline {5.2.2}Kalibrierung des Arbeitsbereichs}{38}{subsubsection.5.2.2}
-\contentsline {subsubsection}{\numberline {5.2.3}Kalibrierungsfehler}{38}{subsubsection.5.2.3}
+\contentsline {subsubsection}{\numberline {5.2.2}Kalibrierung des Arbeitsbereichs}{39}{subsubsection.5.2.2}
+\contentsline {subsubsection}{\numberline {5.2.3}Kalibrierungsfehler}{39}{subsubsection.5.2.3}
 \contentsline {subsubsection}{\numberline {5.2.4}M\IeC {\"o}gliche Fehlerquellen}{39}{subsubsection.5.2.4}
 \contentsline {subsection}{\numberline {5.3}Marker Detektion}{39}{subsection.5.3}
 \contentsline {subsection}{\numberline {5.4}Green Keying}{39}{subsection.5.4}
 \contentsline {subsection}{\numberline {5.5}ArUco Marker Tracking}{39}{subsection.5.5}
 \contentsline {subsection}{\numberline {5.6}Marker Objekt}{39}{subsection.5.6}
-\contentsline {subsection}{\numberline {5.7}Zuordnung der Identit\IeC {\"a}ten}{39}{subsection.5.7}
-\contentsline {section}{\numberline {6}Ausblick}{40}{section.6}
-\contentsline {subsection}{\numberline {6.1}Trackingmethoden}{40}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}AR Erweiterung mit der Webcam}{40}{subsection.6.2}
-\contentsline {subsection}{\numberline {6.3}Daten als Excel Tabelle}{40}{subsection.6.3}
-\contentsline {subsection}{\numberline {6.4}Validierung}{40}{subsection.6.4}
-\contentsline {section}{\numberline {7}Projektmanagement}{40}{section.7}
-\contentsline {subsection}{\numberline {7.1}Zeitplanung}{40}{subsection.7.1}
-\contentsline {subsection}{\numberline {7.2}Gant Chart}{40}{subsection.7.2}
-\contentsline {subsection}{\numberline {7.3}Planungsmethoden}{40}{subsection.7.3}
-\contentsline {subsection}{\numberline {7.4}Reflexion}{40}{subsection.7.4}
-\contentsline {subsubsection}{\numberline {7.4.1}Kommuniktion im Team und nach Au\IeC {\ss }en}{40}{subsubsection.7.4.1}
-\contentsline {subsubsection}{\numberline {7.4.2}Probleme}{41}{subsubsection.7.4.2}
-\contentsline {section}{\numberline {8}Zusammenfassung}{41}{section.8}
-\contentsline {section}{\numberline {9}Steckbrief}{41}{section.9}
-\contentsline {section}{\numberline {10}Anhang}{41}{section.10}
-\contentsline {subsection}{\numberline {10.1}\emph {MArC} ReadMe-Datei}{41}{subsection.10.1}
+\contentsline {subsection}{\numberline {5.7}Zuordnung der Identit\IeC {\"a}ten}{40}{subsection.5.7}
+\contentsline {section}{\numberline {6}Ausblick}{41}{section.6}
+\contentsline {subsection}{\numberline {6.1}Trackingmethoden}{41}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}AR Erweiterung mit der Webcam}{41}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Daten als Excel Tabelle}{41}{subsection.6.3}
+\contentsline {subsection}{\numberline {6.4}Validierung}{41}{subsection.6.4}
+\contentsline {section}{\numberline {7}Projektmanagement}{41}{section.7}
+\contentsline {subsection}{\numberline {7.1}Zeitplanung}{41}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}Gant Chart}{41}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.3}Planungsmethoden}{41}{subsection.7.3}
+\contentsline {subsection}{\numberline {7.4}Reflexion}{41}{subsection.7.4}
+\contentsline {subsubsection}{\numberline {7.4.1}Kommuniktion im Team und nach Au\IeC {\ss }en}{41}{subsubsection.7.4.1}
+\contentsline {subsubsection}{\numberline {7.4.2}Probleme}{42}{subsubsection.7.4.2}
+\contentsline {section}{\numberline {8}Zusammenfassung}{42}{section.8}
+\contentsline {section}{\numberline {9}Steckbrief}{42}{section.9}
+\contentsline {section}{\numberline {10}Anhang}{42}{section.10}
+\contentsline {subsection}{\numberline {10.1}\emph {MArC} ReadMe-Datei}{42}{subsection.10.1}
