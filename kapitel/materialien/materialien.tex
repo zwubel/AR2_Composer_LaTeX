@@ -15,17 +15,17 @@ Für das vorliegende Projekt wurde seitens der Technischen Hochschule Köln ein 
 	\begin{tabular}{|l|l|}
 		\hline
 		\Absatzbox{}
-		\textbf{NAME DES COMPUTERS}& \textbf{Beschreibung} \\
+		\textbf{CGPC6}& \textbf{Beschreibung} \\
 		\hline
-		Prozessor & XXX \\
+		Prozessor & Intel Core i7 6700 CPU \@ $2 \times 3.4$GHz \\
 		\hline
-		Arbeitsspeicher & XXX \\
-		\hline 
-		Grafikkarte & XXX\\
+		Arbeitsspeicher & $16$ GB \\
+ 		\hline 
+		Grafikkarte & NVIDIA GeForce GTX 980\\
 		\hline
-		Betriebssystem &XXX \\
+		Betriebssystem & Windows 10 Education 64 bit \\
 		\hline
-		Schnittstellen & XXX \\
+		Schnittstellen & $2\times$ USB 3.0, $5 \times$ USB 2.0, $1 \times $ HDMI \\
 		\hline
 	\end{tabular}
 	\caption{Auszug aus dem technischen Datenblatt des XXXX.}
@@ -134,8 +134,12 @@ Die Marker bestehen ähnlich wie QR-Codes aus einer zweidimensionalen Matrix, mi
 
 In vielen VR oder AR Umgebungen müssen die Nutzer eines Systems häufig nach virtuellen Objekten zur Interaktion greifen, die nicht real existieren. Demzufolge greifen die Personen ins Leere, was häufig die Immersion stört und zu Irritationen und Unsicherheit führt.
 Um dem Nutzer des Systems \textit{MArC} für die Positionierung und Orientierung ein reales haptisches Feedback zu ermöglichen wurden zwölf Aluminumwürfel mit aufgeklebten Markern designt. Diese Würfel können beliebig innerhalb eines zuvor festgelegten Bereiches auf dem realen Tisch verschoben und rotiert werden. An der aktuellen Position und Orientierung des jeweiligen Markers wird in der VR ein explizit zugeordnetes Objekt gerendert. Diese Position wird mit Hilfe des Tracking-Algorithmus (siehe Kapitel \ref{sec:Tracking}) aus den Bildern der uEye Kamera ermittelt.
-Alle zwölf Marker stimmen mit der Form und Farbe, sowie Material und Oberflächenbeschaffenheit aus Abbildung \ref{fig:marker} überein. Sie haben eine Kantenlänge von $46\,mm$ und sind in einem Winkel von $45^\circ$ an allen Kanten gefräst. Das Aluminium ist glasperlgestrahlt um eine matte Oberfläche zu erzeugen, welche ungewollte Reflexionen und Überstrahlungen vermeidet, die unter Umständen den Tracking-Algorithmus beeinflussen können. Auf die Oberseite des Markers ist mittig ein leuchtend grünes Quadrat mit einer Kantenlänge von $40\,mm$ aufgebracht. Diese grüne Fläche wird für ein Green-Keying benötigt, welches die Verfolgung der Marker auch bei Bewegungsunschärfe ermöglicht. Ebenfalls mittig ist jeweils ein individueller $35\,mm$ großer ArUco-Marker plan befestigt. Alle verwendeten ArUco-Marker haben einen Rand von einem Bit hat und wurden jeweils aus dem Marker Dictionary $\texttt{DICT\_4X4\_50}$ des Arcuo Moduls \cite{website:ArucoDoc} generiert.
+Alle zwölf Marker stimmen mit der Form und Farbe, sowie Material und Oberflächenbeschaffenheit aus Abbildung \ref{fig:marker} überein. Sie haben eine Kantenlänge von $46\,mm$ und sind in einem Winkel von $45^\circ$ an allen Kanten gefräst. Das Aluminium ist glasperlgestrahlt um eine matte Oberfläche zu erzeugen, welche ungewollte Reflexionen und Überstrahlungen vermeidet, die unter Umständen den Tracking-Algorithmus beeinflussen können. 
 
+Auf die Oberseite des Markers ist mittig ein leuchtend grünes Quadrat mit einer Kantenlänge von $40\,mm$ aufgebracht. Diese grüne Fläche wird für ein Green-Keying benötigt, welches die Verfolgung der Marker auch bei Bewegungsunschärfe ermöglicht. Die leuchtend grüne Farbe wurde ausgewählt, da sie auf Grund ihrer hohen Leuchtkraft selten in der Natur und vor allem nicht in der Hautfarbe vorkommt. So hebt sie sich stark von ihrer Umgebung ab und erleichtert das Segmentieren der grünen Fläche im Bild. Die rechteckige Form der grünen Flächen hat noch eine weitere Bedeutung. Auf Grund der Geometrie können die äußeren Eckpunkt wie bei den rechteckigen codebasierten Markern auch zur Berechnung der Orientierung des Würfelmarkers im Kameraraum verwendet werden.
+
+Ebenfalls mittig ist jeweils ein individueller $35\,mm$ großer $16$ bit ArUco-Marker plan befestigt. Alle verwendeten ArUco-Marker haben einen Rand von einem Bit hat und wurden jeweils aus dem Marker Dictionary $\texttt{DICT\_4X4\_50}$ des Arcuo Moduls \cite{website:ArucoDoc} generiert. Die maximale Anzahl an IDs von $50$ ist ausreichend für den Prototypen von \textit{MArC}, da die Anzahl von $50$ Würfelmarkern die durchschnittliche Fläche mehr als ausfüllen würde. Ein weiterer Vorteil dieser verhältnismäßig kleinen Dictonarys ist, dass auch der Aufwand für den entsprechenden Abgleich einer ID mit den potentiellen Mustern im Dictonary erheblich reduziert werden kann. 
+Weiterführend beinhaltet das $\texttt{DICT\_4X4\_50}$ Dictionary auf Grund seiner $16$ bit Codierung sehr grobe und einfache Muster, welche gegen die mögliche Bewegungsunschärfe robuster ist. Bei sehr feinen Strukturen kann es schneller zu einer Verwischung des gesamten Musters kommen und die Wahrscheinlichkeit einer erfolgreichen Erkennung sinkt.
 	\begin{figure}[H] 
 	\center 
 	\includegraphics[trim = 0mm 280mm 0mm 150mm, clip, width=6cm]{Bilder/tracking-marker.jpg}			
