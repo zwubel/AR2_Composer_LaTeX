@@ -139,8 +139,7 @@ void TCP::getPointerOfMarkerVec(std::array<Marker*, 100>  allMarkers, std::vecto
 		ms[i].id = allMarkers[i]->getId();
 	
 		if (allMarkers[i]->getId() > 0)myfile << "\t tid " << ms[i].id << "\n";
-		//// For Simple Normalisation
-		//cv::RotatedRect r = normalizeCoord(allMarkers[i]->getRect());
+	
 		ms[i].posX = allMarkers[i]->getEstimatedCenter().x;
 		ms[i].posY = allMarkers[i]->getEstimatedCenter().y;
 		ms[i].posZ = allMarkers[i]->getEstimatedCenter().z;

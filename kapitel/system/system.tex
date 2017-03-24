@@ -39,13 +39,32 @@ Die Systemvoraussetzungen für \emph{MArC} sind in der ReadMe-Datei beschrieben,
 
 Die in Kapitel \ref{sec:Winsock} beschriebene API stellt die Möglichkeit bereit, den Datentransport mittels TCP oder UDP zu verwenden. Für \emph{MArC} wurde ein TCP-Socket-Netzwerk bestehend aus (genau) einem Server und (genau) einem Client verwendet, weil der der in~\ref{sec:Netzwerk} beschriebene Fehlerschutz des TCP ausgenutzt werden sollte, um nicht manuell überprüfen zu müssen, ob Daten fehlerfrei übertragen wurden. Da die zu übertragende Datenmenge von \emph{MArC} hinreichend klein -- und von konstanter Größe -- ist, wurde die etwas höhere Geschwindigkeit durch den geringeren Overhead einer UDP-Socket-Verbindung als unnötig erachtet.\\
 In den beiden folgenden Abschnitten wird die Umsetzung der Netzwerk-Endpunkte an den beiden für \emph{MArC} verwendeten Computern beschrieben.
-\subsubsection{Serverseitige Netzwerkanbindung}\todo[inline]{Laura}
+\subsubsection{Serverseitige Netzwerkanbindung}\todo[inline, color=green]{Laura}
 \paragraph{Aufbauen der Netzwerkverbindung}
 Da die Verbindung zwischen den beiden Rechnern per LAN-Kabel realisiert wurde, wird ein Server gestartet und eine Verbindung seitens des Clients ohne weitere Sicherheitsmechanismen erlaubt, so lange dieser den richtigen Port adressiert. Die entsprechenden Methoden stehen dank \textit{Winsock} (vgl. Abschnitt~\ref{sec:Winsock}) durch das Einbinden von \texttt{<winsock2.h>} und \texttt{<windows.h>} bereit und werden, wie in Quellcode-Auszug~\ref{lst:startTCPServer} (im Anhang einsehbar), verwendet. 
 
-%\lstinputlisting[title=\lstname, caption={\texttt{startTCPServer()}-Methode in \texttt{TCP.cpp}}, label=lst:startTCPServer, language={C++}, linerange=22-77, firstnumber=22]{Quellcode/TCP.cpp} 
-
 \paragraph{Datenübertragung}
+Die Datenübertragen kann grob gesprochen in drei Teilbereiche unterteilt werden. Neben der bidirektionalen Übertragung von verschiedenen Status, müssen zum einen die Tracking-Daten der einzelnen sich im Arbeitsbereich befindlichen Objekte gesendet werden können und zum anderen die Positionen des Kalibrierungscontrollers während der Arbeitsbereichskalibrierung (vgl. Kapitel~\ref{sec:planeCalib} empfangen werden. \\
+
+\lstinputlisting[title=\lstname, caption={\texttt{sendStatus()}-Methode in \texttt{TCP.cpp}}, label=lst:sendStatusVS, language={C++}, linerange=88-92, firstnumber=88]{Quellcode/TCP.cpp} 
+
+Da die Übertragung der Status in beide Richtungen erfolgen muss, bedarf es einer Methode zum Senden (Quellcode-Auszug~\ref{lst:sendStatusVS})  und einer Methode zum Empfangen (Quellcode-Auszug~\ref{lst:receiveStatusVS}). Beide Methoden gehen von einem Status aus, der 4 Byte groß ist und sind ansonsten selbsterklärend. 
+
+\lstinputlisting[title=\lstname, caption={\texttt{receiveStatus()}-Methode in \texttt{TCP.cpp}}, label=lst:receiveStatusVS, language={C++}, linerange=107-112, firstnumber=107]{Quellcode/TCP.cpp}
+
+Die entsprechende Methode zum Versenden der Marker-Daten, also deren ID, Position, Winkel und Sichtbarkeits-Status, ist in Quellcode-Auszug \ref{lst:sendMarkerData} zu sehen. Alle eben genannten Eigenschaften eines Markers werden zu diesem Zweck in einem struct mit dem Namen \texttt{MarkerStruct} (vgl. Quellcode-Auszug~\ref{lst:MarkerStruct}) gebündelt. 
+
+\lstinputlisting[title=\lstname, caption={\texttt{sendMarkerData()}-Methode in \texttt{TCP.cpp}}, label=lst:sendMarkerData, language={C++}, linerange=99-103, firstnumber=99]{Quellcode/TCP.cpp} 
+
+Der Vollständigkeit halber befindet sich im Anhang der Quellcode-Auszug~\ref{lst:getPointerOfMarkerVec} der \texttt{getPointerOfMarkerVec()}-Methode. Diese dient im Wesentlichen zur Umsortierung der entsprechenden Daten aus dem umfangreicheren \texttt{allMarkers}-Array in das \texttt{MarkerStruct}-Array. Damit wird dafür gesorgt, dass nur die relevanten Daten übertragen werden. 
+
+\lstinputlisting[title=\lstname, caption={\texttt{MarkerStruct} in \texttt{TCP.h}}, label=lst:MarkerStruct, language={C++}, linerange=13-20, firstnumber=13]{Quellcode/TCP.h} 
+
+Während der Kalibrierung des Arbeitsbereichs (vgl. Kapitel~\ref{sec:planeCalib}) wird die Position des Kalibrierungscontrollers nach jedem Auslösen des Triggers von der Unity-Anwendung an den Tracking-Rechner gesendet. Die entsprechende Methode zum Empfangen der dreidimensionalen Position in Unitykoordinaten ist in Quellcode-Auszug~\ref{lst:receiveControllerPositions} abgebildet. Neben dem reinen Empfang der Daten, der äquivalent zu der \texttt{receiveStatus()}-Methode funktioniert, werden hier die ankommenden Daten aus dem Array in einen anderen Datentyp konvertiert, um eine Weiterverarbeitung während der Arbeitsbereichskalibrierung zu vereinfachen. 
+
+\lstinputlisting[title=\lstname, caption={\texttt{receiveControllerPositions()}-Methode in \texttt{TCP.cpp}}, label=lst:receiveControllerPositions, language={C++}, linerange=116-125, firstnumber=116]{Quellcode/TCP.cpp}
+
+
 
 
 \subsubsection{Client-seitige Netzwerkanbindung}\todo[inline, color=green]{Lukas}
