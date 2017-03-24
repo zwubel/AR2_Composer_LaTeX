@@ -18,16 +18,16 @@
 \contentsline {subsubsection}{\numberline {3.1.4}IDS uEye 164LE-C}{15}{subsubsection.3.1.4}
 \contentsline {subsubsection}{\numberline {3.1.5}Leap Motion}{15}{subsubsection.3.1.5}
 \contentsline {subsubsection}{\numberline {3.1.6}Leap Motion SDK}{16}{subsubsection.3.1.6}
-\contentsline {subsubsection}{\numberline {3.1.7}ArUco Marker}{16}{subsubsection.3.1.7}
-\contentsline {subsubsection}{\numberline {3.1.8}W\IeC {\"u}rfel Marker}{17}{subsubsection.3.1.8}
+\contentsline {subsubsection}{\numberline {3.1.7}ArUco Marker}{17}{subsubsection.3.1.7}
+\contentsline {subsubsection}{\numberline {3.1.8}W\IeC {\"u}rfel Marker}{18}{subsubsection.3.1.8}
 \contentsline {subsection}{\numberline {3.2}Obsolete Hardware}{18}{subsection.3.2}
 \contentsline {subsubsection}{\numberline {3.2.1}Ovrvision Pro}{19}{subsubsection.3.2.1}
 \contentsline {subsubsection}{\numberline {3.2.2}Webcam}{20}{subsubsection.3.2.2}
-\contentsline {subsection}{\numberline {3.3}Software}{20}{subsection.3.3}
-\contentsline {subsubsection}{\numberline {3.3.1}Unity}{20}{subsubsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3}Software}{21}{subsection.3.3}
+\contentsline {subsubsection}{\numberline {3.3.1}Unity}{21}{subsubsection.3.3.1}
 \contentsline {subsubsection}{\numberline {3.3.2}Visual Studio 2015}{21}{subsubsection.3.3.2}
 \contentsline {subsubsection}{\numberline {3.3.3}OpenCV}{21}{subsubsection.3.3.3}
-\contentsline {subsubsection}{\numberline {3.3.4}Steam VR}{21}{subsubsection.3.3.4}
+\contentsline {subsubsection}{\numberline {3.3.4}Steam VR}{22}{subsubsection.3.3.4}
 \contentsline {subsubsection}{\numberline {3.3.5}Windows Sockets (Winsock)}{22}{subsubsection.3.3.5}
 \contentsline {section}{\numberline {4}System}{23}{section.4}
 \contentsline {subsection}{\numberline {4.1}Aufbau}{23}{subsection.4.1}
