@@ -35,10 +35,10 @@ Die Systemvoraussetzungen für \emph{MArC} sind in der ReadMe-Datei beschrieben,
 	\label{fig:marcReadMe}
 \end{figure}
 
-\subsection{Netzwerk}\label{sec:netzwerk}\todo[inline, color=yellow]{Lukas und Laura}
+\subsection{Netzwerk}\label{sec:netzwerk}\todo[inline, color=green]{Lukas und Laura}
 
-Die in Kapitel \ref{sec:Winsock} beschriebene API verfügt, wie dort geschildert, über die Möglichkeit den Datentransport mittels TCP oder UDP umzusetzen. Für \emph{MArC} wurde ein TCP-Socket-Netzwerk bestehend aus einem Server und einem Klienten verwendet, weil der der in~\ref{sec:Netzwerk} beschriebene Fehlerschutz des TCPs ausgenutzt werden sollte. Da die zu übertragenden Daten von \emph{MArC} in der Größe exakt definiert und hinreichend klein sind, wurde die etwas höhere Geschwindigkeit einer UDP-Socket-Verbindung als unnötig erachtet.
-\todo[inline, color=yellow]{Kann noch angepasst wereden und muss noch erweitert werden}
+Die in Kapitel \ref{sec:Winsock} beschriebene API stellt die Möglichkeit bereit, den Datentransport mittels TCP oder UDP zu verwenden. Für \emph{MArC} wurde ein TCP-Socket-Netzwerk bestehend aus (genau) einem Server und (genau) einem Client verwendet, weil der der in~\ref{sec:Netzwerk} beschriebene Fehlerschutz des TCP ausgenutzt werden sollte, um nicht manuell überprüfen zu müssen, ob Daten fehlerfrei übertragen wurden. Da die zu übertragende Datenmenge von \emph{MArC} hinreichend klein -- und von konstanter Größe -- ist, wurde die etwas höhere Geschwindigkeit durch den geringeren Overhead einer UDP-Socket-Verbindung als unnötig erachtet.\\
+In den beiden folgenden Abschnitten wird die Umsetzung der Netzwerk-Endpunkte an den beiden für \emph{MArC} verwendeten Computern beschrieben.
 
 \subsubsection{Serverseitige Netzwerkanbindung}\todo[inline]{Laura}
 \subsubsection{Client-seitige Netzwerkanbindung}\todo[inline]{Lukas}
