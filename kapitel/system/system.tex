@@ -219,8 +219,9 @@ Sofern der HTC Vive Controller beim Aufruf von \texttt{doPlane\-Calibration\-InV
 
 
 
-\subsection{Kontextmenü}\label{sec:kontextMenu}\todo[inline, color=yellow]{Laura und Lukas}
-Zu Beginn des Projektes wurde sich, wie in Kapitel \textcolor{red}{??} näher erläutert, mit den Mitarbeitern eines Architekturbüros zusammengesetzt. Als Zielgruppe konnten diese Ideen und Inspirationen liefern, was für den \textit{MaRC} wichtig ist. Unter Anderem hat sich dabei gezeigt, dass eine detaillierte Beschreibung der einzelnen Gebäude erwünscht ist. Diese Systemkomponente wurde in Form eines Kontextmenüs umgesetzt, welches wie Kapitel~\ref{}
+\subsection{Kontextmenü}\label{sec:kontextMenu}\todo[inline, color=green]{Laura und Lukas}
+Die virtuellen Objekte, die den in Kapitel\ref{sec:WürfelMarker} beschriebenen Aluminiumwürfeln zugeordnet werden, sind zunächst würfelförmig und können zur Laufzeit der Anwendung vom Benutzer verschoben, rotiert und skaliert werden. Die Verschiebung und Rotation kann über eine entsprechende Veränderung der Lage des realen Marker Würfels geschehen. Für die Skalierung kann wie in Kapitel~\ref{sec:KontextMenuSwitch} beschrieben das sogenannte Kontextmenü aufgerufen werden. Dieses beinhaltet neben den Marker Handles (vgl. Kapitel~\ref{sec:markerHandles}) zur dreidimensionalen Skalierung des virtuellen Objekts auch eine Art Übersichtstafel seiner jeweiligen Gebäudeeigenschaften. Beispiele für Letzteres sind in Abbildung~\ref{fig:KontextmenuExamples} zu sehen. Im Folgenden wird, wenn nicht anders erwähnt, die Übersichtstafel mit Kontextmenü bezeichnet. Die Idee des Kontextmenüs ist aus dem Treffen mit den Mitarbeitern eines Architekturbüros zu Beginn des Projektes entstanden (vgl. Kapitel \textcolor{red}{????}). Diese hatten eine detaillierte Beschreibung der einzelnen Gebäude als durchaus sinnvoll und nützlich für die Umsetzung einer Anwendung wie den \textit{MaRC} beschrieben. \\
+Da zu Beginn der Anwendung im \texttt{SetScale}-Menü (vgl. Kapitel~\ref{sec:menuAblauf} der Maßstab der Architekturszene vom Benutzer ausgewählt wird und zusätzlich wie beschrieben eine Skalierung der einzelnen Objekte durchgeführt werden kann, muss sich der Inhalt des Kontextmenüs laufend ändern können. Die dazu notwendigen Berechnungen der Gebäudeeigenschaften sind in Kapitel~\ref{sec:KontextMenuInhalt} erläutert. 
 
 \begin{figure}[H]
 	\centering
@@ -247,8 +248,8 @@ Es fällt auf, dass in der zu verändernden Achse verschiedene Achsen zur Berech
 Dass der Wert der zu verändernden Achse halbiert wird, hat sich empirisch als Sinnvoll herausgestellt. Ohne diese "Übersetzung" der Bewegung würde das Gebäude nicht equivalent zur Fingerbewegung vergrößert oder verkleinert werden. 
 
 \subsubsection{Ein- und Ausblenden des Kontextmenüs} \label{sec:KontextMenuSwitch}\todo[inline]{Lukas}
-\subsubsection{Architektur Berechnung} \label{sec:KontextMenuInhalt}\todo[inline]{Laura}
-
+\subsubsection{Berechnung der Gebäudeeigenschaften} \label{sec:KontextMenuInhalt}\todo[inline]{Laura}
+%Neben der Anwendungsspzfischen ID des jweiligen Gebäudes ist wie auf Abbildung BLA zu sehen ....
 
 \subsection{Table Menü}\label{sec:TableMenü}\todo[inline, color=yellow]{Paul}
 
