@@ -375,7 +375,7 @@ In Abbildung~\ref{fig:cameraCalib} sind die Zusammenhänge zwischen dem Projekti
 			\label{fig:cameraCalib}
 	\end{figure}
 
-Um die verschiedenen Koordinatensysteme bei den Ausführungen in den Kapiteln \ref{sec:camCalib} und \ref{sec:planeCalib} auseinander halten zu können, wird zu Beginn eine Notation festgelegt, die in Tabelle~\ref{tab:camCalibParam} eingesehen werden kann. Zusätzlich können in der Tabelle sowohl die einzelnen Koordinatensysteme, als auch die einzelnen Berechnungsschritte der Kamerakalibrierung, sowie der Koordinatentransformation bis hinzu Unitykoordinaten, nachvollzogen werden. Lässt man die ersten zwei Zeilen der Tabelle weg, so ist eine Transformation von Weltkoordinaten $\vv{x}$ in Kamerakoordinaten $\vv{u}$ schematisch dargestellt. Dieses Schema muss für die Kamerakalibrierung von \textit{MaRC} invertiert werden und um die Koordinatentransformation in Unitykoordinaten ergänzt werden.  \\
+Um die verschiedenen Koordinatensysteme bei den Ausführungen in den Kapiteln \ref{sec:camCalib} und \ref{sec:planeCalib} auseinander halten zu können, wird zu Beginn eine Notation festgelegt, die in Tabelle~\ref{tab:camCalibParam} eingesehen werden kann. Zusätzlich können in der Tabelle sowohl die einzelnen Koordinatensysteme, als auch die einzelnen Berechnungsschritte der Kamerakalibrierung, sowie der Koordinatentransformation bis hinzu Unitykoordinaten, nachvollzogen werden. Lässt man die ersten zwei Zeilen der Tabelle weg, so ist eine Transformation von Weltkoordinaten $\vv{x}$ in Kamerakoordinaten $\vv{u}$ schematisch dargestellt. Dieses Schema muss für die Kamerakalibrierung von \textit{MaRC} invertiert werden und um die Koordinatentransformation in Unitykoordinaten ergänzt werden.\\
 
 \begin{table}
 	\centering
@@ -418,11 +418,10 @@ Um die verschiedenen Koordinatensysteme bei den Ausführungen in den Kapiteln \r
 
 \subsubsection{Kamerakalibrierung}\label{sec:camCalib}\todo[inline, backgroundcolor=green]{Laura}
 
-Es gibt viele verschiedene wissenschaftliche Ausführungen über die Durchführung einer Kamerakalibrierung, wie z.B. \cite{5982395}, \cite{888718} und \cite{faugeras1993three}. Dabei unterscheidet man häufig zwischen automatischen und manuellen Kalibrierungen. Im Folgenden wird der Algorithmus zur Kamerakalibrierung des \textit{MaRC} erläutert. Eine Beschreibung der Durchführung der Kalibrierung kann der ReadMe-Datei (vgl.~\ref{sec:readMe}) entnommen werden. \\
-Die Kamerakalibrierung, die diesem Projekt zu Grunde liegt, ist als manuell einzustufen und kann, wenn gewünscht bzw. benötigt, zu Beginn der eigentlichen Anwendung durchgeführt werden.
-
-Wie aus Tabelle~\ref{tab:camCalibParam} hervorgeht, wird zunächst der Hauptpunkt so versetzt, dass der Koordinatenursprung des Kamerakoordinatensystems mit dem Bildkoordinatensystem übereinstimmt. Dies geschieht, indem man für die eine Achse $u^V = u - \Delta u$ und für die andere Achse entsprechend $v^V = v - \Delta v$ berechnet.\\
-Zusätzlich wird die Bildebene verkippt, so dass gilt $\vv{x}^V = R_v \cdot \vv{x}^P_D$. Bezeichnet $\varphi$ den Drehwinkel um die $x^P$-Achse und $\vartheta$ den Drehwinkel um die $y^{P'}$-Achse, so lässt sich $R_v$ wie folgt berechnen:}
+Es gibt viele verschiedene wissenschaftliche Ausführungen über die Durchführung einer Kamerakalibrierung, wie z.B. \cite{5982395}, \cite{888718} und \cite{faugeras1993three}. Dabei unterscheidet man häufig zwischen automatischen und manuellen Kalibrierungen. Im Folgenden wird der Algorithmus zur Kamerakalibrierung des \textit{MaRC} erläutert.  \\
+Im konkreten Fall soll die uEye-Kamera (vgl. Kapitel \ref{sec:uEye}), die für Tracking-Zwecke(vgl. Kapitel \ref{sec:Tracking}) an der Decke des Entwicklungsraums befestigt ist, kalibriert werden. Dies kann, wenn gewünscht bzw. benötigt, zu Beginn der eigentlichen Anwendung durchgeführt werden. Dazu wird ein eigens für dieses Projekt angefertigter Schachbrett-Kalibrierungshelfer verwendet, der in Kapitel \ref{sec:SchachbrettKalib} beschrieben wird. Eine Beschreibung der genauen Durchführung der Kamerakalibrierung kann der ReadMe-Datei (vgl.~\ref{sec:readMe}) entnommen werden.\\
+Wie aus Tabelle~\ref{tab:camCalibParam} hervorgeht, wird im ersten Schritt der Hauptpunkt so versetzt, dass der Koordinatenursprung des Kamerakoordinatensystems mit dem Bildkoordinatensystem übereinstimmt. Dies geschieht, indem man für die eine Achse $u^V = u - \Delta u$ und für die andere Achse entsprechend $v^V = v - \Delta v$ berechnet.\\
+Zusätzlich wird die Bildebene verkippt, so dass gilt $\vv{x}^V = R_v \cdot \vv{x}^P_D$. Bezeichnet $\varphi$ den Drehwinkel um die $x^P$-Achse und $\vartheta$ den Drehwinkel um die $y^{P'}$-Achse, so lässt sich $R_v$ wie folgt berechnen:
 
 \begin{equation}
 \label{equ:Rverkippt}
@@ -459,6 +458,16 @@ f_u & 0 & 0 & u^V \\
 \end{pmatrix} 
 ~ ~ ~ ~ ~M_{intrinsisch} \in \mathbb{R}^{3x4}
 \end{equation}
+
+\lstinputlisting[title=\lstname, caption={Auszug aus der \texttt{runCalibration()}-Methode in \texttt{calibWithChessboard.cpp}}, label=lst:runCalibration, language={C++}, linerange=85-86, firstnumber=85]{Quellcode/calibWithChessboard.cpp} 
+
+In dem Quellcode-Auszug \ref{lst:runCalibration} wird der Aufruf der \textit{OpenCV}-Methode \texttt{} gezeigt, die sowohl die intrinsischen, als auch die extrinsischen Kameraparameter auf Grundlage mehrerer Aufnahmen eines Kalibrierungsmusters, in diesem Fall dem Schachbrett aus Abbildung BLA bestimmt.  
+
+
+
+\lstinputlisting[title=\lstname, caption={\texttt{generateCamMatAndDistMat()}-Methode in \texttt{PoseEstimation.cpp}}, label=lst:generateCamMatAndDistMat, language={C++}, linerange=24-34, firstnumber=24]{Quellcode/PoseEstimation.cpp} 
+
+In der \texttt{generateCamMatAndDistMat()}-Methode werden    Quellcode-Auszug~\ref{lst:generateCamMatAndDistMat} zeigt die im Verlauf dieses Kapitels beschriebene Kamerakalibrierung in Quellcode. Das Kernstück stellt hierbei die BLA Methode da, die aus Platzgründen im Anhang zu finden ist. 
 
 Zu diesem Zeitpunkt sollte nun das Kamerakoordinatensystem mit dem Weltkoordinatensystem übereinstimmen und es kann sich im nächsten Schritt darum gekümmert werden, dass das Kamerakoordinatensystem verschoben und gedreht wird. Dieser Schritt und alle weiteren Schritte, die im Zusammenhang mit der Transformation von Kamerakoordinaten in Weltkoordinaten bzw. Weltkoordinaten in Unitykoordinaten stehen, werden in Kapitel~\ref{sec:planeCalib} erläutert. Hierbei sei noch einmal angemerkt, dass eine Kamerakalibrierung nur mit anschließender Kalibrierung des Arbeitsbereiches durchgeführt werden kann.
 

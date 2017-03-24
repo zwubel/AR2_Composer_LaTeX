@@ -19,64 +19,66 @@
 \BOOKMARK [3][-]{subsubsection.3.1.6}{Leap Motion SDK}{subsection.3.1}% 19
 \BOOKMARK [3][-]{subsubsection.3.1.7}{ArUco Marker}{subsection.3.1}% 20
 \BOOKMARK [3][-]{subsubsection.3.1.8}{W\374rfel Marker}{subsection.3.1}% 21
-\BOOKMARK [2][-]{subsection.3.2}{Obsolete Hardware}{section.3}% 22
-\BOOKMARK [3][-]{subsubsection.3.2.1}{Ovrvision Pro}{subsection.3.2}% 23
-\BOOKMARK [3][-]{subsubsection.3.2.2}{Webcam}{subsection.3.2}% 24
-\BOOKMARK [2][-]{subsection.3.3}{Software}{section.3}% 25
-\BOOKMARK [3][-]{subsubsection.3.3.1}{Unity}{subsection.3.3}% 26
-\BOOKMARK [3][-]{subsubsection.3.3.2}{Visual Studio 2015}{subsection.3.3}% 27
-\BOOKMARK [3][-]{subsubsection.3.3.3}{OpenCV}{subsection.3.3}% 28
-\BOOKMARK [3][-]{subsubsection.3.3.4}{Steam VR}{subsection.3.3}% 29
-\BOOKMARK [3][-]{subsubsection.3.3.5}{Windows Sockets \(Winsock\)}{subsection.3.3}% 30
-\BOOKMARK [1][-]{section.4}{System}{}% 31
-\BOOKMARK [2][-]{subsection.4.1}{Aufbau}{section.4}% 32
-\BOOKMARK [3][-]{subsubsection.4.1.1}{Tracking Aufbau}{subsection.4.1}% 33
-\BOOKMARK [3][-]{subsubsection.4.1.2}{Unity Aufbau}{subsection.4.1}% 34
-\BOOKMARK [2][-]{subsection.4.2}{Systemvoraussetzungen}{section.4}% 35
-\BOOKMARK [2][-]{subsection.4.3}{Netzwerk}{section.4}% 36
-\BOOKMARK [3][-]{subsubsection.4.3.1}{Serverseitige Netzwerkanbindung}{subsection.4.3}% 37
-\BOOKMARK [3][-]{subsubsection.4.3.2}{Client-seitige Netzwerkanbindung}{subsection.4.3}% 38
-\BOOKMARK [2][-]{subsection.4.4}{Starten des Systems}{section.4}% 39
-\BOOKMARK [2][-]{subsection.4.5}{Men\374f\374hrung}{section.4}% 40
-\BOOKMARK [3][-]{subsubsection.4.5.1}{Men\374s}{subsection.4.5}% 41
-\BOOKMARK [3][-]{subsubsection.4.5.2}{Ablauf der Men\374f\374hrung}{subsection.4.5}% 42
-\BOOKMARK [2][-]{subsection.4.6}{Kontextmen\374}{section.4}% 43
-\BOOKMARK [3][-]{subsubsection.4.6.1}{Marker Handles}{subsection.4.6}% 44
-\BOOKMARK [3][-]{subsubsection.4.6.2}{Ein- und Ausblenden des Kontextmen\374s}{subsection.4.6}% 45
-\BOOKMARK [3][-]{subsubsection.4.6.3}{Architektur Berechnung}{subsection.4.6}% 46
-\BOOKMARK [2][-]{subsection.4.7}{Table Men\374}{section.4}% 47
-\BOOKMARK [3][-]{subsubsection.4.7.1}{Szenen Management}{subsection.4.7}% 48
-\BOOKMARK [3][-]{subsubsection.4.7.2}{Speichern von Szenen}{subsection.4.7}% 49
-\BOOKMARK [3][-]{subsubsection.4.7.3}{Laden von Szenen}{subsection.4.7}% 50
-\BOOKMARK [3][-]{subsubsection.4.7.4}{Match Modus}{subsection.4.7}% 51
-\BOOKMARK [1][-]{section.5}{Tracking Programm}{}% 52
-\BOOKMARK [2][-]{subsection.5.1}{uEye Ansteuerung}{section.5}% 53
-\BOOKMARK [2][-]{subsection.5.2}{Kalibrierung}{section.5}% 54
-\BOOKMARK [3][-]{subsubsection.5.2.1}{Kamerakalibrierung}{subsection.5.2}% 55
-\BOOKMARK [3][-]{subsubsection.5.2.2}{Kalibrierung des Arbeitsbereichs}{subsection.5.2}% 56
-\BOOKMARK [3][-]{subsubsection.5.2.3}{Kalibrierungsfehler}{subsection.5.2}% 57
-\BOOKMARK [3][-]{subsubsection.5.2.4}{M\366gliche Fehlerquellen}{subsection.5.2}% 58
-\BOOKMARK [2][-]{subsection.5.3}{Marker Detektion}{section.5}% 59
-\BOOKMARK [2][-]{subsection.5.4}{Green Keying}{section.5}% 60
-\BOOKMARK [2][-]{subsection.5.5}{ArUco Marker Tracking}{section.5}% 61
-\BOOKMARK [2][-]{subsection.5.6}{Marker Objekt}{section.5}% 62
-\BOOKMARK [2][-]{subsection.5.7}{Zuordnung der Identit\344ten}{section.5}% 63
-\BOOKMARK [1][-]{section.6}{Ausblick}{}% 64
-\BOOKMARK [2][-]{subsection.6.1}{Trackingmethoden}{section.6}% 65
-\BOOKMARK [2][-]{subsection.6.2}{AR Erweiterung mit der Webcam}{section.6}% 66
-\BOOKMARK [2][-]{subsection.6.3}{Daten als Excel Tabelle}{section.6}% 67
-\BOOKMARK [2][-]{subsection.6.4}{Validierung}{section.6}% 68
-\BOOKMARK [1][-]{section.7}{Projektmanagement}{}% 69
-\BOOKMARK [2][-]{subsection.7.1}{Zeitplanung}{section.7}% 70
-\BOOKMARK [2][-]{subsection.7.2}{Gant Chart}{section.7}% 71
-\BOOKMARK [2][-]{subsection.7.3}{Planungsmethoden}{section.7}% 72
-\BOOKMARK [2][-]{subsection.7.4}{Reflexion}{section.7}% 73
-\BOOKMARK [3][-]{subsubsection.7.4.1}{Kommuniktion im Team und nach Au\337en}{subsection.7.4}% 74
-\BOOKMARK [3][-]{subsubsection.7.4.2}{Probleme}{subsection.7.4}% 75
-\BOOKMARK [1][-]{section.8}{Zusammenfassung}{}% 76
-\BOOKMARK [1][-]{section.9}{Steckbrief}{}% 77
-\BOOKMARK [1][-]{section.10}{Anhang}{}% 78
-\BOOKMARK [2][-]{subsection.10.1}{MArC ReadMe-Datei}{section.10}% 79
-\BOOKMARK [2][-]{subsection.10.2}{startTCPServer\(\)-Methode}{section.10}% 80
-\BOOKMARK [2][-]{subsection.10.3}{getPointerOfMarkerVec\(\)-Methode}{section.10}% 81
-\BOOKMARK [2][-]{subsection.10.4}{interpretTCPMarkerData\(\)-Methode}{section.10}% 82
+\BOOKMARK [3][-]{subsubsection.3.1.9}{Schachbrett-Kalibrierungshelfer zur Kamerakalibrierung}{subsection.3.1}% 22
+\BOOKMARK [2][-]{subsection.3.2}{Obsolete Hardware}{section.3}% 23
+\BOOKMARK [3][-]{subsubsection.3.2.1}{Ovrvision Pro}{subsection.3.2}% 24
+\BOOKMARK [3][-]{subsubsection.3.2.2}{Webcam}{subsection.3.2}% 25
+\BOOKMARK [2][-]{subsection.3.3}{Software}{section.3}% 26
+\BOOKMARK [3][-]{subsubsection.3.3.1}{Unity}{subsection.3.3}% 27
+\BOOKMARK [3][-]{subsubsection.3.3.2}{Visual Studio 2015}{subsection.3.3}% 28
+\BOOKMARK [3][-]{subsubsection.3.3.3}{OpenCV}{subsection.3.3}% 29
+\BOOKMARK [3][-]{subsubsection.3.3.4}{Steam VR}{subsection.3.3}% 30
+\BOOKMARK [3][-]{subsubsection.3.3.5}{Windows Sockets \(Winsock\)}{subsection.3.3}% 31
+\BOOKMARK [1][-]{section.4}{System}{}% 32
+\BOOKMARK [2][-]{subsection.4.1}{Aufbau}{section.4}% 33
+\BOOKMARK [3][-]{subsubsection.4.1.1}{Tracking Aufbau}{subsection.4.1}% 34
+\BOOKMARK [3][-]{subsubsection.4.1.2}{Unity Aufbau}{subsection.4.1}% 35
+\BOOKMARK [2][-]{subsection.4.2}{Systemvoraussetzungen}{section.4}% 36
+\BOOKMARK [2][-]{subsection.4.3}{Netzwerk}{section.4}% 37
+\BOOKMARK [3][-]{subsubsection.4.3.1}{Serverseitige Netzwerkanbindung}{subsection.4.3}% 38
+\BOOKMARK [3][-]{subsubsection.4.3.2}{Client-seitige Netzwerkanbindung}{subsection.4.3}% 39
+\BOOKMARK [2][-]{subsection.4.4}{Starten des Systems}{section.4}% 40
+\BOOKMARK [2][-]{subsection.4.5}{Men\374f\374hrung}{section.4}% 41
+\BOOKMARK [3][-]{subsubsection.4.5.1}{Men\374s}{subsection.4.5}% 42
+\BOOKMARK [3][-]{subsubsection.4.5.2}{Ablauf der Men\374f\374hrung}{subsection.4.5}% 43
+\BOOKMARK [2][-]{subsection.4.6}{Kontextmen\374}{section.4}% 44
+\BOOKMARK [3][-]{subsubsection.4.6.1}{Marker Handles}{subsection.4.6}% 45
+\BOOKMARK [3][-]{subsubsection.4.6.2}{Ein- und Ausblenden des Kontextmen\374s}{subsection.4.6}% 46
+\BOOKMARK [3][-]{subsubsection.4.6.3}{Berechnung der Geb\344udeeigenschaften}{subsection.4.6}% 47
+\BOOKMARK [2][-]{subsection.4.7}{Table Men\374}{section.4}% 48
+\BOOKMARK [3][-]{subsubsection.4.7.1}{Szenen Management}{subsection.4.7}% 49
+\BOOKMARK [3][-]{subsubsection.4.7.2}{Speichern von Szenen}{subsection.4.7}% 50
+\BOOKMARK [3][-]{subsubsection.4.7.3}{Laden von Szenen}{subsection.4.7}% 51
+\BOOKMARK [3][-]{subsubsection.4.7.4}{Match Modus}{subsection.4.7}% 52
+\BOOKMARK [1][-]{section.5}{Tracking Programm}{}% 53
+\BOOKMARK [2][-]{subsection.5.1}{uEye Ansteuerung}{section.5}% 54
+\BOOKMARK [2][-]{subsection.5.2}{Kalibrierung}{section.5}% 55
+\BOOKMARK [3][-]{subsubsection.5.2.1}{Definition der Koordinatensysteme}{subsection.5.2}% 56
+\BOOKMARK [3][-]{subsubsection.5.2.2}{Kamerakalibrierung}{subsection.5.2}% 57
+\BOOKMARK [3][-]{subsubsection.5.2.3}{Kalibrierung des Arbeitsbereichs}{subsection.5.2}% 58
+\BOOKMARK [3][-]{subsubsection.5.2.4}{Kalibrierungsfehler}{subsection.5.2}% 59
+\BOOKMARK [3][-]{subsubsection.5.2.5}{M\366gliche Fehlerquellen}{subsection.5.2}% 60
+\BOOKMARK [2][-]{subsection.5.3}{Marker Detektion}{section.5}% 61
+\BOOKMARK [2][-]{subsection.5.4}{Green Keying}{section.5}% 62
+\BOOKMARK [2][-]{subsection.5.5}{ArUco Marker Tracking}{section.5}% 63
+\BOOKMARK [2][-]{subsection.5.6}{Marker Objekt}{section.5}% 64
+\BOOKMARK [2][-]{subsection.5.7}{Zuordnung der Identit\344ten}{section.5}% 65
+\BOOKMARK [1][-]{section.6}{Ausblick}{}% 66
+\BOOKMARK [2][-]{subsection.6.1}{Trackingmethoden}{section.6}% 67
+\BOOKMARK [2][-]{subsection.6.2}{AR Erweiterung mit der Webcam}{section.6}% 68
+\BOOKMARK [2][-]{subsection.6.3}{Daten als Excel Tabelle}{section.6}% 69
+\BOOKMARK [2][-]{subsection.6.4}{Validierung}{section.6}% 70
+\BOOKMARK [1][-]{section.7}{Projektmanagement}{}% 71
+\BOOKMARK [2][-]{subsection.7.1}{Zeitplanung}{section.7}% 72
+\BOOKMARK [2][-]{subsection.7.2}{Gant Chart}{section.7}% 73
+\BOOKMARK [2][-]{subsection.7.3}{Planungsmethoden}{section.7}% 74
+\BOOKMARK [2][-]{subsection.7.4}{Reflexion}{section.7}% 75
+\BOOKMARK [3][-]{subsubsection.7.4.1}{Kommuniktion im Team und nach Au\337en}{subsection.7.4}% 76
+\BOOKMARK [3][-]{subsubsection.7.4.2}{Probleme}{subsection.7.4}% 77
+\BOOKMARK [1][-]{section.8}{Zusammenfassung}{}% 78
+\BOOKMARK [1][-]{section.9}{Steckbrief}{}% 79
+\BOOKMARK [1][-]{section.10}{Anhang}{}% 80
+\BOOKMARK [2][-]{subsection.10.1}{MArC ReadMe-Datei}{section.10}% 81
+\BOOKMARK [2][-]{subsection.10.2}{startTCPServer\(\)-Methode}{section.10}% 82
+\BOOKMARK [2][-]{subsection.10.3}{getPointerOfMarkerVec\(\)-Methode}{section.10}% 83
+\BOOKMARK [2][-]{subsection.10.4}{interpretTCPMarkerData\(\)-Methode}{section.10}% 84

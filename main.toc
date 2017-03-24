@@ -20,72 +20,74 @@
 \contentsline {subsubsection}{\numberline {3.1.6}Leap Motion SDK}{16}{subsubsection.3.1.6}
 \contentsline {subsubsection}{\numberline {3.1.7}ArUco Marker}{17}{subsubsection.3.1.7}
 \contentsline {subsubsection}{\numberline {3.1.8}W\IeC {\"u}rfel Marker}{18}{subsubsection.3.1.8}
-\contentsline {subsection}{\numberline {3.2}Obsolete Hardware}{18}{subsection.3.2}
-\contentsline {subsubsection}{\numberline {3.2.1}Ovrvision Pro}{19}{subsubsection.3.2.1}
-\contentsline {subsubsection}{\numberline {3.2.2}Webcam}{20}{subsubsection.3.2.2}
+\contentsline {subsubsection}{\numberline {3.1.9}Schachbrett-Kalibrierungshelfer zur Kamerakalibrierung}{18}{subsubsection.3.1.9}
+\contentsline {subsection}{\numberline {3.2}Obsolete Hardware}{19}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}Ovrvision Pro}{20}{subsubsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2}Webcam}{21}{subsubsection.3.2.2}
 \contentsline {subsection}{\numberline {3.3}Software}{21}{subsection.3.3}
 \contentsline {subsubsection}{\numberline {3.3.1}Unity}{21}{subsubsection.3.3.1}
-\contentsline {subsubsection}{\numberline {3.3.2}Visual Studio 2015}{21}{subsubsection.3.3.2}
-\contentsline {subsubsection}{\numberline {3.3.3}OpenCV}{21}{subsubsection.3.3.3}
+\contentsline {subsubsection}{\numberline {3.3.2}Visual Studio 2015}{22}{subsubsection.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.3}OpenCV}{22}{subsubsection.3.3.3}
 \contentsline {subsubsection}{\numberline {3.3.4}Steam VR}{22}{subsubsection.3.3.4}
-\contentsline {subsubsection}{\numberline {3.3.5}Windows Sockets (Winsock)}{22}{subsubsection.3.3.5}
-\contentsline {section}{\numberline {4}System}{23}{section.4}
-\contentsline {subsection}{\numberline {4.1}Aufbau}{23}{subsection.4.1}
-\contentsline {subsubsection}{\numberline {4.1.1}Tracking Aufbau}{23}{subsubsection.4.1.1}
-\contentsline {subsubsection}{\numberline {4.1.2}Unity Aufbau}{24}{subsubsection.4.1.2}
-\contentsline {subsection}{\numberline {4.2}Systemvoraussetzungen}{25}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Netzwerk}{26}{subsection.4.3}
-\contentsline {subsubsection}{\numberline {4.3.1}Serverseitige Netzwerkanbindung}{26}{subsubsection.4.3.1}
-\contentsline {paragraph}{Aufbauen der Netzwerkverbindung}{26}{section*.52}
-\contentsline {paragraph}{Daten\IeC {\"u}bertragung}{26}{section*.53}
-\contentsline {subsubsection}{\numberline {4.3.2}Client-seitige Netzwerkanbindung}{28}{subsubsection.4.3.2}
-\contentsline {paragraph}{Aufbauen der Netzwerkverbindung}{28}{section*.55}
-\contentsline {paragraph}{Daten\IeC {\"u}bertragung}{28}{section*.56}
-\contentsline {subsection}{\numberline {4.4}Starten des Systems}{30}{subsection.4.4}
-\contentsline {subsection}{\numberline {4.5}Men\IeC {\"u}f\IeC {\"u}hrung}{30}{subsection.4.5}
-\contentsline {subsubsection}{\numberline {4.5.1}Men\IeC {\"u}s}{30}{subsubsection.4.5.1}
-\contentsline {subsubsection}{\numberline {4.5.2}Ablauf der Men\IeC {\"u}f\IeC {\"u}hrung}{32}{subsubsection.4.5.2}
-\contentsline {subsection}{\numberline {4.6}Kontextmen\IeC {\"u}}{34}{subsection.4.6}
-\contentsline {subsubsection}{\numberline {4.6.1}Marker Handles}{35}{subsubsection.4.6.1}
-\contentsline {subsubsection}{\numberline {4.6.2}Ein- und Ausblenden des Kontextmen\IeC {\"u}s}{36}{subsubsection.4.6.2}
-\contentsline {subsubsection}{\numberline {4.6.3}Architektur Berechnung}{36}{subsubsection.4.6.3}
-\contentsline {subsection}{\numberline {4.7}Table Men\IeC {\"u}}{36}{subsection.4.7}
-\contentsline {subsubsection}{\numberline {4.7.1}Szenen Management}{36}{subsubsection.4.7.1}
-\contentsline {subsubsection}{\numberline {4.7.2}Speichern von Szenen}{37}{subsubsection.4.7.2}
-\contentsline {paragraph}{Dateiaufbau einer gespeicherten Szene}{37}{section*.79}
-\contentsline {paragraph}{Vorgehen der Speicherung}{38}{section*.80}
-\contentsline {paragraph}{Darstellen von gespeicherten Szenen}{38}{section*.81}
-\contentsline {subsubsection}{\numberline {4.7.3}Laden von Szenen}{38}{subsubsection.4.7.3}
-\contentsline {paragraph}{Vorgehen beim Laden}{38}{section*.83}
-\contentsline {subsubsection}{\numberline {4.7.4}Match Modus}{39}{subsubsection.4.7.4}
-\contentsline {section}{\numberline {5}Tracking Programm}{40}{section.5}
-\contentsline {subsection}{\numberline {5.1}uEye Ansteuerung}{40}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Kalibrierung}{41}{subsection.5.2}
-\contentsline {subsubsection}{\numberline {5.2.1}Kamerakalibrierung}{41}{subsubsection.5.2.1}
-\contentsline {subsubsection}{\numberline {5.2.2}Kalibrierung des Arbeitsbereichs}{44}{subsubsection.5.2.2}
-\contentsline {subsubsection}{\numberline {5.2.3}Kalibrierungsfehler}{45}{subsubsection.5.2.3}
-\contentsline {subsubsection}{\numberline {5.2.4}M\IeC {\"o}gliche Fehlerquellen}{45}{subsubsection.5.2.4}
-\contentsline {subsection}{\numberline {5.3}Marker Detektion}{46}{subsection.5.3}
-\contentsline {subsection}{\numberline {5.4}Green Keying}{46}{subsection.5.4}
-\contentsline {subsection}{\numberline {5.5}ArUco Marker Tracking}{46}{subsection.5.5}
-\contentsline {subsection}{\numberline {5.6}Marker Objekt}{46}{subsection.5.6}
-\contentsline {subsection}{\numberline {5.7}Zuordnung der Identit\IeC {\"a}ten}{46}{subsection.5.7}
-\contentsline {section}{\numberline {6}Ausblick}{47}{section.6}
-\contentsline {subsection}{\numberline {6.1}Trackingmethoden}{47}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}AR Erweiterung mit der Webcam}{47}{subsection.6.2}
-\contentsline {subsection}{\numberline {6.3}Daten als Excel Tabelle}{47}{subsection.6.3}
-\contentsline {subsection}{\numberline {6.4}Validierung}{47}{subsection.6.4}
-\contentsline {section}{\numberline {7}Projektmanagement}{47}{section.7}
-\contentsline {subsection}{\numberline {7.1}Zeitplanung}{47}{subsection.7.1}
-\contentsline {subsection}{\numberline {7.2}Gant Chart}{47}{subsection.7.2}
-\contentsline {subsection}{\numberline {7.3}Planungsmethoden}{47}{subsection.7.3}
-\contentsline {subsection}{\numberline {7.4}Reflexion}{47}{subsection.7.4}
-\contentsline {subsubsection}{\numberline {7.4.1}Kommuniktion im Team und nach Au\IeC {\ss }en}{47}{subsubsection.7.4.1}
-\contentsline {subsubsection}{\numberline {7.4.2}Probleme}{48}{subsubsection.7.4.2}
-\contentsline {section}{\numberline {8}Zusammenfassung}{48}{section.8}
-\contentsline {section}{\numberline {9}Steckbrief}{48}{section.9}
-\contentsline {section}{\numberline {10}Anhang}{48}{section.10}
-\contentsline {subsection}{\numberline {10.1}\emph {MArC} ReadMe-Datei}{48}{subsection.10.1}
-\contentsline {subsection}{\numberline {10.2}\texttt {startTCPServer()}-Methode}{56}{subsection.10.2}
-\contentsline {subsection}{\numberline {10.3}\texttt {getPointerOfMarkerVec()}-Methode}{56}{subsection.10.3}
-\contentsline {subsection}{\numberline {10.4}\texttt {interpretTCPMarkerData()}-Methode}{57}{subsection.10.4}
+\contentsline {subsubsection}{\numberline {3.3.5}Windows Sockets (Winsock)}{23}{subsubsection.3.3.5}
+\contentsline {section}{\numberline {4}System}{24}{section.4}
+\contentsline {subsection}{\numberline {4.1}Aufbau}{24}{subsection.4.1}
+\contentsline {subsubsection}{\numberline {4.1.1}Tracking Aufbau}{24}{subsubsection.4.1.1}
+\contentsline {subsubsection}{\numberline {4.1.2}Unity Aufbau}{25}{subsubsection.4.1.2}
+\contentsline {subsection}{\numberline {4.2}Systemvoraussetzungen}{26}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Netzwerk}{27}{subsection.4.3}
+\contentsline {subsubsection}{\numberline {4.3.1}Serverseitige Netzwerkanbindung}{27}{subsubsection.4.3.1}
+\contentsline {paragraph}{Aufbauen der Netzwerkverbindung}{27}{section*.54}
+\contentsline {paragraph}{Daten\IeC {\"u}bertragung}{27}{section*.55}
+\contentsline {subsubsection}{\numberline {4.3.2}Client-seitige Netzwerkanbindung}{29}{subsubsection.4.3.2}
+\contentsline {paragraph}{Aufbauen der Netzwerkverbindung}{29}{section*.57}
+\contentsline {paragraph}{Daten\IeC {\"u}bertragung}{29}{section*.58}
+\contentsline {subsection}{\numberline {4.4}Starten des Systems}{31}{subsection.4.4}
+\contentsline {subsection}{\numberline {4.5}Men\IeC {\"u}f\IeC {\"u}hrung}{31}{subsection.4.5}
+\contentsline {subsubsection}{\numberline {4.5.1}Men\IeC {\"u}s}{31}{subsubsection.4.5.1}
+\contentsline {subsubsection}{\numberline {4.5.2}Ablauf der Men\IeC {\"u}f\IeC {\"u}hrung}{33}{subsubsection.4.5.2}
+\contentsline {subsection}{\numberline {4.6}Kontextmen\IeC {\"u}}{35}{subsection.4.6}
+\contentsline {subsubsection}{\numberline {4.6.1}Marker Handles}{36}{subsubsection.4.6.1}
+\contentsline {subsubsection}{\numberline {4.6.2}Ein- und Ausblenden des Kontextmen\IeC {\"u}s}{37}{subsubsection.4.6.2}
+\contentsline {subsubsection}{\numberline {4.6.3}Berechnung der Geb\IeC {\"a}udeeigenschaften}{37}{subsubsection.4.6.3}
+\contentsline {subsection}{\numberline {4.7}Table Men\IeC {\"u}}{37}{subsection.4.7}
+\contentsline {subsubsection}{\numberline {4.7.1}Szenen Management}{37}{subsubsection.4.7.1}
+\contentsline {subsubsection}{\numberline {4.7.2}Speichern von Szenen}{38}{subsubsection.4.7.2}
+\contentsline {paragraph}{Dateiaufbau einer gespeicherten Szene}{38}{section*.81}
+\contentsline {paragraph}{Vorgehen der Speicherung}{39}{section*.82}
+\contentsline {paragraph}{Darstellen von gespeicherten Szenen}{39}{section*.83}
+\contentsline {subsubsection}{\numberline {4.7.3}Laden von Szenen}{39}{subsubsection.4.7.3}
+\contentsline {paragraph}{Vorgehen beim Laden}{39}{section*.85}
+\contentsline {subsubsection}{\numberline {4.7.4}Match Modus}{40}{subsubsection.4.7.4}
+\contentsline {section}{\numberline {5}Tracking Programm}{41}{section.5}
+\contentsline {subsection}{\numberline {5.1}uEye Ansteuerung}{41}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Kalibrierung}{42}{subsection.5.2}
+\contentsline {subsubsection}{\numberline {5.2.1}Definition der Koordinatensysteme}{42}{subsubsection.5.2.1}
+\contentsline {subsubsection}{\numberline {5.2.2}Kamerakalibrierung}{43}{subsubsection.5.2.2}
+\contentsline {subsubsection}{\numberline {5.2.3}Kalibrierung des Arbeitsbereichs}{46}{subsubsection.5.2.3}
+\contentsline {subsubsection}{\numberline {5.2.4}Kalibrierungsfehler}{47}{subsubsection.5.2.4}
+\contentsline {subsubsection}{\numberline {5.2.5}M\IeC {\"o}gliche Fehlerquellen}{47}{subsubsection.5.2.5}
+\contentsline {subsection}{\numberline {5.3}Marker Detektion}{48}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}Green Keying}{48}{subsection.5.4}
+\contentsline {subsection}{\numberline {5.5}ArUco Marker Tracking}{48}{subsection.5.5}
+\contentsline {subsection}{\numberline {5.6}Marker Objekt}{48}{subsection.5.6}
+\contentsline {subsection}{\numberline {5.7}Zuordnung der Identit\IeC {\"a}ten}{48}{subsection.5.7}
+\contentsline {section}{\numberline {6}Ausblick}{49}{section.6}
+\contentsline {subsection}{\numberline {6.1}Trackingmethoden}{49}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}AR Erweiterung mit der Webcam}{49}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Daten als Excel Tabelle}{49}{subsection.6.3}
+\contentsline {subsection}{\numberline {6.4}Validierung}{49}{subsection.6.4}
+\contentsline {section}{\numberline {7}Projektmanagement}{49}{section.7}
+\contentsline {subsection}{\numberline {7.1}Zeitplanung}{49}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}Gant Chart}{49}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.3}Planungsmethoden}{49}{subsection.7.3}
+\contentsline {subsection}{\numberline {7.4}Reflexion}{49}{subsection.7.4}
+\contentsline {subsubsection}{\numberline {7.4.1}Kommuniktion im Team und nach Au\IeC {\ss }en}{49}{subsubsection.7.4.1}
+\contentsline {subsubsection}{\numberline {7.4.2}Probleme}{50}{subsubsection.7.4.2}
+\contentsline {section}{\numberline {8}Zusammenfassung}{50}{section.8}
+\contentsline {section}{\numberline {9}Steckbrief}{50}{section.9}
+\contentsline {section}{\numberline {10}Anhang}{50}{section.10}
+\contentsline {subsection}{\numberline {10.1}\emph {MArC} ReadMe-Datei}{50}{subsection.10.1}
+\contentsline {subsection}{\numberline {10.2}\texttt {startTCPServer()}-Methode}{58}{subsection.10.2}
+\contentsline {subsection}{\numberline {10.3}\texttt {getPointerOfMarkerVec()}-Methode}{58}{subsection.10.3}
+\contentsline {subsection}{\numberline {10.4}\texttt {interpretTCPMarkerData()}-Methode}{59}{subsection.10.4}
