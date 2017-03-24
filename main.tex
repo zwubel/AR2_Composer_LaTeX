@@ -4,6 +4,7 @@
 \usepackage{todonotes}
 \usepackage{amssymb}
 \usepackage{amsmath}
+\usepackage{esvect}
 \usepackage{caption}
 \pagestyle{scrheadings}
 \clearscrheadfoot
@@ -18,6 +19,32 @@
 \usepackage[space]{grffile}
 \usepackage{setspace}
 \usepackage[T1]{fontenc}
+\usepackage{listings}
+\renewcommand{\lstlistingname}{Quellcode-Auszug}	
+\definecolor{lsgreen}{rgb}{0,.5,0}
+\definecolor{lsred}{rgb}{.7,0,0}
+\definecolor{lsorange}{rgb}{.9,.5,0}
+\definecolor{lsgray}{rgb}{.5,.5,.5}
+\lstloadlanguages{[Sharp]C}
+\lstset{
+	frame=tb,
+	aboveskip=10mm,
+	belowskip=5mm,
+	showstringspaces=false,
+	columns=flexible,
+	captionpos=b,
+	basicstyle={\scriptsize\ttfamily},
+	numbers=left,
+	numberstyle=\tiny\color{lsgray},
+	keywordstyle=\color{blue},
+	commentstyle=\color{lsorange},
+	stringstyle=\color{lsgreen},
+	breaklines=true,
+	breakatwhitespace=true,
+	rulecolor=\color{lsgray},
+	xleftmargin=7mm,
+	tabsize=3
+}
 \newcommand{\changefont}[3]{
 \fontfamily{#1} \fontseries{#2} \fontshape{#3} \selectfont}
 \usepackage{datetime}

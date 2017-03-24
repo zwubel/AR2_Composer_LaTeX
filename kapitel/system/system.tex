@@ -6,6 +6,11 @@ Der Aufbau von \textit{MArC} kann in zwei Teile aufgeteilt werden. Zum Einen den
 \subsubsection{Tracking Aufbau}\todo[inline, color=green]{Vera}
 Wie in Abbildung \ref{fig:AufbauMarc} dargestellt ist wird senkrecht über einem beliebigen Tisch eine Kamera installiert, die Würfel Marker aus der Vogelperspektive filmt. Der Abstand zum Tisch sollte so gewählt werden, dass die Aufnahmen noch scharf sind und sich die Nutzer nicht den Kopf daran stoßen können. Hier ist besondere Vorsicht geboten, da die Nutzer durch die \textit{HTC Vive} nicht die reale Umgebung wahrnehmen können. Für den Prototypen wurde eine \textit{IDS uEye 164LE-C} (siehe Kapitel \ref{sec:uEye}) verwendet und über eine USB 2.0 Schnittstelle an den Computer mit dem Tracking Algorithmus verbunden. Diese Kamera wird mit Hilfe der uEye-API vom Tracking Algorithmus im Live-Bild-Modus initialisiert und gesteuert. In diesen Live Bildern werden die Würfel Marker erkannt und verfolgt. Für jeden erkannten Würfel Marker werden alle relevanten Informationen über die TCP Netzwerkverbindung (siehe Kapitel \ref{sec:Netzwerk}) an den Computer zur Ausführung der \textit{Unity}-Simulation (siehe Kapitel \ref{sec:UnityComp}) übertragen. Damit der Algorithmus einen Würfel Marker erkennt muss er in dem vorab definierten Spielfeld bewegt werden. Diese Festlegung findet während der Kalibrierung des Arbeitsbereiches statt. Für diese Kalibrierung ist es notwendig den einzelnen \textit{ArUco} Marker aus Abbildung \ref{fig:AllUsedArucoMarker} mit der ID $49$ exakt wie in Abbildung \ref{fig:KontrollerMarc} auf den Controller der \textit{HTC Vice} zu montieren, da nur so gewährleistet werden kann, dass die erkannte \textit{ArUco} Marker Position in der Kamerawelt mit den Controller Positionen in der \textit{Unity} Welt korrespondieren.
 
+\subsubsection{Unity Aufbau}\todo[inline, color=green]{Lukas}
+Der Teil des Systemaufbaus von \emph{MArC}, der sich vom Computer für die Ausführung der \emph{Unity}-Simulation (s. Abschnitt \ref{sec:UnityComp}) über die \emph{Leap Motion}, bis hin zur \emph{HTC Vive} erstreckt, ist ebenfalls in Abbildung~\ref{fig:AufbauMarc} dargestellt.\\
+Die Verbindung von \emph{HTC Vive} zum Computer zur Ausführung der \emph{Unity}-Simulation wird sowohl per USB 2.0, als auch per HDMI 1.4 hergestellt. Über die HDMI-Verbindung werden die Bildschirme im \emph{HTC Vive} Head-Mounted-Display (HMD) als ein einzelnes Display auf dem verbundenen Computer eingebunden, genau so wie es auch mit einem normalen Bildschirm geschehen würde. Die USB 2.0 Verbindung des HMD dient hingegen dem Datenaustausch mit \emph{SteamVR}, welches auf dem Computer installiert ist.\\
+Der \emph{Leap Motion} Controller wird über eine USB 3.0 Verbindung, welche per USB 2.0 Verlängerung angeschlossen ist, mit dem Computer verbunden. Dies ist deshalb problemlos möglich, weil die aktuelle Software des \emph{Leap Motion} Controllers die höhere Bandbreite der vorhandenen USB 3.0 Anbindung noch nicht ausnutzt, daher gibt \emph{Leap Motion} an, dass eine uneingeschränkte Nutzung an USB 2.0 möglich ist.~\cite{website:LeapMotionSupportQuestion}
+
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\textwidth]{Bilder/Aufbau_MArC.jpg}
@@ -30,11 +35,56 @@ Die Systemvoraussetzungen für \emph{MArC} sind in der ReadMe-Datei beschrieben,
 	\label{fig:marcReadMe}
 \end{figure}
 
-\subsection{Netzwerk}\todo[inline, color=yellow]{Lukas und Laura}
+\subsection{Netzwerk}\label{sec:netzwerk}\todo[inline, color=green]{Lukas und Laura}
 
-Die in Kapitel \ref{sec:Winsock} beschriebene API verfügt, wie dort geschildert, über die Möglichkeit den Datentransport mittels TCP oder UDP umzusetzen. Für \emph{MaRC} wurde ein TCP-Socket-Netzwerk bestehend aus einem Server und einem Klienten verwendet, weil der der in~\ref{sec:Netzwerk} beschriebene Fehlerschutz des TCPs ausgenutzt werden sollte. Da die zu übertragenden Daten von \emph{MArC} in der Größe exakt definiert und hinreichend klein sind, wurde die etwas höhere Geschwindigkeit einer UDP-Socket-Verbindung als unnötig erachtet.
+Die in Kapitel \ref{sec:Winsock} beschriebene API stellt die Möglichkeit bereit, den Datentransport mittels TCP oder UDP zu verwenden. Für \emph{MArC} wurde ein TCP-Socket-Netzwerk bestehend aus (genau) einem Server und (genau) einem Client verwendet, weil der der in~\ref{sec:Netzwerk} beschriebene Fehlerschutz des TCP ausgenutzt werden sollte, um nicht manuell überprüfen zu müssen, ob Daten fehlerfrei übertragen wurden. Da die zu übertragende Datenmenge von \emph{MArC} hinreichend klein -- und von konstanter Größe -- ist, wurde die etwas höhere Geschwindigkeit durch den geringeren Overhead einer UDP-Socket-Verbindung als unnötig erachtet.\\
+In den beiden folgenden Abschnitten wird die Umsetzung der Netzwerk-Endpunkte an den beiden für \emph{MArC} verwendeten Computern beschrieben.
+\subsubsection{Serverseitige Netzwerkanbindung}\todo[inline, color=green]{Laura}
+\paragraph{Aufbauen der Netzwerkverbindung}
+Da die Verbindung zwischen den beiden Rechnern per LAN-Kabel realisiert wurde, wird ein Server gestartet und eine Verbindung seitens des Clients ohne weitere Sicherheitsmechanismen erlaubt, so lange dieser den richtigen Port adressiert. Die entsprechenden Methoden stehen dank \textit{Winsock} (vgl. Abschnitt~\ref{sec:Winsock}) durch das Einbinden von \texttt{<winsock2.h>} und \texttt{<windows.h>} bereit und werden, wie in Quellcode-Auszug~\ref{lst:startTCPServer} (im Anhang einsehbar), verwendet. 
 
-\todo[inline, color=yellow]{Kann noch angepasst wereden und muss noch erweitert werden}
+\paragraph{Datenübertragung}
+Die Datenübertragen kann grob gesprochen in drei Teilbereiche unterteilt werden. Neben der bidirektionalen Übertragung von verschiedenen Status, müssen zum einen die Tracking-Daten der einzelnen sich im Arbeitsbereich befindlichen Objekte gesendet werden können und zum anderen die Positionen des Kalibrierungscontrollers während der Arbeitsbereichskalibrierung (vgl. Kapitel~\ref{sec:planeCalib} empfangen werden. \\
+
+\lstinputlisting[title=\lstname, caption={\texttt{sendStatus()}-Methode in \texttt{TCP.cpp}}, label=lst:sendStatusVS, language={C++}, linerange=88-92, firstnumber=88]{Quellcode/TCP.cpp} 
+
+Da die Übertragung der Status in beide Richtungen erfolgen muss, bedarf es einer Methode zum Senden (Quellcode-Auszug~\ref{lst:sendStatusVS})  und einer Methode zum Empfangen (Quellcode-Auszug~\ref{lst:receiveStatusVS}). Beide Methoden gehen von einem Status aus, der 4 Byte groß ist und sind ansonsten selbsterklärend. 
+
+\lstinputlisting[title=\lstname, caption={\texttt{receiveStatus()}-Methode in \texttt{TCP.cpp}}, label=lst:receiveStatusVS, language={C++}, linerange=107-112, firstnumber=107]{Quellcode/TCP.cpp}
+
+Die entsprechende Methode zum Versenden der Marker-Daten, also deren ID, Position, Winkel und Sichtbarkeits-Status, ist in Quellcode-Auszug \ref{lst:sendMarkerData} zu sehen. Alle eben genannten Eigenschaften eines Markers werden zu diesem Zweck in einem struct mit dem Namen \texttt{MarkerStruct} (vgl. Quellcode-Auszug~\ref{lst:MarkerStruct}) gebündelt. 
+
+\lstinputlisting[title=\lstname, caption={\texttt{sendMarkerData()}-Methode in \texttt{TCP.cpp}}, label=lst:sendMarkerData, language={C++}, linerange=99-103, firstnumber=99]{Quellcode/TCP.cpp} 
+
+Der Vollständigkeit halber befindet sich im Anhang der Quellcode-Auszug~\ref{lst:getPointerOfMarkerVec} der \texttt{getPointerOfMarkerVec()}-Methode. Diese dient im Wesentlichen zur Umsortierung der entsprechenden Daten aus dem umfangreicheren \texttt{allMarkers}-Array in das \texttt{MarkerStruct}-Array. Damit wird dafür gesorgt, dass nur die relevanten Daten übertragen werden. 
+
+\lstinputlisting[title=\lstname, caption={\texttt{MarkerStruct} in \texttt{TCP.h}}, label=lst:MarkerStruct, language={C++}, linerange=13-20, firstnumber=13]{Quellcode/TCP.h} 
+
+Während der Kalibrierung des Arbeitsbereichs (vgl. Kapitel~\ref{sec:planeCalib}) wird die Position des Kalibrierungscontrollers nach jedem Auslösen des Triggers von der Unity-Anwendung an den Tracking-Rechner gesendet. Die entsprechende Methode zum Empfangen der dreidimensionalen Position in Unitykoordinaten ist in Quellcode-Auszug~\ref{lst:receiveControllerPositions} abgebildet. Neben dem reinen Empfang der Daten, der äquivalent zu der \texttt{receiveStatus()}-Methode funktioniert, werden hier die ankommenden Daten aus dem Array in einen anderen Datentyp konvertiert, um eine Weiterverarbeitung während der Arbeitsbereichskalibrierung zu vereinfachen. 
+
+\lstinputlisting[title=\lstname, caption={\texttt{receiveControllerPositions()}-Methode in \texttt{TCP.cpp}}, label=lst:receiveControllerPositions, language={C++}, linerange=116-125, firstnumber=116]{Quellcode/TCP.cpp}
+
+
+
+
+\subsubsection{Client-seitige Netzwerkanbindung}\todo[inline, color=green]{Lukas}
+\paragraph{Aufbauen der Netzwerkverbindung}
+Das Aufbauen der Netzwerkverbindung vom Client zum Server, also von der Unity-Anwendung zur Tracking-Anwendung, geschieht mit Hilfe der von Winsock (vgl. Abschnitt~\ref{sec:Winsock}) bereitgestellten Klasse \texttt{System.Net.Sockets.TcpClient} wie in Quellcode-Auszug~\ref{lst:setupSocket} dargestellt. Die Netzwerkverbindung wird zu einer fest vorgegebenen IP-Adresse hergestellt.
+
+\lstinputlisting[title=\lstname, caption={\texttt{setupSocket()}-Methode in \texttt{readInNetWorkData.cs}}, label=lst:setupSocket, language={[Sharp]C}, linerange=69-79, firstnumber=69]{Quellcode/readInNetworkData.cs}
+
+\paragraph{Datenübertragung}
+Nach einer erfolgreich hergestellten Verbindung sieht das Netzwerkmodul in \emph{MArC} sowohl eine Übertragung von verschiedenen Status, als auch die Übertragung der Tracking-Daten für die Simulation.
+
+\lstinputlisting[title=\lstname, caption={\texttt{sendTCPstatus()}-Methode in \texttt{readInNetWorkData.cs}}, label=lst:sendStatus, language={[Sharp]C}, linerange=81-89, firstnumber=81]{Quellcode/readInNetworkData.cs}
+
+Das Senden und Empfangen von Status seitens der Unity-Anwendung ist in den Quellcode-Auszügen~\ref{lst:sendStatus} und~\ref{lst:receiveStatus} dargelegt. Die Methode zum Senden eines Status ist selbsterklärend. Die \texttt{receiveTCPstatus()}-Methode prüft zunächst, ob eine Netzwerkverbindung hergestellt, also das Socket bereit ist. Anschließend werden genau vier Bytes vom Netzwerk-Datenstrom gelesen, als 32-Bit-Integer interpretiert und zurückgegeben.
+
+\lstinputlisting[title=\lstname, caption={\texttt{receiveTCPstatus()}-Methode in \texttt{readInNetWorkData.cs}}, label=lst:receiveStatus, language={[Sharp]C}, linerange=91-106, firstnumber=91]{Quellcode/readInNetworkData.cs}
+
+Das Empfangen und Interpretieren der Tracking-Daten, nachdem die Simulation gestartet wurde, gestaltet sich ein wenig komplexer und ist im Quellcode-Auszug~\ref{lst:interpretData} aufgeführt. Der Auszug wurde aus Platzgründen in den Anhang verschoben.\\
+In der Methode \texttt{interpretTCPMarkerData()} wird ein Byte-Puffer konstanter Länge, welcher vorher vom Netzwerk-Datenstrom gelesen wurde, dahingehend interpretiert, dass anschließend die Daten für alle aktiven Tracking-Marker in geeigneter Form zur weiteren Verarbeitung vorliegen. Als geeignete Form ist hier die Klasse \texttt{Marker} zu nennen, welche als Attribute die ID, die X- und Y-Position, den Winkel und den Status des jeweiligen Markers enthält.\\ 
+Beim Interpretieren der Marker werden zunächst die ersten vier Bytes an der von der Schleife abhängigen Pufferposition als ID interpretiert. Sofern die ID gleich $-1$ ist, wird der aktuelle Schleifendurchlauf beendet, da dieser Marker nicht aktiv (valide) ist. Sollte die ID gleich $-2$ sein, indiziert dies, dass für das aktuelle Frame alle Marker übertragen wurden und die Schleife abgebrochen werden kann. In allen anderen Fällen ist die ID valide und alle zusätzlichen Eigenschaften des Markers werden aus dem Puffer gelesen und über den BitConverter geeignet interpretiert. Zuletzt wird ein global angelegtes \texttt{Marker}-Array in jedem Schleifendurchlauf mit dem verarbeiteten Marker befüllt. Bei anschließendem Rendern der Simulation wird dann nur noch auf die so aufbereiteten Daten~--~und nicht mehr auf die Netzwerkdaten~--~zugegriffen.
 
 \subsection{Starten des Systems}\todo[inline, color=green]{Lukas}
 Nachdem sichergestellt wurde, dass alle in~\ref{sec:sysVor} beschriebenen Voraussetzungen bestehen, kann das System gestartet werden, indem zunächst die Tracking-Anwendung (auf dem einen Computer, vgl.~\ref{sec:TrackingComp}) und anschließend die aus Unity heraus erstellte Anwendung (auf dem anderen Computer, vgl.~\ref{sec:UnityComp}) gestartet wird. Auf letzterem Computer beginnt darauffolgend die Menüführung, welche in \ref{sec:menu} beschrieben ist. 
@@ -169,12 +219,20 @@ Sofern der HTC Vive Controller beim Aufruf von \texttt{doPlane\-Calibration\-InV
 
 
 
-\subsection{Kontex Menü}\todo[inline]{Laura und Lukas}
-\ref{KontextMenü}
+\subsection{Kontextmenü}\label{sec:kontextMenu}\todo[inline, color=green]{Laura und Lukas}
+Die virtuellen Objekte, die den in Kapitel\ref{sec:WürfelMarker} beschriebenen Aluminiumwürfeln zugeordnet werden, sind zunächst würfelförmig und können zur Laufzeit der Anwendung vom Benutzer verschoben, rotiert und skaliert werden. Die Verschiebung und Rotation kann über eine entsprechende Veränderung der Lage des realen Marker Würfels geschehen. Für die Skalierung kann wie in Kapitel~\ref{sec:KontextMenuSwitch} beschrieben das sogenannte Kontextmenü aufgerufen werden. Dieses beinhaltet neben den Marker Handles (vgl. Kapitel~\ref{sec:markerHandles}) zur dreidimensionalen Skalierung des virtuellen Objekts auch eine Art Übersichtstafel seiner jeweiligen Gebäudeeigenschaften. Beispiele für Letzteres sind in Abbildung~\ref{fig:KontextmenuExamples} zu sehen. Im Folgenden wird, wenn nicht anders erwähnt, die Übersichtstafel mit Kontextmenü bezeichnet. Die Idee des Kontextmenüs ist aus dem Treffen mit den Mitarbeitern eines Architekturbüros zu Beginn des Projektes entstanden (vgl. Kapitel \textcolor{red}{????}). Diese hatten eine detaillierte Beschreibung der einzelnen Gebäude als durchaus sinnvoll und nützlich für die Umsetzung einer Anwendung wie den \textit{MaRC} beschrieben. \\
+Da zu Beginn der Anwendung im \texttt{SetScale}-Menü (vgl. Kapitel~\ref{sec:menuAblauf} der Maßstab der Architekturszene vom Benutzer ausgewählt wird und zusätzlich wie beschrieben eine Skalierung der einzelnen Objekte durchgeführt werden kann, muss sich der Inhalt des Kontextmenüs laufend ändern können. Die dazu notwendigen Berechnungen der Gebäudeeigenschaften sind in Kapitel~\ref{sec:KontextMenuInhalt} erläutert. 
 
-\subsubsection{Marker Handles}\todo[inline]{Paul}
-\label{MarkerHandles}
-Jeder Marker verfügt über die Möglichkeit in seiner Größe in X-, Y- und Z-Achse verändert zu werden. Diese sog. "Handles" sind sichtbar, wenn das Kontextmenü angezeigt wird (s. Abschnitt \ref{KontextMenü}. Die Handles bestehen aus Zylindern, die mit einem Collider versehen wurden. Die X- und Y- Achse wird betätigt, indem der Benutzer mit einem Finger das jeweiligen Handle berührt und dann in die entsprechende Richtung zieht. Die Größe in Z-Achse wird über "+" und "-" Button gesteuert. Drückt der Benutzer diese Buttons, wird das Gebäude um je ein Stockwerk erhöht oder verniedrigt. \\
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=.3]{Bilder/Eigene Fotos/KontextMenue.jpg}
+	\caption{Zwei Beispiele für ein Kontextmenü eines Würfels mit ID 1.}
+	\label{fig:KontextmenuExamples}
+\end{figure}
+
+\subsubsection{Marker Handles}\label{sec:markerHandles}\todo[inline]{Paul}
+Jeder Marker verfügt über die Möglichkeit in seiner Größe in X-, Y- und Z-Achse verändert zu werden. Diese sog. "Handles" sind sichtbar, wenn das Kontextmenü angezeigt wird (s. Abschnitt  \ref{KontextMenü}. Die Handles bestehen aus Zylindern, die mit einem Collider versehen wurden. Die X- und Y- Achse wird betätigt, indem der Benutzer mit einem Finger das jeweiligen Handle berührt und dann in die entsprechende Richtung zieht. Die Größe in Z-Achse wird über "+" und "-" Button gesteuert. Drückt der Benutzer diese Buttons, wird das Gebäude um je ein Stockwerk erhöht oder verniedrigt. \\
+
 Die Interaktion der Handles mit der Hand des Nutzers wurde über das Leap-Handmodell umgesetzt; dieses besitzt Collider, die an den Fingern des Modells angebracht sind und sich simultan mit der Hand des Nutzers bewegen. Berührt die Hand nun einen der Handler, wird dieser Collider des Handlers "angesprochen". Im Falle der X-, und Y-Handles wird in der \texttt{update} Funktion des Skripts \texttt{contextMenuTrigger.cs} ein Vektor berechnet, der die Start und Endposition der Bewegung miteinander verrechnet. Im Falle einer Bewegung in X Position wird die sog. "localDifference" berechnet, dies ist der Abstand des Fingers zur Position des Markers. Die eigentliche Skalierung wird dann wie folgt berechnet:\\
 \begin{equation}
 pos = (startPosition.x - localDifference.y) / 2, startPosition.y, startPosition.z)
@@ -190,12 +248,11 @@ pos = (startPosition.x , startPosition.y, (startPosition.z - localDifference.y) 
 Es fällt auf, dass in der zu verändernden Achse verschiedene Achsen zur Berechnung verwendet werden müssen. Dies kommt daher, dass das Koordinatensystem der Leap Motion nicht equivalent zu dem in Unity ist.\\
 Dass der Wert der zu verändernden Achse halbiert wird, hat sich empirisch als Sinnvoll herausgestellt. Ohne diese "Übersetzung" der Bewegung würde das Gebäude nicht equivalent zur Fingerbewegung vergrößert oder verkleinert werden. 
 
-\subsubsection{Menüführung}\todo[inline]{Laura}
-\subsubsection{Architektur Berechnung}\todo[inline]{Laura}
+\subsubsection{Ein- und Ausblenden des Kontextmenüs} \label{sec:KontextMenuSwitch}\todo[inline]{Lukas}
+\subsubsection{Berechnung der Gebäudeeigenschaften} \label{sec:KontextMenuInhalt}\todo[inline]{Laura}
+%Neben der Anwendungsspzfischen ID des jweiligen Gebäudes ist wie auf Abbildung BLA zu sehen ....
 
-
-\subsection{Table Menü}\todo[inline, color=yellow]{Paul}
-\label{TableMenü}
+\subsection{Table Menü}\label{sec:TableMenü}\todo[inline, color=yellow]{Paul}
 
 Zur intuitiven Bedienung des \textit{MArC} wurden die Menüs, die während der Laufzeit benutzt werden können, auf dem Arbeitstisch platziert. Dies hat den Vorteil, dass zum einen diese Menüs permanent sichtbar sein können, ohne den Nutzer während der Arbeit zu stören und zum anderen ein haptisches Feedback bei der Nutzung möglich ist.\\
 Möchte der Nutzer die Menüs bedienen, so drückt er mit dem Finger, der durch die \textit{Leap Motion} getrackt wird auf die Buttons und damit gleichzeitig auf den Tisch. Dies erleichtert die Benutzung deutlich im Vergleich zu der Nutzung von Menüs die im Raum schweben.\\
@@ -297,16 +354,19 @@ Im Live-Bild-Modus werden die generierten Aufnahmen fortlaufend in der selben Sp
 	\label{tab:UeyeParam}
 \end{table}
 
+
+
 \subsection{Kalibrierung}\label{sec:calib}\todo[inline, backgroundcolor=green]{Laura}
 Um das Ziel von \textit{MArC} zu erreichen, an den Positionen der Aluminiumwürfel im Arbeitsbereich in der virtuellen Realität von Unity gerenderte Würfel darzustellen, muss das System kalibriert werden. Die Kalibrierung hat zum Ziel, eine Koordinatentransformation zu finden, die Positionen im Kamera-Koordinatensystem in das Unity-Koordinatensystem transformiert.
 
 Zu diesem Zweck muss eine zweistufige Kalibrierung durchgeführt werden. Zunächst sorgt die Kamerakalibrierung dafür, dass Bildkoordinaten auf dem Sensor der Kamera in das 3D-Kamera-Koordinatensystem transformiert werden. Dafür wird sich einiger OpenCV-Funktionen in Verbindung mit AruCo-Markern bedient. Dieser Vorgang wird nachfolgend in~\ref{sec:camCalib} genauer beschrieben.\\
 Der nächste Schritt, die Kalibrierung des Arbeitsbereichs, bestimmt über Punkt-Korrespondenzen -- also in zwei verschiedenen Koordinatensystemen bekannte Punkte -- eine affine 3D-Transformation, welche die Abbildung vom Kamera-Koordinaten\-system auf das Unity-Koordinatensystem ermöglicht. Dieser Kalibrierungsschritt wird nachfolgend in~\ref{sec:planeCalib} näher beschrieben.\\
+Nach vollständiger Kalibrierung des Systems wird sowohl die Kamerakalibrierung, als auch die Kalibrierung des Arbeitsbereiches, abgespeichert, sodass der Benutzer, beim erneuten Starten des Systems, entscheiden kann, ob er auf eine erneute Kalibrierung verzichtet oder aber das System teilweise oder komplett neu kalibrieren möchte (vgl.  \texttt{SelectCalibrationTarget} \ref{sec:menuAblauf}). Dabei ist zu beachten, dass eine Kamerakalibrierung nur in Verbindung mit einer anschließenden Kalibrierung des Arbeitsbereiches durchgeführt werden kann. Eine Arbeitsbereichskalibrierung kann jedoch autonom vorgenommen werden. \\
 Trotz einer sorgfältigen Umsetzung der in den nächsten beiden Kapiteln beschriebenen Kalibrierungsschritte, ist es nicht gelungen, den Aluminiumwürfel und den gerenderten Würfel vollständig zur Deckung zu bringen. Der entstandene Fehler sowie mögliche systembedingte Fehlerquellen werden in~\ref{sec:calibError} und in~\ref{sec:calibErrorSources} beschrieben. 
 
 \subsubsection{Kamerakalibrierung}\label{sec:camCalib}\todo[inline, backgroundcolor=green]{Laura}
 
-Es gibt viele verschiedene wissenschaftliche Ausführungen über die Durchführung einer Kamerakalibrierung, wie z.B. \cite{5982395}, \cite{888718} und \cite{faugeras1993three}. Dabei unterscheidet man häufig zwischen automatischen und manuellen Kalibrierungen. \\
+Es gibt viele verschiedene wissenschaftliche Ausführungen über die Durchführung einer Kamerakalibrierung, wie z.B. \cite{5982395}, \cite{888718} und \cite{faugeras1993three}. Dabei unterscheidet man häufig zwischen automatischen und manuellen Kalibrierungen. Im Folgenden wird der Algorithmus zur Kamerakalibrierung des \textit{MaRC} erläutert. Eine Beschreibung der Durchführung der Kalibrierung kann der ReadMe-Datei (vgl.~\ref{sec:readMe}) entnommen werden. \\
 In Abbildung~\ref{fig:cameraCalib} sind die Zusammenhänge zwischen dem Projektionszentrumkoordinatensystem der Kamera, sowie deren Bildebene und dem Weltkoordinatensystem zu sehen. Im Gegensatz zu der Abbildung und den erwähnten Kalibrierungsansätzen reicht die Umrechnung von Bildkoordinaten in Weltkoordinaten, im vorliegenden Fall, nicht aus. Es muss eine Umrechnung der Bildkoordinaten in den Unity Raum erfolgen, um zu gewährleisten, dass die gerenderten Würfel anschließend deckungsgleich mit den Aluminiumwürfeln sind. Koordinaten des Unity Raumes werden im Folgenden Unitykoordinaten genannt.\\
 
 \begin{figure}[H]
@@ -316,7 +376,9 @@ In Abbildung~\ref{fig:cameraCalib} sind die Zusammenhänge zwischen dem Projekti
 			\label{fig:cameraCalib}
 	\end{figure}
 
-Die Kamerakalibrierung, die diesem Projekt zu Grunde liegt, ist als manuell einzustufen und kann, wenn gewünscht bzw. benötigt, zu Beginn der eigentlichen Anwendung durchgeführt werden. Um die verschiedenen Koordinatensysteme auseinander zu halten, wird zu Beginn eine Notation festgelegt, die in Tabelle~\ref{tab:camCalibParam} eingesehen werden kann. Zusätzlich können in der Tabelle sowohl die einzelnen Koordinatensysteme, als auch die einzelnen Berechnungsschritte der Kamerakalibrierung nachvollzogen werden, die im Folgenden erläutert werden. Lässt man die ersten zwei Zeilen der Tabelle weg, so ist eine Transformation von Weltkoordinaten $\overrightarrow{x}$ in Kamerakoordinaten $\overrightarrow{u}$ schematisch dargestellt. Dieses Schema muss für die Kamerkalibrierung von \textit{MaRC} invertiert werden und um die Koordinatentransformation in Unitykoordinaten ergänzt werden. \\
+
+Die Kamerakalibrierung, die diesem Projekt zu Grunde liegt, ist als manuell einzustufen und kann, wenn gewünscht bzw. benötigt, zu Beginn der eigentlichen Anwendung durchgeführt werden. Um die verschiedenen Koordinatensysteme auseinander zu halten, wird zu Beginn eine Notation festgelegt, die in Tabelle~\ref{tab:camCalibParam} eingesehen werden kann. Zusätzlich können in der Tabelle sowohl die einzelnen Koordinatensysteme, als auch die einzelnen Berechnungsschritte der Kamerakalibrierung nachvollzogen werden, die im Folgenden erläutert werden. Lässt man die ersten zwei Zeilen der Tabelle weg, so ist eine Transformation von Weltkoordinaten $\vv{x}$ in Kamerakoordinaten $\vv{u}$ schematisch dargestellt. Dieses Schema muss für die Kamerakalibrierung von \textit{MaRC} invertiert werden und um die Koordinatentransformation in Unitykoordinaten ergänzt werden.  \\
+
 
 \begin{table}
 	\centering
@@ -326,31 +388,31 @@ Die Kamerakalibrierung, die diesem Projekt zu Grunde liegt, ist als manuell einz
 		\Absatzbox{}
 		& \textbf{Koordinaten} & \textbf{Komponenten}&\textbf{Transformation}\\
 		\hline
-		$\overrightarrow{x}^U$ & Unity &$x^U$,$y^U$,$z^U$& \\
+		$\vv{x}^U$ & Unity &$x^U$,$y^U$,$z^U$& \\
 		\cline{2-4}
 		$\downarrow$ & & & Koordinatentransformation\\
 		\cline{2-4}
-		$\overrightarrow{x}$ & Welt &$x$,$y$,$z$& \\
+		$\vv{x}$ & Welt &$x$,$y$,$z$&  \\
 		\cline{2-4}
 		$\downarrow$ & & & Koordinatentransformation\\
 		\cline{2-4}
-		$\overrightarrow{x}^P$ & Projektionszentrum &$x^P$,$y^P$,$z^P$& \\
+		$\vv{x}^P$ & Projektionszentrum &$x^P$,$y^P$,$z^P$& \\
 		\cline{2-4}
 		$\downarrow$ & & & Projektion \\
 		\cline{2-4}
-		$\overrightarrow{x}^P_Z$ & Projektionszentrum &$u^Z$,$v^Z$,$-c$& \\
+		$\vv{x}^P_Z$ & Projektionszentrum &$u^Z$,$v^Z$,$-c$& \\
 		\cline{2-4}
 		$\downarrow$ & & & Linsenverzeichnung\\
 		\cline{2-4}	
-		$\overrightarrow{x}^P_D$ & Verzeichnung &$u^D$,$v^D$,$-c$& \\
+		$\vv{x}^P_D$ & Verzeichnung &$u^D$,$v^D$,$-c$& \\
 		\cline{2-4}
 		$\downarrow$ & & & Bildebenenverkippung\\
 		\cline{2-4}		
-		$\overrightarrow{x}^V$ &Verkippung &$u^V$,$v^V$,$-c^V$& \\
+		$\vv{x}^V$ &Verkippung &$u^V$,$v^V$,$-c^V$& \\
 		\cline{2-4}
 		$\downarrow$ & & & Bildhauptpunktverschiebung\\
 		\cline{2-4}	
-		$\overrightarrow{u}$ & Sensor &$u$,$v$ & \\
+		$\vv{u}$ & Sensor &$u$,$v$ & \\
 		\hline
 	\end{tabular}
 	\caption{Parameter und Berechnungsschritte der Kamera Kalibrierung.\cite{Meisel:77890}}
@@ -359,7 +421,7 @@ Die Kamerakalibrierung, die diesem Projekt zu Grunde liegt, ist als manuell einz
 
 Die einzelnen Schritte aus Tabelle~\ref{tab:camCalibParam} kann man in vier bzw. drei Abschnitte einteilen: \\
 Im ersten Abschnitt wird der Hauptpunkt so versetzt, dass der Koordinatenursprung des Kamerakoordinatensystems mit dem Bildkoordinatensystem übereinstimmt. Dies geschieht, indem man für die eine Achse $u^V = u - \Delta u$ und für die andere Achse entsprechend $v^V = v - \Delta v$ berechnet.\\
-Zusätzlich wird die Bildebene verkippt, so dass gilt $\overrightarrow{x}^V = R_v \cdot \overrightarrow{x}^P_D$. Bezeichnet $\varphi$ den Drehwinkel um die $x^P$-Achse und $\vartheta$ den Drehwinkel um die $y^{P'}$-Achse, so lässt sich $R_v$ wie folgt berechnen:
+Zusätzlich wird die Bildebene verkippt, so dass gilt $\vv{x}^V = R_v \cdot \vv{x}^P_D$. Bezeichnet $\varphi$ den Drehwinkel um die $x^P$-Achse und $\vartheta$ den Drehwinkel um die $y^{P'}$-Achse, so lässt sich $R_v$ wie folgt berechnen:
 
 \begin{equation}
 \label{equ:Rverkippt}
@@ -370,9 +432,9 @@ r_{v21} & r_{v22} & r_{v23} \\
 r_{v31} & r_{v32} & r_{v33} \\
 \end{pmatrix} = 
 \begin{pmatrix}
-cos\vartheta & sin\vartheta sin\varphi & -sin\vartheta cos\varphi \\
-0 & cos\varphi & sin\varphi\\
-sin\vartheta & -cos\vartheta sin\varphi & cos\vartheta cos\varphi \\
+\cos\vartheta & \sin\vartheta \sin\varphi & -\sin\vartheta \cos\varphi \\
+0 & \cos\varphi & \sin\varphi\\
+\sin\vartheta & -\cos\vartheta \sin\varphi & \cos\vartheta \cos\varphi \\
 \end{pmatrix} 
 ~ ~ ~ ~ ~R_v \in \mathbb{R}^{3x3}
 \end{equation}
@@ -397,7 +459,21 @@ f_u & 0 & 0 & u^V \\
 ~ ~ ~ ~ ~M_{intrinsisch} \in \mathbb{R}^{3x4}
 \end{equation}
 
-Zu diesem Zeitpunkt sollte nun das Kamerakoordinatensystem mit dem Weltkoordinatensystem übereinstimmen und es kann sich im nächsten Schritt darum gekümmert werden, dass das Kamerakoordinatensystem verschoben und gedreht wird. Während eine dreidimensionale Rotation im Allgemeinen mit Matrix $R$ aus Formel~\ref{equ:Rotation} beschrieben werden kann, reicht für die Translation ein Vektor, wie $t$ aus Formel~\ref{equ:Translation} aus.\
+Zu diesem Zeitpunkt sollte nun das Kamerakoordinatensystem mit dem Weltkoordinatensystem übereinstimmen und es kann sich im nächsten Schritt darum gekümmert werden, dass das Kamerakoordinatensystem verschoben und gedreht wird. Dieser Schritt und alle weiteren Schritte, die im Zusammenhang mit der Transformation von Kamerakoordinaten in Weltkoordinaten bzw. Weltkoordinaten in Unitykoordinaten stehen, werden in Kapitel~\ref{sec:planeCalib} erläutert. Hierbei sei noch einmal angemerkt, dass eine Kamerakalibrierung nur mit anschließender Kalibrierung des Arbeitsbereiches durchgeführt werden kann.
+
+
+\subsubsection{Kalibrierung des Arbeitsbereichs}\label{sec:planeCalib} \todo[inline, color=yellow]{Laura}
+Wie bereits beschrieben, kann eine Kalibrierung des Arbeitsbereichs entweder mit vorheriger Kamerakalibrierung oder einzeln durchgeführt werden. In letzterem Fall wird dann die zuletzt verwendete Kamerakalibrierung geladen. Die Durchführung der Kalibrierung wird in der ReadMe-Datei (vgl.~\ref{sec:readMe}) erläutert. Grob gesagt, werden über Knopfdruck am Kalibrierungscontroller (vgl. \ref{fig:KontrollerMarc}) 25 seiner Positionen sowohl in Kamerakoordinaten, als auch in Unitykoordinaten gespeichert. Man erhält also 25 korrespondierende Punktepaare.\\
+Allgemein betrachtet hat die Arbeitsbereichskalibrierung zwei verschiedene Aufgaben: Zum Einen wird hierbei ein Bereich festgelegt, indem die Objekte getracked werden und zum anderen wird mittels der verschiedenen Positionen der Kalibrierungspunkte, die affine Transformationsmatrix bestimmt, die im weiteren Verlauf als Umrechnung zwischen Kamerakoordinaten und Unitykoordinaten fungiert. Beide Teilbereiche werden in den Absätzen \grqq Begrenzung des Abeitsbereichs\grqq ~bzw. \grqq Affine Transformation\grqq ~weitergehend erläutert.
+	
+\begin{description}
+\item[Begrenzung des Arbeitsbereichs] %4 PunktepaareThe user have to make sure to form up a rectangle which is equal to his desired workspace. Starting in the lower left corner and going clockwiseÜber die ersten ... rausziehen setzt auf Null; 
+\item[Affine Transformation] %21 Punktepaare.
+\end{description}
+
+
+\textcolor{red}{Muss noch umgeschrieben werden: }
+Während eine dreidimensionale Rotation im Allgemeinen mit Matrix $R$ aus Formel~\ref{equ:Rotation} beschrieben werden kann, reicht für die Translation ein Vektor, wie $t$ aus Formel~\ref{equ:Translation} aus.\
 
 \begin{equation}
 \label{equ:Rotation}
@@ -443,17 +519,33 @@ Die Umrechnung von Kamerakoordinaten in Weltkoordinaten kann dann mit der invert
 
 \begin{equation}
 \label{equ:SensInWorld}
-\overrightarrow{x} = M^{-1} \cdot \overrightarrow{u}
+\vv{x} = M^{-1} \cdot \vv{u}
 \end{equation}
 
 An diesem Punkt hat man die Kamerakoordinaten vollständig in Weltkoordinaten überführt und sucht nun eine Transformationsmatrix um diese Punkte auf ihre korrespondierenden Punkte in Unitykoordinaten abzubilden. Die dazu benötigte affine 3D-Transformation wird in Kapitel \ref{sec:planeCalib} erläutert.
 
 
-\subsubsection{Kalibrierung des Arbeitsbereichs}\label{sec:planeCalib} \todo[inline]{Laura}
-
 %Entsprechend Formel~\ref{equ:SensInWorld} muss für den letzten Schritt eine Transformationsmatrix von Weltkoordinaten in Unitykoordinaten gefunden werden. Dies geschieht indem man die korrespondierenden Koordinatenpaare einer Controllerposition in Unity und in bereits in Weltkoordinaten gebrachten Sensorkoordinaten ineinander überführt, d.h. eine affine Transformation durchführt. Die Controlerpositionen in Weltkoordinaten werden somit auf die in Unitykoordinaten abgebildet.
-\subsubsection{Kalibrierungfehler} \label{sec:calibError}\todo[inline]{Laura}
-\subsubsection{Mögliche Fehlerquellen} \label{sec:calibErrorSources}\todo[inline]{Laura}
+\subsubsection{Kalibrierungsfehler} \label{sec:calibError}\todo[inline, color=yellow]{Laura}
+In den Kapiteln~\ref{sec:camCalib} und~\ref{sec:planeCalib} wird der Algorithmus zur Berechnung der Koordinatentransformation von Kamerakoordinaten in Unitykoordinaten beschrieben. Beim Benutzen des fertig kalibrierten System fällt jedoch auf, dass die Aluminiumwürfel nicht an allen Positionen auf dem Spielfeld deckungsgleich mit ihrem gerenderten Pendant sind.  Bei genauerer Betrachtung \textcolor{red}{...Wie sieht Fehler aus? immer noch an kalibrierten Ecken und Diagonale ok?}\\
+Im nächsten Kapitel werden mögliche Gründe für diese fehlerhafte Abbildung aufgeführt und diskutiert. 
+
+
+\subsubsection{Mögliche Fehlerquellen} \label{sec:calibErrorSources}\todo[inline, color=yellow]{Laura}
+Bei der Registrierung der Würfelobjekte kommt es zu dem in~\ref{sec:calibError} beschriebenen Fehler.
+Neben der Rechenungenauigkeit und Rundungsfehlern, die sich über die diversen Rechenschritte (siehe Kapitel \ref{sec:camCalib} und \ref{sec:planeCalib}) hinweg aufaddieren, sollen in diesem Kapitel systembedingte mögliche Fehlerquellen aufgeführt werden. \\
+
+
+1) Zum Einen Tracking Vive
+2) Lösen DLT
+3) Fehlerfortpflanzung
+4) Inside out
+5) Trackingfehler
+6) Kamerauflösung begrenzt
+
+Zusätzliche Registrierungsfehler können durch Latenz entstehen. Nämlich immer dann, wenn eine Zeitdifferenz zwischen der Messung der Position in Kamerakoordinaten und der eigentlichen Darstellung nach entsprechender
+Verarbeitung entsteht. Solche Systemverzögerungen werden allerdings nur bei Bewegungen sichtbar und sind deshalb für die beobachteten Fehler bei ruhendem Aluminiumwürfel nicht als mögliche Fehlerquelle auszumachen. 
+
 \subsection{Marker Detektion}\todo[inline, color = yellow]{Vera}
 
 Nach Abschluss der erfolgreichen und vollständigen Kalibrierung beziehungsweise des Importieren aller notwendigen Kalibrierungsdaten beginnt das Tracking Programm sowohl die ArUco Marker, als auch die leuchtend grünen Rechtecke zu detektieren. Die codebasierten \textit{ArUco} Marker ermöglichen es den Marker nach längerer Verdeckung wieder eindeutig seiner entsprechenden ID zu zuordnen und somit Fehlzuordnungen oder sprunghaften Vertauschungen von benachbarten Würfel Markern vorzubeugen. Alle Methoden zur Detektierung der beiden Markertypen werden von der Klasse \texttt{MarkerDetection.cpp} zur Verfügung gestellt und mit der Funktion \texttt{runMarkerDetection}. Zunächst werden die Rechtecke mit Hilfe eines simplen Greenkeying erfasst und im Anschluss die erforderlichen \textit{ArUco} IDs der Würfel Marker. Letztere können bekannterweise unter Umständen nur im ruhenden Status erfasst werden, da eine mögliche Bewegungsunschärfe bei schnellen Verschiebungen (siehe Kapitel \ref{sec:MarkerTracking}) eine korrekte Erfassung nahezu unmöglich macht. 
@@ -492,8 +584,8 @@ o=p_{ul}-c_{RR}
 Weitere essentielle Informationen
 
 std::vector< cv::Point3d > tvecs; \ref{sec:planeCalib}
-cv::Point3d estimatedCenter; \ref{sec:planeCalib}
-
+cv::Point3d estimatedCenter; \ref{sec:planeCalib} 
 
 \subsection{Verfolgung der Identitäten}\todo[inline]{Vera}
 
+\newpage
