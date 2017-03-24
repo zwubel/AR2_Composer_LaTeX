@@ -68,28 +68,36 @@ static void calcChessboardCorners(Size boardSize, float squareSize, vector<Point
 	}
 }
 
-static bool runCalibration(vector<vector<Point2f> > imagePoints, Size imageSize, Size boardSize, 
-	Pattern patternType, float squareSize, float aspectRatio, int flags, Mat& cameraMatrix, 
-	Mat& distCoeffs, vector<Mat>& rvecs, vector<Mat>& tvecs, vector<float>& reprojErrs,
-	double& totalAvgErr) {
+static bool runCalibration(vector<vector<Point2f> > imagePoints,
+	Size imageSize, Size boardSize, Pattern patternType,
+	float squareSize, float aspectRatio,
+	int flags, Mat& cameraMatrix, Mat& distCoeffs,
+	vector<Mat>& rvecs, vector<Mat>& tvecs,
+	vector<float>& reprojErrs,
+	double& totalAvgErr)
+{
+	cameraMatrix = Mat::eye(3, 3, CV_64F);
+	if (flags & CALIB_FIX_ASPECT_RATIO)
+		cameraMatrix.at<double>(0, 0) = aspectRatio;
 
-		cameraMatrix = Mat::eye(3, 3, CV_64F);
-		if (flags & CALIB_FIX_ASPECT_RATIO)
-			cameraMatrix.at<double>(0, 0) = aspectRatio;
+	distCoeffs = Mat::zeros(8, 1, CV_64F);
 
-		distCoeffs = Mat::zeros(8, 1, CV_64F);
-		vector<vector<Point3f> > objectPoints(1);
-		calcChessboardCorners(boardSize, squareSize, objectPoints[0], patternType);
-		objectPoints.resize(imagePoints.size(), objectPoints[0]);
+	vector<vector<Point3f> > objectPoints(1);
+	calcChessboardCorners(boardSize, squareSize, objectPoints[0], patternType);
 
-		double rms = cv::calibrateCamera(objectPoints, imagePoints, imageSize, cameraMatrix,
-			distCoeffs, rvecs, tvecs, flags | CALIB_FIX_K4 | CALIB_FIX_K5);
+	objectPoints.resize(imagePoints.size(), objectPoints[0]);
 
-		printf("RMS error reported by calibrateCamera: %g\n", rms);
-		bool ok = checkRange(cameraMatrix) && checkRange(distCoeffs);
+	double rms = cv::calibrateCamera(objectPoints, imagePoints, imageSize, cameraMatrix,
+		distCoeffs, rvecs, tvecs, flags | CALIB_FIX_K4 | CALIB_FIX_K5);
 
-		totalAvgErr = computeReprojectionErrors(objectPoints, imagePoints,
-			rvecs, tvecs, cameraMatrix, distCoeffs, reprojErrs);
+
+	///*|CALIB_FIX_K3*/|CALIB_FIX_K4|CALIB_FIX_K5);
+	printf("RMS error reported by calibrateCamera: %g\n", rms);
+
+	bool ok = checkRange(cameraMatrix) && checkRange(distCoeffs);
+
+	totalAvgErr = computeReprojectionErrors(objectPoints, imagePoints,
+		rvecs, tvecs, cameraMatrix, distCoeffs, reprojErrs);
 
 	return ok;
 }
