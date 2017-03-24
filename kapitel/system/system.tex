@@ -41,7 +41,7 @@ Die in Kapitel \ref{sec:Winsock} beschriebene API stellt die Möglichkeit bereit
 In den beiden folgenden Abschnitten wird die Umsetzung der Netzwerk-Endpunkte an den beiden für \emph{MArC} verwendeten Computern beschrieben.
 \subsubsection{Serverseitige Netzwerkanbindung}\todo[inline]{Laura}
 \paragraph{Aufbauen der Netzwerkverbindung}
-Da die Verbindung zwischen den beiden Rechnern per LAN-Kabel realisiert wurde, wird ein Server gestartet und eine Verbindung seitens des Clients ohne weiter Sicherheitsmechanismen erlaubt, so lange dieser den richtigen Port adressiert. Die entsprechenden Methoden stehen dank \textit{Winsock} (vgl. Abschnitt~\ref{sec:Winsock}) durch das Einbinden von \texttt{<winsock2.h>} und \texttt{<windows.h>} bereit und werden wie in Quellcode-Auszug~\ref{lst:startTCPServer} (im Anhang einsehbar)s verwendet. 
+Da die Verbindung zwischen den beiden Rechnern per LAN-Kabel realisiert wurde, wird ein Server gestartet und eine Verbindung seitens des Clients ohne weitere Sicherheitsmechanismen erlaubt, so lange dieser den richtigen Port adressiert. Die entsprechenden Methoden stehen dank \textit{Winsock} (vgl. Abschnitt~\ref{sec:Winsock}) durch das Einbinden von \texttt{<winsock2.h>} und \texttt{<windows.h>} bereit und werden, wie in Quellcode-Auszug~\ref{lst:startTCPServer} (im Anhang einsehbar), verwendet. 
 
 %\lstinputlisting[title=\lstname, caption={\texttt{startTCPServer()}-Methode in \texttt{TCP.cpp}}, label=lst:startTCPServer, language={C++}, linerange=22-77, firstnumber=22]{Quellcode/TCP.cpp} 
 
