@@ -232,6 +232,7 @@ Da zu Beginn der Anwendung im \texttt{SetScale}-Menü (vgl. Kapitel~\ref{sec:men
 
 \subsubsection{Marker Handles}\label{sec:markerHandles}\todo[inline]{Paul}
 Jeder Marker verfügt über die Möglichkeit in seiner Größe in X-, Y- und Z-Achse verändert zu werden. Diese sog. "Handles" sind sichtbar, wenn das Kontextmenü angezeigt wird (s. Abschnitt  \ref{KontextMenü}. Die Handles bestehen aus Zylindern, die mit einem Collider versehen wurden. Die X- und Y- Achse wird betätigt, indem der Benutzer mit einem Finger das jeweiligen Handle berührt und dann in die entsprechende Richtung zieht. Die Größe in Z-Achse wird über "+" und "-" Button gesteuert. Drückt der Benutzer diese Buttons, wird das Gebäude um je ein Stockwerk erhöht oder verniedrigt. \\
+
 Die Interaktion der Handles mit der Hand des Nutzers wurde über das Leap-Handmodell umgesetzt; dieses besitzt Collider, die an den Fingern des Modells angebracht sind und sich simultan mit der Hand des Nutzers bewegen. Berührt die Hand nun einen der Handler, wird dieser Collider des Handlers "angesprochen". Im Falle der X-, und Y-Handles wird in der \texttt{update} Funktion des Skripts \texttt{contextMenuTrigger.cs} ein Vektor berechnet, der die Start und Endposition der Bewegung miteinander verrechnet. Im Falle einer Bewegung in X Position wird die sog. "localDifference" berechnet, dies ist der Abstand des Fingers zur Position des Markers. Die eigentliche Skalierung wird dann wie folgt berechnet:\\
 \begin{equation}
 pos = (startPosition.x - localDifference.y) / 2, startPosition.y, startPosition.z)
@@ -280,9 +281,9 @@ Da innerhalb von \textit{Unity} eine hierarchiche Anordnung sämtlicher Elemente
 Die \textit{Extensible markup language (XML)} beschreibt eine Klasse von Daten Objekten (XML Documents) und ermöglicht das hierarchiche Abspeichern von geparsten oder ungeparsten Daten \cite{bray1998extensible}. In \textit{C\#} sind Verarbeitungsklassen bereits implementiert. Mittels dieser sog. \textit{XML Prozessoren} wird ein Datenzugriff erleichtert.
 
 \paragraph{Dateiaufbau einer gespeicherten Szene}
-Das gesamte Dokument wird mit einem Hauptknoten  \texttt{ $<$AR2\_COMPOSERSCENE$>$} umspannt. Innerhalb diesem wird mit texttt{ $<$time$>$}
+Das gesamte Dokument wird mit einem Hauptknoten \texttt{ $<$AR2\_COMPOSERSCENE$>$} umspannt. Innerhalb diesem wird mit texttt{ $<$time$>$}
 ein Zeitstempel mit gespeichert, falls der Dateiname einmal umbenannt werden sollte.
-Anschließend folgt der  texttt{ $<$TableObject$>$} Knoten, innerhalb dessen die Marker gespeichert werden. Jeder Marker wird nach dem folgenden Schema gespeichert, welches den Aufbau in Unity repräsentiert:
+Anschließend folgt der texttt{ $<$TableObject$>$} Knoten, innerhalb dessen die Marker gespeichert werden. Jeder Marker wird nach dem folgenden Schema gespeichert, welches den Aufbau in Unity repräsentiert:
 
 
  \begin{lstlisting}
@@ -307,7 +308,7 @@ Das Skript \texttt{save.cs} ist für die Speicherung der Szenen verantwortlich. 
 Diese Funktion erstellt jeweils die Knoten für den Namen, die Position, Rotation und Skalierung. Die Werte werden mittels \texttt{Node.InnerText} in die Knoten gespeichert.\\
 Ist diese Funktion durch alle Kindknoten gegangen, wird am Ende noch die Skalierung der Szene in dem Knoten \texttt{globalBuildingScale} abgespeichert, damit dieser beim Laden der Szene rekonstruiert werden kann.
 
-\paragraph{Darstellen von gespeicherten Szenen} Die gespeicherten Szenen werden in Listenform im Table Menü dargestellt. Zu oberst sind immer die aktuellen Szenen. Über die Buttons "1-6", "7-12", "13-18"  und "19-24" kann "umgeblättert" werden und weitere, in der Vergangenheit liegende Szenen dargestellt werden. Für diese Darstellung ist das Skript \texttt{Timeline.cs} zuständig. Bei jedem Speichern wird die Darstellung aktualisiert, so dass immer alle neuesten gespeicherten Szenen sichtbar sind.
+\paragraph{Darstellen von gespeicherten Szenen} Die gespeicherten Szenen werden in Listenform im Table Menü dargestellt. Zu oberst sind immer die aktuellen Szenen. Über die Buttons "1-6", "7-12", "13-18" und "19-24" kann "umgeblättert" werden und weitere, in der Vergangenheit liegende Szenen dargestellt werden. Für diese Darstellung ist das Skript \texttt{Timeline.cs} zuständig. Bei jedem Speichern wird die Darstellung aktualisiert, so dass immer alle neuesten gespeicherten Szenen sichtbar sind.
 
 \subsubsection{Laden von Szenen}\todo[inline, color=green]{Paul}
 \label{Laden}
@@ -318,18 +319,17 @@ Diese ArrayList wird nun, nachdem sie vollständig gefüllt ist, bearbeitet: Fü
 Sind alle Marker auf diese Weise geladen und parametrisiert, wird der globale Maßstab an das Skript \texttt{setupScene.cs} übergeben.\\
 Zu diesem Zeitpunkt sind also zwei Arten von Markern sichtbar: Die geladenen aus der .xml Datei, die grün und rot blinken und eine ID $>$ 100 haben, und die aktiven Marker die getrackt werden.
 
-
-
 \subsubsection{Match Modus}\todo[inline,color=green]{Paul}
 \label{MatchModus}
 Der Match Modus ist ein Systemzustand, der nach dem Laden von gespeicherten Szenen aktiviert wird. Es werden wie im Abschnitt \ref{Laden} beschrieben die geladenen Marker und die getrackten Marker gleichzeitig angezeigt. Der Benutzer muss jetzt die echten Marker an die Position der geladenen virtuellen Marker schieben. Ist ein Marker im Match Modus, sind vier Collider an den Ecken des virtuellen Markers wichtig. Die Markerinterne Variable "matchMode" ist = "false" gesetzt. Schiebt der Benutzer nun einen Marker an die Position des virtuellen Markers, werden bei genauer Positionierung alle vier Collider des geladenen virtuellen Markers mit den vier Collidern des anderen virtuellen Markers, der von dem Nutzer bewegt wurde, aktiviert. Ist dies der Fall, und nur dann, wird die Markerinterne Variable "matchModeReady" auf "true" gesetzt. Dieses Verhalten wird von dem Skript \texttt{StopMatchMode.cs} kontrolliert.
 Sind alle Marker bereit, werden die Parameter aus den gespeicherten Markern auf diejenigen Marker übertragen, die der Benutzer an die Position der virtuellen Marker geschoben hat. Um diese Funktionalität kümmert sich das Skript \texttt{DataHandler.cs}. 
 Die geladenen Marker mit der ID $>$ 100 werden im Anschluss gelöscht. Am Ende des Match Modus existieren wieder nur die TCP gesteuerten Marker, die jetzt allerdings die Parameter aus der geladenen Datei übernommen haben und somit in der Gesamtheit die geladene Szene repräsentieren.
 
-\section{Tracking Programm} \label{sec:Tracking}\todo[inline]{Vera}
-Zur Verfolgung und Positionsbestimmung der Würfel Marker (siehe Kapitel \ref{sec:WürfelMarker}) wurde ein Programm entwickelt, welche alle erforderlichen Resourcen und Funktionen bereit stellt und verknüpft. Zunächst muss die Initialisierung und der Zugriff der uEye Kamera (siehe Kapitel \ref{sec:uEye}) ermöglicht werden. Im Anschluss ist das Erstellen beziehungsweise laden aller relevanten Kalibrierungsinformationen unabdingbar. Nach erfolgreichem Abschluss beider Schritte führt das Programm  das Tracking der AruCo Marker und der grünen Rechtecke aus und steuert die Verwaltung und TCP Übertragung (siehe Kapitel \ref{sec:Netzwerk}) der Registrierten Würfel Marker Informationen. Diese Programm wurde in der IDE \textit{Visual Studio} (siehe Kapitel \ref{sec:VisualStudio}) in der Programmiersprache $C++$ entwickelt. Für die Entwicklungen wurden die uEye SDK, \textit{OpenCV} (siehe Kapitel \ref{sec:OpenCV}) sowie die Standardbibliothek \textit{Winsock} zur Hilfe genommen. In den folgenden Abschnitten wird die Vorgehensweise im Detail erklärt.
+\section{Tracking Programm} \label{sec:Tracking}\todo[inline, color=yellow]{Vera}
+Zur Verfolgung und Positionsbestimmung der Würfel Marker (siehe Kapitel \ref{sec:WürfelMarker}) wurde ein Programm entwickelt, welche alle erforderlichen Resourcen und Funktionen bereit stellt und verknüpft. Zunächst muss die Initialisierung und der Zugriff der uEye Kamera (siehe Kapitel \ref{sec:uEye}) ermöglicht werden. Im Anschluss ist das Erstellen beziehungsweise laden aller relevanten Kalibrierungsinformationen unabdingbar. Nach erfolgreichem Abschluss beider Schritte wird das Tracking der AruCo Marker und der grünen Rechtecke ausgeführt und anschließend die Verwaltung aller registrierten Würfel Marker übernommen. Zuletzt werden alle relevanten Daten der Marker vom Tracking Programm per TCP Übertragung (siehe Kapitel \ref{sec:Netzwerk}) an den \textit{Unity} Computer übertragen. Alle Schritte die der Kalibrierung folgen werden in einer Endlosschleife für jeden Frame ausgeführt. Die durchschnittliche Dauer einer Iteration mit der Aufnahme, dem Tracking sowie der Übertragung dauert $XXXXXX$ms und einer Framerate von $XXXX$ fps. \todo{Vera: messen der Dauer und Framerate}
+Dieses Programm wurde in der IDE \textit{Visual Studio} (siehe Kapitel \ref{sec:VisualStudio}) in der Programmiersprache $C++$ entwickelt. Für die Entwicklungen wurden die uEye SDK, \textit{OpenCV} (siehe Kapitel \ref{sec:OpenCV}) sowie die Standardbibliothek \textit{Winsock} zur Hilfe genommen. In den folgenden Abschnitten wird die Vorgehensweise im Detail erklärt.
 
-\subsection{uEye Ansteuerung}\todo[inline]{Vera}
+\subsection{uEye Ansteuerung}\todo[inline, color=yellow]{Vera}
 Der erste Prozess des Tracking Programms ist die Initialisierung der uEye Kamera im Live-Bild-Modus. Mit Hilfe der vom Hersteller bereit gestellten SDK kann die Kamera mit allen benötigten Eigenschaften parametrisiert und alle notwendigen Speicher allokiert. Dies übernimmt die Funtion \texttt{inituEyeCam} in der Klasse \texttt{uEye\_input.cpp}. Die verwendeten Parameter können aus der Tabelle \ref{tab:UeyeParam} entnommen werden. Die Kamera wird mit dem maximalen Pixel Clock und der maximalen Framerate betrieben. Aus diesen Einstellungen ergibt sich auch die Belichtungszeit. Um einen höheren Kontrast zur Erkennung der Marker zu erzielen wurde zusätzlich das Hardware Signal zwanzigfach verstärkt.
 Im Live-Bild-Modus werden die generierten Aufnahmen fortlaufend in der selben Speicheradresse überschrieben. Auf diesen Speicherplatz kann das Programm jederzeit mit der Funktion \texttt{getCapturedFrame} zugreifen, die die aktuellste Aufnahme zur Weiterverarbeitung zurück gibt. Nach der Beendigung des Tracking Algorithmus wird zusätzlich noch die Funktion \texttt{exitCamera} bereit gestellt, welche den verwendeten allokierten Speicher wieder freigibt.
 \begin{table}
@@ -341,7 +341,7 @@ Im Live-Bild-Modus werden die generierten Aufnahmen fortlaufend in der selben Sp
 		\hline
 		Pixel Clock & 37 ms \\
 		\hline
-		Frame Rate & 23 fps  \\
+		Frame Rate & 23 fps \\
 		\hline 
 		Belichtungszeit & 40 ms\\
 		\hline
@@ -588,14 +588,49 @@ Neben der Rechenungenauigkeit und Rundungsfehlern, die sich über die diversen R
 5) Trackingfehler
 6) Kamerauflösung begrenzt
 
-
 Zusätzliche Registrierungsfehler können durch Latenz entstehen. Nämlich immer dann, wenn eine Zeitdifferenz zwischen der Messung der Position in Kamerakoordinaten und der eigentlichen Darstellung nach entsprechender
-Verarbeitung entsteht. Solche Systemverzögerungen werden allerdings nur bei Bewegungen sichtbar und sind deshalb für die beobachteten Fehler bei ruhendem Aluminiumwürfel nicht als mögliche Fehlerquelle auszumachen.  
-\subsection{Marker Detektion}
-\subsection{Green Keying}\todo[inline]{Vera}
-\subsection{ArUco Marker Tracking}\todo[inline]{Vera}
+Verarbeitung entsteht. Solche Systemverzögerungen werden allerdings nur bei Bewegungen sichtbar und sind deshalb für die beobachteten Fehler bei ruhendem Aluminiumwürfel nicht als mögliche Fehlerquelle auszumachen. 
 
-\subsection{Marker Objekt}\todo[inline]{Vera}
-\subsection{Zuordnung der Identitäten}\todo[inline]{Vera}
+\subsection{Marker Detektion}\todo[inline, color = yellow]{Vera}
+
+Nach Abschluss der erfolgreichen und vollständigen Kalibrierung beziehungsweise des Importieren aller notwendigen Kalibrierungsdaten beginnt das Tracking Programm sowohl die ArUco Marker, als auch die leuchtend grünen Rechtecke zu detektieren. Die codebasierten \textit{ArUco} Marker ermöglichen es den Marker nach längerer Verdeckung wieder eindeutig seiner entsprechenden ID zu zuordnen und somit Fehlzuordnungen oder sprunghaften Vertauschungen von benachbarten Würfel Markern vorzubeugen. Alle Methoden zur Detektierung der beiden Markertypen werden von der Klasse \texttt{MarkerDetection.cpp} zur Verfügung gestellt und mit der Funktion \texttt{runMarkerDetection}. Zunächst werden die Rechtecke mit Hilfe eines simplen Greenkeying erfasst und im Anschluss die erforderlichen \textit{ArUco} IDs der Würfel Marker. Letztere können bekannterweise unter Umständen nur im ruhenden Status erfasst werden, da eine mögliche Bewegungsunschärfe bei schnellen Verschiebungen (siehe Kapitel \ref{sec:MarkerTracking}) eine korrekte Erfassung nahezu unmöglich macht. 
+Aus diesem Grund werden neben den codebasierten Muster auch die leuchtenden Rechtecke verfolgt um einen Marker auch bei schnelleren Bewegungen verfolgen zu können.
+\subsubsection{Detektion der grünen Rechtecke}\todo[inline, color=yellow]{Vera}
+Das Ziel dieses Verfahren ist es eine \textit{Object Oriented Bounding Box}(OBB) von jedem erkannten Würfel Marker zu erstellen. Die OBB beinhalten Informationen über die Größe, den Schwerpunkt, die vier Eckpunkte sowie den Rotationswinkel im Verhältnis zum Bildkoordinatensystem. Alle genannten Informationen werden in einem \texttt{RotatedRect} gespeichert, welches eine Objektklasse der \textit{OpenCV} Bibliothek ist.
+Zur Detektion der grünen Rechtecke müssen sie zunächst mit Hilfe einer Binarisierung segmentiert werden. Jedoch ist die Aufnahme zu diesem Zeitpunkt ein Bild mit RGB Farbmodus dessen Grundfarben von der Helligkeit abhängig sind. Somit müssen je nach Beleuchtungsverhältnisse die Thresholds einer Binarisierung angepasst werden. Im Gegensatz zum RGB Farbraum ist der HSI Farbraum unabhängig von der Beleuchtung, da er seine Grundbestandteile aus den Werten von Farbton (H), Sättigung (S) und Helligkeit (I) definiert Folgerichtig ist es theoretisch ausreichend nur den Farbton zu beachten um Objekte oder Teilbereiche einer bestimmten Farbe zu segmentieren. \todo{ Referenz} 
+Die Binarisierung jedes Pixel $x \in (\Re^3 | 0 \ge x_H \le 255, 0 \ge x_S \le 255, 0 \ge x_I \le 255$) unter den Bedingungen aus Formel \ref{equ:Threshold}, welche alle nicht grünen Bildsektionen schwarz maskiert. An dieser Stelle wurden neben dem Farbton auch die Sättigung und Helligkeit betrachtet. Durch die Eingrenzung der Sättigung wird sichergestellt, dass nur grüne Bereiche mit einer hohen Leuchtkraft berücksichtigt werden. Während die leichte Einschränkung der Helligkeit das Rauschen im Schwarz/ Weißbild verringert. Das verbleibende Bildrauschen wird durch einen Median Rangordnungsfilter mit einer Kernelgröße von $5\times5$ eliminiert. Diese beide Methoden sind Teil der \textit{OpenCV} Bibliothek.
+\begin{equation}
+\label{equ:Threshold}
+I(x) = \begin{cases}
+255 & wenn \ 65 \ge x_H \le 85, \ 120 \ge x_S \le 255, \ 22 \ge x_I \le 255\\\
+0 & sonst
+\end{cases}
+\end{equation}
+
+Im binarisierte Bild werden im Anschluss zur Detektierung der OBB die Rechteckkanten mit einem Canny Kanten Detektor extrahiert\todo{Referenz}. Im resultierenden Kantenbild wird mit Hilfe eines Kantenverfolgung Algorithmus \cite{article:FindConturs} die Konturen generiert. Dieser Algorithmus erstellt eine hierarchische Sammlung von allen Punkten der äußersten Konturen eines Objektes. Aus dieser Sammlung wird die OBB mit dem \textit{Douglas Ramer Peucker} Algorithmus \cite{article:RamerPeucker} approximiert. Während der Approximation werden die Konturen geglättet und somit an ein ideales Rechteck angenähert. In Abbildung ??? \todo{Abbildung machen} ist sind die generierten OBBs weiß dargestellt und es ist deutlich zusehen, dass die Annäherung sehr genau ist.
+\subsubsection{ArUco Marker Tracking}\todo[inline]{Vera}
+
+\subsection{Marker Objekt Definition}\todo[inline, color=yellow]{Vera}
+Die Marker Objekte der Klasse \texttt{Marker.cpp} speichern alle benötigten Parameter und Informationen der jeweiligen Würfel Marker. Zu diesen Daten gehören unter anderem die ID der Registrierung \texttt{id}, die aktuelle \textit{ArUco} ID \texttt{arucoID} des zugeteilten Würfel Markers sowie die entsprechende OBB \texttt{rect} des letzten Frames. Weitere boolesche Variablen wie \texttt{isVis} und \texttt{isTrack} geben Auskunft über die Sichtbarkeit der registrierten Würfel Marker in der letzten Aufnahme und ob diese Registrierung bereits in der aktuellen Iteration des Tracking Algorithmus verfolgt wurde.
+
+Für die Winkel $\omega_{RR}$, welche von den \texttt{RotatedRect} initialisiert werden gilt $\omega_{RR} \in \{\Re | -90^\circ \ge \omega_{RR} \le 90^\circ\}$. Doch alle folgenden Komponenten des Gesamtsystems von \textit{MArC} erfordert einen Winkel $\omega_{WM} \in \{\Re^+ |\ 0 ^\circ \ge \omega_{WM} \le 360^\circ\}$, der vom unterem linken Eckpunkt des Würfel Markers abhängt. Dies wird gewährleistet indem mit der Funktion \texttt{computeAngle} der kompatible Winkel zwischen dem entsprechenden Eckpunkt des \textit{ArUco} Markers $p_{ul}$ und dem Schwerpunkt des Rechtecks $c_{RR}$ mit der Formel \ref{equ:OmegaWinkel} berechnet wird. Dieser Umstand wird darin begründet, dass eine einheitliche Ausrichtung aller Würfel Marker gewährleistet sein muss um die generierten Daten für weitere architektonische Planungsschritte zu verwenden. Während die Reihenfolge der \textit{ArUco} Marker zuverlässig an dem unterem linken Punkt orientiert ist, stellte sich heraus, dass die Reihenfolge der vier Eckpunkte eines \texttt{RotatedRect} unbeständig ist. Somit ist es unvermeidbar die Eckpunkte der \textit{ ArUco Marker} als Referenzpunkt zu setzen und im Falle einer nicht Detektion den Winkel der letzten Iteration zu verwenden. 
+\begin{equation}
+\label{equ:OmegaWinkel}
+\omega_{WM} = \arccos \frac{u \times o}{\|u\|*\|o\|} 
+\end{equation}
+\begin{equation}
+u = c_{RR} - \begin{pmatrix}
+const\\ 0
+\end{pmatrix}  -c_{RR}
+\end{equation}
+\begin{equation}
+o=p_{ul}-c_{RR}
+\end{equation}
+Weitere essentielle Informationen
+
+std::vector< cv::Point3d > tvecs; \ref{sec:planeCalib}
+cv::Point3d estimatedCenter; \ref{sec:planeCalib} 
+
+\subsection{Verfolgung der Identitäten}\todo[inline]{Vera}
 
 \newpage
