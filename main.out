@@ -77,4 +77,5 @@
 \BOOKMARK [1][-]{section.9}{Steckbrief}{}% 77
 \BOOKMARK [1][-]{section.10}{Anhang}{}% 78
 \BOOKMARK [2][-]{subsection.10.1}{MArC ReadMe-Datei}{section.10}% 79
-\BOOKMARK [2][-]{subsection.10.2}{interpretTCPMarkerData\(\)-Methode}{section.10}% 80
+\BOOKMARK [2][-]{subsection.10.2}{startTCPServer\(\)-Methode}{section.10}% 80
+\BOOKMARK [2][-]{subsection.10.3}{interpretTCPMarkerData\(\)-Methode}{section.10}% 81
