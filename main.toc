@@ -37,6 +37,7 @@
 \contentsline {subsection}{\numberline {4.3}Netzwerk}{26}{subsection.4.3}
 \contentsline {subsubsection}{\numberline {4.3.1}Serverseitige Netzwerkanbindung}{26}{subsubsection.4.3.1}
 \contentsline {subsubsection}{\numberline {4.3.2}Client-seitige Netzwerkanbindung}{26}{subsubsection.4.3.2}
+<<<<<<< HEAD
 \contentsline {subsection}{\numberline {4.4}Starten des Systems}{26}{subsection.4.4}
 \contentsline {subsection}{\numberline {4.5}Men\IeC {\"u}f\IeC {\"u}hrung}{26}{subsection.4.5}
 \contentsline {subsubsection}{\numberline {4.5.1}Men\IeC {\"u}s}{27}{subsubsection.4.5.1}
@@ -82,3 +83,53 @@
 \contentsline {section}{\numberline {9}Steckbrief}{44}{section.9}
 \contentsline {section}{\numberline {10}Anhang}{44}{section.10}
 \contentsline {subsection}{\numberline {10.1}\emph {MArC} ReadMe-Datei}{44}{subsection.10.1}
+=======
+\contentsline {paragraph}{Aufbauen der Netzwerkverbindung}{26}{section*.53}
+\contentsline {paragraph}{Daten\IeC {\"u}bertragung}{26}{section*.54}
+\contentsline {subsection}{\numberline {4.4}Starten des Systems}{28}{subsection.4.4}
+\contentsline {subsection}{\numberline {4.5}Men\IeC {\"u}f\IeC {\"u}hrung}{28}{subsection.4.5}
+\contentsline {subsubsection}{\numberline {4.5.1}Men\IeC {\"u}s}{28}{subsubsection.4.5.1}
+\contentsline {subsubsection}{\numberline {4.5.2}Ablauf der Men\IeC {\"u}f\IeC {\"u}hrung}{30}{subsubsection.4.5.2}
+\contentsline {subsection}{\numberline {4.6}Kontextmen\IeC {\"u}}{32}{subsection.4.6}
+\contentsline {subsection}{\numberline {4.7}Marker Handles}{32}{subsection.4.7}
+\contentsline {subsubsection}{\numberline {4.7.1}Men\IeC {\"u}f\IeC {\"u}hrung}{33}{subsubsection.4.7.1}
+\contentsline {subsubsection}{\numberline {4.7.2}Architektur Berechnung}{33}{subsubsection.4.7.2}
+\contentsline {subsection}{\numberline {4.8}Table Men\IeC {\"u}}{34}{subsection.4.8}
+\contentsline {subsubsection}{\numberline {4.8.1}Szenen Management}{34}{subsubsection.4.8.1}
+\contentsline {subsubsection}{\numberline {4.8.2}Speichern von Szenen}{34}{subsubsection.4.8.2}
+\contentsline {paragraph}{Dateiaufbau einer gespeicherten Szene}{35}{section*.76}
+\contentsline {paragraph}{Vorgehen der Speicherung}{35}{section*.77}
+\contentsline {paragraph}{Darstellen von gespeicherten Szenen}{35}{section*.78}
+\contentsline {subsubsection}{\numberline {4.8.3}Laden von Szenen}{36}{subsubsection.4.8.3}
+\contentsline {paragraph}{Vorgehen beim Laden}{36}{section*.80}
+\contentsline {subsubsection}{\numberline {4.8.4}Match Modus}{37}{subsubsection.4.8.4}
+\contentsline {section}{\numberline {5}Tracking Programm}{37}{section.5}
+\contentsline {subsection}{\numberline {5.1}uEye Ansteuerung}{37}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Kalibrierung}{38}{subsection.5.2}
+\contentsline {subsubsection}{\numberline {5.2.1}Kamerakalibrierung}{39}{subsubsection.5.2.1}
+\contentsline {subsubsection}{\numberline {5.2.2}Kalibrierung des Arbeitsbereichs}{42}{subsubsection.5.2.2}
+\contentsline {subsubsection}{\numberline {5.2.3}Kalibrierungsfehler}{43}{subsubsection.5.2.3}
+\contentsline {subsubsection}{\numberline {5.2.4}M\IeC {\"o}gliche Fehlerquellen}{43}{subsubsection.5.2.4}
+\contentsline {subsection}{\numberline {5.3}Marker Detektion}{44}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}Green Keying}{44}{subsection.5.4}
+\contentsline {subsection}{\numberline {5.5}ArUco Marker Tracking}{44}{subsection.5.5}
+\contentsline {subsection}{\numberline {5.6}Marker Objekt}{44}{subsection.5.6}
+\contentsline {subsection}{\numberline {5.7}Zuordnung der Identit\IeC {\"a}ten}{44}{subsection.5.7}
+\contentsline {section}{\numberline {6}Ausblick}{45}{section.6}
+\contentsline {subsection}{\numberline {6.1}Trackingmethoden}{45}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}AR Erweiterung mit der Webcam}{45}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Daten als Excel Tabelle}{45}{subsection.6.3}
+\contentsline {subsection}{\numberline {6.4}Validierung}{45}{subsection.6.4}
+\contentsline {section}{\numberline {7}Projektmanagement}{45}{section.7}
+\contentsline {subsection}{\numberline {7.1}Zeitplanung}{45}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}Gant Chart}{45}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.3}Planungsmethoden}{45}{subsection.7.3}
+\contentsline {subsection}{\numberline {7.4}Reflexion}{45}{subsection.7.4}
+\contentsline {subsubsection}{\numberline {7.4.1}Kommuniktion im Team und nach Au\IeC {\ss }en}{45}{subsubsection.7.4.1}
+\contentsline {subsubsection}{\numberline {7.4.2}Probleme}{46}{subsubsection.7.4.2}
+\contentsline {section}{\numberline {8}Zusammenfassung}{46}{section.8}
+\contentsline {section}{\numberline {9}Steckbrief}{46}{section.9}
+\contentsline {section}{\numberline {10}Anhang}{46}{section.10}
+\contentsline {subsection}{\numberline {10.1}\emph {MArC} ReadMe-Datei}{46}{subsection.10.1}
+\contentsline {subsection}{\numberline {10.2}\texttt {interpretTCPMarkerData()}-Methode}{54}{subsection.10.2}
+>>>>>>> e44842ad275add5601c89e3ccc02282f051c9bff
