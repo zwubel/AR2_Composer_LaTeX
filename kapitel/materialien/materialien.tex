@@ -160,7 +160,9 @@ Der in Abbildung~\ref{fig:schachbrettKalib} gezeigte Kalibrierungshelfer wird f�
 	\label{fig:schachbrettKalib}
 \end{figure}
 
-\subsubsection{Kalibrierungscontroller zur Arbeitsbereichskalibrierung} \label{sec:calibController} \todo[inline]{Laura}
+\subsubsection{Kalibrierungscontroller zur Arbeitsbereichskalibrierung} \label{sec:calibController} \todo[inline, color=green]{Laura}
+Für die Kalibrierung des Arbeitsbereiches, die in Kapitel \ref{sec:planeCalib} beschrieben wird, wurde ein Controller der \textit{HTC Vive} wie in Abbildung \ref{fig:KontrollerMarc} zu sehen verändert. Zum einen wurde ein \textit{ArUco} Marker mit der ID $49$ auf der Oberseite des Controllers befestigt und zum anderen wurde eine Unterlage angefertigt, die verhindern soll, dass der Controller während Kalibrierung wackelt.\\
+Bei der Anbringung des eben erwähnten \textit{ArUco} Markers, der in Abbildung \ref{fig:AllUsedArucoMarker} zu sehen ist, ist die genau Positionierung entscheidend. Er muss genau mittig unter dem Ring des Controllers aufgebracht werden, so wie es auf der Abbildung zu sehen ist. Dies ist entscheidend für die das spätere Verfahren, dass auf korrespondierenden Punktepaaren basiert (vgl. Kapitel \ref{sec:Korrespondenz}). Um eine leichtere Aufbringung und gute Ausrichtung des \textit{ArUco} Markers zu vereinfachen, wurde dafür eine kleine Auflagefläche am  Kalibrierungscontroller angebracht. Diese ist so angebracht, dass der Mittelpunkt des \textit{ArUco} Markers sich möglichst genau an der Stelle befindet, wo auch die Position des Controllers aus Unity heraus gemessen wird.
 
 	
 \subsection{Obsolete Hardware}\label{sec:obsoleteHardware}\todo[inline, color=green] {Lukas}
