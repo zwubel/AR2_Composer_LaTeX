@@ -365,7 +365,8 @@ Nach vollständiger Kalibrierung des Systems wird sowohl die Kamerakalibrierung,
 Die Beschreibung des Algorithmus in den nächsten beiden Kapiteln umfasst sowohl eine mathematische Darstellung, als auch eine Darstellung der konkreten Umsetzung in Quellcode. Letzteres ist bewusst kurz gehalten, da für die Umsetzung der einzelnen Teilschritte vorwiegend Methoden aus der \textit{OpenCV}-Library (vgl. Kapitel~\ref{sec:OpenCV}) benutzt worden sind. Alle Grundlegenden Definitionen für die Rechenschritte können in Kapitel~\ref{sec:DefKoords} nachgelesen werden. Die Schnittstelle in Form der \texttt{Calibration.cpp}-Klasse wird in Kapitel~\ref{sec:CalibSteuerung} eingeführt.\\
 Trotz einer sorgfältigen Umsetzung der in den nächsten beiden Kapiteln beschriebenen Kalibrierungsschritte, ist es nicht gelungen, den Aluminiumwürfel und den gerenderten Würfel vollständig zur Deckung zu bringen. Der entstandene Fehler sowie mögliche systembedingte Fehlerquellen werden in~\ref{sec:calibError} und in~\ref{sec:calibErrorSources} beschrieben. 
 
-\subsubsection{Korrespondierende Punktepaare} \label{sec:Korrespondenz} \todo[inline]{Laura}
+\subsubsection{Korrespondierende Punktepaare} \label{sec:Korrespondenz} \todo[inline, color=green]{Laura}
+Im Zusammenhang mit der Kalibrierung des Systems von \textit{MaRC} werden von einem Marker Koordinaten in Bildkoordinaten und die entsprechenden Koordinaten in der Unitywelt benötigt. Hierbei spricht man von korrespondierenden Punkten. Genauer gesagt wird für diese Zwecke der Kalibrierungscontroller (vgl. Kapitel \ref{sec:calibController}) verwendet. Auf diesem befindet sich ein \textit{ArUco} MArker (vgl. Kapitel \ref{sec:aruco}). Der Mittelpunkt, also das \texttt{estimatedCenter}, kann für jede Position über das in Kapitel \ref{sec:ArucoMarkerTracking} beschriebene Trackingverfahren ermittelt werden und wird für jeden erkannten Marker auf Trackingseite abgespeichert. Dies geschieht bei der Kalibrierung genau immer dann, wenn der Trigger am Controller der \textit{HTC Vive} gedrückt wird. Somit kann in Unity ebenfalls die entsprechende Position abgespeichert werden. Eine Position liegt also sowohl in Bild- als auch in Unitykoordinaten vor (vgl. Tabelle \ref{tab:camCalibParam}). 
 
 \subsubsection{Definition der Koordinatensysteme} \label{sec:DefKoords} \todo[inline, backgroundcolor=green]{Laura}
 In Abbildung~\ref{fig:cameraCalib} sind die Zusammenhänge zwischen dem Projektionszentrumkoordinatensystem der Kamera, sowie deren Bildebene und dem Weltkoordinatensystem zu sehen. Im Gegensatz zu der Abbildung und den in Kapitel~\ref{sec:camCalib} erwähnten Kalibrierungsansätzen reicht die Umrechnung von Bildkoordinaten in Weltkoordinaten, im vorliegenden Fall, nicht aus. Es muss eine Umrechnung der Bildkoordinaten in den Unity Raum erfolgen, um zu gewährleisten, dass die gerenderten Würfel anschließend deckungsgleich mit den Aluminiumwürfeln sind. Koordinaten des Unity Raumes werden im Folgenden Unitykoordinaten genannt.\\
@@ -418,22 +419,6 @@ Um die verschiedenen Koordinatensysteme bei den Ausführungen in den Kapiteln \r
 	\label{tab:camCalibParam}
 \end{table}
 
-\subsubsection{Schnittstelle der beiden Kalibrierung} \label{sec:CalibSteuerung}\todo[inline, backgroundcolor=yellow]{Laura}
-Wie eingangs erwähnt, dient die \texttt{Calibration.cpp}-Klasse als Schnittstelle für die Kamerakalibrierung (vgl. Kapitel \ref{sec:camCalib}) und die Kalibrierung des Arbeitsbereichs (vgl. Kapitel \ref{sec:planeCalib}). \\
-
-\lstinputlisting[title=\lstname, caption={\texttt{runPoseEstimation()}-Methode in \texttt{Calibration.cpp}}, label=lst:runPoseEstimation, language={C++}, linerange=17-23, firstnumber=17]{Quellcode/Calibration.cpp} 
-
-In dem Quellcode-Auszug~\ref{lst:runPoseEstimation} wird die \texttt{runPoseEstimation()}-Methode gezeigt, welche dafür zuständig ist, die \texttt{generateCamMatAndDistMat()}-Methode (vgl. Quellcode-Auszug \ref{lst:generateCamMatAndDistMat}) aus der \texttt{PoseEstimation.cpp}-Klasse aufzurufen. Die daraus resultierenden Schritte werden in Kapitel \ref{sec:camCalib} erläutert. Dort wird ebenso auf die \texttt{distCoeffs}, also die Koeffizienten zur Behebung der Linsenverzeichnung, und die \texttt{camMatrix} -- dort $M_{intrinsisch}$ genannt -- eingegangen. Im vorliegenden Quellcode-Auszug werden diese von der \texttt{PoseEstimation.cpp}-Klasse an die \texttt{PlaneAndAffineCalibration.cpp}-Klasse weitergegeben.\\
-Wie in Kapitel \ref{sec:planeCalib} erklärt werden mittels der Arbeitsbereichskalibrierung zwei doch recht unterschiedliche Ziele verfolgt. Zum einen wird wie in Quellcode-Auszug \ref{lst:getPlaneCalibData} gezeigt der tatsächliche Arbeitsbereich der Anwendung festgelegt und zum anderen wird die affine Transformation von Weltkoordinaten in Unitykoordinaten berechnet (vgl. Quellcode-Auszug \ref{lst:generateAffineAndPlaneCalib}).\\
-Bei ersterem Quellcode-Auszug wird entweder ein neuer Arbeitsbereich mittels der \texttt{getPlaneCalibData()}-Methode ermittelt, oder mit dem Aufruf der \texttt{loadImagePlane()}-Methode ein gespeicherter Arbeitsbereich geladen (vgl. Kapitel \ref{sec:saveCalib}).
-
-\lstinputlisting[title=\lstname, caption={\texttt{getPlaneCalibData()}-Methode in \texttt{Calibration.cpp}}, label=lst:getPlaneCalibData, language={C++}, linerange=51-55, firstnumber=51]{Quellcode/Calibration.cpp} 
-
-Die affine Transformation wird auf Grundlage der korrespondierenden Punktepaare (vgl. Kapitel \ref{sec:Korrespondenz}) berechnet. Hierzu wird wie in Quellcode-Auszug \ref{lst:generateAffineAndPlaneCalib} gezeigt \textcolor{red}{Fertig schreiben wenn PLaneCalib fertig} 
-
-\lstinputlisting[title=\lstname, caption={\texttt{generateAffineAndPlaneCalib()}-Methode in \texttt{Calibration.cpp}}, label=lst:generateAffineAndPlaneCalib, language={C++}, linerange=37-46, firstnumber=37]{Quellcode/Calibration.cpp} 
-
-\subsubsection{Speichern und Laden der Kalibrierungen}\label{sec:saveCalib}\todo[inline]{Laura}
 
 \subsubsection{Kamerakalibrierung}\label{sec:camCalib}\todo[inline, backgroundcolor=green]{Laura}
 
@@ -529,18 +514,6 @@ Die Umrechnung von Kamerakoordinaten in Weltkoordinaten kann dann mit der invert
 \end{equation}
 
 An diesem Punkt hat man die Kamerakoordinaten vollständig in Weltkoordinaten überführt und sucht nun eine Transformationsmatrix um diese Punkte auf ihre korrespondierenden Punkte (vgl. Kapitel \ref{sec:Korrespondenz}) in Unitykoordinaten abzubilden. Die dazu benötigte affine 3D-Transformation wird in Kapitel \ref{sec:planeCalib} erläutert.
-
-\item[Umsetzung in Quellcode:] Die für die Kamerakalibrierung relevanten Klassen sind zum einen die \texttt{PoseEstimation.cpp} und zum anderen die \texttt{calibWithChessboard.cpp}. An dieser Stelle werden nur die Kernstücke des Algorithmus erwähnt und erläutert.
-
-\lstinputlisting[title=\lstname, caption={\texttt{generateCamMatAndDistMat()}-Methode in \texttt{PoseEstimation.cpp}}, label=lst:generateCamMatAndDistMat, language={C++}, linerange=24-34, firstnumber=24]{Quellcode/PoseEstimation.cpp} 
-
-Die \texttt{generateCamMatAndDistMat()}-Methode aus der \texttt{PoseEstimation.cpp}-Klasse dient als Schnittstelle der Kamerakalibrierung. Hier werden neben der \texttt{cameraMatrix} ($M_{intrinsisch}$ aus Gleichung \ref{equ:intrinsic}) auch die extrinsischen Parameter in Form von \texttt{rvecs} (Matrix $R$ aus Gleichung \ref{equ:Rotation}) und \texttt{tvecs} (Vektor $t$ aus Gleichung \ref{equ:Translation}) gesammelt. Zudem werden die \texttt{disCoeffs} (Koeffizienten zur Behebung der Linsenverzeichnung) auf null gesetzt. 
-
-Die wichtigsten zwei Methoden der \texttt{calibWithChessboard.cpp}-Klasse sind im Anhang in den Quellcode-Auszügen \ref{lst:runCalibration} und \ref{lst:runCalibWithChessboard} dargestellt. 
-
-\lstinputlisting[title=\lstname, caption={Auszug aus der \texttt{runCalibration()}-Methode in \texttt{calibWithChessboard.cpp}}, label=lst:runCalibration, language={C++}, linerange=90-91, firstnumber=90]{Quellcode/calibWithChessboard.cpp} 
-
-In dem Quellcode-Auszug \ref{lst:runCalibration} wird der Aufruf der \textit{OpenCV}-Methode \texttt{calibrateCamera()} gezeigt, die sowohl die intrinsischen, als auch die extrinsischen Kameraparameter auf Grundlage mehrerer Aufnahmen eines Kalibrierungsmusters, in diesem Fall dem Schachbrett aus Abbildung \ref{fig:schachbrettKalib}, bestimmt.  
 \end{description}
 
 Zu diesem Zeitpunkt sollte nun das Kamerakoordinatensystem mit dem Weltkoordinatensystem übereinstimmen und es kann sich im nächsten Schritt darum gekümmert werden, dass das Kamerakoordinatensystem verschoben und gedreht wird. Dieser Schritt und alle weiteren Schritte, die im Zusammenhang mit der Transformation von Kamerakoordinaten in Weltkoordinaten bzw. Weltkoordinaten in Unitykoordinaten stehen, werden in Kapitel~\ref{sec:planeCalib} erläutert. Hierbei sei noch einmal angemerkt, dass eine Kamerakalibrierung nur mit anschließender Kalibrierung des Arbeitsbereiches durchgeführt werden kann.
@@ -554,10 +527,6 @@ Allgemein betrachtet hat die Arbeitsbereichskalibrierung zwei verschiedene Aufga
 \item[Begrenzung des Arbeitsbereichs] %4 PunktepaareThe user have to make sure to form up a rectangle which is equal to his desired workspace. Starting in the lower left corner and going clockwiseÜber die ersten ... rausziehen setzt auf Null; 
 \item[Affine Transformation] %21 Punktepaare.
 \end{description}
-
-
-
-
 
 
 %Entsprechend Formel~\ref{equ:SensInWorld} muss für den letzten Schritt eine Transformationsmatrix von Weltkoordinaten in Unitykoordinaten gefunden werden. Dies geschieht indem man die korrespondierenden Koordinatenpaare einer Controllerposition in Unity und in bereits in Weltkoordinaten gebrachten Sensorkoordinaten ineinander überführt, d.h. eine affine Transformation durchführt. Die Controlerpositionen in Weltkoordinaten werden somit auf die in Unitykoordinaten abgebildet.
@@ -580,6 +549,17 @@ Neben der Rechenungenauigkeit und Rundungsfehlern, die sich über die diversen R
 
 Zusätzliche Registrierungsfehler können durch Latenz entstehen. Nämlich immer dann, wenn eine Zeitdifferenz zwischen der Messung der Position in Kamerakoordinaten und der eigentlichen Darstellung nach entsprechender
 Verarbeitung entsteht. Solche Systemverzögerungen werden allerdings nur bei Bewegungen sichtbar und sind deshalb für die beobachteten Fehler bei ruhendem Aluminiumwürfel nicht als mögliche Fehlerquelle auszumachen. 
+\subsubsection{Schnittstelle der beiden Kalibrierung} \label{sec:CalibSteuerung}\todo[inline, backgroundcolor=yellow]{Laura}
+Wie eingangs erwähnt, dient die \texttt{Calibration.cpp}-Klasse als Schnittstelle für die Kamerakalibrierung (vgl. Kapitel \ref{sec:camCalib}) und die Kalibrierung des Arbeitsbereichs (vgl. Kapitel \ref{sec:planeCalib}). Diese Schnittstelle stellt Methoden für beide Kalibrierungen, in denen alle erforderlichen Funktionen ausgeführt werden, und die benötigten Zugriffe auf die generierten Daten zur Verfügung.
+
+Die \texttt{runPoseEstimation()}-Methode ist zuständig für die Generierung der Kameramatrix \texttt{camMatrix}  ($M_{intrinsisch}$ aus Gleichung \ref{equ:intrinsic})  und die Koeffizienten zur Behebung der Linsenverzeichnung \texttt{distCoeffs}. Beiden werden mit dem Modul \texttt{calib3D} der \textit{OpenCV} Bibliothek in der Klasse \texttt{calibWithChessboard.cpp} berechnet und anschließend in der Methode \texttt{generateCamMatAndDistMat} in Klasse \texttt{PoseEstimation.cpp} für spätere  Verwendung gespeichert und allen anderen Klassen der Tracking Software zur Verfügung gestellt. Vor dem Speichern und der Weiterverbreitung werden die \texttt{disCoeffs} auf null gesetzt. Die eigentlichen Bestimmung der Matrizen findet in der \textit{OpenCV}-Methode \texttt{calibrateCamera}  auf Grundlage von mehreren Aufnahmen eines fest definierten Kalibrierungsmusters statt. In diesem Fall wird das Schachbrett aus Abbildung \ref{fig:schachbrettKalib} verwendet. 
+
+Wie in Kapitel \ref{sec:planeCalib} erklärt werden mittels der Arbeitsbereichskalibrierung zwei doch recht unterschiedliche Ziele verfolgt. Zum einen wird der tatsächliche Arbeitsbereich festgelegt und zum anderen wird die affine Transformation von Weltkoordinaten in Unitykoordinaten berechnet. Beide Aufgaben werden in der Schnittstelle mit der Funktion \texttt{generateAffineAndPlaneCalib} aufgerufen, welche die entstprechenden Implementierungen in der Klasse \texttt{PlaneAndAffineCalibration.cpp} ansteuert und die Ergebnisse in Textfiles abspeichert. Die Methoden \texttt{loadAffineTransform} und \texttt{loadImagePlane} laden bei keiner neuen Kalibrierung, die zuletzt abgespeicherten Daten (vgl. Kapitel \ref{sec:saveCalib}). \\
+
+Die affine Transformation wird auf Grundlage der korrespondierenden Punktepaare (vgl. Kapitel \ref{sec:Korrespondenz}) berechnet. Hierzu wird in der Methode \texttt{computeAffineTransformation} die Funktion \texttt{estimateAffine3D} der \textit{OpenCV} Bibliliothek aufrufen, welche die affine Transformationsmatrix mit Hilfe des RANSAC Algorithmus abschätzt \cite{articel:RANSAC}.
+
+\subsubsection{Speichern und Laden der Kalibrierungen}\label{sec:saveCalib}\todo[inline, color=yellow]{Laura}
+Sowohl die Kamerakalibrierung als auch die Arbeitsbereichskalibrierung werden automatisch nach der Erstellung abgespeichert. Das gibt dem Benutzer beim nächsten Ausführen des System die Möglichkeit, wie in dem \texttt{SelectCalibrationTarget}-Menü (vgl. Kapitel \ref{sec:menuAblauf}) zu sehen, auszuwählen, ob entweder beide Kalibrierungen ausgeführt werden sollen, oder ob es ausreicht nur die Arbeitsbereichskalibrierung bzw. gar keine Kalibrierung durchzuführen. In letzterem Fall werden dann beide Kalibrierungen geladen und im vorletzten Fall wird die Kamerakalibrierung geladen und anschließend eine neue Arbeitsbereichskalibrierung durchgeführt. 
 
 \subsection{Marker Detektion}\todo[inline, color = yellow]{Vera}
 
@@ -604,7 +584,7 @@ Im binarisierte Bild werden im Anschluss zur Detektierung der OBB die Rechteckka
 	\caption{Screenshot des Tracking Programms. Die weißen Konturen sind die detektierten grünen Rechtecke. Alle Beschriftungen der Marker zeigen die resultierenden Winkel an und der äußere rote Rahmen stellt das kalibrierte Spielfeld dar.}
 	\label{fig:DebugScreenshot}
 \end{figure}
-\subsubsection{ArUco Marker Tracking}\todo[inline]{Vera}
+\subsubsection{ArUco Marker Tracking}\label{sec:ArucoMarkerTracking}\todo[inline]{Vera}
 
 \subsection{Marker Objekt Definition}\todo[inline, color=yellow]{Vera}
 Die Marker Objekte der Klasse \texttt{Marker.cpp} speichern alle benötigten Parameter und Informationen der jeweiligen Würfel Marker. Zu diesen Daten gehören unter anderem die Registierungs-ID (RID)\texttt{id}, die aktuelle \textit{ArUco} ID (AID) \texttt{arucoID} des zugeteilten Würfel Markers sowie die entsprechende OBB \texttt{rect} des letzten Frames. Weitere boolesche Variablen wie \texttt{isVis} und \texttt{isTrack} geben Auskunft über die Sichtbarkeit der registrierten Würfel Marker in der letzten Aufnahme und ob diese Registrierung bereits in der aktuellen Iteration des Tracking Algorithmus verfolgt wurde.

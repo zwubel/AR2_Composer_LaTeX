@@ -21,15 +21,16 @@
 \contentsline {subsubsection}{\numberline {3.1.7}ArUco Marker}{17}{subsubsection.3.1.7}
 \contentsline {subsubsection}{\numberline {3.1.8}W\IeC {\"u}rfel Marker}{18}{subsubsection.3.1.8}
 \contentsline {subsubsection}{\numberline {3.1.9}Schachbrett-Kalibrierungshelfer zur Kamerakalibrierung}{19}{subsubsection.3.1.9}
-\contentsline {subsection}{\numberline {3.2}Obsolete Hardware}{20}{subsection.3.2}
-\contentsline {subsubsection}{\numberline {3.2.1}Ovrvision Pro}{20}{subsubsection.3.2.1}
-\contentsline {subsubsection}{\numberline {3.2.2}Webcam}{21}{subsubsection.3.2.2}
-\contentsline {subsection}{\numberline {3.3}Software}{22}{subsection.3.3}
-\contentsline {subsubsection}{\numberline {3.3.1}Unity}{22}{subsubsection.3.3.1}
-\contentsline {subsubsection}{\numberline {3.3.2}Visual Studio 2015}{22}{subsubsection.3.3.2}
-\contentsline {subsubsection}{\numberline {3.3.3}OpenCV}{22}{subsubsection.3.3.3}
-\contentsline {subsubsection}{\numberline {3.3.4}Steam VR}{23}{subsubsection.3.3.4}
-\contentsline {subsubsection}{\numberline {3.3.5}Windows Sockets (Winsock)}{23}{subsubsection.3.3.5}
+\contentsline {subsection}{\numberline {3.2}Kalibrierungscontroller zur Arbeitsbereichskalibrierung}{20}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Obsolete Hardware}{20}{subsection.3.3}
+\contentsline {subsubsection}{\numberline {3.3.1}Ovrvision Pro}{20}{subsubsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.2}Webcam}{21}{subsubsection.3.3.2}
+\contentsline {subsection}{\numberline {3.4}Software}{22}{subsection.3.4}
+\contentsline {subsubsection}{\numberline {3.4.1}Unity}{22}{subsubsection.3.4.1}
+\contentsline {subsubsection}{\numberline {3.4.2}Visual Studio 2015}{22}{subsubsection.3.4.2}
+\contentsline {subsubsection}{\numberline {3.4.3}OpenCV}{23}{subsubsection.3.4.3}
+\contentsline {subsubsection}{\numberline {3.4.4}Steam VR}{23}{subsubsection.3.4.4}
+\contentsline {subsubsection}{\numberline {3.4.5}Windows Sockets (Winsock)}{23}{subsubsection.3.4.5}
 \contentsline {section}{\numberline {4}System}{24}{section.4}
 \contentsline {subsection}{\numberline {4.1}Aufbau}{24}{subsection.4.1}
 \contentsline {subsubsection}{\numberline {4.1.1}Tracking Aufbau}{24}{subsubsection.4.1.1}
@@ -37,11 +38,11 @@
 \contentsline {subsection}{\numberline {4.2}Systemvoraussetzungen}{26}{subsection.4.2}
 \contentsline {subsection}{\numberline {4.3}Netzwerk}{27}{subsection.4.3}
 \contentsline {subsubsection}{\numberline {4.3.1}Serverseitige Netzwerkanbindung}{27}{subsubsection.4.3.1}
-\contentsline {paragraph}{Aufbauen der Netzwerkverbindung}{27}{section*.53}
-\contentsline {paragraph}{Daten\IeC {\"u}bertragung}{27}{section*.54}
+\contentsline {paragraph}{Aufbauen der Netzwerkverbindung}{27}{section*.54}
+\contentsline {paragraph}{Daten\IeC {\"u}bertragung}{27}{section*.55}
 \contentsline {subsubsection}{\numberline {4.3.2}Client-seitige Netzwerkanbindung}{29}{subsubsection.4.3.2}
-\contentsline {paragraph}{Aufbauen der Netzwerkverbindung}{29}{section*.56}
-\contentsline {paragraph}{Daten\IeC {\"u}bertragung}{29}{section*.57}
+\contentsline {paragraph}{Aufbauen der Netzwerkverbindung}{29}{section*.57}
+\contentsline {paragraph}{Daten\IeC {\"u}bertragung}{29}{section*.58}
 \contentsline {subsection}{\numberline {4.4}Starten des Systems}{31}{subsection.4.4}
 \contentsline {subsection}{\numberline {4.5}Men\IeC {\"u}f\IeC {\"u}hrung}{31}{subsection.4.5}
 \contentsline {subsubsection}{\numberline {4.5.1}Men\IeC {\"u}s}{31}{subsubsection.4.5.1}
@@ -53,11 +54,11 @@
 \contentsline {subsection}{\numberline {4.7}Table Men\IeC {\"u}}{37}{subsection.4.7}
 \contentsline {subsubsection}{\numberline {4.7.1}Szenen Management}{37}{subsubsection.4.7.1}
 \contentsline {subsubsection}{\numberline {4.7.2}Speichern von Szenen}{38}{subsubsection.4.7.2}
-\contentsline {paragraph}{Dateiaufbau einer gespeicherten Szene}{38}{section*.80}
-\contentsline {paragraph}{Vorgehen der Speicherung}{39}{section*.81}
-\contentsline {paragraph}{Darstellen von gespeicherten Szenen}{39}{section*.82}
+\contentsline {paragraph}{Dateiaufbau einer gespeicherten Szene}{38}{section*.81}
+\contentsline {paragraph}{Vorgehen der Speicherung}{39}{section*.82}
+\contentsline {paragraph}{Darstellen von gespeicherten Szenen}{39}{section*.83}
 \contentsline {subsubsection}{\numberline {4.7.3}Laden von Szenen}{39}{subsubsection.4.7.3}
-\contentsline {paragraph}{Vorgehen beim Laden}{39}{section*.84}
+\contentsline {paragraph}{Vorgehen beim Laden}{39}{section*.85}
 \contentsline {subsubsection}{\numberline {4.7.4}Match Modus}{40}{subsubsection.4.7.4}
 \contentsline {section}{\numberline {5}Tracking Programm}{41}{section.5}
 \contentsline {subsection}{\numberline {5.1}uEye Ansteuerung}{41}{subsection.5.1}
@@ -71,7 +72,7 @@
 \contentsline {subsubsection}{\numberline {5.2.7}Kalibrierungsfehler}{49}{subsubsection.5.2.7}
 \contentsline {subsubsection}{\numberline {5.2.8}M\IeC {\"o}gliche Fehlerquellen}{50}{subsubsection.5.2.8}
 \contentsline {subsection}{\numberline {5.3}Marker Detektion}{50}{subsection.5.3}
-\contentsline {subsubsection}{\numberline {5.3.1}Detektion der gr\IeC {\"u}nen Rechtecke}{50}{subsubsection.5.3.1}
+\contentsline {subsubsection}{\numberline {5.3.1}Detektion der gr\IeC {\"u}nen Rechtecke}{51}{subsubsection.5.3.1}
 \contentsline {subsubsection}{\numberline {5.3.2}ArUco Marker Tracking}{52}{subsubsection.5.3.2}
 \contentsline {subsection}{\numberline {5.4}Marker Objekt Definition}{52}{subsection.5.4}
 \contentsline {subsection}{\numberline {5.5}Verfolgung und Registrierung der Marker}{53}{subsection.5.5}
@@ -91,8 +92,9 @@
 \contentsline {section}{\numberline {9}Steckbrief}{56}{section.9}
 \contentsline {section}{\numberline {10}Anhang}{56}{section.10}
 \contentsline {subsection}{\numberline {10.1}\emph {MArC} ReadMe-Datei}{56}{subsection.10.1}
-\contentsline {subsection}{\numberline {10.2}\texttt {startTCPServer()}-Methode}{64}{subsection.10.2}
-\contentsline {subsection}{\numberline {10.3}\texttt {getPointerOfMarkerVec()}-Methode}{64}{subsection.10.3}
-\contentsline {subsection}{\numberline {10.4}\texttt {interpretTCPMarkerData()}-Methode}{65}{subsection.10.4}
-\contentsline {subsection}{\numberline {10.5}\texttt {runCalibWithChessboard()}-Methode}{66}{subsection.10.5}
-\contentsline {subsection}{\numberline {10.6}\texttt {runCalibration()}-Methode}{69}{subsection.10.6}
+\contentsline {subsection}{\numberline {10.2}Schachbrett zum Ausdrucken}{65}{subsection.10.2}
+\contentsline {subsection}{\numberline {10.3}\texttt {startTCPServer()}-Methode}{66}{subsection.10.3}
+\contentsline {subsection}{\numberline {10.4}\texttt {getPointerOfMarkerVec()}-Methode}{67}{subsection.10.4}
+\contentsline {subsection}{\numberline {10.5}\texttt {interpretTCPMarkerData()}-Methode}{67}{subsection.10.5}
+\contentsline {subsection}{\numberline {10.6}\texttt {runCalibWithChessboard()}-Methode}{68}{subsection.10.6}
+\contentsline {subsection}{\numberline {10.7}\texttt {runCalibration()}-Methode}{71}{subsection.10.7}
