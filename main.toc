@@ -92,9 +92,6 @@
 \contentsline {section}{\numberline {9}Steckbrief}{56}{section.9}
 \contentsline {section}{\numberline {10}Anhang}{56}{section.10}
 \contentsline {subsection}{\numberline {10.1}\emph {MArC} ReadMe-Datei}{56}{subsection.10.1}
-\contentsline {subsection}{\numberline {10.2}Schachbrett zum Ausdrucken}{65}{subsection.10.2}
-\contentsline {subsection}{\numberline {10.3}\texttt {startTCPServer()}-Methode}{66}{subsection.10.3}
-\contentsline {subsection}{\numberline {10.4}\texttt {getPointerOfMarkerVec()}-Methode}{67}{subsection.10.4}
-\contentsline {subsection}{\numberline {10.5}\texttt {interpretTCPMarkerData()}-Methode}{67}{subsection.10.5}
-\contentsline {subsection}{\numberline {10.6}\texttt {runCalibWithChessboard()}-Methode}{68}{subsection.10.6}
-\contentsline {subsection}{\numberline {10.7}\texttt {runCalibration()}-Methode}{71}{subsection.10.7}
+\contentsline {subsection}{\numberline {10.2}\texttt {startTCPServer()}-Methode}{64}{subsection.10.2}
+\contentsline {subsection}{\numberline {10.3}\texttt {getPointerOfMarkerVec()}-Methode}{64}{subsection.10.3}
+\contentsline {subsection}{\numberline {10.4}\texttt {interpretTCPMarkerData()}-Methode}{65}{subsection.10.4}

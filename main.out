@@ -83,9 +83,6 @@
 \BOOKMARK [1][-]{section.9}{Steckbrief}{}% 83
 \BOOKMARK [1][-]{section.10}{Anhang}{}% 84
 \BOOKMARK [2][-]{subsection.10.1}{MArC ReadMe-Datei}{section.10}% 85
-\BOOKMARK [2][-]{subsection.10.2}{Schachbrett zum Ausdrucken}{section.10}% 86
-\BOOKMARK [2][-]{subsection.10.3}{startTCPServer\(\)-Methode}{section.10}% 87
-\BOOKMARK [2][-]{subsection.10.4}{getPointerOfMarkerVec\(\)-Methode}{section.10}% 88
-\BOOKMARK [2][-]{subsection.10.5}{interpretTCPMarkerData\(\)-Methode}{section.10}% 89
-\BOOKMARK [2][-]{subsection.10.6}{runCalibWithChessboard\(\)-Methode}{section.10}% 90
-\BOOKMARK [2][-]{subsection.10.7}{runCalibration\(\)-Methode}{section.10}% 91
+\BOOKMARK [2][-]{subsection.10.2}{startTCPServer\(\)-Methode}{section.10}% 86
+\BOOKMARK [2][-]{subsection.10.3}{getPointerOfMarkerVec\(\)-Methode}{section.10}% 87
+\BOOKMARK [2][-]{subsection.10.4}{interpretTCPMarkerData\(\)-Methode}{section.10}% 88
