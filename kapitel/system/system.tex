@@ -521,19 +521,29 @@ An diesem Punkt hat man die Kamerakoordinaten vollständig in Weltkoordinaten ü
 Zu diesem Zeitpunkt sollte nun das Kamerakoordinatensystem mit dem Weltkoordinatensystem übereinstimmen und es kann sich im nächsten Schritt darum gekümmert werden, dass das Kamerakoordinatensystem verschoben und gedreht wird. Dieser Schritt und alle weiteren Schritte, die im Zusammenhang mit der Transformation von Kamerakoordinaten in Weltkoordinaten bzw. Weltkoordinaten in Unitykoordinaten stehen, werden in Kapitel~\ref{sec:planeCalib} erläutert. Hierbei sei noch einmal angemerkt, dass eine Kamerakalibrierung nur mit anschließender Kalibrierung des Arbeitsbereiches durchgeführt werden kann.
 
 
-\subsubsection{Kalibrierung des Arbeitsbereichs}\label{sec:planeCalib} \todo[inline, color=yellow]{Laura}
+\subsubsection{Kalibrierung des Arbeitsbereichs}\label{sec:planeCalib} \todo[inline, color=green]{Laura}
 Wie bereits beschrieben, kann eine Kalibrierung des Arbeitsbereichs entweder mit vorheriger Kamerakalibrierung oder einzeln durchgeführt werden. In letzterem Fall wird dann die zuletzt verwendete Kamerakalibrierung geladen. Die Durchführung der Kalibrierung wird in der ReadMe-Datei (vgl.~\ref{sec:readMe}) erläutert. Grob gesagt, werden über Knopfdruck am Kalibrierungscontroller (vgl. \ref{fig:KontrollerMarc}) 25 seiner Positionen sowohl in Kamerakoordinaten, als auch in Unitykoordinaten gespeichert. Man erhält also 25 korrespondierende Punktepaare (vgl. Kapitel \ref{sec:Korrespondenz}).\\
 Allgemein betrachtet hat die Arbeitsbereichskalibrierung zwei verschiedene Aufgaben: Zum einen wird hierbei ein Bereich festgelegt, indem die Objekte getrackt werden und zum anderen wird mittels der verschiedenen Positionen der Kalibrierungspunkte, die affine Transformationsmatrix bestimmt, die im weiteren Verlauf als Umrechnung zwischen Kamerakoordinaten und Unitykoordinaten fungiert. Beide Teilbereiche werden in den Absätzen \grqq Begrenzung des Arbeitsbereichs\grqq ~bzw. \grqq Affine Transformation\grqq ~weitergehend erläutert.
 	
 \begin{description}
-\item[Begrenzung des Arbeitsbereichs] Die ersten 4 Punktepaare dienen dazu den Arbeitsbereich zu definieren. Sie müssen in einer klardefinierten Reihenfolge, nämlich im Uhrzeigersinn und in der linken unteren Ecke beginnend. Dabei wird bei beiden Systemen (Tracking und Unity) unterschiedlich vorgegangen, was zu leicht abweichenden Arbeitsbereichen führen kann. Der Unterschied ist allerdings vernachlässigbar, wenn der Benutzer sich an den Tischkanten orientiert und beispielsweise die Kante der Auflage des Kalibrierungscontrollers (vgl. Kapitel \ref{sec:calibController} daran ausrichtet und somit eine ungefähr rechteck-förmige Fläche aufspannt. \\
+\item[Begrenzung des Arbeitsbereichs] Die ersten 4 Punktepaare dienen dazu den Arbeitsbereich zu definieren. Sie müssen in einer klar definierten Reihenfolge, nämlich im Uhrzeigersinn und in der linken unteren Ecke beginnend, durchgeführt werden. Dabei wird bei beiden Systemen (Tracking und Unity) unterschiedlich vorgegangen, was zu leicht abweichenden Arbeitsbereichen führen kann. Der Unterschied ist allerdings vernachlässigbar, wenn der Benutzer sich an den Tischkanten orientiert und beispielsweise die Kante der Auflage des Kalibrierungscontrollers (vgl. Kapitel \ref{sec:calibController}) daran ausrichtet und somit eine ungefähr rechteckförmige Fläche aufspannt. \\
 Für die Tracking-Anwendung reicht es aus, den 1. und 3. Punkt zu nehmen und damit ein Rechteck aufzuspannen. Dies geschieht in der \texttt{computePlaneCalibration()}-Methode in der \texttt{PlaneAndAffineCalibration.cpp}-Klasse. Der so definierte Arbeitsbereich dient hier vor allem dazu, zu entscheiden, ob ein Marker noch im Anwendungsbereich ist und somit fortlaufend getrackt werden muss, oder ob er diesen Bereich verlassen hat und seine ID, sowie alle anderen Eigenschaften zurückgesetzt werden müssen (vgl. Kapitel \ref{sec:ID}).\\
 Auf Unity-Seite werden alle 4 Punkte genutzt um den Arbeitsbereich festzulegen. \textcolor{red}{Lukas bitte helfen :)}
 
-\item[Affine Transformation] %21 Punktepaare.
-\end{description}
+\item[Affine Transformation] Die restlichen 21 Controller-Positionen werden genutzt, um eine affine Transformation von Weltkoordinaten in Unitykoordinaten zu finden. An dieser Stelle kann davon ausgegangen werden, dass die Mittelpunkte der \textit{ArUco} Marker über die in Kapitel \ref{sec:camCalib} beschriebene Transformation bereits in Weltkoordinaten vorliegen. Dabei werden die Position nicht wie bei der Begrenzung des Arbeitsbereichs für beide Systeme (Tracking und Unity) getrennt verarbeitet, sondern sie werden als korrespondierende Punkte (vgl. Kapitel \ref{sec:Korrespondenz}) verstanden. Mit anderen Worten, soll in diesem Schritt des Algorithmus jeder dieser 21 Punkte in Weltkoordinaten, möglichst fehlerfrei auf sein entsprechendes Pendant in Unitykoordinaten projiziert werden. \\
+Es gilt also die in Gleichung \ref{equ:affin} der Vollständigkeit halber aufgeführte Matrix zu bestimmen. Da es geeignete Werte für $a, b, c$ und $d$, sowie die Translationsparameter $t_x$ und $t_y$ zu finden gilt, hat die gesuchte Transformation 6 Freiheitsgrade. Zur Abschätzung der bestmöglichen Matrix $M_{affin}$ eignet sich vor allem der RANSAC-Algorithmus \cite{articel:RANSAC}. Dieser wird ebenso für die in diesem Projekt verwendete \textit{OpenCV}-Methode \texttt{estimateAffine3D()} verwendet. Dieser Methode können alle 21 korrespondierenden Punktepaare übergeben werden. 
 
-%Entsprechend Formel~\ref{equ:SensInWorld} muss für den letzten Schritt eine Transformationsmatrix von Weltkoordinaten in Unitykoordinaten gefunden werden. Dies geschieht indem man die korrespondierenden Koordinatenpaare einer Controllerposition in Unity und in bereits in Weltkoordinaten gebrachten Sensorkoordinaten ineinander überführt, d.h. eine affine Transformation durchführt. Die Controlerpositionen in Weltkoordinaten werden somit auf die in Unitykoordinaten abgebildet.
+\begin{equation}
+\label{equ:affin}
+M_{affin} = 
+\begin{pmatrix}
+a & b & t_x \\
+c & d & t_y \\
+0 & 0 & 1  \\
+\end{pmatrix} 
+~ ~ ~ ~ ~M_{affin} \in \mathbb{R}^{3x3}
+\end{equation}
+\end{description}
 
 \subsubsection{Kalibrierungsfehler} \label{sec:calibError}\todo[inline, color=yellow]{Laura}
 In den Kapiteln~\ref{sec:camCalib} und~\ref{sec:planeCalib} wird der Algorithmus zur Berechnung der Koordinatentransformation von Kamerakoordinaten in Unitykoordinaten beschrieben. Beim Benutzen des fertig kalibrierten System fällt jedoch auf, dass die Aluminiumwürfel nicht an allen Positionen auf dem Spielfeld deckungsgleich mit ihrem gerenderten Pendant sind.  Bei genauerer Betrachtung \textcolor{red}{...Wie sieht Fehler aus? immer noch an kalibrierten Ecken und Diagonale ok?}\\
