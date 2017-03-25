@@ -562,13 +562,19 @@ I(x) = \begin{cases}
 \end{cases}
 \end{equation}
 
-Im binarisierte Bild werden im Anschluss zur Detektierung der OBB die Rechteckkanten mit einem Canny Kanten Detektor extrahiert\todo{Referenz}. Im resultierenden Kantenbild wird mit Hilfe eines Kantenverfolgung Algorithmus \cite{article:FindConturs} die Konturen generiert. Dieser Algorithmus erstellt eine hierarchische Sammlung von allen Punkten der äußersten Konturen eines Objektes. Aus dieser Sammlung wird die OBB mit dem \textit{Douglas Ramer Peucker} Algorithmus \cite{article:RamerPeucker} approximiert. Während der Approximation werden die Konturen geglättet und somit an ein ideales Rechteck angenähert. In Abbildung ??? \todo{Abbildung machen} ist sind die generierten OBBs weiß dargestellt und es ist deutlich zusehen, dass die Annäherung sehr genau ist.
+Im binarisierte Bild werden im Anschluss zur Detektierung der OBB die Rechteckkanten mit einem Canny Kanten Detektor extrahiert\todo{Referenz}. Im resultierenden Kantenbild wird mit Hilfe eines Kantenverfolgung Algorithmus \cite{article:FindConturs} die Konturen generiert. Dieser Algorithmus erstellt eine hierarchische Sammlung von allen Punkten der äußersten Konturen eines Objektes. Aus dieser Sammlung wird die OBB mit dem \textit{Douglas Ramer Peucker} Algorithmus \cite{article:RamerPeucker} approximiert. Während der Approximation werden die Konturen geglättet und somit an ein ideales Rechteck angenähert. In Abbildung \ref{fig:DebugScreenshot} ist sind die generierten OBBs weiß dargestellt und es ist deutlich zusehen, dass die Annäherung sehr genau ist.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=3in]{Bilder/TrackingScreenshot_x.jpg}
+	\caption{Screenshot des Tracking Programms. Die weißen Konturen sind die detektierten grünen Rechtecke. Alle Beschriftungen der Marker zeigen die resultierenden Winkel an und der äußere rote Rahmen stellt das kalibrierte Spielfeld dar.}
+	\label{fig:DebugScreenshot}
+\end{figure}
 \subsubsection{ArUco Marker Tracking}\todo[inline]{Vera}
 
 \subsection{Marker Objekt Definition}\todo[inline, color=yellow]{Vera}
-Die Marker Objekte der Klasse \texttt{Marker.cpp} speichern alle benötigten Parameter und Informationen der jeweiligen Würfel Marker. Zu diesen Daten gehören unter anderem die ID der Registrierung \texttt{id}, die aktuelle \textit{ArUco} ID \texttt{arucoID} des zugeteilten Würfel Markers sowie die entsprechende OBB \texttt{rect} des letzten Frames. Weitere boolesche Variablen wie \texttt{isVis} und \texttt{isTrack} geben Auskunft über die Sichtbarkeit der registrierten Würfel Marker in der letzten Aufnahme und ob diese Registrierung bereits in der aktuellen Iteration des Tracking Algorithmus verfolgt wurde.
+Die Marker Objekte der Klasse \texttt{Marker.cpp} speichern alle benötigten Parameter und Informationen der jeweiligen Würfel Marker. Zu diesen Daten gehören unter anderem die Registierungs-ID (RID)\texttt{id}, die aktuelle \textit{ArUco} ID (AID) \texttt{arucoID} des zugeteilten Würfel Markers sowie die entsprechende OBB \texttt{rect} des letzten Frames. Weitere boolesche Variablen wie \texttt{isVis} und \texttt{isTrack} geben Auskunft über die Sichtbarkeit der registrierten Würfel Marker in der letzten Aufnahme und ob diese Registrierung bereits in der aktuellen Iteration des Tracking Algorithmus verfolgt wurde.
 
-Für die Winkel $\omega_{RR}$, welche von den \texttt{RotatedRect} initialisiert werden gilt $\omega_{RR} \in \{\Re | -90^\circ \ge \omega_{RR} \le 90^\circ\}$. Doch alle folgenden Komponenten des Gesamtsystems von \textit{MArC} erfordert einen Winkel $\omega_{WM} \in \{\Re^+ |\ 0 ^\circ \ge \omega_{WM} \le 360^\circ\}$, der vom unterem linken Eckpunkt des Würfel Markers abhängt. Dies wird gewährleistet indem mit der Funktion \texttt{computeAngle} der kompatible Winkel zwischen dem entsprechenden Eckpunkt des \textit{ArUco} Markers $p_{ul}$ und dem Schwerpunkt des Rechtecks $c_{RR}$ mit der Formel \ref{equ:OmegaWinkel} berechnet wird. Dieser Umstand wird darin begründet, dass eine einheitliche Ausrichtung aller Würfel Marker gewährleistet sein muss um die generierten Daten für weitere architektonische Planungsschritte zu verwenden. Während die Reihenfolge der \textit{ArUco} Marker zuverlässig an dem unterem linken Punkt orientiert ist, stellte sich heraus, dass die Reihenfolge der vier Eckpunkte eines \texttt{RotatedRect} unbeständig ist. Somit ist es unvermeidbar die Eckpunkte der \textit{ ArUco Marker} als Referenzpunkt zu setzen und im Falle einer nicht Detektion den Winkel der letzten Iteration zu verwenden. 
+Für die Winkel $\omega_{RR}$, welche von den \texttt{RotatedRect} initialisiert werden gilt $\omega_{RR} \in \{\mathbb{R} | -90^\circ \ge \omega_{RR} \le 90^\circ\}$. Doch alle folgenden Komponenten des Gesamtsystems von \textit{MArC} erfordert einen Winkel $\omega_{WM} \in \{\mathbb{R}^+ |\ 0 ^\circ \ge \omega_{WM} \le 360^\circ\}$, der vom unterem linken Eckpunkt des Würfel Markers abhängt. Dies wird gewährleistet indem mit der Funktion \texttt{computeAngle} der kompatible Winkel zwischen dem entsprechenden Eckpunkt des \textit{ArUco} Markers $p_{ul}$ und dem Schwerpunkt des Rechtecks $c_{RR}$ mit der Formel \ref{equ:OmegaWinkel} berechnet wird. Dieser Umstand wird darin begründet, dass eine einheitliche Ausrichtung aller Würfel Marker gewährleistet sein muss um die generierten Daten für weitere architektonische Planungsschritte zu verwenden. Während die Reihenfolge der \textit{ArUco} Marker zuverlässig an dem unterem linken Punkt orientiert ist, stellte sich heraus, dass die Reihenfolge der vier Eckpunkte eines \texttt{RotatedRect} unbeständig ist. Somit ist es unvermeidbar die Eckpunkte der \textit{ ArUco Marker} als Referenzpunkt zu setzen und im Falle einer nicht Detektion den Winkel der letzten Iteration zu verwenden. 
 \begin{equation}
 \label{equ:OmegaWinkel}
 \omega_{WM} = \arccos \frac{u \times o}{\|u\|*\|o\|} 
@@ -581,11 +587,25 @@ const\\ 0
 \begin{equation}
 o=p_{ul}-c_{RR}
 \end{equation}
-Weitere essentielle Informationen
+Eine andere essentielle Komponente der Klasse sind die Transformationsvektoren $v_t$, welche die Transformation jedes Markers vom Objektraum in den Kameraraum $M$ angeben. Diese Vektoren werden für die korrekte Abschätzung der Marker Position in der \textit{Unity}-Welt (siehe Kapitel \ref{sec:planeCalib}) benötigt und aus den vier äußeren Eckpunkten in der Methode \texttt{estimatePoseSingleMarkers} aus der \textit{ArUco} Bibliothek angenähert. 
 
-std::vector< cv::Point3d > tvecs; \ref{sec:planeCalib}
-cv::Point3d estimatedCenter; \ref{sec:planeCalib} 
+\subsection{Verfolgung und Registrierung der Marker}\todo[inline]{Vera}
+Die Verfolgung und Registrierung der Marker besteht zum Einen aus der Bestimmung und Abschätzung von allen OBB und zum Anderen aus der Zuordnung von den detektierten \textit{ArUco}-Identitäten. Auf alle erforderlichen Berechungungen und der logische Ablauf zur Identifikation wird in der Funktion \texttt{trackMarker} der Klasse \texttt{MarkerManagement.cpp} verwiesen. Relevant bei diesem Prozess ist das Wissen, dass ein Würfel Marker nur Verfolgt werden kann, wenn eine entsprechende OBB $r_m \in \mathbb{R}^4$ erkannt wurde. Jede $r_m$ besteht aus den vier Eckpunkten $p_e^i \ mit \ i=4$ und einem Schwerpunkt $p_c$.
 
-\subsection{Verfolgung der Identitäten}\todo[inline]{Vera}
+Zunächst wird für jede detektierte OBB jeweils ein Bewegungsvektor $v_m \in \mathbb{R}^2$ zwischen dem Schwerpunkt allen bekannten Schwerpunkten $p_c^{m}$ aus der letzten Iteration $n-1$ nach der Formel \ref{equ:MotionVec} berechnet. An einem späteren Zeitpunkt werden diese Bewegungsvektoren verwendet um Marker innerhalb eines festgelegten Bewegungsradius zu verfolgen. 
+\begin{equation}
+\label{equ:MotionVec}
+v_m = p_c - p_c^m \ mit \ m= Anzahl \ der \ reg. \ Marker
+\end{equation}
+Nach Abschluss aller notwendigen Vorbereitungen beginnt der eigentliche Verfolgungsprozess. Dieser Prozess besteht aus vier Methoden zur Verfolgung und zwei Funktionen zum Suchen der zur AID gehörenden  zugehörigen RID. Diese Funktionen werden in der Reihenfolge des Blockdiagramms aus Abbildung \ref{fig:TrackingDiagram} abgerufen. 
 
+Der erste Schritt prüft mit der Methode \texttt{hasArucoID}, ob ein $r_m$ des aktuellen Frames eine der detektierten AID enthält. Für diesen Test werden jeweils alle vier Eckpunkte des \textit{ArUco}-Markers in zwei Dreiecke aufgeteilt und mit beiden wird ein \text{Punkteinschlusstest} mit Baryzentrischen Koordinaten durchgeführt \cite{article:BaryzentriFarin}. Liegt der Schwerpunkt der OBB in einem der beiden Dreiecke umschließt das Rechteck einen \textit{ArUco}-Marker. Bei diesem Test werden die Vorzeichen der Koordinaten betrachtet, denn ein Punkt liegt im Dreieck falls alle Vorzeichen gleich oder null sind liegt der Punkt im Dreieck. Der Vorteil dieses Tests ist, dass er mit wenigen kostenarmen Vektorberechnungen durchführbar ist und somit die Performanz des Tracking Algorithmus wenig beeinflusst. 
+
+Zunächst gehen wir auf das Ablaufdiagramm ein in dem Würfel Marker verfolgt werden für die eine AID existiert. Doch vor der Verfolgung muss diese eindeutig mit der Methode \texttt{findMatchID} einer RID zugeordnet werden, in dem die ermittelte AID mit den AID aller registrierten Marker abgleichen wird.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1in]{Bilder/TrackingScreenshot_x.jpg}
+	\caption{}
+	\label{fig:TrackingDiagram}
+\end{figure}
 \newpage

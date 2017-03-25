@@ -36,11 +36,11 @@
 \contentsline {subsection}{\numberline {4.2}Systemvoraussetzungen}{26}{subsection.4.2}
 \contentsline {subsection}{\numberline {4.3}Netzwerk}{27}{subsection.4.3}
 \contentsline {subsubsection}{\numberline {4.3.1}Serverseitige Netzwerkanbindung}{27}{subsubsection.4.3.1}
-\contentsline {paragraph}{Aufbauen der Netzwerkverbindung}{27}{section*.52}
-\contentsline {paragraph}{Daten\IeC {\"u}bertragung}{27}{section*.53}
+\contentsline {paragraph}{Aufbauen der Netzwerkverbindung}{27}{section*.51}
+\contentsline {paragraph}{Daten\IeC {\"u}bertragung}{27}{section*.52}
 \contentsline {subsubsection}{\numberline {4.3.2}Client-seitige Netzwerkanbindung}{29}{subsubsection.4.3.2}
-\contentsline {paragraph}{Aufbauen der Netzwerkverbindung}{29}{section*.55}
-\contentsline {paragraph}{Daten\IeC {\"u}bertragung}{29}{section*.56}
+\contentsline {paragraph}{Aufbauen der Netzwerkverbindung}{29}{section*.54}
+\contentsline {paragraph}{Daten\IeC {\"u}bertragung}{29}{section*.55}
 \contentsline {subsection}{\numberline {4.4}Starten des Systems}{31}{subsection.4.4}
 \contentsline {subsection}{\numberline {4.5}Men\IeC {\"u}f\IeC {\"u}hrung}{31}{subsection.4.5}
 \contentsline {subsubsection}{\numberline {4.5.1}Men\IeC {\"u}s}{31}{subsubsection.4.5.1}
@@ -52,11 +52,11 @@
 \contentsline {subsection}{\numberline {4.7}Table Men\IeC {\"u}}{37}{subsection.4.7}
 \contentsline {subsubsection}{\numberline {4.7.1}Szenen Management}{37}{subsubsection.4.7.1}
 \contentsline {subsubsection}{\numberline {4.7.2}Speichern von Szenen}{38}{subsubsection.4.7.2}
-\contentsline {paragraph}{Dateiaufbau einer gespeicherten Szene}{38}{section*.79}
-\contentsline {paragraph}{Vorgehen der Speicherung}{39}{section*.80}
-\contentsline {paragraph}{Darstellen von gespeicherten Szenen}{39}{section*.81}
+\contentsline {paragraph}{Dateiaufbau einer gespeicherten Szene}{38}{section*.78}
+\contentsline {paragraph}{Vorgehen der Speicherung}{39}{section*.79}
+\contentsline {paragraph}{Darstellen von gespeicherten Szenen}{39}{section*.80}
 \contentsline {subsubsection}{\numberline {4.7.3}Laden von Szenen}{39}{subsubsection.4.7.3}
-\contentsline {paragraph}{Vorgehen beim Laden}{39}{section*.83}
+\contentsline {paragraph}{Vorgehen beim Laden}{39}{section*.82}
 \contentsline {subsubsection}{\numberline {4.7.4}Match Modus}{40}{subsubsection.4.7.4}
 \contentsline {section}{\numberline {5}Tracking Programm}{41}{section.5}
 \contentsline {subsection}{\numberline {5.1}uEye Ansteuerung}{41}{subsection.5.1}
@@ -67,25 +67,25 @@
 \contentsline {subsubsection}{\numberline {5.2.4}M\IeC {\"o}gliche Fehlerquellen}{47}{subsubsection.5.2.4}
 \contentsline {subsection}{\numberline {5.3}Marker Detektion}{47}{subsection.5.3}
 \contentsline {subsubsection}{\numberline {5.3.1}Detektion der gr\IeC {\"u}nen Rechtecke}{47}{subsubsection.5.3.1}
-\contentsline {subsubsection}{\numberline {5.3.2}ArUco Marker Tracking}{48}{subsubsection.5.3.2}
-\contentsline {subsection}{\numberline {5.4}Marker Objekt Definition}{48}{subsection.5.4}
-\contentsline {subsection}{\numberline {5.5}Verfolgung der Identit\IeC {\"a}ten}{49}{subsection.5.5}
-\contentsline {section}{\numberline {6}Ausblick}{50}{section.6}
-\contentsline {subsection}{\numberline {6.1}Trackingmethoden}{50}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}AR Erweiterung mit der Webcam}{50}{subsection.6.2}
-\contentsline {subsection}{\numberline {6.3}Daten als Excel Tabelle}{50}{subsection.6.3}
-\contentsline {subsection}{\numberline {6.4}Validierung}{50}{subsection.6.4}
-\contentsline {section}{\numberline {7}Projektmanagement}{50}{section.7}
-\contentsline {subsection}{\numberline {7.1}Zeitplanung}{50}{subsection.7.1}
-\contentsline {subsection}{\numberline {7.2}Gant Chart}{50}{subsection.7.2}
-\contentsline {subsection}{\numberline {7.3}Planungsmethoden}{50}{subsection.7.3}
-\contentsline {subsection}{\numberline {7.4}Reflexion}{50}{subsection.7.4}
-\contentsline {subsubsection}{\numberline {7.4.1}Kommuniktion im Team und nach Au\IeC {\ss }en}{50}{subsubsection.7.4.1}
-\contentsline {subsubsection}{\numberline {7.4.2}Probleme}{51}{subsubsection.7.4.2}
-\contentsline {section}{\numberline {8}Zusammenfassung}{51}{section.8}
-\contentsline {section}{\numberline {9}Steckbrief}{51}{section.9}
-\contentsline {section}{\numberline {10}Anhang}{51}{section.10}
-\contentsline {subsection}{\numberline {10.1}\emph {MArC} ReadMe-Datei}{51}{subsection.10.1}
-\contentsline {subsection}{\numberline {10.2}\texttt {startTCPServer()}-Methode}{59}{subsection.10.2}
-\contentsline {subsection}{\numberline {10.3}\texttt {getPointerOfMarkerVec()}-Methode}{59}{subsection.10.3}
-\contentsline {subsection}{\numberline {10.4}\texttt {interpretTCPMarkerData()}-Methode}{60}{subsection.10.4}
+\contentsline {subsubsection}{\numberline {5.3.2}ArUco Marker Tracking}{49}{subsubsection.5.3.2}
+\contentsline {subsection}{\numberline {5.4}Marker Objekt Definition}{49}{subsection.5.4}
+\contentsline {subsection}{\numberline {5.5}Verfolgung und Registrierung der Marker}{50}{subsection.5.5}
+\contentsline {section}{\numberline {6}Ausblick}{52}{section.6}
+\contentsline {subsection}{\numberline {6.1}Trackingmethoden}{52}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}AR Erweiterung mit der Webcam}{52}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Daten als Excel Tabelle}{52}{subsection.6.3}
+\contentsline {subsection}{\numberline {6.4}Validierung}{52}{subsection.6.4}
+\contentsline {section}{\numberline {7}Projektmanagement}{52}{section.7}
+\contentsline {subsection}{\numberline {7.1}Zeitplanung}{52}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}Gant Chart}{52}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.3}Planungsmethoden}{52}{subsection.7.3}
+\contentsline {subsection}{\numberline {7.4}Reflexion}{52}{subsection.7.4}
+\contentsline {subsubsection}{\numberline {7.4.1}Kommuniktion im Team und nach Au\IeC {\ss }en}{52}{subsubsection.7.4.1}
+\contentsline {subsubsection}{\numberline {7.4.2}Probleme}{53}{subsubsection.7.4.2}
+\contentsline {section}{\numberline {8}Zusammenfassung}{53}{section.8}
+\contentsline {section}{\numberline {9}Steckbrief}{53}{section.9}
+\contentsline {section}{\numberline {10}Anhang}{53}{section.10}
+\contentsline {subsection}{\numberline {10.1}\emph {MArC} ReadMe-Datei}{53}{subsection.10.1}
+\contentsline {subsection}{\numberline {10.2}\texttt {startTCPServer()}-Methode}{61}{subsection.10.2}
+\contentsline {subsection}{\numberline {10.3}\texttt {getPointerOfMarkerVec()}-Methode}{61}{subsection.10.3}
+\contentsline {subsection}{\numberline {10.4}\texttt {interpretTCPMarkerData()}-Methode}{62}{subsection.10.4}
