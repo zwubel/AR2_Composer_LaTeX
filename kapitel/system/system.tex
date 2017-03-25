@@ -418,7 +418,7 @@ Um die verschiedenen Koordinatensysteme bei den Ausführungen in den Kapiteln \r
 	\label{tab:camCalibParam}
 \end{table}
 
-\subsubsection{Ansteuerung der beiden Kalibrierungsarten} \label{sec:CalibSteuerung}\todo[inline, backgroundcolor=yellow]{Laura}
+\subsubsection{Schnittstelle der beiden Kalibrierung} \label{sec:CalibSteuerung}\todo[inline, backgroundcolor=yellow]{Laura}
 Wie eingangs erwähnt, dient die \texttt{Calibration.cpp}-Klasse als Schnittstelle für die Kamerakalibrierung (vgl. Kapitel \ref{sec:camCalib}) und die Kalibrierung des Arbeitsbereichs (vgl. Kapitel \ref{sec:planeCalib}). \\
 
 \lstinputlisting[title=\lstname, caption={\texttt{runPoseEstimation()}-Methode in \texttt{Calibration.cpp}}, label=lst:runPoseEstimation, language={C++}, linerange=17-23, firstnumber=17]{Quellcode/Calibration.cpp} 
@@ -429,7 +429,7 @@ Bei ersterem Quellcode-Auszug wird entweder ein neuer Arbeitsbereich mittels der
 
 \lstinputlisting[title=\lstname, caption={\texttt{getPlaneCalibData()}-Methode in \texttt{Calibration.cpp}}, label=lst:getPlaneCalibData, language={C++}, linerange=51-55, firstnumber=51]{Quellcode/Calibration.cpp} 
 
-Die affine Transformation wird auf Grundlage der korrespondierenden Punktepaare (vgl. Kapitel \ref{sec:Korrespondenz}) berechnet. Hierzu wird wie in Quellcode-Auszug \ref{lst:generateAffineAndPlaneCalib} gezeigt \textcolor{red}{...} 
+Die affine Transformation wird auf Grundlage der korrespondierenden Punktepaare (vgl. Kapitel \ref{sec:Korrespondenz}) berechnet. Hierzu wird wie in Quellcode-Auszug \ref{lst:generateAffineAndPlaneCalib} gezeigt \textcolor{red}{Fertig schreiben wenn PLaneCalib fertig} 
 
 \lstinputlisting[title=\lstname, caption={\texttt{generateAffineAndPlaneCalib()}-Methode in \texttt{Calibration.cpp}}, label=lst:generateAffineAndPlaneCalib, language={C++}, linerange=37-46, firstnumber=37]{Quellcode/Calibration.cpp} 
 
@@ -528,29 +528,19 @@ Die Umrechnung von Kamerakoordinaten in Weltkoordinaten kann dann mit der invert
 \vv{x} = M^{-1} \cdot \vv{u}
 \end{equation}
 
-An diesem Punkt hat man die Kamerakoordinaten vollständig in Weltkoordinaten überführt und sucht nun eine Transformationsmatrix um diese Punkte auf ihre korrespondierenden Punkte in Unitykoordinaten abzubilden. Die dazu benötigte affine 3D-Transformation wird in Kapitel \ref{sec:planeCalib} erläutert.
+An diesem Punkt hat man die Kamerakoordinaten vollständig in Weltkoordinaten überführt und sucht nun eine Transformationsmatrix um diese Punkte auf ihre korrespondierenden Punkte (vgl. Kapitel \ref{sec:Korrespondenz}) in Unitykoordinaten abzubilden. Die dazu benötigte affine 3D-Transformation wird in Kapitel \ref{sec:planeCalib} erläutert.
 
 \item[Umsetzung in Quellcode:] Die für die Kamerakalibrierung relevanten Klassen sind zum einen die \texttt{PoseEstimation.cpp} und zum anderen die \texttt{calibWithChessboard.cpp}. An dieser Stelle werden nur die Kernstücke des Algorithmus erwähnt und erläutert.
 
 \lstinputlisting[title=\lstname, caption={\texttt{generateCamMatAndDistMat()}-Methode in \texttt{PoseEstimation.cpp}}, label=lst:generateCamMatAndDistMat, language={C++}, linerange=24-34, firstnumber=24]{Quellcode/PoseEstimation.cpp} 
 
-Die \texttt{generateCamMatAndDistMat()}-Methode aus der \texttt{PoseEstimation.cpp}-Klasse dient als Schnittstelle der Kamerakalibrierung. Hier werden neben der \texttt{cameraMatrix} ($M_{intrinsisch}$) auch die extrinsischen Parameter in Form von \texttt{rvecs} (Matrix $R$) und \texttt{tvecs} (Vektor $t$) gesammelt. Zudem werden die \texttt{disCoeffs} (Koeffizienten zur Behebung der Linsenverzeichnung) auf null gesetzt. 
+Die \texttt{generateCamMatAndDistMat()}-Methode aus der \texttt{PoseEstimation.cpp}-Klasse dient als Schnittstelle der Kamerakalibrierung. Hier werden neben der \texttt{cameraMatrix} ($M_{intrinsisch}$ aus Gleichung \ref{equ:intrinsic}) auch die extrinsischen Parameter in Form von \texttt{rvecs} (Matrix $R$ aus Gleichung \ref{equ:Rotation}) und \texttt{tvecs} (Vektor $t$ aus Gleichung \ref{equ:Translation}) gesammelt. Zudem werden die \texttt{disCoeffs} (Koeffizienten zur Behebung der Linsenverzeichnung) auf null gesetzt. 
 
+Die wichtigsten zwei Methoden der \texttt{calibWithChessboard.cpp}-Klasse sind im Anhang in den Quellcode-Auszügen \ref{lst:runCalibration} und \ref{lst:runCalibWithChessboard} dargestellt. 
 
+\lstinputlisting[title=\lstname, caption={Auszug aus der \texttt{runCalibration()}-Methode in \texttt{calibWithChessboard.cpp}}, label=lst:runCalibration, language={C++}, linerange=90-91, firstnumber=90]{Quellcode/calibWithChessboard.cpp} 
 
-
-
-
-
-
-Die wichtigsten Methoden der letzteren Klasse sind im Anhang in den Quellcode-Auszügen \ref{lst:runCalibration} und \ref{lst:runCalibWithChessboard} dargestellt. 
-
-\lstinputlisting[title=\lstname, caption={Auszug aus der \texttt{runCalibration()}-Methode in \texttt{calibWithChessboard.cpp}}, label=lst:runCalibration, language={C++}, linerange=85-86, firstnumber=85]{Quellcode/calibWithChessboard.cpp} 
-
-In dem Quellcode-Auszug \ref{lst:runCalibration} wird der Aufruf der \textit{OpenCV}-Methode \texttt{} gezeigt, die sowohl die intrinsischen, als auch die extrinsischen Kameraparameter auf Grundlage mehrerer Aufnahmen eines Kalibrierungsmusters, in diesem Fall dem Schachbrett aus Abbildung BLA bestimmt.  
-
-
-
+In dem Quellcode-Auszug \ref{lst:runCalibration} wird der Aufruf der \textit{OpenCV}-Methode \texttt{calibrateCamera()} gezeigt, die sowohl die intrinsischen, als auch die extrinsischen Kameraparameter auf Grundlage mehrerer Aufnahmen eines Kalibrierungsmusters, in diesem Fall dem Schachbrett aus Abbildung \ref{fig:schachbrettKalib}, bestimmt.  
 \end{description}
 
 Zu diesem Zeitpunkt sollte nun das Kamerakoordinatensystem mit dem Weltkoordinatensystem übereinstimmen und es kann sich im nächsten Schritt darum gekümmert werden, dass das Kamerakoordinatensystem verschoben und gedreht wird. Dieser Schritt und alle weiteren Schritte, die im Zusammenhang mit der Transformation von Kamerakoordinaten in Weltkoordinaten bzw. Weltkoordinaten in Unitykoordinaten stehen, werden in Kapitel~\ref{sec:planeCalib} erläutert. Hierbei sei noch einmal angemerkt, dass eine Kamerakalibrierung nur mit anschließender Kalibrierung des Arbeitsbereiches durchgeführt werden kann.
