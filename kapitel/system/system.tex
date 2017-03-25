@@ -577,7 +577,7 @@ Sowohl die Kamerakalibrierung als auch die Arbeitsbereichskalibrierung werden au
 Nach Abschluss der erfolgreichen und vollständigen Kalibrierung beziehungsweise des Importieren aller notwendigen Kalibrierungsdaten beginnt das Tracking Programm sowohl die ArUco Marker, als auch die leuchtend grünen Rechtecke zu detektieren. Die codebasierten \textit{ArUco} Marker ermöglichen es den Marker nach längerer Verdeckung wieder eindeutig seiner entsprechenden ID zu zuordnen und somit Fehlzuordnungen oder sprunghaften Vertauschungen von benachbarten Würfel Markern vorzubeugen. Alle Methoden zur Detektierung der beiden Markertypen werden von der Klasse \texttt{MarkerDetection.cpp} zur Verfügung gestellt und mit der Funktion \texttt{runMarkerDetection}. Zunächst werden die Rechtecke mit Hilfe eines simplen Greenkeying erfasst und im Anschluss die erforderlichen \textit{ArUco} IDs der Würfel Marker. Letztere können bekannterweise unter Umständen nur im ruhenden Status erfasst werden, da eine mögliche Bewegungsunschärfe bei schnellen Verschiebungen (siehe Kapitel \ref{sec:MarkerTracking}) eine korrekte Erfassung nahezu unmöglich macht. 
 Aus diesem Grund werden neben den codebasierten Muster auch die leuchtenden Rechtecke verfolgt um einen Marker auch bei schnelleren Bewegungen verfolgen zu können.
 \subsubsection{Detektion der grünen Rechtecke}\todo[inline, color=yellow]{Vera}
-Das Ziel dieses Verfahren ist es eine \textit{Object Oriented Bounding Box}(OBB) von jedem erkannten Würfel Marker zu erstellen. Die OBB beinhalten Informationen über die Größe, den Schwerpunkt, die vier Eckpunkte sowie den Rotationswinkel im Verhältnis zum Bildkoordinatensystem. Alle genannten Informationen werden in einem \texttt{RotatedRect} gespeichert, welches eine Objektklasse der \textit{OpenCV} Bibliothek ist.
+Das Ziel dieses Verfahren ist es eine \textit{Oriented Bounding Box}(OBB) von jedem erkannten Würfel Marker zu erstellen. Die OBB beinhalten Informationen über die Größe, den Schwerpunkt, die vier Eckpunkte sowie den Rotationswinkel im Verhältnis zum Bildkoordinatensystem. Alle genannten Informationen werden in einem \texttt{RotatedRect} gespeichert, welches eine Objektklasse der \textit{OpenCV} Bibliothek ist.
 Zur Detektion der grünen Rechtecke müssen sie zunächst mit Hilfe einer Binarisierung segmentiert werden. Jedoch ist die Aufnahme zu diesem Zeitpunkt ein Bild mit RGB Farbmodus dessen Grundfarben von der Helligkeit abhängig sind. Somit müssen je nach Beleuchtungsverhältnisse die Thresholds einer Binarisierung angepasst werden. Im Gegensatz zum RGB Farbraum ist der HSI Farbraum unabhängig von der Beleuchtung, da er seine Grundbestandteile aus den Werten von Farbton (H), Sättigung (S) und Helligkeit (I) definiert Folgerichtig ist es theoretisch ausreichend nur den Farbton zu beachten um Objekte oder Teilbereiche einer bestimmten Farbe zu segmentieren. \todo{ Referenz} 
 Die Binarisierung jedes Pixel $x \in (\Re^3 | 0 \ge x_H \le 255, 0 \ge x_S \le 255, 0 \ge x_I \le 255$) unter den Bedingungen aus Formel \ref{equ:Threshold}, welche alle nicht grünen Bildsektionen schwarz maskiert. An dieser Stelle wurden neben dem Farbton auch die Sättigung und Helligkeit betrachtet. Durch die Eingrenzung der Sättigung wird sichergestellt, dass nur grüne Bereiche mit einer hohen Leuchtkraft berücksichtigt werden. Während die leichte Einschränkung der Helligkeit das Rauschen im Schwarz/ Weißbild verringert. Das verbleibende Bildrauschen wird durch einen Median Rangordnungsfilter mit einer Kernelgröße von $5\times5$ eliminiert. Diese beide Methoden sind Teil der \textit{OpenCV} Bibliothek.
 \begin{equation}
@@ -625,15 +625,13 @@ v_m = p_c - p_c^m \ mit \ m= Anzahl \ der \ reg. \ Marker
 \end{equation}
 Nach Abschluss aller notwendigen Vorbereitungen beginnt der eigentliche Verfolgungsprozess. Dieser Prozess besteht aus vier Methoden zur Verfolgung und zwei Funktionen zum Suchen der zur AID gehörenden  zugehörigen RID. Diese Funktionen werden in der Reihenfolge des Blockdiagramms aus Abbildung \ref{fig:TrackingDiagram} abgerufen. 
 
-
 Der erste Schritt prüft mit der Methode \texttt{hasArucoID}, ob ein $r_m$ des aktuellen Frames eine der detektierten AID enthält. Für diesen Test werden jeweils alle vier Eckpunkte des \textit{ArUco}-Markers in zwei Dreiecke aufgeteilt und mit beiden wird ein \text{Punkteinschlusstest} mit Baryzentrischen Koordinaten durchgeführt \cite{article:BaryzentriFarin}. Liegt der Schwerpunkt der OBB in einem der beiden Dreiecke umschließt das Rechteck einen \textit{ArUco}-Marker. Bei diesem Test werden die Vorzeichen der Koordinaten betrachtet, denn ein Punkt liegt im Dreieck falls alle Vorzeichen gleich oder null sind liegt der Punkt im Dreieck. Der Vorteil dieses Tests ist, dass er mit wenigen kostenarmen Vektorberechnungen durchführbar ist und somit die Performanz des Tracking Algorithmus wenig beeinflusst. 
 
-
 Zunächst gehen wir auf das Ablaufdiagramm ein in dem Würfel Marker verfolgt werden für die eine AID existiert. Doch vor der Verfolgung muss diese eindeutig mit der Methode \texttt{findMatchID} einer RID zugeordnet werden, in dem die ermittelte AID mit den AID aller registrierten Marker abgleichen wird.
-\begin{figure}[H]
+\begin{figure}[htbp]
 	\centering
-	\includegraphics[width=1in]{Bilder/TrackingScreenshot_x.jpg}
-	\caption{}
-	\label{fig:TrackingDiagram}
+	\includegraphics[scale=.9, trim=5.5cm 2.5cm 3.5cm 2.5cm]{kapitel/system/MP_Menu_Flowchart.pdf}
+	\caption{Flussdiagramm der Menüführung.}
+	\label{fig:menuFlow}
 \end{figure}
 \newpage
