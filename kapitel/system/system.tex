@@ -434,8 +434,16 @@ Die affine Transformation wird auf Grundlage der korrespondierenden Punktepaare 
 
 \lstinputlisting[title=\lstname, caption={\texttt{generateAffineAndPlaneCalib()}-Methode in \texttt{Calibration.cpp}}, label=lst:generateAffineAndPlaneCalib, language={C++}, linerange=37-46, firstnumber=37]{Quellcode/Calibration.cpp} 
 
-\subsubsection{Speichern und Laden der Kalibrierungen}\label{sec:saveCalib}\todo[inline, color=yellow]{Laura}
-Sowohl die Kamerakalibrierung als auch die Arbeitsbereichskalibrierung werden automatisch nach der Erstellung abgespeichert. Das gibt dem Benutzer beim nächsten Ausführen des System die Möglichkeit, wie in dem \texttt{SelectCalibrationTarget}-Menü (vgl. Kapitel \ref{sec:menuAblauf}) zu sehen, auszuwählen, ob entweder beide Kalibrierungen ausgeführt werden sollen, oder ob es ausreicht nur die Arbeitsbereichskalibrierung bzw. gar keine Kalibrierung durchzuführen. In letzterem Fall werden dann beide Kalibrierungen geladen und im vorletzten Fall wird die Kamerakalibrierung geladen und anschließend eine neue Arbeitsbereichskalibrierung durchgeführt. 
+\subsubsection{Speichern und Laden der Kalibrierungen}\label{sec:saveCalib}\todo[inline, color=green]{Laura}
+Sowohl die Kamerakalibrierung als auch die Arbeitsbereichskalibrierung werden automatisch nach der Erstellung abgespeichert. Das gibt dem Benutzer beim nächsten Ausführen des System die Möglichkeit, folgenden 3 Möglichkeiten: 
+\begin{description}
+\item[1. Beide Kalibrierungen durchführen]: In diesem Fall wird zunächst eine Kamerakalibrierung durchgeführt, wie sie in Kapitel \ref{sec:camCalib} beschrieben ist und anschließend wird eine Kalibrierung des Arbeitsbereiches (vgl. Kapitel \ref{sec:planeCalib}) vorgenommen. Alle daraus resultierenden Kamerakalibrierungs-Parameter werden mittels der \texttt{saveCameraParams()}-Methode (vgl. \texttt{PoseEstimation.cpp}-Klasse) gespeichert. Die notwendigen Eckpunkte des Arbeitsbereichs werden direkt nach ihrer Erstellung über die \texttt{computePlaneCalibration()}-Methode abgespeichert und die affine Transformation wird über die \texttt{saveAffineTransform()}-Methode (vgl. \texttt{PlaneAndAffineCalibration.cpp}-Klasse) in ein Textfile gesichert. Somit stehen alle benötigten Parameter - wenn gewünscht - für den nächsten Systemstart bereit.
+
+\item[2. Nur die Arbeitsbereichskalibrierung durchführen]: Entscheidet sich der Benutzer dafür, dass eine Kamerakalibrierung nicht notwendig ist, so können die entsprechenden Parameter über die \texttt{loadCameraMat()}-Methode aus der \texttt{PoseEstimation.cpp}-Klasse geladen werden. Der Arbeitsbereich kann dann wie in Kapitel \ref{sec:planeCalib} beschrieben kalibriert werden und die neue Kalibrierung wird wie unter 1. beschrieben abgespeichert. Die alte Kamerakalibrierung wird allerdings beibehalten und muss nicht erneut gesichert werden. 
+
+\item[3. Keine Kalibrierungen durchführen]: Wenn der Nutzer unter den gleichen Bedingungen, wie bei der letzten Systemverwendung weiterarbeiten möchte, ist es sinnvoll die komplette Kalibrierung zu laden. Für die Kamerakalibrierung geht man dabei wie unter 2. beschrieben vor. Für das Laden der Arbeitsbereichskalibrierung stehen hierfür die Methoden \texttt{loadImagePlane()} und \texttt{loadAffineTransform()} aus der \texttt{PlaneAndAffineCalibration.cpp}-Klasse zur Verfügung.
+\end{description}
+
 
 \subsubsection{Kamerakalibrierung}\label{sec:camCalib}\todo[inline, backgroundcolor=green]{Laura}
 
