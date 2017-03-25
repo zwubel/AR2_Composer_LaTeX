@@ -95,7 +95,6 @@ Die Kamera \textit{uEye 164LE-C} wurde vom Hersteller \textit{IDS Imaging Develo
 
 Die erforderliche Ansteuerung der \textit{uEye 164LE-C} erfolgt mit Hilfe der bereit gestellten \textit{IDS Software Suite}. In diese Suite ist die \textit{uEye-API} integriert, welche die Entwicklung von eigenen Programmen unter \textit{Windows} und \textit{Linux} mit den Programmiersprachen \textit{C}$++$, \textit{.NET}, \textit{C$\#$} oder \textit{C} ermöglicht \cite{website:IDSSuite}. Für das Tracking der Marker in \textit{MArC} wurde eine eigene Schnittstelle in \textit{C}$++$ erstellt, welche die Kamera im Live Modus initialisiert und steuert. 
 
-
 \subsubsection{Leap Motion}\label{sec:LeapMotion} \todo[inline,color=green]{Paul}	
 Bei der \textit{Leap Motion} \cite{website:LeapMotion} handelt sich um ein $7,6\times3\times1,3\,cm$ großes Gerät, welches es mit Hilfe von Sensoren möglich macht, Hand- und Fingerbewegungen zu tracken und diese als Eingabemöglichkeit zu nutzen. Die Idee dahinter ist, eine Eingabegerät im virtuellen Raum analog zu Maus zu schaffen, welches keinen direkten Kontakt bzw. keine Berührung benötigt. Hergestellt wird die \textit{Leap Motion} von der amerikanischen Firma Leap Motion Inc. Gegründet wurde die Firma am 1. November 2010. \\
 Wie auf Abbildung \ref{fig:leapMotion} gezeigt, besteht das Gerät im wesentlich aus zwei integrierten weitwinkel Kameras und drei einfachen Infrarot LEDs. Die LEDs haben jeweils eine Wellenlänge von $850\,nm$. Der durch die beiden Kameras aufgespannte Interaktionsraum der \textit{Leap Motion} ähnelt einer umgedrehten Pyramide, mit einem Flächeninhalt von knapp $243\,cm{^2}$. Diese Reichweite ist durch die Ausbreitung der LED Lichter räumlich begrenzt. Die Lichtintensität der LEDs ist wiederum durch den maximalen Strom, der über die USB-Verbindung fließt beschränkt.\\
@@ -162,7 +161,12 @@ Der in Abbildung~\ref{fig:schachbrettKalib} gezeigte Kalibrierungshelfer wird f�
 
 \subsubsection{Kalibrierungscontroller zur Arbeitsbereichskalibrierung} \label{sec:calibController} \todo[inline]{Laura}
 
-	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=4in]{Bilder/Eigene Fotos/IMG_0032.jpg}
+		\caption{Kalibrierungscontroller des \textit{MArC} System mit ArUco Marker.}
+		\label{fig:KontrollerMarc}
+	\end{figure}
 \subsection{Obsolete Hardware}\label{sec:obsoleteHardware}\todo[inline, color=green] {Lukas}
 Im Laufe eines Projekts nach Art von \emph{MArC} ist es kaum vermeidbar, dass die gesetzten Projektziele reevaluiert werden müssen. Die Gründe hierfür können vielfältig sein. Beispielsweise könnte die Fertigstellung eines bestimmten Teils des Projekts deutlich länger gedauert haben als geplant, oder es könnte sich herausgestellt haben, dass bestimmte Komponenten zueinander nicht kompatibel sind.
 
@@ -218,7 +222,7 @@ Die \emph{Ovrvision Pro} ist speziell auf Augmented Reality (AR) Anwendungen aus
 
 Die \textit{Creative Senz3D} ist eine RGB Kamera mit einer zusätzlichen Infrarot-Tiefenkamera. Das generierte RGB-Bild hat eine Auflösung von $1280\times720$ Pixel und das Tiefenbild von $320\times240$ Pixel bei einer Reichweite von $15-99\,$cm sowie einem Sichtfeld von $74^\circ$. Die Kamera wird über eine USB 2.0 Schnittstelle mit einem Computer verbunden und nimmt Videos mit einer Framerate von bis zu $30$ fps auf \cite{website:Senz3d}. Weiter ist es möglich die Kamera direkt aus Anwendungen per \textit{Intel Perceptual Computing SDK} anzusteuern.
 
-\subsection{Software} \todo[inline]{Vera}
+\subsection{Software} \todo[inline, color=green]{Vera}
 
 Zur Entwicklung der \textit{MArC}-Software sind diverse Software-Komponenten und Bibliotheken notwendig. Die Funktionalitäten und Verwendung dieser Komponenten werden in diesem Kapitel kurz erläutert.
 
