@@ -39,7 +39,7 @@ Die Systemvoraussetzungen für \emph{MArC} sind in der ReadMe-Datei beschrieben,
 
 Die in Kapitel \ref{sec:Winsock} beschriebene API stellt die Möglichkeit bereit, den Datentransport mittels TCP oder UDP zu verwenden. Für \emph{MArC} wurde ein TCP-Socket-Netzwerk bestehend aus (genau) einem Server und (genau) einem Client verwendet, weil der der in~\ref{sec:Netzwerk} beschriebene Fehlerschutz des TCP ausgenutzt werden sollte, um nicht manuell überprüfen zu müssen, ob Daten fehlerfrei übertragen wurden. Da die zu übertragende Datenmenge von \emph{MArC} hinreichend klein -- und von konstanter Größe -- ist, wurde die etwas höhere Geschwindigkeit durch den geringeren Overhead einer UDP-Socket-Verbindung als unnötig erachtet.\\
 In den beiden folgenden Abschnitten wird die Umsetzung der Netzwerk-Endpunkte an den beiden für \emph{MArC} verwendeten Computern beschrieben.
-\subsubsection{Serverseitige Netzwerkanbindung}\todo[inline, color=green]{Laura}
+\subsubsection{Server-seitige Netzwerkanbindung}\todo[inline, color=green]{Laura}
 \paragraph{Aufbauen der Netzwerkverbindung}
 Da die Verbindung zwischen den beiden Rechnern per LAN-Kabel realisiert wurde, wird ein Server gestartet und eine Verbindung seitens des Clients ohne weitere Sicherheitsmechanismen erlaubt, so lange dieser den richtigen Port adressiert. Die entsprechenden Methoden stehen dank \textit{Winsock} (vgl. Abschnitt~\ref{sec:Winsock}) durch das Einbinden von \texttt{<winsock2.h>} und \texttt{<windows.h>} bereit und werden, wie in Quellcode-Auszug~\ref{lst:startTCPServer} (im Anhang einsehbar), verwendet. 
 
@@ -558,19 +558,19 @@ Zu diesem Zeitpunkt sollte nun das Kamerakoordinatensystem mit dem Weltkoordinat
 
 \subsubsection{Kalibrierung des Arbeitsbereichs}\label{sec:planeCalib} \todo[inline, color=yellow]{Laura}
 Wie bereits beschrieben, kann eine Kalibrierung des Arbeitsbereichs entweder mit vorheriger Kamerakalibrierung oder einzeln durchgeführt werden. In letzterem Fall wird dann die zuletzt verwendete Kamerakalibrierung geladen. Die Durchführung der Kalibrierung wird in der ReadMe-Datei (vgl.~\ref{sec:readMe}) erläutert. Grob gesagt, werden über Knopfdruck am Kalibrierungscontroller (vgl. \ref{fig:KontrollerMarc}) 25 seiner Positionen sowohl in Kamerakoordinaten, als auch in Unitykoordinaten gespeichert. Man erhält also 25 korrespondierende Punktepaare (vgl. Kapitel \ref{sec:Korrespondenz}).\\
-Allgemein betrachtet hat die Arbeitsbereichskalibrierung zwei verschiedene Aufgaben: Zum Einen wird hierbei ein Bereich festgelegt, indem die Objekte getracked werden und zum anderen wird mittels der verschiedenen Positionen der Kalibrierungspunkte, die affine Transformationsmatrix bestimmt, die im weiteren Verlauf als Umrechnung zwischen Kamerakoordinaten und Unitykoordinaten fungiert. Beide Teilbereiche werden in den Absätzen \grqq Begrenzung des Abeitsbereichs\grqq ~bzw. \grqq Affine Transformation\grqq ~weitergehend erläutert.
+Allgemein betrachtet hat die Arbeitsbereichskalibrierung zwei verschiedene Aufgaben: Zum einen wird hierbei ein Bereich festgelegt, indem die Objekte getrackt werden und zum anderen wird mittels der verschiedenen Positionen der Kalibrierungspunkte, die affine Transformationsmatrix bestimmt, die im weiteren Verlauf als Umrechnung zwischen Kamerakoordinaten und Unitykoordinaten fungiert. Beide Teilbereiche werden in den Absätzen \grqq Begrenzung des Arbeitsbereichs\grqq ~bzw. \grqq Affine Transformation\grqq ~weitergehend erläutert.
 	
 \begin{description}
-\item[Begrenzung des Arbeitsbereichs] %4 PunktepaareThe user have to make sure to form up a rectangle which is equal to his desired workspace. Starting in the lower left corner and going clockwiseÜber die ersten ... rausziehen setzt auf Null; 
+\item[Begrenzung des Arbeitsbereichs] Die ersten 4 Punktepaare dienen dazu den Arbeitsbereich zu definieren. Sie müssen in einer klardefinierten Reihenfolge, nämlich im Uhrzeigersinn und in der linken unteren Ecke beginnend. Dabei wird bei beiden Systemen (Tracking und Unity) unterschiedlich vorgegangen, was zu leicht abweichenden Arbeitsbereichen führen kann. Der Unterschied ist allerdings vernachlässigbar, wenn der Benutzer sich an den Tischkanten orientiert und beispielsweise die Kante der Auflage des Kalibrierungscontrollers (vgl. Kapitel \ref{sec:calibController} daran ausrichtet und somit eine ungefähr rechteck-förmige Fläche aufspannt. \\
+Für die Tracking-Anwendung reicht es aus, den 1. und 3. Punkt zu nehmen und damit ein Rechteck aufzuspannen. Dies geschieht in der \texttt{computePlaneCalibration()}-Methode in der \texttt{PlaneAndAffineCalibration.cpp}-Klasse. Der so definierte Arbeitsbereich dient hier vor allem dazu, zu entscheiden, ob ein Marker noch im Anwendungsbereich ist und somit fortlaufend getrackt werden muss, oder ob er diesen Bereich verlassen hat und seine ID, sowie alle anderen Eigenschaften zurückgesetzt werden müssen (vgl. Kapitel \ref{sec:ID}).\\
+Auf Unity-Seite werden alle 4 Punkte genutzt um den Arbeitsbereich festzulegen. \textcolor{red}{Lukas bitte helfen :)}
+
 \item[Affine Transformation] %21 Punktepaare.
 \end{description}
 
 
 
 
-
-
-%Entsprechend Formel~\ref{equ:SensInWorld} muss für den letzten Schritt eine Transformationsmatrix von Weltkoordinaten in Unitykoordinaten gefunden werden. Dies geschieht indem man die korrespondierenden Koordinatenpaare einer Controllerposition in Unity und in bereits in Weltkoordinaten gebrachten Sensorkoordinaten ineinander überführt, d.h. eine affine Transformation durchführt. Die Controlerpositionen in Weltkoordinaten werden somit auf die in Unitykoordinaten abgebildet.
 \subsubsection{Kalibrierungsfehler} \label{sec:calibError}\todo[inline, color=yellow]{Laura}
 In den Kapiteln~\ref{sec:camCalib} und~\ref{sec:planeCalib} wird der Algorithmus zur Berechnung der Koordinatentransformation von Kamerakoordinaten in Unitykoordinaten beschrieben. Beim Benutzen des fertig kalibrierten System fällt jedoch auf, dass die Aluminiumwürfel nicht an allen Positionen auf dem Spielfeld deckungsgleich mit ihrem gerenderten Pendant sind.  Bei genauerer Betrachtung \textcolor{red}{...Wie sieht Fehler aus? immer noch an kalibrierten Ecken und Diagonale ok?}\\
 Im nächsten Kapitel werden mögliche Gründe für diese fehlerhafte Abbildung aufgeführt und diskutiert. 
@@ -631,6 +631,6 @@ Weitere essentielle Informationen
 std::vector< cv::Point3d > tvecs; \ref{sec:planeCalib}
 cv::Point3d estimatedCenter; \ref{sec:planeCalib} 
 
-\subsection{Verfolgung der Identitäten}\todo[inline]{Vera}
+\subsection{Verfolgung der Identitäten} \label{sec:ID}\todo[inline]{Vera}
 
 \newpage
