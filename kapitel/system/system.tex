@@ -379,7 +379,7 @@ Zu diesem Zweck muss eine zweistufige Kalibrierung durchgeführt werden. Zunäch
 Der nächste Schritt, die Kalibrierung des Arbeitsbereichs, bestimmt über Punkt-Korrespondenzen (vgl. Kapitel \ref{sec:Korrespondenz})-- also in zwei verschiedenen Koordinatensystemen bekannte Punkte -- eine affine 3D-Transformation, welche die Abbildung vom Kamera-Koordinaten\-system auf das Unity-Koordinatensystem ermöglicht. Dieser Kalibrierungsschritt wird nachfolgend in~\ref{sec:planeCalib} näher beschrieben.\\
 Nach vollständiger Kalibrierung des Systems wird sowohl die Kamerakalibrierung, als auch die Kalibrierung des Arbeitsbereiches, abgespeichert (vgl. Kapitel \ref{saveCalib}), sodass der Benutzer, beim erneuten Starten des Systems, entscheiden kann, ob er auf eine erneute Kalibrierung verzichtet oder aber das System teilweise oder komplett neu kalibrieren möchte (vgl. \texttt{SelectCalibrationTarget} in Kapitel~\ref{sec:menuAblauf}). Dabei ist zu beachten, dass eine Kamerakalibrierung nur in Verbindung mit einer anschließenden Kalibrierung des Arbeitsbereiches durchgeführt werden kann. Eine Arbeitsbereichskalibrierung kann jedoch autonom vorgenommen werden. \\
 Die Beschreibung des Algorithmus in den nächsten beiden Kapiteln umfasst sowohl eine mathematische Darstellung, als auch eine Darstellung der konkreten Umsetzung in Quellcode. Letzteres ist bewusst kurz gehalten, da für die Umsetzung der einzelnen Teilschritte vorwiegend Methoden aus der \textit{OpenCV}-Library (vgl. Kapitel~\ref{sec:OpenCV}) benutzt worden sind. Alle Grundlegenden Definitionen für die Rechenschritte können in Kapitel~\ref{sec:DefKoords} nachgelesen werden. Die Schnittstelle in Form der \texttt{Calibration.cpp}-Klasse wird in Kapitel~\ref{sec:CalibSteuerung} eingeführt.\\
-Trotz einer sorgfältigen Umsetzung der in den nächsten beiden Kapiteln beschriebenen Kalibrierungsschritte, ist es nicht gelungen, den Aluminiumwürfel und den gerenderten Würfel vollständig zur Deckung zu bringen. Der entstandene Fehler sowie mögliche systembedingte Fehlerquellen werden in~\ref{sec:calibError} und in~\ref{sec:calibErrorSources} beschrieben. 
+Trotz einer sorgfältigen Umsetzung der in den nächsten beiden Kapiteln beschriebenen Kalibrierungsschritte, ist es nicht gelungen, den Aluminiumwürfel und den gerenderten Würfel vollständig zur Deckung zu bringen. Der entstandene Fehler sowie mögliche systembedingte Fehlerquellen werden in~\ref{sec:calibError} beschrieben. 
 
 \subsubsection{Korrespondierende Punktepaare} \label{sec:Korrespondenz} \todo[inline, color=green]{Laura}
 Im Zusammenhang mit der Kalibrierung des Systems von \textit{MaRC} werden von einem Marker Koordinaten in Bildkoordinaten und die entsprechenden Koordinaten in der Unitywelt benötigt. Hierbei spricht man von korrespondierenden Punkten. Genauer gesagt wird für diese Zwecke der Kalibrierungscontroller (vgl. Kapitel \ref{sec:calibController}) verwendet. Auf diesem befindet sich ein \textit{ArUco} MArker (vgl. Kapitel \ref{sec:aruco}). Der Mittelpunkt, also das \texttt{estimatedCenter}, kann für jede Position über das in Kapitel \ref{sec:ArucoMarkerTracking} beschriebene Trackingverfahren ermittelt werden und wird für jeden erkannten Marker auf Trackingseite abgespeichert. Dies geschieht bei der Kalibrierung genau immer dann, wenn der Trigger am Controller der \textit{HTC Vive} gedrückt wird. Somit kann in Unity ebenfalls die entsprechende Position abgespeichert werden. Eine Position liegt also sowohl in Bild- als auch in Unitykoordinaten vor (vgl. Tabelle \ref{tab:camCalibParam}). 
@@ -568,24 +568,23 @@ c & d & t_y \\
 \end{description}
 
 \subsubsection{Kalibrierungsfehler} \label{sec:calibError}\todo[inline, color=yellow]{Laura}
-In den Kapiteln~\ref{sec:camCalib} und~\ref{sec:planeCalib} wird der Algorithmus zur Berechnung der Koordinatentransformation von Kamerakoordinaten in Unitykoordinaten beschrieben. Beim Benutzen des fertig kalibrierten System fällt jedoch auf, dass die Aluminiumwürfel nicht an allen Positionen auf dem Arbeitsfeld deckungsgleich mit ihrem gerenderten Pendant sind.  Bei genauerer Betrachtung \textcolor{red}{...Wie sieht Fehler aus? immer noch an kalibrierten Ecken und Diagonale ok?}\\
-Im nächsten Kapitel werden mögliche Gründe für diese fehlerhafte Abbildung aufgeführt und diskutiert. 
+In den Kapiteln~\ref{sec:camCalib} und~\ref{sec:planeCalib} wird der Algorithmus zur Berechnung der Koordinatentransformation von Kamerakoordinaten in Unitykoordinaten beschrieben. Beim Benutzen des fertig kalibrierten System fällt jedoch auf, dass die Aluminiumwürfel nicht an allen Positionen auf dem Arbeitsfeld deckungsgleich mit ihrem gerenderten Pendant sind. Der beobachtete Fehler variiert bei jeder Kalibrierung. Im Folgenden werden mögliche Gründe für die Positionsabweichung von dem getrackten Objekt und seinem virtuellen Marker  diskutiert. \\
+Neben der Rechenungenauigkeit und Rundungsfehlern, die sich über die diversen Rechenschritte (siehe Kapitel \ref{sec:camCalib} und \ref{sec:planeCalib}) hinweg aufaddieren, sollen in diesem Kapitel systembedingte mögliche Fehlerquellen aufgeführt werden. Man kann davon ausgehen, dass sich der Fehler großteils durch Fehlerfortpflanzung \cite{schmalstieg2016augmented} ergibt.\\ 
+Da die Auflösung der für das Tracking genutzten \textit{IDS uEye}-Kamera begrenzt ist (vgl. BLA) ergibt sich ein . Dieser Effekt wird durch Einflüsse wie Bildrauschen und die von Frame zu Frame unterschiedlichen Boundingboxen weiter verstärkt. Es ist also davon auszugehen, dass die Mittelpunkte der getrackten Marker, die als ein Part in die korrespondierenden Punktepaare (vgl BLA) eingehen, schon einen gewissen Fehler aufweisen. \\
 
 
-\subsubsection{Mögliche Fehlerquellen} \label{sec:calibErrorSources}\todo[inline, color=yellow]{Laura}
-Bei der Registrierung der Würfelobjekte kommt es zu dem in~\ref{sec:calibError} beschriebenen Fehler.
-Neben der Rechenungenauigkeit und Rundungsfehlern, die sich über die diversen Rechenschritte (siehe Kapitel \ref{sec:camCalib} und \ref{sec:planeCalib}) hinweg aufaddieren, sollen in diesem Kapitel systembedingte mögliche Fehlerquellen aufgeführt werden. \\
 
+2) RANSAC
+%3) Fehlerfortpflanzung
+4) Inside out Tracking Vive
+%5) Trackingfehler + 6) Kamerauflösung begrenzt
 
-1) Zum Einen Tracking Vive
-2) Lösen DLT
-3) Fehlerfortpflanzung
-4) Inside out
-5) Trackingfehler
-6) Kamerauflösung begrenzt
 
 Zusätzliche Registrierungsfehler können durch Latenz entstehen. Nämlich immer dann, wenn eine Zeitdifferenz zwischen der Messung der Position in Kamerakoordinaten und der eigentlichen Darstellung nach entsprechender
 Verarbeitung entsteht. Solche Systemverzögerungen werden allerdings nur bei Bewegungen sichtbar und sind deshalb für die beobachteten Fehler bei ruhendem Aluminiumwürfel nicht als mögliche Fehlerquelle auszumachen. 
+
+
+
 \subsubsection{Schnittstelle der beiden Kalibrierung} \label{sec:CalibSteuerung}\todo[inline, backgroundcolor=green]{Laura und Vera}
 Wie bereits erwähnt, dient die \texttt{Calibration.cpp}-Klasse als Schnittstelle für die Kamerakalibrierung (vgl. Kapitel \ref{sec:camCalib}) und die Arbeitsbereichskalibrierung (vgl. Kapitel \ref{sec:planeCalib}). Diese Schnittstelle stellt Methoden für beide Kalibrierungen alle erforderlichen Funktionen und die benötigten Zugriffe auf die generierten Daten zur Verfügung. 
 
