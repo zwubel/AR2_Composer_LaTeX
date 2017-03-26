@@ -91,9 +91,9 @@ Die Auflösung des Displays beträgt insgesamt $2160\times1200$ Pixel, was $1080
 Zur Positionsbestimmung im Raum wird die Lighthousetechnologie von \textit{Valve} genutzt. Zusätzlich sind neben einem Gyrosensor auch ein Beschleunigungsmesser und ein Laser-Positionsmesser verbaut. Mittels speziellen Game-Controllern wird eine Interaktion mit virtuellen Objekten ermöglicht.
 
 \subsubsection{IDS uEye 164LE-C}\label{sec:uEye} \todo[inline, color=green] {Vera}
-Die Kamera \textit{uEye 164LE-C} wurde vom Hersteller \textit{IDS Imaging Development Systems} entwickelt. Sie hat eine Auflösung von $1280 \times 1024$ Pixel und ermöglicht Live-Video-Aufnahmen im RGB Farbmodus mit maximal $25$ fps. Der integrierte CMOS Bildsensor wird im Rolling Shutter betrieben und ermöglicht Belichtungszeiten von $37\mu$s bis $10$s. Weiterführend kann sie universell mit allen gängigen Computern oder Systemen via USB 2.0 Schnittstelle verbunden werden \cite{website:UEyeTechSpec}.\\
+Die Kamera \textit{uEye 164LE-C} wurde vom Hersteller \textit{IDS Imaging Development Systems} entwickelt. Sie hat eine Bildauflösung von $1280 \times 1024$ Pixel und ermöglicht Live-Video-Aufnahmen im RGB Farbmodus mit maximal $25$ fps. Der integrierte CMOS Bildsensor wird im Rolling Shutter Modus betrieben und ermöglicht Belichtungszeiten von $37\mu$s bis $10$s. Weiterführend kann sie universell mit allen gängigen Computern oder Systemen via USB 2.0 Schnittstelle verbunden werden \cite{website:UEyeTechSpec}.\\
 
-Die erforderliche Ansteuerung der \textit{uEye 164LE-C} erfolgt mit Hilfe der bereit gestellten \textit{IDS Software Suite}. In diese Suite ist die \textit{uEye-API} integriert, welche die Entwicklung von eigenen Programmen unter \textit{Windows} und \textit{Linux} mit den Programmiersprachen \textit{C}$++$, \textit{.NET}, \textit{C$\#$} oder \textit{C} ermöglicht \cite{website:IDSSuite}. Für das Tracking der Marker in \textit{MArC} wurde eine eigene Schnittstelle in \textit{C}$++$ erstellt, welche die Kamera im Live Modus initialisiert und steuert. 
+Die erforderliche Ansteuerung der \textit{uEye 164LE-C} erfolgt mit Hilfe der bereit gestellten \textit{IDS Software Suite}. In diese Suite ist die \textit{uEye-API} integriert, welche die Entwicklung von eigenen Programmen unter den Betriebsystemen \textit{Windows} und \textit{Linux} mit den Programmiersprachen \textit{C}$++$, \textit{.NET}, \textit{C$\#$} oder \textit{C} ermöglicht \cite{website:IDSSuite}. Für das Tracking der Marker in \textit{MArC} wurde eine eigene Schnittstelle in \textit{C}$++$ erstellt, welche die Kamera im Live Modus initialisiert und steuert. 
 
 \subsubsection{Leap Motion}\label{sec:LeapMotion} \todo[inline,color=green]{Paul}	
 Bei der \textit{Leap Motion} \cite{website:LeapMotion} handelt sich um ein $7,6\times3\times1,3\,cm$ großes Gerät, welches es mit Hilfe von Sensoren möglich macht, Hand- und Fingerbewegungen zu tracken und diese als Eingabemöglichkeit zu nutzen. Die Idee dahinter ist, eine Eingabegerät im virtuellen Raum analog zu Maus zu schaffen, welches keinen direkten Kontakt bzw. keine Berührung benötigt. Hergestellt wird die \textit{Leap Motion} von der amerikanischen Firma Leap Motion Inc. Gegründet wurde die Firma am 1. November 2010. \\
@@ -113,34 +113,16 @@ Für das Projekt wurde die \textit{Leap Motion} zur Interaktion mit den virtuell
 \textit{Leap} bietet zudem mehrere sog. "Module" an, die das SDK erweitern können. Unter anderem auch ein Modul, welches die \textit{Unity}-internen GUI Elemente mit den Handmodellen bedienbar machen. Nach einigen Tests hat sich jedoch herausgestellt, dass diese Interaktionsmöglichkeit für \textit{MArC} ungeeignet ist, da sie zu instabil läuft. Das um das UI Modul erweiterte SDK projiziert die Position der Fingerspitzen auf die UI Ebene, falls sich die Hand in der Nähe dieser befindet. Auf der UI wird dann ein kleiner Kreis angezeigt, um dem Nutzer ein visuelles Feedback zu gewährleisten.\\
 Im Falle von \textit{MArC} sollten die virtuellen UI Elemente auf den Tisch platziert werden. Hierbei sind die Elemente jedoch immer ein wenig oberhalb des Tisches platziert, damit sie in jedem Fall mit der virtuellen Hand bedient werden können. Zwingend durchdringt die Hand dann die UI Elemente. Mittels des mitgelieferten UI-Modules ist eine Interaktion dann nicht mehr möglich. Daher war eine Bedienung mit Hilfe der Collider sinnvoller.
 
-\subsubsection{ArUco Marker} \label{sec:aruco} \todo[inline, color=green]{Vera}
-Die ArUco Bibliothek ist ein Marker Tracking Modul von \textit{OpenCV} (siehe Kapitel \ref{sec:OpenCV}) kann für Augmented Reality (AR) Anwendungen genutzt werden und stellt für diese Anwendungen alle notwendigen Funktionalitäten zum Orten und Verifizieren der Codes sowie der anschließenden Pose Estimation der ermittelten Positionen zur Verfügung \cite{article:Aruco2014}. 
-Die Marker bestehen ähnlich wie QR-Codes aus einer zweidimensionalen Matrix, mit schwarzen oder weißen Feldern, welche die kodierten Daten binär, wie in Abbildung \ref{fig:AllUsedArucoMarker}, darstellen.  Weiterführend kann die Anzahl der Bits variabel gewählt werden (siehe Abbildung \ref{fig:SizesArucoMarker}), je nachdem wie groß die gefragte Markeranzahl ist oder deren erforderliche Erkennbarkeit in sehr großen Entfernungen sowie kleinen Bildern. Um diese Vielzahl an verschiedenen Größen und IDs händeln zu können wurden sogenannte Dictionarys eingeführt \cite{article:ArucoDictGarridoJurado2015}. Diese Dictionarys bestehen aus Markern mit gleicher Bit-Anzahl und sind zusätzlich auf eine maximalen Anzahl von IDs begrenzt um ein möglichst hohe Performanz zu gewährleisten.\\
-
-
-\begin{figure}[H] 
-	\center 
-	\includegraphics[width=10cm]{Bilder/Aruco_marker.jpg}			
-	\caption{Alle genutzten 16 bit ArUco Marker des Prototypen. Links die zwölf IDs der Würfel Marker und rechts die ID, welche zur Kalibrierung benötigt wird. Die maximale Anzahl der Marker ist auf $50$ begrenzt.}
-	\label{fig:AllUsedArucoMarker}
-\end{figure}
-
-\begin{figure}[H] 
-	\center 
-	\includegraphics[width=7cm]{Bilder/VerschAruco.jpg}			
-	\caption{ArUco Marker mit unterschiedlicher Bitgröße. Von Links nach Rechts: $n=5$, $n=6$ und $n=8$. Quelle: \cite{article:Aruco2014}}
-	\label{fig:SizesArucoMarker}
-\end{figure}
 
 \subsubsection{Würfel Marker}\label{sec:WürfelMarker} \todo[inline, color=green]{Vera}
 
-In vielen VR oder AR Umgebungen müssen die Nutzer eines Systems häufig nach virtuellen Objekten zur Interaktion greifen, die nicht real existieren. Demzufolge greifen die Personen ins Leere, was häufig die Immersion stört und zu Irritationen und Unsicherheit führt.
-Um dem Nutzer des Systems \textit{MArC} für die Positionierung und Orientierung ein reales haptisches Feedback zu ermöglichen wurden zwölf Aluminumwürfel mit aufgeklebten Markern designt. Diese Würfel können beliebig innerhalb eines zuvor festgelegten Bereiches auf dem realen Tisch verschoben und rotiert werden. An der aktuellen Position und Orientierung des jeweiligen Markers wird in der VR ein explizit zugeordnetes Objekt gerendert. Diese Position wird mit Hilfe des Tracking-Algorithmus (siehe Kapitel \ref{sec:Tracking}) aus den Bildern der uEye Kamera ermittelt.
+In vielen VR oder AR Umgebungen müssen die Nutzer eines Systems häufig nach virtuellen Objekten zur Interaktion greifen, die nicht real existieren. Demzufolge greifen die Personen ins Leere, was die Immersion erheblich stört und zu Irritationen sowie Unsicherheit führt.
+Um dem Nutzer des Systems \textit{MArC} für die Positionierung und Orientierung ein reales haptisches Feedback zu ermöglichen wurden zwölf Aluminumwürfel mit aufgeklebten Markern entwickelt. Diese Würfel können beliebig innerhalb eines zuvor festgelegten Bereiches auf dem realen Tisch verschoben und rotiert werden. An der aktuellen Position und Orientierung des jeweiligen Markers wird in der VR ein explizit zugeordnetes Objekt gerendert. Diese Position wird mit Hilfe des Tracking-Algorithmus (siehe Kapitel \ref{sec:Tracking}) aus den Bildern der uEye Kamera ermittelt.
 Alle zwölf Marker stimmen mit der Form und Farbe, sowie Material und Oberflächenbeschaffenheit aus Abbildung \ref{fig:marker} überein. Sie haben eine Kantenlänge von $46\,mm$ und sind in einem Winkel von $45^\circ$ an allen Kanten gefräst. Das Aluminium ist glasperlgestrahlt um eine matte Oberfläche zu erzeugen, welche ungewollte Reflexionen und Überstrahlungen vermeidet, die unter Umständen den Tracking-Algorithmus beeinflussen können. 
 
 Auf die Oberseite des Markers ist mittig ein leuchtend grünes Quadrat mit einer Kantenlänge von $40\,mm$ aufgebracht. Diese grüne Fläche wird für ein Green-Keying benötigt, welches die Verfolgung der Marker auch bei Bewegungsunschärfe ermöglicht. Die leuchtend grüne Farbe wurde ausgewählt, da sie auf Grund ihrer hohen Leuchtkraft selten in der Natur und vor allem nicht in der Hautfarbe vorkommt. So hebt sie sich stark von ihrer Umgebung ab und erleichtert das Segmentieren der grünen Fläche im Bild. Die rechteckige Form der grünen Flächen hat noch eine weitere Bedeutung. Auf Grund der Geometrie können die äußeren Eckpunkt wie bei den rechteckigen codebasierten Markern auch zur Berechnung der Orientierung des Würfelmarkers im Kameraraum verwendet werden.
 
-Ebenfalls mittig ist jeweils ein individueller $35\,mm$ großer $16$ bit ArUco-Marker plan befestigt. Alle verwendeten ArUco-Marker haben einen Rand von einem Bit hat und wurden jeweils aus dem Marker Dictionary $\texttt{DICT\_4X4\_50}$ des Arcuo Moduls \cite{website:ArucoDoc} generiert. Die maximale Anzahl an IDs von $50$ ist ausreichend für den Prototypen von \textit{MArC}, da die Anzahl von $50$ Würfelmarkern die durchschnittliche Fläche mehr als ausfüllen würde. Ein weiterer Vorteil dieser verhältnismäßig kleinen Dictonarys ist, dass auch der Aufwand für den entsprechenden Abgleich einer ID mit den potentiellen Mustern im Dictonary erheblich reduziert werden kann. 
+Ebenfalls mittig ist jeweils ein individueller $35\,mm$ großer $16$ bit ArUco Marker plan befestigt. Alle verwendeten ArUco-Marker haben einen Rand von einem Bit hat und wurden jeweils aus dem Marker Dictionary $\texttt{DICT\_4X4\_50}$ des ArUco Moduls \cite{website:ArucoDoc} generiert. Die maximale Anzahl an IDs von $50$ ist ausreichend für den Prototypen von \textit{MArC}, da die Anzahl von $50$ Würfelmarkern die durchschnittliche Fläche ausfüllt. Ein weiterer Vorteil dieses verhältnismäßig kleinen Dictonarys ist, dass auch der Aufwand für den entsprechenden Abgleich einer ID mit den potentiellen Mustern im Dictonary erheblich reduziert werden kann. 
 Weiterführend beinhaltet das $\texttt{DICT\_4X4\_50}$ Dictionary auf Grund seiner $16$ bit Codierung sehr grobe und einfache Muster, welche gegen die mögliche Bewegungsunschärfe robuster ist. Bei sehr feinen Strukturen kann es schneller zu einer Verwischung des gesamten Musters kommen und die Wahrscheinlichkeit einer erfolgreichen Erkennung sinkt.
 	\begin{figure}[H] 
 	\center 
@@ -222,7 +204,7 @@ Die \emph{Ovrvision Pro} ist speziell auf Augmented Reality (AR) Anwendungen aus
 \end{figure}
 \subsubsection{Webcam}\label{sec:webcam} \todo[inline, color=green]{Vera}
 
-Die \textit{Creative Senz3D} ist eine RGB Kamera mit einer zusätzlichen Infrarot-Tiefenkamera. Das generierte RGB-Bild hat eine Auflösung von $1280\times720$ Pixel und das Tiefenbild von $320\times240$ Pixel bei einer Reichweite von $15-99\,$cm sowie einem Sichtfeld von $74^\circ$. Die Kamera wird über eine USB 2.0 Schnittstelle mit einem Computer verbunden und nimmt Videos mit einer Framerate von bis zu $30$ fps auf \cite{website:Senz3d}. Weiter ist es möglich die Kamera direkt aus Anwendungen per \textit{Intel Perceptual Computing SDK} anzusteuern.
+Die \textit{Creative Senz3D} ist eine RGB Kamera mit einer zusätzlichen Infrarot-Tiefenkamera. Das generierte RGB-Bild hat eine Auflösung von $1280\times720$ Pixel und das Tiefenbild von $320\times240$ Pixel bei einer Reichweite von $15\-99\,$cm. Zusätzlich wurde eine Sichtfeld von $74^\circ$ ermittelt. Die Kamera wird über eine USB 2.0 Schnittstelle mit einem Computer verbunden und nimmt Videos mit einer Framerate von bis zu $30$ fps auf \cite{website:Senz3d}. Weiter ist es möglich die Kamera direkt aus Anwendungen per \textit{Intel Perceptual Computing SDK} anzusteuern.
 
 \subsection{Software} \todo[inline, color=green]{Vera}
 
@@ -239,14 +221,31 @@ Die zu Beginn des Projekts verwendete Stereo-Kamera \emph{Ovrvision Pro} stellt 
 
 \subsubsection{Visual Studio 2015}\label{sec:VisualStudio} \todo[inline, color=green] {Vera}
 
-\textit{Micosoft Visual Studio 2015} ist eine verbreitete integrierte Entwicklungsumgebung (IDE), welche unter anderem die Programmiersprachen Visual Basic, Visual C$\#$, und Visual C++ unterstützt. Mit Hilfe dieser IDE kann ein Entwickler Win32/ Win64 Anwendungen sowie weitere WebApps und Webservices \cite{website:VisuStud} programmieren sowie anschließend compilieren. Für \textit{MArC} wurde mit der Version $14.0.25123.00$ Update2 gearbeitet.
+\textit{Micosoft Visual Studio 2015} ist eine verbreitete integrierte Entwicklungsumgebung (IDE), welche unter anderem die Programmiersprachen Visual Basic, Visual C$\#$, und Visual C++ unterstützt. Mit Hilfe dieser IDE kann ein Entwickler Win32/ Win64 Anwendungen sowie weitere Web Applikationen und Webservices \cite{website:VisuStud} programmieren und anschließend compilieren. Für \textit{MArC} wurde mit der Version $14.0.25123.00$ Update2 gearbeitet.
 
 \subsubsection{OpenCV} \label{sec:OpenCV} \todo[inline, color=green] {Vera}
 \textit{Open Source Computer Vision} (OpenCV) ist eine Open Source Bibliothek für Bild- und Videoverarbeitung in der Programmiersprache \textit{C}$++$. Vorgestellt wurde sie vor über zehn Jahren von \textit{Intel} und wird seitdem stetig von verschiedenen Programmierern weiterentwickelt. Diese Bibliothek stellt die gängigsten Algorithmen sowie aktuelle Entwicklungen der Bildverarbeitung zur Verfügung
 \cite{article:OpenCV}.\\
-Für dieses System ist vor allem das Modul \texttt{calib3d} \cite{website:Calib3dDoc} und das extra Modul \texttt{aruco} \cite{website:ArucoDoc} verwendet. Das erste Modul \texttt{calib3d}  bietet alle notwendigen Funktionen zur Erstellung, Verwendung und Weiterverarbeitung von intrinsischen und extrinsischen Kamerakalibrierungen an (siehe Kapitel \ref{sec:calib}). Während das Zweite alle benötigten Ressourcen und Funktionalitäten zum Tracken von \textit{ArUco} Markern zur Verfügung stellt (siehe Kapitel \ref{sec:aruco}).
+Für dieses System ist vor allem das Modul \texttt{calib3d} \cite{website:Calib3dDoc} und das extra Modul \texttt{aruco} \cite{website:ArucoDoc} verwendet. Das erste Modul \texttt{calib3d}  bietet alle notwendigen Funktionen zur Erstellung, Verwendung und Weiterverarbeitung von intrinsischen und extrinsischen Kamerakalibrierungen an (siehe Kapitel \ref{sec:calib}). Während das Zweite alle benötigten Ressourcen und Funktionalitäten zur Verfolgung von \textit{ArUco} Markern zur Verfügung stellt (siehe Kapitel \ref{sec:aruco}).
 
 %\subsubsection{Orion Beta Software} \label{OBS}\todo[inline] {Paul}
+\subsubsection{ArUco Bibliothek} \label{sec:aruco} \todo[inline, color=green]{Vera}
+Die ArUco Bibliothek ist ein Marker Tracking Modul von \textit{OpenCV} (siehe Kapitel \ref{sec:OpenCV}) kann für Augmented Reality (AR) Anwendungen genutzt werden und stellt für diese Anwendungen alle notwendigen Funktionalitäten zum Orten und Verifizieren der Codes sowie einer Positionsabschätzung der ermittelten Positionen im Kameraraum zur Verfügung \cite{article:Aruco2014}. 
+Die Marker bestehen ähnlich wie QR-Codes aus einer zweidimensionalen Matrix, mit schwarzen oder weißen Feldern, welche die kodierten Daten binär, wie in Abbildung \ref{fig:AllUsedArucoMarker}, darstellen.  Weiterführend kann die Bitanzahl (siehe Abbildung \ref{fig:SizesArucoMarker}) und die gefragte maximale Markeranzahl variabel gewählt werden. An dieser Stelle ist eine kleine  Bitanzahl, welche detailarme Muster erzeugt, für eine gute Erkennbarkeit in sehr großen Entfernungen zur Kamera oder kleinen Bildern sinnvoll. Um diese Vielzahl an verschiedenen Größen und IDs zu verwalten wurden sogenannte Dictionarys eingeführt \cite{article:ArucoDictGarridoJurado2015}. Diese Dictionarys bestehen aus Markern mit gleicher Bitanzahl und sind zusätzlich auf eine maximalen Anzahl von IDs begrenzt um ein möglichst hohe Performanz während des Zuordnungsprozesses zu gewährleisten.\\
+
+\begin{figure}[H] 
+	\center 
+	\includegraphics[width=10cm]{Bilder/Aruco_marker.jpg}			
+	\caption{Alle genutzten 16 bit ArUco Marker des Prototypen. Links die zwölf IDs der Würfel Marker und rechts die ID, welche zur Kalibrierung benötigt wird. Die maximale Anzahl der Marker ist auf $50$ begrenzt.}
+	\label{fig:AllUsedArucoMarker}
+\end{figure}
+
+\begin{figure}[H] 
+	\center 
+	\includegraphics[width=7cm]{Bilder/VerschAruco.jpg}			
+	\caption{ArUco Marker mit unterschiedlicher Bitgröße. Von Links nach Rechts: $n=5$, $n=6$ und $n=8$. Quelle: \cite{article:Aruco2014}}
+	\label{fig:SizesArucoMarker}
+\end{figure}
 
 \subsubsection{Steam VR}\todo[inline] {Paul}
 \subsubsection{Windows Sockets (Winsock)}\label{sec:Winsock}\todo[inline, color=green] {Lukas}

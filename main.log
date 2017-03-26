@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.21)  25 MAR 2017 22:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.21)  26 MAR 2017 20:51
 entering extended mode
 **./main.tex
 (main.tex
@@ -1280,11 +1280,7 @@ File: pppdftex.def 2016/12/11 v0.5g Pdfpages driver for pdfTeX (AM)
 \AM@toc@title=\toks44
 \c@AM@survey=\count193
 \AM@templatesizebox=\box70
-) (main.aux
-
-LaTeX Warning: Label `fig:menuFlow' multiply defined.
-
-)
+) (main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 89.
@@ -1793,223 +1789,232 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 111.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 116.
+(babel)             in language  on input line 117.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 116.
+(babel)             in language  on input line 117.
 
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 117.
+(babel)             in language  on input line 119.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 117.
+(babel)             in language  on input line 119.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 117.
+(babel)             in language  on input line 119.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 117.
+(babel)             in language  on input line 119.
 
 [16 <./Bilder/leap-motion.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 117--119
-
- []
-
-<Bilder/Aruco_marker.jpg, id=665, 542.7477pt x 344.487pt>
-File: Bilder/Aruco_marker.jpg Graphic file (type jpg)
-
-<use Bilder/Aruco_marker.jpg>
-Package pdftex.def Info: Bilder/Aruco_marker.jpg used on input line 123.
-(pdftex.def)             Requested size: 284.52756pt x 180.6008pt.
-
-<Bilder/VerschAruco.jpg, id=666, 205.02127pt x 61.50638pt>
-File: Bilder/VerschAruco.jpg Graphic file (type jpg)
-
-<use Bilder/VerschAruco.jpg>
-Package pdftex.def Info: Bilder/VerschAruco.jpg used on input line 130.
-(pdftex.def)             Requested size: 199.16928pt x 59.75212pt.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 135.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 135.
-
-Overfull \vbox (2.60004pt too high) has occurred while \output is active []
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 137.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 137.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 137.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 137.
-
-[17 <./Bilder/Aruco_marker.jpg> <./Bilder/VerschAruco.jpg>]
-<Bilder/tracking-marker.jpg, id=682, 3131.7pt x 4175.6pt>
+<Bilder/tracking-marker.jpg, id=663, 3131.7pt x 4175.6pt>
 File: Bilder/tracking-marker.jpg Graphic file (type jpg)
 
 <use Bilder/tracking-marker.jpg>
-Package pdftex.def Info: Bilder/tracking-marker.jpg used on input line 147.
+Package pdftex.def Info: Bilder/tracking-marker.jpg used on input line 129.
 (pdftex.def)             Requested size: 170.71652pt x 160.90375pt.
 
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 151.
+(babel)             in language  on input line 133.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 151.
+(babel)             in language  on input line 133.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 151.
+(babel)             in language  on input line 133.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 151.
+(babel)             in language  on input line 133.
 
-[18]
+[17]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 152.
+(babel)             in language  on input line 134.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 152.
- <Bilder/Eigene Fotos/IMG_0004.jpg, id=695, 462.528pt x 350.2686pt>
+(babel)             in language  on input line 134.
+ <Bilder/Eigene Fotos/IMG_0004.jpg, id=676, 462.528pt x 350.2686pt>
 File: Bilder/Eigene Fotos/IMG_0004.jpg Graphic file (type jpg)
 
 <use Bilder/Eigene Fotos/IMG_0004.jpg>
-Package pdftex.def Info: Bilder/Eigene Fotos/IMG_0004.jpg used on input line 15
-7.
+Package pdftex.def Info: Bilder/Eigene Fotos/IMG_0004.jpg used on input line 13
+9.
 (pdftex.def)             Requested size: 377.16881pt x 208.00433pt.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 162.
+(babel)             in language  on input line 144.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 162.
+(babel)             in language  on input line 144.
 
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 163.
+(babel)             in language  on input line 145.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 163.
+(babel)             in language  on input line 145.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 163.
+(babel)             in language  on input line 145.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 163.
+(babel)             in language  on input line 145.
 
-[19 <./Bilder/tracking-marker.jpg> <./Bilder/Eigene Fotos/IMG_0004.jpg>]
-<Bilder/Eigene Fotos/IMG_0032.jpg, id=711, 462.528pt x 317.5062pt>
+[18 <./Bilder/tracking-marker.jpg> <./Bilder/Eigene Fotos/IMG_0004.jpg>]
+<Bilder/Eigene Fotos/IMG_0032.jpg, id=691, 462.528pt x 317.5062pt>
 File: Bilder/Eigene Fotos/IMG_0032.jpg Graphic file (type jpg)
 
 <use Bilder/Eigene Fotos/IMG_0032.jpg>
-Package pdftex.def Info: Bilder/Eigene Fotos/IMG_0032.jpg used on input line 16
-8.
+Package pdftex.def Info: Bilder/Eigene Fotos/IMG_0032.jpg used on input line 15
+0.
 (pdftex.def)             Requested size: 289.07999pt x 198.45056pt.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 172.
+(babel)             in language  on input line 154.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 172.
+(babel)             in language  on input line 154.
 
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 176.
+(babel)             in language  on input line 158.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 176.
+(babel)             in language  on input line 158.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 176.
+(babel)             in language  on input line 158.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 176.
+(babel)             in language  on input line 158.
 
-[20 <./Bilder/Eigene Fotos/IMG_0032.jpg>]
+[19 <./Bilder/Eigene Fotos/IMG_0032.jpg>]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 182.
+(babel)             in language  on input line 164.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 182.
+(babel)             in language  on input line 164.
 
-<Bilder/ovr.jpg, id=727, 1027.84pt x 576.1525pt>
+<Bilder/ovr.jpg, id=709, 1027.84pt x 576.1525pt>
 File: Bilder/ovr.jpg Graphic file (type jpg)
  <use Bilder/ovr.jpg>
-Package pdftex.def Info: Bilder/ovr.jpg used on input line 219.
+Package pdftex.def Info: Bilder/ovr.jpg used on input line 201.
 (pdftex.def)             Requested size: 426.79135pt x 239.23949pt.
 
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 223.
+(babel)             in language  on input line 205.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 223.
+(babel)             in language  on input line 205.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 223.
+(babel)             in language  on input line 205.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 223.
+(babel)             in language  on input line 205.
 
-[21]
+[20]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 223.
+(babel)             in language  on input line 205.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 223.
+(babel)             in language  on input line 205.
 
-Overfull \hbox (17.71013pt too wide) in paragraph at lines 225--226
+Overfull \hbox (17.71013pt too wide) in paragraph at lines 207--208
 []\T1/cmr/m/n/12 Die \T1/cmr/m/it/12 Crea-ti-ve Senz3D \T1/cmr/m/n/12 ist ei-ne
  RGB Ka-me-ra mit ei-ner zu-sätz-li-chen Infrarot-Tiefenkamera.
  []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 227.
+(babel)             in language  on input line 209.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 227.
+(babel)             in language  on input line 209.
 
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 229.
+(babel)             in language  on input line 211.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 229.
+(babel)             in language  on input line 211.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 229.
+(babel)             in language  on input line 211.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 229.
+(babel)             in language  on input line 211.
 
-[22 <./Bilder/ovr.jpg>]
+[21 <./Bilder/ovr.jpg>]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 214.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 214.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 222.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 222.
+
+Overfull \hbox (30.4515pt too wide) in paragraph at lines 224--225
+\T1/cmr/m/n/12 gram-mie-ren und an-schlie-ÿend com-pi-lie-ren. Für \T1/cmr/m/it
+/12 MArC \T1/cmr/m/n/12 wur-de mit der Ver-si-on $\OT1/cmr/m/n/12 14\OML/cmm/m/
+it/12 :\OT1/cmr/m/n/12 0\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 25123\OML/cmm/m/it/12
+ :\OT1/cmr/m/n/12 00$
+ []
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 226.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 226.
+
+Overfull \vbox (2.60004pt too high) has occurred while \output is active []
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 230.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 230.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 230.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 230.
+
+[22]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 232.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 232.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 240.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 240.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 244.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 244.
+
+Underfull \hbox (badness 10000) in paragraph at lines 233--235
+
+ []
+
+<Bilder/Aruco_marker.jpg, id=763, 542.7477pt x 344.487pt>
+File: Bilder/Aruco_marker.jpg Graphic file (type jpg)
+
+<use Bilder/Aruco_marker.jpg>
+Package pdftex.def Info: Bilder/Aruco_marker.jpg used on input line 238.
+(pdftex.def)             Requested size: 284.52756pt x 180.6008pt.
+
+<Bilder/VerschAruco.jpg, id=764, 205.02127pt x 61.50638pt>
+File: Bilder/VerschAruco.jpg Graphic file (type jpg)
+
+<use Bilder/VerschAruco.jpg>
+Package pdftex.def Info: Bilder/VerschAruco.jpg used on input line 245.
+(pdftex.def)             Requested size: 199.16928pt x 59.75212pt.
 
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 248.
+(babel)             in language  on input line 249.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 248.
+(babel)             in language  on input line 249.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 248.
+(babel)             in language  on input line 249.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 248.
+(babel)             in language  on input line 249.
 
-[23]
+[23 <./Bilder/Aruco_marker.jpg>]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 250.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 250.
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 251.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 251.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 252.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 252.
 
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 255.
+(babel)             in language  on input line 254.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 255.
+(babel)             in language  on input line 254.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 255.
+(babel)             in language  on input line 254.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 255.
+(babel)             in language  on input line 254.
 
-[24]) (kapitel/system/system.tex
+[24 <./Bilder/VerschAruco.jpg>]) (kapitel/system/system.tex
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 2.
 Package babel Info: Redefining ngerman shorthand "~
@@ -2024,20 +2029,15 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 5.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 5.
-
-Underfull \hbox (badness 10000) in paragraph at lines 6--7
-
- []
-
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 7.
+(babel)             in language  on input line 8.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 7.
+(babel)             in language  on input line 8.
 <Bilder/Eigene Fotos/IMG_0020.jpg, id=795, 462.528pt x 233.1912pt>
 File: Bilder/Eigene Fotos/IMG_0020.jpg Graphic file (type jpg)
 
 <use Bilder/Eigene Fotos/IMG_0020.jpg>
-Package pdftex.def Info: Bilder/Eigene Fotos/IMG_0020.jpg used on input line 12
+Package pdftex.def Info: Bilder/Eigene Fotos/IMG_0020.jpg used on input line 13
 .
 (pdftex.def)             Requested size: 289.07999pt x 145.75124pt.
 
@@ -2054,62 +2054,62 @@ Package babel Info: Redefining ngerman shorthand "~
 
 [25]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 17.
+(babel)             in language  on input line 18.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 17.
+(babel)             in language  on input line 18.
  <Bilder/Aufbau_MArC.jpg, id=809, 1657.392pt x 793.5246pt>
 File: Bilder/Aufbau_MArC.jpg Graphic file (type jpg)
 
 <use Bilder/Aufbau_MArC.jpg>
-Package pdftex.def Info: Bilder/Aufbau_MArC.jpg used on input line 24.
+Package pdftex.def Info: Bilder/Aufbau_MArC.jpg used on input line 25.
 (pdftex.def)             Requested size: 426.79135pt x 204.33789pt.
 
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 28.
+(babel)             in language  on input line 29.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 28.
+(babel)             in language  on input line 29.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 28.
+(babel)             in language  on input line 29.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 28.
+(babel)             in language  on input line 29.
 
 [26 <./Bilder/Eigene Fotos/IMG_0020.jpg>]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 30.
+(babel)             in language  on input line 31.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 30.
+(babel)             in language  on input line 31.
 
 <kapitel/anhang/ReadMe.pdf, id=818, page=1, 596.2275pt x 844.15375pt>
 File: kapitel/anhang/ReadMe.pdf Graphic file (type pdf)
 
 <use kapitel/anhang/ReadMe.pdf, page 1>
-Package pdftex.def Info: kapitel/anhang/ReadMe.pdf, page1 used on input line 35
+Package pdftex.def Info: kapitel/anhang/ReadMe.pdf, page1 used on input line 36
 .
 (pdftex.def)             Requested size: 426.79135pt x 273.98933pt.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 40.
+(babel)             in language  on input line 41.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 40.
+(babel)             in language  on input line 41.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 44.
+(babel)             in language  on input line 45.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 44.
+(babel)             in language  on input line 45.
 
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 47.
+(babel)             in language  on input line 48.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 47.
+(babel)             in language  on input line 48.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 47.
+(babel)             in language  on input line 48.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 47.
+(babel)             in language  on input line 48.
 
 [27 <./Bilder/Aufbau_MArC.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 49--50
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
 
  []
 
@@ -2129,13 +2129,13 @@ File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 54.
+(babel)             in language  on input line 55.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 54.
+(babel)             in language  on input line 55.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 54.
+(babel)             in language  on input line 55.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 54.
+(babel)             in language  on input line 55.
 
 [28 <./kapitel/anhang/ReadMe.pdf
 
@@ -2146,69 +2146,69 @@ d.
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 66.
+(babel)             in language  on input line 67.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 66.
+(babel)             in language  on input line 67.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 66.
+(babel)             in language  on input line 67.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 66.
+(babel)             in language  on input line 67.
 
 [29] (Quellcode/TCP.cpp)
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 72.
+(babel)             in language  on input line 73.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 72.
+(babel)             in language  on input line 73.
  (Quellcode/readInNetworkData.cs)
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 82.
+(babel)             in language  on input line 83.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 82.
+(babel)             in language  on input line 83.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 82.
+(babel)             in language  on input line 83.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 82.
+(babel)             in language  on input line 83.
 
 [30] (Quellcode/readInNetworkData.cs) (Quellcode/readInNetworkData.cs)
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 92.
+(babel)             in language  on input line 93.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 92.
+(babel)             in language  on input line 93.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 92.
+(babel)             in language  on input line 93.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 92.
+(babel)             in language  on input line 93.
 
 [31]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 93.
+(babel)             in language  on input line 94.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 93.
+(babel)             in language  on input line 94.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 95.
+(babel)             in language  on input line 96.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 95.
+(babel)             in language  on input line 96.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 99.
+(babel)             in language  on input line 100.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 99.
+(babel)             in language  on input line 100.
  <Bilder/CalibDone.jpg, id=979, 646.8923pt x 363.87692pt>
 File: Bilder/CalibDone.jpg Graphic file (type jpg)
 
 <use Bilder/CalibDone.jpg>
-Package pdftex.def Info: Bilder/CalibDone.jpg used on input line 104.
+Package pdftex.def Info: Bilder/CalibDone.jpg used on input line 105.
 (pdftex.def)             Requested size: 230.4681pt x 121.02998pt.
 
-Overfull \hbox (2.61047pt too wide) in paragraph at lines 102--112
+Overfull \hbox (2.61047pt too wide) in paragraph at lines 103--113
 []$[]$ $[]$ 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 102--112
+Underfull \hbox (badness 10000) in paragraph at lines 103--113
 
  []
 
@@ -2216,32 +2216,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 102--112
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 112.
+(babel)             in language  on input line 113.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 112.
+(babel)             in language  on input line 113.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 112.
+(babel)             in language  on input line 113.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 112.
+(babel)             in language  on input line 113.
 
 [32] <Bilder/CalibrateOrNot.jpg, id=988, 646.8923pt x 363.87692pt>
 File: Bilder/CalibrateOrNot.jpg Graphic file (type jpg)
 
 <use Bilder/CalibrateOrNot.jpg>
-Package pdftex.def Info: Bilder/CalibrateOrNot.jpg used on input line 115.
+Package pdftex.def Info: Bilder/CalibrateOrNot.jpg used on input line 116.
 (pdftex.def)             Requested size: 230.4681pt x 114.20753pt.
 
-Underfull \hbox (badness 2856) in paragraph at lines 120--122
+Underfull \hbox (badness 2856) in paragraph at lines 121--123
 \T1/cmr/m/n/12 Erscheint nach dem Ver-las-sen
  []
 
 
-Overfull \hbox (2.61047pt too wide) in paragraph at lines 113--123
+Overfull \hbox (2.61047pt too wide) in paragraph at lines 114--124
 []$[]$ $[]$ 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 113--123
+Underfull \hbox (badness 10000) in paragraph at lines 114--124
 
  []
 
@@ -2249,20 +2249,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 113--123
 File: Bilder/ControllerNotFound.jpg Graphic file (type jpg)
 
 <use Bilder/ControllerNotFound.jpg>
-Package pdftex.def Info: Bilder/ControllerNotFound.jpg used on input line 126.
+Package pdftex.def Info: Bilder/ControllerNotFound.jpg used on input line 127.
 (pdftex.def)             Requested size: 230.4681pt x 121.02998pt.
 
-Underfull \hbox (badness 2662) in paragraph at lines 131--133
+Underfull \hbox (badness 2662) in paragraph at lines 132--134
 \T1/cmr/m/n/12 schal-ten und an-schlie-ÿend auf
  []
 
 
-Overfull \hbox (2.61047pt too wide) in paragraph at lines 124--134
+Overfull \hbox (2.61047pt too wide) in paragraph at lines 125--135
 []$[]$ $[]$ 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 124--134
+Underfull \hbox (badness 10000) in paragraph at lines 125--135
 
  []
 
@@ -2270,15 +2270,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 124--134
 File: Bilder/doPlaneCalibInVS.jpg Graphic file (type jpg)
 
 <use Bilder/doPlaneCalibInVS.jpg>
-Package pdftex.def Info: Bilder/doPlaneCalibInVS.jpg used on input line 137.
+Package pdftex.def Info: Bilder/doPlaneCalibInVS.jpg used on input line 138.
 (pdftex.def)             Requested size: 230.4681pt x 121.02998pt.
 
-Overfull \hbox (2.61047pt too wide) in paragraph at lines 135--145
+Overfull \hbox (2.61047pt too wide) in paragraph at lines 136--146
 []$[]$ $[]$ 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 135--145
+Underfull \hbox (badness 10000) in paragraph at lines 136--146
 
  []
 
@@ -2286,15 +2286,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 135--145
 File: Bilder/doPoseCalibInVS.jpg Graphic file (type jpg)
 
 <use Bilder/doPoseCalibInVS.jpg>
-Package pdftex.def Info: Bilder/doPoseCalibInVS.jpg used on input line 148.
+Package pdftex.def Info: Bilder/doPoseCalibInVS.jpg used on input line 149.
 (pdftex.def)             Requested size: 230.4681pt x 121.02998pt.
 
-Overfull \hbox (2.61047pt too wide) in paragraph at lines 146--156
+Overfull \hbox (2.61047pt too wide) in paragraph at lines 147--157
 []$[]$ $[]$ 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 146--156
+Underfull \hbox (badness 10000) in paragraph at lines 147--157
 
  []
 
@@ -2302,13 +2302,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 146--156
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 156.
+(babel)             in language  on input line 157.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 156.
+(babel)             in language  on input line 157.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 156.
+(babel)             in language  on input line 157.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 156.
+(babel)             in language  on input line 157.
 
 [33 <./Bilder/CalibDone.jpg> <./Bilder/CalibrateOrNot.jpg> <./Bilder/Controller
 NotFound.jpg> <./Bilder/doPlaneCalibInVS.jpg>]
@@ -2317,20 +2317,20 @@ File: Bilder/SelectCalibrationTarget.jpg Graphic file (type jpg)
 
 <use Bilder/SelectCalibrationTarget.jpg>
 Package pdftex.def Info: Bilder/SelectCalibrationTarget.jpg used on input line 
-159.
+160.
 (pdftex.def)             Requested size: 230.4681pt x 121.02998pt.
 
-Underfull \hbox (badness 2486) in paragraph at lines 164--166
+Underfull \hbox (badness 2486) in paragraph at lines 165--167
 \T1/cmr/m/n/12 so-wohl der Ar-beits-be-reich, als
  []
 
 
-Overfull \hbox (2.61047pt too wide) in paragraph at lines 157--167
+Overfull \hbox (2.61047pt too wide) in paragraph at lines 158--168
 []$[]$ $[]$ 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 157--167
+Underfull \hbox (badness 10000) in paragraph at lines 158--168
 
  []
 
@@ -2338,15 +2338,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 157--167
 File: Bilder/SetScale.jpg Graphic file (type jpg)
 
 <use Bilder/SetScale.jpg>
-Package pdftex.def Info: Bilder/SetScale.jpg used on input line 170.
+Package pdftex.def Info: Bilder/SetScale.jpg used on input line 171.
 (pdftex.def)             Requested size: 230.4681pt x 121.02998pt.
 
-Overfull \hbox (2.61047pt too wide) in paragraph at lines 168--178
+Overfull \hbox (2.61047pt too wide) in paragraph at lines 169--179
 []$[]$ $[]$ 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 168--178
+Underfull \hbox (badness 10000) in paragraph at lines 169--179
 
  []
 
@@ -2354,35 +2354,35 @@ Underfull \hbox (badness 10000) in paragraph at lines 168--178
 File: Bilder/SocketNotReady.jpg Graphic file (type jpg)
 
 <use Bilder/SocketNotReady.jpg>
-Package pdftex.def Info: Bilder/SocketNotReady.jpg used on input line 181.
+Package pdftex.def Info: Bilder/SocketNotReady.jpg used on input line 182.
 (pdftex.def)             Requested size: 230.4681pt x 124.5134pt.
 
-Underfull \hbox (badness 5607) in paragraph at lines 186--188
+Underfull \hbox (badness 5607) in paragraph at lines 187--189
 \T1/cmr/m/n/12 Ver-las-sen des \T1/cmtt/m/n/12 Welcome\T1/cmr/m/n/12 -Menüs,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 186--188
+Underfull \hbox (badness 10000) in paragraph at lines 187--189
 \T1/cmr/m/n/12 dass die Netz-werk-ver-bin-dung
  []
 
 
-Underfull \hbox (badness 3449) in paragraph at lines 186--188
+Underfull \hbox (badness 3449) in paragraph at lines 187--189
 \T1/cmr/m/n/12 nicht be-reit ist. Nach Be-stä-
  []
 
 
-Underfull \hbox (badness 3068) in paragraph at lines 186--188
+Underfull \hbox (badness 3068) in paragraph at lines 187--189
 \T1/cmr/m/n/12 ti-gung die-ses Hin-wei-ses durch
  []
 
 
-Overfull \hbox (2.61047pt too wide) in paragraph at lines 179--189
+Overfull \hbox (2.61047pt too wide) in paragraph at lines 180--190
 []$[]$ $[]$ 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 179--189
+Underfull \hbox (badness 10000) in paragraph at lines 180--190
 
  []
 
@@ -2390,20 +2390,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 179--189
 File: Bilder/Welcome.jpg Graphic file (type jpg)
 
 <use Bilder/Welcome.jpg>
-Package pdftex.def Info: Bilder/Welcome.jpg used on input line 192.
+Package pdftex.def Info: Bilder/Welcome.jpg used on input line 193.
 (pdftex.def)             Requested size: 230.4681pt x 121.02998pt.
 
-Underfull \hbox (badness 3557) in paragraph at lines 197--199
+Underfull \hbox (badness 3557) in paragraph at lines 198--200
 \T1/cmr/m/n/12 wen-dung heiÿt und wo-zu sie
  []
 
 
-Overfull \hbox (2.61047pt too wide) in paragraph at lines 190--200
+Overfull \hbox (2.61047pt too wide) in paragraph at lines 191--201
 []$[]$ $[]$ 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 190--200
+Underfull \hbox (badness 10000) in paragraph at lines 191--201
 
  []
 
@@ -2411,30 +2411,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 190--200
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 200.
+(babel)             in language  on input line 201.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 200.
+(babel)             in language  on input line 201.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 200.
+(babel)             in language  on input line 201.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 200.
+(babel)             in language  on input line 201.
 
 [34 <./Bilder/doPoseCalibInVS.jpg> <./Bilder/SelectCalibrationTarget.jpg> <./Bi
 lder/SetScale.jpg> <./Bilder/SocketNotReady.jpg>]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 201.
+(babel)             in language  on input line 202.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 201.
+(babel)             in language  on input line 202.
 
 <kapitel/system/MP_Menu_Flowchart.pdf, id=1033, 597.23125pt x 845.1575pt>
 File: kapitel/system/MP_Menu_Flowchart.pdf Graphic file (type pdf)
 
 <use kapitel/system/MP_Menu_Flowchart.pdf>
 Package pdftex.def Info: kapitel/system/MP_Menu_Flowchart.pdf used on input lin
-e 206.
+e 207.
 (pdftex.def)             Requested size: 307.038pt x 632.59854pt.
 
-Overfull \hbox (1.52356pt too wide) in paragraph at lines 217--218
+Overfull \hbox (1.52356pt too wide) in paragraph at lines 218--219
 \T1/cmtt/m/n/12 Calibration-InVS \T1/cmr/m/n/12 an-ge-zeigt, wel-ches auch auf-
 ge-ru-fen wird, wenn der Be-nut-zer \T1/cmr/m/it/12 Work-
  []
@@ -2443,81 +2443,77 @@ ge-ru-fen wird, wenn der Be-nut-zer \T1/cmr/m/it/12 Work-
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 221.
+(babel)             in language  on input line 222.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 221.
+(babel)             in language  on input line 222.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 221.
+(babel)             in language  on input line 222.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 221.
+(babel)             in language  on input line 222.
 
 [35 <./Bilder/Welcome.jpg>]
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 221.
+(babel)             in language  on input line 222.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 221.
+(babel)             in language  on input line 222.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 221.
+(babel)             in language  on input line 222.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 221.
+(babel)             in language  on input line 222.
 
 [36 <./kapitel/system/MP_Menu_Flowchart.pdf>]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 226.
+(babel)             in language  on input line 227.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 226.
+(babel)             in language  on input line 227.
 
-<Bilder/Eigene Fotos/KontextMenue.jpg, id=1067, 853.1875pt x 602.25pt>
+<Bilder/Eigene Fotos/KontextMenue.jpg, id=1066, 853.1875pt x 602.25pt>
 File: Bilder/Eigene Fotos/KontextMenue.jpg Graphic file (type jpg)
 
 <use Bilder/Eigene Fotos/KontextMenue.jpg>
 Package pdftex.def Info: Bilder/Eigene Fotos/KontextMenue.jpg used on input lin
-e 232.
+e 233.
 (pdftex.def)             Requested size: 255.95822pt x 180.67639pt.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 237.
+(babel)             in language  on input line 238.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 237.
+(babel)             in language  on input line 238.
 
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 238.
+(babel)             in language  on input line 239.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 238.
+(babel)             in language  on input line 239.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 238.
+(babel)             in language  on input line 239.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 238.
+(babel)             in language  on input line 239.
 
 [37 <./Bilder/Eigene Fotos/KontextMenue.jpg>]
 
 LaTeX Warning: Reference `KontextMen\IeC {\"u}' on page 38 undefined on input l
-ine 238.
+ine 239.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 238--239
+Underfull \hbox (badness 10000) in paragraph at lines 239--240
 
  []
 
 
-Overfull \hbox (16.24641pt too wide) in paragraph at lines 240--241
+Overfull \hbox (16.24641pt too wide) in paragraph at lines 241--242
 []\T1/cmr/m/n/12 Die In-ter-ak-ti-on der Hand-les mit der Hand des Nut-zers wur
 -de über das Leap-Handmodell
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 240--241
+Underfull \hbox (badness 10000) in paragraph at lines 241--242
 
  []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 255.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 255.
-Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 256.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 256.
@@ -2525,189 +2521,201 @@ Package babel Info: Redefining ngerman shorthand "~
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 259.
+(babel)             in language  on input line 260.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 259.
+(babel)             in language  on input line 260.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 259.
+(babel)             in language  on input line 260.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 259.
+(babel)             in language  on input line 260.
 
-[38]
+[38] <Bilder/Contextmenu_Collider.png, id=1085, 581.17125pt x 310.91156pt>
+File: Bilder/Contextmenu_Collider.png Graphic file (type png)
+
+<use Bilder/Contextmenu_Collider.png>
+Package pdftex.def Info: Bilder/Contextmenu_Collider.png used on input line 263
+.
+(pdftex.def)             Requested size: 426.79135pt x 228.3251pt.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 259.
+(babel)             in language  on input line 268.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 259.
+(babel)             in language  on input line 268.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 265.
+(babel)             in language  on input line 271.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 265.
+(babel)             in language  on input line 271.
+
+Overfull \vbox (2.60004pt too high) has occurred while \output is active []
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 276.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 276.
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 276.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 276.
 
+[39 <./Bilder/Contextmenu_Collider.png>]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 277.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 277.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 288.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 288.
+
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 286.
+(babel)             in language  on input line 303.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 286.
+(babel)             in language  on input line 303.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 286.
+(babel)             in language  on input line 303.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 286.
-
-[39]
-Overfull \vbox (2.60004pt too high) has occurred while \output is active []
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 316.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 316.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 316.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 316.
+(babel)             in language  on input line 303.
 
 [40]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 317.
+(babel)             in language  on input line 329.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 317.
+(babel)             in language  on input line 329.
 
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 325.
+(babel)             in language  on input line 332.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 325.
+(babel)             in language  on input line 332.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 325.
+(babel)             in language  on input line 332.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 325.
+(babel)             in language  on input line 332.
 
 [41]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 326.
+(babel)             in language  on input line 338.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 326.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 332.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 332.
-
-Overfull \hbox (1.01787pt too wide) in paragraph at lines 333--333
-[][][][]\T1/cmr/m/n/12 Vera: 
- []
-
-
-Overfull \hbox (1.01787pt too wide) in paragraph at lines 333--333
-[][][][]\T1/cmr/m/n/12 Vera: 
- []
-
-
-Overfull \hbox (1.01787pt too wide) in paragraph at lines 333--333
-[][][][]\T1/cmr/m/n/12 Vera: 
- []
-
-
-Overfull \hbox (1.01787pt too wide) in paragraph at lines 333--333
-[][][][]\T1/cmr/m/n/12 Vera: 
- []
-
+(babel)             in language  on input line 338.
 
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 335.
+(babel)             in language  on input line 343.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 335.
+(babel)             in language  on input line 343.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 335.
+(babel)             in language  on input line 343.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 335.
+(babel)             in language  on input line 343.
 
 [42]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 336.
+(babel)             in language  on input line 344.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 336.
+(babel)             in language  on input line 344.
+
+Overfull \hbox (1.01787pt too wide) in paragraph at lines 346--346
+[][][][]\T1/cmr/m/n/12 Vera: 
+ []
+
+
+Overfull \hbox (1.01787pt too wide) in paragraph at lines 346--346
+[][][][]\T1/cmr/m/n/12 Vera: 
+ []
+
+
+Overfull \hbox (1.01787pt too wide) in paragraph at lines 346--346
+[][][][]\T1/cmr/m/n/12 Vera: 
+ []
+
+
+Overfull \hbox (1.01787pt too wide) in paragraph at lines 346--346
+[][][][]\T1/cmr/m/n/12 Vera: 
+ []
+
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 363.
+(babel)             in language  on input line 350.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 363.
-
-
-LaTeX Warning: Reference `saveCalib' on page 43 undefined on input line 368.
-
+(babel)             in language  on input line 350.
 
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 371.
+(babel)             in language  on input line 374.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 371.
+(babel)             in language  on input line 374.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 371.
+(babel)             in language  on input line 374.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 371.
+(babel)             in language  on input line 374.
 
 [43]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 372.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 372.
-Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 375.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 375.
+
+
+LaTeX Warning: Reference `saveCalib' on page 44 undefined on input line 380.
+
 
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 376.
+(babel)             in language  on input line 383.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 376.
+(babel)             in language  on input line 383.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 376.
+(babel)             in language  on input line 383.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 376.
+(babel)             in language  on input line 383.
 
 [44]
-Underfull \hbox (badness 10000) in paragraph at lines 376--377
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 384.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 384.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 387.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 387.
+
+Underfull \hbox (badness 10000) in paragraph at lines 388--389
 
  []
 
-<Bilder/cameraCalib.jpg, id=1164, 1867.97874pt x 1188.44pt>
+
+Overfull \vbox (2.60004pt too high) has occurred while \output is active []
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 389.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 389.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 389.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 389.
+
+[45] <Bilder/cameraCalib.jpg, id=1176, 1867.97874pt x 1188.44pt>
 File: Bilder/cameraCalib.jpg Graphic file (type jpg)
 
 <use Bilder/cameraCalib.jpg>
-Package pdftex.def Info: Bilder/cameraCalib.jpg used on input line 380.
+Package pdftex.def Info: Bilder/cameraCalib.jpg used on input line 392.
 (pdftex.def)             Requested size: 277.41176pt x 253.12454pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 385--386
+Underfull \hbox (badness 10000) in paragraph at lines 397--398
 
  []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 427.
+(babel)             in language  on input line 439.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 427.
+(babel)             in language  on input line 439.
 
-Overfull \vbox (2.60004pt too high) has occurred while \output is active []
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 429.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 429.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 429.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 429.
-
-[45 <./Bilder/cameraCalib.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 429--431
+Underfull \hbox (badness 10000) in paragraph at lines 441--443
 
  []
 
@@ -2715,16 +2723,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 429--431
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 436.
+(babel)             in language  on input line 443.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 436.
+(babel)             in language  on input line 443.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 436.
+(babel)             in language  on input line 443.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 436.
+(babel)             in language  on input line 443.
 
-[46]
-Overfull \hbox (1.15054pt too wide) detected at line 451
+[46 <./Bilder/cameraCalib.jpg>]
+Overfull \hbox (1.15054pt too wide) detected at line 463
 []\OML/cmm/m/it/12 R[] \OT1/cmr/m/n/12 = [] = []      \OML/cmm/m/it/12 R[] \OMS
 /cmsy/m/n/12 2 \U/msb/m/n/12 R[]
  []
@@ -2733,286 +2741,276 @@ Overfull \hbox (1.15054pt too wide) detected at line 451
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 496.
+(babel)             in language  on input line 463.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 496.
+(babel)             in language  on input line 463.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 496.
+(babel)             in language  on input line 463.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 496.
+(babel)             in language  on input line 463.
 
 [47]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 526.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 526.
-
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 529.
+(babel)             in language  on input line 519.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 529.
+(babel)             in language  on input line 519.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 529.
+(babel)             in language  on input line 519.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 529.
+(babel)             in language  on input line 519.
 
 [48]
-Overfull \hbox (40.03017pt too wide) in paragraph at lines 531--534
-\T1/cmr/m/n/12 da-mit ein Recht-eck auf-zu-span-nen. Dies ge-schieht in der \T1
-/cmtt/m/n/12 computePlaneCalibration()\T1/cmr/m/n/12 -
- []
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 538.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 538.
+ <Bilder/Arbeitsbereich.png, id=1235, 1084.05pt x 535.2497pt>
+File: Bilder/Arbeitsbereich.png Graphic file (type png)
 
+<use Bilder/Arbeitsbereich.png>
+Package pdftex.def Info: Bilder/Arbeitsbereich.png used on input line 544.
+(pdftex.def)             Requested size: 426.79135pt x 210.73117pt.
 
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 547.
+(babel)             in language  on input line 552.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 547.
+(babel)             in language  on input line 552.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 547.
+(babel)             in language  on input line 552.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 547.
+(babel)             in language  on input line 552.
 
 [49]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 550.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 550.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 555.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 555.
+Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
-Underfull \hbox (badness 10000) in paragraph at lines 556--558
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 554.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 554.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 554.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 554.
+
+[50 <./Bilder/Arbeitsbereich.png>]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 570.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 570.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 575.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 575.
+
+Overfull \vbox (2.60004pt too high) has occurred while \output is active []
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 576.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 576.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 576.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 576.
+
+[51]
+Underfull \hbox (badness 10000) in paragraph at lines 576--578
 
  []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 569.
+(babel)             in language  on input line 589.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 569.
+(babel)             in language  on input line 589.
 
-Overfull \hbox (16.3949pt too wide) in paragraph at lines 572--573
+Overfull \hbox (22.92111pt too wide) in paragraph at lines 592--594
 \T1/cmr/m/n/12 schlie-ÿend in der Me-tho-de \T1/cmtt/m/n/12 generateCamMatAndDi
-stMat \T1/cmr/m/n/12 in Klas-se \T1/cmtt/m/n/12 PoseEstimation.cpp
+stMat \T1/cmr/m/n/12 der Klas-se \T1/cmtt/m/n/12 PoseEstimation.cpp
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 595--596
+
  []
 
 
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 573.
+(babel)             in language  on input line 596.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 573.
+(babel)             in language  on input line 596.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 573.
+(babel)             in language  on input line 596.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 573.
+(babel)             in language  on input line 596.
 
-[50]
-Underfull \hbox (badness 10000) in paragraph at lines 574--575
-
- []
-
-
-Overfull \hbox (33.57434pt too wide) in paragraph at lines 576--577
+[52]
+Overfull \hbox (33.57434pt too wide) in paragraph at lines 597--598
 \T1/cmr/m/n/12 (vgl. Ka-pi-tel [][]5.2.1[][]) be-rech-net. Hier-zu wird in der 
 Me-tho-de \T1/cmtt/m/n/12 computeAffineTransformation
  []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 578.
+(babel)             in language  on input line 599.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 578.
+(babel)             in language  on input line 599.
 
-Overfull \hbox (28.31973pt too wide) in paragraph at lines 581--582
+Overfull \hbox (28.31973pt too wide) in paragraph at lines 602--603
 \T1/cmr/m/n/12 ab-ge-spei-chert und die af-fi-ne Trans-for-ma-ti-on wird über d
 ie \T1/cmtt/m/n/12 saveAffineTransform()\T1/cmr/m/n/12 -
  []
 
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 608.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 608.
 
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 584.
+(babel)             in language  on input line 609.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 584.
+(babel)             in language  on input line 609.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 584.
+(babel)             in language  on input line 609.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 584.
-
-[51]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 587.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 587.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 594.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 594.
-
-Overfull \vbox (2.60004pt too high) has occurred while \output is active []
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 595.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 595.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 595.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 595.
-
-[52]
-Overfull \hbox (18.47751pt too wide) in paragraph at lines 596--596
-[][][][]\T1/cmr/m/n/12 Referenz  
- []
-
-
-Overfull \hbox (18.47751pt too wide) in paragraph at lines 596--596
-[][][][]\T1/cmr/m/n/12 Referenz  
- []
-
-
-Overfull \hbox (18.47751pt too wide) in paragraph at lines 596--596
-[][][][]\T1/cmr/m/n/12 Referenz  
- []
-
-
-Overfull \hbox (18.47751pt too wide) in paragraph at lines 596--596
-[][][][]\T1/cmr/m/n/12 Referenz  
- []
-
-
-Overfull \hbox (18.47751pt too wide) in paragraph at lines 606--606
-[][][][]\T1/cmr/m/n/12 Referenz  
- []
-
-
-Overfull \hbox (18.47751pt too wide) in paragraph at lines 606--606
-[][][][]\T1/cmr/m/n/12 Referenz  
- []
-
-
-Overfull \hbox (18.47751pt too wide) in paragraph at lines 606--606
-[][][][]\T1/cmr/m/n/12 Referenz  
- []
-
-
-Overfull \hbox (18.47751pt too wide) in paragraph at lines 606--606
-[][][][]\T1/cmr/m/n/12 Referenz  
- []
-
-<Bilder/TrackingScreenshot_x.jpg, id=1286, 1284.8pt x 1027.84pt>
-File: Bilder/TrackingScreenshot_x.jpg Graphic file (type jpg)
-
-<use Bilder/TrackingScreenshot_x.jpg>
-Package pdftex.def Info: Bilder/TrackingScreenshot_x.jpg used on input line 609
-.
-(pdftex.def)             Requested size: 216.81pt x 173.44443pt.
-
-Overfull \vbox (2.60004pt too high) has occurred while \output is active []
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 613.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 613.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 613.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 613.
+(babel)             in language  on input line 609.
 
 [53]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 613.
+(babel)             in language  on input line 614.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 613.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 615.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 615.
+(babel)             in language  on input line 614.
 
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 622.
+(babel)             in language  on input line 618.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 622.
+(babel)             in language  on input line 618.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 622.
+(babel)             in language  on input line 618.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 622.
+(babel)             in language  on input line 618.
 
-[54 <./Bilder/TrackingScreenshot_x.jpg>]
+[54] <Bilder/TrackingScreenshot_x.jpg, id=1309, 1284.8pt x 1027.84pt>
+File: Bilder/TrackingScreenshot_x.jpg Graphic file (type jpg)
+
+<use Bilder/TrackingScreenshot_x.jpg>
+Package pdftex.def Info: Bilder/TrackingScreenshot_x.jpg used on input line 629
+.
+(pdftex.def)             Requested size: 216.81pt x 173.44443pt.
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 633.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 633.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 635.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 635.
 
+Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
-LaTeX Warning: Reference `fig:TrackingDiagram' on page 55 undefined on input li
-ne 641.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 636.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 636.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 636.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 636.
+
+[55 <./Bilder/TrackingScreenshot_x.jpg>]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 653.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 653.
+
+Overfull \hbox (16.78085pt too wide) in paragraph at lines 654--655
+\T1/cmr/m/n/12 zur Iden-ti-fi-ka-ti-on wird in der Funk-ti-on \T1/cmtt/m/n/12 t
+rackMarker \T1/cmr/m/n/12 der Klas-se \T1/cmtt/m/n/12 MarkerManagement.cpp
+ []
 
 
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 646.
+(babel)             in language  on input line 655.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 646.
+(babel)             in language  on input line 655.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 646.
+(babel)             in language  on input line 655.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 646.
-
-[55]
-<kapitel/system/MP_Marker_Erkennung.pdf, id=1319, 597.23125pt x 845.1575pt>
-File: kapitel/system/MP_Marker_Erkennung.pdf Graphic file (type pdf)
-
-<use kapitel/system/MP_Marker_Erkennung.pdf>
-Package pdftex.def Info: kapitel/system/MP_Marker_Erkennung.pdf used on input l
-ine 655.
-(pdftex.def)             Requested size: 329.83113pt x 611.99432pt.
-
-Overfull \vbox (2.60004pt too high) has occurred while \output is active []
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 661.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 661.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 661.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 661.
+(babel)             in language  on input line 655.
 
 [56]
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 661.
+(babel)             in language  on input line 668.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 661.
+(babel)             in language  on input line 668.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 661.
+(babel)             in language  on input line 668.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 661.
+(babel)             in language  on input line 668.
 
-[57 <./kapitel/system/MP_Marker_Erkennung.pdf>]
+[57]
+<kapitel/system/MP_Marker_Erkennung.pdf, id=1340, 597.23125pt x 845.1575pt>
+File: kapitel/system/MP_Marker_Erkennung.pdf Graphic file (type pdf)
+
+<use kapitel/system/MP_Marker_Erkennung.pdf>
+Package pdftex.def Info: kapitel/system/MP_Marker_Erkennung.pdf used on input l
+ine 673.
+(pdftex.def)             Requested size: 329.83113pt x 611.99432pt.
+
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 670.
+(babel)             in language  on input line 684.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 670.
+(babel)             in language  on input line 684.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 670.
+(babel)             in language  on input line 684.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 670.
+(babel)             in language  on input line 684.
 
-[58]) (kapitel/ausblick/ausblick.tex
+[58]
+Overfull \vbox (2.60004pt too high) has occurred while \output is active []
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 684.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 684.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 684.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 684.
+
+[59 <./kapitel/system/MP_Marker_Erkennung.pdf>]
+Overfull \hbox (20.8572pt too wide) in paragraph at lines 686--688
+\T1/cmr/m/n/12 na-len Ka-me-ra-raum ab. Die-ser \T1/cmtt/m/n/12 tvec \T1/cmr/m/
+n/12 wird mit der Funk-ti-on \T1/cmtt/m/n/12 estimatePoseSingleMarkers
+ []
+
+
+Overfull \vbox (2.60004pt too high) has occurred while \output is active []
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 689.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 689.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 689.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 689.
+
+[60]) (kapitel/ausblick/ausblick.tex
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
@@ -3058,7 +3056,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 4.
 
-[59]
+[61]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 4.
 Package babel Info: Redefining ngerman shorthand "~
@@ -3094,7 +3092,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 2.
 
-<kapitel/anhang/ReadMe.pdf, id=1353, 596.2275pt x 844.15375pt>
+<kapitel/anhang/ReadMe.pdf, id=1377, 596.2275pt x 844.15375pt>
 File: kapitel/anhang/ReadMe.pdf Graphic file (type pdf)
 
 <use kapitel/anhang/ReadMe.pdf>
@@ -3128,7 +3126,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 3.
 
-[60]
+[62]
 File: kapitel/anhang/ReadMe.pdf Graphic file (type pdf)
  <use kapitel/anhang/ReadMe.pdf, page 1>
 Package pdftex.def Info: kapitel/anhang/ReadMe.pdf, page1 used on input line 3.
@@ -3154,8 +3152,8 @@ File: kapitel/anhang/ReadMe.pdf Graphic file (type pdf)
 Package pdftex.def Info: kapitel/anhang/ReadMe.pdf, page1 used on input line 3.
 
 (pdftex.def)             Requested size: 596.96295pt x 845.19502pt.
- [61]
-<kapitel/anhang/ReadMe.pdf, id=1372, page=2, 596.2275pt x 844.15375pt>
+ [63]
+<kapitel/anhang/ReadMe.pdf, id=1395, page=2, 596.2275pt x 844.15375pt>
 File: kapitel/anhang/ReadMe.pdf Graphic file (type pdf)
 
 <use kapitel/anhang/ReadMe.pdf, page 2>
@@ -3180,70 +3178,6 @@ File: kapitel/anhang/ReadMe.pdf Graphic file (type pdf)
 
 <use kapitel/anhang/ReadMe.pdf, page 2>
 Package pdftex.def Info: kapitel/anhang/ReadMe.pdf, page2 used on input line 3.
-
-(pdftex.def)             Requested size: 596.96295pt x 845.19502pt.
- [62 <./kapitel/anhang/ReadMe.pdf
-
-pdfTeX warning: pdflatex.exe (file ./kapitel/anhang/ReadMe.pdf): PDF inclusion:
- invalid other resource which is no dict (key 'ProcSets', type <array>); ignore
-d.
->] <kapitel/anhang/ReadMe.pdf, id=1389, page=3, 596.2275pt x 844.15375pt>
-File: kapitel/anhang/ReadMe.pdf Graphic file (type pdf)
-
-<use kapitel/anhang/ReadMe.pdf, page 3>
-Package pdftex.def Info: kapitel/anhang/ReadMe.pdf, page3 used on input line 3.
-
-(pdftex.def)             Requested size: 596.96295pt x 845.19502pt.
-File: kapitel/anhang/ReadMe.pdf Graphic file (type pdf)
-
-<use kapitel/anhang/ReadMe.pdf, page 3>
-Package pdftex.def Info: kapitel/anhang/ReadMe.pdf, page3 used on input line 3.
-
-(pdftex.def)             Requested size: 596.96295pt x 845.19502pt.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 3.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 3.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 3.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 3.
-File: kapitel/anhang/ReadMe.pdf Graphic file (type pdf)
-
-<use kapitel/anhang/ReadMe.pdf, page 3>
-Package pdftex.def Info: kapitel/anhang/ReadMe.pdf, page3 used on input line 3.
-
-(pdftex.def)             Requested size: 596.96295pt x 845.19502pt.
- [63 <./kapitel/anhang/ReadMe.pdf
-
-pdfTeX warning: pdflatex.exe (file ./kapitel/anhang/ReadMe.pdf): PDF inclusion:
- invalid other resource which is no dict (key 'ProcSets', type <array>); ignore
-d.
->] <kapitel/anhang/ReadMe.pdf, id=1394, page=4, 596.2275pt x 844.15375pt>
-File: kapitel/anhang/ReadMe.pdf Graphic file (type pdf)
-
-<use kapitel/anhang/ReadMe.pdf, page 4>
-Package pdftex.def Info: kapitel/anhang/ReadMe.pdf, page4 used on input line 3.
-
-(pdftex.def)             Requested size: 596.96295pt x 845.19502pt.
-File: kapitel/anhang/ReadMe.pdf Graphic file (type pdf)
-
-<use kapitel/anhang/ReadMe.pdf, page 4>
-Package pdftex.def Info: kapitel/anhang/ReadMe.pdf, page4 used on input line 3.
-
-(pdftex.def)             Requested size: 596.96295pt x 845.19502pt.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 3.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 3.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 3.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 3.
-File: kapitel/anhang/ReadMe.pdf Graphic file (type pdf)
-
-<use kapitel/anhang/ReadMe.pdf, page 4>
-Package pdftex.def Info: kapitel/anhang/ReadMe.pdf, page4 used on input line 3.
 
 (pdftex.def)             Requested size: 596.96295pt x 845.19502pt.
  [64 <./kapitel/anhang/ReadMe.pdf
@@ -3251,17 +3185,17 @@ Package pdftex.def Info: kapitel/anhang/ReadMe.pdf, page4 used on input line 3.
 pdfTeX warning: pdflatex.exe (file ./kapitel/anhang/ReadMe.pdf): PDF inclusion:
  invalid other resource which is no dict (key 'ProcSets', type <array>); ignore
 d.
->] <kapitel/anhang/ReadMe.pdf, id=1399, page=5, 596.2275pt x 844.15375pt>
+>] <kapitel/anhang/ReadMe.pdf, id=1412, page=3, 596.2275pt x 844.15375pt>
 File: kapitel/anhang/ReadMe.pdf Graphic file (type pdf)
 
-<use kapitel/anhang/ReadMe.pdf, page 5>
-Package pdftex.def Info: kapitel/anhang/ReadMe.pdf, page5 used on input line 3.
+<use kapitel/anhang/ReadMe.pdf, page 3>
+Package pdftex.def Info: kapitel/anhang/ReadMe.pdf, page3 used on input line 3.
 
 (pdftex.def)             Requested size: 596.96295pt x 845.19502pt.
 File: kapitel/anhang/ReadMe.pdf Graphic file (type pdf)
 
-<use kapitel/anhang/ReadMe.pdf, page 5>
-Package pdftex.def Info: kapitel/anhang/ReadMe.pdf, page5 used on input line 3.
+<use kapitel/anhang/ReadMe.pdf, page 3>
+Package pdftex.def Info: kapitel/anhang/ReadMe.pdf, page3 used on input line 3.
 
 (pdftex.def)             Requested size: 596.96295pt x 845.19502pt.
 Package babel Info: Redefining ngerman shorthand "|
@@ -3274,8 +3208,8 @@ Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 3.
 File: kapitel/anhang/ReadMe.pdf Graphic file (type pdf)
 
-<use kapitel/anhang/ReadMe.pdf, page 5>
-Package pdftex.def Info: kapitel/anhang/ReadMe.pdf, page5 used on input line 3.
+<use kapitel/anhang/ReadMe.pdf, page 3>
+Package pdftex.def Info: kapitel/anhang/ReadMe.pdf, page3 used on input line 3.
 
 (pdftex.def)             Requested size: 596.96295pt x 845.19502pt.
  [65 <./kapitel/anhang/ReadMe.pdf
@@ -3283,17 +3217,17 @@ Package pdftex.def Info: kapitel/anhang/ReadMe.pdf, page5 used on input line 3.
 pdfTeX warning: pdflatex.exe (file ./kapitel/anhang/ReadMe.pdf): PDF inclusion:
  invalid other resource which is no dict (key 'ProcSets', type <array>); ignore
 d.
->] <kapitel/anhang/ReadMe.pdf, id=1404, page=6, 596.2275pt x 844.15375pt>
+>] <kapitel/anhang/ReadMe.pdf, id=1417, page=4, 596.2275pt x 844.15375pt>
 File: kapitel/anhang/ReadMe.pdf Graphic file (type pdf)
 
-<use kapitel/anhang/ReadMe.pdf, page 6>
-Package pdftex.def Info: kapitel/anhang/ReadMe.pdf, page6 used on input line 3.
+<use kapitel/anhang/ReadMe.pdf, page 4>
+Package pdftex.def Info: kapitel/anhang/ReadMe.pdf, page4 used on input line 3.
 
 (pdftex.def)             Requested size: 596.96295pt x 845.19502pt.
 File: kapitel/anhang/ReadMe.pdf Graphic file (type pdf)
 
-<use kapitel/anhang/ReadMe.pdf, page 6>
-Package pdftex.def Info: kapitel/anhang/ReadMe.pdf, page6 used on input line 3.
+<use kapitel/anhang/ReadMe.pdf, page 4>
+Package pdftex.def Info: kapitel/anhang/ReadMe.pdf, page4 used on input line 3.
 
 (pdftex.def)             Requested size: 596.96295pt x 845.19502pt.
 Package babel Info: Redefining ngerman shorthand "|
@@ -3306,8 +3240,8 @@ Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 3.
 File: kapitel/anhang/ReadMe.pdf Graphic file (type pdf)
 
-<use kapitel/anhang/ReadMe.pdf, page 6>
-Package pdftex.def Info: kapitel/anhang/ReadMe.pdf, page6 used on input line 3.
+<use kapitel/anhang/ReadMe.pdf, page 4>
+Package pdftex.def Info: kapitel/anhang/ReadMe.pdf, page4 used on input line 3.
 
 (pdftex.def)             Requested size: 596.96295pt x 845.19502pt.
  [66 <./kapitel/anhang/ReadMe.pdf
@@ -3315,17 +3249,17 @@ Package pdftex.def Info: kapitel/anhang/ReadMe.pdf, page6 used on input line 3.
 pdfTeX warning: pdflatex.exe (file ./kapitel/anhang/ReadMe.pdf): PDF inclusion:
  invalid other resource which is no dict (key 'ProcSets', type <array>); ignore
 d.
->] <kapitel/anhang/ReadMe.pdf, id=1409, page=7, 596.2275pt x 844.15375pt>
+>] <kapitel/anhang/ReadMe.pdf, id=1422, page=5, 596.2275pt x 844.15375pt>
 File: kapitel/anhang/ReadMe.pdf Graphic file (type pdf)
 
-<use kapitel/anhang/ReadMe.pdf, page 7>
-Package pdftex.def Info: kapitel/anhang/ReadMe.pdf, page7 used on input line 3.
+<use kapitel/anhang/ReadMe.pdf, page 5>
+Package pdftex.def Info: kapitel/anhang/ReadMe.pdf, page5 used on input line 3.
 
 (pdftex.def)             Requested size: 596.96295pt x 845.19502pt.
 File: kapitel/anhang/ReadMe.pdf Graphic file (type pdf)
 
-<use kapitel/anhang/ReadMe.pdf, page 7>
-Package pdftex.def Info: kapitel/anhang/ReadMe.pdf, page7 used on input line 3.
+<use kapitel/anhang/ReadMe.pdf, page 5>
+Package pdftex.def Info: kapitel/anhang/ReadMe.pdf, page5 used on input line 3.
 
 (pdftex.def)             Requested size: 596.96295pt x 845.19502pt.
 Package babel Info: Redefining ngerman shorthand "|
@@ -3338,11 +3272,75 @@ Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 3.
 File: kapitel/anhang/ReadMe.pdf Graphic file (type pdf)
 
-<use kapitel/anhang/ReadMe.pdf, page 7>
-Package pdftex.def Info: kapitel/anhang/ReadMe.pdf, page7 used on input line 3.
+<use kapitel/anhang/ReadMe.pdf, page 5>
+Package pdftex.def Info: kapitel/anhang/ReadMe.pdf, page5 used on input line 3.
 
 (pdftex.def)             Requested size: 596.96295pt x 845.19502pt.
  [67 <./kapitel/anhang/ReadMe.pdf
+
+pdfTeX warning: pdflatex.exe (file ./kapitel/anhang/ReadMe.pdf): PDF inclusion:
+ invalid other resource which is no dict (key 'ProcSets', type <array>); ignore
+d.
+>] <kapitel/anhang/ReadMe.pdf, id=1428, page=6, 596.2275pt x 844.15375pt>
+File: kapitel/anhang/ReadMe.pdf Graphic file (type pdf)
+
+<use kapitel/anhang/ReadMe.pdf, page 6>
+Package pdftex.def Info: kapitel/anhang/ReadMe.pdf, page6 used on input line 3.
+
+(pdftex.def)             Requested size: 596.96295pt x 845.19502pt.
+File: kapitel/anhang/ReadMe.pdf Graphic file (type pdf)
+
+<use kapitel/anhang/ReadMe.pdf, page 6>
+Package pdftex.def Info: kapitel/anhang/ReadMe.pdf, page6 used on input line 3.
+
+(pdftex.def)             Requested size: 596.96295pt x 845.19502pt.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 3.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 3.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 3.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 3.
+File: kapitel/anhang/ReadMe.pdf Graphic file (type pdf)
+
+<use kapitel/anhang/ReadMe.pdf, page 6>
+Package pdftex.def Info: kapitel/anhang/ReadMe.pdf, page6 used on input line 3.
+
+(pdftex.def)             Requested size: 596.96295pt x 845.19502pt.
+ [68 <./kapitel/anhang/ReadMe.pdf
+
+pdfTeX warning: pdflatex.exe (file ./kapitel/anhang/ReadMe.pdf): PDF inclusion:
+ invalid other resource which is no dict (key 'ProcSets', type <array>); ignore
+d.
+>] <kapitel/anhang/ReadMe.pdf, id=1433, page=7, 596.2275pt x 844.15375pt>
+File: kapitel/anhang/ReadMe.pdf Graphic file (type pdf)
+
+<use kapitel/anhang/ReadMe.pdf, page 7>
+Package pdftex.def Info: kapitel/anhang/ReadMe.pdf, page7 used on input line 3.
+
+(pdftex.def)             Requested size: 596.96295pt x 845.19502pt.
+File: kapitel/anhang/ReadMe.pdf Graphic file (type pdf)
+
+<use kapitel/anhang/ReadMe.pdf, page 7>
+Package pdftex.def Info: kapitel/anhang/ReadMe.pdf, page7 used on input line 3.
+
+(pdftex.def)             Requested size: 596.96295pt x 845.19502pt.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 3.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 3.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 3.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 3.
+File: kapitel/anhang/ReadMe.pdf Graphic file (type pdf)
+
+<use kapitel/anhang/ReadMe.pdf, page 7>
+Package pdftex.def Info: kapitel/anhang/ReadMe.pdf, page7 used on input line 3.
+
+(pdftex.def)             Requested size: 596.96295pt x 845.19502pt.
+ [69 <./kapitel/anhang/ReadMe.pdf
 
 pdfTeX warning: pdflatex.exe (file ./kapitel/anhang/ReadMe.pdf): PDF inclusion:
  invalid other resource which is no dict (key 'ProcSets', type <array>); ignore
@@ -3371,7 +3369,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 131.
 
-[68])
+[70])
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 11.
 Package babel Info: Redefining ngerman shorthand "~
@@ -3388,7 +3386,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 160.
 
-[69]))
+[71]))
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
@@ -3400,7 +3398,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 111.
 
-[70] (main.bbl
+[72] (main.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 4--8
 []\T1/cmr/m/n/12 Unity.  [][]$\T1/cmtt/m/n/12 https : / / www . 1stvision . com
  / cameras / IDS / dataman / uEyeLE _
@@ -3410,57 +3408,57 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--8
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 85.
+(babel)             in language  on input line 86.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 85.
+(babel)             in language  on input line 86.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 85.
+(babel)             in language  on input line 86.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 85.
+(babel)             in language  on input line 86.
 
-[71]
+[73]
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 179.
+(babel)             in language  on input line 178.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 179.
+(babel)             in language  on input line 178.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 179.
+(babel)             in language  on input line 178.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 179.
+(babel)             in language  on input line 178.
 
-[72]
-Underfull \hbox (badness 4048) in paragraph at lines 187--192
+[74]
+Underfull \hbox (badness 4048) in paragraph at lines 193--198
 []\T1/cmr/m/n/12 Leap Mo-ti-on.  Leap Mo-ti-on Blog.  [][]$\T1/cmtt/m/n/12 http
  : / / blog . leapmotion . com /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 187--192
+Underfull \hbox (badness 10000) in paragraph at lines 193--198
 \T1/cmtt/m/n/12 hardware-[]to-[]software-[]how-[]does-[]the-[]leap-[]motion-[]c
 ontroller-[]work/$[][]\T1/cmr/m/n/12 .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 194--199
+Underfull \hbox (badness 10000) in paragraph at lines 200--205
 []\T1/cmr/m/n/12 Leap Mo-ti-on.  Sup-port -- USB 3.0.  [][]$\T1/cmtt/m/n/12 htt
 ps :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 194--199
+Underfull \hbox (badness 10000) in paragraph at lines 200--205
 \T1/cmtt/m/n/12 / / support . leapmotion . com / hc / en-[]us / articles /
  []
 
 
-Underfull \hbox (badness 4995) in paragraph at lines 228--232
+Underfull \hbox (badness 4995) in paragraph at lines 234--238
 []\T1/cmr/m/n/12 Mobile World Con-gress.  Mo-bi-le World Con-gress.  [][]$\T1/c
 mtt/m/n/12 https : / / www .
  []
 
 
-Underfull \hbox (badness 3568) in paragraph at lines 241--246
+Underfull \hbox (badness 3568) in paragraph at lines 247--252
 []\T1/cmr/m/n/12 Oculus.  Ocu-lus -- Uni-ty In-tro.  [][]$\T1/cmtt/m/n/12 https
  : / / developer3 . oculus . com /
  []
@@ -3469,28 +3467,28 @@ Underfull \hbox (badness 3568) in paragraph at lines 241--246
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 271.
+(babel)             in language  on input line 266.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 271.
+(babel)             in language  on input line 266.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 271.
+(babel)             in language  on input line 266.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 271.
+(babel)             in language  on input line 266.
 
-[73]
-Underfull \hbox (badness 4981) in paragraph at lines 315--320
+[75]
+Underfull \hbox (badness 4981) in paragraph at lines 328--333
 []\T1/cmr/m/n/12 Samsung.  Sam-sung Ex-plo-res the World of Mo-bi-le Vir-tu-al 
 Rea-li-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 315--320
+Underfull \hbox (badness 10000) in paragraph at lines 328--333
 \T1/cmr/m/n/12 ty with Ge-ar VR.  [][]$\T1/cmtt/m/n/12 http : / / www . samsung
 mobilepress . com / press /
  []
 
 
-Overfull \hbox (9.80737pt too wide) in paragraph at lines 315--320
+Overfull \hbox (9.80737pt too wide) in paragraph at lines 328--333
 \T1/cmtt/m/n/12 Samsung-[]Explores-[]the-[]World-[]of-[]Mobile-[]Virtual-[]Real
 ity-[]with-[]Gear-[]VR ?
  []
@@ -3507,7 +3505,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 359.
 
-[74])
+[76])
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
@@ -3519,30 +3517,27 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 114.
 
-[75]
+[77]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 114.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 114.
  (main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 114.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 114.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 08B39794C655991EA7D662CC7D30CDF4;6563.
+(rerunfilecheck)             Checksum: 2220B1C69260FEAA344D39886C6D3F2E;6566.
 
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
  ) 
 Here is how much of TeX's memory you used:
- 25393 strings out of 493366
- 451302 string characters out of 3131358
- 629490 words of memory out of 3000000
- 27763 multiletter control sequences out of 15000+200000
+ 25402 strings out of 493366
+ 451560 string characters out of 3131358
+ 627558 words of memory out of 3000000
+ 27767 multiletter control sequences out of 15000+200000
  23890 words of font info for 63 fonts, out of 3000000 for 9000
  1127 hyphenation exceptions out of 8191
- 62i,22n,100p,1904b,1934s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 62i,22n,100p,1954b,1934s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Vera\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\e
 ctt1440.pk> <C:\Users\Vera\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec
 \dpi600\ecbi1440.pk> <C:\Users\Vera\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jk
@@ -3579,9 +3574,9 @@ s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/Vera/AppData/L
 ocal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Use
 rs/Vera/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/esvect/vect10.pfb>
 
-Output written on main.pdf (75 pages, 8914372 bytes).
+Output written on main.pdf (77 pages, 9249171 bytes).
 PDF statistics:
- 2568 PDF objects out of 2984 (max. 8388607)
- 584 named destinations out of 1000 (max. 500000)
- 970 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2599 PDF objects out of 2984 (max. 8388607)
+ 589 named destinations out of 1000 (max. 500000)
+ 980 words of extra memory for PDF output out of 10000 (max. 10000000)
 
