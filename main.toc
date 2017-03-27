@@ -101,23 +101,24 @@
 \contentsline {subsection}{\numberline {6.1}Trackingmethoden}{63}{subsection.6.1}
 \contentsline {subsection}{\numberline {6.2}AR Erweiterung mit der Webcam}{63}{subsection.6.2}
 \contentsline {subsection}{\numberline {6.3}Daten als Excel Tabelle}{63}{subsection.6.3}
-\contentsline {subsection}{\numberline {6.4}Validierung}{63}{subsection.6.4}
+\contentsline {subsection}{\numberline {6.4}Evaluierung von \emph {MArC}}{63}{subsection.6.4}
 \contentsline {section}{\numberline {7}Projektmanagement}{64}{section.7}
 \contentsline {subsection}{\numberline {7.1}Aufbau des Kapitels}{64}{subsection.7.1}
 \contentsline {subsection}{\numberline {7.2}Projektdefinition}{64}{subsection.7.2}
 \contentsline {subsubsection}{\numberline {7.2.1}Problemanalyse}{64}{subsubsection.7.2.1}
-\contentsline {subsubsection}{\numberline {7.2.2}Projektziele und Anforderungen}{64}{subsubsection.7.2.2}
-\contentsline {subsubsection}{\numberline {7.2.3}L\IeC {\"o}sungskonzept}{64}{subsubsection.7.2.3}
+\contentsline {subsubsection}{\numberline {7.2.2}Projektziele und Anforderungen}{65}{subsubsection.7.2.2}
+\contentsline {subsubsection}{\numberline {7.2.3}L\IeC {\"o}sungskonzept}{65}{subsubsection.7.2.3}
 \contentsline {subsubsection}{\numberline {7.2.4}Durchf\IeC {\"u}hrbarkeitsanalyse}{65}{subsubsection.7.2.4}
-\contentsline {paragraph}{Technologische Durchf\IeC {\"u}hrbarkeit}{65}{section*.118}
+\contentsline {paragraph}{Technologische Durchf\IeC {\"u}hrbarkeit}{66}{section*.118}
 \contentsline {paragraph}{\IeC {\"O}konomische Durchf\IeC {\"u}hrbarkeit}{66}{section*.119}
-\contentsline {paragraph}{Rechtliche Durchf\IeC {\"u}hrbarkeit}{66}{section*.120}
-\contentsline {paragraph}{Operationale Durchf\IeC {\"u}hrbarkeit}{66}{section*.121}
-\contentsline {paragraph}{Terminliche Durchf\IeC {\"u}hrbarkeit}{66}{section*.122}
+\contentsline {paragraph}{Rechtliche Durchf\IeC {\"u}hrbarkeit}{67}{section*.120}
+\contentsline {paragraph}{Operationale Durchf\IeC {\"u}hrbarkeit}{67}{section*.121}
+\contentsline {paragraph}{Terminliche Durchf\IeC {\"u}hrbarkeit}{67}{section*.122}
 \contentsline {paragraph}{Projektrisiko}{67}{section*.124}
 \contentsline {subsubsection}{\numberline {7.2.5}Projektauftragsformular}{67}{subsubsection.7.2.5}
 >>>>>>> c470e642ad033e6a3ab7a47561e62684806798c8
 \contentsline {subsubsection}{\numberline {7.2.6}Projektorganisation}{67}{subsubsection.7.2.6}
+<<<<<<< HEAD
 \contentsline {paragraph}{Leitung}{67}{section*.125}
 \contentsline {paragraph}{Team}{67}{section*.126}
 \contentsline {paragraph}{Infrastruktur}{67}{section*.127}
@@ -154,6 +155,20 @@
 \contentsline {subsubsection}{\numberline {7.3.6}Qalit\IeC {\"a}tsplan}{70}{subsubsection.7.3.6}
 \contentsline {subsection}{\numberline {7.4}Projektdurchf\IeC {\"u}hrung}{70}{subsection.7.4}
 \contentsline {subsubsection}{\numberline {7.4.1}Kommuniktion im Team und nach Au\IeC {\ss }en}{70}{subsubsection.7.4.1}
+=======
+\contentsline {paragraph}{Leitung}{67}{section*.126}
+\contentsline {paragraph}{Team}{67}{section*.127}
+\contentsline {paragraph}{Infrastruktur}{69}{section*.128}
+\contentsline {subsection}{\numberline {7.3}Projektplanung}{69}{subsection.7.3}
+\contentsline {subsubsection}{\numberline {7.3.1}Arbeitspakete}{69}{subsubsection.7.3.1}
+\contentsline {subsubsection}{\numberline {7.3.2}Projektstrukturplan}{69}{subsubsection.7.3.2}
+\contentsline {subsubsection}{\numberline {7.3.3}Ablaufplan, Terminplan (Gantt Chart)}{69}{subsubsection.7.3.3}
+\contentsline {subsubsection}{\numberline {7.3.4}Kapazit\IeC {\"a}tsplan}{69}{subsubsection.7.3.4}
+\contentsline {subsubsection}{\numberline {7.3.5}Kostenplan}{69}{subsubsection.7.3.5}
+\contentsline {subsubsection}{\numberline {7.3.6}Qalit\IeC {\"a}tsplan}{69}{subsubsection.7.3.6}
+\contentsline {subsection}{\numberline {7.4}Projektdurchf\IeC {\"u}hrung}{71}{subsection.7.4}
+\contentsline {subsubsection}{\numberline {7.4.1}Kommuniktion im Team und nach Au\IeC {\ss }en}{71}{subsubsection.7.4.1}
+>>>>>>> 3238625c33599a4d69a48fc3d20fc4bee105af71
 \contentsline {subsubsection}{\numberline {7.4.2}Ma\IeC {\ss }nahmen zur Problemvermeidung}{71}{subsubsection.7.4.2}
 \contentsline {paragraph}{Ausfall des Planungstools Bitrix24}{71}{section*.134}
 \contentsline {paragraph}{Ausfall von Hardware}{71}{section*.135}
@@ -161,9 +176,9 @@
 \contentsline {subsubsection}{\numberline {7.4.3}Meilenstein-Trend-Analyse}{72}{subsubsection.7.4.3}
 \contentsline {subsection}{\numberline {7.5}Projektabschluss}{72}{subsection.7.5}
 \contentsline {subsubsection}{\numberline {7.5.1}Abschlusspr\IeC {\"a}sentation}{72}{subsubsection.7.5.1}
-\contentsline {subsubsection}{\numberline {7.5.2}Video}{72}{subsubsection.7.5.2}
-\contentsline {subsection}{\numberline {7.6}Reflexion}{72}{subsection.7.6}
-\contentsline {section}{\numberline {8}Zusammenfassung}{72}{section.8}
+\contentsline {subsubsection}{\numberline {7.5.2}Video}{73}{subsubsection.7.5.2}
+\contentsline {subsection}{\numberline {7.6}Reflexion}{73}{subsection.7.6}
+\contentsline {section}{\numberline {8}Zusammenfassung}{73}{section.8}
 \contentsline {section}{\numberline {9}Steckbrief}{73}{section.9}
 \contentsline {section}{\numberline {10}Anhang}{73}{section.10}
 \contentsline {subsection}{\numberline {10.1}\emph {MArC} ReadMe-Datei}{73}{subsection.10.1}
