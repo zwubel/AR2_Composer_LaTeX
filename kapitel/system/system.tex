@@ -235,10 +235,10 @@ Da zu Beginn der Anwendung im \texttt{SetScale}-Menü (vgl. Kapitel~\ref{sec:men
 	\label{fig:KontextmenuExamples}
 \end{figure}
 
-\subsubsection{Marker Handles}\label{sec:markerHandles}\todo[inline]{Paul}
+\subsubsection{Marker Handles}\label{sec:markerHandles}\todo[inline, color = green]{Paul}
 Jeder Marker verfügt über die Möglichkeit in seiner Größe in X-, Y- und Z-Achse verändert zu werden. Diese sog. "Handles" sind sichtbar, wenn das Kontextmenü angezeigt wird (s. Abschnitt  \ref{KontextMenü}. Die Handles bestehen aus Zylindern, die mit einem Collider versehen wurden. Die X- und Y- Achse wird betätigt, indem der Benutzer mit einem Finger das jeweiligen Handle berührt und dann in die entsprechende Richtung zieht. Die Größe in Z-Achse wird über "+" und "-" Button gesteuert. Drückt der Benutzer diese Buttons, wird das Gebäude um je ein Stockwerk erhöht oder verniedrigt. \\
 
-Die Interaktion der Handles mit der Hand des Nutzers wurde über das Leap-Handmodell umgesetzt; dieses besitzt Collider, die an den Fingern des Modells angebracht sind und sich simultan mit der Hand des Nutzers bewegen. Berührt die Hand nun einen der Handler, wird dieser Collider des Handlers "angesprochen". Im Falle der X-, und Y-Handles wird in der \texttt{update} Funktion des Skripts \texttt{contextMenuTrigger.cs} ein Vektor berechnet, der die Start und Endposition der Bewegung miteinander verrechnet. Im Falle einer Bewegung in X Position wird die sog. "localDifference" berechnet, dies ist der Abstand des Fingers zur Position des Markers. Die eigentliche Skalierung wird dann wie folgt berechnet:\\
+Die Interaktion der Handles mit der Hand des Nutzers wurde über das Leap- Handmodell umgesetzt; dieses besitzt Collider, die an den Fingern des Modells angebracht sind und sich simultan mit der Hand des Nutzers bewegen. Berührt die Hand nun einen der Handler, wird dieser Collider des Handlers "angesprochen". Im Falle der X-, und Y-Handles wird in der \texttt{update} Funktion des Skripts \texttt{contextMenuTrigger.cs} ein Vektor berechnet, der die Start und Endposition der Bewegung miteinander verrechnet. Im Falle einer Bewegung in X Position wird die sog. "localDifference" berechnet, dies ist der Abstand des Fingers zur Position des Markers. Die eigentliche Skalierung wird dann wie folgt berechnet:\\
 \begin{equation}
 pos = (startPosition.x - localDifference.y) / 2, startPosition.y, startPosition.z)
 \end{equation}
