@@ -247,7 +247,12 @@ Die Marker bestehen ähnlich wie QR-Codes aus einer zweidimensionalen Matrix, mi
 	\label{fig:SizesArucoMarker}
 \end{figure}
 
-\subsubsection{Steam VR}\todo[inline] {Paul}
+\subsubsection{Steam VR}\todo[inline,color=green] {Paul}
+\textit{Steam VR} ist die Schnittstelle zwischen der \textit{HTC Vive} und \textit{Unity}. Um das HMD nutzen zu können, musss \textit{Steam VR} auf dem Computer installiert sein. Für den Nutzer ist ein kleines GUI Element auf dem Monitor sichtbar, welches den Status der Geräte der \textit{Vive} darstellt. Hierdurch werden Fehlermedlungen kommuniziert, Kalibrierungen durchgeführt eine Kommunikation mit dem HMD bereitgestellt, so dass das Gerät im Fall der Fälle neugestartet werden kann.\\
+Innerhalb von \textit{Unit} stellt \textit{Steam} ein Plugin zur Verfügung, welches direkt in Szenen in \textit{Unity} eingebettet werden kann. Der Entwickler ist also in der Lage, eine vorhandene \textit{Unity}-Szene um die VR Mölglichkeit bequem per Drag and Drop zu erweitern.\\
+Das bereitgestellte \textit|{Unity} Prefab beinhaltet alle notwendigen Elemente um mit der Hardware kommunizieren zu können. Dabei wird eine Positionsbestimmung ebenso wie ein Kamerarig für die stereoskopische Bildwiedergabe bereitgestellt, wie auch die Controllereingabe und weiterverwendung der Datenj möglich gemacht.
+
+
 \subsubsection{Windows Sockets (Winsock)}\label{sec:Winsock}\todo[inline, color=green] {Lukas}
 Windows Sockets (abgekürzt Winsock) ist eine API für den Zugriff auf Netzwerkkomponenten in Microsoft Windows Betriebssystemen~\cite{quinn1998windows}. Winsock wird nativ in Microsoft Windows bereitgestellt.\\ 
 Für die unkomplizierte Übertragung zwischen zwei Anwendungen in einem lokalen Netzwerk bieten sich sowohl das \emph{Transmission Control Protocol} (TCP), als auch das User \emph{User Datagram Protocol} (UDP) an. Das Erstellen von Netzwerk-Sockets für die Übertragung per TCP und UDP wird von Winsock ermöglicht.\\ Die Umsetzung der Netzwerkverbindung in \emph{MArC} wird in Abschnitt~\ref{sec:netzwerk} näher beschrieben.
