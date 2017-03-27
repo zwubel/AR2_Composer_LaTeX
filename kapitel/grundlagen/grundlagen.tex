@@ -34,7 +34,7 @@ Um eine genauere Unterteilung vorzunehmen, kann man die verschiedenen Systeme zu
 	\item[Proprioceptive Feedback Systeme:] Im Gegensatz zu den \textit{Tactile Feedback Systems} spürt der Anwender nicht über seine Haut, sondern über Gelenke bzw. Muskeln. 
 \end{description}
 
-Bei den oben aufgelisteten Formen von haptischer Interaktion wird davon ausgegangen, dass der Gegenstand um den es geht rein virtueller Natur ist. Eine Besonderheit an \textit{MaRC} ist, dass es sich um reale Objekte (siehe Kapitel \ref{sec:WürfelMarker}) handelt, an der Position virtuelle Objekte gerendert werden können. In diesem \textit{Mixed Reality}--System hat der Benutzer also einen realen haptischen Eindruck. Der reale Würfel dient somit als Anfasser und bietet die Möglichkeit das virtuelle Objekt, was durchaus kleiner oder größer als sein reales Pendant sein kann, zu transformieren. 
+Bei den oben aufgelisteten Formen von haptischer Interaktion wird davon ausgegangen, dass der Gegenstand um den es geht rein virtueller Natur ist. Eine Besonderheit an \textit{MArC} ist, dass es sich um reale Objekte (vgl. Abschnitt~\ref{sec:WürfelMarker}) handelt, an der Position virtuelle Objekte gerendert werden können. In diesem \textit{Mixed Reality}-System hat der Benutzer also einen realen haptischen Eindruck. Der reale Würfel dient somit als Anfasser und bietet die Möglichkeit das virtuelle Objekt, was durchaus größer (oder auch flacher) als sein reales Pendant sein kann, zu transformieren. 
 
 %In manchen Fällen kann es schwierig sein eine eindeutige Zuordnung des Systems zu einer der Kategorien zu finden.
 
@@ -70,7 +70,7 @@ Um die Kommunikation zwischen unterschiedlichsten technischen Systemen zu ermög
 	\label{tab:Schichtenmodell}
 \end{table}
 
-Während die Schichten 1--4 als transportorientierte Schichten einzustufen sind, können die verbleibenden Schichten 5--7 als anwendungsorientiert angesehen werden. Da der Austausch von Daten für die Umsetzung von \textit{MaRC} im Vordergrund steht, wird im Folgenden besonders auf die vierte Schicht eingegangen. Dabei werden die beiden Übertragungsprotokolle \textit{Transmission Control Protocol} (TCP) und \textit{User Datagram Protocol} (UDP) vorgestellt. Auf die Aufführung weiterer Übertragungsprotokolle wird bewusst verzichtet.\\
+Während die Schichten 1--4 als transportorientierte Schichten einzustufen sind, können die verbleibenden Schichten 5--7 als anwendungsorientiert angesehen werden. Da der Austausch von Daten für die Umsetzung von \textit{MArC} im Vordergrund steht, wird im Folgenden besonders auf die vierte Schicht eingegangen. Dabei werden die beiden Übertragungsprotokolle \textit{Transmission Control Protocol} (TCP) und \textit{User Datagram Protocol} (UDP) vorgestellt. Auf die Aufführung weiterer Übertragungsprotokolle wird bewusst verzichtet.\\
 Die Transportschicht stellt eine logische Ende-zu-Ende-Verbindungen dar und dient als Bindeglied zwischen den transportorientierten und anwendungsorientierten Schichten \cite{ITU}.
 
 \begin{description}
@@ -79,7 +79,7 @@ Die Transportschicht stellt eine logische Ende-zu-Ende-Verbindungen dar und dien
 \item[UDP:] Dieses Transportprotokoll wurde aus der Notwendigkeit heraus entwickelt, für die Übertragung von Sprache auf ein, im Gegensatz zur TCP, simpleres Protokoll zurückgreifen zu können. Genaue Details können in dem Standard RFC 768 \citep{rfc768} von 1981 in Erfahrung gebracht werden.
 \end{description}
 
-Ein wichtiger Unterschied zwischen den beiden Transportprotokollen ist, dass die Übertragung per TCP im Vergleich zu UDP sicherstellt, dass gesendete Daten korrekt übertragen und empfangen werden. \textcolor{red}{QUELLE??} Dies geschieht dadurch, dass in einem TCP-Socket-Netzwerk Fehlererkennungs- und Korrekturmechanismen enthalten sind, die fehlerhafte Übertragungen der darunterliegenden Internet Protocol (IP) Schicht ausgleichen, also entweder korrigieren oder dafür sorgen, dass fehlerhafte Daten erneut übertragen werden.
+Ein wichtiger Unterschied zwischen den beiden Transportprotokollen ist, dass die Übertragung per TCP im Vergleich zu UDP sicherstellt, dass gesendete Daten korrekt übertragen und empfangen werden. Dies geschieht dadurch, dass in einem TCP-Socket-Netzwerk Fehlererkennungs- und Korrekturmechanismen enthalten sind, die fehlerhafte Übertragungen der darunterliegenden Internet Protocol (IP) Schicht ausgleichen, also entweder korrigieren oder dafür sorgen, dass fehlerhafte Daten erneut übertragen werden.
 
 \subsection{Bedienkonzepte in VR-Umgebungen}\label{sec:MenüAnwendungen}\todo[inline, color=green]{Lukas}
 Die Bedienung eines Systems~--~vor allem Dateneingabe und Objektmanipulation~--~in einer Virtual Reality (VR) Umgebung unterscheidet sich stark von der konventionellen Bedienung mit Maus und Tastatur \cite{chu1997multi}. Das Hauptziel einer VR-Umgebung ist Immersion, also das "`Eintauchen"' des Benutzers in die virtuelle Welt. Ein Teil zur Erreichung dieses Ziels sind Methoden, mit denen der Benutzer mit der virtuellen Welt~--~möglichst intuitiv~--~interagieren kann.
