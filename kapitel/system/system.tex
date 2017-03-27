@@ -567,20 +567,12 @@ c & d & t_y \\
 \end{equation}
 \end{description}
 
-\subsubsection{Kalibrierungsfehler} \label{sec:calibError}\todo[inline, color=yellow]{Laura}
-In den Kapiteln~\ref{sec:camCalib} und~\ref{sec:planeCalib} wird der Algorithmus zur Berechnung der Koordinatentransformation von Kamerakoordinaten in Unitykoordinaten beschrieben. Beim Benutzen des fertig kalibrierten System fällt jedoch auf, dass die Aluminiumwürfel nicht an allen Positionen auf dem Arbeitsfeld deckungsgleich mit ihrem gerenderten Pendant sind. Der beobachtete Fehler variiert bei jeder Kalibrierung. Im Folgenden werden mögliche Gründe für die Positionsabweichung von dem getrackten Objekt und seinem virtuellen Marker  diskutiert. \\
+\subsubsection{Kalibrierungsfehler} \label{sec:calibError}\todo[inline, color=green]{Laura}
+In den Kapiteln~\ref{sec:camCalib} und~\ref{sec:planeCalib} wird der Algorithmus zur Berechnung der Koordinatentransformation von Kamerakoordinaten in Unitykoordinaten beschrieben. Beim Benutzen des fertig kalibrierten System fällt jedoch auf, dass die Aluminiumwürfel nicht immer deckungsgleich mit ihrem gerenderten Pendant sind. Der beobachtete Fehler variiert bei jeder Kalibrierung. Im Folgenden werden mögliche Gründe für die Positionsabweichung von dem Würfel-Marker und seinem virtuellen Marker diskutiert. \\
 Neben der Rechenungenauigkeit und Rundungsfehlern, die sich über die diversen Rechenschritte (siehe Kapitel \ref{sec:camCalib} und \ref{sec:planeCalib}) hinweg aufaddieren, sollen in diesem Kapitel systembedingte mögliche Fehlerquellen aufgeführt werden. Man kann davon ausgehen, dass sich der Fehler großteils durch Fehlerfortpflanzung \cite{schmalstieg2016augmented} ergibt.\\ 
-Da die Auflösung der für das Tracking genutzten \textit{IDS uEye}-Kamera begrenzt ist (vgl. BLA) ergibt sich ein . Dieser Effekt wird durch Einflüsse wie Bildrauschen und die von Frame zu Frame unterschiedlichen Boundingboxen weiter verstärkt. Es ist also davon auszugehen, dass die Mittelpunkte der getrackten Marker, die als ein Part in die korrespondierenden Punktepaare (vgl BLA) eingehen, schon einen gewissen Fehler aufweisen. \\
-
-
-
-2) RANSAC
-%3) Fehlerfortpflanzung
-4) Inside out Tracking Vive
-%5) Trackingfehler + 6) Kamerauflösung begrenzt
-
-
-Zusätzliche Registrierungsfehler können durch Latenz entstehen. Nämlich immer dann, wenn eine Zeitdifferenz zwischen der Messung der Position in Kamerakoordinaten und der eigentlichen Darstellung nach entsprechender
+Aufgrund der Auflösung der für das Tracking genutzten \textit{IDS uEye}-Kamera (vgl. Abschnitt \ref{sec:uEye}) ist die Genauigkeit des Trackings begrenzt und die Positionen der Würfel-Marker können nicht beliebig genau ermittelt werden. Dieser Effekt wird durch Einflüsse wie z.B. Bildrauschen weiter verstärkt. Es ist also davon auszugehen, dass die Mittelpunkte der verfolgten Marker, die als ein Part in die korrespondierenden Punktepaare (vgl. Abschnitt~\ref{sec:Korrespondenz}) eingehen, schon einen gewissen Fehler aufweisen. \\
+Da mittels des RANSAC-Algorithmus~\cite{articel:RANSAC} lediglich eine Schätzung ermittelt wird, ist die affine Transformationsmatrix $M_{affin}$ nicht gänzlich fehlerfrei. \\
+Zusätzliche Fehler bei der Registrierung können durch Latenz entstehen. Nämlich immer dann, wenn eine Zeitdifferenz zwischen der Messung der Position in Kamerakoordinaten und der eigentlichen Darstellung nach entsprechender
 Verarbeitung entsteht. Solche Systemverzögerungen werden allerdings nur bei Bewegungen sichtbar und sind deshalb für die beobachteten Fehler bei ruhendem Aluminiumwürfel nicht als mögliche Fehlerquelle auszumachen. 
 
 
