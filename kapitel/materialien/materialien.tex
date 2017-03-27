@@ -86,7 +86,7 @@ An den Computer zur Ausführung der VR Umgebung sind gezwungenermaßen viele ext
 
 
 \subsubsection{HTC Vive}\label{sec:Vive} \todo[inline, color=green]{Laura}
-Bei der \textit{HTC Vive} handelt es sich um ein Head-Mounted Display, welches von \textit{HTC} in Kooperation mit \textit{Valve} \cite{website:Valve} produziert wird. Vorgestellt wurde dieses am 1. März 2015 im Vorfeld des \textit{Mobile World Congress} \cite{website:mobileworldcongress}.\\
+Bei der \textit{HTC Vive} handelt es sich um ein Head-Mounted Display, welches von \textit{HTC} in Kooperation mit \textit{Valve}~\cite{website:Valve} produziert wird. Vorgestellt wurde dieses am 1. März 2015 im Vorfeld des \textit{Mobile World Congress}~\cite{website:mobileworldcongress}.\\
 Die Auflösung des Displays beträgt insgesamt $2160\times1200$ Pixel, was $1080\times1200$ Pixeln pro Auge enstpricht. Die Brille bietet ein Sichtfeld von bis zu $110^\circ$ bei einer Bildwiederholrate von $90\,Hz$ \cite{website:HTC_Vive}. Alle technischen Systemvoraussetzungen können in Tabelle \ref{tab:viveReq} eingesehen werden. \\
 Zur Positionsbestimmung im Raum wird die Lighthousetechnologie von \textit{Valve} genutzt. Zusätzlich sind neben einem Gyrosensor auch ein Beschleunigungsmesser und ein Laser-Positionsmesser verbaut. Mittels speziellen Game-Controllern wird eine Interaktion mit virtuellen Objekten ermöglicht.
 
@@ -132,18 +132,18 @@ Weiterführend beinhaltet das $\texttt{DICT\_4X4\_50}$ Dictionary auf Grund sein
 \end{figure}
 
 \subsubsection{Schachbrett-Kalibrierungshelfer zur Kamerakalibrierung} \label{sec:SchachbrettKalib} \todo[inline, color=green]{Laura}
-Der in Abbildung~\ref{fig:schachbrettKalib} gezeigte Kalibrierungshelfer wird für die Kamerakalibrierung (vgl. Kapitel~\ref{sec:camCalib} der uEye-Kamera, deren Eigenschaften in Kapitel \ref{sec:uEye} beschrieben werden, verwendet. Dazu wurde eine Tisch-artige Erhöhung gebaut, die genauso hoch ist, wie die Würfel Marker (vgl. Kapitel \ref{sec:WürfelMarker}). Darauf ist ein ausgedrucktes Schachbrettmuster mit $8\times10$ Feldern, wobei man algorithmus-bedingt nur die inneren Felder zählt, also $7\times9$ Felder. Dieses steht unter \url{http://www.mrpt.org/downloads/camera-calibration-checker-board_9x7.pdf} (Abgerufen am: 25.03.2017) zum Download bereit.
+Der in Abbildung~\ref{fig:schachbrettKalib} gezeigte Kalibrierungshelfer wird für die Kamerakalibrierung (vgl. Abschnitt~\ref{sec:camCalib}) der \textit{uEye}-Kamera, deren Eigenschaften in Abschnitt~\ref{sec:uEye} beschrieben werden, verwendet. Dazu wurde eine Tisch-artige Erhöhung gebaut, die genauso hoch ist, wie die Würfel-Marker (vgl. Abschnitt~\ref{sec:WürfelMarker}). Darauf ist ein ausgedrucktes Schachbrettmuster mit $8\times10$ Feldern, wobei man algorithmus-bedingt nur die inneren Felder zählt, also $7\times9$ Felder. Dieses steht unter \url{http://www.mrpt.org/downloads/camera-calibration-checker-board_9x7.pdf} (Abgerufen am: 25.03.2017) zum Download bereit.
 
 	\begin{figure}[H] 
 	\center 
-	\includegraphics[trim = 0mm 20mm 30mm 30mm, clip]{Bilder/Eigene Fotos/IMG_0004.jpg}			
+	\includegraphics[trim = 0mm 20mm 30mm 40mm, clip]{Bilder/Eigene Fotos/IMG_0004.jpg}			
 	\caption{Schachbrett-Kalibrierungshelfer.}
 	\label{fig:schachbrettKalib}
 \end{figure}
 
 \subsubsection{Kalibrierungscontroller zur Arbeitsbereichskalibrierung} \label{sec:calibController} \todo[inline, color=green]{Laura}
-Für die Kalibrierung des Arbeitsbereiches, die in Kapitel \ref{sec:planeCalib} beschrieben wird, wurde ein Controller der \textit{HTC Vive} wie in Abbildung \ref{fig:KontrollerMarc} zu sehen verändert. Zum einen wurde ein \textit{ArUco} Marker mit der ID $49$ auf der Oberseite des Controllers befestigt und zum anderen wurde eine Unterlage angefertigt, die verhindern soll, dass der Controller während Kalibrierung wackelt.\\
-Bei der Anbringung des eben erwähnten \textit{ArUco} Markers, der in Abbildung \ref{fig:AllUsedArucoMarker} zu sehen ist, ist die genau Positionierung entscheidend. Er muss genau mittig unter dem Ring des Controllers aufgebracht werden, so wie es auf der Abbildung zu sehen ist. Dies ist entscheidend für die das spätere Verfahren, dass auf korrespondierenden Punktepaaren basiert (vgl. Kapitel \ref{sec:Korrespondenz}). Um eine leichtere Aufbringung und gute Ausrichtung des \textit{ArUco} Markers zu vereinfachen, wurde dafür eine kleine Auflagefläche am  Kalibrierungscontroller angebracht. Diese ist so angebracht, dass der Mittelpunkt des \textit{ArUco} Markers sich möglichst genau an der Stelle befindet, wo auch die Position des Controllers aus Unity heraus gemessen wird.
+Für die Kalibrierung des Arbeitsbereichs, die in Abschnitt~\ref{sec:planeCalib} beschrieben wird, wurde ein Controller der \textit{HTC Vive} wie in Abbildung \ref{fig:KontrollerMarc} zu sehen verändert. Zum einen wurde ein \textit{ArUco} Marker mit der ID $49$ auf der Oberseite des Controllers befestigt und zum anderen wurde eine Unterlage angefertigt, die verhindern soll, dass der Controller während der Kalibrierung wackelt.\\
+Bei der Anbringung des eben erwähnten \textit{ArUco} Markers, der in Abbildung \ref{fig:AllUsedArucoMarker} zu sehen ist, ist die genau Positionierung entscheidend. Er muss genau mittig unter dem Ring des Controllers aufgebracht werden, so wie es auf der Abbildung zu sehen ist. Dies ist entscheidend für die das spätere Verfahren, dass auf korrespondierenden Punktepaaren basiert (vgl. Abschnitt~\ref{sec:Korrespondenz}). Um eine leichtere Aufbringung und gute Ausrichtung des \textit{ArUco} Markers zu vereinfachen, wurde dafür eine kleine Auflagefläche am  Kalibrierungscontroller angebracht. Diese ist so angebracht, dass der Mittelpunkt des \textit{ArUco} Markers sich möglichst genau an der Stelle befindet, wo auch die Position des Controllers aus Unity heraus gemessen wird.
 
 	\begin{figure}[H]
 		\centering
@@ -151,6 +151,7 @@ Bei der Anbringung des eben erwähnten \textit{ArUco} Markers, der in Abbildung 
 		\caption{Kalibrierungscontroller des \textit{MArC} System mit ArUco Marker.}
 		\label{fig:KontrollerMarc}
 	\end{figure}
+	
 \subsection{Obsolete Hardware}\label{sec:obsoleteHardware}\todo[inline, color=green] {Lukas}
 Im Laufe eines Projekts nach Art von \emph{MArC} ist es kaum vermeidbar, dass die gesetzten Projektziele reevaluiert werden müssen. Die Gründe hierfür können vielfältig sein. Beispielsweise könnte die Fertigstellung eines bestimmten Teils des Projekts deutlich länger gedauert haben als geplant, oder es könnte sich herausgestellt haben, dass bestimmte Komponenten zueinander nicht kompatibel sind.
 
