@@ -92,34 +92,32 @@
 \contentsline {paragraph}{Rechtliche Durchf\IeC {\"u}hrbarkeit}{67}{section*.120}
 \contentsline {paragraph}{Operationale Durchf\IeC {\"u}hrbarkeit}{67}{section*.121}
 \contentsline {paragraph}{Terminliche Durchf\IeC {\"u}hrbarkeit}{67}{section*.122}
-\contentsline {paragraph}{Projektrisiko}{67}{section*.124}
 \contentsline {subsubsection}{\numberline {7.2.5}Projektauftragsformular}{67}{subsubsection.7.2.5}
 \contentsline {subsubsection}{\numberline {7.2.6}Projektorganisation}{67}{subsubsection.7.2.6}
-\contentsline {paragraph}{Leitung}{67}{section*.126}
-\contentsline {paragraph}{Team}{67}{section*.127}
-\contentsline {paragraph}{Infrastruktur}{69}{section*.128}
+\contentsline {paragraph}{Leitung}{67}{section*.124}
+\contentsline {paragraph}{Team}{67}{section*.125}
+\contentsline {paragraph}{Infrastruktur}{67}{section*.126}
 \contentsline {subsection}{\numberline {7.3}Projektplanung}{69}{subsection.7.3}
 \contentsline {subsubsection}{\numberline {7.3.1}Arbeitspakete}{69}{subsubsection.7.3.1}
-\contentsline {subsubsection}{\numberline {7.3.2}Projektstrukturplan}{69}{subsubsection.7.3.2}
-\contentsline {subsubsection}{\numberline {7.3.3}Ablaufplan, Terminplan (Gantt Chart)}{69}{subsubsection.7.3.3}
-\contentsline {subsubsection}{\numberline {7.3.4}Kapazit\IeC {\"a}tsplan}{69}{subsubsection.7.3.4}
-\contentsline {subsubsection}{\numberline {7.3.5}Kostenplan}{69}{subsubsection.7.3.5}
-\contentsline {subsubsection}{\numberline {7.3.6}Qalit\IeC {\"a}tsplan}{69}{subsubsection.7.3.6}
-\contentsline {subsection}{\numberline {7.4}Projektdurchf\IeC {\"u}hrung}{71}{subsection.7.4}
-\contentsline {subsubsection}{\numberline {7.4.1}Kommuniktion im Team und nach Au\IeC {\ss }en}{71}{subsubsection.7.4.1}
+\contentsline {subsubsection}{\numberline {7.3.2}Projektstrukturplan}{70}{subsubsection.7.3.2}
+\contentsline {subsubsection}{\numberline {7.3.3}Ablaufplan, Terminplan (Gantt Chart)}{70}{subsubsection.7.3.3}
+\contentsline {subsubsection}{\numberline {7.3.4}Kapazit\IeC {\"a}tsplan}{70}{subsubsection.7.3.4}
+\contentsline {subsubsection}{\numberline {7.3.5}Kostenplan}{70}{subsubsection.7.3.5}
+\contentsline {subsubsection}{\numberline {7.3.6}Qualit\IeC {\"a}tsplan}{70}{subsubsection.7.3.6}
+\contentsline {subsection}{\numberline {7.4}Projektdurchf\IeC {\"u}hrung}{70}{subsection.7.4}
+\contentsline {subsubsection}{\numberline {7.4.1}Kommuniktion im Team und nach Au\IeC {\ss }en}{70}{subsubsection.7.4.1}
 \contentsline {subsubsection}{\numberline {7.4.2}Ma\IeC {\ss }nahmen zur Problemvermeidung}{71}{subsubsection.7.4.2}
-\contentsline {paragraph}{Ausfall des Planungstools Bitrix24}{71}{section*.134}
-\contentsline {paragraph}{Ausfall von Hardware}{71}{section*.135}
-\contentsline {paragraph}{Markerless tracking}{72}{section*.136}
-\contentsline {subsubsection}{\numberline {7.4.3}Meilenstein-Trend-Analyse}{72}{subsubsection.7.4.3}
+\contentsline {paragraph}{Ausfall des Planungstools Bitrix24}{71}{section*.131}
+\contentsline {paragraph}{Ausfall von Hardware}{71}{section*.132}
+\contentsline {paragraph}{Markerless tracking}{72}{section*.133}
 \contentsline {subsection}{\numberline {7.5}Projektabschluss}{72}{subsection.7.5}
 \contentsline {subsubsection}{\numberline {7.5.1}Abschlusspr\IeC {\"a}sentation}{72}{subsubsection.7.5.1}
-\contentsline {subsubsection}{\numberline {7.5.2}Video}{73}{subsubsection.7.5.2}
-\contentsline {subsection}{\numberline {7.6}Reflexion}{73}{subsection.7.6}
+\contentsline {subsubsection}{\numberline {7.5.2}Video}{72}{subsubsection.7.5.2}
+\contentsline {subsection}{\numberline {7.6}Reflexion}{72}{subsection.7.6}
 \contentsline {section}{\numberline {8}Zusammenfassung}{73}{section.8}
 \contentsline {section}{\numberline {9}Steckbrief}{73}{section.9}
-\contentsline {section}{\numberline {10}Anhang}{73}{section.10}
-\contentsline {subsection}{\numberline {10.1}\emph {MArC} ReadMe-Datei}{73}{subsection.10.1}
-\contentsline {subsection}{\numberline {10.2}\texttt {startTCPServer()}-Methode}{81}{subsection.10.2}
-\contentsline {subsection}{\numberline {10.3}\texttt {getPointerOfMarkerVec()}-Methode}{81}{subsection.10.3}
-\contentsline {subsection}{\numberline {10.4}\texttt {interpretTCPMarkerData()}-Methode}{82}{subsection.10.4}
+\contentsline {section}{\numberline {10}Anhang}{74}{section.10}
+\contentsline {subsection}{\numberline {10.1}\emph {MArC} ReadMe-Datei}{74}{subsection.10.1}
+\contentsline {subsection}{\numberline {10.2}\texttt {startTCPServer()}-Methode}{82}{subsection.10.2}
+\contentsline {subsection}{\numberline {10.3}\texttt {getPointerOfMarkerVec()}-Methode}{82}{subsection.10.3}
+\contentsline {subsection}{\numberline {10.4}\texttt {interpretTCPMarkerData()}-Methode}{83}{subsection.10.4}
