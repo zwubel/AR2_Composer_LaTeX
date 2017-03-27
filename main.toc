@@ -117,9 +117,9 @@
 \contentsline {subsubsection}{\numberline {7.5.2}Video}{73}{subsubsection.7.5.2}
 \contentsline {subsection}{\numberline {7.6}Reflexion}{73}{subsection.7.6}
 \contentsline {section}{\numberline {8}Zusammenfassung}{73}{section.8}
-\contentsline {section}{\numberline {9}Steckbrief}{73}{section.9}
-\contentsline {section}{\numberline {10}Anhang}{73}{section.10}
-\contentsline {subsection}{\numberline {10.1}\emph {MArC} ReadMe-Datei}{73}{subsection.10.1}
-\contentsline {subsection}{\numberline {10.2}\texttt {startTCPServer()}-Methode}{81}{subsection.10.2}
-\contentsline {subsection}{\numberline {10.3}\texttt {getPointerOfMarkerVec()}-Methode}{81}{subsection.10.3}
-\contentsline {subsection}{\numberline {10.4}\texttt {interpretTCPMarkerData()}-Methode}{82}{subsection.10.4}
+\contentsline {section}{\numberline {9}Steckbrief}{74}{section.9}
+\contentsline {section}{\numberline {10}Anhang}{74}{section.10}
+\contentsline {subsection}{\numberline {10.1}\emph {MArC} ReadMe-Datei}{74}{subsection.10.1}
+\contentsline {subsection}{\numberline {10.2}\texttt {startTCPServer()}-Methode}{82}{subsection.10.2}
+\contentsline {subsection}{\numberline {10.3}\texttt {getPointerOfMarkerVec()}-Methode}{82}{subsection.10.3}
+\contentsline {subsection}{\numberline {10.4}\texttt {interpretTCPMarkerData()}-Methode}{83}{subsection.10.4}
