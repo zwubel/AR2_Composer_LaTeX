@@ -266,11 +266,17 @@ Auf die gleiche Weise wird das Kontextmenü mit den Marker Handles auch wieder g
 	\label{fig:KontextmenuCollider}
 \end{figure}
 
-\subsubsection{Berechnung der Gebäudeeigenschaften} \label{sec:KontextMenuInhalt}\todo[inline]{Laura}
-%Wie auf Abbildung BLA zu sehen, enthält das Kontextmenü neben der Anwendungsspzfischen ID des jweiligen Gebäudes, noch eine Reihe weiterer Informationen über dieses.  Zunächst wird der Maßstab, den  der BEnutzer in Menü BLA auswählen kann, angegeben. Wenn das Objekt nicht bereits durch den Benutzer anhand der Handles tranformiert wurde...
+\subsubsection{Berechnung der Gebäudeeigenschaften} \label{sec:KontextMenuInhalt}\todo[inline, color=green]{Laura}
+Wie auf Abbildung \ref{fig:standardMarker} zu sehen, enthält das Kontextmenü neben der Anwendungsspzfischen ID des jeweiligen Gebäudes, noch eine Reihe weiterer Informationen über dieses.  Zunächst wird der Maßstab, den der Benutzer zu Beginn der Anwendung im \texttt{setScale}-Menü (vgl. Abschnitt \ref{sec:menuAblauf}) auswählen kann, angegeben. Wenn das Objekt nicht bereits durch den Benutzer anhand der Handles transformiert wurde, sieht es aus wie auf der bereits erwähnten Abbildung \ref{fig:standardMarker}. Diese zeigt einen Standard-Marker mit 4 Geschossen. Über den z-Handle (vgl. Abschnitt \ref{sec:markerHandles}) können einzelne Geschosse hinzugefügt oder gelöscht werden. Was im Kontextmenü zum einen natürlich direkten Einfluss auf die Geschossigkeit hat und zum anderen zur Veränderung der Höhe des jeweiligen Gebäudes führt. Neben der Höhe sind die Breite und Höhe, sowie die Grund- und Wohnfläche von der Skalierung des virtuellen Markers abhängig. Alle im Kontextmenü dargestellten Größen, bis auf die ID und die Geschossigkeit sind von dem ebenfalls dort aufgeführten und bereits erwähnten Maßstab abhängig. 
 
+\begin{figure}
+	\centering
+	\includegraphics[scale=.3]{Bilder/Neue Screenshots/StandardMarker.jpg}
+	\caption{Unskalierter Standard-Marker mit offenem Kontextmenü.}
+	\label{fig:standardMarker}
+\end{figure}
 
-%Es ist natürlich denkbar die im Kontextmenü angebenen Eigenschaften eines Objektes an die individuellen Bedürfnisse und Vorstellungen des Benutzers anzupassen. Die entsprechenden Berechnungen finden ich in der BLA klasse.
+Es ist natürlich denkbar die im Kontextmenü angegebenen Eigenschaften eines Objektes an die individuellen Bedürfnisse und Vorstellungen des Benutzers anzupassen. Die entsprechenden Berechnungen finden sich in der \texttt{ContextMenu.cs}-Klasse.
 
 \subsection{Table Menü}\label{sec:TableMenü}\todo[inline, color=green]{Paul}
 
@@ -545,7 +551,7 @@ Allgemein betrachtet hat die Arbeitsbereichskalibrierung zwei verschiedene Aufga
 
 \begin{figure}
 	\centering
-	\includegraphics[width=\textwidth, trim=7cm 2cm 5cm 6cm, clip]{Bilder/Arbeitsbereich.png}
+	\includegraphics[width=\textwidth, trim=7cm 2cm 5cm 6cm, clip]{Bilder/Neue Screenshots/Arbeitsbereich.PNG}
 	\caption{Begrenzung des Arbeitsbereichs in der \emph{Unity}-Simulation.}
 	\label{fig:begrenzungArbeitsbereich}
 \end{figure}
