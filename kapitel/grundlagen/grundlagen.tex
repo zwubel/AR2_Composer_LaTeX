@@ -1,4 +1,4 @@
-\section{Grundlagen und Stand der Wissenschaft}
+\section{Grundlagen und Stand der Wissenschaft} \label{sec:grundlagen}
 \todo[inline, color=green]{Vera}
 Im folgenden werden die Grundlagen und der Stand-der-Wissenschaft von allen Teilbereichen des \text{MArC} Systems erläutert. Es werden Veröffentlichungen von ähnlichen Architektur VR Anwendungen, haptischen Interaktionsmethoden sowie Handtracking Methoden erläutert. Fortlaufend wird auf die Grundlagen der Netzwerktechnologie und den bekanntesten Bedienkonzepten in VR- Umgebungen eingegangen. Zuletzt werden die wichtigsten Methoden zum Marker Verfolgung zusammengefasst.
 \subsection{Architektur von Virtual-Reality-Anwendungen}\label{sec:ArchitekturAnwendungen}\todo[inline, color=green]{Lukas}
@@ -39,7 +39,13 @@ Bei den oben aufgelisteten Formen von haptischer Interaktion wird davon ausgegan
 %In manchen Fällen kann es schwierig sein eine eindeutige Zuordnung des Systems zu einer der Kategorien zu finden.
 
 
-\subsection{Handtracking Interaktionsmethoden}\label{sec:HandtrackingAnwendungen}\todo[inline]{Paul}
+-\subsection{Handtracking}\label{sec:HandtrackingAnwendungen}\todo[inline, color = green]{Paul}
+ -Handtracking ist mittels verschiedener Trackingsysteme möglich. Alle Systeme haben hierbei ihre Vor- und Nachteile. \\
+ -Beispielsweise ist es möglich, die Bewegungen der Hand mittels eines Datenhandschuhs zu erfassen. Dies ist ein mit Sensoren ausgestatteter Handschuh, den der Nutzer an den Händen trägt. Eine Möglichkeit die Fingerbewegung mit einem Datenhandschuh zu erfassen sind Biegesensoren. Hierbei handelt es sich je nach Bauart um Glasfasern, die an den Fingern entlang laufen. Wird ein Finger gebogen, wird ein Licht welches durch die gebogene Glasfaser läuft, leicht abgeschwächt. Hierdurch ist eine Biegung erkennbar. Dieses System ist ebenfalls mittels gefärbter Flüssigkeit innerhalb kleiner Röhrchen möglich. Auch hier werden bei Bewegung weniger Partikel durchgelassen.\\
+ -Eine weitere Möglichkeit ist das Exosklett. Hierbei wird eine Mechanik an dem Handschuh angebracht, mittels welcher Bewegungen auf Sensoren übertragen werden. Datenhandschuhe sind für den Nutzer einschränkend und aus Hygienischen Gründen nicht die Beste Wahl zum Handtracking.\\
+ -Eine bessere Möglichkeit ist das optische Tracking der Hande. Systeme wie der \textit{Leap Motion Controller} erfassen mit Kameras die Shilouette der Hände und rechnen aus den stereoskopischen Bildinformationen die Winkel und Positionen der verschiednen Fingerglieder aus.\\
+ -Dieses System ist einfach zu benutzen, sobald der Nutzer seine Hand in den getrackten Bereich hält, werden diese erkannt.\\
+ -Typisch für optische Systeme ist jedoch das Problem der Verdeckung. Wird die Hand aus einer bestimmten Richtung durch Kameras gefilmt, kann es passieren, dass einige Finger andere überdecken. Teilweise kann dann nicht exakt unterschieden werden, welches Fingerlied zu welchem Finger oder Teil der Hand gehört. Dies wirkt sich bei der Benutzung in einem "hüpfenden" Verhalten oder unmenschlich verrenkter Finger aus.
 \subsection{ISO/OSI-7-Schichtenmodell}\label{sec:Netzwerk}\todo[inline, color=green]{Laura}
 Um die Kommunikation zwischen unterschiedlichsten technischen Systemen zu ermöglichen und zu vereinheitlichen dient das \textit{ISO/OSI-7-Schichtenmodell} \cite{ITU}, welches in Tabelle~\ref{tab:Schichtenmodell} schematisch dargestellt ist. Um die Weiterentwicklung von Kommunikationsmodellen möglichst barrierefrei zu gestalten, sind in dem Modell sieben aufeinanderfolgende Schichten definiert worden, die für einen klar eingegrenzten Teilbereich der Kommunikation zuständig sind. Die Netzprotokolle, die in einer Schicht zum Einsatz kommen, müssen einheitliche Schnittstellen aufweisen, um einen reibungslosen Austausch zu gewährleisten. Entsprechende Beispiele sind der rechten Spalte von Tabelle~\ref{tab:Schichtenmodell} zu entnehmen.\\
 
