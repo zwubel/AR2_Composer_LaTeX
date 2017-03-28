@@ -104,14 +104,9 @@ Für das Projekt wurde die \textit{Leap Motion} zur Interaktion mit den virtuell
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=6cm]{Bilder/leap-motion.png}			
-		\caption{Explosionszeichnung der Leap Motion.~\cite{website:LeapMotionBlog}}
+		\caption{Aufbau der Leap Motion.~\cite{website:LeapMotionBlog}}
 		\label{fig:leapMotion}
 \end{figure}
-
-\subsubsection{Leap Motion SDK} \label{sec:LeapSDK}\todo[inline, color=green] {Paul}
-\textit{Leap Motion Inc.} bietet ein vollständiges Software Development Kit (SDK) für die \textit{Leap} an, welches \textit{Unity} um das Hand- und Fingertracking erweitert. Die Treibersoftware interpretiert die von den Kameras gelieferten Daten und sendet Trackinginformationen an die jeweilige Software. Das Leap SDK setzt an dieser Stelle an und verwendet diese eingehenden Daten um sie auf ein Handmodell in \textit{Unity} zu übertragen. Das SDK ist so vorbereitet, dass der Nutzer fertige Bausteine in die virtuelle Szene einbinden kann, die sich dann um die Dateninterpretation und visualisierung als Handmodelle kümmert. Die Handmodelle, die das SDK liefert, sind mit Collidern ausgestattet. Diese abstrahierte Geometrie lässt \textit{Unity} Kollisionen feststellen. Dieses Feature wird bei \textit{MArC} verwendet, um die Interaktion mit den virtuellen Menüelementen zu realisieren.\\
-\textit{Leap} bietet zudem mehrere sog. "Module" an, die das SDK erweitern können. Unter anderem auch ein Modul, welches die \textit{Unity}-internen GUI Elemente mit den Handmodellen bedienbar machen. Nach einigen Tests hat sich jedoch herausgestellt, dass diese Interaktionsmöglichkeit für \textit{MArC} ungeeignet ist, da sie zu instabil läuft. Das um das UI Modul erweiterte SDK projiziert die Position der Fingerspitzen auf die UI Ebene, falls sich die Hand in der Nähe dieser befindet. Auf der UI wird dann ein kleiner Kreis angezeigt, um dem Nutzer ein visuelles Feedback zu gewährleisten.\\
-Im Falle von \textit{MArC} sollten die virtuellen UI Elemente auf den Tisch platziert werden. Hierbei sind die Elemente jedoch immer ein wenig oberhalb des Tisches platziert, damit sie in jedem Fall mit der virtuellen Hand bedient werden können. Zwingend durchdringt die Hand dann die UI Elemente. Mittels des mitgelieferten UI-Modules ist eine Interaktion dann nicht mehr möglich. Daher war eine Bedienung mit Hilfe der Collider sinnvoller.
 
 
 \subsubsection{Würfel Marker}\label{sec:WürfelMarker} \todo[inline, color=green]{Vera}
@@ -257,4 +252,11 @@ Das bereitgestellte \textit|{Unity} Prefab beinhaltet alle notwendigen Elemente 
 \subsubsection{Windows Sockets (Winsock)}\label{sec:Winsock}\todo[inline, color=green] {Lukas}
 Windows Sockets (abgekürzt Winsock) ist eine API für den Zugriff auf Netzwerkkomponenten in Microsoft Windows Betriebssystemen~\cite{quinn1998windows}. Winsock wird nativ in Microsoft Windows bereitgestellt.\\ 
 Für die unkomplizierte Übertragung zwischen zwei Anwendungen in einem lokalen Netzwerk bieten sich sowohl das \emph{Transmission Control Protocol} (TCP), als auch das User \emph{User Datagram Protocol} (UDP) an. Das Erstellen von Netzwerk-Sockets für die Übertragung per TCP und UDP wird von Winsock ermöglicht.\\ Die Umsetzung der Netzwerkverbindung in \emph{MArC} wird in Abschnitt~\ref{sec:netzwerk} näher beschrieben.
+
+
+\subsubsection{Leap Motion SDK} \label{sec:LeapSDK}\todo[inline, color=green] {Paul}
+\textit{Leap Motion Inc.} bietet ein vollständiges Software Development Kit (SDK) für die \textit{Leap} an, welches \textit{Unity} um das Hand- und Fingertracking erweitert. Die Treibersoftware interpretiert die von den Kameras gelieferten Daten und sendet Trackinginformationen an die jeweilige Software. Das Leap SDK setzt an dieser Stelle an und verwendet diese eingehenden Daten um sie auf ein Handmodell in \textit{Unity} zu übertragen. Das SDK ist so vorbereitet, dass der Nutzer fertige Bausteine in die virtuelle Szene einbinden kann, die sich dann um die Dateninterpretation und visualisierung als Handmodelle kümmert. Die Handmodelle, die das SDK liefert, sind mit Collidern ausgestattet. Diese abstrahierte Geometrie lässt \textit{Unity} Kollisionen feststellen. Dieses Feature wird bei \textit{MArC} verwendet, um die Interaktion mit den virtuellen Menüelementen zu realisieren.\\
+\textit{Leap} bietet zudem mehrere sog. "Module" an, die das SDK erweitern können. Unter anderem auch ein Modul, welches die \textit{Unity}-internen GUI Elemente mit den Handmodellen bedienbar machen. Nach einigen Tests hat sich jedoch herausgestellt, dass diese Interaktionsmöglichkeit für \textit{MArC} ungeeignet ist, da sie zu instabil läuft. Das um das UI Modul erweiterte SDK projiziert die Position der Fingerspitzen auf die UI Ebene, falls sich die Hand in der Nähe dieser befindet. Auf der UI wird dann ein kleiner Kreis angezeigt, um dem Nutzer ein visuelles Feedback zu gewährleisten.\\
+Im Falle von \textit{MArC} sollten die virtuellen UI Elemente auf den Tisch platziert werden. Hierbei sind die Elemente jedoch immer ein wenig oberhalb des Tisches platziert, damit sie in jedem Fall mit der virtuellen Hand bedient werden können. Zwingend durchdringt die Hand dann die UI Elemente. Mittels des mitgelieferten UI-Modules ist eine Interaktion dann nicht mehr möglich. Daher war eine Bedienung mit Hilfe der Collider sinnvoller.
+
 \newpage
