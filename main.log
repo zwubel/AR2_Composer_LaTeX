@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2017.1.2)  28 MAR 2017 14:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2017.1.2)  28 MAR 2017 14:37
 entering extended mode
 **./main.tex
 (main.tex
@@ -3418,7 +3418,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 2.
 
-<kapitel/anhang/ReadMe.pdf, id=1556, 596.2275pt x 844.15375pt>
+<kapitel/anhang/ReadMe.pdf, id=1557, 596.2275pt x 844.15375pt>
 File: kapitel/anhang/ReadMe.pdf Graphic file (type pdf)
 
 <use kapitel/anhang/ReadMe.pdf>
@@ -3479,7 +3479,7 @@ Package pdftex.def Info: kapitel/anhang/ReadMe.pdf, page1 used on input line 3.
 
 (pdftex.def)             Requested size: 596.96295pt x 845.19502pt.
  [78]
-<kapitel/anhang/ReadMe.pdf, id=1568, page=2, 596.2275pt x 844.15375pt>
+<kapitel/anhang/ReadMe.pdf, id=1569, page=2, 596.2275pt x 844.15375pt>
 File: kapitel/anhang/ReadMe.pdf Graphic file (type pdf)
 
 <use kapitel/anhang/ReadMe.pdf, page 2>
@@ -3511,7 +3511,7 @@ Package pdftex.def Info: kapitel/anhang/ReadMe.pdf, page2 used on input line 3.
 pdfTeX warning: pdflatex.exe (file ./kapitel/anhang/ReadMe.pdf): PDF inclusion:
  invalid other resource which is no dict (key 'ProcSets', type <array>); ignore
 d.
->] <kapitel/anhang/ReadMe.pdf, id=1586, page=3, 596.2275pt x 844.15375pt>
+>] <kapitel/anhang/ReadMe.pdf, id=1587, page=3, 596.2275pt x 844.15375pt>
 File: kapitel/anhang/ReadMe.pdf Graphic file (type pdf)
 
 <use kapitel/anhang/ReadMe.pdf, page 3>
@@ -3543,7 +3543,7 @@ Package pdftex.def Info: kapitel/anhang/ReadMe.pdf, page3 used on input line 3.
 pdfTeX warning: pdflatex.exe (file ./kapitel/anhang/ReadMe.pdf): PDF inclusion:
  invalid other resource which is no dict (key 'ProcSets', type <array>); ignore
 d.
->] <kapitel/anhang/ReadMe.pdf, id=1591, page=4, 596.2275pt x 844.15375pt>
+>] <kapitel/anhang/ReadMe.pdf, id=1592, page=4, 596.2275pt x 844.15375pt>
 File: kapitel/anhang/ReadMe.pdf Graphic file (type pdf)
 
 <use kapitel/anhang/ReadMe.pdf, page 4>
@@ -3575,7 +3575,7 @@ Package pdftex.def Info: kapitel/anhang/ReadMe.pdf, page4 used on input line 3.
 pdfTeX warning: pdflatex.exe (file ./kapitel/anhang/ReadMe.pdf): PDF inclusion:
  invalid other resource which is no dict (key 'ProcSets', type <array>); ignore
 d.
->] <kapitel/anhang/ReadMe.pdf, id=1596, page=5, 596.2275pt x 844.15375pt>
+>] <kapitel/anhang/ReadMe.pdf, id=1597, page=5, 596.2275pt x 844.15375pt>
 File: kapitel/anhang/ReadMe.pdf Graphic file (type pdf)
 
 <use kapitel/anhang/ReadMe.pdf, page 5>
@@ -3607,7 +3607,7 @@ Package pdftex.def Info: kapitel/anhang/ReadMe.pdf, page5 used on input line 3.
 pdfTeX warning: pdflatex.exe (file ./kapitel/anhang/ReadMe.pdf): PDF inclusion:
  invalid other resource which is no dict (key 'ProcSets', type <array>); ignore
 d.
->] <kapitel/anhang/ReadMe.pdf, id=1601, page=6, 596.2275pt x 844.15375pt>
+>] <kapitel/anhang/ReadMe.pdf, id=1602, page=6, 596.2275pt x 844.15375pt>
 File: kapitel/anhang/ReadMe.pdf Graphic file (type pdf)
 
 <use kapitel/anhang/ReadMe.pdf, page 6>
@@ -3639,7 +3639,7 @@ Package pdftex.def Info: kapitel/anhang/ReadMe.pdf, page6 used on input line 3.
 pdfTeX warning: pdflatex.exe (file ./kapitel/anhang/ReadMe.pdf): PDF inclusion:
  invalid other resource which is no dict (key 'ProcSets', type <array>); ignore
 d.
->] <kapitel/anhang/ReadMe.pdf, id=1606, page=7, 596.2275pt x 844.15375pt>
+>] <kapitel/anhang/ReadMe.pdf, id=1607, page=7, 596.2275pt x 844.15375pt>
 File: kapitel/anhang/ReadMe.pdf Graphic file (type pdf)
 
 <use kapitel/anhang/ReadMe.pdf, page 7>
@@ -3724,7 +3724,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 13.
 
-[87] <kapitel/anhang/Kapazitaetsplan.pdf, id=1749, 845.1575pt x 597.23125pt>
+[87] <kapitel/anhang/Kapazitaetsplan.pdf, id=1750, 845.1575pt x 597.23125pt>
 File: kapitel/anhang/Kapazitaetsplan.pdf Graphic file (type pdf)
 
 <use kapitel/anhang/Kapazitaetsplan.pdf>
@@ -3738,7 +3738,7 @@ Package pdftex.def Info: kapitel/anhang/Kapazitaetsplan.pdf used on input line
 15.
 (pdftex.def)             Requested size: 845.15544pt x 597.22978pt.
 
-<kapitel/anhang/Kapazitaetsplan.pdf, id=1752, page=1, 845.1575pt x 597.23125pt>
+<kapitel/anhang/Kapazitaetsplan.pdf, id=1753, page=1, 845.1575pt x 597.23125pt>
 File: kapitel/anhang/Kapazitaetsplan.pdf Graphic file (type pdf)
 <use kapitel/anhang/Kapazitaetsplan.pdf, page 1>
 Package pdftex.def Info: kapitel/anhang/Kapazitaetsplan.pdf, page1 used on inpu
@@ -3777,7 +3777,7 @@ Package pdftex.def Info: kapitel/anhang/Kapazitaetsplan.pdf, page1 used on inpu
 t line 15.
 (pdftex.def)             Requested size: 845.15544pt x 597.22978pt.
  [88 <./kapitel/anhang/Kapazitaetsplan.pdf>]
-<kapitel/anhang/Kapazitaetsplan.pdf, id=1877, page=2, 845.1575pt x 597.23125pt>
+<kapitel/anhang/Kapazitaetsplan.pdf, id=1878, page=2, 845.1575pt x 597.23125pt>
 File: kapitel/anhang/Kapazitaetsplan.pdf Graphic file (type pdf)
 <use kapitel/anhang/Kapazitaetsplan.pdf, page 2>
 Package pdftex.def Info: kapitel/anhang/Kapazitaetsplan.pdf, page2 used on inpu
@@ -3804,7 +3804,7 @@ Package pdftex.def Info: kapitel/anhang/Kapazitaetsplan.pdf, page2 used on inpu
 t line 15.
 (pdftex.def)             Requested size: 845.15544pt x 597.22978pt.
  [89 <./kapitel/anhang/Kapazitaetsplan.pdf>]
-<kapitel/anhang/Kostenplan.pdf, id=1889, 845.1575pt x 597.23125pt>
+<kapitel/anhang/Kostenplan.pdf, id=1890, 845.1575pt x 597.23125pt>
 File: kapitel/anhang/Kostenplan.pdf Graphic file (type pdf)
 
 <use kapitel/anhang/Kostenplan.pdf>
@@ -3815,7 +3815,7 @@ File: kapitel/anhang/Kostenplan.pdf Graphic file (type pdf)
 Package pdftex.def Info: kapitel/anhang/Kostenplan.pdf used on input line 18.
 (pdftex.def)             Requested size: 845.15544pt x 597.22978pt.
 
-<kapitel/anhang/Kostenplan.pdf, id=1892, page=1, 845.1575pt x 597.23125pt>
+<kapitel/anhang/Kostenplan.pdf, id=1893, page=1, 845.1575pt x 597.23125pt>
 File: kapitel/anhang/Kostenplan.pdf Graphic file (type pdf)
 
 <use kapitel/anhang/Kostenplan.pdf, page 1>
@@ -3855,7 +3855,7 @@ Package pdftex.def Info: kapitel/anhang/Kostenplan.pdf, page1 used on input lin
 e 18.
 (pdftex.def)             Requested size: 845.15544pt x 597.22978pt.
  [90 <./kapitel/anhang/Kostenplan.pdf>] <kapitel/anhang/Qualitaetsplan.pdf, id=
-1917, 845.1575pt x 597.23125pt>
+1918, 845.1575pt x 597.23125pt>
 File: kapitel/anhang/Qualitaetsplan.pdf Graphic file (type pdf)
 
 <use kapitel/anhang/Qualitaetsplan.pdf>
@@ -3869,7 +3869,7 @@ Package pdftex.def Info: kapitel/anhang/Qualitaetsplan.pdf used on input line 2
 0.
 (pdftex.def)             Requested size: 845.15544pt x 597.22978pt.
 
-<kapitel/anhang/Qualitaetsplan.pdf, id=1920, page=1, 845.1575pt x 597.23125pt>
+<kapitel/anhang/Qualitaetsplan.pdf, id=1921, page=1, 845.1575pt x 597.23125pt>
 File: kapitel/anhang/Qualitaetsplan.pdf Graphic file (type pdf)
 
 <use kapitel/anhang/Qualitaetsplan.pdf, page 1>
@@ -3909,7 +3909,7 @@ Package pdftex.def Info: kapitel/anhang/Qualitaetsplan.pdf, page1 used on input
  line 20.
 (pdftex.def)             Requested size: 845.15544pt x 597.22978pt.
  [91 <./kapitel/anhang/Qualitaetsplan.pdf>] <kapitel/anhang/GanttChart.pdf, id=
-1948, 845.1575pt x 597.23125pt>
+1949, 845.1575pt x 597.23125pt>
 File: kapitel/anhang/GanttChart.pdf Graphic file (type pdf)
 
 <use kapitel/anhang/GanttChart.pdf>
@@ -3920,7 +3920,7 @@ File: kapitel/anhang/GanttChart.pdf Graphic file (type pdf)
 Package pdftex.def Info: kapitel/anhang/GanttChart.pdf used on input line 22.
 (pdftex.def)             Requested size: 845.15544pt x 597.22978pt.
 
-<kapitel/anhang/GanttChart.pdf, id=1951, page=1, 845.1575pt x 597.23125pt>
+<kapitel/anhang/GanttChart.pdf, id=1952, page=1, 845.1575pt x 597.23125pt>
 File: kapitel/anhang/GanttChart.pdf Graphic file (type pdf)
 
 <use kapitel/anhang/GanttChart.pdf, page 1>
@@ -3960,7 +3960,7 @@ Package pdftex.def Info: kapitel/anhang/GanttChart.pdf, page1 used on input lin
 e 22.
 (pdftex.def)             Requested size: 845.15544pt x 597.22978pt.
  [92 <./kapitel/anhang/GanttChart.pdf>] <kapitel/anhang/MP_Strukturplan.pdf, id
-=1976, 845.1575pt x 597.23125pt>
+=1977, 845.1575pt x 597.23125pt>
 File: kapitel/anhang/MP_Strukturplan.pdf Graphic file (type pdf)
 
 <use kapitel/anhang/MP_Strukturplan.pdf>
@@ -3974,7 +3974,7 @@ Package pdftex.def Info: kapitel/anhang/MP_Strukturplan.pdf used on input line
 24.
 (pdftex.def)             Requested size: 845.15544pt x 597.22978pt.
 
-<kapitel/anhang/MP_Strukturplan.pdf, id=1979, page=1, 845.1575pt x 597.23125pt>
+<kapitel/anhang/MP_Strukturplan.pdf, id=1980, page=1, 845.1575pt x 597.23125pt>
 File: kapitel/anhang/MP_Strukturplan.pdf Graphic file (type pdf)
 <use kapitel/anhang/MP_Strukturplan.pdf, page 1>
 Package pdftex.def Info: kapitel/anhang/MP_Strukturplan.pdf, page1 used on inpu
@@ -4146,10 +4146,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 25565 strings out of 493335
- 457719 string characters out of 3127639
- 628767 words of memory out of 3000000
- 27882 multiletter control sequences out of 15000+200000
+ 25566 strings out of 493335
+ 457734 string characters out of 3127639
+ 627807 words of memory out of 3000000
+ 27883 multiletter control sequences out of 15000+200000
  23890 words of font info for 63 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,22n,100p,1954b,1934s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -4195,9 +4195,9 @@ X_portable/MiKTeXPortable/texmfs/install/fonts/type1/public/amsfonts/cm/cmtt10.
 pfb><H:/LaTeX/_LaTeX_portable/MiKTeXPortable/texmfs/install/fonts/type1/public/
 amsfonts/symbols/msbm10.pfb><H:/LaTeX/_LaTeX_portable/MiKTeXPortable/texmfs/ins
 tall/fonts/type1/public/esvect/vect10.pfb>
-Output written on main.pdf (98 pages, 9704803 bytes).
+Output written on main.pdf (98 pages, 9705712 bytes).
 PDF statistics:
- 3035 PDF objects out of 3580 (max. 8388607)
+ 3036 PDF objects out of 3580 (max. 8388607)
  641 named destinations out of 1000 (max. 500000)
  1208 words of extra memory for PDF output out of 10000 (max. 10000000)
 
