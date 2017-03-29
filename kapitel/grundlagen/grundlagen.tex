@@ -95,7 +95,7 @@ Die Transportschicht stellt eine logische Ende-zu-Ende-Verbindungen dar und dien
 \item[UDP:] Dieses Transportprotokoll wurde aus der Notwendigkeit heraus entwickelt, für die Übertragung von Sprache auf ein, im Gegensatz zur TCP, simpleres Protokoll zurückgreifen zu können. Genaue Details können in dem Standard RFC 768 \citep{rfc768} von 1981 in Erfahrung gebracht werden.
 \end{description}
 
-Ein wichtiger Unterschied zwischen den beiden Transportprotokollen ist, dass die Übertragung per TCP im Vergleich zu UDP sicherstellt, dass gesendete Daten korrekt übertragen und empfangen werden. Dies geschieht dadurch, dass in einem TCP-Socket-Netzwerk Fehlererkennungs- und Korrekturmechanismen enthalten sind, die fehlerhafte Übertragungen der darunterliegenden Internet Protocol (IP) Schicht ausgleichen, also entweder korrigieren oder dafür sorgen, dass fehlerhafte Daten erneut übertragen werden.
+Ein wichtiger Unterschied zwischen den beiden Transportprotokollen ist, dass die Übertragung per TCP im Vergleich zu UDP sicherstellt, dass gesendete Daten korrekt übertragen und empfangen werden. Dies geschieht dadurch, dass in einem TCP-Socket-Netzwerk Fehlererkennungs- und Korrekturmechanismen enthalten sind, die fehlerhafte Übertragungen der darunterliegenden Internet Protocol (IP) Schicht ausgleichen, also entweder korrigieren oder dafür sorgen, dass fehlerhafte Daten erneut übertragen werden. \textcolor{red}{Wegen dieser automatischen Fehlerkorrektur wurde TCP für die Kommunikation zwischen den beiden Computern bei MArC verwendet. Details: siehe Kapitel XYZ (?)}
 
 \subsection{Bedienkonzepte in VR-Umgebungen}\label{sec:MenüAnwendungen}\todo[inline, color=green]{Lukas}
 \todo[inline, color=red]{Paul}
@@ -109,7 +109,7 @@ Nach~\cite{sherman2002understanding} gibt es vier unterschiedliche Manipulations
 	\item[Agent Controls:] Der Benutzer interagiert mit der virtuellen Welt über einen "`intelligenten Mittelsmann"'. Dieser Mittelsmann kann eine Person oder ein vom Computer kontrolliertes Wesen sein.
 \end{description}
 In den Abschnitten~\ref{sec:kontextMenu}, \ref{sec:markerHandles} und \ref{sec:TableMenü} wird auf die in \emph{MArC} verwendeten Interaktions- und Manipulationsmethoden eingegangen.
-
+ \textcolor{red}{Was genau folgt daraus für MArC? Ich würde am Ende einen kurzen Hinweis geben, damit der Teil nicht nur Möglichkeiten auflistet. Nur der Verweis am Ende reicht m.E. nicht aus}
 \subsection{Marker Verfolgung} \label{sec:MarkerTracking}\todo[inline, color=green]{Vera}
 \todo[inline, color=red]{Paul}
 In einer VR- oder AR-Umgebung ist zur interaktiven Positionierung eines 3D Objektes die präzise Bestimmung der Orientierung und Position im 3D-Zielraum notwendig. \textcolor{red}{Quelle?} Zur Lösung dieses Problems muss zunächst ein physisches Objekt in der realen Welt erkannt, zugeordnet und verfolgt werden. Demzufolge ist es notwendig, dieses physische Objekt mit einer Videokamera aufzunehmen. In den resultierenden Bildsequenzen werden die physischen Objekte anhand von festgelegten Merkmalen erkannt. Diese Merkmale können sowohl natürlicher Art sein oder in Form von künstlich erstellten Codes festgelegt sein. Ein Objekttracking mit natürlichen Merkmalen wird in der Literatur auch als \textit{Markerless Tracking} bezeichnet, während die Verwendung von Codes, beziehungsweise Bildmarken, als \textit{Markerbased Tracking} bekannt ist. \textcolor{red}{gibt es vll. ein Paper was genau diese Unterschiedung untersucht? Dann würde ich es hier noch zitieren}
