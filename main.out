@@ -37,7 +37,7 @@
 \BOOKMARK [2][-]{subsection.4.2}{Systemvoraussetzungen}{section.4}% 37
 \BOOKMARK [2][-]{subsection.4.3}{Netzwerk}{section.4}% 38
 \BOOKMARK [3][-]{subsubsection.4.3.1}{Server-seitige Netzwerkanbindung}{subsection.4.3}% 39
-\BOOKMARK [3][-]{subsubsection.4.3.2}{Client-seitige Netzwerkanbindung}{subsection.4.3}% 40
+\BOOKMARK [3][-]{subsubsection.4.3.2}{Client seitige Netzwerkanbindung}{subsection.4.3}% 40
 \BOOKMARK [2][-]{subsection.4.4}{Starten des Systems}{section.4}% 41
 \BOOKMARK [2][-]{subsection.4.5}{Men\374f\374hrung}{section.4}% 42
 \BOOKMARK [3][-]{subsubsection.4.5.1}{Men\374s}{subsection.4.5}% 43
@@ -65,7 +65,7 @@
 \BOOKMARK [3][-]{subsubsection.5.3.1}{Detektion der gr\374nen Rechtecke}{subsection.5.3}% 65
 \BOOKMARK [3][-]{subsubsection.5.3.2}{ArUco Marker Detektion}{subsection.5.3}% 66
 \BOOKMARK [2][-]{subsection.5.4}{Marker Objekt Definition}{section.5}% 67
-\BOOKMARK [2][-]{subsection.5.5}{Verfolgung und Registrierung der Marker}{section.5}% 68
+\BOOKMARK [2][-]{subsection.5.5}{Tracking und Registrierung der Marker}{section.5}% 68
 \BOOKMARK [1][-]{section.6}{Ausblick}{}% 69
 \BOOKMARK [2][-]{subsection.6.1}{Trackingmethoden}{section.6}% 70
 \BOOKMARK [2][-]{subsection.6.2}{AR Erweiterung mit der Webcam}{section.6}% 71
