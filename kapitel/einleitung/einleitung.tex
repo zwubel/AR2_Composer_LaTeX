@@ -1,31 +1,33 @@
 \section{Einleitung}\label{sec:Einleitung}\todo[inline, color=green]{Paul}
-\todo[inline, color=blue]{Laura}
-Virtuelle und erweiterte Realität ist bereits seit einiger Zeit in aller Munde. Mit dem Erscheinen der \textit{Oculus Rift}, der \textit{HTC Vive} und anderen Virtual-Reality-Headsets rückt eine neue Art der Immersion beim Genuss von Videospielen in greifbare Nähe.\\
+\todo[inline, color=red]{Laura}
+Virtuelle und erweiterte Realität ist bereits seit einiger Zeit in aller Munde. Mit dem Erscheinen der \textit{Oculus Rift}, der \textit{HTC Vive} und anderen Virtual-Reality-Headsets rückt eine neue Art der Immersion beim Genuss von Videospielen in greifbare Nähe.\\ \textcolor{red}{Vielleicht könnte man die Kürzel VR und AR hier gut einführen}
 Wenn es jedoch um die Nutzung dieser Technologien zur Effizienzsteigerung in professionellen Umgebungen geht, so sind verfügbare Anwendungen bisher nur selten anzutreffen.\\
 Die Entwicklung von \textit{MArC}, einem Mixed-Reality-System für die architektonische Planung bei Siedlungsbauten, soll dies ändern. Mittels eines ausgeklügelten Zusammenspiels verschiedener neuartiger Technologien ist es möglich, mit \textit{MArC} intuitiv abstrahierte Gebäude zu erstellen, verändern und zusammen zu stellen. \\
-Hierbei werden Marker in Form von Würfeln, welche  aus Aluminium gearbeitet und mit einem Code auf der Oberfläche versehen sind, auf einem Tisch bewegt. Eine Kamera über dem Tisch trackt die Position dieser Würfel auf dem Tisch. Der Nutzer, welcher eine \textit{HTC Vive} trägt (siehe Abschnitt \ref{sec:Vive}), sieht an der Stelle der Würfel in dem Headmounted Display die virtuellen Gebäude. Er kann diese bewegen, indem er die Würfel verschiebt oder rotiert. Die Dimensionen des Gebäudes lassen sich intuitiv mit dem Finger in die gewünschte Größe ziehen. Die Gebäude können Stockwerkweise erhöht oder erniedrigt werden. Hat der Nutzer eine Szene entworfen, kann er diese Speichern und zu einem späteren Zeitpunkt wieder laden. Hierzu dient ein virtuelles Menü, welches neben dem Arbeitsbereich platziert wurde.
+Hierbei werden Marker in Form von Würfeln, welche aus Aluminium gearbeitet und mit einem Code auf der Oberfläche versehen sind, auf einem Tisch bewegt. Eine Kamera über dem Tisch trackt die Position dieser Würfel auf dem Tisch. Der Nutzer, welcher eine \textit{HTC Vive} trägt (siehe Abschnitt \ref{sec:Vive}), sieht an der Stelle der Würfel in dem Headmounted Display (HMD) die virtuellen Gebäude. Er kann diese bewegen, indem er die Würfel verschiebt oder rotiert. Die Dimensionen des Gebäudes lassen sich intuitiv mit dem Finger in die gewünschte Größe ziehen. Die Gebäude können Stockwerkweise erhöht oder erniedrigt werden. Hat der Nutzer eine Szene entworfen, kann er diese Speichern und zu einem späteren Zeitpunkt wieder laden. Hierzu dient ein virtuelles Menü, welches neben dem Arbeitsbereich platziert wurde.
+
+\textcolor{red}{Für meinen Geschmack ist die gesamte Einleitung zu reißerich geschrieben!}
 
 \subsection{Motivation}\label{sec:Motivation}\todo[inline, color = green]{Paul}
-\todo[inline, color=blue]{Laura}
-Zu Beginn der Entwicklung von \textit{MArC} lernte das Team die Arbeitsmethoden von Architekten in einem Architekturbüro kennen. Die Architekten stellten dem Team die Arbeitsmethode vor, wie zur Zeit Siedlungen geplant und entworfen werden. Desweiteren stellte sich heraus, dass zur Zeit ein komplizierter Workflow verwendet wird, um anfängliche Entwürfe im Laufe der Zeit zu konkretisieren und zu digitalisieren. Hierbei sind extrem viele Absprachen zwischen den einzelnen Arbeitsschritten notwendig. Diese im folgenden detailiert beschriebene Ausgangssituation lässt sich durch die modernen Technologien sehr gut verbessern.
+\todo[inline, color=red]{Laura}
+Zu Beginn der Entwicklung von \textit{MArC} lernte das Team die Arbeitsmethoden von Architekten in einem Architekturbüro kennen. Dabei lag der Fokus vor allem auf der Planung und dem Entwurf von Siedlungen. Dabei stellte sich heraus, dass zur Zeit ein komplizierter Arbeitsablauf notwendig ist, um die anfänglich noch sehr rudimentären Entwürfe im Laufe der Zeit zu konkretisieren und zu digitalisieren. Hierbei sind extrem viele Absprachen zwischen den einzelnen Arbeitsschritten notwendig. Diese im Folgenden detailliert beschriebene Ausgangssituation lässt sich durch die modernen Technologien sehr gut verbessern.
 
 
 
 \subsection{Anwendungskontext}\label{sec:Anwendungskontext} \todo[inline, color = green]{Paul}
-\todo[inline, color=blue]{Laura}
+\todo[inline, color=red]{Laura}
 Die bisherige Konzeptionierung zur Erschließung von Wohngebieten findet heute in Architekturbüros meist noch so statt wie vor dem Einzug der weit verbreiteten digitalen Technik in unsere Arbeitsleben.\\
 Dazu werden simple Modelle aus leicht zu verarbeitenden Materialien -- wie etwa Styropor -- erstellt und als Platzhalter für die zu planenden Gebäude bei dem Entwurf verwendet.\\
-Verschiedene Modelle werden fest miteinander verklebt und platziert. Die erstellten Modelle werden im folgenden immer weiter verfeinert und optimiert. 
-Diese Herangehensweise macht nachträgliche Änderungen an den Gebäuden aufwendig und führt zu dem Umstand, dass ein bestimmter Zustand der Planung nur umständlich wiederhergestellt werden kann -- zum Beispiel durch Fotografieren und späteren manuellen Wiederaufbau.\\
+Verschiedene Modelle werden fest miteinander verklebt und platziert. Die erstellten Modelle werden im Folgenden immer weiter verfeinert und optimiert. 
+Diese Herangehensweise macht nachträgliche Änderungen an den Gebäuden aufwendig und führt zu dem Umstand, dass ein bestimmter Zustand der Planung nur umständlich wiederhergestellt werden kann -- zum Beispiel durch Fotografieren und späterem manuellem Wiederaufbau. Zudem ist diese Vorgehensweise sehr platzintensiv.\\
 
 
 
 \subsection{Projektziel}\label{sec:Projektziel}\todo[inline, color = green]{Paul}
-\todo[inline, color=blue]{Laura}
-An diesem Punkt setzt MArC an, der "`Mixed Reality Architecture Composer"'. 
-Um den kreativen Prozess zu optimieren, war es notwendig keine rein virtuelle Lösung zu erarbeiten. Eine haptische Komponente war von Wichtigkeit, sodass der Bezug zu den Gebäuden besser greifbar ist. Die Änderung von den abstrahierten Gebäuden in alle Dimensionen sollte für den Benutzer so leicht wie möglich Umsetzbar sein. Andere Mitarbeiter sollten den Prozess mit verfolgen können und so in den Prozess der erarbeitung mit einbezogen werden. Dies ist bei \textit{MArC} dadurch möglich, dass die Darstellung im Headmounted Display auch auf einem Monitor verfolgt werden kann. \\
+\todo[inline, color=red]{Laura}
+An diesem Punkt setzt \textit{MArC} an, der "`Mixed Reality Architecture Composer"'. \textcolor{red}{Bitte den Satz so umformulieren, dass er auch Sinn macht, wenn man das vorherige Kapitel nicht gelesen hat oder aber auf dieses verweisen}
+Um den kreativen Prozess zu optimieren, war es notwendig keine rein virtuelle Lösung zu erarbeiten. Eine haptische Komponente war von Wichtigkeit, sodass der Bezug zu den Gebäuden besser greifbar ist. Die Änderung von den abstrahierten Gebäuden in alle Dimensionen sollte für den Benutzer so leicht wie möglich umsetzbar sein. Andere Mitarbeiter sollten den Prozess mit verfolgen können und so in den Prozess der Erarbeitung mit einbezogen werden. Dies ist bei \textit{MArC} dadurch möglich, dass die Darstellung im Headmounted Display auch auf einem Monitor verfolgt werden kann. \\
 Ebenso sollten Szenen einfach abgespeichert werden können und bei Bedarf wieder aufgerufen werden, um Änderungen durchführen zu können oder ältere Projektstände wieder herzustellen. Dies ist durch eine elegante virtuelle Menülösung verwirklicht worden, die komplett mittels des Fingers des Benutzers bedient werden kann. Ein Absetzen des Headmounted Displays ist, nachdem das System erfolgreich eingerichtet wurde, nicht mehr notwendig.\\
-Doch ebenso wie die Usability sollte die Performance berücksichtigt werden. Der Benutzer sollte zu jeder Zeit ein flüssiges Markertracking sowie ein reibungslose Darstellung in der virtuellen Umgebung erleben können. Um dies zu realisieren musste das Tracking der Marker und die Darstellung auf zwei verschiedenen Computern aufgeteilt werden, die untereinander Kommunizieren.\\
+Doch ebenso wie die Usability sollte die Performance berücksichtigt werden. Der Benutzer sollte zu jeder Zeit ein flüssiges Markertracking sowie ein reibungslose Darstellung in der virtuellen Umgebung erleben können. Um dies zu realisieren musste das Tracking der Marker und die Darstellung auf zwei verschiedenen Computern aufgeteilt werden, die untereinander kommunizieren.\\
 
 
 
