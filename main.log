@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2017.1.2)  29 MAR 2017 11:56
+=======
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.16)  29 MAR 2017 11:06
+>>>>>>> ffef559372e6a48177f63f91695329b00870e8a5
 entering extended mode
 **./main.tex
 (main.tex
@@ -1575,57 +1579,61 @@ Package babel Info: Redefining ngerman shorthand "~
 Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
 ine 1.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 8.
+(babel)             in language  on input line 10.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 8.
+(babel)             in language  on input line 10.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 14.
+(babel)             in language  on input line 16.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 14.
+(babel)             in language  on input line 16.
 
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 16.
+(babel)             in language  on input line 17.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 16.
+(babel)             in language  on input line 17.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 16.
+(babel)             in language  on input line 17.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 16.
+(babel)             in language  on input line 17.
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 16--20
+Underfull \hbox (badness 10000) in paragraph at lines 18--22
 
  []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 23.
+(babel)             in language  on input line 25.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 23.
+(babel)             in language  on input line 25.
 
-Underfull \hbox (badness 10000) in paragraph at lines 25--29
+Underfull \hbox (badness 10000) in paragraph at lines 27--31
 
  []
 
+<<<<<<< HEAD
 ) (kapitel/grundlagen/grundlagen.tex
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 1.
-
+=======
+) (./kapitel/grundlagen/grundlagen.tex
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
+>>>>>>> ffef559372e6a48177f63f91695329b00870e8a5
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 3.
+(babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 3.
+(babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 3.
+(babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 3.
+(babel)             in language  on input line 1.
 
 [7]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
+
 Overfull \hbox (4.9254pt too wide) in paragraph at lines 4--5
 \T1/cmr/m/n/12 Ar-chi-tek-tur VR An-wen-dun-gen, hap-ti-schen In-ter-ak-ti-ons-
 me-tho-den so-wie Handtracking
@@ -1653,13 +1661,13 @@ ad-Mounted-
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 21.
+(babel)             in language  on input line 18.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 21.
+(babel)             in language  on input line 18.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 21.
+(babel)             in language  on input line 18.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 21.
+(babel)             in language  on input line 18.
 
 [8]
 Overfull \hbox (2.39957pt too wide) in paragraph at lines 23--24
@@ -1675,27 +1683,31 @@ Package babel Info: Redefining ngerman shorthand "~
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 41.
+(babel)             in language  on input line 38.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 41.
+(babel)             in language  on input line 38.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 41.
+(babel)             in language  on input line 38.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 41.
+(babel)             in language  on input line 38.
 
 [9]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 45.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 45.
+<<<<<<< HEAD
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 54.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 54.
+=======
+>>>>>>> ffef559372e6a48177f63f91695329b00870e8a5
 
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
+<<<<<<< HEAD
 (babel)             in language  on input line 55.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 55.
@@ -1706,6 +1718,23 @@ Package babel Info: Redefining ngerman shorthand "~
 
 [10]
 Underfull \hbox (badness 10000) in paragraph at lines 56--57
+=======
+(babel)             in language  on input line 53.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 53.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 53.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 53.
+
+[10]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 53.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 53.
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--56
+>>>>>>> ffef559372e6a48177f63f91695329b00870e8a5
 
  []
 
@@ -1719,6 +1748,7 @@ n-wen-dungs-ori-en-tier-ten Schich-
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
+<<<<<<< HEAD
 (babel)             in language  on input line 92.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 92.
@@ -1726,6 +1756,15 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 92.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 92.
+=======
+(babel)             in language  on input line 89.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 89.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 89.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 89.
+>>>>>>> ffef559372e6a48177f63f91695329b00870e8a5
 
 [11]
 Package babel Info: Redefining ngerman shorthand "|
@@ -1733,6 +1772,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 96.
 
+<<<<<<< HEAD
 Overfull \hbox (2.19699pt too wide) in paragraph at lines 107--108
 \T1/cmr/m/n/12 In den Ab-schnit-ten [][]4.6[][], [][]4.6.1[][] und [][]4.7[][] 
 wird auf die in \T1/cmr/m/it/12 MArC \T1/cmr/m/n/12 ver-wen-de-ten Interaktions
@@ -1750,8 +1790,26 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 109.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 109.
+=======
+Overfull \vbox (2.60004pt too high) has occurred while \output is active []
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 105.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 105.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 105.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 105.
+>>>>>>> ffef559372e6a48177f63f91695329b00870e8a5
 
 [12]
+Overfull \hbox (2.19699pt too wide) in paragraph at lines 106--107
+\T1/cmr/m/n/12 In den Ab-schnit-ten [][]4.6[][], [][]4.6.1[][] und [][]4.7[][] 
+wird auf die in \T1/cmr/m/it/12 MArC \T1/cmr/m/n/12 ver-wen-de-ten Interaktions
+-
+ []
+
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 109.
 Package babel Info: Redefining ngerman shorthand "~
@@ -2569,7 +2627,11 @@ Package babel Info: Redefining ngerman shorthand "~
 LaTeX Warning: Reference `sec:problemanalyse' on page 40 undefined on input lin
 e 240.
 
+<<<<<<< HEAD
 <Bilder/Eigene Fotos/KontextMenue.jpg, id=1193, 853.1875pt x 602.25pt>
+=======
+<Bilder/Eigene Fotos/KontextMenue.jpg, id=1206, 853.1875pt x 602.25pt>
+>>>>>>> ffef559372e6a48177f63f91695329b00870e8a5
 File: Bilder/Eigene Fotos/KontextMenue.jpg Graphic file (type jpg)
 
 <use Bilder/Eigene Fotos/KontextMenue.jpg>
@@ -2621,7 +2683,11 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 270.
 
+<<<<<<< HEAD
 <Bilder/Contextmenu_Collider.png, id=1213, 581.17125pt x 310.91156pt>
+=======
+<Bilder/Contextmenu_Collider.png, id=1226, 581.17125pt x 310.91156pt>
+>>>>>>> ffef559372e6a48177f63f91695329b00870e8a5
 File: Bilder/Contextmenu_Collider.png Graphic file (type png)
 
 <use Bilder/Contextmenu_Collider.png>
@@ -2645,7 +2711,11 @@ Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 286.
 
 [42]
+<<<<<<< HEAD
 <Bilder/Neue Screenshots/StandardMarker.jpg, id=1230, 501.875pt x 602.25pt>
+=======
+<Bilder/Neue Screenshots/StandardMarker.jpg, id=1243, 501.875pt x 602.25pt>
+>>>>>>> ffef559372e6a48177f63f91695329b00870e8a5
 File: Bilder/Neue Screenshots/StandardMarker.jpg Graphic file (type jpg)
 
 <use Bilder/Neue Screenshots/StandardMarker.jpg>
@@ -2810,7 +2880,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 423--424
 
  []
 
+<<<<<<< HEAD
 <Bilder/cameraCalib.jpg, id=1325, 1867.97874pt x 1188.44pt>
+=======
+<Bilder/cameraCalib.jpg, id=1339, 1867.97874pt x 1188.44pt>
+>>>>>>> ffef559372e6a48177f63f91695329b00870e8a5
 File: Bilder/cameraCalib.jpg Graphic file (type jpg)
 
 <use Bilder/cameraCalib.jpg>
@@ -2890,7 +2964,11 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 573.
 
+<<<<<<< HEAD
 <Bilder/Neue Screenshots/Arbeitsbereich.PNG, id=1394, 1084.05pt x 647.41875pt>
+=======
+<Bilder/Neue Screenshots/Arbeitsbereich.PNG, id=1409, 1084.05pt x 647.41875pt>
+>>>>>>> ffef559372e6a48177f63f91695329b00870e8a5
 File: Bilder/Neue Screenshots/Arbeitsbereich.PNG Graphic file (type png)
 
 <use Bilder/Neue Screenshots/Arbeitsbereich.PNG>
@@ -2939,7 +3017,11 @@ Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 613.
 
 [56]
+<<<<<<< HEAD
 <Bilder/Neue Screenshots/Kalibrierungsfehler_OR-KLEIN.jpg, id=1438, 401.5pt x 4
+=======
+<Bilder/Neue Screenshots/Kalibrierungsfehler_OR-KLEIN.jpg, id=1453, 401.5pt x 4
+>>>>>>> ffef559372e6a48177f63f91695329b00870e8a5
 01.5pt>
 File: Bilder/Neue Screenshots/Kalibrierungsfehler_OR-KLEIN.jpg Graphic file (ty
 pe jpg)
@@ -3024,7 +3106,11 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 651.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 651.
+<<<<<<< HEAD
  <Bilder/TrackingScreenshot_x.jpg, id=1480, 1284.8pt x 1027.84pt>
+=======
+ <Bilder/TrackingScreenshot_x.jpg, id=1496, 1284.8pt x 1027.84pt>
+>>>>>>> ffef559372e6a48177f63f91695329b00870e8a5
 File: Bilder/TrackingScreenshot_x.jpg Graphic file (type jpg)
 
 <use Bilder/TrackingScreenshot_x.jpg>
@@ -3100,7 +3186,11 @@ Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 712.
 
 [63]
+<<<<<<< HEAD
 <kapitel/system/MP_Marker_Erkennung.pdf, id=1526, 597.23125pt x 845.1575pt>
+=======
+<kapitel/system/MP_Marker_Erkennung.pdf, id=1542, 597.23125pt x 845.1575pt>
+>>>>>>> ffef559372e6a48177f63f91695329b00870e8a5
 File: kapitel/system/MP_Marker_Erkennung.pdf Graphic file (type pdf)
 
 <use kapitel/system/MP_Marker_Erkennung.pdf>
@@ -3226,13 +3316,13 @@ Package babel Info: Redefining ngerman shorthand "~
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 27.
+(babel)             in language  on input line 23.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 27.
+(babel)             in language  on input line 23.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 27.
+(babel)             in language  on input line 23.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 27.
+(babel)             in language  on input line 23.
 
 [69]
 Package babel Info: Redefining ngerman shorthand "|
@@ -3411,13 +3501,13 @@ Package babel Info: Redefining ngerman shorthand "~
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 276.
+(babel)             in language  on input line 263.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 276.
+(babel)             in language  on input line 263.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 276.
+(babel)             in language  on input line 263.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 276.
+(babel)             in language  on input line 263.
 
 [77]
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
@@ -3463,7 +3553,11 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 2.
 
+<<<<<<< HEAD
 <kapitel/anhang/ReadMe.pdf, id=1672, 596.2275pt x 844.15375pt>
+=======
+<kapitel/anhang/ReadMe.pdf, id=1686, 596.2275pt x 844.15375pt>
+>>>>>>> ffef559372e6a48177f63f91695329b00870e8a5
 File: kapitel/anhang/ReadMe.pdf Graphic file (type pdf)
 
 <use kapitel/anhang/ReadMe.pdf>
@@ -3522,9 +3616,13 @@ File: kapitel/anhang/ReadMe.pdf Graphic file (type pdf)
 <use kapitel/anhang/ReadMe.pdf, page 1>
 Package pdftex.def Info: kapitel/anhang/ReadMe.pdf, page1 used on input line 3.
 
+<<<<<<< HEAD
 (pdftex.def)             Requested size: 596.96295pt x 845.19502pt.
  [81]
 <kapitel/anhang/ReadMe.pdf, id=1685, page=2, 596.2275pt x 844.15375pt>
+=======
+[80] <kapitel/anhang/ReadMe.pdf, id=1696, page=2, 596.2275pt x 844.15375pt>
+>>>>>>> ffef559372e6a48177f63f91695329b00870e8a5
 File: kapitel/anhang/ReadMe.pdf Graphic file (type pdf)
 
 <use kapitel/anhang/ReadMe.pdf, page 2>
@@ -3551,12 +3649,17 @@ File: kapitel/anhang/ReadMe.pdf Graphic file (type pdf)
 Package pdftex.def Info: kapitel/anhang/ReadMe.pdf, page2 used on input line 3.
 
 (pdftex.def)             Requested size: 596.96295pt x 845.19502pt.
+<<<<<<< HEAD
  [82 <./kapitel/anhang/ReadMe.pdf
 
 pdfTeX warning: pdflatex.exe (file ./kapitel/anhang/ReadMe.pdf): PDF inclusion:
  invalid other resource which is no dict (key 'ProcSets', type <array>); ignore
 d.
 >] <kapitel/anhang/ReadMe.pdf, id=1702, page=3, 596.2275pt x 844.15375pt>
+=======
+ [81]
+<kapitel/anhang/ReadMe.pdf, id=1701, page=3, 596.2275pt x 844.15375pt>
+>>>>>>> ffef559372e6a48177f63f91695329b00870e8a5
 File: kapitel/anhang/ReadMe.pdf Graphic file (type pdf)
 
 <use kapitel/anhang/ReadMe.pdf, page 3>
@@ -3585,10 +3688,17 @@ Package pdftex.def Info: kapitel/anhang/ReadMe.pdf, page3 used on input line 3.
 (pdftex.def)             Requested size: 596.96295pt x 845.19502pt.
  [83 <./kapitel/anhang/ReadMe.pdf
 
+<<<<<<< HEAD
 pdfTeX warning: pdflatex.exe (file ./kapitel/anhang/ReadMe.pdf): PDF inclusion:
  invalid other resource which is no dict (key 'ProcSets', type <array>); ignore
 d.
 >] <kapitel/anhang/ReadMe.pdf, id=1707, page=4, 596.2275pt x 844.15375pt>
+=======
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./kapitel/anhang/ReadMe.pdf)
+: PDF inclusion: invalid other resource which is no dict (key 'ProcSets', type 
+<array>); ignored.
+>] <kapitel/anhang/ReadMe.pdf, id=1718, page=4, 596.2275pt x 844.15375pt>
+>>>>>>> ffef559372e6a48177f63f91695329b00870e8a5
 File: kapitel/anhang/ReadMe.pdf Graphic file (type pdf)
 
 <use kapitel/anhang/ReadMe.pdf, page 4>
@@ -3617,10 +3727,17 @@ Package pdftex.def Info: kapitel/anhang/ReadMe.pdf, page4 used on input line 3.
 (pdftex.def)             Requested size: 596.96295pt x 845.19502pt.
  [84 <./kapitel/anhang/ReadMe.pdf
 
+<<<<<<< HEAD
 pdfTeX warning: pdflatex.exe (file ./kapitel/anhang/ReadMe.pdf): PDF inclusion:
  invalid other resource which is no dict (key 'ProcSets', type <array>); ignore
 d.
 >] <kapitel/anhang/ReadMe.pdf, id=1712, page=5, 596.2275pt x 844.15375pt>
+=======
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./kapitel/anhang/ReadMe.pdf)
+: PDF inclusion: invalid other resource which is no dict (key 'ProcSets', type 
+<array>); ignored.
+>] <kapitel/anhang/ReadMe.pdf, id=1723, page=5, 596.2275pt x 844.15375pt>
+>>>>>>> ffef559372e6a48177f63f91695329b00870e8a5
 File: kapitel/anhang/ReadMe.pdf Graphic file (type pdf)
 
 <use kapitel/anhang/ReadMe.pdf, page 5>
@@ -3649,10 +3766,17 @@ Package pdftex.def Info: kapitel/anhang/ReadMe.pdf, page5 used on input line 3.
 (pdftex.def)             Requested size: 596.96295pt x 845.19502pt.
  [85 <./kapitel/anhang/ReadMe.pdf
 
+<<<<<<< HEAD
 pdfTeX warning: pdflatex.exe (file ./kapitel/anhang/ReadMe.pdf): PDF inclusion:
  invalid other resource which is no dict (key 'ProcSets', type <array>); ignore
 d.
 >] <kapitel/anhang/ReadMe.pdf, id=1718, page=6, 596.2275pt x 844.15375pt>
+=======
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./kapitel/anhang/ReadMe.pdf)
+: PDF inclusion: invalid other resource which is no dict (key 'ProcSets', type 
+<array>); ignored.
+>] <kapitel/anhang/ReadMe.pdf, id=1728, page=6, 596.2275pt x 844.15375pt>
+>>>>>>> ffef559372e6a48177f63f91695329b00870e8a5
 File: kapitel/anhang/ReadMe.pdf Graphic file (type pdf)
 
 <use kapitel/anhang/ReadMe.pdf, page 6>
@@ -3681,10 +3805,17 @@ Package pdftex.def Info: kapitel/anhang/ReadMe.pdf, page6 used on input line 3.
 (pdftex.def)             Requested size: 596.96295pt x 845.19502pt.
  [86 <./kapitel/anhang/ReadMe.pdf
 
+<<<<<<< HEAD
 pdfTeX warning: pdflatex.exe (file ./kapitel/anhang/ReadMe.pdf): PDF inclusion:
  invalid other resource which is no dict (key 'ProcSets', type <array>); ignore
 d.
 >] <kapitel/anhang/ReadMe.pdf, id=1723, page=7, 596.2275pt x 844.15375pt>
+=======
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./kapitel/anhang/ReadMe.pdf)
+: PDF inclusion: invalid other resource which is no dict (key 'ProcSets', type 
+<array>); ignored.
+>] <kapitel/anhang/ReadMe.pdf, id=1734, page=7, 596.2275pt x 844.15375pt>
+>>>>>>> ffef559372e6a48177f63f91695329b00870e8a5
 File: kapitel/anhang/ReadMe.pdf Graphic file (type pdf)
 
 <use kapitel/anhang/ReadMe.pdf, page 7>
@@ -3769,7 +3900,11 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 13.
 
+<<<<<<< HEAD
 [90] <kapitel/anhang/Kapazitaetsplan.pdf, id=1865, 845.1575pt x 597.23125pt>
+=======
+[90] <kapitel/anhang/Kapazitaetsplan.pdf, id=1881, 845.1575pt x 597.23125pt>
+>>>>>>> ffef559372e6a48177f63f91695329b00870e8a5
 File: kapitel/anhang/Kapazitaetsplan.pdf Graphic file (type pdf)
 
 <use kapitel/anhang/Kapazitaetsplan.pdf>
@@ -3783,7 +3918,11 @@ Package pdftex.def Info: kapitel/anhang/Kapazitaetsplan.pdf used on input line
 15.
 (pdftex.def)             Requested size: 845.15544pt x 597.22978pt.
 
+<<<<<<< HEAD
 <kapitel/anhang/Kapazitaetsplan.pdf, id=1868, page=1, 845.1575pt x 597.23125pt>
+=======
+<kapitel/anhang/Kapazitaetsplan.pdf, id=1884, page=1, 845.1575pt x 597.23125pt>
+>>>>>>> ffef559372e6a48177f63f91695329b00870e8a5
 File: kapitel/anhang/Kapazitaetsplan.pdf Graphic file (type pdf)
 <use kapitel/anhang/Kapazitaetsplan.pdf, page 1>
 Package pdftex.def Info: kapitel/anhang/Kapazitaetsplan.pdf, page1 used on inpu
@@ -3822,7 +3961,11 @@ Package pdftex.def Info: kapitel/anhang/Kapazitaetsplan.pdf, page1 used on inpu
 t line 15.
 (pdftex.def)             Requested size: 845.15544pt x 597.22978pt.
  [91 <./kapitel/anhang/Kapazitaetsplan.pdf>]
+<<<<<<< HEAD
 <kapitel/anhang/Kostenplan.pdf, id=1962, 845.1575pt x 597.23125pt>
+=======
+<kapitel/anhang/Kostenplan.pdf, id=1979, 845.1575pt x 597.23125pt>
+>>>>>>> ffef559372e6a48177f63f91695329b00870e8a5
 File: kapitel/anhang/Kostenplan.pdf Graphic file (type pdf)
 
 <use kapitel/anhang/Kostenplan.pdf>
@@ -3833,7 +3976,11 @@ File: kapitel/anhang/Kostenplan.pdf Graphic file (type pdf)
 Package pdftex.def Info: kapitel/anhang/Kostenplan.pdf used on input line 18.
 (pdftex.def)             Requested size: 845.15544pt x 597.22978pt.
 
+<<<<<<< HEAD
 <kapitel/anhang/Kostenplan.pdf, id=1965, page=1, 845.1575pt x 597.23125pt>
+=======
+<kapitel/anhang/Kostenplan.pdf, id=1982, page=1, 845.1575pt x 597.23125pt>
+>>>>>>> ffef559372e6a48177f63f91695329b00870e8a5
 File: kapitel/anhang/Kostenplan.pdf Graphic file (type pdf)
 
 <use kapitel/anhang/Kostenplan.pdf, page 1>
@@ -3873,7 +4020,11 @@ Package pdftex.def Info: kapitel/anhang/Kostenplan.pdf, page1 used on input lin
 e 18.
 (pdftex.def)             Requested size: 845.15544pt x 597.22978pt.
  [92 <./kapitel/anhang/Kostenplan.pdf>] <kapitel/anhang/Qualitaetsplan.pdf, id=
+<<<<<<< HEAD
 1991, 845.1575pt x 597.23125pt>
+=======
+2008, 845.1575pt x 597.23125pt>
+>>>>>>> ffef559372e6a48177f63f91695329b00870e8a5
 File: kapitel/anhang/Qualitaetsplan.pdf Graphic file (type pdf)
 
 <use kapitel/anhang/Qualitaetsplan.pdf>
@@ -3887,7 +4038,11 @@ Package pdftex.def Info: kapitel/anhang/Qualitaetsplan.pdf used on input line 2
 0.
 (pdftex.def)             Requested size: 845.15544pt x 597.22978pt.
 
+<<<<<<< HEAD
 <kapitel/anhang/Qualitaetsplan.pdf, id=1994, page=1, 845.1575pt x 597.23125pt>
+=======
+<kapitel/anhang/Qualitaetsplan.pdf, id=2011, page=1, 845.1575pt x 597.23125pt>
+>>>>>>> ffef559372e6a48177f63f91695329b00870e8a5
 File: kapitel/anhang/Qualitaetsplan.pdf Graphic file (type pdf)
 
 <use kapitel/anhang/Qualitaetsplan.pdf, page 1>
@@ -3927,7 +4082,11 @@ Package pdftex.def Info: kapitel/anhang/Qualitaetsplan.pdf, page1 used on input
  line 20.
 (pdftex.def)             Requested size: 845.15544pt x 597.22978pt.
  [93 <./kapitel/anhang/Qualitaetsplan.pdf>] <kapitel/anhang/GanttChart.pdf, id=
+<<<<<<< HEAD
 2020, 845.1575pt x 597.23125pt>
+=======
+2037, 845.1575pt x 597.23125pt>
+>>>>>>> ffef559372e6a48177f63f91695329b00870e8a5
 File: kapitel/anhang/GanttChart.pdf Graphic file (type pdf)
 
 <use kapitel/anhang/GanttChart.pdf>
@@ -3938,7 +4097,11 @@ File: kapitel/anhang/GanttChart.pdf Graphic file (type pdf)
 Package pdftex.def Info: kapitel/anhang/GanttChart.pdf used on input line 22.
 (pdftex.def)             Requested size: 845.15544pt x 597.22978pt.
 
+<<<<<<< HEAD
 <kapitel/anhang/GanttChart.pdf, id=2023, page=1, 845.1575pt x 597.23125pt>
+=======
+<kapitel/anhang/GanttChart.pdf, id=2040, page=1, 845.1575pt x 597.23125pt>
+>>>>>>> ffef559372e6a48177f63f91695329b00870e8a5
 File: kapitel/anhang/GanttChart.pdf Graphic file (type pdf)
 
 <use kapitel/anhang/GanttChart.pdf, page 1>
@@ -3978,7 +4141,11 @@ Package pdftex.def Info: kapitel/anhang/GanttChart.pdf, page1 used on input lin
 e 22.
 (pdftex.def)             Requested size: 845.15544pt x 597.22978pt.
  [94 <./kapitel/anhang/GanttChart.pdf>] <kapitel/anhang/MP_Strukturplan.pdf, id
+<<<<<<< HEAD
 =2048, 845.1575pt x 597.23125pt>
+=======
+=2065, 845.1575pt x 597.23125pt>
+>>>>>>> ffef559372e6a48177f63f91695329b00870e8a5
 File: kapitel/anhang/MP_Strukturplan.pdf Graphic file (type pdf)
 
 <use kapitel/anhang/MP_Strukturplan.pdf>
@@ -3992,7 +4159,11 @@ Package pdftex.def Info: kapitel/anhang/MP_Strukturplan.pdf used on input line
 24.
 (pdftex.def)             Requested size: 845.15544pt x 597.22978pt.
 
+<<<<<<< HEAD
 <kapitel/anhang/MP_Strukturplan.pdf, id=2051, page=1, 845.1575pt x 597.23125pt>
+=======
+<kapitel/anhang/MP_Strukturplan.pdf, id=2068, page=1, 845.1575pt x 597.23125pt>
+>>>>>>> ffef559372e6a48177f63f91695329b00870e8a5
 File: kapitel/anhang/MP_Strukturplan.pdf Graphic file (type pdf)
 <use kapitel/anhang/MP_Strukturplan.pdf, page 1>
 Package pdftex.def Info: kapitel/anhang/MP_Strukturplan.pdf, page1 used on inpu
@@ -4164,6 +4335,7 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
+<<<<<<< HEAD
  25855 strings out of 493335
  463287 string characters out of 3127639
  635149 words of memory out of 3000000
@@ -4217,5 +4389,53 @@ Output written on main.pdf (100 pages, 9517236 bytes).
 PDF statistics:
  3132 PDF objects out of 3580 (max. 8388607)
  739 named destinations out of 1000 (max. 500000)
+=======
+ 25399 strings out of 493089
+ 448248 string characters out of 6134842
+ 627307 words of memory out of 5000000
+ 27587 multiletter control sequences out of 15000+600000
+ 23890 words of font info for 63 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 62i,22n,100p,1952b,2055s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
+/usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></
+usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb></
+usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></u
+sr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></us
+r/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/
+local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/lo
+cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/loca
+l/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/t
+exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
+xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texl
+ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texliv
+e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive
+/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/
+2015/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texl
+ive/2015/texmf-dist/fonts/type1/public/cm-super/sfbi1440.pfb></usr/local/texliv
+e/2015/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/
+2015/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/20
+15/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2015
+/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2015/t
+exmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2015/tex
+mf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2015/texmf
+-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2015/texmf-d
+ist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2015/texmf-dis
+t/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2015/texmf-dist/
+fonts/type1/public/cm-super/sfsl1200.pfb></usr/local/texlive/2015/texmf-dist/fo
+nts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2015/texmf-dist/font
+s/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2015/texmf-dist/fonts/
+type1/public/cm-super/sftt0800.pfb></usr/local/texlive/2015/texmf-dist/fonts/ty
+pe1/public/cm-super/sftt1095.pfb></usr/local/texlive/2015/texmf-dist/fonts/type
+1/public/cm-super/sftt1200.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/
+public/cm-super/sftt1440.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/pu
+blic/esvect/vect10.pfb>
+Output written on main.pdf (100 pages, 9429958 bytes).
+PDF statistics:
+ 2410 PDF objects out of 2487 (max. 8388607)
+ 2117 compressed objects within 22 object streams
+ 736 named destinations out of 1000 (max. 500000)
+>>>>>>> ffef559372e6a48177f63f91695329b00870e8a5
  1208 words of extra memory for PDF output out of 10000 (max. 10000000)
 
