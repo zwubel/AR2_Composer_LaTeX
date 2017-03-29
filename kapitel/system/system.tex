@@ -1,11 +1,11 @@
 
 \section{System}\label{sec:system}\todo[inline, color=green]{Lukas}
-\todo[inline, color=blue]{Paul}
+\todo[inline, color=red]{Paul}
 Die Benutzung von \textit{MArC} ist in der dem Programm mitgelieferten ReadMe-Datei (vgl.~\ref{sec:readMe}) beschrieben. Darin wird erklärt, welche Hard- und Softwarekomponenten erforderlich sind und wie das System gestartet und kalibriert wird. Auf diese Aspekte wird in den folgenden Abschnitten näher eingegangen.\\ 
 Des weiteren enthält die ReadMe-Datei eine Übersicht über die enthaltenen Quellcode-Dateien.
 \subsection{Aufbau}\label{sec:Aufbau}\todo[inline, color=green]{Lukas und Vera}
-\todo[inline, color=blue]{Paul}
-Der Aufbau des \textit{MArC}-Systems kann in zwei Teile aufgeteilt werden. Der erste Teil ist für das Tracking der Würfel Marker verantwortlich ist (nachfolgend "`Tracking Aufbau"' genannt) und der Zweite erzeugt die Virtual-Reality-Umgebung (nachfolgend "`Unity Aufbau"' genannt). Letzterer stellt auch die notwendige Peripherie für die Interaktionen. In den beiden folgenden Abschnitten werden beide Teile des Systemaufbaus näher beschrieben.
+\todo[inline, color=red]{Paul}
+Der Aufbau des \textit{MArC}-Systems kann in zwei Teile aufgeteilt werden: Der erste Teil ist für das Tracking der Würfel-Marker verantwortlich ist (nachfolgend "`Tracking Aufbau"' genannt) und der zweite erzeugt die Virtual-Reality-Umgebung (nachfolgend "`Unity Aufbau"' genannt\textcolor{red}{, da auf dieser Seite Unity als zentrale Software läuft}). Letzterer stellt auch die notwendige Peripherie für die Interaktionen. In den beiden folgenden Abschnitten werden beide Teile des Systemaufbaus näher beschrieben.
 
 \subsubsection{Tracking Aufbau}\todo[inline, color=green]{Vera}
 \todo[inline, color=blue]{Laura}
@@ -19,7 +19,7 @@ Wie in Abbildung \ref{fig:AufbauMarc} dargestellt ist, wird senkrecht über eine
 \end{figure}
 
 \subsubsection{Unity Aufbau}\todo[inline, color=green]{Lukas}
-\todo[inline, color=blue]{Paul}
+\todo[inline, color=red]{Paul}
 Der Teil des Systemaufbaus von \emph{MArC}, der sich vom Computer für die Ausführung der \emph{Unity}-Simulation (s. Abschnitt \ref{sec:UnityComp}) über die \emph{Leap Motion}, bis hin zur \emph{HTC Vive} erstreckt, ist ebenfalls in Abbildung~\ref{fig:AufbauMarc} dargestellt.\\
 Die Verbindung von \emph{HTC Vive} zum Computer zur Ausführung der \emph{Unity}-Simulation wird sowohl per USB 2.0, als auch per HDMI 1.4 hergestellt. Über die HDMI-Verbindung werden die Bildschirme im \emph{HTC Vive} Head-Mounted-Display (HMD) als ein einzelnes Display auf dem verbundenen Computer eingebunden, genau so wie es auch mit einem normalen Bildschirm geschehen würde. Die USB 2.0 Verbindung des HMD dient hingegen dem Datenaustausch mit \emph{SteamVR}, welches auf dem Computer installiert ist.\\
 Der \emph{Leap Motion} Controller wird über eine USB 3.0 Verbindung, welche per USB 2.0 Verlängerung angeschlossen ist, mit dem Computer verbunden. Dies ist deshalb problemlos möglich, weil die aktuelle Software des \emph{Leap Motion} Controllers die höhere Bandbreite der vorhandenen USB 3.0 Anbindung noch nicht ausnutzt, daher gibt \emph{Leap Motion} an, dass eine uneingeschränkte Nutzung an USB 2.0 möglich ist.~\cite{website:LeapMotionSupportQuestion}
@@ -27,13 +27,13 @@ Der \emph{Leap Motion} Controller wird über eine USB 3.0 Verbindung, welche per
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\textwidth]{Bilder/Aufbau_MArC.jpg}
-	\caption{Aufbau des \textit{MArC} System.}
+	\caption{Aufbau des \textit{MArC} Systems.}
 	\label{fig:AufbauMarc}
 \end{figure}
 
 
 \subsection{Systemvoraussetzungen}\label{sec:sysVor}\todo[inline, color=green]{Lukas}
-\todo[inline, color=blue]{Paul}
+\todo[inline, color=red]{Paul}
 Die Systemvoraussetzungen für \emph{MArC} sind in der ReadMe-Datei beschrieben, welche der im Projekt erstellten Software mitgeliefert ist. Die gesamte ReadMe-Datei ist in Abschnitt~\ref{sec:readMe} zu finden, außerdem enthält Abbildung~\ref{fig:marcReadMe} einen Ausschnitt der ReadMe-Datei, welcher die Voraussetzungen beschreibt, die vor dem Starten des Systems erfüllt sein müssen.
 
 \begin{figure}
@@ -44,8 +44,8 @@ Die Systemvoraussetzungen für \emph{MArC} sind in der ReadMe-Datei beschrieben,
 \end{figure}
 
 \subsection{Netzwerk}\label{sec:netzwerk}\todo[inline, color=green]{Lukas und Laura}
-\todo[inline, color=blue]{Paul}
-Die in Kapitel \ref{sec:Winsock} beschriebene API stellt die Möglichkeit bereit, den Datentransport mittels TCP oder UDP zu verwenden. Für \emph{MArC} wurde ein TCP-Socket-Netzwerk bestehend aus (genau) einem Server und (genau) einem Client verwendet, weil der der in~\ref{sec:Netzwerk} beschriebene Fehlerschutz des TCP ausgenutzt werden sollte, um nicht manuell überprüfen zu müssen, ob Daten fehlerfrei übertragen wurden. Da die zu übertragende Datenmenge von \emph{MArC} hinreichend klein -- und von konstanter Größe -- ist, wurde die etwas höhere Geschwindigkeit durch den geringeren Overhead einer UDP-Socket-Verbindung als unnötig erachtet.\\
+\todo[inline, color=red]{Paul}
+Die in Kapitel \ref{sec:Winsock} beschriebene  \textcolor{red}{Winsocket} API stellt die Möglichkeit bereit, den Datentransport mittels TCP oder UDP zu verwenden. Für \emph{MArC} wurde ein TCP-Socket-Netzwerk bestehend aus (genau) einem Server und (genau) einem Client verwendet, weil der der in~\ref{sec:Netzwerk} beschriebene Fehlerschutz des TCP ausgenutzt werden sollte, um nicht manuell überprüfen zu müssen, ob Daten fehlerfrei übertragen wurden. Da die zu übertragende Datenmenge von \emph{MArC} hinreichend klein -- und von konstanter Größe -- ist, wurde die etwas höhere Geschwindigkeit durch den geringeren Overhead einer UDP-Socket-Verbindung als unnötig erachtet. \textcolor{red}{Kann man den Overhead prozentual angeben?} \\
 In den beiden folgenden Abschnitten wird die Umsetzung der Netzwerk-Endpunkte an den beiden für \emph{MArC} verwendeten Computern beschrieben.
 \subsubsection{Server-seitige Netzwerkanbindung}\label{sec:serverClient}\todo[inline, color=green]{Laura}
 \todo[inline, color=blue]{Lukas}
@@ -236,8 +236,8 @@ Sofern der \textit{HTC Vive}-Controller beim Aufruf von \texttt{doPlane\-Calibra
 
 
 \subsection{Kontextmenü}\label{sec:kontextMenu}\todo[inline, color=green]{Laura und Lukas}
-\todo[inline, color=blue]{Paul}
-Die virtuellen Objekte, die den in Kapitel~\ref{sec:WürfelMarker} beschriebenen Aluminiumwürfeln zugeordnet werden, sind zunächst würfelförmig und können zur Laufzeit der Anwendung vom Benutzer verschoben, rotiert und skaliert werden. Die Verschiebung und Rotation kann über eine entsprechende Veränderung der Lage des realen Marker Würfels geschehen. Für die Skalierung kann wie in Kapitel~\ref{sec:KontextMenuSwitch} beschrieben das sogenannte Kontextmenü aufgerufen werden. Dieses beinhaltet neben den Marker Handles (vgl. Kapitel~\ref{sec:markerHandles}) zur dreidimensionalen Skalierung des virtuellen Objekts auch eine Art Übersichtstafel der Gebäudeeigenschaften des zugehörigen virtuellen Markers. Beispiele für Letzteres sind in Abbildung~\ref{fig:KontextmenuExamples} zu sehen. Im Folgenden wird, wenn nicht anders erwähnt, die Übersichtstafel mit Kontextmenü bezeichnet. Die Idee des Kontextmenüs ist aus dem Treffen mit den Mitarbeitern eines Architekturbüros zu Beginn des Projektes entstanden (vgl. Abschnitt \ref{sec:problemanalyse}). Diese hatten eine detaillierte Beschreibung der einzelnen Gebäude als sinnvoll und nützlich für die Umsetzung einer Anwendung wie den \textit{MaRC} beschrieben.\\
+\todo[inline, color=red]{Paul}
+Die virtuellen Objekte, die den in Kapitel~\ref{sec:WürfelMarker} beschriebenen Aluminiumwürfeln zugeordnet werden, sind zunächst würfelförmig und können zur Laufzeit der Anwendung vom Benutzer verschoben, rotiert und skaliert werden.\textcolor{red}{Diese virtuellen Objekte repräsentieren bei MArC die Gebäude}.  Die Verschiebung und Rotation kann über eine entsprechende Veränderung der Lage des realen Marker-Würfels geschehen. Für die Skalierung kann wie in Kapitel~\ref{sec:KontextMenuSwitch} beschrieben das sogenannte Kontextmenü aufgerufen werden. Dieses beinhaltet neben den Marker Handles (vgl. Kapitel~\ref{sec:markerHandles}) zur dreidimensionalen Skalierung des virtuellen Objekts auch eine Art Übersichtstafel der Gebäudeeigenschaften des zugehörigen virtuellen Markers. Beispiele für Letzteres sind in Abbildung~\ref{fig:KontextmenuExamples} zu sehen. Im Folgenden wird, wenn nicht anders erwähnt, die Übersichtstafel mit \glqq Kontextmenü\grqq{} bezeichnet. Die Idee des Kontextmenüs ist aus dem Treffen mit den Mitarbeitern eines Architekturbüros zu Beginn des Projektes entstanden (vgl. Abschnitt \ref{sec:problemanalyse}). Diese hatten eine detaillierte Beschreibung der einzelnen Gebäude als sinnvoll und nützlich für die Umsetzung einer Anwendung wie den \textit{MArC} beschrieben.\\
 Da zu Beginn der Anwendung im \texttt{SetScale}-Menü (vgl. Kapitel~\ref{sec:menuAblauf}) der Maßstab der Architekturszene vom Benutzer ausgewählt wird und zusätzlich wie beschrieben eine Skalierung der einzelnen Objekte durchgeführt werden kann, muss sich der Inhalt des Kontextmenüs dynamisch ändern können. Die dazu notwendigen Berechnungen der Gebäudeeigenschaften sind in Kapitel~\ref{sec:KontextMenuInhalt} erläutert. 
 
 \begin{figure}[H]
@@ -268,7 +268,7 @@ Es fällt auf, dass in der zu verändernden Achse verschiedene Achsen zur Berech
 Dass der Wert der zu verändernden Achse halbiert wird, hat sich empirisch als Sinnvoll herausgestellt. Ohne diese "Übersetzung" der Bewegung würde das Gebäude nicht equivalent zur Fingerbewegung vergrößert oder verkleinert werden. 
 
 \subsubsection{Ein- und Ausblenden des Kontextmenüs} \label{sec:KontextMenuSwitch}\todo[inline, color=green]{Lukas}
-\todo[inline, color=blue]{Paul}
+\todo[inline, color=red]{Paul}
 Zum Ein- und Ausblenden des in Abschnitt~\ref{sec:kontextMenu} beschriebenen Kontextmenüs wird sich der Interaktionsmechanismen des \emph{Leap Motion} Controllers bedient.\\
 Zum Öffnen des Kontextmenüs muss der Benutzer mit einer vom \emph{Leap Motion} Controller erkannten Hand die obere Fläche eines Markers berühren. Diese Interaktion funktioniert über einen in \emph{Unity} erstellten Collider, welcher quaderförmig ist und in der Mitte eines jeden Markers nach oben herausschaut (vgl. Abb.~\ref{fig:KontextmenuCollider}). Sobald ein Teil der Hand des Benutzers in diesem Collider eindringt, wird in der Methode \texttt{OnTriggerEnter()} im Skript \texttt{contextMenuTrigger.cs} das Kontextmenü (dessen \emph{GameObject} dort \texttt{CanvasTransform} heißt) sowie die in Abschnitt~\ref{sec:markerHandles} beschriebenen Marker Handles aktiviert.\\
 Auf die gleiche Weise wird das Kontextmenü mit den Marker Handles auch wieder geschlossen, wenn nämlich der Benutzer bei geöffnetem Kontextmenü die obere Fläche des Markers berührt. Dann werden die zum Kontextmenü gehörigen \emph{GameObjects} wieder deaktiviert.
@@ -379,8 +379,8 @@ Alle Schritte die der Kalibrierung folgen werden in einer Endlosschleife für je
 Dieses Programm wurde in der IDE \textit{Visual Studio} (vgl. Abschnitt \ref{sec:VisualStudio}) in der Programmiersprache $C++$ entwickelt. Für die Entwicklungen wurden die \textit{uEye}-SDK (vgl. Abschnitt \ref{sec:uEye}), \textit{OpenCV} (vgl. Abschnitt \ref{sec:OpenCV}), sowie die Standardbibliothek \textit{Winsock} zur Hilfe genommen. In den folgenden Abschnitten wird die Vorgehensweise und der Ablauf schrittweise und detailliert erklärt.
 
 \subsection{uEye Ansteuerung}\todo[inline, color=green]{Vera}
-\todo[inline, color=blue]{Paul}
-Der erste Teilprozess des Tracking Programms ist die Initialisierung der uEye Kamera im Live-Bild-Modus. Mit Hilfe der vom Hersteller bereit gestellten SDK wird die Kamera mit allen benötigten Eigenschaften parametrisiert und die notwendigen Speicher allokiert. Dies übernimmt die Funktion \texttt{inituEyeCam} in der Klasse \texttt{uEye\_input.cpp}. Die verwendeten Parameter können aus der Tabelle \ref{tab:UeyeParam} entnommen werden. Die Kamera wird mit dem maximalen Pixel Clock und der maximalen Framerate betrieben. Aus diesen Einstellungen ergibt sich auch die Belichtungszeit. Um einen höheren Kontrast zur Erkennung der Marker zu erzielen wurde zusätzlich das Hardware Signal zwanzigfach verstärkt.
+\todo[inline, color=red]{Paul}
+Der erste Teilprozess des Tracking-Programms ist die Initialisierung der \textit{uEye} Kamera im Live-Bild-Modus. Mit Hilfe des vom Hersteller bereit gestellten SDK wird die Kamera mit allen benötigten Eigenschaften parametrisiert und die notwendigen Speicher allokiert. Dies übernimmt die Funktion \texttt{inituEyeCam} in der Klasse \texttt{uEye\_input.cpp}. Die verwendeten Parameter können aus der Tabelle \ref{tab:UeyeParam} entnommen werden. Die Kamera wird mit dem maximalen Pixel Clock \textcolor{red}{Ich würde hier kurz schreiben was die Pixelclock macht bzw. warum sie auf maximaler Einstellung läuft} und der maximalen Framerate betrieben. Aus diesen Einstellungen ergibt sich auch die Belichtungszeit. Um einen höheren Kontrast zur Erkennung der Marker zu erzielen wurde zusätzlich das Hardware Signal zwanzigfach verstärkt.\textcolor{red}{Dieser Wert hat sich im Laufe der Entwicklung etabliert (?)}.
 Im Live Modus werden die generierten Aufnahmen fortlaufend in der selben Speicheradresse überschrieben. Auf diesen Speicherplatz kann das Programm jederzeit mit der Funktion \texttt{getCapturedFrame} zugreifen, welcher die aktuellste Aufnahme zur Weiterverarbeitung zurück gibt. Nach der Beendigung des Tracking Algorithmus wird zusätzlich noch die Funktion \texttt{exitCamera} bereit gestellt, welche den verwendeten allokierten Speicher wieder freigibt.
 \begin{table}
 	\centering
@@ -400,7 +400,7 @@ Im Live Modus werden die generierten Aufnahmen fortlaufend in der selben Speiche
 		Digitale Verstärkung & 20 \\
 		\hline
 	\end{tabular}
-	\caption{Parametrisierung der uEye Kamera für das Tracking.}
+	\caption{Parametrisierung der \textit{uEye} Kamera für das Tracking.}
 	\label{tab:UeyeParam}
 \end{table}
 
