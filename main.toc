@@ -107,6 +107,16 @@
 \contentsline {subsubsection}{\numberline {7.3.1}Kommuniktion im Team und nach Au\IeC {\ss }en}{78}{subsubsection.7.3.1}
 \contentsline {subsubsection}{\numberline {7.3.2}Ma\IeC {\ss }nahmen zur Problemvermeidung}{78}{subsubsection.7.3.2}
 \contentsline {paragraph}{Ausfall des Planungstools Bitrix24}{78}{section*.218}
+<<<<<<< HEAD
+\contentsline {paragraph}{Ausfall von Hardware}{78}{section*.219}
+\contentsline {paragraph}{Markerless Tracking}{79}{section*.220}
+\contentsline {subsection}{\numberline {7.4}Projektabschluss}{79}{subsection.7.4}
+\contentsline {subsubsection}{\numberline {7.4.1}Abschlusspr\IeC {\"a}sentation}{79}{subsubsection.7.4.1}
+\contentsline {subsubsection}{\numberline {7.4.2}Video}{80}{subsubsection.7.4.2}
+\contentsline {subsection}{\numberline {7.5}Reflexion}{80}{subsection.7.5}
+\contentsline {section}{\numberline {8}Zusammenfassung}{81}{section.8}
+\contentsline {section}{\numberline {9}Steckbrief}{82}{section.9}
+=======
 \contentsline {paragraph}{Ausfall von Hardware}{79}{section*.219}
 \contentsline {paragraph}{Markerless tracking}{79}{section*.220}
 \contentsline {subsection}{\numberline {7.4}Projektabschluss}{80}{subsection.7.4}
@@ -115,6 +125,7 @@
 \contentsline {subsection}{\numberline {7.5}Reflexion}{80}{subsection.7.5}
 \contentsline {section}{\numberline {8}Zusammenfassung}{82}{section.8}
 \contentsline {section}{\numberline {9}Steckbrief}{83}{section.9}
+>>>>>>> b2f5afb4cd8f0fa0d132c6c0bafeb9901d4f6f4d
 \contentsline {section}{\numberline {10}Anhang}{83}{section.10}
 \contentsline {subsection}{\numberline {10.1}\emph {MArC} ReadMe-Datei}{83}{subsection.10.1}
 \contentsline {subsection}{\numberline {10.2}\texttt {startTCPServer()}-Methode}{91}{subsection.10.2}

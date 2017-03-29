@@ -1,4 +1,12 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.16)  29 MAR 2017 18:35
+=======
+<<<<<<< HEAD
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.21)  29 MAR 2017 18:20
+=======
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.16)  29 MAR 2017 18:03
+>>>>>>> b2f5afb4cd8f0fa0d132c6c0bafeb9901d4f6f4d
+>>>>>>> 06c33840c58651bcd1391019b836553019e8eb5b
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3192,6 +3200,20 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 267.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 267.
+
+Overfull \vbox (2.60004pt too high) has occurred while \output is active []
+
+Package babel Info: Redefining ngerman shorthand "|
+<<<<<<< HEAD
+(babel)             in language  on input line 269.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 269.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 269.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 269.
+
+[79]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 272.
 Package babel Info: Redefining ngerman shorthand "~
@@ -3200,7 +3222,13 @@ Package babel Info: Redefining ngerman shorthand "~
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
+<<<<<<< HEAD
 (babel)             in language  on input line 288.
+=======
+=======
+>>>>>>> b2f5afb4cd8f0fa0d132c6c0bafeb9901d4f6f4d
+(babel)             in language  on input line 287.
+>>>>>>> 06c33840c58651bcd1391019b836553019e8eb5b
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 288.
 Package babel Info: Redefining ngerman shorthand "|
@@ -3274,6 +3302,34 @@ File: kapitel/anhang/ReadMe.pdf Graphic file (type pdf)
 Package pdftex.def Info: kapitel/anhang/ReadMe.pdf, page1 used on input line 3.
 
 (pdftex.def)             Requested size: 596.96295pt x 845.19502pt.
+<<<<<<< HEAD
+
+Overfull \vbox (2.60004pt too high) has occurred while \output is active []
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 3.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 3.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 3.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 3.
+
+[82]
+Overfull \vbox (2.60004pt too high) has occurred while \output is active []
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 3.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 3.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 3.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 3.
+
+[83]
+=======
+>>>>>>> b2f5afb4cd8f0fa0d132c6c0bafeb9901d4f6f4d
 File: kapitel/anhang/ReadMe.pdf Graphic file (type pdf)
 
 <use kapitel/anhang/ReadMe.pdf, page 1>
@@ -3298,7 +3354,20 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 3.
 
+<<<<<<< HEAD
 [83] <kapitel/anhang/ReadMe.pdf, id=1713, page=2, 596.2275pt x 844.15375pt>
+=======
+<<<<<<< HEAD
+<use kapitel/anhang/ReadMe.pdf, page 1>
+Package pdftex.def Info: kapitel/anhang/ReadMe.pdf, page1 used on input line 3.
+
+(pdftex.def)             Requested size: 596.96295pt x 845.19502pt.
+ [84]
+<kapitel/anhang/ReadMe.pdf, id=1702, page=2, 596.2275pt x 844.15375pt>
+=======
+[83] <kapitel/anhang/ReadMe.pdf, id=1711, page=2, 596.2275pt x 844.15375pt>
+>>>>>>> b2f5afb4cd8f0fa0d132c6c0bafeb9901d4f6f4d
+>>>>>>> 06c33840c58651bcd1391019b836553019e8eb5b
 File: kapitel/anhang/ReadMe.pdf Graphic file (type pdf)
 
 <use kapitel/anhang/ReadMe.pdf, page 2>
@@ -3325,8 +3394,21 @@ File: kapitel/anhang/ReadMe.pdf Graphic file (type pdf)
 Package pdftex.def Info: kapitel/anhang/ReadMe.pdf, page1 used on input line 3.
 
 (pdftex.def)             Requested size: 596.96295pt x 845.19502pt.
+<<<<<<< HEAD
+ [85 <./kapitel/anhang/ReadMe.pdf
+
+pdfTeX warning: pdflatex.exe (file ./kapitel/anhang/ReadMe.pdf): PDF inclusion:
+ invalid other resource which is no dict (key 'ProcSets', type <array>); ignore
+d.
+>] <kapitel/anhang/ReadMe.pdf, id=1720, page=3, 596.2275pt x 844.15375pt>
+=======
  [84]
+<<<<<<< HEAD
 <kapitel/anhang/ReadMe.pdf, id=1718, page=3, 596.2275pt x 844.15375pt>
+=======
+<kapitel/anhang/ReadMe.pdf, id=1716, page=3, 596.2275pt x 844.15375pt>
+>>>>>>> b2f5afb4cd8f0fa0d132c6c0bafeb9901d4f6f4d
+>>>>>>> 06c33840c58651bcd1391019b836553019e8eb5b
 File: kapitel/anhang/ReadMe.pdf Graphic file (type pdf)
 
 <use kapitel/anhang/ReadMe.pdf, page 3>
@@ -3353,12 +3435,23 @@ File: kapitel/anhang/ReadMe.pdf Graphic file (type pdf)
 Package pdftex.def Info: kapitel/anhang/ReadMe.pdf, page2 used on input line 3.
 
 (pdftex.def)             Requested size: 596.96295pt x 845.19502pt.
- [85 <./kapitel/anhang/ReadMe.pdf
+ [86 <./kapitel/anhang/ReadMe.pdf
 
+<<<<<<< HEAD
+pdfTeX warning: pdflatex.exe (file ./kapitel/anhang/ReadMe.pdf): PDF inclusion:
+ invalid other resource which is no dict (key 'ProcSets', type <array>); ignore
+d.
+>] <kapitel/anhang/ReadMe.pdf, id=1725, page=4, 596.2275pt x 844.15375pt>
+=======
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./kapitel/anhang/ReadMe.pdf)
 : PDF inclusion: invalid other resource which is no dict (key 'ProcSets', type 
 <array>); ignored.
+<<<<<<< HEAD
 >] <kapitel/anhang/ReadMe.pdf, id=1736, page=4, 596.2275pt x 844.15375pt>
+=======
+>] <kapitel/anhang/ReadMe.pdf, id=1734, page=4, 596.2275pt x 844.15375pt>
+>>>>>>> b2f5afb4cd8f0fa0d132c6c0bafeb9901d4f6f4d
+>>>>>>> 06c33840c58651bcd1391019b836553019e8eb5b
 File: kapitel/anhang/ReadMe.pdf Graphic file (type pdf)
 
 <use kapitel/anhang/ReadMe.pdf, page 4>
@@ -3385,12 +3478,23 @@ File: kapitel/anhang/ReadMe.pdf Graphic file (type pdf)
 Package pdftex.def Info: kapitel/anhang/ReadMe.pdf, page3 used on input line 3.
 
 (pdftex.def)             Requested size: 596.96295pt x 845.19502pt.
- [86 <./kapitel/anhang/ReadMe.pdf
+ [87 <./kapitel/anhang/ReadMe.pdf
 
+<<<<<<< HEAD
+pdfTeX warning: pdflatex.exe (file ./kapitel/anhang/ReadMe.pdf): PDF inclusion:
+ invalid other resource which is no dict (key 'ProcSets', type <array>); ignore
+d.
+>] <kapitel/anhang/ReadMe.pdf, id=1730, page=5, 596.2275pt x 844.15375pt>
+=======
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./kapitel/anhang/ReadMe.pdf)
 : PDF inclusion: invalid other resource which is no dict (key 'ProcSets', type 
 <array>); ignored.
+<<<<<<< HEAD
 >] <kapitel/anhang/ReadMe.pdf, id=1741, page=5, 596.2275pt x 844.15375pt>
+=======
+>] <kapitel/anhang/ReadMe.pdf, id=1739, page=5, 596.2275pt x 844.15375pt>
+>>>>>>> b2f5afb4cd8f0fa0d132c6c0bafeb9901d4f6f4d
+>>>>>>> 06c33840c58651bcd1391019b836553019e8eb5b
 File: kapitel/anhang/ReadMe.pdf Graphic file (type pdf)
 
 <use kapitel/anhang/ReadMe.pdf, page 5>
@@ -3417,12 +3521,23 @@ File: kapitel/anhang/ReadMe.pdf Graphic file (type pdf)
 Package pdftex.def Info: kapitel/anhang/ReadMe.pdf, page4 used on input line 3.
 
 (pdftex.def)             Requested size: 596.96295pt x 845.19502pt.
- [87 <./kapitel/anhang/ReadMe.pdf
+ [88 <./kapitel/anhang/ReadMe.pdf
 
+<<<<<<< HEAD
+pdfTeX warning: pdflatex.exe (file ./kapitel/anhang/ReadMe.pdf): PDF inclusion:
+ invalid other resource which is no dict (key 'ProcSets', type <array>); ignore
+d.
+>] <kapitel/anhang/ReadMe.pdf, id=1735, page=6, 596.2275pt x 844.15375pt>
+=======
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./kapitel/anhang/ReadMe.pdf)
 : PDF inclusion: invalid other resource which is no dict (key 'ProcSets', type 
 <array>); ignored.
+<<<<<<< HEAD
 >] <kapitel/anhang/ReadMe.pdf, id=1746, page=6, 596.2275pt x 844.15375pt>
+=======
+>] <kapitel/anhang/ReadMe.pdf, id=1744, page=6, 596.2275pt x 844.15375pt>
+>>>>>>> b2f5afb4cd8f0fa0d132c6c0bafeb9901d4f6f4d
+>>>>>>> 06c33840c58651bcd1391019b836553019e8eb5b
 File: kapitel/anhang/ReadMe.pdf Graphic file (type pdf)
 
 <use kapitel/anhang/ReadMe.pdf, page 6>
@@ -3449,12 +3564,23 @@ File: kapitel/anhang/ReadMe.pdf Graphic file (type pdf)
 Package pdftex.def Info: kapitel/anhang/ReadMe.pdf, page5 used on input line 3.
 
 (pdftex.def)             Requested size: 596.96295pt x 845.19502pt.
- [88 <./kapitel/anhang/ReadMe.pdf
+ [89 <./kapitel/anhang/ReadMe.pdf
 
+<<<<<<< HEAD
+pdfTeX warning: pdflatex.exe (file ./kapitel/anhang/ReadMe.pdf): PDF inclusion:
+ invalid other resource which is no dict (key 'ProcSets', type <array>); ignore
+d.
+>] <kapitel/anhang/ReadMe.pdf, id=1740, page=7, 596.2275pt x 844.15375pt>
+=======
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./kapitel/anhang/ReadMe.pdf)
 : PDF inclusion: invalid other resource which is no dict (key 'ProcSets', type 
 <array>); ignored.
+<<<<<<< HEAD
 >] <kapitel/anhang/ReadMe.pdf, id=1751, page=7, 596.2275pt x 844.15375pt>
+=======
+>] <kapitel/anhang/ReadMe.pdf, id=1749, page=7, 596.2275pt x 844.15375pt>
+>>>>>>> b2f5afb4cd8f0fa0d132c6c0bafeb9901d4f6f4d
+>>>>>>> 06c33840c58651bcd1391019b836553019e8eb5b
 File: kapitel/anhang/ReadMe.pdf Graphic file (type pdf)
 
 <use kapitel/anhang/ReadMe.pdf, page 7>
@@ -3481,7 +3607,7 @@ File: kapitel/anhang/ReadMe.pdf Graphic file (type pdf)
 Package pdftex.def Info: kapitel/anhang/ReadMe.pdf, page6 used on input line 3.
 
 (pdftex.def)             Requested size: 596.96295pt x 845.19502pt.
- [89 <./kapitel/anhang/ReadMe.pdf
+ [90 <./kapitel/anhang/ReadMe.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./kapitel/anhang/ReadMe.pdf)
 : PDF inclusion: invalid other resource which is no dict (key 'ProcSets', type 
@@ -3558,7 +3684,15 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 13.
 
+<<<<<<< HEAD
 [93] <kapitel/anhang/Kapazitaetsplan.pdf, id=1899, 845.1575pt x 597.23125pt>
+=======
+<<<<<<< HEAD
+[93] <kapitel/anhang/Kapazitaetsplan.pdf, id=1883, 845.1575pt x 597.23125pt>
+=======
+[93] <kapitel/anhang/Kapazitaetsplan.pdf, id=1897, 845.1575pt x 597.23125pt>
+>>>>>>> b2f5afb4cd8f0fa0d132c6c0bafeb9901d4f6f4d
+>>>>>>> 06c33840c58651bcd1391019b836553019e8eb5b
 File: kapitel/anhang/Kapazitaetsplan.pdf Graphic file (type pdf)
 
 <use kapitel/anhang/Kapazitaetsplan.pdf>
@@ -3572,7 +3706,15 @@ Package pdftex.def Info: kapitel/anhang/Kapazitaetsplan.pdf used on input line
 15.
 (pdftex.def)             Requested size: 845.15544pt x 597.22978pt.
 
+<<<<<<< HEAD
 <kapitel/anhang/Kapazitaetsplan.pdf, id=1902, page=1, 845.1575pt x 597.23125pt>
+=======
+<<<<<<< HEAD
+<kapitel/anhang/Kapazitaetsplan.pdf, id=1886, page=1, 845.1575pt x 597.23125pt>
+=======
+<kapitel/anhang/Kapazitaetsplan.pdf, id=1900, page=1, 845.1575pt x 597.23125pt>
+>>>>>>> b2f5afb4cd8f0fa0d132c6c0bafeb9901d4f6f4d
+>>>>>>> 06c33840c58651bcd1391019b836553019e8eb5b
 File: kapitel/anhang/Kapazitaetsplan.pdf Graphic file (type pdf)
 <use kapitel/anhang/Kapazitaetsplan.pdf, page 1>
 Package pdftex.def Info: kapitel/anhang/Kapazitaetsplan.pdf, page1 used on inpu
@@ -3611,7 +3753,15 @@ Package pdftex.def Info: kapitel/anhang/Kapazitaetsplan.pdf, page1 used on inpu
 t line 15.
 (pdftex.def)             Requested size: 845.15544pt x 597.22978pt.
  [94 <./kapitel/anhang/Kapazitaetsplan.pdf>]
+<<<<<<< HEAD
 <kapitel/anhang/Kostenplan.pdf, id=1996, 845.1575pt x 597.23125pt>
+=======
+<<<<<<< HEAD
+<kapitel/anhang/Kostenplan.pdf, id=1979, 845.1575pt x 597.23125pt>
+=======
+<kapitel/anhang/Kostenplan.pdf, id=1994, 845.1575pt x 597.23125pt>
+>>>>>>> b2f5afb4cd8f0fa0d132c6c0bafeb9901d4f6f4d
+>>>>>>> 06c33840c58651bcd1391019b836553019e8eb5b
 File: kapitel/anhang/Kostenplan.pdf Graphic file (type pdf)
 
 <use kapitel/anhang/Kostenplan.pdf>
@@ -3622,7 +3772,15 @@ File: kapitel/anhang/Kostenplan.pdf Graphic file (type pdf)
 Package pdftex.def Info: kapitel/anhang/Kostenplan.pdf used on input line 18.
 (pdftex.def)             Requested size: 845.15544pt x 597.22978pt.
 
+<<<<<<< HEAD
 <kapitel/anhang/Kostenplan.pdf, id=1999, page=1, 845.1575pt x 597.23125pt>
+=======
+<<<<<<< HEAD
+<kapitel/anhang/Kostenplan.pdf, id=1982, page=1, 845.1575pt x 597.23125pt>
+=======
+<kapitel/anhang/Kostenplan.pdf, id=1997, page=1, 845.1575pt x 597.23125pt>
+>>>>>>> b2f5afb4cd8f0fa0d132c6c0bafeb9901d4f6f4d
+>>>>>>> 06c33840c58651bcd1391019b836553019e8eb5b
 File: kapitel/anhang/Kostenplan.pdf Graphic file (type pdf)
 
 <use kapitel/anhang/Kostenplan.pdf, page 1>
@@ -3662,7 +3820,15 @@ Package pdftex.def Info: kapitel/anhang/Kostenplan.pdf, page1 used on input lin
 e 18.
 (pdftex.def)             Requested size: 845.15544pt x 597.22978pt.
  [95 <./kapitel/anhang/Kostenplan.pdf>] <kapitel/anhang/Qualitaetsplan.pdf, id=
+<<<<<<< HEAD
 2025, 845.1575pt x 597.23125pt>
+=======
+<<<<<<< HEAD
+2008, 845.1575pt x 597.23125pt>
+=======
+2023, 845.1575pt x 597.23125pt>
+>>>>>>> b2f5afb4cd8f0fa0d132c6c0bafeb9901d4f6f4d
+>>>>>>> 06c33840c58651bcd1391019b836553019e8eb5b
 File: kapitel/anhang/Qualitaetsplan.pdf Graphic file (type pdf)
 
 <use kapitel/anhang/Qualitaetsplan.pdf>
@@ -3676,7 +3842,15 @@ Package pdftex.def Info: kapitel/anhang/Qualitaetsplan.pdf used on input line 2
 0.
 (pdftex.def)             Requested size: 845.15544pt x 597.22978pt.
 
+<<<<<<< HEAD
 <kapitel/anhang/Qualitaetsplan.pdf, id=2028, page=1, 845.1575pt x 597.23125pt>
+=======
+<<<<<<< HEAD
+<kapitel/anhang/Qualitaetsplan.pdf, id=2011, page=1, 845.1575pt x 597.23125pt>
+=======
+<kapitel/anhang/Qualitaetsplan.pdf, id=2026, page=1, 845.1575pt x 597.23125pt>
+>>>>>>> b2f5afb4cd8f0fa0d132c6c0bafeb9901d4f6f4d
+>>>>>>> 06c33840c58651bcd1391019b836553019e8eb5b
 File: kapitel/anhang/Qualitaetsplan.pdf Graphic file (type pdf)
 
 <use kapitel/anhang/Qualitaetsplan.pdf, page 1>
@@ -3716,7 +3890,15 @@ Package pdftex.def Info: kapitel/anhang/Qualitaetsplan.pdf, page1 used on input
  line 20.
 (pdftex.def)             Requested size: 845.15544pt x 597.22978pt.
  [96 <./kapitel/anhang/Qualitaetsplan.pdf>] <kapitel/anhang/GanttChart.pdf, id=
+<<<<<<< HEAD
 2054, 845.1575pt x 597.23125pt>
+=======
+<<<<<<< HEAD
+2037, 845.1575pt x 597.23125pt>
+=======
+2052, 845.1575pt x 597.23125pt>
+>>>>>>> b2f5afb4cd8f0fa0d132c6c0bafeb9901d4f6f4d
+>>>>>>> 06c33840c58651bcd1391019b836553019e8eb5b
 File: kapitel/anhang/GanttChart.pdf Graphic file (type pdf)
 
 <use kapitel/anhang/GanttChart.pdf>
@@ -3727,7 +3909,15 @@ File: kapitel/anhang/GanttChart.pdf Graphic file (type pdf)
 Package pdftex.def Info: kapitel/anhang/GanttChart.pdf used on input line 22.
 (pdftex.def)             Requested size: 845.15544pt x 597.22978pt.
 
+<<<<<<< HEAD
 <kapitel/anhang/GanttChart.pdf, id=2057, page=1, 845.1575pt x 597.23125pt>
+=======
+<<<<<<< HEAD
+<kapitel/anhang/GanttChart.pdf, id=2040, page=1, 845.1575pt x 597.23125pt>
+=======
+<kapitel/anhang/GanttChart.pdf, id=2055, page=1, 845.1575pt x 597.23125pt>
+>>>>>>> b2f5afb4cd8f0fa0d132c6c0bafeb9901d4f6f4d
+>>>>>>> 06c33840c58651bcd1391019b836553019e8eb5b
 File: kapitel/anhang/GanttChart.pdf Graphic file (type pdf)
 
 <use kapitel/anhang/GanttChart.pdf, page 1>
@@ -3767,7 +3957,15 @@ Package pdftex.def Info: kapitel/anhang/GanttChart.pdf, page1 used on input lin
 e 22.
 (pdftex.def)             Requested size: 845.15544pt x 597.22978pt.
  [97 <./kapitel/anhang/GanttChart.pdf>] <kapitel/anhang/MP_Strukturplan.pdf, id
+<<<<<<< HEAD
 =2084, 845.1575pt x 597.23125pt>
+=======
+<<<<<<< HEAD
+=2066, 845.1575pt x 597.23125pt>
+=======
+=2082, 845.1575pt x 597.23125pt>
+>>>>>>> b2f5afb4cd8f0fa0d132c6c0bafeb9901d4f6f4d
+>>>>>>> 06c33840c58651bcd1391019b836553019e8eb5b
 File: kapitel/anhang/MP_Strukturplan.pdf Graphic file (type pdf)
 
 <use kapitel/anhang/MP_Strukturplan.pdf>
@@ -3781,7 +3979,15 @@ Package pdftex.def Info: kapitel/anhang/MP_Strukturplan.pdf used on input line
 24.
 (pdftex.def)             Requested size: 845.15544pt x 597.22978pt.
 
+<<<<<<< HEAD
 <kapitel/anhang/MP_Strukturplan.pdf, id=2087, page=1, 845.1575pt x 597.23125pt>
+=======
+<<<<<<< HEAD
+<kapitel/anhang/MP_Strukturplan.pdf, id=2069, page=1, 845.1575pt x 597.23125pt>
+=======
+<kapitel/anhang/MP_Strukturplan.pdf, id=2085, page=1, 845.1575pt x 597.23125pt>
+>>>>>>> b2f5afb4cd8f0fa0d132c6c0bafeb9901d4f6f4d
+>>>>>>> 06c33840c58651bcd1391019b836553019e8eb5b
 File: kapitel/anhang/MP_Strukturplan.pdf Graphic file (type pdf)
 <use kapitel/anhang/MP_Strukturplan.pdf, page 1>
 Package pdftex.def Info: kapitel/anhang/MP_Strukturplan.pdf, page1 used on inpu
@@ -3819,8 +4025,13 @@ File: kapitel/anhang/MP_Strukturplan.pdf Graphic file (type pdf)
 Package pdftex.def Info: kapitel/anhang/MP_Strukturplan.pdf, page1 used on inpu
 t line 24.
 (pdftex.def)             Requested size: 845.15544pt x 597.22978pt.
+<<<<<<< HEAD
+ [98 <./kapitel/anhang/MP_Strukturplan.pdf, page is rotated 90 degrees>]) (main
+.bbl
+=======
  [98 <./kapitel/anhang/MP_Strukturplan.pdf, page is rotated 90 degrees>]) (./ma
 in.bbl
+>>>>>>> b2f5afb4cd8f0fa0d132c6c0bafeb9901d4f6f4d
 Underfull \hbox (badness 10000) in paragraph at lines 4--8
 []\T1/cmr/m/n/12 Unity.  [][]$\T1/cmtt/m/n/12 https : / / www . 1stvision . com
  / cameras / IDS / dataman / uEyeLE _
@@ -3851,7 +4062,11 @@ Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 178.
 
 [100]
+<<<<<<< HEAD
+Underfull \hbox (badness 4048) in paragraph at lines 198--203
+=======
 Underfull \hbox (badness 4048) in paragraph at lines 193--198
+>>>>>>> b2f5afb4cd8f0fa0d132c6c0bafeb9901d4f6f4d
 []\T1/cmr/m/n/12 Leap Mo-ti-on.  Leap Mo-ti-on Blog.  [][]$\T1/cmtt/m/n/12 http
  : / / blog . leapmotion . com /
  []
@@ -3898,7 +4113,11 @@ Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 271.
 
 [101]
+<<<<<<< HEAD
+Underfull \hbox (badness 4981) in paragraph at lines 339--344
+=======
 Underfull \hbox (badness 4981) in paragraph at lines 321--326
+>>>>>>> b2f5afb4cd8f0fa0d132c6c0bafeb9901d4f6f4d
 []\T1/cmr/m/n/12 Samsung.  Sam-sung Ex-plo-res the World of Mo-bi-le Vir-tu-al 
 Rea-li-
  []
@@ -3932,6 +4151,10 @@ Package babel Info: Redefining ngerman shorthand "~
 Package natbib Warning: There were undefined citations.
 
 
+<<<<<<< HEAD
+[102])
+=======
+>>>>>>> b2f5afb4cd8f0fa0d132c6c0bafeb9901d4f6f4d
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
@@ -3957,10 +4180,68 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
+<<<<<<< HEAD
  25404 strings out of 493089
  448306 string characters out of 6134842
  626459 words of memory out of 5000000
  27588 multiletter control sequences out of 15000+600000
+=======
+<<<<<<< HEAD
+ 25900 strings out of 493366
+ 461178 string characters out of 3131358
+ 636165 words of memory out of 3000000
+ 28109 multiletter control sequences out of 15000+200000
+ 23890 words of font info for 63 fonts, out of 3000000 for 9000
+ 1127 hyphenation exceptions out of 8191
+ 62i,22n,100p,1956b,2055s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\Vera\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\e
+ctt1440.pk> <C:\Users\Vera\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec
+\dpi600\ecbi1440.pk> <C:\Users\Vera\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jk
+nappen\ec\dpi600\ectt1095.pk> <C:\Users\Vera\AppData\Local\MiKTeX\2.9\fonts\pk\
+ljfour\jknappen\ec\dpi600\ectt0800.pk> <C:\Users\Vera\AppData\Local\MiKTeX\2.9\
+fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0600.pk> <C:\Users\Vera\AppData\Local\Mi
+KTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1095.pk> <C:\Users\Vera\AppData
+\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0800.pk> <C:\Users\Ver
+a\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1095.pk> <C:\
+Users\Vera\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1095
+.pk> <C:\Users\Vera\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600
+\ecbx1440.pk> <C:\Users\Vera\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\
+ec\dpi600\ectt1200.pk> <C:\Users\Vera\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\
+jknappen\ec\dpi600\ecti1200.pk> <C:\Users\Vera\AppData\Local\MiKTeX\2.9\fonts\p
+k\ljfour\jknappen\ec\dpi600\ecsl1200.pk> <C:\Users\Vera\AppData\Local\MiKTeX\2.
+9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk> <C:\Users\Vera\AppData\Local\
+MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk> <C:\Users\Vera\AppDa
+ta\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1728.pk> <C:\Users\V
+era\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx2488.pk><C:
+/Users/Vera/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+bx12.pfb><C:/Users/Vera/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmex10.pfb><C:/Users/Vera/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmitt10.pfb><C:/Users/Vera/AppData/Local/Programs/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Vera/AppData/Local/Prog
+rams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Vera/AppDat
+a/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/
+Vera/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb
+><C:/Users/Vera/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmr12.pfb><C:/Users/Vera/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
+/amsfonts/cm/cmr8.pfb><C:/Users/Vera/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
+pe1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Vera/AppData/Local/Programs/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/Vera/AppData/Local/Progr
+ams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Vera/AppData/
+Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/V
+era/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb
+><C:/Users/Vera/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/s
+ymbols/msbm10.pfb><C:/Users/Vera/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
+public/esvect/vect10.pfb>
+Output written on main.pdf (103 pages, 9530057 bytes).
+PDF statistics:
+ 3154 PDF objects out of 3580 (max. 8388607)
+ 740 named destinations out of 1000 (max. 500000)
+=======
+ 25402 strings out of 493089
+ 448265 string characters out of 6134842
+ 626430 words of memory out of 5000000
+ 27587 multiletter control sequences out of 15000+600000
+>>>>>>> 06c33840c58651bcd1391019b836553019e8eb5b
  23890 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,22n,100p,2259b,2055s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -4000,8 +4281,15 @@ public/cm-super/sftt1440.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/pu
 blic/esvect/vect10.pfb>
 Output written on main.pdf (103 pages, 9441037 bytes).
 PDF statistics:
+<<<<<<< HEAD
  2429 PDF objects out of 2487 (max. 8388607)
  2133 compressed objects within 22 object streams
  740 named destinations out of 1000 (max. 500000)
+=======
+ 2427 PDF objects out of 2487 (max. 8388607)
+ 2131 compressed objects within 22 object streams
+ 739 named destinations out of 1000 (max. 500000)
+>>>>>>> b2f5afb4cd8f0fa0d132c6c0bafeb9901d4f6f4d
+>>>>>>> 06c33840c58651bcd1391019b836553019e8eb5b
  1208 words of extra memory for PDF output out of 10000 (max. 10000000)
 
