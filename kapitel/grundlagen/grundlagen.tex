@@ -1,7 +1,9 @@
 \section{Grundlagen und Stand der Wissenschaft} \label{sec:grundlagen}
+\todo[inline, color=blue]{Paul}
 \todo[inline, color=green]{Vera}
 Im folgenden werden die Grundlagen und der Stand-der-Wissenschaft von allen Teilbereichen des \text{MArC} Systems erläutert. Es werden Veröffentlichungen von ähnlichen Architektur VR Anwendungen, haptischen Interaktionsmethoden sowie Handtracking Methoden erläutert. Fortlaufend wird auf die Grundlagen der Netzwerktechnologie und den bekanntesten Bedienkonzepten in VR- Umgebungen eingegangen. Zuletzt werden die wichtigsten Methoden zum Marker Verfolgung zusammengefasst.
 \subsection{Architektur von Virtual-Reality-Anwendungen}\label{sec:ArchitekturAnwendungen}\todo[inline, color=green]{Lukas}
+\todo[inline, color=blue]{Paul}
 Bei der Entwicklung von Virtual Reality (VR) Anwendungen gibt es zwei entscheidende Unterschiede im Vergleich zu normalen Software-Anwendungen~\cite{bryson1995approaches}:
 \begin{itemize}
 	\item die virtuelle Umgebung und das damit verbundene Interface sollten auf die vorliegende Aufgabe zugeschnitten werden und
@@ -23,6 +25,7 @@ Die Entscheidung, für das vorliegende Projekt auf eine Desktop-VR-Anwendung zu 
 \end{itemize}
 
 \subsection{Haptische Interaktionsmethoden in VR Umgebungen}\label{sec:HaptikAnwendungen}\todo[inline, color=green]{Laura}
+\todo[inline, color=blue]{Paul}
 Um das Eintauchen in die virtuelle Welt zu erleichtern, kann es bei manchen VR-Anwendungen sinnvoll sein, dem Benutzer eine Form von haptischem Feedback zu geben. Die meisten Systeme haben ihren Ansatzpunkt an den Fingern, oder genauer gesagt an den Fingerspitzen. Es gibt aber auch Systeme die mehrere Parts des Körpers oder sogar den ganzen Körper mit einbeziehen.\\
 Man unterscheidet zwischen \textit{Active Feedback Devices} und \textit{Passive Feedback Devices}. Während die aktive Variante dynamisch veränderliche Kräfte erzeugt, die dem Benutzer entgegenwirken, werden die passiven Varianten immer nur durch den Benutzer selber bewegt \cite{Haptic}.\\
 Um eine genauere Unterteilung vorzunehmen, kann man die verschiedenen Systeme zudem nach den einzelnen haptischen Wahrnehmungen unterteilen. Eine mögliche Aufteilung ist im Folgenden zu sehen.
@@ -40,6 +43,7 @@ Bei den oben aufgelisteten Formen von haptischer Interaktion wird davon ausgegan
 
 
 -\subsection{Handtracking}\label{sec:HandtrackingAnwendungen}\todo[inline, color = green]{Paul}
+\todo[inline, color=blue]{Lukas}
  -Handtracking ist mittels verschiedener Trackingsysteme möglich. Alle Systeme haben hierbei ihre Vor- und Nachteile. \\
  -Beispielsweise ist es möglich, die Bewegungen der Hand mittels eines Datenhandschuhs zu erfassen. Dies ist ein mit Sensoren ausgestatteter Handschuh, den der Nutzer an den Händen trägt. Eine Möglichkeit die Fingerbewegung mit einem Datenhandschuh zu erfassen sind Biegesensoren. Hierbei handelt es sich je nach Bauart um Glasfasern, die an den Fingern entlang laufen. Wird ein Finger gebogen, wird ein Licht welches durch die gebogene Glasfaser läuft, leicht abgeschwächt. Hierdurch ist eine Biegung erkennbar. Dieses System ist ebenfalls mittels gefärbter Flüssigkeit innerhalb kleiner Röhrchen möglich. Auch hier werden bei Bewegung weniger Partikel durchgelassen.\\
  -Eine weitere Möglichkeit ist das Exosklett. Hierbei wird eine Mechanik an dem Handschuh angebracht, mittels welcher Bewegungen auf Sensoren übertragen werden. Datenhandschuhe sind für den Nutzer einschränkend und aus Hygienischen Gründen nicht die Beste Wahl zum Handtracking.\\
@@ -47,6 +51,7 @@ Bei den oben aufgelisteten Formen von haptischer Interaktion wird davon ausgegan
  -Dieses System ist einfach zu benutzen, sobald der Nutzer seine Hand in den getrackten Bereich hält, werden diese erkannt.\\
  -Typisch für optische Systeme ist jedoch das Problem der Verdeckung. Wird die Hand aus einer bestimmten Richtung durch Kameras gefilmt, kann es passieren, dass einige Finger andere überdecken. Teilweise kann dann nicht exakt unterschieden werden, welches Fingerlied zu welchem Finger oder Teil der Hand gehört. Dies wirkt sich bei der Benutzung in einem "hüpfenden" Verhalten oder unmenschlich verrenkter Finger aus.
 \subsection{ISO/OSI-7-Schichtenmodell}\label{sec:Netzwerk}\todo[inline, color=green]{Laura}
+\todo[inline, color=blue]{Paul}
 Um die Kommunikation zwischen unterschiedlichsten technischen Systemen zu ermöglichen und zu vereinheitlichen dient das \textit{ISO/OSI-7-Schichtenmodell} \cite{ITU}, welches in Tabelle~\ref{tab:Schichtenmodell} schematisch dargestellt ist. Um die Weiterentwicklung von Kommunikationsmodellen möglichst barrierefrei zu gestalten, sind in dem Modell sieben aufeinanderfolgende Schichten definiert worden, die für einen klar eingegrenzten Teilbereich der Kommunikation zuständig sind. Die Netzprotokolle, die in einer Schicht zum Einsatz kommen, müssen einheitliche Schnittstellen aufweisen, um einen reibungslosen Austausch zu gewährleisten. Entsprechende Beispiele sind der rechten Spalte von Tabelle~\ref{tab:Schichtenmodell} zu entnehmen.\\
 
 \begin{table}
@@ -88,6 +93,7 @@ Die Transportschicht stellt eine logische Ende-zu-Ende-Verbindungen dar und dien
 Ein wichtiger Unterschied zwischen den beiden Transportprotokollen ist, dass die Übertragung per TCP im Vergleich zu UDP sicherstellt, dass gesendete Daten korrekt übertragen und empfangen werden. Dies geschieht dadurch, dass in einem TCP-Socket-Netzwerk Fehlererkennungs- und Korrekturmechanismen enthalten sind, die fehlerhafte Übertragungen der darunterliegenden Internet Protocol (IP) Schicht ausgleichen, also entweder korrigieren oder dafür sorgen, dass fehlerhafte Daten erneut übertragen werden.
 
 \subsection{Bedienkonzepte in VR-Umgebungen}\label{sec:MenüAnwendungen}\todo[inline, color=green]{Lukas}
+\todo[inline, color=blue]{Paul}
 Die Bedienung eines Systems~--~vor allem Dateneingabe und Objektmanipulation~--~in einer Virtual Reality (VR) Umgebung unterscheidet sich stark von der konventionellen Bedienung mit Maus und Tastatur \cite{chu1997multi}. Das Hauptziel einer VR-Umgebung ist Immersion, also das "`Eintauchen"' des Benutzers in die virtuelle Welt. Ein Teil zur Erreichung dieses Ziels sind Methoden, mit denen der Benutzer mit der virtuellen Welt~--~möglichst intuitiv~--~interagieren kann.
 
 Nach~\cite{sherman2002understanding} gibt es vier unterschiedliche Manipulationsmethoden für VR-An\-wen\-dung\-en:
@@ -100,6 +106,7 @@ Nach~\cite{sherman2002understanding} gibt es vier unterschiedliche Manipulations
 In den Abschnitten~\ref{sec:kontextMenu}, \ref{sec:markerHandles} und \ref{sec:TableMenü} wird auf die in \emph{MArC} verwendeten Interaktions- und Manipulationsmethoden eingegangen.
 
 \subsection{Marker Verfolgung} \label{sec:MarkerTracking}\todo[inline, color=green]{Vera}
+\todo[inline, color=blue]{Paul}
 In einer VR oder AR Umgebung ist zur interaktiven Positionierung eines 3D Objektes die präzise Bestimmung der Orientierung und Position im 3D-Zielraum notwendig. Zur Lösung dieses Problems muss zunächst ein physisches Objekt in der realen Welt erkannt, zugeordnet und verfolgt werden. Demzufolge ist es notwendig dieses physische Objekt mit einer Videokamera aufzunehmen. In den resultierenden Bildsequenzen werden die physischen Objekte anhand von festgelegten Merkmalen erkannt. Diese Merkmale können sowohl natürlicher Art sein oder in Form von künstlich erstellten Codes festgelegt sein. Ein Objekttracking mit natürlichen Merkmalen wird in der Literatur auch als \textit{Markerless Tracking} bezeichnet, während die Verwendung von Codes, beziehungsweise Bildmarken, als \textit{Markerbased Tracking} bekannt ist.
 
 Natürliche Merkmale zur Identifizierung der Objekte sind Textureigenschaften, Kanteninformationen oder sogenannte Keypoints. Eine der robustesten und simpelsten Methoden ist die Verwendung von Keypoints \cite{article:MarkerLessBarandiaran2010}\cite{article:MarkerLessWagner:}\cite{article:MarkerLessComport}\cite{article:MarkerLessLowe}, die sowohl in der Ausgangs- als auch in der Kamerawelt bekannt beziehungsweise ermittelbar sind. Diese werden mit Hilfe einer Homographie zur Übereinstimmung gebracht. Daraus resultiert die notwendige Transformation zwischen den Welten (siehe Kapitel \ref{sec:calib}). Ein bedeutender Nachteil der Verwendung von Keypoints oder Texturbasierten Verfahren ist, dass sie nur für Objekte mit einem hohen Grad an Texturmerkmalen und großen Gradientenbeträgen geeignet sind. Aus diesem Grund wurden auch Verfahren \cite{article:MarkerLessStrucktHinterstoisser}\cite{article:MarkerLessStrucktDamen}\cite{article:MarkerLessStrucktPark} entwickelt die sich speziell für texturarme Objekte eignen, wie etwa die in \textit{MArC} verwendeten grünen Rechtecken der Würfel Marker (siehe Kapitel \ref{sec:WürfelMarker}). Andere Autoren verwenden sehr rechenintensive Kantenerkennungsalgorithmen, wie den \textit{Moving Edges Algorithm} \cite{article:MarkerLessEdgeMarchand}. Eine weitere Weiterentwicklung der Kantenbasierten Methoden ist das Modelbased Tracking bei dem die detektierten Kanten eines möglichen Kandidaten mit den 3D-Kantenmodellen des zu verfolgenden Objektes abgeglichen wird \cite{article:MarkerLessModellVacchetti}\cite{article:MarkerLessEdgeAlvarez}\cite{article:MarkerLessEdgeWu}\cite{article:MarkerLessBlasko}.
