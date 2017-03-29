@@ -1,28 +1,29 @@
-\section{Projektmanagement} \label{sec:pm}\todo[inline, color=blue]{Vera}
+\section{Projektmanagement} \label{sec:pm}\todo[inline, color=red]{Vera}
 
-Dieses Kapitel beschreibt die Planung und das Management des Projektes \textit{MArC}. Es ist in die einzelnen Projektphasen aufgegliedert, diese enthalten wiederum die wichtigen Punkte der entsprechenden Phasen.
+Dieses Kapitel beschreibt die Planung und das Management des Projektes \textit{MArC}. Es ist in die einzelnen Projektphasen gegliedert, welche jeweils die wichtigsten Punkte der entsprechenden Phasen enthalten.
 
 \subsection{Projektdefinition}\todo[inline, color=blue]{Vera}
-Die Projektdefinitionsphase dient in erster Linie dazu, klarheit in das Projektziel zu bringen. Dafür ist z.B. wichtig den Ist-Zustand zu erfassen, das Ziel des Projektes zu definieren und organisatorische Fragen zu klären. Im Folgenden sind die Arbeitsschritte der Projektdefinitionsphase beschrieben.
-\subsubsection{Problemanalyse}\todo[inline, color=blue]{Vera}
+Die Projektdefinitionsphase dient in erster Linie dazu eine Übersicht über die notwendigen Schritte sowie die Problemstellungen und Risiken abzuschätzen. Dafür wird der Ist-Zustand erfasst, das Ziel des Projektes detailliert definiert und alle organisatorischen Fragen abgeklärt. Im Folgenden sind die Arbeitsschritte der Projektdefinitionsphase beschrieben.
+\subsubsection{Problemanalyse}\todo[inline, color=red]{Vera}
 \label{sec:problemanalyse}
-Bisher erfolgte die Visualisierung von Architekturprojekten vorwiegend mit (z.B. aus Pappkarton oder Stypropor) aufwendig hergestellten Modellen. Diese werden im Laufe des Prozesses immer wieder verändert und verbessert.
-Um eine Darstellung von Modellen innerhalb einer bestehenden Umgebung zu ermöglichen, werden abstrahierte, ungenaue Bodenmodelle aus einzelnen Pappschichten geschnitten und übereinander geklebt. Jede Änderung des Entwurfs zieht viel Arbeit nach sich. Ein einfaches Arrangieren und ein Testen auf Licht und Schattenwurf ist nahezu nicht möglich.\\
-Das \textit{MArC} Projektteam stellte den Kontakt zu einem Architekturbüro in Köln her um deren Planungsvorgehen zu sehen und nachvollziehen zu können. Anhand dieser Analyse stellten sich die Projektziele heraus.
+Bisher erfolgte während der ersten Entwurfsphase die Visualisierung von Architekturprojekten vorwiegend mit (z.B. aus Pappkarton oder Styropor) aufwendig hergestellten Modellen. Diese werden im Laufe des Prozesses immer wieder verändert und verbessert.
+Um eine Darstellung von Modellen innerhalb einer bestehenden Umgebung zu ermöglichen, werden abstrahierte, ungenaue Bodenmodelle aus einzelnen Pappschichten geschnitten und übereinander geklebt. Jede Änderung des Entwurfs zieht viel Arbeit nach sich und es ist nicht oder nur sehr schwer möglich zu einem früheren Zwischenstand zurückzukehren. Weiterführend, müssen alle Zwischenstände während des Kreativprozesses umständlich mit einer Kamera dokumentiert werden. Ein einfaches flexibles Arrangieren der Objekte und ein Testen auf Licht und Schattenwurf ist nahezu nicht möglich. Häufig fällt es den Architekten auch schwer Eigenschaften, wie die Anzahl der Stockwerke oder die gesamte bewohnbare Fläche abschätzen. Doch dies ist bei der Planung sehr wichtig, da in den meisten Fällen Vorgaben von den Auftraggebern festgelegt werden.\\
+Das \textit{MArC} Projektteam stellte den Kontakt zu einem Architekturbüro in Köln her um deren Planungsvorgehen zu sehen und nachvollziehen zu können. Anhand dieser Analyse stellten sich diese Probleme heraus und die im Anschluss zu den Projektzielen führten.
 
 
 \subsubsection{Projektziele und Anforderungen}
 \todo[inline, color=blue]{Vera}
-Ziel des Projektes \textit{MArC} ist es, Architekten eine neuartige Darstellung von Gebäuden und Objekten zu erlauben. Auf einem mit Kameras versehenen Tisch werden Marker in abstrahierter Form der darzustellenden Objekte platziert. Mittels Augmented oder Virtual Reality werden mit Hilfe einer VR-Bille (Oculus Rift) die Gebäude und Objekte aus den CAD Dateien an den Stellen gerendert, an denen die Marker auf dem Tisch gestellt wurden.
-Es ist möglich, diese dann über die mittels Kamera getrackten Marker händisch zu manipulieren und somit eine Szene zu errichten, die aus allen Blickwinkeln betrachtet werden kann und jeder Zeit durch weitere Objekte ergänzt werden kann. \\
-Das Projekt soll im vier Personen Team durchgeführt werden. Hierfür stehen 12 ECTS Punkte pro Person zur Verfügung, also 48 ECTS bei vier Personen. Die Arbeit soll sich also innerhalb von 1440 Arbeitsstunden insgesamt umsetzen lassen.
+Ziel des Projektes \textit{MArC} ist es, Architekten eine neuartige Darstellung von Gebäuden und Objekten zu erlauben und ein flexibleres sowie nachhaltigeres Arbeiten in der ersten Planungsphase zu ermöglichen. \textcolor{red}{Dieses System kann an einem beliebigen Tisch installiert werden, auf dem die Würfel-Marker platziert werden. Direkt über dem Tisch wird eine Kamera montiert, welche für das Tracking der Würfel-Marker benutzt wird.}(Auf einem mit einer Kamera versehenen Tisch werden Marker in abstrahierter Form der darzustellenden Objekte platziert.) Mittels Augmented oder Virtual Reality werden in dem Display einer VR-Bille \textcolor{red}(benutzen wir nicht die Vive?)(\textit{Oculus Rift}) die virtuellen Gebäude und Objekte aus den CAD Dateien extakt an die Positionen der Würfel-Marker gerendert. Diese virtuellen Objekte können per Hand mit den getrackten Würfel-Markern manipuliert werden. So entsteht eine VR oder AR Szene, die aus allen Blickwinkeln betrachtet und jederzeit durch weitere Objekte erweiterbar ist. \\
+\textcolor{red}{Zusätzlich soll eine Timeline implementiert werden, die es dem Nutzer ermöglicht jederzeit einen Zwischenstand abzuspeichern oder aufzurufen. Eine weitere Besonderheit in Form von automatischen Berechnungen der Gebäudeeigenschaften und deren Darstellung in der virtuellen Welt soll dem Architekten bei der Planung unterstützen. Diese Berechnungen sollen vom System in eine Exceldatei exportiert werden.}\\
+Das Projekt soll in einem Team von vier Personen durchgeführt werden. Hierfür stehen $12$ ECTS Punkte pro Person und insgesamt $48$ ECTS mit $1440$ Stunden an Zeitressourcen für das gesamte Projekt zur Verfügung.
 
 
 \subsubsection{Lösungskonzept}
 \todo[inline, color=blue]{Vera}
-\textit{MArC} soll mit Hilfe von Augmented oder Virtual Reality eine intuitive und flexible Arbeit mit einfachen Modellen ermöglichen. So kann per Augmented Reality Brille ein Modell auf einem Tisch visualisiert und grundlegend manipuliert werden. 
-Anordnungen von mehreren Modellen in einer Umgebung (z.B. Siedlung) können exportiert und so direkt weiterverarbeitet werden.
-Durch die VR-Brille mit montierten stereoskopischen Kameras wird ein Abbild der eralen Umgebung gezeigt. Auf einem Tisch liegende Würfel werden durch das innovative System getrackt; diese können von dem Benutzer intuitiv verschoben und arrangiert werden. \\
+\textit{MArC} soll mit Hilfe von Augmented oder Virtual Reality eine intuitive und flexible Arbeit mit abstrackten Entwurfsmodellen ermöglichen. So kann per Augmented Reality Brille ein Modell auf einem Tisch visualisiert und grundlegend manipuliert werden. \textcolor{red}{Wie werden die Marker genau manipuliert? Stichwort: Marker Menü, verschieben rotieren.}
+Anordnungen von mehreren Modellen in einer Umgebung (z.B. Siedlung) können exportiert und so direkt weiterverarbeitet werden.\textcolor{red}{Zu ungenau für ein Konzept: Excel tabelle, Timeline, ect.}
+Durch die VR-Brille mit montierten stereoskopischen Kameras \textcolor{red}{nur eine Kamera} wird ein Abbild der realen Umgebung gezeigt. Auf einem Tisch liegende Würfel werden durch das innovative System getrackt; diese können von dem Benutzer intuitiv verschoben und arrangiert werden. \\
+\textcolor{red}{WO ist das Tracking Programm? Stichwort: markerless tracking, OPencv, Kalibierung und Zusammenschluss der Teilsysteme}
 Das Terminziel ist das Ende des Wintersemesters 2016/2017. Die Projektabgabe soll am 28.2.2017 fertig gestellt worden sein. Die Dokumentation ist am 31.3.2017 Fertigzustellen und die Präsentation am 10.5.2017, wobei sich dieser Termin im laufe der Arbeit ergab.
 
  
@@ -37,24 +38,24 @@ In diesem Abschnitt soll die Durchführbarkeit des Projektes erklärt werden. Di
 	\item  Terminliche Durchführbarkeit
 \end{itemize}
 
-\paragraph{Technologische Durchführbarkeit} Für die Technologische Durchführbarkeit stehen sowohl die Technischen Möglichkeiten, als auch das know how der Mitarbeiter im Zentrum. \textit{MArC} nutzt neuartige Technologien, die einerseits zum Teil in der Hochschule vorhanden waren, teilweise jedoch aus Übersee nachgekauft werden mussten. So war die HTC Vive, das HMD das Mittel zur Wahl was die Darstellung der virtuellen Elemente angeht. Diese war bereits in der Hochschule vorhanden und es gab eininge Komilitonen, die bereits damit gearbeitet hatten. Das Projektteam konnte also sporadisch auf bisherige Erfahrungen zurückgreifen. Ebenso verhielt es sich mit der Leap Motion, die bereits in der TH Verfügbar war und ebenfalls schon in Projekten verwendet wurde. Auch hier konnte auf das Wissen sporadisch zurückgegriffen werden um eine bessere Machbarkeitsabschätzung zu erlangen. In beiden Fällen stellte sich die Idee diese Geräte zu verwenden als gute Lösung heraus, unter anderem wegen bisher geglückter Projekte.\\
-Anders verhielt es sich jedoch mit der OVR Vision. Dieses Gerät war nicht in der Hochschule verwendet und keines der Teammitglieder hatte Erfahrung mit dem Gerät. Da jedoch die anderen Geräte funktional mit guter Erfahrung zur Verfügung standen, entschied sich das Team die OVR Vision zu kaufen und das Projekt darauf aufzubauen.\\
-Ziel der Verwendung der OVR Vision war es, aus der Virtuellen Realität mit Haptischer Komponente eine Augmented Reality Anwendung zu schaffen, die dem Benutzer die Darstellung der virtuellen Elemente in seiner Umgebung darstellte.\\
-Für das Tracking sollte eine bereits vorhandene Industriekamera von UEye verwendet werden. Diese wurde ebefalls in vielen Bereichen und verschiedenen Fächern in der Hochschule genutzt und war bereits bekannt.\\
-Desweiteren konnte das Team auf weitreichendes individuelles Wissen zurückgreifen. So waren unter anderen bereits eine Bachelorarbeit mit \textit{Unity} und einem HMD erarbeitet worden, andere Teammitgleider hatten hingegen tiefgreifendes Wissen über Mustererkennung und digitale Bildverarbeitung, die für das Markertracking unumgänglich sind. Fehlend zu diesem Wissen war jedoch das Anwenden von virtuellen Szenerien in Augmentierten Situationen. Dies ist sowohl technisch Neuland, im Laufe des Projektes startete Microsoft den Verkauf der \textit{Hololens}, einem echten Augmented Reality Headmounted Display, als auch für die Projektmitglieder. So wurden im Fach "Virtuelle und Erweiterte Realität", welches alle der Mitglieder schon bereits vor dem Projektbeginn belegten, wichtiges Knowhow für Augmented Reality Situationen erst im letzten Semester zu der Thematik ausführlich hinzugefügt.
+\paragraph{Technologische Durchführbarkeit} Für die Technologische Durchführbarkeit stehen sowohl die Technischen Möglichkeiten, als auch das Know-how der Mitarbeiter im Zentrum. \textit{MArC} nutzt neuartige Technologien, die einerseits zum Teil in der Hochschule vorhanden waren, teilweise jedoch in Übersee erworben werden mussten. So war die \textit{HTC Vive} das Mittel der Wahl zur Darstellung der virtuellen Elemente. Diese war bereits in der Hochschule vorhanden und es gab einige Kommilitonen, die bereits damit Erfahrungen gesammelt hatten. Demzufolge konnte das Projektteam sporadisch auf vorhandenen Erfahrungen zurückgreifen. Ebenso verhielt es sich mit der \textit{LeapMotion}, welche von der TH zur Verfügung gestellt wurde und ebenfalls schon in anderen Projekten verwendet wurde. Auch hier konnte zur besseren Machbarkeitsabschätzung auf bestehende Erfahrungen zurückgegriffen werden. In beiden Fällen stellte sich die Idee diese Geräte zu verwenden als gute Lösung heraus, unter anderem wegen dem Erfolg der anderen Projekte.\\
+Anders verhielt es sich jedoch mit der \textit{OVR Vision}. Dieses Gerät war nicht im Besitz der Hochschule und kein Teammitglied hatte Erfahrung mit diesem Gerät. Da jedoch alle weiteren Geräte funktional und mit guter Erfahrungswerten zur Verfügung standen, entschied sich das Team die \textit{OVR Vision} zu kaufen um die Augemented Reality im System umzusetzen.\\
+Ziel der Verwendung der \textit{OVR Vision} war es, aus der Virtuellen Realität und haptischen Komponente der Würfel-Marker eine Augmented-Reality-Anwendung zu schaffen, welche dem Benutzer die Darstellung der virtuellen Elemente in seiner Umgebung ermöglicht.\\
+Für das Tracking sollte eine bereits vorhandene Industriekamera von \textit{IDS} verwendet werden. Diese wurde ebenfalls in vielen Fachbereichen in der Hochschule für die Lehre und Forschung genutzt und galt als zuverlässig.\\
+Des weiteren konnte das Team auf weitreichendes und individuelles Wissen zurückgreifen. So waren unter anderen bereits eine Bachelorarbeit mit \textit{Unity} und einem HMD erarbeitet worden und zwei andere Teammitglieder hatten tiefgreifendes Wissen über die digitale Bildverarbeitung. Letztere ist für das Marker-Tracking unumgänglich. Wissenslücken bestanden jedoch in der Umsetzung und Entwicklung der Augmented Reality. Dieser Bereich ist technologisches Neuland und im Laufe des Projektes startete Microsoft den Verkauf der \textit{Hololens}, welches ein echtes Augmented-Reality-HMD ist. So wurden im Modul "`Virtuelle und Erweiterte Realität"', welches alle der Mitglieder vor dem Projektbeginn belegten, das geforderte Know-how zur Entwicklung Augmented-Reality-Anwendungen nicht vermittelt wurde.
 
-\paragraph{Ökonomische Durchführbarkeit} Neben der Technologischen Durchführbarkeit war die Ökonomische Durchführbarkeit zu erörtern. Durch die Rahmenbedingung, dass das Projekt innerhalb des Studiums umgesetzt wird und keine Gehälter zu zahlen sind, verringern sich die Kosten auf die zuzulegende Hardware und benötigter Zubehör. Diese Summen sind innerhalb des bereitgestellten Budgeds bezahlbar. Wichtiger jedoch sind die Zeitkosten für die einzelnen Mitglieder. So war hat jedes Mitglied ein eigenverantwortliches Zeitmanagement durchzuführen und genügend Zeit für das Projekt zur Verfügung zu stellen. Da das Projekt nicht als Vollzeitprojekt geplant ist, hat jeder Mitarbeiter seine anderen Studienfächer nebenher. Da der Zeitraum über zwei Semester jedoch viel Zeit bietet, war das Projekt im vorgegebenen Ökonomischen Rahmen machbar.
+\paragraph{Ökonomische Durchführbarkeit} Neben der Technologischen Durchführbarkeit war auch die Ökonomische zu erörtern. Durch die Rahmenbedingung des Masterprojektes im Studiengang Medientechnologie mussten keine Gehälter bezahlt werden und die Kosten verringern sich auf die erworbene Hardware und benötigte Zubehör. Diese Gesamtkosten überschreiten nicht das bereitgestellte Budget. Wichtiger jedoch sind die Zeitkosten der einzelnen Mitglieder. So hat jedes Mitglied ein eigenverantwortliches Zeitmanagement durchzuführen und genügend Zeit für das Projekt zur Verfügung zu stellen. Da das Masterprojekt semesterbegleitend war musste jedes Mitarbeiter in seinem Zeitmanagement auch den Aufwand andere Module berücksichtigen. Der Zeitraum des Projektes ging jedoch über zwei Semester, sodass der Aufwand im vorgegebenen Ökonomischen Rahmen machbar war.
 
 \paragraph{Rechtliche Durchführbarkeit} Dieser Punkt sei zur Vollständigkeit genannt. Da es sich bei \textit{MArC} um ein studentisches Projekt handelt welches nicht verkauft werden sollte, ist das Projekt in seinem geplanten Umfang rechtlich durchführbar.
 
-\paragraph{Operationale Durchführbarkeit} Da Jedes Teammitglied individuelles, tiefgreifendes Wissen mit in das Projekt bringt und alle Mitglieder bereits im Bereich Virtual Reality gearbeitet haben, ist großes Potential für das Projekt vorhanden. Lediglich die Weiterführung von Virtueller in Agmentierter Reality ist für die Mitglieder neu und muss zusätzlich erlernt werden. Durch den Zeitrahmen ist die Operationale Durchführbarkeit gut.
+\paragraph{Operationale Durchführbarkeit} Da jedes Teammitglied individuelles, tiefgreifendes Wissen zur Verfügung stellt und alle Mitglieder bereits im Bereich Virtual Reality gearbeitet haben, ist großes Potential für das Projekt vorhanden. Lediglich die Weiterführung von Virtueller in Agmentierter Reality ist für die Mitglieder neu und muss zusätzlich erlernt werden. Durch den Zeitrahmen ist die Operationale Durchführbarkeit gut.
 
 
-\paragraph{Terminliche Durchführbarkeit} Insgesamt wurden für das Projekt 12ECTS x 4Personen x 30Stunden = 1440 Arbeitsstunden eingerechnet. Innerhalb diesen Rahmens ist das Projekt bis zum Ende des Wintersemesters 2016/2017 gemeinsam fertig zu stellen. Terminlich ist bei aufgeteilter Arbeitslast ein Projekt wie \textit{MArC} machbar, wobei diese Machbarkeit mit dem betreuuenden Professor abgesprochen und auf dessen Erfahrungen zurückgegriffen wurde.
+\paragraph{Terminliche Durchführbarkeit} Insgesamt wurden für das Projekt $12$ ECTS $\times 4$ Personen $\times 30$ Stunden $= 1440$ Arbeitsstunden eingerechnet. Innerhalb diesen Rahmens ist das Projekt bis zum Ende des Wintersemesters 2016/2017 gemeinsam fertig zu stellen. Terminlich ist bei aufgeteilter Arbeitslast ein Projekt wie \textit{MArC} machbar, wobei diese Machbarkeit mit dem betreuenden Professor abgesprochen und auf dessen Erfahrungen zurückgegriffen wurde.
 
 \subsubsection{Projektauftragsformular}
 \todo[inline, color=blue]{Vera}
-Das Projektauftragsformular ist in \ref{tab:Projektformular} zu finden.
+Das Projektauftragsformular ist in Tabelle ~\ref{tab:Projektformular} zu finden.
 \begin{table}
 	\centering
 	\begin{tabularx}{\textwidth}{|l|l|}
@@ -69,23 +70,22 @@ Das Projektauftragsformular ist in \ref{tab:Projektformular} zu finden.
 	Projektanlass & Masterprojekt Master Medientechnologie\\
 	\hline
 	Projektziele & Erstellung einer Augmented bzw. Virtual Reality \\
-	&Anwendung, mithilfe derer Architekten Siedlungen\\
-	& bauen und einfach nachträglich bearbeiten können.\\
-	 &Dabei soll der Nutzer Gebäude mittels getrackter\\
-	& Würfel verschieben und rotieren können \\
-	&und sämtliche Interaktion (manipulation der Größe\\ 
-	& der Gebäude, Menüiteraktionen) mit den Fingern \\
+	&Anwendung mit der Architekten Siedlungen in der\\ & ersten Entwurfsphase bauen und einfach \\ & nachträglich bearbeiten können.\\
+	 &Dabei soll der Nutzer virtuelle Gebäude mittels \\
+	& getrackter Würfel verschieben und rotieren können \\
+	&und sämtliche Interaktion (Manipulation der Größe\\ 
+	& der Gebäude, Menü-Interaktionen) mit den Fingern \\
 	&durchführen können.\\
 	\hline
-	Zu erarbeitende Ergebnisse & Abgeliefert werden zwei \\
-	&lauffähige .exe Datei, die auf der einen Seite das\\
-	&Tracking auf einem Computer, und auf dem \\
-	&anderen die Darstellung ermöglichen. \\
+	Zu erarbeitende Ergebnisse & Abgeliefert werden zwei lauffähige .exe Dateien,\\
+	& die auf der einen Seite das Tracking auf \\
+	&einem Computer, und auf dem anderen die \\
+	&Darstellung ermöglichen. \\
 	&Eigentümer der Hardware ist zu jeder Zeit\\
 	&der Auftraggeber. Das Projektteam ist dafür\\
 	&verantwortlich, dass die Software im vorgegebenen\\
 	&Rahmen funktioniert. Es wird dazu eine Readme \\
-	&Datei ausgeliefert, die das Verwenden der\\
+	&Datei ausgeliefert, die Verwendung der\\
 	& Programme erklärt. Eine ausführliche \\
 	&Dokumentation ist bis zum 30.3.2017 abzuliefern,\\
 	& eine Abschlusspräsentation mit allen Ergebnissen\\
@@ -95,14 +95,14 @@ Das Projektauftragsformular ist in \ref{tab:Projektformular} zu finden.
 	
 \hline
 	Projektbudget & Das Projekt unterliegt einem\\
-	& monetären Budget von 500 Euro und einem\\
-	& zeitlichen Budged von 4Personen x \\
-	&12ECTS x 30 Stunden = 1440 Stunden.\\
+	& monetären Budget von $500$ Euro und einem\\
+	& zeitlichen Budged von $4$ Personen $\times$ \\
+	&$12$ ECTS $\times \ 30$ Stunden $ = 1440$ Stunden.\\
 	\hline
 	Randbedingungen & Sämtliche Öffnungszeiten\\
 	& der Räumlichkeiten der Arbeitgeber, Verfügbarkeit\\
 	& des begleitenden Professors für Termine nur nach \\
-	&Absprache, einhalten von Projektbudget und \\
+	&Absprache, Einhalten von Projektbudget und \\
 	&Zeitrahmen, insbesondere des individuellen \\
 	&Zeitmanagements der Mitglieder wegen anderer\\
 	& Universitärer Veranstaltungen\\
@@ -121,18 +121,29 @@ Das Projektauftragsformular ist in \ref{tab:Projektformular} zu finden.
 \subsubsection{Projektorganisation}
 \todo[inline, color=blue]{Vera}
 \paragraph{Leitung} Die Leitung des Teams wurde aufgeteilt zwischen Lukas Kolhagen und Paul Berning. Die Ursprünglich gedachte Aufteilung in die beiden Semester ist einer durchgängigen Kooperation und Absprache gewichen, welche das Team organisatorisch stützte.
-\paragraph{Team} Das Team teilte sich des Weitern in zwei Unterteams auf. Basierend auf den unterschiedlichen individuellen Kompetenzen wurde das Tracking der Marker hauptsächlich von Laura Anger und Vera Brockmeyer übernommen. Auf der anderen Seite konnten Lukas Kolhagen und Paul Berning fundierte Unity Kenntnisse aufweisen und kümmerten sich hauptsächlich um die visuelle Darstellung der Applikation.
+\paragraph{Team} Das Team teilte sich des weiteren in zwei Unterteams auf. Basierend auf den unterschiedlichen individuellen Kompetenzen wurde das Tracking der Marker hauptsächlich von Laura Anger und Vera Brockmeyer übernommen. Auf der anderen Seite konnten Lukas Kolhagen und Paul Berning fundierte Unity Kenntnisse aufweisen und kümmerten sich um die visuelle Darstellung der Applikation.
 
-\paragraph{Infrastruktur} Als Arbeitsplatz wurde Seitens der Hochschule ein Raum zur Verfügung gestellt, der über eine fest installierte HTC Vive und einem dazugehörigen performanten Computer verfügt. In diesem wurde das Projekt durchgeführt. Optional standen dem Team weitere Performante Laptops zur Verfügung und notwendige zusätzliche Hardware und Zubehör wurde im Laufe der Zeit hinzu gekauft oder waren schon Seitens der Hochschule Vorhanden und verfügbar gemacht.
-- Informationssystem
+\paragraph{Infrastruktur} Als Arbeitsplatz wurde Seitens der Hochschule ein Raum zur Verfügung gestellt, der über eine fest installierte \textit{HTC Vive} und einem Computer, welcher die Systemvorraussetzungen der \textit{HTC Vive} erfüllt, verfügt. In diesem wurde das Projekt durchgeführt. Optional standen dem Team weitere performante Laptops zur Verfügung \textcolor{red}{und die privaten Notebooks wurden für die Entwicklung genutzt. Die benötigte \textit{OVR Vision} sowie erforderliches Zubehör, wie Halterungen und Aluminium-Würfel wurden im Laufe der Zeit hinzu gekauft. Weiterführend, wurden die \textit {LeapMotion} und eine Webcam von der Hochschule zur Verfügung gestellt.} sowie die erforderliche zusätzliche Hardware und dessen Zubehör wurde im Laufe der Zeit hinzu gekauft oder waren schon Seitens der Hochschule Vorhanden und verfügbar gemacht.
+- Informationssystem \textcolor{red}{kann das weg oder wurde eine Sektion vergessen?}
 
 \subsection{Projektplanung}
 \todo[inline, color=blue]{Vera}
 \todo[inline,color = green ]{Paul}
-
+\textcolor{red}{hier fehlt die Einleitung}
 \subsubsection{Arbeitspakete}
 \todo[inline, color=blue]{Vera}
 Wie in größeren Projekten üblich, wurde die Arbeit in mehrere Arbeitspakete (AP) und Meilensteine (MS) segmentiert. Die detaillierte Auflistung dieser kann in Tabelle \ref{tab:APMS} gefunden werden.
+\textcolor{red}{Wenn ich das richtig überblicke, fehlen folgende Arbeitspakete: \begin{itemize}
+		\item Kalibrierung des System entwickeln
+		\item Implementierung des Table Menüs
+		\item Implementierung des Tischmenüs
+		\item Implementierung des Kontextmenüs
+		\item Implementierung der archt. Berechnungen
+		\item Implementierung der Netzwerkverbindung 
+		\item Webkamera ins System einbinden
+		\item  Recherche Hololens oder Webcam
+		\item einbindung der LeapMotion  
+\end{itemize}}
 \begin{table}
 	\centering
 	\begin{tabular}{|l|l|l|l|}
@@ -210,15 +221,15 @@ Der Projektstrukturplan ist dem Anhang beigefügt.
 Der Ablaufplan und Terminplan wurde der Übersichtshalber mit dem Plan über die verschiedenen Arbeitspakete und Meilensteine in Tabelle \ref{tab:APMS} aufgeführt. Das Gantt Chart ist der Übersicht halber im Anhang beigefügt
 \subsubsection{Kapazitätsplan}
 \todo[inline, color=blue]{Vera}
-Der Kapazitätsplan enthält die Ressourcen über die Projektzeit von März 2016 bis März 2017. Der Plan ist tabellarisch sowie als Diagramm im Anhang zu finden.
+Der Kapazitätsplan enthält die Ressourcen über die Projektzeit von März 2016 bis März 2017. Der Plan ist tabellarisch sowie als Diagramm im Anhang \textcolor{red}{\ref einfügen und Captions}zu finden.
 
 \subsubsection{Kostenplan}
 \todo[inline, color=blue]{Vera}
-Der Kostenplan ist ebenfalls dem Anhang beigefügt.
+Der Kostenplan ist ebenfalls dem Anhang \textcolor{red}{\ref einfügen und Captions} beigefügt.
 
 \subsubsection{Qualitätsplan}
 \todo[inline, color=blue]{Vera}
-Der Qualitätsplan ist ebenfalls der Übersicht halber den Anhang beigefügt
+Der Qualitätsplan ist ebenfalls dem Anhang \textcolor{red}{\ref einfügen und Captions} beigefügt.
 
 \subsection{Projektdurchführung}
 \todo[inline, color=blue]{Vera}
