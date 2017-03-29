@@ -18,7 +18,7 @@
 \BOOKMARK [3][-]{subsubsection.3.1.5}{Leap Motion Controller}{subsection.3.1}% 18
 \BOOKMARK [3][-]{subsubsection.3.1.6}{W\374rfel-Marker}{subsection.3.1}% 19
 \BOOKMARK [3][-]{subsubsection.3.1.7}{Schachbrett-Kalibrierungshelfer zur Kamerakalibrierung}{subsection.3.1}% 20
-\BOOKMARK [3][-]{subsubsection.3.1.8}{Kalibrierungscontroller zur Arbeitsbereichskalibrierung}{subsection.3.1}% 21
+\BOOKMARK [3][-]{subsubsection.3.1.8}{Marker und Halterung f\374r Arbeitsbereichskalibrierung}{subsection.3.1}% 21
 \BOOKMARK [2][-]{subsection.3.2}{Obsolete Hardware}{section.3}% 22
 \BOOKMARK [3][-]{subsubsection.3.2.1}{Ovrvision Pro}{subsection.3.2}% 23
 \BOOKMARK [3][-]{subsubsection.3.2.2}{Webcam}{subsection.3.2}% 24
@@ -36,18 +36,18 @@
 \BOOKMARK [3][-]{subsubsection.4.1.2}{Unity Aufbau}{subsection.4.1}% 36
 \BOOKMARK [2][-]{subsection.4.2}{Systemvoraussetzungen}{section.4}% 37
 \BOOKMARK [2][-]{subsection.4.3}{Netzwerk}{section.4}% 38
-\BOOKMARK [3][-]{subsubsection.4.3.1}{Server-seitige Netzwerkanbindung}{subsection.4.3}% 39
+\BOOKMARK [3][-]{subsubsection.4.3.1}{Serverseitige Netzwerkanbindung}{subsection.4.3}% 39
 \BOOKMARK [3][-]{subsubsection.4.3.2}{Client-seitige Netzwerkanbindung}{subsection.4.3}% 40
 \BOOKMARK [2][-]{subsection.4.4}{Starten des Systems}{section.4}% 41
 \BOOKMARK [2][-]{subsection.4.5}{Men\374f\374hrung}{section.4}% 42
 \BOOKMARK [3][-]{subsubsection.4.5.1}{Men\374s}{subsection.4.5}% 43
 \BOOKMARK [3][-]{subsubsection.4.5.2}{Ablauf der Men\374f\374hrung}{subsection.4.5}% 44
 \BOOKMARK [2][-]{subsection.4.6}{Kontextmen\374}{section.4}% 45
-\BOOKMARK [3][-]{subsubsection.4.6.1}{Marker Handles}{subsection.4.6}% 46
+\BOOKMARK [3][-]{subsubsection.4.6.1}{Anfasser f\374r Marker-Skalierung}{subsection.4.6}% 46
 \BOOKMARK [3][-]{subsubsection.4.6.2}{Ein- und Ausblenden des Kontextmen\374s}{subsection.4.6}% 47
 \BOOKMARK [3][-]{subsubsection.4.6.3}{Berechnung der Geb\344udeeigenschaften}{subsection.4.6}% 48
-\BOOKMARK [2][-]{subsection.4.7}{Table Men\374}{section.4}% 49
-\BOOKMARK [3][-]{subsubsection.4.7.1}{Szenen Management}{subsection.4.7}% 50
+\BOOKMARK [2][-]{subsection.4.7}{Tischmen\374}{section.4}% 49
+\BOOKMARK [3][-]{subsubsection.4.7.1}{Szenen-Management}{subsection.4.7}% 50
 \BOOKMARK [3][-]{subsubsection.4.7.2}{Speichern von Szenen}{subsection.4.7}% 51
 \BOOKMARK [3][-]{subsubsection.4.7.3}{Laden von Szenen}{subsection.4.7}% 52
 \BOOKMARK [3][-]{subsubsection.4.7.4}{Match Modus}{subsection.4.7}% 53
@@ -68,8 +68,8 @@
 \BOOKMARK [2][-]{subsection.5.5}{Verfolgung und Registrierung der Marker}{section.5}% 68
 \BOOKMARK [1][-]{section.6}{Ausblick}{}% 69
 \BOOKMARK [2][-]{subsection.6.1}{Trackingmethoden}{section.6}% 70
-\BOOKMARK [2][-]{subsection.6.2}{AR Erweiterung mit der Webcam}{section.6}% 71
-\BOOKMARK [2][-]{subsection.6.3}{Daten als Excel Tabelle}{section.6}% 72
+\BOOKMARK [2][-]{subsection.6.2}{Erweiterung von MArC als Augmented-Reality-System}{section.6}% 71
+\BOOKMARK [2][-]{subsection.6.3}{Export von Architekturdaten}{section.6}% 72
 \BOOKMARK [2][-]{subsection.6.4}{Evaluierung von MArC}{section.6}% 73
 \BOOKMARK [1][-]{section.7}{Projektmanagement}{}% 74
 \BOOKMARK [2][-]{subsection.7.1}{Projektdefinition}{section.7}% 75
