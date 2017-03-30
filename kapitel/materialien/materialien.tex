@@ -243,13 +243,13 @@ Für dieses System ist vor allem das Modul \texttt{calib3d} \cite{website:Calib3
 
 \subsubsection{ArUco Bibliothek} \label{sec:aruco} \todo[inline, color=green]{Vera}
 \todo[inline, color=red]{Laura}
-Die \textit{ArUco} Bibliothek ist ein Marker Tracking Modul von \textit{OpenCV} (vgl. Abschnitt~\ref{sec:OpenCV}), dass für Augmented Reality (AR) Anwendungen genutzt werden kann. Es stellt für diese Anwendungen alle notwendigen Funktionalitäten zum Orten und Verifizieren der Codes sowie einer Positionsabschätzung der ermittelten Positionen im Kameraraum zur Verfügung \cite{article:Aruco2014}. 
+Die \textit{ArUco} Bibliothek ist ein Marker Tracking Modul von \textit{OpenCV} (vgl. Abschnitt \ref{sec:OpenCV}), dass für Augmented Reality (AR) Anwendungen genutzt werden kann. Es stellt für diese Anwendungen alle notwendigen Funktionalitäten zum Orten und Verifizieren der Codes sowie einer Positionsabschätzung der ermittelten Positionen im Kameraraum zur Verfügung \cite{article:Aruco2014}. 
 Die Marker bestehen ähnlich wie QR-Codes aus einer zweidimensionalen Matrix, mit schwarzen oder weißen Feldern, welche die kodierten Daten binär, wie in Abbildung~\ref{fig:AllUsedArucoMarker}, darstellen.  Weiterführend kann die Bitanzahl (vgl. Abbildung~\ref{fig:SizesArucoMarker}) und die gefragte maximale Markeranzahl variabel gewählt werden. An dieser Stelle ist eine kleine Bitanzahl, welche detailarme Muster erzeugt, für eine gute Erkennbarkeit in sehr großen Entfernungen zur Kamera oder kleinen Bildern sinnvoll. Um diese Vielzahl an verschiedenen Größen und IDs zu verwalten wurden sogenannte Dictionaries eingeführt \cite{article:ArucoDictGarridoJurado2015}. Diese Dictionaries bestehen aus Markern mit gleicher Bitanzahl und sind zusätzlich auf eine maximalen Anzahl von IDs begrenzt um ein möglichst hohe Performanz während des Zuordnungsprozesses zu gewährleisten.\\
 
 \begin{figure}[H] 
 	\center 
 	\includegraphics[width=10cm]{Bilder/Aruco_marker.jpg}			
-	\caption{Alle genutzten 16 bit ArUco Marker des Prototypen. Links die zwölf IDs der Würfel-Marker und rechts die ID, welche zur Kalibrierung benötigt wird. Die maximale Anzahl der Marker ist auf $50$ begrenzt.}
+	\caption{Alle genutzten 16-bit codierten \textit{ArUco}-Marker des Prototypen. Links die zwölf ID der Würfel-Marker und rechts die ID, welche zur Kalibrierung benötigt wird. Die maximale Anzahl der Marker im Dictionary ist auf $50$ begrenzt.}
 	\label{fig:AllUsedArucoMarker}
 \end{figure}
 
