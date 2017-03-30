@@ -446,8 +446,9 @@ Trotz einer sorgfältigen Umsetzung der in den nächsten beiden Kapiteln beschri
 %\todo[inline, color=red]{korrigiert: Vera}
 Im Zusammenhang mit der Kalibrierung des Systems von \textit{MaRC} werden von einem Marker Koordinaten in Bildkoordinaten und die entsprechenden Koordinaten in der Unitywelt benötigt. Hierbei spricht man von korrespondierenden Punkten. Genauer gesagt wird für diese Zwecke der Kalibrierungscontroller (vgl. Kapitel ~\ref{sec:calibController}) verwendet. Auf diesem befindet sich ein \textit{ArUco} Marker (vgl. Kapitel ~\ref{sec:aruco}). Dessen Mittelpunkt, also das \texttt{estimated\-Center}, kann für jede Position über das in Kapitel ~\ref{sec:ArucoMarkerTracking} beschriebene Trackingverfahren ermittelt werden und wird für jeden erkannten Marker auf Trackingseite abgespeichert. Dies geschieht bei der Kalibrierung immer, wenn der Trigger am Controller der \textit{HTC Vive} ausgelöst wird. Somit kann in \textit{Unity} zeitgleich die entsprechende Controller-Position abgespeichert werden. Eine Position liegt also sowohl in Bild- als auch in Unitykoordinaten vor (vgl. Tabelle ~\ref{tab:camCalibParam}).  
 
-\subsubsection{Definition der Koordinatensysteme} \label{sec:DefKoords} \todo[inline, backgroundcolor=green]{Laura}
-\todo[inline, color=red]{Vera}
+\subsubsection{Definition der Koordinatensysteme} \label{sec:DefKoords} 
+%\todo[inline, backgroundcolor=green]{geschrieben: Laura}
+%\todo[inline, color=red]{korrigiert:Vera}
 In Abbildung~\ref{fig:cameraCalib} sind die Zusammenhänge zwischen dem Projektionszentrumkoordinatensystem der Kamera, sowie deren Bildebene und dem Weltkoordinatensystem zu sehen. Im Gegensatz zu der Abbildung und den in Kapitel~\ref{sec:camCalib} erwähnten Kalibrierungsansätzen reicht die Umrechnung von Bildkoordinaten in Weltkoordinaten, im vorliegenden Fall, nicht aus. Es muss eine Umrechnung der Bildkoordinaten in den \textit{Unity}-Raum erfolgen, um zu gewährleisten, dass die gerenderten Würfel anschließend deckungsgleich mit den Aluminiumwürfeln sind. Koordinaten des \textit{Unity}-Raumes werden im Folgenden Unitykoordinaten genannt.\\
 
 \begin{figure}[H]
@@ -459,7 +460,6 @@ In Abbildung~\ref{fig:cameraCalib} sind die Zusammenhänge zwischen dem Projekti
 
 Um die verschiedenen Koordinatensysteme bei den Ausführungen in den Kapiteln ~\ref{sec:camCalib} und ~\ref{sec:planeCalib} auseinander halten zu können, wird zu Beginn eine Notation festgelegt, die in Tabelle~\ref{tab:camCalibParam} eingesehen werden kann. Zusätzlich können in der Tabelle sowohl die einzelnen Koordinatensysteme, als auch die einzelnen Berechnungsschritte der Kamerakalibrierung, sowie der Koordinatentransformation bis hinzu Unitykoordinaten, nachvollzogen werden. Lässt man die ersten zwei Zeilen der Tabelle weg, so ist eine Transformation von Weltkoordinaten $\vv{x}$ in Kamerakoordinaten $\vv{u}$ schematisch dargestellt. Dieses Schema muss für die Kamerakalibrierung von \textit{MArC} invertiert werden und um die Koordinatentransformation in Unitykoordinaten ergänzt werden.\\
 
-\textcolor{red}{Ist es viel. Sinnvoller $\vv{x}^Z_D$ statt $\vv{x}^P_D$ in der Tabelle zu verwenden?} 
 
 \begin{table}
 	\centering
