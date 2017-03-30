@@ -48,10 +48,11 @@ Die Systemvoraussetzungen für \emph{MArC} sind in der ReadMe-Datei beschrieben,
 
 \subsection{Netzwerk}\label{sec:netzwerk}\todo[inline, color=green]{Lukas und Laura}
 \todo[inline, color=red]{Paul}
-Die in Kapitel ~\ref{sec:Winsock} beschriebene  \texttt{Winsock}-API stellt die Möglichkeit bereit, den Datentransport mittels TCP oder UDP zu verwenden. Für \emph{MArC} wurde ein TCP-Socket-Netzwerk bestehend aus (genau) einem Server und (genau) einem Client verwendet, weil der der in~\ref{sec:Netzwerk} beschriebene Fehlerschutz des TCP ausgenutzt werden sollte, um nicht manuell überprüfen zu müssen, ob Daten fehlerfrei übertragen wurden. Da die zu übertragende Datenmenge von \emph{MArC} hinreichend klein -- und von konstanter Größe -- ist, wurde die etwas höhere Geschwindigkeit durch den geringeren Overhead einer UDP-Socket-Verbindung als unnötig erachtet. \textcolor{red}{Kann man den Overhead prozentual angeben?} \\
+Die in Kapitel ~\ref{sec:Winsock} beschriebene  \texttt{Winsock}-API stellt die Möglichkeit bereit, den Datentransport mittels TCP oder UDP zu verwenden. Für \emph{MArC} wurde ein TCP-Socket-Netzwerk bestehend aus (genau) einem Server und (genau) einem Client verwendet, weil der der in~\ref{sec:Netzwerk} beschriebene Fehlerschutz des TCP ausgenutzt werden sollte, um nicht manuell überprüfen zu müssen, ob Daten fehlerfrei übertragen wurden. Da die zu übertragende Datenmenge von \emph{MArC} hinreichend klein -- und von konstanter Größe -- ist, wurde die etwas höhere Geschwindigkeit durch den geringeren Overhead einer UDP-Socket-Verbindung als unnötig erachtet.\\
 In den beiden folgenden Abschnitten wird die Umsetzung der Netzwerk-Endpunkte an den beiden für \emph{MArC} verwendeten Computern beschrieben.
-\subsubsection{Serverseitige Netzwerkanbindung}\label{sec:serverClient}\todo[inline, color=green]{Laura}
-\todo[inline, color=red]{Lukas}
+\subsubsection{Serverseitige Netzwerkanbindung}\label{sec:serverClient}
+%\todo[inline, color=green]{geschrieben: Laura}
+%\todo[inline, color=red]{korrigiert: Lukas}
 \paragraph{Aufbauen der Netzwerkverbindung}
 Da die Verbindung zwischen den beiden Rechnern per LAN-Kabel realisiert wurde, wird ein Server gestartet und eine Verbindung seitens des Clients ohne weitere Sicherheitsmechanismen erlaubt, so lange dieser den richtigen Port adressiert. Die entsprechenden Methoden stehen dank \textit{Winsock} (vgl. Abschnitt~\ref{sec:Winsock}) durch das Einbinden von \texttt{<winsock2.h>} und \texttt{<windows.h>} bereit und werden, wie in Quellcode-Auszug~\ref{lst:startTCPServer} (im Anhang einsehbar) gezeigt, verwendet. 
 
@@ -60,7 +61,7 @@ Die Datenübertragung kann grob in drei Teilbereiche unterteilt werden. Neben de
 
 \lstinputlisting[title=\lstname, caption={\texttt{sendStatus()}-Methode in \texttt{TCP.cpp}}, label=lst:sendStatusVS, language={C++}, linerange=88-92, firstnumber=88]{Quellcode/TCP.cpp} 
 
-Da die Übertragung der Status in beide Richtungen erfolgen muss, bedarf es einer Methode zum Senden (Quellcode-Auszug~\ref{lst:sendStatusVS})  und einer Methode zum Empfangen (vgl. Quellcode-Auszug~\ref{lst:receiveStatusVS}). Beide Methoden gehen von einem Status aus, der genau einen \texttt{int}-Wert enthält, also 4 Byte groß ist. Die Methoden sind selbsterklärend.\textcolor{red}{Sollen wir den letzten Satz vll. einfach weglassen?}
+Da die Übertragung der Status in beide Richtungen erfolgen muss, bedarf es einer Methode zum Senden (Quellcode-Auszug~\ref{lst:sendStatusVS})  und einer Methode zum Empfangen (vgl. Quellcode-Auszug~\ref{lst:receiveStatusVS}). Beide Methoden gehen von einem Status aus, der genau einen \texttt{int}-Wert enthält, also 4 Byte groß ist.
 
 \lstinputlisting[title=\lstname, caption={\texttt{receiveStatus()}-Methode in \texttt{TCP.cpp}}, label=lst:receiveStatusVS, language={C++}, linerange=107-112, firstnumber=107]{Quellcode/TCP.cpp}
 
@@ -103,7 +104,7 @@ Beim Interpretieren der Marker werden zunächst die ersten vier Bytes an der von
 
 \subsection{Starten des Systems}\todo[inline, color=green]{Lukas}
 \todo[inline, color=red]{Laura}
-Nachdem sichergestellt wurde, dass alle in~\ref{sec:sysVor} beschriebenen Voraussetzungen bestehen, kann das System gestartet werden, indem zunächst die Tracking-Anwendung (auf dem einen Computer, vgl.~\ref{sec:TrackingComp}) und anschließend die aus \emph{Unity} heraus erstellte Anwendung (auf dem anderen Computer, vgl.~\ref{sec:UnityComp}) gestartet wird. Auf letzterem Computer beginnt darauffolgend die Menüführung, welche in ~\ref{sec:menu} beschrieben ist. \textcolor{red}{War es nicht so, dass doPoseCalibInVS (oder war es SelectCalibrationTarget) gar nicht angezeigt werde konnte? Wäre zu überlegen das dann raus zu lassen.}
+Nachdem sichergestellt wurde, dass alle in~\ref{sec:sysVor} beschriebenen Voraussetzungen bestehen, kann das System gestartet werden, indem zunächst die Tracking-Anwendung (auf dem einen Computer, vgl.~\ref{sec:TrackingComp}) und anschließend die aus \emph{Unity} heraus erstellte Anwendung (auf dem anderen Computer, vgl.~\ref{sec:UnityComp}) gestartet wird. Auf letzterem Computer beginnt darauffolgend die Menüführung, welche in ~\ref{sec:menu} beschrieben ist.
 \subsection{Menüführung}\label{sec:menu}\todo[inline, color=green]{Lukas}
 \todo[inline, color=red]{Laura}
 Die Menüführung dient dazu, den Benutzer durch alle notwendigen Schritte zu leiten, die vor dem Starten der eigentlichen Simulation erforderlich sind. Im nachfolgenden Abschnitt~\ref{sec:menus} werden alle verfügbaren Menüs der Anwendung aufgelistet und kurz beschrieben, während im Abschnitt~\ref{sec:menuAblauf} der Ablauf der Menüführung erläutert wird.
@@ -284,8 +285,9 @@ Auf die gleiche Weise wird das Kontextmenü mit den Marker Handles auch wieder g
 	\label{fig:KontextmenuCollider}
 \end{figure}
 
-\subsubsection{Berechnung der Gebäudeeigenschaften} \label{sec:KontextMenuInhalt}\todo[inline, color=green]{Laura}
-\todo[inline, color=red]{Lukas}
+\subsubsection{Berechnung der Gebäudeeigenschaften} \label{sec:KontextMenuInhalt}
+%\todo[inline, color=green]{geschrieben: Laura}
+%\todo[inline, color=red]{korrigiert:Lukas}
 Wie in Abbildung~\ref{fig:standardMarker} zu sehen, enthält das Kontextmenü neben der anwendungsspezifischen ID des jeweiligen Gebäudes noch eine Reihe weiterer Informationen über dieses.  Zunächst wird der Maßstab, den der Benutzer zu Beginn der Anwendung im \texttt{SetScale}-Menü (vgl. Abschnitt~\ref{sec:menuAblauf}) ausgewählt hat, angegeben. Wenn das Objekt nicht bereits durch den Benutzer anhand der Handles transformiert wurde, sieht es aus wie in Abbildung~\ref{fig:standardMarker}. Diese zeigt einen Standard-Marker mit 4 Geschossen. Über den Z-Anfasser (vgl. Abschnitt \ref{sec:markerHandles}) können einzelne Geschosse hinzugefügt oder entfernt werden. Was im Kontextmenü zum einen natürlich direkten Einfluss auf die Geschossigkeit hat und zum anderen zur Veränderung der Höhe des jeweiligen Gebäudes führt. Neben der Höhe sind die Breite und Tiefe, sowie die Grund- und Wohnfläche von der Skalierung des virtuellen Markers abhängig. Alle im Kontextmenü dargestellten Größen, bis auf die ID und die Geschossigkeit, sind von dem ebenfalls dort aufgeführten und bereits erwähnten Maßstab abhängig. 
 
 \begin{figure}
@@ -395,7 +397,7 @@ Die geladenen Marker mit der ID $>$ 100 werden im Anschluss gelöscht. Nach Been
 \section{Tracking-Anwendung} \label{sec:Tracking}\todo[inline, color=green]{Vera}
 \todo[inline, color=red]{Laura}
 Für das Tracking und die Positionsbestimmung der Würfel-Marker (vgl. Abschnitt~\ref{sec:WürfelMarker}) wurde ein Programm entwickelt, welches alle erforderlichen Ressourcen und Funktionen bereit stellt und verknüpft. Zunächst muss die Initialisierung und der Zugriff auf die \textit{uEye}-Kamera (vgl. Abschnitt~\ref{sec:uEye}) ermöglicht werden. Im Anschluss ist das Erstellen beziehungsweise das Laden aller relevanten Kalibrierungsinformationen (vgl. Abschnitt~\ref{sec:calib}) für einen korrekten Tracking Prozess erforderlich. Nach erfolgreichem Abschluss beider Schritte wird das Tracking der \textit{AruCo}-Marker und der grünen Rechtecke ausgeführt. Dies wird in Kapitel~\ref{sec:MarkerDetektion} beschrieben. Die sich anschließende Verwaltung der registrierten und detektierten Würfel-Marker kann in Abschnitt~\ref{sec:trackAndReg} nachvollzogen werden. Bei Projektbeginn war es ursprünglich geplant ein \textit{markerless Tracking} zu implementieren. Doch auf Grund der unvermeidlichen längerfristigen Verdeckungen von Würfel-Marker und deren texturarmen Oberfläche musste darauf verzichtet werden.
-Alle Schritte die der Kalibrierung folgen werden in einer Endlosschleife für jeden Frame ausgeführt. Während einer Iteration wird auf das aktuelle Live Bild zugegriffen, alle Marker detektiert und verfolgt, sowie alle Resultate übertragen. Die Übertragung wurde wie in Kapitel~\ref{sec:Netzwerk} beschriebe per TCP realisiert und es gilt alle relevanten Daten der Marker Objekte (vgl. Abschnitt~\ref{sec:MarkerObjekte}) an den \textit{Unity}-Computer zu übermitteln. Die durchschnittliche Dauer einer Iteration dauert \textcolor{red}{$XXXXXX$}ms mit einer Framerate von \textcolor{red}{$XXXXXX$} fps. \todo{Vera: messen der Dauer und Framerate}
+Alle Schritte die der Kalibrierung folgen werden in einer Endlosschleife für jeden Frame ausgeführt. Während einer Iteration wird auf das aktuelle Live Bild zugegriffen, alle Marker detektiert und verfolgt, sowie alle Resultate übertragen. Die Übertragung wurde wie in Kapitel~\ref{sec:Netzwerk} beschriebe per TCP realisiert und es gilt alle relevanten Daten der Marker Objekte (vgl. Abschnitt~\ref{sec:MarkerObjekte}) an den \textit{Unity}-Computer zu übermitteln. Die  Tracking-Anwendung berechnet derzeit $21.7 \pm 1.6$ Iterationen pro Sekunde. Diese Messung wurde mit $500$ Stichproben bzw. Iterationen durchgeführt, während sechs Würfel-Marker vom System getrackt und die Daten an den \textit{Unity}-Computer per TCP übertragen wurden.
 
 Dieses Programm wurde in der IDE \textit{Visual Studio} (vgl. Abschnitt~\ref{sec:VisualStudio}) in der Programmiersprache $C++$ entwickelt. Für die Entwicklungen wurden die \textit{uEye}-SDK (vgl. Abschnitt~\ref{sec:uEye}), \textit{OpenCV} (vgl. Abschnitt~\ref{sec:OpenCV}), sowie die Standardbibliothek \textit{Winsock} zur Hilfe genommen. In den folgenden Abschnitten wird die Vorgehensweise und der Ablauf schrittweise und detailliert erklärt.
 
@@ -428,9 +430,10 @@ Im Live Modus werden die generierten Aufnahmen fortlaufend in der selben Speiche
 	\label{tab:UeyeParam}
 \end{table}
 
-\subsection{Kalibrierung}\label{sec:calib}\todo[inline, backgroundcolor=green]{Laura}
-\todo[inline, color=red]{Vera}
-Um das Ziel von \textit{MArC} zu erreichen, an den Positionen der Aluminiumwürfel im Arbeitsbereich in der virtuellen Realität von \textit{Unity} gerenderte Würfel darzustellen, muss das System kalibriert werden. \textcolor{red}{Evtl. besser:Um das Ziel von \textit{MArC} zu erreichen muss das System kalibriert werden um an den exakten Positionen der Aluminiumwürfel virtuelle Würfelobjekte mit Unity zurendern. } Die Kalibrierung hat zum Ziel, eine Koordinatentransformation zu finden, die Positionen im Kamerakoordinatensystem in das Unitykoordinatensystem transformiert.
+\subsection{Kalibrierung}\label{sec:calib}
+%\todo[inline, backgroundcolor=green]{geschrieben: Laura}
+%\todo[inline, color=red]{korrigiert:Vera}
+Um das Ziel von \textit{MArC} zu erreichen muss das System kalibriert werden, um an den exakten Positionen der Aluminiumwürfel virtuelle Würfelobjekte mit \textit{Unity} zu rendern. Die Kalibrierung hat zum Ziel, eine Koordinatentransformation zu finden, die Positionen im Kamerakoordinatensystem in das Unitykoordinatensystem transformiert.
 
 Zu diesem Zweck muss eine zweistufige Kalibrierung durchgeführt werden. Zunächst sorgt die Kamerakalibrierung dafür, dass Bildkoordinaten auf dem Sensor der Kamera in das 3D-Kamera-Koordinatensystem transformiert werden. Dafür wird sich einiger \textit{OpenCV}-Funktionen in Verbindung mit \textit{ArUco}-Markern bedient. Dieser Vorgang wird nachfolgend in~\ref{sec:camCalib} genauer beschrieben.\\
 Der nächste Schritt, die Kalibrierung des Arbeitsbereichs, bestimmt über Punkt-Korrespondenzen (vgl. Kapitel~\ref{sec:Korrespondenz})-- also in zwei verschiedenen Koordinatensystemen bekannte Punkte -- eine affine 3D-Transformation, welche die Abbildung vom Kamera-Koordinaten\-system auf das Unitykoordinatensystem ermöglicht. Dieser Kalibrierungsschritt wird nachfolgend in~\ref{sec:planeCalib} näher beschrieben.\\
@@ -438,8 +441,9 @@ Nach vollständiger Kalibrierung des Systems wird sowohl die Kamerakalibrierung,
 Die Beschreibung des Algorithmus in den nächsten beiden Kapiteln umfasst sowohl eine mathematische Darstellung, als auch eine Darstellung der konkreten Umsetzung in Quellcode. Letzteres ist bewusst kurz gehalten, da für die Umsetzung der einzelnen Teilschritte vorwiegend Methoden aus der \textit{OpenCV}-Library (vgl. Kapitel~\ref{sec:OpenCV}) benutzt worden sind. Alle Grundlegenden Definitionen für die Rechenschritte können in Kapitel~\ref{sec:DefKoords} nachgelesen werden. Die Schnittstelle in Form der \texttt{Calibration.cpp}-Klasse wird in Kapitel~\ref{sec:CalibSteuerung} eingeführt.\\
 Trotz einer sorgfältigen Umsetzung der in den nächsten beiden Kapiteln beschriebenen Kalibrierungsschritte, ist es nicht gelungen, den Aluminiumwürfel und den gerenderten Würfel vollständig zur Deckung zu bringen. Der entstandene Fehler sowie mögliche systembedingte Fehlerquellen werden in~\ref{sec:calibError} beschrieben. 
 
-\subsubsection{Korrespondierende Punktepaare} \label{sec:Korrespondenz} \todo[inline, color=green]{Laura}
-\todo[inline, color=red]{Vera}
+\subsubsection{Korrespondierende Punktepaare} \label{sec:Korrespondenz} 
+%\todo[inline, color=green]{geschrieben: Laura}
+%\todo[inline, color=red]{korrigiert: Vera}
 Im Zusammenhang mit der Kalibrierung des Systems von \textit{MaRC} werden von einem Marker Koordinaten in Bildkoordinaten und die entsprechenden Koordinaten in der Unitywelt benötigt. Hierbei spricht man von korrespondierenden Punkten. Genauer gesagt wird für diese Zwecke der Kalibrierungscontroller (vgl. Kapitel ~\ref{sec:calibController}) verwendet. Auf diesem befindet sich ein \textit{ArUco} Marker (vgl. Kapitel ~\ref{sec:aruco}). Dessen Mittelpunkt, also das \texttt{estimated\-Center}, kann für jede Position über das in Kapitel ~\ref{sec:ArucoMarkerTracking} beschriebene Trackingverfahren ermittelt werden und wird für jeden erkannten Marker auf Trackingseite abgespeichert. Dies geschieht bei der Kalibrierung immer, wenn der Trigger am Controller der \textit{HTC Vive} ausgelöst wird. Somit kann in \textit{Unity} zeitgleich die entsprechende Controller-Position abgespeichert werden. Eine Position liegt also sowohl in Bild- als auch in Unitykoordinaten vor (vgl. Tabelle ~\ref{tab:camCalibParam}).  
 
 \subsubsection{Definition der Koordinatensysteme} \label{sec:DefKoords} \todo[inline, backgroundcolor=green]{Laura}
@@ -492,15 +496,16 @@ Um die verschiedenen Koordinatensysteme bei den Ausführungen in den Kapiteln ~\
 		$\vv{u}$ & Sensor &$u$,$v$ & \\
 		\hline
 	\end{tabular}
-	\caption{Parameter und Berechnungsschritte der Kamera Kalibrierung.\cite{Meisel:77890}}
+	\caption{Parameter und Berechnungsschritte der Kamera Kalibrierung \cite{Meisel:77890}.}
 	\label{tab:camCalibParam}
 \end{table}
 
 
-\subsubsection{Kamerakalibrierung}\label{sec:camCalib}\todo[inline, backgroundcolor=green]{Laura}
-\todo[inline, color=red]{Vera}
+\subsubsection{Kamerakalibrierung}\label{sec:camCalib}
+%\todo[inline, backgroundcolor=green]{geschrieben: Laura}
+%\todo[inline, color=red]{korrigiert: Vera}
 Es gibt viele verschiedene wissenschaftliche Ausführungen über die Durchführung einer Kamerakalibrierung, wie z.B. \cite{5982395}, \cite{888718} und \cite{faugeras1993three}. Dabei unterscheidet man häufig zwischen automatischen und manuellen Kalibrierungen. Im Folgenden wird der Algorithmus zur Kamerakalibrierung des \textit{MArC} erläutert.  \\
-Im konkreten Fall soll die uEye-Kamera (vgl. Kapitel ~\ref{sec:uEye}), die für Tracking-Zwecke(vgl. Kapitel ~\ref{sec:Tracking}) an der Decke des Entwicklungsraums befestigt ist, kalibriert werden. Dies kann, wenn gewünscht bzw. benötigt, \textcolor{red}{, wenn gewünscht bzw. benötigt, kann auch weggelassen werden} zu Beginn der eigentlichen Anwendung durchgeführt werden. Dazu wird ein eigens für dieses Projekt angefertigter Schachbrett-Kalibrierungshelfer verwendet, der in Kapitel ~\ref{sec:SchachbrettKalib} beschrieben wird. Eine Beschreibung der genauen Durchführung der Kamerakalibrierung kann der ReadMe-Datei (vgl.~\ref{sec:readMe}) entnommen werden. Im Folgenden wird zunächst auf die mathematische Durchführung und dann auf die konkrete Umsetzung in Quellcode eingegangen.\\
+Im konkreten Fall soll die uEye-Kamera (vgl. Kapitel ~\ref{sec:uEye}), die für Tracking-Zwecke (vgl. Kapitel ~\ref{sec:Tracking}) an der Decke des Entwicklungsraums befestigt ist, kalibriert werden. Dies kann zu Beginn der eigentlichen Anwendung durchgeführt werden. Dazu wird ein eigens für dieses Projekt angefertigter Schachbrett-Kalibrierungshelfer verwendet, der in Kapitel ~\ref{sec:SchachbrettKalib} beschrieben wird. Eine Beschreibung der genauen Durchführung der Kamerakalibrierung kann der ReadMe-Datei (vgl.~\ref{sec:readMe}) entnommen werden. Im Folgenden wird zunächst auf die mathematische Durchführung und dann auf die konkrete Umsetzung in Quellcode eingegangen.\\
 
 \begin{description}
 \item[Mathematische Umsetzung:] In diesem Abschnitt werden die mathematischen Grundlagen der Kamerakalibrierung erläutert. Dabei wird sowohl auf die intrinsischen, als auch auf die extrinsischen Kameraparameter eingegangen. Es wird ebenso gezeigt, wie aus den Parametern eine geeignete Transformation von Kamerakoordinaten in Weltkoordinaten gebildet werden kann.\\
@@ -530,7 +535,7 @@ Die negative verkippte Kamerakonstante $-c^V$, die in Tabelle~\ref{tab:camCalibP
 \end{equation}
 
 Im zweiten Schritt wird im Allgemeinem die Linsenverzeichnung herausgerechnet. Im vorliegenden Fall wurde bewusst auf diesen Schritt verzichtet und die zugehörigen Entzerrungskoeffizienten werden für alle weiteren Berechnungen auf null gesetzt. Dieses Vorgehen wurde gewählt, da einige Tests gezeigt haben, dass die berechneten Entzerrungskoeffizienten stark voneinander abgewichen sind, obwohl dies beim Benutzen der gleichen Kameraeinstellungen und dem gleichen Objektiv nicht der Fall sein dürfte.\\
-Weil wie bereits beschrieben, die Linsenverzeichnung vernachlässigt wurde, kann man Schritt 1 und 2 zu einem Schritt zusammenfassen und vereinfacht darstellen. Dieser erste Schritt, also die Hauptpunktverschiebung und Bildebenenverkippung, lässt sich mit Hilfe der intrinsischen Kameramatrix $M_{intrinsisch}$ zusammenfassen \textcolor{red}{Werden die beiden nicht IN der Matrix zusammengefasst und ausgedrückt? Könnte evtl. verwirren, wenn man es ganz genau nimmt ;-).}. Diese beinhaltet neben den Brennweiten $f_u$ und $f_v$ noch die Koordinaten des Hauptpunktes $u^V$ und $v^V$ in Bildkoordinaten und hat somit vier Freiheitsgrade.
+Weil wie bereits beschrieben, die Linsenverzeichnung vernachlässigt wurde, kann man Schritt 1 und 2 zu einem Schritt zusammenfassen und vereinfacht darstellen. Dieser erste Schritt, also die Hauptpunktverschiebung und Bildebenenverkippung, lässt sich in der intrinsischen Kameramatrix $M_{intrinsisch}$ zusammenfassen und ausdrücken. Diese beinhaltet neben den Brennweiten $f_u$ und $f_v$ noch die Koordinaten des Hauptpunktes $u^V$ und $v^V$ in Bildkoordinaten und hat somit vier Freiheitsgrade.
 
 \begin{equation}
 \label{equ:intrinsic}
@@ -565,7 +570,7 @@ t_x & t_y & t_z
 ~ ~ ~ ~ ~t \in \mathbb{R}^{3x1} 
 \end{equation}
 
-Diese beiden Transformationen können wie in Formel~\ref{equ:extrinsic} zur extrinsischen Kameramatrix $M_{etrinsisch}$ zusammengefasst werden. Diese hat sechs Freiheitsgrade, nämlich drei für den Translationsvektor $t$ und drei für die Eulerwinkel der Rotationsmatrix $R$ für die dementsprechend gelten muss $R \in SO(3)$. \textcolor{red}{ectl. falsche Bezeichnung von SO oder ggf. einführen.}
+Diese beiden Transformationen können wie in Formel~\ref{equ:extrinsic} zur extrinsischen Kameramatrix $M_{etrinsisch}$ zusammengefasst werden. Diese hat sechs Freiheitsgrade, nämlich drei für den Translationsvektor $t$ und drei für die Eulerwinkel der Rotationsmatrix $R$ für die dementsprechend gelten muss $R \in SO(3)$. 
 
 \begin{equation}
 \label{equ:extrinsic}
@@ -596,8 +601,9 @@ An diesem Punkt hat man die Kamerakoordinaten vollständig in Weltkoordinaten ü
 Zu diesem Zeitpunkt sollte nun das Kamerakoordinatensystem mit dem Weltkoordinatensystem übereinstimmen und es kann sich im nächsten Schritt darum gekümmert werden, dass das Kamerakoordinatensystem verschoben und gedreht wird. Dieser Schritt und alle weiteren Schritte, die im Zusammenhang mit der Transformation von Kamerakoordinaten in Weltkoordinaten bzw. Weltkoordinaten in Unitykoordinaten stehen, werden in Kapitel~\ref{sec:planeCalib} erläutert. Hierbei sei noch einmal angemerkt, dass eine Kamerakalibrierung nur mit anschließender Kalibrierung des Arbeitsbereiches durchgeführt werden kann.
 
 
-\subsubsection{Kalibrierung des Arbeitsbereichs}\label{sec:planeCalib} \todo[inline, color=green]{Laura}
-\todo[inline, color=red]{Vera}
+\subsubsection{Kalibrierung des Arbeitsbereichs}\label{sec:planeCalib} 
+%\todo[inline, color=green]{geschrieben: Laura}
+%\todo[inline, color=red]{korrigert: Vera}
 Wie bereits beschrieben, kann eine Kalibrierung des Arbeitsbereichs entweder mit vorheriger Kamerakalibrierung oder einzeln durchgeführt werden. In letzterem Fall wird dann die zuletzt verwendete Kamerakalibrierung geladen (vgl. Abschnitt ~\ref{sec:saveCalib}. Die Durchführung der Kalibrierung wird in der ReadMe-Datei (vgl.~\ref{sec:readMe}) erläutert. Grob gesagt, werden per Knopfdruck am Kalibrierungscontroller (vgl. Abbildung~\ref{fig:KontrollerMarc}) $25$ seiner Positionen sowohl in Kamerakoordinaten, als auch in Unitykoordinaten gespeichert. Man erhält also $25$ korrespondierende Punktepaare (vgl. Kapitel ~\ref{sec:Korrespondenz}).\\
 Allgemein betrachtet hat die Arbeitsbereichskalibrierung zwei verschiedene Aufgaben: Zum einen wird hierbei ein Bereich festgelegt, indem die Objekte getrackt werden und zum anderen wird mittels der verschiedenen Positionen der Kalibrierungspunkte, die affine Transformationsmatrix bestimmt, die im weiteren Verlauf als Umrechnung zwischen Kamerakoordinaten und Unitykoordinaten fungiert. Beide Teilbereiche werden in den Absätzen "`Begrenzung des Arbeitsbereichs"' ~bzw. "`Affine Transformation"' ~weitergehend erläutert.
 
@@ -613,7 +619,7 @@ Allgemein betrachtet hat die Arbeitsbereichskalibrierung zwei verschiedene Aufga
 Für die Tracking-Anwendung reicht es aus, den 1. und 3. Punkt zu nehmen und damit ein Rechteck aufzuspannen. Dies geschieht in der \texttt{compute\-Plane\-Cali\-bration()}-Methode in der \texttt{Plane\-And\-Affine\-Calibration.cpp}-Klasse. Der so definierte Arbeitsbereich dient hier vor allem dazu, zu entscheiden, ob ein Marker noch im Anwendungsbereich ist und somit fortlaufend getrackt werden muss, oder ob er diesen Bereich verlassen hat und seine ID, sowie alle anderen Eigenschaften zurückgesetzt werden müssen (vgl. Kapitel ~\ref{sec:MarkerDetektion}). In Abbildung ~\ref{fig:DebugScreenshot} ist der so aufgespannte Arbeitsbereich rot dargestellt.\\
 Auf \emph{Unity}-Seite werden die gesamten ersten vier Punkte genutzt um den Arbeitsbereich festzulegen. Dies hat den Grund, dass der Arbeitsbereich bei der Simulation an allen vier Ecken durch kleine "`Winkel"', wie in Abbildung~\ref{fig:begrenzungArbeitsbereich} dargestellt, begrenzt wird. Zunächst war der Arbeitsbereich in der \emph{Unity}-Simulation ebenfalls nur durch zwei Punkte definiert, sodass der Bereich immer ein Rechteck auf dem Tisch darstellte. Es stellte sich jedoch heraus, dass ein im Kamerabild auf Tracking-Seite definiertes Rechteck übertragen auf die \emph{Unity}-Simulation nicht hinreichend genau als Rechteck auf dem Tisch abgebildet wurde. Dies führte dazu, dass Marker, die in der Simulationsanwendung noch innerhalb des Spielfelds zu sein schienen, auf Tracking-Seite bereits abgemeldet worden waren, oder umgekehrt. Um dieses Abbildungsproblem zu umgehen, wurden anschließend vier Punkte für die Definition des Arbeitsbereichs in der \emph{Unity}-Simulation verwendet. Der Nachteil hierbei ist, dass der Arbeitsbereich bei genauem Hinsehen nicht genau einem Rechteck entspricht, sondern eher einem Parallelogramm.
 
-\item[Affine Transformation] Die gesamten $25$ Controller-Positionen werden genutzt, um eine affine Transformation von Weltkoordinaten in Unitykoordinaten zu finden \textcolor{red}{hier wären noch mal die math. Bezeichnungen schön um den Bezug zwischen theo. und praxis herzustellen}. An dieser Stelle kann davon ausgegangen werden, dass die Mittelpunkte der \textit{ArUco} Marker über die in Kapitel ~\ref{sec:camCalib} beschriebene Transformation bereits in Weltkoordinaten vorliegen. Dabei werden die Position nicht wie bei der Begrenzung des Arbeitsbereichs für beide Systeme (Tracking und \textit{Unity}) getrennt verarbeitet, sondern sie werden als korrespondierende Punkte (vgl. Kapitel ~\ref{sec:Korrespondenz}) verstanden. Mit anderen Worten, soll in diesem Schritt des Algorithmus jeder dieser $25$ Punkte in Weltkoordinaten, möglichst fehlerfrei auf sein entsprechendes Pendant in Unitykoordinaten projiziert werden. \\
+\item[Affine Transformation] Die gesamten $25$ Controller-Positionen werden genutzt, um eine affine Transformation von Weltkoordinaten $\vv{x}$ in Unitykoordinaten $\vv{x}^U$ zu finden. An dieser Stelle kann davon ausgegangen werden, dass die Mittelpunkte der \textit{ArUco} Marker über die in Kapitel ~\ref{sec:camCalib} beschriebene Transformation bereits in Weltkoordinaten vorliegen. Dabei werden die Position nicht wie bei der Begrenzung des Arbeitsbereichs für beide Systeme (Tracking und \textit{Unity}) getrennt verarbeitet, sondern sie werden als korrespondierende Punkte (vgl. Kapitel ~\ref{sec:Korrespondenz}) verstanden. Mit anderen Worten, soll in diesem Schritt des Algorithmus jeder dieser $25$ Punkte in Weltkoordinaten, möglichst fehlerfrei auf sein entsprechendes Pendant in Unitykoordinaten projiziert werden. \\
 Es gilt also die in Gleichung ~\ref{equ:affin} der Vollständigkeit halber aufgeführte Matrix zu bestimmen. Da es geeignete Werte für $a, b, c$ und $d$, sowie die Translationsparameter $t_x$ und $t_y$ zu finden gilt, hat die gesuchte Transformation sechs Freiheitsgrade. Zur Abschätzung der bestmöglichen Matrix $M_{affin}$ eignet sich vor allem der \textit{RANSAC}-Algorithmus~\cite{articel:RANSAC}. Dieser wird ebenso für die in diesem Projekt verwendete \textit{OpenCV}-Methode \texttt{estimate\-Affine3D()} verwendet. Dieser Methode können alle $25$ korrespondierenden Punktepaare übergeben werden. 
 
 \begin{equation}
@@ -628,8 +634,9 @@ c & d & t_y \\
 \end{equation}
 \end{description}
 
-\subsubsection{Kalibrierungsfehler} \label{sec:calibError}\todo[inline, color=green]{Laura}
-\todo[inline, color=red]{Vera}
+\subsubsection{Kalibrierungsfehler} \label{sec:calibError}
+%\todo[inline, color=green]{geschrieben: Laura}
+%\todo[inline, color=red]{korrigiert: Vera}
 In den Kapiteln~\ref{sec:camCalib} und~\ref{sec:planeCalib} wird der Algorithmus zur Berechnung der Koordinatentransformation von Kamerakoordinaten in Unitykoordinaten beschrieben. Beim Benutzen des fertig kalibrierten System fällt jedoch auf, dass die Aluminiumwürfel nicht immer deckungsgleich mit ihrem gerenderten Pendant sind. Der beobachtete Fehler variiert bei jeder Kalibrierung. In Abbildung~\ref{fig:markierterFehler} wird ein Kalibrierungsfehler in vertretbarer Größenordnung gezeigt. Dieser ist weiß markiert. Im Idealfall würden die beiden weißen Kreise deckungsgleich sein. Wird ein deutlich größerer Fehler beobachtet, so ist es sinnvoll neu zu kalibrieren. Im Folgenden werden mögliche Gründe für die Positionsabweichung von dem Würfel-Marker und seinem virtuellen Marker diskutiert. \\
 Neben der Rechenungenauigkeit und Rundungsfehlern, die sich über die diversen Rechenschritte (vgl. Abschnitt~\ref{sec:camCalib} und ~\ref{sec:planeCalib}) hinweg summieren, sollen in diesem Kapitel systembedingte mögliche Fehlerquellen aufgeführt werden. Man kann davon ausgehen, dass sich der Fehler großteils durch Fehlerfortpflanzung \cite{schmalstieg2016augmented} ergibt.\\ 
 Aufgrund der Auflösung der für das Tracking genutzten \textit{IDS uEye}-Kamera (vgl. Abschnitt ~\ref{sec:uEye}) ist die Genauigkeit des Trackings begrenzt und die Positionen der Würfel-Marker können nicht beliebig genau ermittelt werden. Dieser Effekt wird durch Einflüsse wie z.B. Bildrauschen weiter verstärkt. Es ist also davon auszugehen, dass die Mittelpunkte der verfolgten Marker, die als ein Part in die korrespondierenden Punktepaare (vgl. Abschnitt~\ref{sec:Korrespondenz}) eingehen, schon einen gewissen Fehler aufweisen. \\
@@ -646,8 +653,9 @@ Verarbeitung entsteht. Solche Systemverzögerungen werden allerdings nur bei Bew
 
 
 
-\subsubsection{Schnittstelle der beiden Kalibrierung} \label{sec:CalibSteuerung}\todo[inline, backgroundcolor=green]{Laura und Vera}
-\todo[inline, color=red]{Laura}
+\subsubsection{Schnittstelle der beiden Kalibrierung} \label{sec:CalibSteuerung}
+%\todo[inline, backgroundcolor=green]{geschrieben: Laura und Vera}
+%\todo[inline, color=red]{korrigiert: Laura}
 Wie bereits erwähnt, dient die \texttt{Calibration.cpp}-Klasse als Schnittstelle für die Kamerakalibrierung (vgl. Abschnitt~\ref{sec:camCalib}) und die Arbeitsbereichskalibrierung (vgl. Abschnitt~\ref{sec:planeCalib}). Diese Schnittstelle stellt alle erforderlichen Funktionen für beide Kalibrierungen und die benötigten Zugriffe auf die generierten Daten zur Verfügung. 
 
 Die \texttt{run\-Pose\-Estimation()}-Methode ist zuständig für die Generierung der Kameramatrix \texttt{camMatrix}  ($M_{intrinsisch}$ aus Gleichung ~\ref{equ:intrinsic})  und die Koeffizienten zur Behebung der Linsenverzeichnung \texttt{distCoeffs}. Beide werden mit dem Modul \texttt{calib3D} der \textit{OpenCV} Bibliothek in der Klasse \texttt{calib\-With\-Chess\-board.cpp} berechnet und anschließend in der Methode \texttt{generate\-Cam\-Mat\-And\-Dist\-Mat()} der Klasse \texttt{Pose\-Esti\-mation.cpp} für die spätere  Verwendung gespeichert. \\
@@ -657,8 +665,9 @@ Wie in Kapitel ~\ref{sec:planeCalib} erklärt werden mittels der Arbeitsbereichs
 
 Die affine Transformation wird auf Grundlage der korrespondierenden Punktepaare (vgl. Abschnitt ~\ref{sec:Korrespondenz}) berechnet. Hierzu wird in der Methode \texttt{compute\-Affine\-Trans\-formation()} die Funktion \texttt{estimate\-Affine\-3D()} der \textit{OpenCV} Bibliothek aufgerufen, welche die affine Transformationsmatrix mit Hilfe des RANSAC-Algorithmus abschätzt~\cite{articel:RANSAC}.
 
-\subsubsection{Speichern und Laden der Kalibrierungen}\label{sec:saveCalib}\todo[inline, color=green]{Laura}
-\todo[inline, color=red]{Vera}
+\subsubsection{Speichern und Laden der Kalibrierungen}\label{sec:saveCalib}
+%\todo[inline, color=green]{geschrieben: Laura}
+%\todo[inline, color=red]{korrigiert: Vera}
 Sowohl die Kamerakalibrierung als auch die Arbeitsbereichskalibrierung werden automatisch nach der Erstellung abgespeichert. Das gibt dem Benutzer beim nächsten Ausführen des System die Möglichkeit, folgenden drei Möglichkeiten: 
 \begin{description}
 	\item[1. Beide Kalibrierungen durchführen]: In diesem Fall wird zunächst eine Kamerakalibrierung durchgeführt, wie sie in Kapitel ~\ref{sec:camCalib} beschrieben ist und anschließend wird eine Kalibrierung des Arbeitsbereiches (vgl. Kapitel ~\ref{sec:planeCalib}) vorgenommen. Alle daraus resultierenden Kamerakalibrierungs-Parameter werden mittels der \texttt{save\-Camera\-Params()}-Methode (vgl. \texttt{Pose\-Estimation.cpp}-Klasse) gespeichert. Die notwendigen Eckpunkte des Arbeitsbereichs werden direkt nach ihrer Erstellung über die \texttt{compute\-Plane\-Calibration()}-Methode abgespeichert und die affine Transformation wird über die \texttt{save\-Affine\-Transform()}-Methode (vgl. \texttt{Plane\-And\-Affine\-Calibration.cpp}-Klasse) in ein Textfile gesichert. Somit stehen alle benötigten Parameter - wenn gewünscht - für den nächsten Systemstart bereit.
@@ -729,7 +738,7 @@ o=p_{ul}-c_{RR}
 \textcolor{red}{Die Gleichung für u verstehe ich gerade nicht auf Anhieb. const?}
 
 
-Eine andere essentielle Komponente der Klasse sind die Transformationsvektoren $v_t$ (\texttt{tvec}), welche die Transformation jedes Markers vom Objektraum in den Kameraraum $K$ angeben. \textcolor{red}{Meinst du von Weltkoordinaten in Kamerakoordinaten? Wenn ja habe ich $v_t$ immer nur $t$ genannt}Diese Vektoren werden für die korrekte Abschätzung der Marker Position in der \textit{Unity}-Welt (vgl. Abschnitt ~\ref{sec:planeCalib}) benötigt und aus den vier äußeren Eckpunkten in der Methode \texttt{estimate\-Pose\-Single\-Markers()} aus der \textit{ArUco} Bibliothek angenähert. 
+Eine andere essentielle Komponente der Klasse sind die Transformationsvektoren $v_t$ (\texttt{tvec}), welche die Transformation jedes Markers vom Objektraum in den Kameraraum $K$ angeben. Diese Vektoren werden für die korrekte Abschätzung der Marker Position in der \textit{Unity}-Welt (vgl. Abschnitt ~\ref{sec:planeCalib}) benötigt und aus den vier äußeren Eckpunkten in der Methode \texttt{estimate\-Pose\-Single\-Markers()} aus der \textit{ArUco} Bibliothek angenähert. 
 
 \subsection{Tracking und Registrierung der Marker}\label{sec:trackAndReg}\todo[inline, color = green]{Vera}
 \todo[inline, color=red]{Laura}
