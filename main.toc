@@ -91,15 +91,15 @@
 \contentsline {paragraph}{Rechtliche Durchf\IeC {\"u}hrbarkeit}{72}{section*.133}
 \contentsline {paragraph}{Operationale Durchf\IeC {\"u}hrbarkeit}{72}{section*.134}
 \contentsline {paragraph}{Terminliche Durchf\IeC {\"u}hrbarkeit}{72}{section*.135}
-\contentsline {subsubsection}{\numberline {7.1.5}Projektauftragsformular}{73}{subsubsection.7.1.5}
-\contentsline {subsubsection}{\numberline {7.1.6}Projektorganisation}{73}{subsubsection.7.1.6}
-\contentsline {paragraph}{Leitung}{73}{section*.137}
-\contentsline {paragraph}{Team}{73}{section*.138}
-\contentsline {paragraph}{Infrastruktur}{73}{section*.139}
-\contentsline {subsection}{\numberline {7.2}Projektplanung}{73}{subsection.7.2}
-\contentsline {subsubsection}{\numberline {7.2.1}Arbeitspakete}{73}{subsubsection.7.2.1}
-\contentsline {subsubsection}{\numberline {7.2.2}Projektstrukturplan}{73}{subsubsection.7.2.2}
-\contentsline {subsubsection}{\numberline {7.2.3}Ablaufplan, Terminplan (Gantt Chart)}{76}{subsubsection.7.2.3}
+\contentsline {subsubsection}{\numberline {7.1.5}Projektauftragsformular}{72}{subsubsection.7.1.5}
+\contentsline {subsubsection}{\numberline {7.1.6}Projektorganisation}{74}{subsubsection.7.1.6}
+\contentsline {paragraph}{Leitung}{74}{section*.137}
+\contentsline {paragraph}{Team}{74}{section*.138}
+\contentsline {paragraph}{Infrastruktur}{74}{section*.139}
+\contentsline {subsection}{\numberline {7.2}Projektplanung}{74}{subsection.7.2}
+\contentsline {subsubsection}{\numberline {7.2.1}Arbeitspakete}{74}{subsubsection.7.2.1}
+\contentsline {subsubsection}{\numberline {7.2.2}Projektstrukturplan}{74}{subsubsection.7.2.2}
+\contentsline {subsubsection}{\numberline {7.2.3}Ablaufplan, Terminplan (Gantt Chart)}{74}{subsubsection.7.2.3}
 \contentsline {subsubsection}{\numberline {7.2.4}Kapazit\IeC {\"a}tsplan}{76}{subsubsection.7.2.4}
 \contentsline {subsubsection}{\numberline {7.2.5}Kostenplan}{76}{subsubsection.7.2.5}
 \contentsline {subsubsection}{\numberline {7.2.6}Qualit\IeC {\"a}tsplan}{76}{subsubsection.7.2.6}
