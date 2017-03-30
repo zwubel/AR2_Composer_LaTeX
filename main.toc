@@ -19,7 +19,7 @@
 \contentsline {subsubsection}{\numberline {3.1.5}Leap Motion Controller}{17}{subsubsection.3.1.5}
 \contentsline {subsubsection}{\numberline {3.1.6}W\IeC {\"u}rfel-Marker}{18}{subsubsection.3.1.6}
 \contentsline {subsubsection}{\numberline {3.1.7}Schachbrett-Kalibrierungshelfer zur Kamerakalibrierung}{19}{subsubsection.3.1.7}
-\contentsline {subsubsection}{\numberline {3.1.8}Marker und Halterung f\IeC {\"u}r Arbeitsbereichskalibrierung}{20}{subsubsection.3.1.8}
+\contentsline {subsubsection}{\numberline {3.1.8}Kalibrierungscontroller zur Arbeitsbereichskalibrierung}{20}{subsubsection.3.1.8}
 \contentsline {subsection}{\numberline {3.2}Obsolete Hardware}{21}{subsection.3.2}
 \contentsline {subsubsection}{\numberline {3.2.1}Ovrvision Pro}{22}{subsubsection.3.2.1}
 \contentsline {subsubsection}{\numberline {3.2.2}Webcam}{23}{subsubsection.3.2.2}
@@ -38,11 +38,11 @@
 \contentsline {subsection}{\numberline {4.2}Systemvoraussetzungen}{30}{subsection.4.2}
 \contentsline {subsection}{\numberline {4.3}Netzwerk}{30}{subsection.4.3}
 \contentsline {subsubsection}{\numberline {4.3.1}Serverseitige Netzwerkanbindung}{31}{subsubsection.4.3.1}
-\contentsline {paragraph}{Aufbauen der Netzwerkverbindung}{31}{section*.88}
-\contentsline {paragraph}{Daten\IeC {\"u}bertragung}{31}{section*.89}
+\contentsline {paragraph}{Aufbauen der Netzwerkverbindung}{31}{section*.84}
+\contentsline {paragraph}{Daten\IeC {\"u}bertragung}{31}{section*.85}
 \contentsline {subsubsection}{\numberline {4.3.2}Clientseitige Netzwerkanbindung}{33}{subsubsection.4.3.2}
-\contentsline {paragraph}{Aufbauen der Netzwerkverbindung}{33}{section*.92}
-\contentsline {paragraph}{Daten\IeC {\"u}bertragung}{33}{section*.93}
+\contentsline {paragraph}{Aufbauen der Netzwerkverbindung}{33}{section*.88}
+\contentsline {paragraph}{Daten\IeC {\"u}bertragung}{33}{section*.89}
 \contentsline {subsection}{\numberline {4.4}Starten des Systems}{35}{subsection.4.4}
 \contentsline {subsection}{\numberline {4.5}Men\IeC {\"u}f\IeC {\"u}hrung}{35}{subsection.4.5}
 \contentsline {subsubsection}{\numberline {4.5.1}Men\IeC {\"u}s}{35}{subsubsection.4.5.1}
@@ -54,11 +54,11 @@
 \contentsline {subsection}{\numberline {4.7}Tischmen\IeC {\"u}}{43}{subsection.4.7}
 \contentsline {subsubsection}{\numberline {4.7.1}Szenen-Management}{43}{subsubsection.4.7.1}
 \contentsline {subsubsection}{\numberline {4.7.2}Speichern von Szenen}{45}{subsubsection.4.7.2}
-\contentsline {paragraph}{Dateiaufbau einer gespeicherten Szene}{45}{section*.128}
-\contentsline {paragraph}{Vorgehen der Speicherung}{46}{section*.129}
-\contentsline {paragraph}{Darstellen von gespeicherten Szenen}{46}{section*.130}
+\contentsline {paragraph}{Dateiaufbau einer gespeicherten Szene}{45}{section*.124}
+\contentsline {paragraph}{Vorgehen der Speicherung}{46}{section*.125}
+\contentsline {paragraph}{Darstellen von gespeicherten Szenen}{46}{section*.126}
 \contentsline {subsubsection}{\numberline {4.7.3}Laden von Szenen}{46}{subsubsection.4.7.3}
-\contentsline {paragraph}{Vorgehen beim Laden}{47}{section*.133}
+\contentsline {paragraph}{Vorgehen beim Laden}{47}{section*.129}
 \contentsline {subsubsection}{\numberline {4.7.4}Match Modus}{47}{subsubsection.4.7.4}
 \contentsline {section}{\numberline {5}Tracking-Anwendung}{48}{section.5}
 \contentsline {subsection}{\numberline {5.1}uEye Ansteuerung}{49}{subsection.5.1}
@@ -86,16 +86,16 @@
 \contentsline {subsubsection}{\numberline {7.1.2}Projektziele und Anforderungen}{71}{subsubsection.7.1.2}
 \contentsline {subsubsection}{\numberline {7.1.3}L\IeC {\"o}sungskonzept}{71}{subsubsection.7.1.3}
 \contentsline {subsubsection}{\numberline {7.1.4}Durchf\IeC {\"u}hrbarkeitsanalyse}{72}{subsubsection.7.1.4}
-\contentsline {paragraph}{Technologische Durchf\IeC {\"u}hrbarkeit}{72}{section*.173}
-\contentsline {paragraph}{\IeC {\"O}konomische Durchf\IeC {\"u}hrbarkeit}{73}{section*.174}
-\contentsline {paragraph}{Rechtliche Durchf\IeC {\"u}hrbarkeit}{73}{section*.175}
-\contentsline {paragraph}{Operationale Durchf\IeC {\"u}hrbarkeit}{73}{section*.176}
-\contentsline {paragraph}{Terminliche Durchf\IeC {\"u}hrbarkeit}{73}{section*.177}
+\contentsline {paragraph}{Technologische Durchf\IeC {\"u}hrbarkeit}{72}{section*.169}
+\contentsline {paragraph}{\IeC {\"O}konomische Durchf\IeC {\"u}hrbarkeit}{73}{section*.170}
+\contentsline {paragraph}{Rechtliche Durchf\IeC {\"u}hrbarkeit}{73}{section*.171}
+\contentsline {paragraph}{Operationale Durchf\IeC {\"u}hrbarkeit}{73}{section*.172}
+\contentsline {paragraph}{Terminliche Durchf\IeC {\"u}hrbarkeit}{73}{section*.173}
 \contentsline {subsubsection}{\numberline {7.1.5}Projektauftragsformular}{74}{subsubsection.7.1.5}
 \contentsline {subsubsection}{\numberline {7.1.6}Projektorganisation}{74}{subsubsection.7.1.6}
-\contentsline {paragraph}{Leitung}{74}{section*.181}
-\contentsline {paragraph}{Team}{74}{section*.182}
-\contentsline {paragraph}{Infrastruktur}{74}{section*.183}
+\contentsline {paragraph}{Leitung}{74}{section*.177}
+\contentsline {paragraph}{Team}{74}{section*.178}
+\contentsline {paragraph}{Infrastruktur}{74}{section*.179}
 \contentsline {subsection}{\numberline {7.2}Projektplanung}{74}{subsection.7.2}
 \contentsline {subsubsection}{\numberline {7.2.1}Arbeitspakete}{76}{subsubsection.7.2.1}
 \contentsline {subsubsection}{\numberline {7.2.2}Projektstrukturplan}{76}{subsubsection.7.2.2}
@@ -106,17 +106,18 @@
 \contentsline {subsection}{\numberline {7.3}Projektdurchf\IeC {\"u}hrung}{78}{subsection.7.3}
 \contentsline {subsubsection}{\numberline {7.3.1}Kommuniktion im Team und nach Au\IeC {\ss }en}{78}{subsubsection.7.3.1}
 \contentsline {subsubsection}{\numberline {7.3.2}Ma\IeC {\ss }nahmen zur Problemvermeidung}{78}{subsubsection.7.3.2}
-\contentsline {paragraph}{Ausfall des Planungstools Bitrix24}{79}{section*.195}
-\contentsline {paragraph}{Ausfall von Hardware}{79}{section*.196}
-\contentsline {paragraph}{Markerless Tracking}{80}{section*.197}
+\contentsline {paragraph}{Ausfall des Planungstools Bitrix24}{79}{section*.191}
+\contentsline {paragraph}{Ausfall von Hardware}{79}{section*.192}
+\contentsline {paragraph}{Markerless Tracking}{80}{section*.193}
 \contentsline {subsection}{\numberline {7.4}Projektabschluss}{80}{subsection.7.4}
 \contentsline {subsubsection}{\numberline {7.4.1}Abschlusspr\IeC {\"a}sentation}{80}{subsubsection.7.4.1}
 \contentsline {subsubsection}{\numberline {7.4.2}Video}{80}{subsubsection.7.4.2}
 \contentsline {subsection}{\numberline {7.5}Reflexion}{80}{subsection.7.5}
 \contentsline {section}{\numberline {8}Zusammenfassung}{82}{section.8}
 \contentsline {section}{\numberline {9}Steckbrief}{84}{section.9}
-\contentsline {section}{\numberline {10}Anhang}{84}{section.10}
-\contentsline {subsection}{\numberline {10.1}\emph {MArC} ReadMe-Datei}{84}{subsection.10.1}
-\contentsline {subsection}{\numberline {10.2}\texttt {startTCPServer()}-Methode}{92}{subsection.10.2}
-\contentsline {subsection}{\numberline {10.3}\texttt {getPointerOfMarkerVec()}-Methode}{92}{subsection.10.3}
-\contentsline {subsection}{\numberline {10.4}\texttt {interpretTCPMarkerData()}-Methode}{93}{subsection.10.4}
+\contentsline {section}{\numberline {10}Anhang}{85}{section.10}
+\contentsline {subsection}{\numberline {10.1}Schachbrett zur Kamerakalibrierung}{85}{subsection.10.1}
+\contentsline {subsection}{\numberline {10.2}\emph {MArC} ReadMe-Datei}{85}{subsection.10.2}
+\contentsline {subsection}{\numberline {10.3}\texttt {startTCPServer()}-Methode}{93}{subsection.10.3}
+\contentsline {subsection}{\numberline {10.4}\texttt {getPointerOfMarkerVec()}-Methode}{93}{subsection.10.4}
+\contentsline {subsection}{\numberline {10.5}\texttt {interpretTCPMarkerData()}-Methode}{94}{subsection.10.5}
