@@ -48,7 +48,7 @@ Die Systemvoraussetzungen für \emph{MArC} sind in der ReadMe-Datei beschrieben,
 
 \subsection{Netzwerk}\label{sec:netzwerk}\todo[inline, color=green]{Lukas und Laura}
 \todo[inline, color=red]{Paul}
-Die in Kapitel ~\ref{sec:Winsock} beschriebene  \textcolor{red}{Winsocket} API stellt die Möglichkeit bereit, den Datentransport mittels TCP oder UDP zu verwenden. Für \emph{MArC} wurde ein TCP-Socket-Netzwerk bestehend aus (genau) einem Server und (genau) einem Client verwendet, weil der der in~\ref{sec:Netzwerk} beschriebene Fehlerschutz des TCP ausgenutzt werden sollte, um nicht manuell überprüfen zu müssen, ob Daten fehlerfrei übertragen wurden. Da die zu übertragende Datenmenge von \emph{MArC} hinreichend klein -- und von konstanter Größe -- ist, wurde die etwas höhere Geschwindigkeit durch den geringeren Overhead einer UDP-Socket-Verbindung als unnötig erachtet. \textcolor{red}{Kann man den Overhead prozentual angeben?} \\
+Die in Kapitel ~\ref{sec:Winsock} beschriebene  \texttt{Winsock}-API stellt die Möglichkeit bereit, den Datentransport mittels TCP oder UDP zu verwenden. Für \emph{MArC} wurde ein TCP-Socket-Netzwerk bestehend aus (genau) einem Server und (genau) einem Client verwendet, weil der der in~\ref{sec:Netzwerk} beschriebene Fehlerschutz des TCP ausgenutzt werden sollte, um nicht manuell überprüfen zu müssen, ob Daten fehlerfrei übertragen wurden. Da die zu übertragende Datenmenge von \emph{MArC} hinreichend klein -- und von konstanter Größe -- ist, wurde die etwas höhere Geschwindigkeit durch den geringeren Overhead einer UDP-Socket-Verbindung als unnötig erachtet.\\
 In den beiden folgenden Abschnitten wird die Umsetzung der Netzwerk-Endpunkte an den beiden für \emph{MArC} verwendeten Computern beschrieben.
 \subsubsection{Serverseitige Netzwerkanbindung}\label{sec:serverClient}\todo[inline, color=green]{Laura}
 \todo[inline, color=red]{Lukas}
@@ -79,7 +79,7 @@ Während der Kalibrierung des Arbeitsbereichs (vgl. Abschnitt~\ref{sec:planeCali
 
 
 
-\subsubsection{Client seitige Netzwerkanbindung}\todo[inline, color=green]{Lukas}
+\subsubsection{Clientseitige Netzwerkanbindung}\todo[inline, color=green]{Lukas}
 \todo[inline, color=red]{Laura}
 \paragraph{Aufbauen der Netzwerkverbindung}
 Das Aufbauen der Netzwerkverbindung vom Client zum Server, also von der \textit{Unity}-Simulation zur Tracking-Anwendung, geschieht mit Hilfe der von Winsock (vgl. Abschnitt~\ref{sec:Winsock}) bereitgestellten Klasse \texttt{System.Net.Sockets.TcpClient} wie in Quellcode-Auszug~\ref{lst:setupSocket} dargestellt. Die Netzwerkverbindung wird zu einer fest vorgegebenen IP-Adresse hergestellt.
@@ -103,7 +103,7 @@ Beim Interpretieren der Marker werden zunächst die ersten vier Bytes an der von
 
 \subsection{Starten des Systems}\todo[inline, color=green]{Lukas}
 \todo[inline, color=red]{Laura}
-Nachdem sichergestellt wurde, dass alle in~\ref{sec:sysVor} beschriebenen Voraussetzungen bestehen, kann das System gestartet werden, indem zunächst die Tracking-Anwendung (auf dem einen Computer, vgl.~\ref{sec:TrackingComp}) und anschließend die aus Unity heraus erstellte Anwendung (auf dem anderen Computer, vgl.~\ref{sec:UnityComp}) gestartet wird. Auf letzterem Computer beginnt darauffolgend die Menüführung, welche in ~\ref{sec:menu} beschrieben ist. \textcolor{red}{War es nicht so, dass doPoseCalibInVS (oder war es SelectCalibrationTarget) gar nicht angezeigt werde konnte? Wäre zu überlegen das dann raus zu lassen.}
+Nachdem sichergestellt wurde, dass alle in~\ref{sec:sysVor} beschriebenen Voraussetzungen bestehen, kann das System gestartet werden, indem zunächst die Tracking-Anwendung (auf dem einen Computer, vgl.~\ref{sec:TrackingComp}) und anschließend die aus \emph{Unity} heraus erstellte Anwendung (auf dem anderen Computer, vgl.~\ref{sec:UnityComp}) gestartet wird. Auf letzterem Computer beginnt darauffolgend die Menüführung, welche in ~\ref{sec:menu} beschrieben ist.
 \subsection{Menüführung}\label{sec:menu}\todo[inline, color=green]{Lukas}
 \todo[inline, color=red]{Laura}
 Die Menüführung dient dazu, den Benutzer durch alle notwendigen Schritte zu leiten, die vor dem Starten der eigentlichen Simulation erforderlich sind. Im nachfolgenden Abschnitt~\ref{sec:menus} werden alle verfügbaren Menüs der Anwendung aufgelistet und kurz beschrieben, während im Abschnitt~\ref{sec:menuAblauf} der Ablauf der Menüführung erläutert wird.
@@ -240,7 +240,7 @@ Sofern der \textit{HTC Vive}-Controller beim Aufruf von \texttt{doPlane\-Calibra
 
 \subsection{Kontextmenü}\label{sec:kontextMenu}\todo[inline, color=green]{Laura und Lukas}
 \todo[inline, color=red]{Paul}
-Die virtuellen Objekte, die den in Kapitel~\ref{sec:WürfelMarker} beschriebenen Aluminiumwürfeln zugeordnet werden, sind zunächst würfelförmig und können zur Laufzeit der Anwendung vom Benutzer verschoben, rotiert und skaliert werden.\textcolor{red}{Diese virtuellen Objekte repräsentieren bei MArC die Gebäude}.  Die Verschiebung und Rotation kann über eine entsprechende Veränderung der Lage des realen Marker-Würfels geschehen. Für die Skalierung kann wie in Kapitel~\ref{sec:KontextMenuSwitch} beschrieben das sogenannte Kontextmenü aufgerufen werden. Dieses beinhaltet neben den Marker Handles (vgl. Kapitel~\ref{sec:markerHandles}) zur dreidimensionalen Skalierung des virtuellen Objekts auch eine Art Übersichtstafel der Gebäudeeigenschaften des zugehörigen virtuellen Markers. Beispiele für Letzteres sind in Abbildung~\ref{fig:KontextmenuExamples} zu sehen. Im Folgenden wird, wenn nicht anders erwähnt, die Übersichtstafel mit \glqq Kontextmenü\grqq{} bezeichnet. Die Idee des Kontextmenüs ist aus dem Treffen mit den Mitarbeitern eines Architekturbüros zu Beginn des Projektes entstanden (vgl. Abschnitt ~\ref{sec:problemanalyse}). Diese hatten eine detaillierte Beschreibung der einzelnen Gebäude als sinnvoll und nützlich für die Umsetzung einer Anwendung wie den \textit{MArC} beschrieben.\\
+Die virtuellen Objekte, die den in Kapitel~\ref{sec:WürfelMarker} beschriebenen Aluminiumwürfeln zugeordnet werden, sind zunächst würfelförmig und können zur Laufzeit der Anwendung vom Benutzer verschoben, rotiert und skaliert werden. Diese virtuellen Objekte repräsentieren bei \emph{MArC} die Gebäude. Die Verschiebung und Rotation kann über eine entsprechende Veränderung der Lage des realen Marker-Würfels geschehen. Für die Skalierung kann wie in Kapitel~\ref{sec:KontextMenuSwitch} beschrieben das sogenannte Kontextmenü aufgerufen werden. Dieses beinhaltet neben den Marker Handles (vgl. Kapitel~\ref{sec:markerHandles}) zur dreidimensionalen Skalierung des virtuellen Objekts auch eine Art Übersichtstafel der Gebäudeeigenschaften des zugehörigen virtuellen Markers. Beispiele für Letzteres sind in Abbildung~\ref{fig:KontextmenuExamples} zu sehen. Im Folgenden wird, wenn nicht anders erwähnt, die Übersichtstafel mit \glqq Kontextmenü\grqq{} bezeichnet. Die Idee des Kontextmenüs ist aus dem Treffen mit den Mitarbeitern eines Architekturbüros zu Beginn des Projektes entstanden (vgl. Abschnitt ~\ref{sec:problemanalyse}). Diese hatten eine detaillierte Beschreibung der einzelnen Gebäude als sinnvoll und nützlich für die Umsetzung einer Anwendung wie den \textit{MArC} beschrieben.\\
 Da zu Beginn der Anwendung im \texttt{SetScale}-Menü (vgl. Kapitel~\ref{sec:menuAblauf}) der Maßstab der Architekturszene vom Benutzer ausgewählt wird und zusätzlich wie beschrieben eine Skalierung der einzelnen Objekte durchgeführt werden kann, muss sich der Inhalt des Kontextmenüs dynamisch ändern können. Die dazu notwendigen Berechnungen der Gebäudeeigenschaften sind in Kapitel~\ref{sec:KontextMenuInhalt} erläutert. 
 
 \begin{figure}[H]
@@ -254,7 +254,7 @@ Da zu Beginn der Anwendung im \texttt{SetScale}-Menü (vgl. Kapitel~\ref{sec:men
 \todo[inline, color=red]{Lukas}
 Jeder Marker verfügt über die Möglichkeit in seiner Größe in der X-, Y- und Z-Achse verändert zu werden. Diese Anfasser sind sichtbar, wenn das Kontextmenü angezeigt wird (vgl. Abschnitt~\ref{sec:kontextMenu}. Die Anfasser bestehen aus Zylindern, die mit einem Collider versehen wurden. Die X- und Y-Achse wird betätigt, indem der Benutzer mit einem Finger in den jeweiligen Anfasser hineinfasst und dann in die entsprechende Richtung zieht. Die Größe in Z-Richtung wird über Schaltflächen gesteuert, die mit "`$+$"' und "`$-$"' beschriftet sind. Drückt der Benutzer diese Schaltflächen, wird die Höhe des Gebäudes um je ein Stockwerk erhöht oder verringert.
 
-Die Interaktion der Anfasser mit der Hand des Nutzers wurde über das \emph{Leap Motion} Handmodell umgesetzt. Dieses besitzt Collider, die an den Fingern des Modells angebracht sind und sich mit der Hand des Nutzers mitbewegen. Berührt die Hand nun einen der Anfasser, wird dieser Collider des Anfassers "`angesprochen"'. Im Falle der X-, und Y-Anfasser wird in der \texttt{update()}-Funktion des Skripts \texttt{contextMenuTrigger.cs} ein Vektor berechnet, der die Start und Endposition der Bewegung miteinander verrechnet. Im Falle einer Bewegung in X-Richtung wird die sogenannte "`localDifference"'\textcolor{red}{heißt die Variable so? Dann in texttt setzen, sonst würde ich es anders nennen.} berechnet, dies ist der Abstand des Fingers zur Position des Markers. Die eigentliche Skalierung wird dann wie folgt berechnet:
+Die Interaktion der Anfasser mit der Hand des Nutzers wurde über das \emph{Leap Motion} Handmodell umgesetzt. Dieses besitzt Collider, die an den Fingern des Modells angebracht sind und sich mit der Hand des Nutzers mitbewegen. Berührt die Hand nun einen der Anfasser, wird dieser Collider des Anfassers "`angesprochen"'. Im Falle der X-, und Y-Anfasser wird in der \texttt{update()}-Funktion des Skripts \texttt{contextMenuTrigger.cs} ein Vektor berechnet, der die Start und Endposition der Bewegung miteinander verrechnet. Im Falle einer Bewegung in X-Richtung wird die sogenannte \texttt{localDifference} berechnet, dies ist der Abstand des Fingers zur Position des Markers. Die eigentliche Skalierung wird dann wie folgt berechnet:
 
  \begin{lstlisting}
 pos = (startPosition.x - localDifference.y) / 2, startPosition.y, startPosition.z)
@@ -298,11 +298,17 @@ Es ist natürlich denkbar die im Kontextmenü angegebenen Eigenschaften eines Ob
 
 \subsection{Tischmenü}\label{sec:TableMenü}\todo[inline, color=green]{Paul}
 \todo[inline, color=red]{Lukas}
-\textcolor{red}{Ich denke es wäre gut, hier noch auf eine Abbildung zu verweisen, wo man das Tischmenü sieht.}
-Zur intuitiven Bedienung von \textit{MArC} wurden die Menüs, die während der Laufzeit benutzt werden können, auf dem Arbeitstisch platziert. Dies hat den Vorteil, dass zum einen diese Menüs permanent sichtbar sein können, ohne den Nutzer während der Arbeit zu stören und zum anderen ein haptisches Feedback bei der Nutzung möglich ist.\\
+Zur intuitiven Bedienung von \textit{MArC} wurden die Menüs, die während der Laufzeit benutzt werden können, auf dem Arbeitstisch platziert. Dies hat den Vorteil, dass zum einen diese Menüs permanent sichtbar sein können, ohne den Nutzer während der Arbeit zu stören und zum anderen ein haptisches Feedback bei der Nutzung möglich ist. Das Tischmenü ist in Abbildung \ref{fig:Tischmenue} zu sehen.\\
 Möchte der Nutzer die Menüs bedienen, so drückt er mit dem Finger, der durch den \textit{Leap Motion} Controller verfolgt wird auf die Buttons und damit gleichzeitig auf den Tisch. Dies erleichtert die Benutzung deutlich im Vergleich zur Nutzung von Menüs die im Raum schweben.\\
 Das Tischmenü und dessen Funktionen werden nachfolgend im Detail erläutert.
 
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{Bilder/Tablemenu}
+	\caption{Das Tischmenü von MArC.}
+	\label{fig:Tischmenue}
+\end{figure}
 \subsubsection{Szenen-Management}\todo[inline, color=green]{Paul}
 \todo[inline, color=red]{Lukas}
 Eine Anforderung an das System war, dass der Nutzer erstellte Szenen abspeichern und wieder aufrufen können soll. Anhand des Tischmenüs ist dies möglich. Die Funktionen des Menüs sind
@@ -314,13 +320,13 @@ Eine Anforderung an das System war, dass der Nutzer erstellte Szenen abspeichern
 
 \subsubsection{Speichern von Szenen}\label{Speichern}\todo[inline, color=green]{Paul}
 \todo[inline, color=red]{Lukas}
-Möchte der Nutzer eine Szene speichern, so drückt er mit dem Finger auf den Button "`Save"'.\textcolor{red}{Auch hier wäre eine Referenz auf eine Abbildung gut.} \textit{MArC} speichert die aktuelle Szene automatisch im Ordner \texttt{\textbackslash Resources\textbackslash saves\textbackslash} mit einem Dateinamen, der sich aus dem Speicherzeitpunkt und~-datum wie folgt zusammensetzt:
+Möchte der Nutzer eine Szene speichern, so drückt er mit dem Finger auf den Button "`Save"' (vgl. Abbildung \ref{fig:Tischmenue}). \textit{MArC} speichert die aktuelle Szene automatisch im Ordner \texttt{\textbackslash Resources\textbackslash saves\textbackslash} mit einem Dateinamen, der sich aus dem Speicherzeitpunkt und~-datum wie folgt zusammensetzt:
 \begin{center}
 	\texttt{Tag-Monat-Jahr-Stunde-Minute-Sekunde.xml}
 \end{center}
 Durch diese Namenskonvention können später Dateien identifiziert werden, die auch nur Sekunden hintereinander gespeichert wurde.\\
 Da innerhalb von \textit{Unity} eine hierarchische Anordnung sämtlicher Elemente in Form eines Szenegraphen angewendet wird, bot sich eine Speicherung der Daten ebenfalls hierarchisch in Form eines XML Dokumentes an.\\
-Die \textit{Extensible Markup Language (XML)} beschreibt eine Klasse von Datenobjekten (XML Documents) und ermöglicht das hierarchische Abspeichern von geparsten oder ungeparsten Daten.\textcolor{red}{Die Definition würde ich noch mal überarbeiten, wird mir zumindest nicht ganz klar, was XML kurz gesagt ist.} \cite{bray1998extensible} In \textit{C\#} sind Verarbeitungsklassen bereits implementiert. Mittels dieser sogenannten \textit{XML Prozessoren} wird ein Datenzugriff erleichtert.
+Die \textit{Extensible Markup Language (XML)} beschreibt eine Klasse von Datenobjekten (XML Documents) und ermöglicht das hierarchische Abspeichern von geparsten oder ungeparsten Daten in Form von Textdateien. Die erzeugten Textdateien sind für den Menschen lesbar und die gespeicherte Hierarchie erfassbar. Details zu \textit{XML} können in Quelle \cite{bray1998extensible} nachgelesen werden. In \textit{C\#} sind Verarbeitungsklassen bereits implementiert. Mittels dieser sogenannten \textit{XML Prozessoren} wird ein Datenzugriff erleichtert.
 
 \paragraph{Dateiaufbau einer gespeicherten Szene}
 Das gesamte Dokument wird mit einem Hauptknoten \texttt{$<$AR2\_COMPOSERSCENE$>$} umspannt. Innerhalb diesem wird mit \texttt{$<$time$>$}
@@ -358,7 +364,7 @@ Hat diese Funktion durch alle Kindknoten bearbeitet, wird zuletzt noch die Skali
 Das Laden der Szenen ist ein komplexer Vorgang. Dies kommt daher, dass auf der einen Seite Markerdaten in der zu öffnenden XML-Datei gespeichert sind und geladen werden müssen. Auf der anderen Seite gibt es unter Umständen noch Marker, die im Arbeitsbereich liegen und aktuell verfolgt werden. Beide Informationsströme müssen beim laden der Szene berücksichtigt werden und korrekt verarbeitet werden. Ein einfaches übertragen von Positions-, Rotations- und Skalierungsdaten auf vorhandene Markerobjekte ist nicht möglich, da diese permanent durch den Netzwerk-Datenstrom der Tracking-Anwendung überschrieben werden würden.
 \paragraph{Vorgehen beim Laden} Durch Auswählen einer XML-Datei im Tischmenü mit dem Finger wird das Skript \texttt{open.cs} gestartet. Dieses setzt zuerst den Pfad aus dem aktuellem Applikationspfad mit dem Unterordner \texttt{Resources} und \texttt{saves} zusammen und fügt den Namen der zu öffnenden XML-Datei aus dem Tischmenü hinzu. Anschließend wird die Datei eingelesen, die internen Knoten liegen dann in einer Form einer \texttt{XmlNodeList} bereit.\\ 
 Darauffolgend wird die Funktion \texttt{crawlXML()} aufgerufen. Da aus organisatorischen Gründen alle Marker in der Datei gespeichert werden müssen, wird die \texttt{XmlNodeList} bearbeitet und geprüft, welche der Marker als "`aktiv"' gespeichert wurden. Aktive Marker sind solche, die zum Zeitpunkt des Speichern sichtbar waren.\\
-Alle aktiven Marker werden in der \texttt{ArrayList} \texttt{activeMarkerIDs} gespeichert. Diese \texttt{ArrayList} wird, nachdem sie vollständig gefüllt ist, bearbeitet: Für jeden Eintrag, also jeden aktiven Marker wird ein Vorlagemarker\textcolor{red}{Vll. eher Platzhalter-Marker? Oder versteh ich's falsch?} instantiiert. Dies ist ein Marker, der bereits alle Komponenten die benötigt werden angeheftet hat\textcolor{red}{Hier würde ich Komponenten noch näher beschreiben, nämlich, dass sich das auf die Marker als GameObjects bezieht} und dem nur noch die Parameter zugewiesen werden müssen. Jeder Marker bekommt anschließend \texttt{Marker + (Original-ID + 100)} als Namen zugewiesen. Dies ist wichtig um später die aus der XML-Datei gelesenen Marker von den aktuell über TCP gesteuerten Marker am Namen unterscheiden zu können.\\
+Alle aktiven Marker werden in der \texttt{ArrayList} \texttt{activeMarkerIDs} gespeichert. Diese \texttt{ArrayList} wird, nachdem sie vollständig gefüllt ist, bearbeitet: Für jeden Eintrag, also jeden aktiven Marker wird ein Platzhalter Marker instantiiert. Dies ist ein Marker, der bereits alle Komponenten, also zugeordnete GameObjects in \textit{Unity} wie Kontextmenü etc., die benötigt werden, angeheftet hat. Es müssen dann nurnoch gespeicherten Parameter auf diesen Marker übertragen werden. Jeder Marker bekommt anschließend \texttt{Marker + (Original-ID + 100)} als Namen zugewiesen. Dies ist wichtig um später die aus der XML-Datei gelesenen Marker von den aktuell über TCP gesteuerten Marker am Namen unterscheiden zu können.\\
 Nachdem die weiteren Parameter wie Position, Rotation und Skalierung an den Marker übergeben wurden, wird dann der Marker an das \texttt{TableObject} in \textit{Unity} als Kind-\texttt{GameObject} angehängt und sichtbar gemacht.\\
 Als letzter Schritt wird die Markervariable \texttt{MatchMode} auf \texttt{true} gesetzt und das Skript \texttt{matchMode.cs} aktiviert. Dieses wird detailliert im Abschnitt \ref{MatchModus} beschrieben. Die Marker die sich in diesem Match Modus befinden blinken grün und rot, um zu signalisieren, dass sie auf einen "`echten"' Marker warten.\\
 Sind alle Marker auf diese Weise geladen und parametrisiert, wird der globale Maßstab an das Skript \texttt{setupScene.cs} übergeben.\\
@@ -366,18 +372,24 @@ Zu diesem Zeitpunkt sind also zwei Arten von Markern sichtbar: Die geladenen aus
 
 \subsubsection{Match Modus}\label{MatchModus}\todo[inline,color=green]{Paul}
 \todo[inline, color=red]{Lukas}
-\textcolor{red}{In diesem Abschnitt fehlt eine (oder mehrere?) Abbildung, um den Match-Modus zu zeigen.}\\
-Der Match Modus ist ein Systemzustand, der nach dem Laden von gespeicherten Szenen aktiviert wird.\\
+Der Match Modus ist ein Systemzustand, der nach dem Laden von gespeicherten Szenen aktiviert wird. Dieser Systemzustand ist in Abbildung \ref{fig:Matchmodus} zu sehen.\\
 Es werden wie in Abschnitt~\ref{Laden} beschrieben die geladenen Marker und die laufend von der Tracking-Anwendung verfolgten Marker gleichzeitig angezeigt. Der Benutzer muss jetzt die echten Marker an die Position der geladenen virtuellen Marker schieben. Ist ein Marker im \emph{Match-Modus}, sind vier Collider an den Ecken der virtuellen Marker aktiviert. Die markerinterne Variable \texttt{matchMode} ist zu diesem Zeitpunkt auf \texttt{false} gesetzt.\\
 Schiebt der Benutzer nun einen beliebigen Marker an die Position des virtuellen Markers, werden bei ausreichend genauer Positionierung alle vier Collider des geladenen virtuellen Markers mit den vier Collidern des vom Benutzer bewegten virtuellen Markers getriggert. Ist dies der Fall, wird die markerinterne Variable \texttt{matchModeReady} auf \texttt{true} gesetzt. Dieses Verhalten wird von dem Skript \texttt{StopMatchMode.cs} kontrolliert.\\
 Zeigen alle geladenen Marker durch grünes Aufleuchten, dass sie bereit sind, erscheint im Tischmenü die Schaltfläche \texttt{Apply}. Drückt der Nutzer diese, werden die Parameter aus den gespeicherten Markern auf diejenigen Marker übertragen, die der Benutzer an die Position der virtuellen Marker geschoben hat. Um diese Funktionalität kümmert sich das Skript \texttt{DataHandler.cs}.\\
 Die geladenen Marker mit der ID $>$ 100 werden im Anschluss gelöscht. Nach Beenden des \emph{Match-Modus} existieren wieder nur die durch die Tracking-Anwendung laufend verfolgten Marker, die jetzt allerdings die Parameter aus der geladenen Datei übernommen haben und somit in der Gesamtheit die geladene Szene repräsentieren.
 
 
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{Bilder/Matchmode}
+	\caption{Der Match Modus von MArC.}
+	\label{fig:Matchmodus}
+\end{figure}
+
 \section{Tracking-Anwendung} \label{sec:Tracking}\todo[inline, color=green]{Vera}
 \todo[inline, color=red]{Laura}
 Für das Tracking und die Positionsbestimmung der Würfel-Marker (vgl. Abschnitt~\ref{sec:WürfelMarker}) wurde ein Programm entwickelt, welches alle erforderlichen Ressourcen und Funktionen bereit stellt und verknüpft. Zunächst muss die Initialisierung und der Zugriff auf die \textit{uEye}-Kamera (vgl. Abschnitt~\ref{sec:uEye}) ermöglicht werden. Im Anschluss ist das Erstellen beziehungsweise das Laden aller relevanten Kalibrierungsinformationen (vgl. Abschnitt~\ref{sec:calib}) für einen korrekten Tracking Prozess erforderlich. Nach erfolgreichem Abschluss beider Schritte wird das Tracking der \textit{AruCo}-Marker und der grünen Rechtecke ausgeführt. Dies wird in Kapitel~\ref{sec:MarkerDetektion} beschrieben. Die sich anschließende Verwaltung der registrierten und detektierten Würfel-Marker kann in Abschnitt~\ref{sec:trackAndReg} nachvollzogen werden. Bei Projektbeginn war es ursprünglich geplant ein \textit{markerless Tracking} zu implementieren. Doch auf Grund der unvermeidlichen längerfristigen Verdeckungen von Würfel-Marker und deren texturarmen Oberfläche musste darauf verzichtet werden.
-Alle Schritte die der Kalibrierung folgen werden in einer Endlosschleife für jeden Frame ausgeführt. Während einer Iteration wird auf das aktuelle Live Bild zugegriffen, alle Marker detektiert und verfolgt, sowie alle Resultate übertragen. Die Übertragung wurde wie in Kapitel~\ref{sec:Netzwerk} beschriebe per TCP realisiert und es gilt alle relevanten Daten der Marker Objekte (vgl. Abschnitt~\ref{sec:MarkerObjekte}) an den \textit{Unity}-Computer zu übermitteln. Die durchschnittliche Dauer einer Iteration dauert \textcolor{red}{$XXXXXX$}ms mit einer Framerate von \textcolor{red}{$XXXXXX$} fps. \todo{Vera: messen der Dauer und Framerate}
+Alle Schritte die der Kalibrierung folgen werden in einer Endlosschleife für jeden Frame ausgeführt. Während einer Iteration wird auf das aktuelle Live Bild zugegriffen, alle Marker detektiert und verfolgt, sowie alle Resultate übertragen. Die Übertragung wurde wie in Kapitel~\ref{sec:Netzwerk} beschriebe per TCP realisiert und es gilt alle relevanten Daten der Marker Objekte (vgl. Abschnitt~\ref{sec:MarkerObjekte}) an den \textit{Unity}-Computer zu übermitteln. Die  Tracking-Anwendung berechnet derzeit $21.7 \pm 1.6$ Iterationen pro Sekunde. Diese Messung wurde mit $500$ Stichproben bzw. Iterationen durchgeführt, während sechs Würfel-Marker vom System getrackt und die Daten an den \textit{Unity}-Computer per TCP übertragen wurden.
 
 Dieses Programm wurde in der IDE \textit{Visual Studio} (vgl. Abschnitt~\ref{sec:VisualStudio}) in der Programmiersprache $C++$ entwickelt. Für die Entwicklungen wurden die \textit{uEye}-SDK (vgl. Abschnitt~\ref{sec:uEye}), \textit{OpenCV} (vgl. Abschnitt~\ref{sec:OpenCV}), sowie die Standardbibliothek \textit{Winsock} zur Hilfe genommen. In den folgenden Abschnitten wird die Vorgehensweise und der Ablauf schrittweise und detailliert erklärt.
 
@@ -711,7 +723,7 @@ o=p_{ul}-c_{RR}
 \textcolor{red}{Die Gleichung für u verstehe ich gerade nicht auf Anhieb. const?}
 
 
-Eine andere essentielle Komponente der Klasse sind die Transformationsvektoren $v_t$ (\texttt{tvec}), welche die Transformation jedes Markers vom Objektraum in den Kameraraum $K$ angeben. \textcolor{red}{Meinst du von Weltkoordinaten in Kamerakoordinaten? Wenn ja habe ich $v_t$ immer nur $t$ genannt}Diese Vektoren werden für die korrekte Abschätzung der Marker Position in der \textit{Unity}-Welt (vgl. Abschnitt ~\ref{sec:planeCalib}) benötigt und aus den vier äußeren Eckpunkten in der Methode \texttt{estimate\-Pose\-Single\-Markers()} aus der \textit{ArUco} Bibliothek angenähert. 
+Eine andere essentielle Komponente der Klasse sind die Transformationsvektoren $v_t$ (\texttt{tvec}), welche die Transformation jedes Markers vom Objektraum in den Kameraraum $K$ angeben. Diese Vektoren werden für die korrekte Abschätzung der Marker Position in der \textit{Unity}-Welt (vgl. Abschnitt ~\ref{sec:planeCalib}) benötigt und aus den vier äußeren Eckpunkten in der Methode \texttt{estimate\-Pose\-Single\-Markers()} aus der \textit{ArUco} Bibliothek angenähert. 
 
 \subsection{Tracking und Registrierung der Marker}\label{sec:trackAndReg}\todo[inline, color = green]{Vera}
 \todo[inline, color=red]{Laura}
