@@ -719,23 +719,30 @@ Im binarisierten Bild werden im Anschluss zur Detektierung der OBB die Rechteckk
 \todo[inline, color=red]{Laura}
 Die Marker Objekte der Klasse \texttt{Marker.cpp} speichern alle benötigten Parameter und Informationen der registrierten Würfel-Marker. Zu diesen Daten gehören unter anderem die RID (\texttt{id}), die aktuelle AID (\texttt{arucoID}) des zugeteilten Würfel-Markers sowie die entsprechende OBB (\texttt{rect}) des letzten Frames. Weitere boolesche Variablen wie \texttt{isVis} und \texttt{isTrack} geben Auskunft über die Sichtbarkeit der registrierten Würfel-Marker in der letzten Aufnahme und ob diese Registrierung bereits in der aktuellen Iteration der Tracking-Anwendung verfolgt wurde.
 
-Für die Winkel $\omega_{RR}$, welche von den \texttt{Rotated\-Rect} initialisiert werden gilt $\omega_{RR} \in \{\mathbb{R} | -90^\circ \le \omega_{RR} \le 90^\circ\}$. Doch alle folgenden Komponenten des Gesamtsystems von \textit{MArC} erfordert einen Winkel $\omega_{WM} \in \{\mathbb{R}^+ |\ 0 ^\circ \le \omega_{WM} \le 360^\circ\}$, der vom unterem linken Eckpunkt des Würfel-Markers ausgeht. Dies wird gewährleistet indem mit der Funktion \texttt{compute\-Angle()} der kompatible Winkel zwischen dem entsprechenden Eckpunkt des \textit{ArUco}-Markers $p_{ul}$ und dem Mittelpunkt des Rechtecks $c_{RR}$ mit der Gleichung ~\ref{equ:OmegaWinkel} berechnet wird. An dieser Stelle sei hinzugefügt das der Vektor $(const \ 0 )^T$ den Mittelpunkt $c_{RR}$ um $20$ Pixel verschiebt um ????
+Bei der Winkelbestimmung gibt es zwei Probleme, die es erforderlich machen die Winkel der \texttt{Rotated\-Rects} zunächst umzurechnen. Für den Winkel $\omega_{RR}$ gilt  $\omega_{RR} \in \{\mathbb{R} | -90^\circ \le \omega_{RR} \le 90^\circ\}$ und nicht wie für alle folgenden Komponenten des Gesamtsystems gefordert $\omega_{WM} \in \{\mathbb{R}^+ |\ 0 ^\circ \le \omega_{WM} \le 360^\circ\}$. \\
+Dazu kommt noch, dass die Eckpunkte eines jeden \texttt{Rotated\-Rect} Objektes in beliebiger Reihenfolge gespeichert werden. Jedoch sollen der Winkel $\omega_{RR}$ zuverlässig zwischen dem unteren linken Eckpunkt des Markers und einem vom Mittelpunkt des OBB ausgehenden skalierten Einheitsvektor berechnet werden. Aus diesem Grund muss gewährleistet werden, dass zuverlässig und mit geringem Kostenaufwand auf den richtigen Eckpunkt zugriffen wird. An dieser Stelle wird auf die Eckpunkte der detektierten \textit{ArUco}-Marker zurückgegriffen, da die \textit{ArUco}-Methode \texttt{detect\-Markers()} stets die Eckpunkte im Uhrzeigersinn und beginnend mit der unteren linken Ecke des Mustercodes zurückgibt.
 
- Dieser Umstand ist damit begründet, dass eine einheitliche Ausrichtung aller Würfel-Marker gewährleistet sein muss um die generierten Daten für weitere architektonische Planungsschritte zu verwenden. Während die Reihenfolge der \textit{ArUco}-Marker zuverlässig an dem unterem linken Punkt orientiert ist, stellte sich heraus, dass die Reihenfolge der vier Eckpunkte eines \texttt{Rotated\-Rect} unzuverlässig ist. Somit ist es unvermeidbar die Eckpunkte der \textit{ ArUco} Marker als Referenzpunkt zu setzen und bei einer fehlenden Detektion derselbigen den Winkel der letzten Iteration zu verwenden. 
+Um einheitliche Winkel zu garantieren ist es demzufolge nicht ausreichend den Definitionsbereich von $\omega_{RR}$ an $\omega_{WM}$ anzupassen. Deshalb wird in der Funktion \texttt{compute\-Angle()}, wie in Gleichung \ref{equ:OmegaWinkel}, der Winkel zwischen $\vv{u}$ und $\vv{o}$ berechnet. Der Vektor $\vv{o}$ berechnet sich wie in Gleichung \ref{equ:O}, wobei $p_{ul}$ die linke untere Ecke und $c_{RR}$ der Mittelpunkt des OBB ist. Die Konstante $c$ kann als Skalierungsfaktor bei der Berechnung des Vektors $\vv{u}$ verstanden werden (vgl. Gleichung \ref{equ:U}). Mit anderen Worten handelt es sich bei dem Vektor $\vv{u}$ also um einen um den Faktor $c$ skalierten Einheitsvektor.
 
 \begin{equation}
 \label{equ:OmegaWinkel}
-\omega_{WM} = \arccos \frac{u \times o}{\|u\|*\|o\|} 
+\omega_{WM} = \arccos \frac{\vv{u} \times \vv{o}}{\|\vv{u}\|*\|\vv{o}\|} 
 \end{equation}
 \begin{equation}
-u = c_{RR} - \begin{pmatrix}
-const\\ 0
-\end{pmatrix}  -c_{RR}
+\label{equ:U}
+\vv{u} = \begin{pmatrix}
+c_{RR}.x - c\\ c_{RR}.y
+\end{pmatrix}
+- \begin{pmatrix}
+c_{RR}.x\\ c_{RR}.y
+\end{pmatrix}
 \end{equation}
 \begin{equation}
-o=p_{ul}-c_{RR}
+\label{equ:O}
+\vv{o}=p_{ul}-c_{RR}
 \end{equation}
-\textcolor{red}{Die Gleichung für u verstehe ich gerade nicht auf Anhieb. const?}
+
+Anschließend muss der Winkel $\omega_{WM}$ der bislang in Rad ist, noch in Grad umgerechnet werden und zudem auf einen Definitionsbereich von $\omega_{WM} \in \{\mathbb{R}^+ |\ 0 ^\circ \le \omega_{WM} \le 360^\circ\}$ abgebildet werden.
 
 
 Eine andere essentielle Komponente der Klasse sind die Transformationsvektoren $v_t$ (\texttt{tvec}), welche die Transformation jedes Markers vom Objektraum in den Kameraraum $K$ angeben. Diese Vektoren werden für die korrekte Abschätzung der Marker Position in der \textit{Unity}-Welt (vgl. Abschnitt ~\ref{sec:planeCalib}) benötigt und aus den vier äußeren Eckpunkten in der Methode \texttt{estimate\-Pose\-Single\-Markers()} aus der \textit{ArUco} Bibliothek angenähert. 

@@ -114,10 +114,9 @@
 \contentsline {subsubsection}{\numberline {7.4.2}Video}{78}{subsubsection.7.4.2}
 \contentsline {subsection}{\numberline {7.5}Reflexion}{79}{subsection.7.5}
 \contentsline {section}{\numberline {8}Zusammenfassung}{80}{section.8}
-\contentsline {section}{\numberline {9}Steckbrief}{81}{section.9}
-\contentsline {section}{\numberline {10}Anhang}{83}{section.10}
-\contentsline {subsection}{\numberline {10.1}Schachbrett zur Kamerakalibrierung}{83}{subsection.10.1}
-\contentsline {subsection}{\numberline {10.2}\emph {MArC} ReadMe-Datei}{83}{subsection.10.2}
-\contentsline {subsection}{\numberline {10.3}\texttt {startTCPServer()}-Methode}{91}{subsection.10.3}
-\contentsline {subsection}{\numberline {10.4}\texttt {getPointerOfMarkerVec()}-Methode}{91}{subsection.10.4}
-\contentsline {subsection}{\numberline {10.5}\texttt {interpretTCPMarkerData()}-Methode}{92}{subsection.10.5}
+\contentsline {section}{\numberline {9}Anhang}{82}{section.9}
+\contentsline {subsection}{\numberline {9.1}Schachbrett zur Kamerakalibrierung}{82}{subsection.9.1}
+\contentsline {subsection}{\numberline {9.2}\emph {MArC} ReadMe-Datei}{82}{subsection.9.2}
+\contentsline {subsection}{\numberline {9.3}\texttt {startTCPServer()}-Methode}{90}{subsection.9.3}
+\contentsline {subsection}{\numberline {9.4}\texttt {getPointerOfMarkerVec()}-Methode}{90}{subsection.9.4}
+\contentsline {subsection}{\numberline {9.5}\texttt {interpretTCPMarkerData()}-Methode}{91}{subsection.9.5}

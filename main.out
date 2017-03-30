@@ -94,10 +94,9 @@
 \BOOKMARK [3][-]{subsubsection.7.4.2}{Video}{subsection.7.4}% 94
 \BOOKMARK [2][-]{subsection.7.5}{Reflexion}{section.7}% 95
 \BOOKMARK [1][-]{section.8}{Zusammenfassung}{}% 96
-\BOOKMARK [1][-]{section.9}{Steckbrief}{}% 97
-\BOOKMARK [1][-]{section.10}{Anhang}{}% 98
-\BOOKMARK [2][-]{subsection.10.1}{Schachbrett zur Kamerakalibrierung}{section.10}% 99
-\BOOKMARK [2][-]{subsection.10.2}{MArC ReadMe-Datei}{section.10}% 100
-\BOOKMARK [2][-]{subsection.10.3}{startTCPServer\(\)-Methode}{section.10}% 101
-\BOOKMARK [2][-]{subsection.10.4}{getPointerOfMarkerVec\(\)-Methode}{section.10}% 102
-\BOOKMARK [2][-]{subsection.10.5}{interpretTCPMarkerData\(\)-Methode}{section.10}% 103
+\BOOKMARK [1][-]{section.9}{Anhang}{}% 97
+\BOOKMARK [2][-]{subsection.9.1}{Schachbrett zur Kamerakalibrierung}{section.9}% 98
+\BOOKMARK [2][-]{subsection.9.2}{MArC ReadMe-Datei}{section.9}% 99
+\BOOKMARK [2][-]{subsection.9.3}{startTCPServer\(\)-Methode}{section.9}% 100
+\BOOKMARK [2][-]{subsection.9.4}{getPointerOfMarkerVec\(\)-Methode}{section.9}% 101
+\BOOKMARK [2][-]{subsection.9.5}{interpretTCPMarkerData\(\)-Methode}{section.9}% 102
