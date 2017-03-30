@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.21)  30 MAR 2017 14:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.21)  30 MAR 2017 19:24
 entering extended mode
 **./main.tex
 (main.tex
@@ -1299,305 +1299,7 @@ Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
 \TX@cols=\count194
 \TX@ftn=\toks46
 )
-(main.aux
-
-! LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.486 <
-       <<<<<< HEAD
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: Label `pgfid107' multiply defined.
-
-
-LaTeX Warning: Label `pgfid110' multiply defined.
-
-
-LaTeX Warning: Label `pgfid111' multiply defined.
-
-
-LaTeX Warning: Label `sec:UEyeSteu' multiply defined.
-
-
-LaTeX Warning: Label `pgfid112' multiply defined.
-
-
-LaTeX Warning: Label `pgfid113' multiply defined.
-
-
-LaTeX Warning: Label `tab:UeyeParam' multiply defined.
-
-
-LaTeX Warning: Label `sec:calib' multiply defined.
-
-
-LaTeX Warning: Label `pgfid114' multiply defined.
-
-
-LaTeX Warning: Label `sec:Korrespondenz' multiply defined.
-
-
-LaTeX Warning: Label `sec:DefKoords' multiply defined.
-
-
-LaTeX Warning: Label `pgfid115' multiply defined.
-
-
-LaTeX Warning: Label `pgfid116' multiply defined.
-
-
-LaTeX Warning: Label `fig:cameraCalib' multiply defined.
-
-
-LaTeX Warning: Label `sec:camCalib' multiply defined.
-
-
-LaTeX Warning: Label `tab:camCalibParam' multiply defined.
-
-
-LaTeX Warning: Label `equ:Rverkippt' multiply defined.
-
-
-LaTeX Warning: Label `equ:intrinsic' multiply defined.
-
-
-LaTeX Warning: Label `equ:Rotation' multiply defined.
-
-
-LaTeX Warning: Label `pgfid117' multiply defined.
-
-
-LaTeX Warning: Label `pgfid118' multiply defined.
-
-
-LaTeX Warning: Label `pgfid119' multiply defined.
-
-
-LaTeX Warning: Label `pgfid120' multiply defined.
-
-
-LaTeX Warning: Label `pgfid121' multiply defined.
-
-
-LaTeX Warning: Label `pgfid122' multiply defined.
-
-
-LaTeX Warning: Label `pgfid123' multiply defined.
-
-
-LaTeX Warning: Label `fig:begrenzungArbeitsbereich' multiply defined.
-
-
-LaTeX Warning: Label `equ:affin' multiply defined.
-
-
-LaTeX Warning: Label `sec:calibError' multiply defined.
-
-
-LaTeX Warning: Label `pgfid124' multiply defined.
-
-
-LaTeX Warning: Label `pgfid125' multiply defined.
-
-
-LaTeX Warning: Label `sec:CalibSteuerung' multiply defined.
-
-
-LaTeX Warning: Label `pgfid126' multiply defined.
-
-
-LaTeX Warning: Label `pgfid127' multiply defined.
-
-
-LaTeX Warning: Label `fig:markierterFehler' multiply defined.
-
-
-LaTeX Warning: Label `sec:saveCalib' multiply defined.
-
-
-LaTeX Warning: Label `pgfid128' multiply defined.
-
-
-LaTeX Warning: Label `sec:MarkerDetektion' multiply defined.
-
-
-LaTeX Warning: Label `sec:GreenRects' multiply defined.
-
-
-LaTeX Warning: Label `pgfid129' multiply defined.
-
-
-LaTeX Warning: Label `pgfid130' multiply defined.
-
-
-LaTeX Warning: Label `pgfid131' multiply defined.
-
-
-LaTeX Warning: Label `pgfid132' multiply defined.
-
-
-LaTeX Warning: Label `pgfid133' multiply defined.
-
-
-LaTeX Warning: Label `fig:DebugScreenshot' multiply defined.
-
-
-LaTeX Warning: Label `sec:ArucoMarkerTracking' multiply defined.
-
-
-LaTeX Warning: Label `pgfid134' multiply defined.
-
-
-LaTeX Warning: Label `sec:MarkerObjekte' multiply defined.
-
-
-LaTeX Warning: Label `equ:OmegaWinkel' multiply defined.
-
-
-LaTeX Warning: Label `sec:trackAndReg' multiply defined.
-
-
-LaTeX Warning: Label `equ:MotionVec' multiply defined.
-
-
-LaTeX Warning: Label `fig:TrackingDiagram' multiply defined.
-
-
-LaTeX Warning: Label `pgfid135' multiply defined.
-
-
-LaTeX Warning: Label `pgfid136' multiply defined.
-
-
-LaTeX Warning: Label `pgfid137' multiply defined.
-
-
-LaTeX Warning: Label `pgfid138' multiply defined.
-
-
-LaTeX Warning: Label `pgfid139' multiply defined.
-
-
-LaTeX Warning: Label `pgfid140' multiply defined.
-
-
-LaTeX Warning: Label `pgfid141' multiply defined.
-
-
-LaTeX Warning: Label `pgfid142' multiply defined.
-
-
-LaTeX Warning: Label `sec:PlanedWebcam' multiply defined.
-
-
-LaTeX Warning: Label `pgfid143' multiply defined.
-
-
-LaTeX Warning: Label `pgfid144' multiply defined.
-
-
-LaTeX Warning: Label `pgfid145' multiply defined.
-
-
-LaTeX Warning: Label `pgfid146' multiply defined.
-
-
-LaTeX Warning: Label `pgfid147' multiply defined.
-
-
-LaTeX Warning: Label `pgfid148' multiply defined.
-
-
-LaTeX Warning: Label `sec:pm' multiply defined.
-
-
-LaTeX Warning: Label `pgfid149' multiply defined.
-
-
-LaTeX Warning: Label `pgfid150' multiply defined.
-
-
-LaTeX Warning: Label `pgfid151' multiply defined.
-
-
-LaTeX Warning: Label `sec:problemanalyse' multiply defined.
-
-
-LaTeX Warning: Label `pgfid152' multiply defined.
-
-
-LaTeX Warning: Label `pgfid153' multiply defined.
-
-
-LaTeX Warning: Label `pgfid154' multiply defined.
-
-
-LaTeX Warning: Label `pgfid155' multiply defined.
-
-
-LaTeX Warning: Label `pgfid156' multiply defined.
-
-
-LaTeX Warning: Label `pgfid157' multiply defined.
-
-
-LaTeX Warning: Label `pgfid158' multiply defined.
-
-
-LaTeX Warning: Label `tab:Projektformular' multiply defined.
-
-
-LaTeX Warning: Label `pgfid159' multiply defined.
-
-
-LaTeX Warning: Label `pgfid160' multiply defined.
-
-
-LaTeX Warning: Label `pgfid161' multiply defined.
-
-
-LaTeX Warning: Label `pgfid162' multiply defined.
-
-
-LaTeX Warning: Label `tab:APMS' multiply defined.
-
-
-LaTeX Warning: Label `pgfid163' multiply defined.
-
-
-LaTeX Warning: Label `pgfid164' multiply defined.
-
-
-LaTeX Warning: Label `pgfid165' multiply defined.
-
-
-LaTeX Warning: Label `pgfid166' multiply defined.
-
-
-LaTeX Warning: Label `pgfid167' multiply defined.
-
-
-LaTeX Warning: Label `pgfid168' multiply defined.
-
-
-LaTeX Warning: Label `pgfid169' multiply defined.
-
-
-LaTeX Warning: Label `sec:reflexion' multiply defined.
-
-
-LaTeX Warning: Label `pgfid170' multiply defined.
-
-
-LaTeX Warning: Label `pgfid171' multiply defined.
-
-)
+(main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 90.
@@ -1626,30 +1328,6 @@ Package scrpage2 Warning: seems you are using a constant headheight.
 
 ("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mki
 i"
-Overfull \hbox (98.49632pt too wide) in paragraph at lines 486--13
-\T1/cmr/m/n/12 >>>>>>> 7bdf4eee69611faf7a44186b4350800557a6483a       <<<<<<< H
-EAD                                             =======
- []
-
-
-Overfull \hbox (51.52827pt too wide) in paragraph at lines 486--13
-\T1/cmr/m/n/12 >>>>>>> 7bdf4eee69611faf7a44186b4350800557a6483a     <<<<<<< HEA
-D                             =======
- []
-
-
-Overfull \hbox (294.18312pt too wide) in paragraph at lines 486--13
-\T1/cmr/m/n/12 >>>>>>> 7bdf4eee69611faf7a44186b4350800557a6483a     <<<<<<< HEA
-D                                                                              
-                                            =======
- []
-
-
-Overfull \hbox (47.0109pt too wide) in paragraph at lines 486--13
-\T1/cmr/m/n/12 >>>>>>> 7bdf4eee69611faf7a44186b4350800557a6483a                
-                                                                   
- []
-
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count195
 \scratchdimen=\dimen261
@@ -1823,16 +1501,16 @@ Package babel Info: Redefining ngerman shorthand "~
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 121.
+(babel)             in language  on input line 116.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 121.
+(babel)             in language  on input line 116.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 121.
+(babel)             in language  on input line 116.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 121.
+(babel)             in language  on input line 116.
 
 [4]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 149.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 120.
 
  ("C:\Users\Vera\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
@@ -2045,7 +1723,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 122.
 
-[13] <Bilder/BinMuster.jpg, id=687, 155.10439pt x 122.21072pt>
+[13] <Bilder/BinMuster.jpg, id=681, 155.10439pt x 122.21072pt>
 File: Bilder/BinMuster.jpg Graphic file (type jpg)
 
 <use Bilder/BinMuster.jpg>
@@ -2150,7 +1828,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 108.
 
-[18] <Bilder/leap-motion.png, id=761, 273.02pt x 258.46562pt>
+[18] <Bilder/leap-motion.png, id=755, 273.02pt x 258.46562pt>
 File: Bilder/leap-motion.png Graphic file (type png)
 
 <use Bilder/leap-motion.png>
@@ -2173,7 +1851,7 @@ Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 124.
 
 [19 <./Bilder/leap-motion.png>]
-<Bilder/tracking-marker.jpg, id=776, 3131.7pt x 4175.6pt>
+<Bilder/tracking-marker.jpg, id=770, 3131.7pt x 4175.6pt>
 File: Bilder/tracking-marker.jpg Graphic file (type jpg)
 
 <use Bilder/tracking-marker.jpg>
@@ -2196,7 +1874,7 @@ Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 139.
 
 [20 <./Bilder/tracking-marker.jpg>]
-<Bilder/Eigene Fotos/IMG_0004.jpg, id=792, 462.528pt x 350.2686pt>
+<Bilder/Eigene Fotos/IMG_0004.jpg, id=786, 462.528pt x 350.2686pt>
 File: Bilder/Eigene Fotos/IMG_0004.jpg Graphic file (type jpg)
 
 <use Bilder/Eigene Fotos/IMG_0004.jpg>
@@ -2208,7 +1886,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 147.
 
-<Bilder/Eigene Fotos/IMG_0032.jpg, id=798, 462.528pt x 317.5062pt>
+<Bilder/Eigene Fotos/IMG_0032.jpg, id=792, 462.528pt x 317.5062pt>
 File: Bilder/Eigene Fotos/IMG_0032.jpg Graphic file (type jpg)
 
 <use Bilder/Eigene Fotos/IMG_0032.jpg>
@@ -2250,7 +1928,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 170.
 
-<Bilder/ovr.jpg, id=823, 1027.84pt x 576.1525pt>
+<Bilder/ovr.jpg, id=817, 1027.84pt x 576.1525pt>
 File: Bilder/ovr.jpg Graphic file (type jpg)
  <use Bilder/ovr.jpg>
 Package pdftex.def Info: Bilder/ovr.jpg used on input line 208.
@@ -2336,14 +2014,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 242--244
 
  []
 
-<Bilder/Aruco_marker.jpg, id=886, 542.7477pt x 344.487pt>
+<Bilder/Aruco_marker.jpg, id=880, 542.7477pt x 344.487pt>
 File: Bilder/Aruco_marker.jpg Graphic file (type jpg)
 
 <use Bilder/Aruco_marker.jpg>
 Package pdftex.def Info: Bilder/Aruco_marker.jpg used on input line 247.
 (pdftex.def)             Requested size: 284.52756pt x 180.6008pt.
 
-<Bilder/VerschAruco.jpg, id=887, 205.02127pt x 61.50638pt>
+<Bilder/VerschAruco.jpg, id=881, 205.02127pt x 61.50638pt>
 File: Bilder/VerschAruco.jpg Graphic file (type jpg)
 
 <use Bilder/VerschAruco.jpg>
@@ -2434,7 +2112,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 16.
 
-[29] <Bilder/Eigene Fotos/IMG_0020.jpg, id=939, 462.528pt x 233.1912pt>
+[29] <Bilder/Eigene Fotos/IMG_0020.jpg, id=933, 462.528pt x 233.1912pt>
 File: Bilder/Eigene Fotos/IMG_0020.jpg Graphic file (type jpg)
 
 <use Bilder/Eigene Fotos/IMG_0020.jpg>
@@ -2446,7 +2124,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 24.
 
-<Bilder/Aufbau_MArC.jpg, id=943, 1657.392pt x 793.5246pt>
+<Bilder/Aufbau_MArC.jpg, id=937, 1657.392pt x 793.5246pt>
 File: Bilder/Aufbau_MArC.jpg Graphic file (type jpg)
 
 <use Bilder/Aufbau_MArC.jpg>
@@ -2470,7 +2148,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 38.
 
-<kapitel/anhang/ReadMe.pdf, id=953, page=1, 596.2275pt x 844.15375pt>
+<kapitel/anhang/ReadMe.pdf, id=947, page=1, 596.2275pt x 844.15375pt>
 File: kapitel/anhang/ReadMe.pdf Graphic file (type pdf)
 
 <use kapitel/anhang/ReadMe.pdf, page 1>
@@ -2592,7 +2270,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 113.
 
-[36] <Bilder/CalibDone.jpg, id=1126, 646.8923pt x 363.87692pt>
+[36] <Bilder/CalibDone.jpg, id=1120, 646.8923pt x 363.87692pt>
 File: Bilder/CalibDone.jpg Graphic file (type jpg)
 
 <use Bilder/CalibDone.jpg>
@@ -2608,7 +2286,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 116--126
 
  []
 
-<Bilder/CalibrateOrNot.jpg, id=1128, 646.8923pt x 363.87692pt>
+<Bilder/CalibrateOrNot.jpg, id=1122, 646.8923pt x 363.87692pt>
 File: Bilder/CalibrateOrNot.jpg Graphic file (type jpg)
 
 <use Bilder/CalibrateOrNot.jpg>
@@ -2629,7 +2307,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 127--137
 
  []
 
-<Bilder/ControllerNotFound.jpg, id=1130, 646.8923pt x 363.87692pt>
+<Bilder/ControllerNotFound.jpg, id=1124, 646.8923pt x 363.87692pt>
 File: Bilder/ControllerNotFound.jpg Graphic file (type jpg)
 
 <use Bilder/ControllerNotFound.jpg>
@@ -2650,7 +2328,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 138--148
 
  []
 
-<Bilder/doPlaneCalibInVS.jpg, id=1132, 646.8923pt x 363.87692pt>
+<Bilder/doPlaneCalibInVS.jpg, id=1126, 646.8923pt x 363.87692pt>
 File: Bilder/doPlaneCalibInVS.jpg Graphic file (type jpg)
 
 <use Bilder/doPlaneCalibInVS.jpg>
@@ -2666,7 +2344,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 149--159
 
  []
 
-<Bilder/doPoseCalibInVS.jpg, id=1135, 646.8923pt x 363.87692pt>
+<Bilder/doPoseCalibInVS.jpg, id=1129, 646.8923pt x 363.87692pt>
 File: Bilder/doPoseCalibInVS.jpg Graphic file (type jpg)
 
 <use Bilder/doPoseCalibInVS.jpg>
@@ -2696,7 +2374,7 @@ Package babel Info: Redefining ngerman shorthand "~
 
 [37 <./Bilder/CalibDone.jpg> <./Bilder/CalibrateOrNot.jpg> <./Bilder/Controller
 NotFound.jpg> <./Bilder/doPlaneCalibInVS.jpg>]
-<Bilder/SelectCalibrationTarget.jpg, id=1153, 646.8923pt x 363.87692pt>
+<Bilder/SelectCalibrationTarget.jpg, id=1147, 646.8923pt x 363.87692pt>
 File: Bilder/SelectCalibrationTarget.jpg Graphic file (type jpg)
 
 <use Bilder/SelectCalibrationTarget.jpg>
@@ -2718,7 +2396,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 171--181
 
  []
 
-<Bilder/SetScale.jpg, id=1156, 646.8923pt x 363.87692pt>
+<Bilder/SetScale.jpg, id=1150, 646.8923pt x 363.87692pt>
 File: Bilder/SetScale.jpg Graphic file (type jpg)
 
 <use Bilder/SetScale.jpg>
@@ -2734,7 +2412,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 182--192
 
  []
 
-<Bilder/SocketNotReady.jpg, id=1158, 970.33846pt x 545.81538pt>
+<Bilder/SocketNotReady.jpg, id=1152, 970.33846pt x 545.81538pt>
 File: Bilder/SocketNotReady.jpg Graphic file (type jpg)
 
 <use Bilder/SocketNotReady.jpg>
@@ -2770,7 +2448,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 193--203
 
  []
 
-<Bilder/Welcome.jpg, id=1160, 646.8923pt x 363.87692pt>
+<Bilder/Welcome.jpg, id=1154, 646.8923pt x 363.87692pt>
 File: Bilder/Welcome.jpg Graphic file (type jpg)
 
 <use Bilder/Welcome.jpg>
@@ -2810,7 +2488,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 215.
 
-<kapitel/system/MP_Menu_Flowchart.pdf, id=1176, 597.23125pt x 845.1575pt>
+<kapitel/system/MP_Menu_Flowchart.pdf, id=1170, 597.23125pt x 845.1575pt>
 File: kapitel/system/MP_Menu_Flowchart.pdf Graphic file (type pdf)
 
 <use kapitel/system/MP_Menu_Flowchart.pdf>
@@ -2853,7 +2531,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 241.
 
-<Bilder/Eigene Fotos/KontextMenue.jpg, id=1211, 853.1875pt x 602.25pt>
+<Bilder/Eigene Fotos/KontextMenue.jpg, id=1205, 853.1875pt x 602.25pt>
 File: Bilder/Eigene Fotos/KontextMenue.jpg Graphic file (type jpg)
 
 <use Bilder/Eigene Fotos/KontextMenue.jpg>
@@ -2895,7 +2573,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 273.
 
-<Bilder/Contextmenu_Collider.png, id=1232, 581.17125pt x 310.91156pt>
+<Bilder/Contextmenu_Collider.png, id=1226, 581.17125pt x 310.91156pt>
 File: Bilder/Contextmenu_Collider.png Graphic file (type png)
 
 <use Bilder/Contextmenu_Collider.png>
@@ -2919,7 +2597,7 @@ Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 289.
 
 [43]
-<Bilder/Neue Screenshots/StandardMarker.jpg, id=1250, 501.875pt x 602.25pt>
+<Bilder/Neue Screenshots/StandardMarker.jpg, id=1244, 501.875pt x 602.25pt>
 File: Bilder/Neue Screenshots/StandardMarker.jpg Graphic file (type jpg)
 
 <use Bilder/Neue Screenshots/StandardMarker.jpg>
@@ -2931,7 +2609,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 299.
 
-<Bilder/Tablemenu.png, id=1252, 1442.38875pt x 728.7225pt>
+<Bilder/Tablemenu.png, id=1246, 1442.38875pt x 728.7225pt>
 File: Bilder/Tablemenu.png Graphic file (type png)
 
 <use Bilder/Tablemenu.png>
@@ -3023,7 +2701,7 @@ m/n/12 ge-setzt. Die-ses Ver-hal-ten wird von dem Skript \T1/cmtt/m/n/12 StopMa
 tchMode.cs
  []
 
-<Bilder/Matchmode.png, id=1309, 1438.37375pt x 727.71875pt>
+<Bilder/Matchmode.png, id=1303, 1438.37375pt x 727.71875pt>
 File: Bilder/Matchmode.png Graphic file (type png)
 
 <use Bilder/Matchmode.png>
@@ -3110,7 +2788,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 442.
 
-[52] <Bilder/cameraCalib.jpg, id=1371, 1867.97874pt x 1188.44pt>
+[52] <Bilder/cameraCalib.jpg, id=1364, 1867.97874pt x 1188.44pt>
 File: Bilder/cameraCalib.jpg Graphic file (type jpg)
 
 <use Bilder/cameraCalib.jpg>
@@ -3190,7 +2868,7 @@ Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 597.
 
 [56]
-<Bilder/Neue Screenshots/Arbeitsbereich.PNG, id=1443, 1084.05pt x 647.41875pt>
+<Bilder/Neue Screenshots/Arbeitsbereich.PNG, id=1434, 1084.05pt x 647.41875pt>
 File: Bilder/Neue Screenshots/Arbeitsbereich.PNG Graphic file (type png)
 
 <use Bilder/Neue Screenshots/Arbeitsbereich.PNG>
@@ -3227,7 +2905,7 @@ Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 626.
 
 [58]
-<Bilder/Neue Screenshots/Kalibrierungsfehler_OR-KLEIN.jpg, id=1477, 401.5pt x 4
+<Bilder/Neue Screenshots/Kalibrierungsfehler_OR-KLEIN.jpg, id=1467, 401.5pt x 4
 01.5pt>
 File: Bilder/Neue Screenshots/Kalibrierungsfehler_OR-KLEIN.jpg Graphic file (ty
 pe jpg)
@@ -3312,7 +2990,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 675.
 
-[62] <Bilder/TrackingScreenshot_x.jpg, id=1530, 1284.8pt x 1027.84pt>
+[62] <Bilder/TrackingScreenshot_x.jpg, id=1519, 1284.8pt x 1027.84pt>
 File: Bilder/TrackingScreenshot_x.jpg Graphic file (type jpg)
 
 <use Bilder/TrackingScreenshot_x.jpg>
@@ -3344,33 +3022,33 @@ Package babel Info: Redefining ngerman shorthand "~
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 708.
+(babel)             in language  on input line 709.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 708.
+(babel)             in language  on input line 709.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 708.
+(babel)             in language  on input line 709.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 708.
+(babel)             in language  on input line 709.
 
 [64]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 728.
+(babel)             in language  on input line 735.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 728.
+(babel)             in language  on input line 735.
 
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 734.
+(babel)             in language  on input line 738.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 734.
+(babel)             in language  on input line 738.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 734.
+(babel)             in language  on input line 738.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 734.
+(babel)             in language  on input line 738.
 
 [65]
-Overfull \hbox (2.13298pt too wide) in paragraph at lines 740--741
+Overfull \hbox (2.13298pt too wide) in paragraph at lines 747--748
 []\T1/cmr/m/n/12 Zunächst wird auf den Zweig des Fluss-dia-gramms ein-ge-gan-ge
 n, in-dem Würfel-Marker
  []
@@ -3379,24 +3057,24 @@ n, in-dem Würfel-Marker
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 745.
+(babel)             in language  on input line 752.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 745.
+(babel)             in language  on input line 752.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 745.
+(babel)             in language  on input line 752.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 745.
+(babel)             in language  on input line 752.
 
 [66]
-<kapitel/system/MP_Marker_Erkennung.pdf, id=1574, 597.23125pt x 845.1575pt>
+<kapitel/system/MP_Marker_Erkennung.pdf, id=1564, 597.23125pt x 845.1575pt>
 File: kapitel/system/MP_Marker_Erkennung.pdf Graphic file (type pdf)
 
 <use kapitel/system/MP_Marker_Erkennung.pdf>
 Package pdftex.def Info: kapitel/system/MP_Marker_Erkennung.pdf used on input l
-ine 750.
+ine 757.
 (pdftex.def)             Requested size: 329.83113pt x 611.99432pt.
 
-Overfull \hbox (14.43138pt too wide) in paragraph at lines 760--761
+Overfull \hbox (14.43138pt too wide) in paragraph at lines 767--768
 \T1/cmr/m/n/12 reich ist vom Typ \T1/cmtt/m/n/12 Rect \T1/cmr/m/n/12 der \T1/cm
 r/m/it/12 Open-CV \T1/cmr/m/n/12 Bi-blio-thek, wel-cher die Funk-ti-on \T1/cmtt
 /m/n/12 contains()
@@ -3406,37 +3084,37 @@ r/m/it/12 Open-CV \T1/cmr/m/n/12 Bi-blio-thek, wel-cher die Funk-ti-on \T1/cmtt
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 762.
+(babel)             in language  on input line 768.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 762.
+(babel)             in language  on input line 768.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 762.
+(babel)             in language  on input line 768.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 762.
+(babel)             in language  on input line 768.
 
 [67]
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 762.
+(babel)             in language  on input line 768.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 762.
+(babel)             in language  on input line 768.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 762.
+(babel)             in language  on input line 768.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 762.
+(babel)             in language  on input line 768.
 
 [68 <./kapitel/system/MP_Marker_Erkennung.pdf>]
 Overfull \vbox (2.60004pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 766.
+(babel)             in language  on input line 773.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 766.
+(babel)             in language  on input line 773.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 766.
+(babel)             in language  on input line 773.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 766.
+(babel)             in language  on input line 773.
 
 [69]) (kapitel/ausblick/ausblick.tex
 Package babel Info: Redefining ngerman shorthand "|
@@ -3803,7 +3481,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 2.
 
-<kapitel/anhang/ReadMe.pdf, id=1735, 596.2275pt x 844.15375pt>
+<kapitel/anhang/ReadMe.pdf, id=1722, 596.2275pt x 844.15375pt>
 File: kapitel/anhang/ReadMe.pdf Graphic file (type pdf)
 
 <use kapitel/anhang/ReadMe.pdf>
@@ -3864,7 +3542,7 @@ Package pdftex.def Info: kapitel/anhang/ReadMe.pdf, page1 used on input line 3.
 
 (pdftex.def)             Requested size: 596.96295pt x 845.19502pt.
  [87]
-<kapitel/anhang/ReadMe.pdf, id=1748, page=2, 596.2275pt x 844.15375pt>
+<kapitel/anhang/ReadMe.pdf, id=1735, page=2, 596.2275pt x 844.15375pt>
 File: kapitel/anhang/ReadMe.pdf Graphic file (type pdf)
 
 <use kapitel/anhang/ReadMe.pdf, page 2>
@@ -3896,7 +3574,7 @@ Package pdftex.def Info: kapitel/anhang/ReadMe.pdf, page2 used on input line 3.
 pdfTeX warning: pdflatex.exe (file ./kapitel/anhang/ReadMe.pdf): PDF inclusion:
  invalid other resource which is no dict (key 'ProcSets', type <array>); ignore
 d.
->] <kapitel/anhang/ReadMe.pdf, id=1765, page=3, 596.2275pt x 844.15375pt>
+>] <kapitel/anhang/ReadMe.pdf, id=1752, page=3, 596.2275pt x 844.15375pt>
 File: kapitel/anhang/ReadMe.pdf Graphic file (type pdf)
 
 <use kapitel/anhang/ReadMe.pdf, page 3>
@@ -3928,7 +3606,7 @@ Package pdftex.def Info: kapitel/anhang/ReadMe.pdf, page3 used on input line 3.
 pdfTeX warning: pdflatex.exe (file ./kapitel/anhang/ReadMe.pdf): PDF inclusion:
  invalid other resource which is no dict (key 'ProcSets', type <array>); ignore
 d.
->] <kapitel/anhang/ReadMe.pdf, id=1770, page=4, 596.2275pt x 844.15375pt>
+>] <kapitel/anhang/ReadMe.pdf, id=1757, page=4, 596.2275pt x 844.15375pt>
 File: kapitel/anhang/ReadMe.pdf Graphic file (type pdf)
 
 <use kapitel/anhang/ReadMe.pdf, page 4>
@@ -3960,7 +3638,7 @@ Package pdftex.def Info: kapitel/anhang/ReadMe.pdf, page4 used on input line 3.
 pdfTeX warning: pdflatex.exe (file ./kapitel/anhang/ReadMe.pdf): PDF inclusion:
  invalid other resource which is no dict (key 'ProcSets', type <array>); ignore
 d.
->] <kapitel/anhang/ReadMe.pdf, id=1775, page=5, 596.2275pt x 844.15375pt>
+>] <kapitel/anhang/ReadMe.pdf, id=1762, page=5, 596.2275pt x 844.15375pt>
 File: kapitel/anhang/ReadMe.pdf Graphic file (type pdf)
 
 <use kapitel/anhang/ReadMe.pdf, page 5>
@@ -3992,7 +3670,7 @@ Package pdftex.def Info: kapitel/anhang/ReadMe.pdf, page5 used on input line 3.
 pdfTeX warning: pdflatex.exe (file ./kapitel/anhang/ReadMe.pdf): PDF inclusion:
  invalid other resource which is no dict (key 'ProcSets', type <array>); ignore
 d.
->] <kapitel/anhang/ReadMe.pdf, id=1781, page=6, 596.2275pt x 844.15375pt>
+>] <kapitel/anhang/ReadMe.pdf, id=1768, page=6, 596.2275pt x 844.15375pt>
 File: kapitel/anhang/ReadMe.pdf Graphic file (type pdf)
 
 <use kapitel/anhang/ReadMe.pdf, page 6>
@@ -4024,7 +3702,7 @@ Package pdftex.def Info: kapitel/anhang/ReadMe.pdf, page6 used on input line 3.
 pdfTeX warning: pdflatex.exe (file ./kapitel/anhang/ReadMe.pdf): PDF inclusion:
  invalid other resource which is no dict (key 'ProcSets', type <array>); ignore
 d.
->] <kapitel/anhang/ReadMe.pdf, id=1786, page=7, 596.2275pt x 844.15375pt>
+>] <kapitel/anhang/ReadMe.pdf, id=1773, page=7, 596.2275pt x 844.15375pt>
 File: kapitel/anhang/ReadMe.pdf Graphic file (type pdf)
 
 <use kapitel/anhang/ReadMe.pdf, page 7>
@@ -4109,7 +3787,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 13.
 
-[96] <kapitel/anhang/Kapazitaetsplan.pdf, id=1928, 845.1575pt x 597.23125pt>
+[96] <kapitel/anhang/Kapazitaetsplan.pdf, id=1915, 845.1575pt x 597.23125pt>
 File: kapitel/anhang/Kapazitaetsplan.pdf Graphic file (type pdf)
 
 <use kapitel/anhang/Kapazitaetsplan.pdf>
@@ -4123,7 +3801,7 @@ Package pdftex.def Info: kapitel/anhang/Kapazitaetsplan.pdf used on input line
 15.
 (pdftex.def)             Requested size: 845.15544pt x 597.22978pt.
 
-<kapitel/anhang/Kapazitaetsplan.pdf, id=1931, page=1, 845.1575pt x 597.23125pt>
+<kapitel/anhang/Kapazitaetsplan.pdf, id=1918, page=1, 845.1575pt x 597.23125pt>
 File: kapitel/anhang/Kapazitaetsplan.pdf Graphic file (type pdf)
 <use kapitel/anhang/Kapazitaetsplan.pdf, page 1>
 Package pdftex.def Info: kapitel/anhang/Kapazitaetsplan.pdf, page1 used on inpu
@@ -4162,7 +3840,7 @@ Package pdftex.def Info: kapitel/anhang/Kapazitaetsplan.pdf, page1 used on inpu
 t line 15.
 (pdftex.def)             Requested size: 845.15544pt x 597.22978pt.
  [97 <./kapitel/anhang/Kapazitaetsplan.pdf>]
-<kapitel/anhang/Kostenplan.pdf, id=2025, 845.1575pt x 597.23125pt>
+<kapitel/anhang/Kostenplan.pdf, id=2012, 845.1575pt x 597.23125pt>
 File: kapitel/anhang/Kostenplan.pdf Graphic file (type pdf)
 
 <use kapitel/anhang/Kostenplan.pdf>
@@ -4173,7 +3851,7 @@ File: kapitel/anhang/Kostenplan.pdf Graphic file (type pdf)
 Package pdftex.def Info: kapitel/anhang/Kostenplan.pdf used on input line 18.
 (pdftex.def)             Requested size: 845.15544pt x 597.22978pt.
 
-<kapitel/anhang/Kostenplan.pdf, id=2028, page=1, 845.1575pt x 597.23125pt>
+<kapitel/anhang/Kostenplan.pdf, id=2015, page=1, 845.1575pt x 597.23125pt>
 File: kapitel/anhang/Kostenplan.pdf Graphic file (type pdf)
 
 <use kapitel/anhang/Kostenplan.pdf, page 1>
@@ -4213,7 +3891,7 @@ Package pdftex.def Info: kapitel/anhang/Kostenplan.pdf, page1 used on input lin
 e 18.
 (pdftex.def)             Requested size: 845.15544pt x 597.22978pt.
  [98 <./kapitel/anhang/Kostenplan.pdf>] <kapitel/anhang/Qualitaetsplan.pdf, id=
-2054, 845.1575pt x 597.23125pt>
+2041, 845.1575pt x 597.23125pt>
 File: kapitel/anhang/Qualitaetsplan.pdf Graphic file (type pdf)
 
 <use kapitel/anhang/Qualitaetsplan.pdf>
@@ -4227,7 +3905,7 @@ Package pdftex.def Info: kapitel/anhang/Qualitaetsplan.pdf used on input line 2
 0.
 (pdftex.def)             Requested size: 845.15544pt x 597.22978pt.
 
-<kapitel/anhang/Qualitaetsplan.pdf, id=2057, page=1, 845.1575pt x 597.23125pt>
+<kapitel/anhang/Qualitaetsplan.pdf, id=2044, page=1, 845.1575pt x 597.23125pt>
 File: kapitel/anhang/Qualitaetsplan.pdf Graphic file (type pdf)
 
 <use kapitel/anhang/Qualitaetsplan.pdf, page 1>
@@ -4267,7 +3945,7 @@ Package pdftex.def Info: kapitel/anhang/Qualitaetsplan.pdf, page1 used on input
  line 20.
 (pdftex.def)             Requested size: 845.15544pt x 597.22978pt.
  [99 <./kapitel/anhang/Qualitaetsplan.pdf>] <kapitel/anhang/GanttChart.pdf, id=
-2083, 845.1575pt x 597.23125pt>
+2070, 845.1575pt x 597.23125pt>
 File: kapitel/anhang/GanttChart.pdf Graphic file (type pdf)
 
 <use kapitel/anhang/GanttChart.pdf>
@@ -4278,7 +3956,7 @@ File: kapitel/anhang/GanttChart.pdf Graphic file (type pdf)
 Package pdftex.def Info: kapitel/anhang/GanttChart.pdf used on input line 22.
 (pdftex.def)             Requested size: 845.15544pt x 597.22978pt.
 
-<kapitel/anhang/GanttChart.pdf, id=2086, page=1, 845.1575pt x 597.23125pt>
+<kapitel/anhang/GanttChart.pdf, id=2073, page=1, 845.1575pt x 597.23125pt>
 File: kapitel/anhang/GanttChart.pdf Graphic file (type pdf)
 
 <use kapitel/anhang/GanttChart.pdf, page 1>
@@ -4318,7 +3996,7 @@ Package pdftex.def Info: kapitel/anhang/GanttChart.pdf, page1 used on input lin
 e 22.
 (pdftex.def)             Requested size: 845.15544pt x 597.22978pt.
  [100 <./kapitel/anhang/GanttChart.pdf>] <kapitel/anhang/MP_Strukturplan.pdf, i
-d=2111, 845.1575pt x 597.23125pt>
+d=2098, 845.1575pt x 597.23125pt>
 File: kapitel/anhang/MP_Strukturplan.pdf Graphic file (type pdf)
 
 <use kapitel/anhang/MP_Strukturplan.pdf>
@@ -4332,7 +4010,7 @@ Package pdftex.def Info: kapitel/anhang/MP_Strukturplan.pdf used on input line
 24.
 (pdftex.def)             Requested size: 845.15544pt x 597.22978pt.
 
-<kapitel/anhang/MP_Strukturplan.pdf, id=2114, page=1, 845.1575pt x 597.23125pt>
+<kapitel/anhang/MP_Strukturplan.pdf, id=2101, page=1, 845.1575pt x 597.23125pt>
 File: kapitel/anhang/MP_Strukturplan.pdf Graphic file (type pdf)
 <use kapitel/anhang/MP_Strukturplan.pdf, page 1>
 Package pdftex.def Info: kapitel/anhang/MP_Strukturplan.pdf, page1 used on inpu
@@ -4493,12 +4171,7 @@ Package babel Info: Redefining ngerman shorthand "~
 [106]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 115.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 115.
- (main.aux
-
-Package natbib Warning: Citation(s) may have changed.
-(natbib)                Rerun to get citations correct.
-
-)
+ (main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 115.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 115.
 Package rerunfilecheck Info: File `main.out' has not changed.
@@ -4507,86 +4180,56 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
  ) 
 Here is how much of TeX's memory you used:
- 25882 strings out of 493366
- 460899 string characters out of 3131358
- 634673 words of memory out of 3000000
- 28077 multiletter control sequences out of 15000+200000
+ 25865 strings out of 493366
+ 460530 string characters out of 3131358
+ 634493 words of memory out of 3000000
+ 28069 multiletter control sequences out of 15000+200000
  23890 words of font info for 63 fonts, out of 3000000 for 9000
  1127 hyphenation exceptions out of 8191
  62i,22n,100p,2152b,2055s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{table.caption.212} has been referenced but does n
-ot exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{table.caption.204} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.182} has been referenced but does no
-t exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.166} has been referenced but does no
-t exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.163} has been referenced but does no
-t exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.175} has been referenced but does no
-t exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.157} has been referenced but does no
-t exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{table.caption.158} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{table.caption.150} has been referenced but does not
- exist, replaced by a fixed one
-
- <C:\Users\Vera\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ect
-t1440.pk> <C:\Users\Vera\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\d
-pi600\ecbi1440.pk> <C:\Users\Vera\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jkna
-ppen\ec\dpi600\ectt1095.pk> <C:\Users\Vera\AppData\Local\MiKTeX\2.9\fonts\pk\lj
-four\jknappen\ec\dpi600\ectt0800.pk> <C:\Users\Vera\AppData\Local\MiKTeX\2.9\fo
-nts\pk\ljfour\jknappen\ec\dpi600\ecrm0600.pk> <C:\Users\Vera\AppData\Local\MiKT
-eX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1095.pk> <C:\Users\Vera\AppData\L
-ocal\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0800.pk> <C:\Users\Vera\
-AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1095.pk> <C:\Us
-ers\Vera\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1095.p
-k> <C:\Users\Vera\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\e
-cbx1440.pk> <C:\Users\Vera\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec
-\dpi600\ectt1200.pk> <C:\Users\Vera\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jk
-nappen\ec\dpi600\ecti1200.pk> <C:\Users\Vera\AppData\Local\MiKTeX\2.9\fonts\pk\
-ljfour\jknappen\ec\dpi600\ecsl1200.pk> <C:\Users\Vera\AppData\Local\MiKTeX\2.9\
-fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk> <C:\Users\Vera\AppData\Local\Mi
-KTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1728.pk> <C:\Users\Vera\AppData
-\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx2488.pk> <C:\Users\Ver
-a\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk><C:/U
-sers/Vera/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx
-12.pfb><C:/Users/Vera/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsf
-onts/cm/cmex10.pfb><C:/Users/Vera/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
-/public/amsfonts/cm/cmitt10.pfb><C:/Users/Vera/AppData/Local/Programs/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Vera/AppData/Local/Progra
-ms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Vera/AppData/
-Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Ve
-ra/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><
-C:/Users/Vera/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
-cmr12.pfb><C:/Users/Vera/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/a
-msfonts/cm/cmr8.pfb><C:/Users/Vera/AppData/Local/Programs/MiKTeX 2.9/fonts/type
-1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Vera/AppData/Local/Programs/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/Vera/AppData/Local/Program
-s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Vera/AppData/Lo
-cal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/Ver
-a/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><
-C:/Users/Vera/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/sym
-bols/msbm10.pfb><C:/Users/Vera/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
-blic/esvect/vect10.pfb>
-Output written on main.pdf (106 pages, 10007813 bytes).
+ <C:\Users\Vera\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\e
+ctt1440.pk> <C:\Users\Vera\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec
+\dpi600\ecbi1440.pk> <C:\Users\Vera\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jk
+nappen\ec\dpi600\ectt1095.pk> <C:\Users\Vera\AppData\Local\MiKTeX\2.9\fonts\pk\
+ljfour\jknappen\ec\dpi600\ectt0800.pk> <C:\Users\Vera\AppData\Local\MiKTeX\2.9\
+fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0600.pk> <C:\Users\Vera\AppData\Local\Mi
+KTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1095.pk> <C:\Users\Vera\AppData
+\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0800.pk> <C:\Users\Ver
+a\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1095.pk> <C:\
+Users\Vera\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1095
+.pk> <C:\Users\Vera\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600
+\ecbx1440.pk> <C:\Users\Vera\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\
+ec\dpi600\ectt1200.pk> <C:\Users\Vera\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\
+jknappen\ec\dpi600\ecti1200.pk> <C:\Users\Vera\AppData\Local\MiKTeX\2.9\fonts\p
+k\ljfour\jknappen\ec\dpi600\ecsl1200.pk> <C:\Users\Vera\AppData\Local\MiKTeX\2.
+9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk> <C:\Users\Vera\AppData\Local\
+MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk> <C:\Users\Vera\AppDa
+ta\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1728.pk> <C:\Users\V
+era\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx2488.pk><C:
+/Users/Vera/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+bx12.pfb><C:/Users/Vera/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmex10.pfb><C:/Users/Vera/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmitt10.pfb><C:/Users/Vera/AppData/Local/Programs/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Vera/AppData/Local/Prog
+rams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Vera/AppDat
+a/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/
+Vera/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb
+><C:/Users/Vera/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmr12.pfb><C:/Users/Vera/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
+/amsfonts/cm/cmr8.pfb><C:/Users/Vera/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
+pe1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Vera/AppData/Local/Programs/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/Vera/AppData/Local/Progr
+ams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Vera/AppData/
+Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/V
+era/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb
+><C:/Users/Vera/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/s
+ymbols/msbm10.pfb><C:/Users/Vera/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
+public/esvect/vect10.pfb>
+Output written on main.pdf (106 pages, 10005264 bytes).
 PDF statistics:
- 3203 PDF objects out of 3580 (max. 8388607)
- 754 named destinations out of 1000 (max. 500000)
+ 3185 PDF objects out of 3580 (max. 8388607)
+ 745 named destinations out of 1000 (max. 500000)
  1218 words of extra memory for PDF output out of 10000 (max. 10000000)
 
