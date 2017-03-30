@@ -7,7 +7,7 @@ In den nachfolgenden Abschnitten, werden Werkzeuge und Hilfsmittel beschrieben, 
 Zur Ausführung der \emph{MArC}-Software sind diverse Hardware-Komponenten Voraussetzung. Diese Komponenten werden nachfolgend beschrieben und deren Kontext im System näher erläutert.
 \subsubsection{Computer für Unity-Simulation}\label{sec:UnityComp}\todo[inline, color=green] {Lukas}
 \todo[inline, color=red]{Laura}
-Die Anwendung, welche aus \textit{Unity} \cite{website:Unity} heraus erstellt wurde, benötigt einen Host-Computer, welcher sowohl mit dem \textit{HTC Vive} Head-Mounted Display kompatibel, als auch leistungsstark genug sein muss, um das Rendering der Simulation mit ausreichend hoher Bildrate ausführen zu können.
+Die Anwendung, welche aus \textit{Unity} \cite{website:Unity} heraus erstellt wurde, benötigt einen Host-Computer, welcher sowohl mit dem \textit{HTC Vive} Head-Mounted Display \textcolor{red}{Ich würde nur HTC Vive oder HTC Vive-HMD schreiben}kompatibel, als auch leistungsstark genug sein muss, um das Rendering der Simulation mit ausreichend hoher Bildrate ausführen zu können.
 
 Für das vorliegende Projekt wurde seitens der Technischen Hochschule Köln ein Computer zur Verfügung gestellt. Die technischen Daten des Geräts sind in Tabelle~\ref{tab:UnityCompParam} aufgeführt.
 
@@ -91,18 +91,19 @@ An den Computer für die \textit{Unity}-Simulation sind gezwungenermaßen viele 
 \subsubsection{HTC Vive}\label{sec:Vive} \todo[inline, color=green]{Laura}
 \todo[inline, color=red]{Lukas}
 Die \textit{HTC Vive} ist ein Head-Mounted Display, welches von \textit{HTC} in Kooperation mit \textit{Valve}~\cite{website:Valve} produziert wird. Vorgestellt wurde dieses am 1.\ März 2015 im Vorfeld des \textit{Mobile World Congress}~\cite{website:mobileworldcongress}.\\
-Die Auflösung des Displays beträgt insgesamt $2160\times1200$\,Pixel, was $1080\times1200$\,Pixeln pro Auge enstpricht. Die Brille bietet ein Sichtfeld von bis zu $110^\circ$ bei einer Bildwiederholrate von $90\,Hz$.\cite{website:HTC_Vive} Alle technischen Systemvoraussetzungen können in Tabelle \ref{tab:viveReq} eingesehen werden. \\
-Zur Positionsbestimmung im Raum wird die Lighthouse-Technologie von \textit{Valve} genutzt.\textcolor{red}{Quelle? + evtl. Erklärung dieser Technologie?} Zusätzlich sind neben einem Gyrosensor\textcolor{red}{Gyroskop?} auch ein Beschleunigungssensor und ein Laser-Positionsmesser verbaut. Mittels proprietärer Hand-Controller wird bei der \emph{HTC Vive} eine Interaktion mit virtuellen Objekten ermöglicht.
+Die Auflösung des Displays beträgt insgesamt $2160\times1200$\,Pixel, was $1080\times1200$\,Pixeln pro Auge enstpricht. Die Brille bietet ein Sichtfeld von bis zu $110^\circ$ bei einer Bildwiederholrate von $90\,Hz$ \cite{website:HTC_Vive}. Alle technischen Systemvoraussetzungen können in Tabelle \ref{tab:viveReq} eingesehen werden. \\
+Zur Positionsbestimmung im Raum wird die Lighthouse-Technologie von \textit{Valve} genutzt.\textcolor{red}{Quelle? + evtl. Erklärung dieser Technologie?} Zusätzlich sind neben einem Gyroskop auch ein Beschleunigungssensor und ein Laser-Positionsmesser verbaut. Mittels proprietärer Hand-Controller wird bei der \emph{HTC Vive} eine Interaktion mit virtuellen Objekten ermöglicht.
 
 \subsubsection{IDS uEye 164LE-C}\label{sec:uEye} \todo[inline, color=green] {Vera}
 \todo[inline, color=red]{Lukas}
 Die Kamera \textit{uEye 164LE-C} wurde vom Hersteller \textit{IDS Imaging Development Systems GmbH} entwickelt. Sie besitzt eine Bildauflösung von $1280\times1024$\,Pixel und ermöglicht Live-Videoaufnahmen im RGB-Farbmodus mit maximal $25$ Bildern pro Sekunde. Der integrierte CMOS Bildsensor wird im Rolling-Shutter-Modus betrieben und ermöglicht Belichtungszeiten von $37\,\mu$s bis $10$\,s. Weiterführend kann sie universell mit allen gängigen Computern oder Systemen via USB 2.0 Schnittstelle verbunden werden~\cite{website:UEyeTechSpec}.
 
 Die erforderliche Ansteuerung der \textit{uEye 164LE-C} erfolgt mit Hilfe der bereitgestellten \textit{IDS Software Suite}. In diese Suite ist die \textit{uEye-API} integriert, welche die Entwicklung von eigenen Programmen unter den Betriebsystemen \textit{Windows} und \textit{Linux} mit den Programmiersprachen \textit{C}$++$, \textit{.NET}, \textit{C$\#$} und \textit{C} ermöglicht \cite{website:IDSSuite}. Für das Tracking der Marker in \textit{MArC} wurde eine eigene Schnittstelle in \textit{C}$++$ erstellt, welche die Kamera im Live Modus initialisiert und steuert (vgl. Abschnitt~\ref{sec:UEyeSteu}).
-\subsubsection{Leap Motion Controller}\label{sec:LeapMotion} \todo[inline,color=green]{Paul}	
-\todo[inline, color=red]{Lukas}
-Der \textit{Leap Motion} Controller \cite{website:LeapMotion} ist ein $7,6\times3\times1,3\,cm$ großes Gerät, welches es mit Hilfe von Sensoren möglich macht, Hand- und Fingerbewegungen zu erkennen und diese als Eingabemöglichkeit zu nutzen. Die Idee dahinter ist, ein Eingabegerät für virtuelle Umgebungen analog zu konventionellen Eingabegeräten wie einer Maus zu schaffen, welches keinen direkten Kontakt bzw.\ keine Berührung benötigt. Hergestellt wird der \textit{Leap Motion} Controller von der US-amerikanischen Firma \emph{Leap Motion Inc.}, welche am 1.\ November 2010 gegründet wurde.\textcolor{red}{Quelle?}\\
-Wie in Abbildung~\ref{fig:leapMotion} gezeigt, besteht das Gerät im wesentlich aus zwei integrierten Weitwinkel-Kameras und drei einfachen Infrarot-LEDs. Die LEDs haben jeweils eine Wellenlänge von $850\,nm$.\textcolor{red}{Quelle?} Der durch die beiden Kameras aufgespannte Interaktionsraum des \textit{Leap Motion} Controllers ähnelt einer umgedrehten Pyramide mit einem Flächeninhalt von knapp $243\,cm{^2}$.\textcolor{red}{Quelle?} Die Reichweite des Geräts ist maßgeblich durch die Reichweite der LEDs begrenzt. Die Lichtintensität der LEDs ist wiederum durch den maximalen Strom, der über die USB-Verbindung fließt beschränkt.\textcolor{red}{Quelle?}\\
+\subsubsection{Leap Motion Controller}\label{sec:LeapMotion} 
+%\todo[inline,color=green]{Paul}	
+%\todo[inline, color=red]{Lukas}
+Der \textit{Leap Motion} Controller \cite{website:LeapMotion} ist ein $7,6\times3\times1,3\,cm$ großes Gerät, welches es mit Hilfe von Sensoren möglich macht, Hand- und Fingerbewegungen zu erkennen und diese als Eingabemöglichkeit zu nutzen. Die Idee dahinter ist, ein Eingabegerät für virtuelle Umgebungen analog zu konventionellen Eingabegeräten wie einer Maus zu schaffen, welches keinen direkten Kontakt bzw.\ keine Berührung benötigt. Hergestellt wird der \textit{Leap Motion} Controller von der US-amerikanischen Firma \emph{Leap Motion Inc.}, welche am 1.\ November 2010 gegründet wurde \cite{website:LeapMotion}.\\
+Wie in Abbildung~\ref{fig:leapMotion} gezeigt, besteht das Gerät im wesentlich aus zwei integrierten Weitwinkel-Kameras und drei einfachen Infrarot-LEDs. Die LEDs haben jeweils eine Wellenlänge von $850\,nm$. Der durch die beiden Kameras aufgespannte Interaktionsraum des \textit{Leap Motion} Controllers ähnelt einer umgedrehten Pyramide mit einem Flächeninhalt von knapp $243\,cm{^2}$. Die Reichweite des Geräts ist maßgeblich durch die Reichweite der LEDs begrenzt. Die Lichtintensität der LEDs ist wiederum durch den maximalen Strom, der über die USB-Verbindung fließt beschränkt~\cite{website:LeapMotionBlog}\\
 Für das Projekt wurde der \textit{Leap Motion} Controller zur Interaktion mit den virtuellen Menüs verwendet. Dabei wurde das Gerät am \textit{HTC Vive} Head-Mounted Display befestigt und so ein Interaktionsraum vor dem Gesicht des Nutzers aufgespannt.
 %Für das Projekt wurde die Orion beta software, die in \ref{OBS} näher beschrieben wird. Diese Software ermöglicht unter anderem eine Erweiterung der Reichweite der Leap Motion von $60\,cm$ auf $80\,cm$. Diese Reichweite ist durch die Ausbreitung der LED Lichter räumlich begrenzt. Die Lichtintensität der LEDs ist wiederum durch den maximalen Strom, der über die USB-Verbindung fließt beschränkt. \\
 
@@ -133,9 +134,10 @@ Weiter beinhaltet das $\texttt{DICT\_4X4\_50}$ Dictionary aufgrund seiner $16$-B
 	\label{fig:marker}
 \end{figure}
 
-\subsubsection{Schachbrett-Kalibrierungshelfer zur Kamerakalibrierung}\label{sec:SchachbrettKalib} \todo[inline, color=green]{Laura}
-\todo[inline, color=red]{Lukas}
-Der in Abbildung~\ref{fig:schachbrettKalib} gezeigte Kalibrierungshelfer wird für die Kamerakalibrierung (vgl. Abschnitt~\ref{sec:camCalib}) der \textit{uEye}-Kamera, deren Eigenschaften in Abschnitt~\ref{sec:uEye} beschrieben werden, verwendet. Dazu wurde eine Tisch-förmige Erhöhung gebaut, die genau so hoch ist wie die Würfel-Marker (vgl. Abschnitt~\ref{sec:WürfelMarker})\textcolor{red}{Ist die Höhe nicht entsprechend der des Markers auf dem Vive-Controller?}. Darauf ist ein ausgedrucktes Schachbrettmuster mit $8\times10$ Feldern. Davon werden von dem verwendeten Algorithmus nur die inneren Felder gezählt, also $7\times9$ Felder. Dieses steht unter \url{http://www.mrpt.org/downloads/camera-calibration-checker-board_9x7.pdf} (Abgerufen am: 25.03.2017) zum Download bereit.\textcolor{red}{Das packen wir vielleicht besser in den Anhang (also da noch mal das reine Muster abbilden) und nennen da die URL, oder? Dann kann man hier auf das Unterkapitel im Anhang verweisen.}
+\subsubsection{Schachbrett-Kalibrierungshelfer zur Kamerakalibrierung}\label{sec:SchachbrettKalib} 
+%\todo[inline, color=green]{geschrieben: Laura}
+%\todo[inline, color=red]{korrigiert: Lukas}
+Der in Abbildung~\ref{fig:schachbrettKalib} gezeigte Kalibrierungshelfer wird für die Kamerakalibrierung (vgl. Abschnitt~\ref{sec:camCalib}) der \textit{uEye}-Kamera, deren Eigenschaften in Abschnitt~\ref{sec:uEye} beschrieben werden, verwendet. Dazu wurde eine Tisch-förmige Erhöhung gebaut, die genau so hoch ist wie der \textit{ArUco}-Marker, der an dem Controller zur Arbeitsbereichskalibrierung, wie in Abschnitt \ref{sec:calibController} beschrieben, angebracht ist. Darauf ist ein ausgedrucktes Schachbrettmuster mit $8\times10$ Feldern. Davon werden von dem verwendeten Algorithmus nur die inneren Felder gezählt, also $7\times9$ Felder. Das Schachbrett so wie der zugehörige Download-Link sind im Anhang im Abschnitt \ref{sec:schachPDF} zu finden. 
 
 	\begin{figure}[H] 
 	\center 
@@ -144,15 +146,16 @@ Der in Abbildung~\ref{fig:schachbrettKalib} gezeigte Kalibrierungshelfer wird f�
 	\label{fig:schachbrettKalib}
 \end{figure}
 
-\subsubsection{Marker und Halterung für Arbeitsbereichskalibrierung} \label{sec:calibController} \todo[inline, color=green]{Laura}
-\todo[inline, color=red]{Lukas}
+\subsubsection{Kalibrierungscontroller zur Arbeitsbereichskalibrierung} \label{sec:calibController} 
+%\todo[inline, color=green]{geschrieben: Laura}
+%\todo[inline, color=red]{korrigiert: Lukas}
 Für die Kalibrierung des Arbeitsbereichs, die in Abschnitt~\ref{sec:planeCalib} beschrieben wird, wurde ein Controller der \textit{HTC Vive} wie in Abbildung \ref{fig:KontrollerMarc} zu sehen verändert. Zum einen wurde ein \textit{ArUco}-Marker mit der ID $49$ auf der Oberseite des Controllers befestigt und zum anderen wurde eine Unterlage angefertigt, die verhindern soll, dass der Controller während der Kalibrierung wackelt.\\
-Bei der Anbringung des eben erwähnten \textit{ArUco}-Markers, der in Abbildung \ref{fig:AllUsedArucoMarker} zu sehen ist, ist eine genaue Positionierung wichtig. Er muss genau mittig unter dem Ring\textcolor{red}{das mit "`unter dem Ring"' verstehe ich nicht} des Controllers aufgebracht werden, so wie es auf der Abbildung zu sehen ist. Dies ist entscheidend für das spätere Verfahren, welches auf der Zuordnung korrespondierender Punktepaaren basiert (vgl. Abschnitt~\ref{sec:Korrespondenz}). Um eine leichtere Aufbringung und gute Ausrichtung des \textit{ArUco}-Markers zu ermöglichen, wurde dafür eine kleine Auflagefläche am Controller angebracht. Diese ist so befestigt, dass der Mittelpunkt des \textit{ArUco}-Markers sich möglichst genau an der Stelle befindet, wo auch die Position des Controllers in der \emph{Unity}-Simulation gemessen wird.
+Bei der Anbringung des eben erwähnten \textit{ArUco}-Markers, der in Abbildung \ref{fig:AllUsedArucoMarker} zu sehen ist, ist eine genaue Positionierung wichtig. Er muss genau mittig unterhalb des ringförmigen Abschlusses des \textit{HTC Vive}-Controllers aufgebracht werden, so wie es auf der Abbildung zu sehen ist. Dies ist entscheidend für das spätere Verfahren, welches auf der Zuordnung korrespondierender Punktepaaren basiert (vgl. Abschnitt~\ref{sec:Korrespondenz}). Um eine leichtere Aufbringung und gute Ausrichtung des \textit{ArUco}-Markers zu ermöglichen, wurde dafür eine kleine Auflagefläche am Controller angebracht. Diese ist so befestigt, dass der Mittelpunkt des \textit{ArUco}-Markers sich möglichst genau an der Stelle befindet, wo auch die Position des Controllers in der \emph{Unity}-Simulation gemessen wird.
 
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=4in]{Bilder/Eigene Fotos/IMG_0032.jpg}
-		\caption{Kalibrierungscontroller des \textit{MArC} System mit ArUco Marker.\textcolor{red}{Evtl. noch eins der anderen Bilder vom Controller daneben, damit man sich das Teil etwas besser vorestellen kann?}}
+		\caption{Kalibrierungscontroller des \textit{MArC} System mit ArUco Marker.}
 		\label{fig:KontrollerMarc}
 	\end{figure}
 	
@@ -256,28 +259,32 @@ Die Marker bestehen ähnlich wie QR-Codes aus einer zweidimensionalen Matrix, mi
 	\label{fig:SizesArucoMarker}
 \end{figure}
 
-\subsubsection{Steam VR}\todo[inline,color=green] {Paul}
-\todo[inline, color=red]{Laura}
-\textit{Steam VR} ist die Schnittstelle zwischen der \textit{HTC Vive} und \textit{Unity}. Um das HMD nutzen zu können, musss \textit{Steam VR} auf dem Computer installiert sein. Für den Nutzer ist ein kleines GUI Element auf dem Monitor sichtbar, welches den Status der Geräte der \textit{Vive} darstellt. Hierdurch werden Fehlermeldungen kommuniziert, Kalibrierungen durchgeführt und eine Kommunikation mit dem HMD bereitgestellt, so dass das Gerät im Fall der Fälle neu gestartet werden kann.\\
+
+\subsubsection{Steam VR}
+%\todo[inline,color=green] {Paul}
+%\todo[inline, color=red]{Laura}
+\textit{Steam VR} \cite{website:steamVR} ist die Schnittstelle zwischen der \textit{HTC Vive} und \textit{Unity}. Um das HMD nutzen zu können, musss \textit{Steam VR} auf dem Computer installiert sein. Für den Nutzer ist ein kleines GUI Element auf dem Monitor sichtbar, welches den Status der Geräte der \textit{Vive} darstellt. Hierdurch werden Fehlermeldungen kommuniziert, Kalibrierungen durchgeführt und eine Kommunikation mit dem HMD bereitgestellt, so dass das Gerät im Fall der Fälle neu gestartet werden kann.\\
 Innerhalb von \textit{Unit} stellt \textit{Steam} ein Plugin zur Verfügung, welches direkt in Szenen in \textit{Unity} eingebettet werden kann. Der Entwickler ist also in der Lage, eine vorhandene \textit{Unity}-Szene um die VR Möglichkeit bequem per Drag and Drop zu erweitern.\\
 Das bereitgestellte \textit{Unity}-Prefab beinhaltet alle notwendigen Elemente um mit der Hardware kommunizieren zu können. Dabei wird eine Positionsbestimmung ebenso wie ein Kamera Rig für die stereoskopische Bildwiedergabe bereitgestellt, wie auch die Controllereingabe und Weiterverwendung der Daten möglich gemacht.
 
-\textcolor{red}{Es fehlen sämtliche Quellenangaben in diesem Abschnitt.}
 
 
 \subsubsection{Windows Sockets (Winsock)}\label{sec:Winsock}\todo[inline, color=green] {Lukas}
 \todo[inline, color=red]{Laura}
 \textit{Windows Sockets} (abgekürzt Winsock) ist eine API für den Zugriff auf Netzwerkkomponenten in Microsoft Windows Betriebssystemen~\cite{quinn1998windows}. Winsock wird nativ in Microsoft Windows bereitgestellt.\\ 
-Für die unkomplizierte Übertragung zwischen zwei Anwendungen in einem lokalen Netzwerk bieten sich sowohl das \emph{Transmission Control Protocol} (TCP), als auch das User \emph{User Datagram Protocol} (UDP) an (vgl. Abschnitt~\ref{sec:Netzwerk}). Das Erstellen von Netzwerk-Sockets für die Übertragung per TCP und UDP wird von Winsock ermöglicht.\\ Die Umsetzung der Netzwerkverbindung in \emph{MArC} wird in Abschnitt~\ref{sec:netzwerk} näher beschrieben.
+Für die unkomplizierte Übertragung zwischen zwei Anwendungen in einem lokalen Netzwerk bieten sich sowohl das \emph{Transmission Control Protocol} (TCP), als auch das User \emph{User Datagram Protocol} (UDP) an. Das Erstellen von Netzwerk-Sockets für die Übertragung per TCP und UDP wird von Winsock ermöglicht.\\ Die Umsetzung der Netzwerkverbindung in \emph{MArC} wird in Abschnitt~\ref{sec:netzwerk} näher beschrieben. \textcolor{red}{Bei UDP und TCP evtl auf entsprechenden Grundlagenteil verweisen??}
 
-\subsubsection{Leap Motion SDK} \label{sec:LeapSDK}\todo[inline, color=green] {Paul}
-\todo[inline, color=red]{Laura}
-\textit{Leap Motion Inc.} bietet ein vollständiges Software Development Kit (SDK) für den \textit{Leap Motion}-Controller an, welches die \textit{Unity}-Applikation um das Hand- und Fingertracking erweitert. Die Treibersoftware interpretiert die von den Kameras gelieferten Daten und sendet Trackinginformationen an die jeweilige Software. Das \textit{Leap Motion SDK} setzt an dieser Stelle an und verwendet diese eingehenden Daten um sie auf ein Handmodell in \textit{Unity} zu übertragen. Das SDK ist so vorbereitet, dass der Nutzer fertige Bausteine in die virtuelle Szene einbinden kann, die sich dann um die Dateninterpretation und Visualisierung als Handmodelle kümmert. Die Handmodelle, die das SDK liefert, sind mit Collidern ausgestattet. Diese abstrahierte Geometrie lässt \textit{Unity} Kollisionen feststellen. Dieses Feature wird bei \textit{MArC} verwendet, um die Interaktion mit den virtuellen Menüelementen zu realisieren.\\
 
-\textit{Leap Motion Inc.} bietet zudem mehrere sog.  "`Module"'  an, die das SDK erweitern können. Unter anderem auch ein Modul, welches die \textit{Unity}-internen GUI Elemente mit den Handmodellen bedienbar machen. Nach einigen Tests hat sich jedoch herausgestellt, dass diese Interaktionsmöglichkeit für \textit{MArC} ungeeignet ist, da sie zu instabil läuft. Das um das UI Modul erweiterte SDK projiziert die Position der Fingerspitzen auf die UI Ebene, falls sich die Hand in der Nähe dieser befindet. Auf der UI wird dann ein kleiner Kreis angezeigt, um dem Nutzer ein visuelles Feedback zu geben.\\
+
+
+\subsubsection{Leap Motion SDK} \label{sec:LeapSDK}
+%\todo[inline, color=green] {Paul}
+%\todo[inline, color=red]{Laura}
+\textit{Leap Motion Inc.} bietet ein vollständiges Software Development Kit (SDK) für den \textit{Leap Motion-Controller} an, welches die \textit{Unity}-Applikation um das Hand- und Fingertracking erweitert \cite{website:leapMotionSDK}. Die Treibersoftware interpretiert die von den Kameras gelieferten Daten und sendet Trackinginformationen an die jeweilige Software. Das \textit{Leap Motion SDK} setzt an dieser Stelle an und verwendet diese eingehenden Daten um sie auf ein Handmodell in \textit{Unity} zu übertragen. Das SDK ist so vorbereitet, dass der Nutzer fertige Bausteine in die virtuelle Szene einbinden kann, die sich dann um die Dateninterpretation und Visualisierung als Handmodelle kümmert. Die Handmodelle, die das SDK liefert, sind mit Collidern ausgestattet. Diese abstrahierte Geometrie lässt \textit{Unity} Kollisionen feststellen. Dieses Feature wird bei \textit{MArC} verwendet, um die Interaktion mit den virtuellen Menüelementen zu realisieren.\\
+
+\textit{Leap Motion Inc.} bietet zudem mehrere sog.  "`Module"'  an, die das SDK erweitern können. Unter anderem auch ein Modul, welches die \textit{Unity}-internen GUI Elemente mit den Handmodellen bedienbar machen. Nach einigen Tests hat sich jedoch herausgestellt, dass diese Interaktionsmöglichkeit für \textit{MArC} ungeeignet ist, da sie zu instabil läuft. Das um das UI Modul erweiterte SDK projiziert die Position der Fingerspitzen auf die UI Ebene, falls sich die Hand in der Nähe dieser befindet. Auf der UI wird dann ein kleiner Kreis angezeigt, um dem Nutzer ein visuelles Feedback zu geben \cite{website:leapMotionSDKUI}.\\
 Im Falle von \textit{MArC} sollten die virtuellen UI Elemente auf den Tisch platziert werden. Hierbei sind die Elemente jedoch immer ein wenig oberhalb des Tisches platziert, damit sie in jedem Fall mit der virtuellen Hand bedient werden können. Zwingend durchdringt die Hand dann die UI Elemente. Mittels des mitgelieferten UI-Modules ist eine Interaktion dann nicht mehr möglich. Daher war eine Bedienung mit Hilfe der Collider sinnvoller.
 
-\textcolor{red}{Es fehlen sämtliche Quellenangaben in diesem Abschnitt.}
 
 
 \newpage

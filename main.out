@@ -18,7 +18,7 @@
 \BOOKMARK [3][-]{subsubsection.3.1.5}{Leap Motion Controller}{subsection.3.1}% 18
 \BOOKMARK [3][-]{subsubsection.3.1.6}{W\374rfel-Marker}{subsection.3.1}% 19
 \BOOKMARK [3][-]{subsubsection.3.1.7}{Schachbrett-Kalibrierungshelfer zur Kamerakalibrierung}{subsection.3.1}% 20
-\BOOKMARK [3][-]{subsubsection.3.1.8}{Marker und Halterung f\374r Arbeitsbereichskalibrierung}{subsection.3.1}% 21
+\BOOKMARK [3][-]{subsubsection.3.1.8}{Kalibrierungscontroller zur Arbeitsbereichskalibrierung}{subsection.3.1}% 21
 \BOOKMARK [2][-]{subsection.3.2}{Obsolete Hardware}{section.3}% 22
 \BOOKMARK [3][-]{subsubsection.3.2.1}{Ovrvision Pro}{subsection.3.2}% 23
 \BOOKMARK [3][-]{subsubsection.3.2.2}{Webcam}{subsection.3.2}% 24
@@ -96,7 +96,8 @@
 \BOOKMARK [1][-]{section.8}{Zusammenfassung}{}% 96
 \BOOKMARK [1][-]{section.9}{Steckbrief}{}% 97
 \BOOKMARK [1][-]{section.10}{Anhang}{}% 98
-\BOOKMARK [2][-]{subsection.10.1}{MArC ReadMe-Datei}{section.10}% 99
-\BOOKMARK [2][-]{subsection.10.2}{startTCPServer\(\)-Methode}{section.10}% 100
-\BOOKMARK [2][-]{subsection.10.3}{getPointerOfMarkerVec\(\)-Methode}{section.10}% 101
-\BOOKMARK [2][-]{subsection.10.4}{interpretTCPMarkerData\(\)-Methode}{section.10}% 102
+\BOOKMARK [2][-]{subsection.10.1}{Schachbrett zur Kamerakalibrierung}{section.10}% 99
+\BOOKMARK [2][-]{subsection.10.2}{MArC ReadMe-Datei}{section.10}% 100
+\BOOKMARK [2][-]{subsection.10.3}{startTCPServer\(\)-Methode}{section.10}% 101
+\BOOKMARK [2][-]{subsection.10.4}{getPointerOfMarkerVec\(\)-Methode}{section.10}% 102
+\BOOKMARK [2][-]{subsection.10.5}{interpretTCPMarkerData\(\)-Methode}{section.10}% 103

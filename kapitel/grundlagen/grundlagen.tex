@@ -28,14 +28,15 @@ Die Entscheidung, für das vorliegende Projekt auf eine Desktop-VR-Anwendung zu 
 	\item Und schließlich sollte \emph{MArC} die Basis bereitstellen, um später auch mit mehreren Benutzern verwendet werden zu können.
 \end{itemize}
 
-\subsection{Haptische Interaktionsmethoden in VR Umgebungen}\label{sec:HaptikAnwendungen}\todo[inline, color=green]{Laura}
-\todo[inline, color=red]{Paul}
-Um das Eintauchen in die virtuelle Welt zu erleichtern, kann es bei manchen VR-Anwendungen sinnvoll sein, dem Benutzer eine Form von haptischem Feedback zu geben. Die meisten solcher Systeme mit haptischen Feedback haben ihren Ansatzpunkt an den Fingern, oder genauer gesagt an den Fingerspitzen. Es gibt aber auch Systeme die mehrere Parts des Körpers oder sogar den ganzen Körper mit einbeziehen.\textcolor{red}{Quelle? Beispiele?}\\
+\subsection{Haptische Interaktionsmethoden in VR Umgebungen}\label{sec:HaptikAnwendungen}
+%\todo[inline, color=green]{geschrieben: Laura}
+%\todo[inline, color=red]{korrigiert: Paul}
+Um das Eintauchen in die virtuelle Welt zu erleichtern, kann es bei manchen VR-Anwendungen sinnvoll sein, dem Benutzer eine Form von haptischem Feedback zu geben. Die meisten solcher Systeme mit haptischen Feedback haben ihren Ansatzpunkt an den Fingern, oder genauer gesagt an den Fingerspitzen. Dazu zählt unter anderem der Datenhandschuh \textit{Exoskelett} von \textit{Dexta Robotics} \cite{Gu:2016:DIL:2858036.2858487}. Es gibt aber auch Systeme die mehrere Parts des Körpers oder sogar den ganzen Körper mit einbeziehen. Ein Beispiel dafür ist der \textit{Synesthesia Suit} \cite{Konishi:2016:SSF:2945078.2945149}. \\
 Man unterscheidet zwischen \textit{Active Feedback Devices} und \textit{Passive Feedback Devices}. Während die aktive Variante dynamisch veränderliche Kräfte erzeugt, die dem Benutzer entgegenwirken, werden die passiven Varianten immer nur durch den Benutzer selber bewegt \cite{Haptic}.\\
 Um eine genauere Unterteilung vorzunehmen, kann man die verschiedenen Systeme zudem nach den einzelnen haptischen Wahrnehmungen unterteilen. Eine mögliche Aufteilung ist im Folgenden zu sehen.
 
 \begin{description}
-	\item[Force Feedback Systeme:] Ausübung eines Kraftvektors auf eine Körperstelle des Benutzers, um seine Bewegung zu erschweren oder aktiv eine Bewegung zu erzwingen. %Ein Beispiel hierfür ist das Exoskelett für die Hand von \textit{Dexta Robotics} \cite{Gu:2016:DIL:2858036.2858487}.
+	\item[Force Feedback Systeme:] Ausübung eines Kraftvektors auf eine Körperstelle des Benutzers, um seine Bewegung zu erschweren oder aktiv eine Bewegung zu erzwingen. 
 	\item[Tactile Feedback Systeme:] Stimulation der Berührungsempfindung der Haut. Im Allgemeinen wird ein variabler Druck auf eine Hautstelle ausgeübt, welcher nicht direkt von der Bewegung des Körperteils abhängig ist.
 	\item[Greifen:] Kann als Kombination der beiden vorangegangen Ansätze angesehen werden. Befindet sich ein virtueller Gegenstand in der Hand so soll hierbei verhindert werden können, dass der Benutzer seine Hand schließt. 
 	\item[Proprioceptive Feedback Systeme:] Im Gegensatz zu den \textit{Tactile Feedback Systems} spürt der Anwender nicht über seine Haut, sondern über Gelenke bzw. Muskeln. 
@@ -46,19 +47,20 @@ Bei den oben aufgelisteten Formen von haptischer Interaktion wird davon ausgegan
 %In manchen Fällen kann es schwierig sein eine eindeutige Zuordnung des Systems zu einer der Kategorien zu finden.
 
 
-\subsection{Handtracking}\label{sec:HandtrackingAnwendungen}\todo[inline, color = green]{Paul}
+\subsection{Handtracking}\label{sec:HandtrackingAnwendungen}%\todo[inline, color = green]{Paul}
 
-\todo[inline, color=red]{Lukas}
+%\todo[inline, color=red]{Lukas}
 Handtracking ist mittels verschiedener Trackingsysteme möglich. Alle Systeme haben hierbei ihre Vor- und Nachteile.\\
 Beispielsweise ist es möglich, die Bewegungen der Hand mittels eines Datenhandschuhs zu erfassen. Dies ist ein mit Sensoren ausgestatteter Handschuh, den der Nutzer an den Händen trägt. Eine Möglichkeit die Fingerbewegung mit einem Datenhandschuh zu erfassen sind Biegesensoren. Diese funktionieren zum Beispiel mit Glasfasern, die an den Fingern entlang laufen. Wird ein Finger gebogen, wird die Intensität des Lichts, welches durch die gebogene Glasfaser geschickt wird, leicht abgeschwächt. Hierdurch ist eine Biegung erkennbar \cite{DoernerBrollEtAl2013}
-Eine weitere Möglichkeit des Handtrackings ist ein Exosklett. Hierbei wird eine Mechanik an dem Handschuh angebracht, mittels welcher Bewegungen auf Sensoren übertragen werden{DoernerBrollEtAl2013}
+Eine weitere Möglichkeit des Handtrackings ist ein Exosklett. Hierbei wird eine Mechanik an dem Handschuh angebracht, mittels welcher Bewegungen auf Sensoren übertragen werden\cite{DoernerBrollEtAl2013}
 Datenhandschuhe sind für den Nutzer einschränkend und aus hygienischen Gründen, abhängig von der Anwendung,  nicht immer die Beste Wahl zum Handtracking.
-Eine bessere Möglichkeit ist das optische Tracking der Hände. Systeme wie der \textit{Leap Motion} Controller erfassen mit Kameras die Silhouette der Hände und rechnen aus den stereoskopischen Bildinformationen die Winkel und Positionen der verschiednen Fingerglieder aus.\textcolor{red}{Quelle?}\\
+Eine bessere Möglichkeit ist das optische Tracking der Hände. Systeme wie der \textit{Leap Motion} Controller erfassen mit Kameras die Hände und rechnen aus den stereoskopischen Bildinformationen die Winkel und Positionen der verschiednen Fingerglieder aus.\\
 Dieses System ist einfach zu benutzen. Sobald der Nutzer seine Hand in den vom \emph{Leap Motion} Controller abgedeckten Bereich hält, werden diese erkannt.\\
 Typisch für optische Systeme ist jedoch das Problem der Verdeckung. Wird die Hand aus einer bestimmten Richtung durch Kameras gefilmt, kann es passieren, dass einige Finger andere überdecken. Teilweise kann dann nicht exakt unterschieden werden, welches Fingerglied zu welchem Finger oder zu welchem Teil der Hand gehört. Dies wirkt sich bei der Benutzung in einem "`hüpfenden"' Verhalten oder unmenschlich verrenkter Finger der gerenderten Hand aus.
 
-\subsection{ISO/OSI-7-Schichtenmodell}\label{sec:Netzwerk}\todo[inline, color=green]{Laura}
-\todo[inline, color=red]{Paul}
+\subsection{ISO/OSI-7-Schichtenmodell}\label{sec:Netzwerk}
+%\todo[inline, color=green]{geschrieben: Laura}
+%\todo[inline, color=red]{korrigiert: Paul}
 Um die Kommunikation zwischen unterschiedlichsten technischen Systemen zu ermöglichen und zu vereinheitlichen dient das \textit{ISO/OSI-7-Schichtenmodell} \cite{ITU}, welches in Tabelle~\ref{tab:Schichtenmodell} schematisch dargestellt ist. Um die Weiterentwicklung von Kommunikationsmodellen möglichst barrierefrei zu gestalten, sind in dem Modell sieben aufeinanderfolgende Schichten definiert worden, die für einen jeweils klar eingegrenzten Teilbereich der Kommunikation zuständig sind. Die Netzprotokolle, die in einer Schicht zum Einsatz kommen, müssen einheitliche Schnittstellen aufweisen, um einen reibungslosen Austausch zu gewährleisten. Entsprechende Beispiele sind der rechten Spalte von Tabelle~\ref{tab:Schichtenmodell} zu entnehmen.\\
 
 \begin{table}
@@ -97,7 +99,7 @@ Die Transportschicht stellt eine logische Ende-zu-Ende-Verbindungen dar und dien
 \item[UDP:] Dieses Transportprotokoll wurde aus der Notwendigkeit heraus entwickelt, für die Übertragung von Sprache auf ein, im Gegensatz zur TCP, simpleres Protokoll zurückgreifen zu können. Genaue Details können in dem Standard RFC 768 \citep{rfc768} von 1981 in Erfahrung gebracht werden.
 \end{description}
 
-Ein wichtiger Unterschied zwischen den beiden Transportprotokollen ist, dass die Übertragung per TCP im Vergleich zu UDP sicherstellt, dass gesendete Daten korrekt übertragen und empfangen werden. Dies geschieht dadurch, dass in einem TCP-Socket-Netzwerk Fehlererkennungs- und Korrekturmechanismen enthalten sind, die fehlerhafte Übertragungen der darunterliegenden Internet Protocol (IP) Schicht ausgleichen, also entweder korrigieren oder dafür sorgen, dass fehlerhafte Daten erneut übertragen werden. \textcolor{red}{Wegen dieser automatischen Fehlerkorrektur wurde TCP für die Kommunikation zwischen den beiden Computern bei MArC verwendet. Details: siehe Kapitel XYZ (?)}
+Ein wichtiger Unterschied zwischen den beiden Transportprotokollen ist, dass die Übertragung per TCP im Vergleich zu UDP sicherstellt, dass gesendete Daten korrekt übertragen und empfangen werden. Dies geschieht dadurch, dass in einem TCP-Socket-Netzwerk Fehlererkennungs- und Korrekturmechanismen enthalten sind, die fehlerhafte Übertragungen der darunterliegenden Internet Protocol (IP) Schicht ausgleichen, also entweder korrigieren oder dafür sorgen, dass fehlerhafte Daten erneut übertragen werden. Wegen dieser automatischen Fehlerkorrektur wurde TCP für die Kommunikation zwischen den beiden Computern bei \textit{MArC} verwendet. Der genaue Netzwerkaufbau kann in Kapitel \ref{sec:netzwerk} nachvollzogen werden.
 
 \subsection{Bedienkonzepte in VR-Umgebungen}\label{sec:MenüAnwendungen}\todo[inline, color=green]{Lukas}
 \todo[inline, color=red]{Paul}
