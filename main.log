@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2017.1.2)  30 MAR 2017 11:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2017.1.2)  30 MAR 2017 13:06
 entering extended mode
 **./main.tex
 (main.tex
@@ -4213,11 +4213,14 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
  25843 strings out of 493335
  463089 string characters out of 3127639
- 634395 words of memory out of 3000000
+ 635395 words of memory out of 3000000
  28058 multiletter control sequences out of 15000+200000
  23890 words of font info for 63 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -4264,7 +4267,7 @@ X_portable/MiKTeXPortable/texmfs/install/fonts/type1/public/amsfonts/cm/cmtt10.
 pfb><H:/LaTeX/_LaTeX_portable/MiKTeXPortable/texmfs/install/fonts/type1/public/
 amsfonts/symbols/msbm10.pfb><H:/LaTeX/_LaTeX_portable/MiKTeXPortable/texmfs/ins
 tall/fonts/type1/public/esvect/vect10.pfb>
-Output written on main.pdf (105 pages, 9537097 bytes).
+Output written on main.pdf (105 pages, 9536830 bytes).
 PDF statistics:
  3169 PDF objects out of 3580 (max. 8388607)
  743 named destinations out of 1000 (max. 500000)
