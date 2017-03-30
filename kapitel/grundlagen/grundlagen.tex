@@ -15,11 +15,10 @@ Als grundsätzlich unterschiedliche Architekturen bei der Entwicklung von VR-An\
 \begin{description}
 	\item[Desktop-VR-Applikationen:] Hierbei handelt es sich um die leistungsstärksten VR-Applikationen, die potente Computer-Hardware häufig mit Head-Mounted Displays wie etwa \textit{Oculus Rift} oder \textit{HTC Vive} verwenden.\\ 
 	Beispiele für Desktop-VR-Applikationen sind insbesondere 3D-Spiele, die bereits ohne den Zusatz von Virtual Reality häufig hohe Anforderungen an die Computerhardware stellen.
-	\item[Mobile-VR-Applikationen:] Mobile Anwendungen vereinen häufig (jedoch nicht immer) alle notwendige Hardware in einem Gerät, wie etwa einem Smartphone oder Tablet-Computer.\\ Beispiele für mobile VR-Anwendungen sind \textit{Samsung GearVR}~\cite{website:gearVRpressRelease} und \textit{Google Cardboard}~\cite{website:googleCardboard}. Im Falle von \textit{Samsung GearVR} und \textit{Google Cardboard} wird zusätzlich eine Haltevorrichtung für das verwendete Gerät eingesetzt, die bei \textit{GearVR} auch als Controller fungiert und durch ein integriertes Linsensystem das Sichtfeld des Benutzers erhöht.
+	\item[Mobile-VR-Applikationen:] Mobile Anwendungen vereinen häufig (jedoch nicht immer) alle notwendige Hardware in einem Gerät, wie etwa einem Smartphone oder Tablet-Computer. Dies führt generell zu einer geringeren Anwendungsperformanz, weshalb Anwendungen für mobile VR-Geräte tendenziell "`simpler"' ausgelegt sind.\\ Beispiele für mobile VR-Anwendungen sind \textit{Samsung GearVR}~\cite{website:gearVRpressRelease} und \textit{Google Cardboard}~\cite{website:googleCardboard}. Im Falle von \textit{Samsung GearVR} und \textit{Google Cardboard} wird zusätzlich eine Haltevorrichtung für das verwendete Gerät eingesetzt, die bei \textit{GearVR} auch als Controller fungiert und durch ein integriertes Linsensystem das Sichtfeld des Benutzers erhöht.
 	\item[Web-VR-Applikationen:] Anwendungen für das Web wie etwa WebVR~\cite{website:webVR} erlauben den Zugriff auf Virtual-Reality-Geräte wie Head-Mounted-Displays durch einen Browser. Auf diese Weise können Web-Inhalte mit VR-Hardware konsumiert werden.
 \end{description}
 
-\textcolor{red}{Vor- und Nachteile der einzelnen Applikationsarten nennen.}\\
 Die Entscheidung, für das vorliegende Projekt auf eine Desktop-VR-Anwendung zu setzen, wurde getroffen, weil mobile und Web-VR-Applikationen die folgenden, vom Projektteam als unverzichtbar eingestuften Voraussetzungen nicht erfüllen konnten.
 
 \begin{itemize}
@@ -113,7 +112,7 @@ Nach~\cite{sherman2002understanding} gibt es vier unterschiedliche Manipulations
 	\item[Agent Controls:] Der Benutzer interagiert mit der virtuellen Welt über einen "`intelligenten Mittelsmann"'. Dieser Mittelsmann kann eine Person oder ein vom Computer kontrolliertes Wesen sein.
 \end{description}
 In den Abschnitten~\ref{sec:kontextMenu}, \ref{sec:markerHandles} und \ref{sec:TableMenü} wird auf die in \emph{MArC} verwendeten Interaktions- und Manipulationsmethoden eingegangen.
- \textcolor{red}{Was genau folgt daraus für MArC? Ich würde am Ende einen kurzen Hinweis geben, damit der Teil nicht nur Möglichkeiten auflistet. Nur der Verweis am Ende reicht m.E. nicht aus}
+
 \subsection{Marker Tracking} \label{sec:MarkerTracking}\todo[inline, color=green]{Vera}
 \todo[inline, color=red]{Paul}
 In einer VR- oder AR-Umgebung ist zur interaktiven Positionierung eines 3D Objektes die präzise Bestimmung der Orientierung und Position im 3D-Zielraum notwendig \cite{article:Aruco2014}. Zur Lösung dieses Problems muss zunächst ein physisches Objekt in der realen Welt erkannt, zugeordnet und verfolgt werden. Demzufolge ist es notwendig, dieses physische Objekt mit einer Videokamera aufzunehmen. In den resultierenden Bildsequenzen werden die physischen Objekte anhand von festgelegten Merkmalen erkannt. Diese Merkmale können sowohl natürlicher Art sein oder in Form von künstlich erstellten Codes festgelegt sein. Ein Objekttracking mit natürlichen Merkmalen wird in der Literatur auch als \textit{Markerless Tracking} bezeichnet, während die Verwendung von Codes, beziehungsweise Bildmarken, als \textit{Markerbased Tracking} bekannt ist \cite{article:MarkerLessBarandiaran2010}. 
