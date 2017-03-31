@@ -16,21 +16,19 @@ Das \textit{MArC} Projektteam stellte den Kontakt zu einem Architekturbüro in K
 
 \subsubsection{Projektziele und Anforderungen}
 %\todo[inline, color=red]{Vera}
-Ziel des Projektes \textit{MArC} ist es, Architekten eine neuartige Darstellung von Gebäuden und Objekten zu erlauben und ein flexibleres sowie nachhaltigeres Arbeiten in der ersten Planungsphase zu ermöglichen.Dieses System kann an einem beliebigen Tisch installiert werden, auf dem die Würfel-Marker platziert werden. Direkt über dem Tisch wird eine Kamera montiert, welche für das Tracking der Würfel-Marker benutzt wird.  Mittels Augmented oder Virtual Reality werden in dem Display einer VR-Bille (\textit{HTC Vive}) die virtuellen Gebäude und Objekte aus den CAD Dateien extakt an die Positionen der Würfel-Marker gerendert. Diese virtuellen Objekte können per Hand mit den getrackten Würfel-Markern manipuliert werden. So entsteht eine VR oder AR Szene, die aus allen Blickwinkeln betrachtet und jederzeit durch weitere Objekte erweiterbar ist. \\
+Ziel des Projektes \textit{MArC} ist es, Architekten eine neuartige Darstellung von Gebäuden und Objekten zu erlauben und ein flexibleres sowie nachhaltigeres Arbeiten in der ersten Planungsphase zu ermöglichen.Dieses System kann an einem beliebigen Tisch installiert werden, auf dem die Würfel-Marker platziert werden. Direkt über dem Tisch wird eine Kamera montiert, welche für das Tracking der Würfel-Marker benutzt wird.  Mittels Augmented oder Virtual Reality werden in dem Display eines Head-Mounted Displays (\textit{HTC Vive}) die virtuellen Gebäude und Objekte aus den CAD-Dateien extakt an die Positionen der Würfel-Marker gerendert. Diese virtuellen Objekte können per Hand mit den getrackten Würfel-Markern manipuliert werden. So entsteht eine VR oder AR Szene, die aus allen Blickwinkeln betrachtet und jederzeit durch weitere Objekte erweiterbar ist. \\
 Zusätzlich soll eine Timeline implementiert werden, die es dem Nutzer ermöglicht jederzeit einen Zwischenstand abzuspeichern oder aufzurufen. Eine weitere Besonderheit in Form von automatischen Berechnungen der Gebäudeeigenschaften und deren Darstellung in der virtuellen Welt soll dem Architekten bei der Planung unterstützen. Diese Berechnungen sollen vom System in eine Exceldatei exportiert werden.\\
-Das Projekt soll in einem Team von vier Personen durchgeführt werden. Hierfür stehen $12$ ECTS Punkte pro Person und insgesamt $48$ ECTS mit daraus resultierenden $1440$ Stunden an Zeitressourcen für das gesamte Projekt zur Verfügung.
+Das Projekt soll in einem Team von vier Personen durchgeführt werden. Hierfür stehen $12$ ECTS Punkte pro Person und somit insgesamt $48$ ECTS mit daraus resultierenden $1440$ Stunden an Zeitressourcen für das gesamte Projekt zur Verfügung.
 
 
 \subsubsection{Lösungskonzept}
 %\todo[inline, color=red]{Vera}
-\textit{MArC} soll mit Hilfe von Augmented oder Virtual Reality eine intuitive und flexible Arbeit mit abstrackten Entwurfsmodellen ermöglichen. So kann per Augmented Reality Brille ein Modell auf einem Tisch visualisiert und grundlegend manipuliert werden, also skaliert in alle Achsen, verschoben und rotiert werden. Die Skalierung geschiet mittels des Kontextmenüs, welches Anfasser für jede Achse besitzt. Die Rotation wird durch die Drehung des Würfel-Markers herforgerufen, eine Verschiebung durch ein Verschieben der Würfel-Marker.
-
+\textit{MArC} soll mit Hilfe von Augmented oder Virtual Reality eine intuitive und flexible Arbeit mit abstrackten Entwurfsmodellen ermöglichen. So kann per Augmented Reality Brille ein Modell auf einem Tisch visualisiert und grundlegend manipuliert werden, also skaliert in alle Achsen, verschoben und rotiert werden. Die Skalierung geschiet mittels des Kontextmenüs, welches Anfasser für jede Achse besitzt. Die Rotation wird durch die Drehung des Würfel-Markers herforgerufen, eine Verschiebung durch ein Verschieben der Würfel-Marker.\\
 Anordnungen von mehreren Modellen in einer Umgebung (z.B. Siedlung) können exportiert und so direkt weiterverarbeitet werden.
 Hierfür sieht \textit{MArC} zwei Möglichkeiten vor: Zum einen werden Szenen gespeichert und in einem Menü neben der Arbeitsfläche dargestellt, in dem sie wieder aufgerufen werden können. Desweiteren können Daten von Siedlungen als Tabellen gespeichert werden, um später auch in anderen Programmen weiter verwendet werden zu können.
 Durch die VR-Brille mit montierten Kamera wird ein Abbild der realen Umgebung gezeigt. Auf einem Tisch liegende Würfel werden durch das innovative System getrackt; diese können von dem Benutzer intuitiv verschoben und arrangiert werden. \\
 Das Tracking der Würfel-Marker erfolgt wenn möglich ohne Marker (Markerless-Tracking, d.h. die Würfel-Marker die der Benutzer anfasst sind nicht mit Codes oder Mustern versehen). Hierfür wird eine Kamera über dem Tisch montiert, welche die Arbeitsfläche filmt. Diese wird an einen Computer angeschlossen, der das Tracking durchführt. Für die Markererkennung des Trackingprogramms wird \textit{OpenCV} verwendet.\\ Die Teilsysteme werden über eine Netzwerkverbindung (TCP) miteinander verbunden. So kommunizieren der Computer der für das Tracking zuständig ist mit dem Computer der die Darstellung mittels \textit{Unity} umsetzt. Markerdaten werden übertragen und diese Informationen als Basis zum Rendern der Gebäude genommen. 
-Das Terminziel ist das Ende des Wintersemesters 2016/2017. Die Projektabgabe soll am 28.2.2017 fertig gestellt worden sein. Die Dokumentation ist am 31.3.2017 Fertigzustellen und die Präsentation am 10.5.2017, wobei sich dieser Termin im laufe der Arbeit ergab.
-
+Das Terminziel ist das Ende des Wintersemesters 2016/2017. Die Projektabgabe soll am 28. Februar 2017 fertig gestellt worden sein. Die Dokumentation ist am 31. März 2017 fertigzustellen und die Präsentation am 10. Mai 2017, wobei sich dieser Termin im laufe der Arbeit ergab.
  
 \subsubsection{Durchführbarkeitsanalyse}
 %\todo[inline, color=red]{Vera}
@@ -43,9 +41,9 @@ In diesem Abschnitt soll die Durchführbarkeit des Projektes erklärt werden. Di
 	\item  Terminliche Durchführbarkeit
 \end{itemize}
 
-\paragraph{Technologische Durchführbarkeit} Für die Technologische Durchführbarkeit stehen sowohl die Technischen Möglichkeiten, als auch das Know-how der Mitarbeiter im Zentrum. \textit{MArC} nutzt neuartige Technologien, die einerseits zum Teil in der Hochschule vorhanden waren, teilweise jedoch in Übersee erworben werden mussten. So war die \textit{HTC Vive} das Mittel der Wahl zur Darstellung der virtuellen Elemente. Diese war bereits in der Hochschule vorhanden und es gab einige Kommilitonen, die bereits damit Erfahrungen gesammelt hatten. Demzufolge konnte das Projektteam sporadisch auf vorhandenen Erfahrungen zurückgreifen. Ebenso verhielt es sich mit der \textit{LeapMotion}, welche von der TH zur Verfügung gestellt wurde und ebenfalls schon in anderen Projekten verwendet wurde. Auch hier konnte zur besseren Machbarkeitsabschätzung auf bestehende Erfahrungen zurückgegriffen werden. In beiden Fällen stellte sich die Idee diese Geräte zu verwenden als gute Lösung heraus, unter anderem wegen dem Erfolg der anderen Projekte.\\
-Anders verhielt es sich jedoch mit der \textit{OVR Vision}. Dieses Gerät war nicht im Besitz der Hochschule und kein Teammitglied hatte Erfahrung mit diesem Gerät. Da jedoch alle weiteren Geräte funktional und mit guter Erfahrungswerten zur Verfügung standen, entschied sich das Team die \textit{OVR Vision} zu kaufen um die Augemented Reality im System umzusetzen.\\
-Ziel der Verwendung der \textit{OVR Vision} war es, aus der Virtuellen Realität und haptischen Komponente der Würfel-Marker eine Augmented-Reality-Anwendung zu schaffen, welche dem Benutzer die Darstellung der virtuellen Elemente in seiner Umgebung ermöglicht.\\
+\paragraph{Technologische Durchführbarkeit} Für die Technologische Durchführbarkeit stehen sowohl die Technischen Möglichkeiten, als auch das Know-how der Mitarbeiter im Zentrum. \textit{MArC} nutzt neuartige Technologien, die einerseits zum Teil in der Hochschule vorhanden waren, teilweise jedoch in Übersee erworben werden mussten. So war die \textit{HTC Vive} das Mittel der Wahl zur Darstellung der virtuellen Elemente. Diese war bereits in der Hochschule vorhanden und es gab einige Kommilitonen, die bereits damit Erfahrungen gesammelt hatten. Demzufolge konnte das Projektteam sporadisch auf vorhandenen Erfahrungen zurückgreifen. Ebenso verhielt es sich mit dem \textit{Leap Motion} Controller, welche von der TH zur Verfügung gestellt wurde und ebenfalls schon in anderen Projekten verwendet wurde. Auch hier konnte zur besseren Machbarkeitsabschätzung auf bestehende Erfahrungen zurückgegriffen werden. In beiden Fällen stellte sich die Idee diese Geräte zu verwenden als gute Lösung heraus, unter anderem wegen dem Erfolg der anderen Projekte.\\
+Anders verhielt es sich jedoch mit der \textit{Ovrvision Pro}. Dieses Gerät war nicht im Besitz der Hochschule und kein Teammitglied hatte Erfahrung mit diesem Gerät. Da jedoch alle weiteren Geräte funktional und mit guter Erfahrungswerten zur Verfügung standen, entschied sich das Team die \textit{Ovrvision Pro} zu kaufen um die Augemented Reality im System umzusetzen.\\
+Ziel der Verwendung der \textit{Ovrvision Pro} war es, aus der Virtuellen Realität und haptischen Komponente der Würfel-Marker eine Augmented-Reality-Anwendung zu schaffen, welche dem Benutzer die Darstellung der virtuellen Elemente in seiner Umgebung ermöglicht.\\
 Für das Tracking sollte eine bereits vorhandene Industriekamera von \textit{IDS} verwendet werden. Diese wurde ebenfalls in vielen Fachbereichen in der Hochschule für die Lehre und Forschung genutzt und galt als zuverlässig.\\
 Des weiteren konnte das Team auf weitreichendes und individuelles Wissen zurückgreifen. So waren unter anderen bereits eine Bachelorarbeit mit \textit{Unity} und einem HMD erarbeitet worden und zwei andere Teammitglieder hatten tiefgreifendes Wissen über die digitale Bildverarbeitung. Letztere ist für das Marker-Tracking unumgänglich. Wissenslücken bestanden jedoch in der Umsetzung und Entwicklung der Augmented Reality. Dieser Bereich ist technologisches Neuland und im Laufe des Projektes startete Microsoft den Verkauf der \textit{Hololens}, welches ein echtes Augmented-Reality-HMD ist. So wurden im Modul "`Virtuelle und Erweiterte Realität"', welches alle der Mitglieder vor dem Projektbeginn belegten, das geforderte Know-how zur Entwicklung Augmented-Reality-Anwendungen nicht vermittelt wurde.
 
@@ -60,23 +58,25 @@ Des weiteren konnte das Team auf weitreichendes und individuelles Wissen zurück
 
 \subsubsection{Projektauftragsformular}
 %\todo[inline, color=red]{Vera}
-Das Projektauftragsformular ist in Tabelle ~\ref{tab:Projektformular} zu finden.
+Das Projektauftragsformular ist in Tabelle~\ref{tab:Projektformular} zu finden.
 \begin{table}
 	\centering
 	\begin{tabularx}{\textwidth}{|l|l|}
 	\hline
 	\Absatzbox{}
-	& \textbf{Projektauftrag}\\	
+	&\textbf{Projektauftrag}\\	
 	\hline
-	Projektname & MArC ( Mixed Reality Architecture Composer)\\
+	Projektname & MArC (Mixed Reality Architecture Composer)\\
 	\hline
 	Projektleiter & Paul Berning, Lukas Kolhagen\\
 	\hline
 	Projektanlass & Masterprojekt Master Medientechnologie\\
 	\hline
 	Projektziele & Erstellung einer Augmented bzw. Virtual Reality \\
-	&Anwendung mit der Architekten Siedlungen in der\\ & ersten Entwurfsphase bauen und einfach \\ & nachträglich bearbeiten können.\\
-	 &Dabei soll der Nutzer virtuelle Gebäude mittels \\
+	&Anwendung mit der Architekten Siedlungen in der\\ 
+	& ersten Entwurfsphase bauen und einfach \\ 
+	& nachträglich bearbeiten können.\\
+	&Dabei soll der Nutzer virtuelle Gebäude mittels \\
 	& getrackter Würfel verschieben und rotieren können \\
 	&und sämtliche Interaktion (Manipulation der Größe\\ 
 	& der Gebäude, Menü-Interaktionen) mit den Fingern \\
@@ -95,10 +95,9 @@ Das Projektauftragsformular ist in Tabelle ~\ref{tab:Projektformular} zu finden.
 	&Dokumentation ist bis zum 30.3.2017 abzuliefern,\\
 	& eine Abschlusspräsentation mit allen Ergebnissen\\
 	& ist am 10.5.2017 zu halten. Zusätzlich erstellt\\
-	 &das Projektteam ein Video welches das\\
-	& Lauffähige Ergebnis dokumentiert.\\
-	
-\hline
+	&das Projektteam ein Video welches das\\
+	& Lauffähige Ergebnis dokumentiert.\\	
+	\hline
 	Projektbudget & Das Projekt unterliegt einem\\
 	& monetären Budget von $500$ Euro und einem\\
 	& zeitlichen Budged von $4$ Personen $\times$ \\
@@ -117,32 +116,33 @@ Das Projektauftragsformular ist in Tabelle ~\ref{tab:Projektformular} zu finden.
 	&Projektpräsentation und Abgabe des Videos: \\
 	&10.5.2017\\
 	\hline
-
 	\end{tabularx}
-	\caption[Projekt-Auftragsformular von \emph{Marc}]{Projekt-Auftragsformular von \emph{Marc}.}
+	\caption[Projekt-Auftragsformular von \emph{MArC}]{Projekt-Auftragsformular von \emph{MArC}.}
 	\label{tab:Projektformular}
 \end{table}
 
 \subsubsection{Projektorganisation}
 %\todo[inline, color=red]{Vera}
 \paragraph{Leitung} Die Leitung des Teams wurde aufgeteilt zwischen Lukas Kolhagen und Paul Berning. Die Ursprünglich gedachte Aufteilung in die beiden Semester ist einer durchgängigen Kooperation und Absprache gewichen, welche das Team organisatorisch stützte.
-\paragraph{Team} Das Team teilte sich des weiteren in zwei Unterteams auf. Basierend auf den unterschiedlichen individuellen Kompetenzen wurde das Tracking der Marker hauptsächlich von Laura Anger und Vera Brockmeyer übernommen. Auf der anderen Seite konnten Lukas Kolhagen und Paul Berning fundierte Unity Kenntnisse aufweisen und kümmerten sich um die visuelle Darstellung der Applikation.
+\paragraph{Team} Das Team teilte sich des weiteren in zwei Unterteams auf. Basierend auf den unterschiedlichen individuellen Kompetenzen wurde das Tracking der Marker hauptsächlich von Laura Anger und Vera Brockmeyer übernommen. Auf der anderen Seite konnten Lukas Kolhagen und Paul Berning fundierte \emph{Unity}-Kenntnisse aufweisen und kümmerten sich um die visuelle Darstellung der Applikation.
 
-\paragraph{Infrastruktur} Als Arbeitsplatz wurde Seitens der Hochschule ein Raum zur Verfügung gestellt, der über eine fest installierte \textit{HTC Vive} und einem Computer, welcher die Systemvorraussetzungen der \textit{HTC Vive} erfüllt, verfügt. In diesem wurde das Projekt durchgeführt. Optional standen dem Team weitere performante Laptops zur Verfügung und die privaten Notebooks wurden für die Entwicklung genutzt. Die benötigte \textit{OVR Vision} sowie erforderliches Zubehör, wie Halterungen und Aluminium-Würfel wurden im Laufe der Zeit hinzu gekauft. Weiterführend, wurden die \textit {LeapMotion} und eine Webcam von der Hochschule zur Verfügung gestellt.
+\paragraph{Infrastruktur} Als Arbeitsplatz wurde Seitens der Hochschule ein Raum zur Verfügung gestellt, der über eine fest installierte \textit{HTC Vive} und einem Computer, welcher die Systemvorraussetzungen der \textit{HTC Vive} erfüllt, verfügt. In diesem wurde das Projekt durchgeführt. Optional standen dem Team weitere performante Laptops zur Verfügung und die privaten Notebooks wurden für die Entwicklung genutzt. Die benötigte \textit{Ovrvision Pro} sowie erforderliches Zubehör, wie Halterungen und Aluminium-Würfel wurden im Laufe der Zeit hinzu gekauft. Weiterführend, wurden der \textit{Leap Motion} Controller und eine Webcam von der Hochschule zur Verfügung gestellt.
 \subsection{Projektplanung}
 %\todo[inline, color=red]{Vera}
 %\todo[inline,color = green ]{Paul}
 Die Projektplanung ist die zweite Phase des Projektes. In dieser werden die definierten Ziele systematisch in Arbeitspakete und Meilensteine zerlegt und Pläne erstellt, die zur Realisierung der darauffolgenden Phase behilflich sind. Im folgenden sind die Arbeitspakete und diversen Pläne aufgelistet.
 \subsubsection{Arbeitspakete}
 %\todo[inline, color=red]{Vera}
-Wie in größeren Projekten üblich, wurde die Arbeit in mehrere Arbeitspakete (AP) und Meilensteine (MS) segmentiert. Die detaillierte Auflistung dieser kann in Tabelle \ref{tab:APMS} gefunden werden.
+Wie in größeren Projekten üblich, wurde die Arbeit in mehrere Arbeitspakete (AP) und Meilensteine (MS) segmentiert. Die detaillierte Auflistung dieser kann in Tabelle~\ref{tab:APMS} gefunden werden.
 
 \begin{table}
 	\centering
 	\begin{tabular}{|l|l|l|l|}
 		\hline
 		\Absatzbox{}
-		\textbf{Paketname (AP) / Meilenstein (MS)}& \textbf{Start} &  \textbf{Ende} &  \textbf{Verantwortl.:} \\
+		\textbf{Arbeitspaket (AP) /}& \textbf{Start} &  \textbf{Ende} &  \textbf{Verantw.} \\
+		\Absatzbox{}
+		\textbf{Meilenstein (MS)}& & &\textbf{Mitarbeiter}\\
 		\hline
 		AP1 – Organisation und Planung & 21.03.2016 & 10.05.2017 & PB/LK\\		
   		\hline
@@ -164,19 +164,19 @@ Wie in größeren Projekten üblich, wurde die Arbeit in mehrere Arbeitspakete (
 		\hline
 		MS  3.04 Stereokamera einrichten &1.7.2016 & 13.7.2016 & PB/LK\\
 		\hline
-		MS  3.05 Implementierung Tablemenü &1.11.2016 & 15.12.2016 & PB/LK\\
+		MS  3.05 Impl. Tischmenü &1.11.2016 & 15.12.2016 & PB/LK\\
 		\hline
-		MS  3.06 Implementierung Kontextmenü &1.11.2016 & 15.12.2016 & PB/LK\\
+		MS  3.06 Impl. Kontextmenü &1.11.2016 & 15.12.2016 & PB/LK\\
 		\hline
-		MS  3.07 Implementierung arch. Berechn. &15.11.2016 & 15.12.2016 & LA/LK\\
+		MS  3.07 Impl. Architekturberechnungen &15.11.2016 & 15.12.2016 & LA/LK\\
 		\hline
-		MS 3.08 Implementierung Netzwerkverbingun &15.11.2016 & 15.12.2016 & LA/VB/LK\\
+		MS 3.08 Impl. Netzwerkverbindung &15.11.2016 & 15.12.2016 & LA/VB/LK\\
 		\hline
-		MS 3.09 Implementierung Webcam &1.1.2017 & 1.2.2017 & TEAM\\
+		MS 3.09 Impl. Webcam &1.1.2017 & 1.2.2017 & TEAM\\
 		\hline
 		MS 3.09 Recherche Hololens  &16.12.2016 & 20.2.2017 & TEAM\\
 		\hline
-		MS 3.09Leap Controller einbinden  &15.11.2016 & 15.2.2017 & PB/LK\\
+		MS 3.09 Leap Controller einbinden  &15.11.2016 & 15.2.2017 & PB/LK\\
 		\hline
 		AP4 - Hardware & 31.5.2016 & 13.7.2016 & PB/LK/LA\\
 		\hline
@@ -227,59 +227,59 @@ Der Projektstrukturplan ist dem Anhang in Abbildung \ref{fig:psp} beigefügt.
 
 \subsubsection{Ablaufplan, Terminplan (Gantt Chart)}
 %\todo[inline, color=red]{Vera}
-Der Ablaufplan und Terminplan wurde der Übersichtshalber mit dem Plan über die verschiedenen Arbeitspakete und Meilensteine in Tabelle \ref{tab:APMS} aufgeführt. Das Gantt Chart ist der Übersicht halber im Anhang in Abbildung \ref{fig:ganttchart} beigefügt.
+Der Ablaufplan und Terminplan wurde der Übersichtshalber mit dem Plan über die verschiedenen Arbeitspakete und Meilensteine in Tabelle \ref{tab:APMS} aufgeführt. Das Gantt-Chart ist der Übersicht halber im Anhang in Abbildung~\ref{fig:ganttchart} beigefügt.
 \subsubsection{Kapazitätsplan}
 %\todo[inline, color=red]{Vera}
-Der Kapazitätsplan enthält die Ressourcen über die Projektzeit von März 2016 bis März 2017. Der Plan ist tabellarisch sowie als Diagramm im Anhang in Abbildung  \ref{fig:ressourcenplan} zu finden.
+Der Kapazitätsplan enthält die Ressourcen über die Projektzeit von März 2016 bis März 2017. Der Plan ist tabellarisch sowie als Diagramm im Anhang in Abbildung~\ref{fig:ressourcenplan} zu finden.
 
 \subsubsection{Kostenplan}
 %\todo[inline, color=red]{Vera}
-Der Kostenplan ist ebenfalls dem Anhang in Abbildung \ref{fig:kostenplan} beigefügt.
+Der Kostenplan ist ebenfalls dem Anhang in Abbildung~\ref{fig:kostenplan} beigefügt.
 
 \subsubsection{Qualitätsplan}
 %todo[inline, color=red]{Vera}
-Der Qualitätsplan ist ebenfalls dem Anhang in Abbildung \ref{fig:qualitaetsplan} beigefügt.
+Der Qualitätsplan ist ebenfalls dem Anhang in Abbildung~\ref{fig:qualitaetsplan} beigefügt.
 
 \subsection{Projektdurchführung}
 %\todo[inline, color=red]{Vera}
 Die Projektdurchführungsphase dient der Erarbeitung der Projektergebnisse. Hierbei ist für das Projektmanagement die zielgerichtete Lenkung der Tätigkeiten von wichtiger Bedeutung. Die Arbeit der Projektdurchführungsphase wird im folgenden beschrieben.
 \subsubsection{Kommuniktion im Team und nach Außen}
-Die Kommunikation ist für den Erstellungsprozess von hoher Wichtigkeit.\textit{ MArC} wurde innerhalb des vierköpfigen Teams und in den kleineren zweiköpfigen Teams umgesetzt. Zur Kommunikation standen Email, Telefone, \textit{Whatsapp} zur Verfügung. Der Datenaustausch der Tracking- und \textit{Unity}-Anwendungen wurde mit einem \textit{Github} Repository umgesetzt. Ebenfalls standen die Cloud-Dienste \textit{Dropbox} und \textit{Google Drive} zur Verfügung.\\
+Die Kommunikation ist für den Erstellungsprozess von hoher Wichtigkeit. \textit{MArC} wurde innerhalb des vierköpfigen Teams und in den kleineren zweiköpfigen Teams umgesetzt. Zur Kommunikation standen Email, Telefone, \textit{WhatsApp} zur Verfügung. Der Datenaustausch der Tracking- und \textit{Unity}-Anwendungen wurde mit einem \textit{Github} Repository umgesetzt. Ebenfalls standen die Cloud-Dienste \textit{Dropbox} und \textit{Google Drive} zur Verfügung.\\
 Die interne Team-Kommunikation lief zum Großteil über \textit{Whatsapp} und das Telefon. Zusätzlich wurden Wochenberichte erstellt, um das Team und den Auftraggeber auf dem Stand der Dinge zu halten.\\
-Die weitere Kommunikation mit dem Auftragsgeber wurde über den Projektleiter mittels Email gehandhabt. Bei wichtigen Entscheidungen war stets das Team im CC, sodass alle Mitglieder im Bilde waren. In dringenden Fällen wurde darüber hinaus zusätzlich über \textit{Whatsapp} kommuniziert.
+Die weitere Kommunikation mit dem Auftragsgeber wurde über den Projektleiter mittels Email gehandhabt. Bei wichtigen Entscheidungen war stets das Team in CC, sodass alle Mitglieder im Bilde waren. In dringenden Fällen wurde darüber hinaus zusätzlich über \textit{WhatsApp} kommuniziert.
 
 \subsubsection{Maßnahmen zur Problemvermeidung}
 %\todo[inline, color=red]{Vera}
 Über die für Studienprojekte vergleichsweise lange Projektlaufzeit treten gezwungenermaßen Probleme auf denen mit geeigneten Maßnahmen entgegen zu wirken ist. Die flexible Entwicklung von Lösungen und deren Umsetzung ist ein entschiedener Prozess für eine erfolgreiche Umsetzung der Projektziele. Während der Projektlaufzeit wurde versucht auch mit kurzfristig auftretenden Problemen so umzugehen, dass ein zufriedenstellendes Ergebnis realisiert wird. In diesem Abschnitt sollen einige aufgetretene Probleme exemplarisch vorgestellt werden.
 
-\paragraph{Ausfall des Planungstools Bitrix24} Das kostenlose online Planungstool Bitrix24 wurde für die anfängliche Planung genutzt und stand dem Team bis September 2016 zur Verfügung. Während der Betriebsferien im September fanden keine Arbeiten am Projekt und im Planungstoll statt. Mit der Folge, dass das Projekt von den Betreibern des Web-Tools \textit{Bitrix24} gelöscht wurde. Ein interner Mechanismus hatte gegriffen und das Projekt als obsolet erkannt. Da alle erstellten Arbeitspakete und Meilensteine im Projektplan notiert waren, konnte das Problem mit einfache Mitteln gelöst werden. Für die fortlaufende Projektplanung wurde im Anschluss Excel verwendet und die Daten lokal gespeichert.
+\paragraph{Ausfall des Planungstools Bitrix24} Das kostenlose online Planungstool \textit{Bitrix24} wurde für die anfängliche Planung genutzt und stand dem Team bis September 2016 zur Verfügung. Während der Betriebsferien im September fanden keine Arbeiten am Projekt und im Planungstool statt. Mit der Folge, dass das Projekt von den Betreibern des Web-Tools \textit{Bitrix24} gelöscht wurde. Ein interner Mechanismus hatte gegriffen und das Projekt als obsolet erkannt. Da alle erstellten Arbeitspakete und Meilensteine im Projektplan notiert waren, konnte das Problem mit einfache Mitteln gelöst werden. Für die fortlaufende Projektplanung wurde im Anschluss Excel verwendet und die Daten lokal gespeichert.
 
-\paragraph{Ausfall von Hardware} Während des Projektes fiel die \textit{OVR Vision} wegen eines technischen Defektes aus. Das führte zu dem Problem, dass kein Videobild im HMD angezeigt werden konnte und nur die virtuelle Umgebung sichtbar war. Gleichzeitig führte der Defekt dazu, dass in einem der Arbeitslaptops die USB Ports durchgebrannt sind. Die Garantieabwicklung mit dem Hersteller gestaltete sich als schwierig, da das Gerät nach Japan verschifft werden musste. Die Gesamtdauer der Reparatur war so nicht planbar. \\
+\paragraph{Ausfall von Hardware} Während des Projektes fiel die \textit{Ovrvision Pro} wegen eines technischen Defektes aus. Das führte zu dem Problem, dass kein Videobild im HMD angezeigt werden konnte und nur die virtuelle Umgebung sichtbar war. Gleichzeitig führte der Defekt dazu, dass in einem der Arbeitslaptops die USB-Ports durchgebrannt sind. Die Garantieabwicklung mit dem Hersteller gestaltete sich als schwierig, da das Gerät nach Japan verschifft werden musste. Die Gesamtdauer der Reparatur war so nicht planbar. \\
 Es stand die Entscheidung an, ob auf die Reparatur gewartet werden soll und im Anschluss mit dem Gerät weiter gearbeitet wird  oder eine Alternative zu finden. Hierbei bestand das Risiko, dass die Kamera nach der Reparatur erneut kaputt geht. \\
 Als Lösung spaltete sich das Team für eine Woche in zwei Gruppen auf und analysierte die Alternativen. Eine erste Möglichkeit war eine einfache Webcam zu verwenden und auf den Stereoeffekt zu verzichten.\\
-Die andere Option in Form der kürzlich veröffentlichen \textit{Hololens} stellte sich als nicht praktikabel heraus. Die gesamte Applikation müsste auf diese Brille geladen und ausgeführt werden. Dies erforderte eine WLAN Verbindung zum Computer mit der Tracking-Anwendung statt der bereits bestehenden LAN Verbindung. Für diese Lösung fehlte es an Erfahrungen und Quellen in Verbindung mit dem Gerät und es bestanden Zweifel an der Umsetzbarkeit der Anwendung. Aus diesen war zu komplex und zeitaufwändig, um sie als Alternative zu verwenden.\\
+Die andere Option in Form der kürzlich veröffentlichen \textit{Hololens} stellte sich als nicht praktikabel heraus. Die gesamte Applikation müsste auf diese Brille geladen und ausgeführt werden. Dies erforderte eine WLAN-Verbindung zum Computer mit der Tracking-Anwendung statt der bereits bestehenden LAN-Verbindung. Für diese Lösung fehlte es an Erfahrungen und Quellen in Verbindung mit dem Gerät und es bestanden Zweifel an der Umsetzbarkeit der Anwendung. Aus diesen war zu komplex und zeitaufwändig, um sie als Alternative zu verwenden.\\
 Die zweite Lösung wurde jedoch weiter verwendet. Es wurde eine Webcam an das HMD angebracht und das Videobild in \textit{Unity} vor der virtuellen Kamera gerendert.\\
 Diese Lösung wurde am Ende jedoch ebenfalls nicht in den letzten Prototypen eingebaut. Hier war das ausschlaggebende Problem die unzureichende Qualität der Darstellung sowie die mangelnde Zeit zur Umsetzung der Kalibrierung. Das Team hatte mit Positionsabweichungen zwischen den echten Markern auf dem Tisch und virtuellen Objekten zu kämpfen. Demzufolge hatte das reale Bild eine mangelhafte Deckung von Kamerabild und virtueller Welt die den Nutzer verwirrte.\\
 Daher entschied sich das Team für eine Mixed-Reality-Anwendung als Produkt zu realisieren.
 
 
-\paragraph{Markerless Tracking}
- Zu Beginn des Projektes sollte die Aluminiumwürfel ohne Markierung getrackt werden (sog. Markerless tracking). Als Problem stellt sich hierbei heraus, dass diese Umsetzung innerhalb des Projektes zu zeitaufwändig und komplex war. Der Großteil der Projektzeit hätte auf diese Umsetzung angewendet werden müssen. Die größte Herausforderung war die eindeutig Identifizierung der texturarmen Marker, welche nach längerer Verdeckung nicht wieder eindeutig zugeordnet werden konnten. Die naheliegende Lösung war codebasierte Marker eine bestehenden Bibliothek zu verwenden.
+\paragraph{Marker-less Tracking}
+Zu Beginn des Projektes sollten die Aluminiumwürfel ohne Markierung verfolgt werden (sogenanntes Marker-less tracking). Als Problem stellt sich hierbei heraus, dass diese Umsetzung innerhalb des Projektes zu zeitaufwändig und komplex war. Der Großteil der Projektzeit hätte auf diese Umsetzung angewendet werden müssen. Die größte Herausforderung war die eindeutig Identifizierung der texturarmen Marker, welche nach längerer Verdeckung nicht wieder eindeutig zugeordnet werden konnten. Die naheliegende Lösung war codebasierte Marker einer bestehenden Bibliothek zu verwenden.
 
 
 \subsection{Projektabschluss}
 %\todo[inline, color=red]{Vera}
 Ist die Entwicklung abgeschlossen, ist damit nicht automatisch das gesamte Projekt beendet. Nach der praktischen Phase werden die Ergebnisse festgehalten und Präsentiert. \\
-\textit{MArC} begann als ehrgeiziges Projekt mit vielen Features. Von Einigen musste das Team Abstand nehmen um erfolgreich einen Prototypen zu entwickeln, welcher die Kernziele erfüllt. Anders als geplant wurde das System vor allem wegen der Probleme mit der \textit{OVR Vision} und der weiteren Hardware nicht als Augmented-Reality-System verwirklicht. Stattdessen musste das Konzept angepasst werden und ein Mixed-Reality-System wurde weiterverfolgt. 
-Die Projektziele mussten auch beim Marker-Tracking angepasst werden und aus dem \textit{Markerless Tracking} wurde aus Zeitgründen ein \textit{Markerbasiertes Tracking}, da sich das Problem der eindeutigen Identifizierung der Würfel-Marker als zu komplex herrausstellte und deutlich mehr Arbeitsaufwand erforderte, als die Planung vorsah. Für die Umsetzung des \textit{Markerbasiertes Tracking} war lediglich eine Modifikation der Würfel-Marker notwendig und deren Tracking konnte mit einer bestehenden Bibliothek umgesetzt werden.\\
+\textit{MArC} begann als ehrgeiziges Projekt mit vielen Features. Von Einigen musste das Team Abstand nehmen um erfolgreich einen Prototypen zu entwickeln, welcher die Kernziele erfüllt. Anders als geplant wurde das System vor allem wegen der Probleme mit der \textit{Ovrvision Pro} und der weiteren Hardware nicht als Augmented-Reality-System verwirklicht. Stattdessen musste das Konzept angepasst werden und ein Mixed-Reality-System wurde weiterverfolgt. 
+Die Projektziele mussten auch beim Marker-Tracking angepasst werden und aus dem \textit{Marker-less Tracking} wurde aus Zeitgründen ein \textit{Markerbasiertes Tracking}, da sich das Problem der eindeutigen Identifizierung der Würfel-Marker als zu komplex herrausstellte und deutlich mehr Arbeitsaufwand erforderte, als die Planung vorsah. Für die Umsetzung des \textit{markerbasierten Trackings} war lediglich eine Modifikation der Würfel-Marker notwendig und deren Tracking konnte mit einer bestehenden Bibliothek umgesetzt werden.\\
 Ebenso konnten optionale Features wie der Import von Höhenmodellen nicht umgesetzt werden. Diese waren zur besseren Visualisierung der Siedlung und als Planungshilfe für die Architekten geplant. Doch die Implementierung konnte nicht mehr innerhalb der zur Verfügung stehenden Zeit realisiert werden, da die Kernziele mehr Aufwand erforderten als vorgesehen.\\
 Im weiteren folgen Informationen zu der Abschlusspräsentation und dem Projektvideo. Außerdem ist eine detaillierte Reflexion im Kapitel \ref{sec:reflexion} zu finden.
 \subsubsection{Abschlusspräsentation}
 %\todo[inline, color=red]{Vera}
-Für das Projekt wird eine detaillierte Präsentation mit Praktischer Vorstellung des Ergebnisses erarbeitet. Diese wird am 10.5.2017 stattfinden.
+Für das Projekt wird eine detaillierte Präsentation mit Praktischer Vorstellung des Ergebnisses erarbeitet. Diese wird am 10. Mai 2017 stattfinden.
  \subsubsection{Video}
 % \todo[inline, color=red]{Vera}
-Das Team wird für die Präsentation ein Video vorbereiten. Dieses stellt das Projekt vor und zeigt die Funktionalität. Es wird bis zum 10.5.2017 stattfinden. Das Team trifft sich für die Produktion in den Projekträumen und setzt diese um.
+Das Team wird für die Präsentation ein Video vorbereiten. Dieses stellt das Projekt vor und zeigt die Funktionalität. Es wird bis zum 10. Mai 2017 stattfinden. Das Team trifft sich für die Produktion in den Projekträumen und setzt diese um.
 
 
 \subsection{Reflexion}\label{sec:reflexion}
@@ -290,7 +290,7 @@ Das Masterprojekt \textit{MArC} war mit seiner Laufzeit von zwei Semestern die b
 Das Projekt wurde fertiggestellt und das Ziel, eine funktionierende Anwendung zu entwickeln wurde erreicht, wenn auch nicht in allen Details wie ursprünglich geplant.\\
 Aufgrund mangelnder Erfahrung gab es im Projektverlauf einige Probleme, die im Nachhinein gut erkennbar und identifizierbar sind. Wichtig für die Teammitglieder ist es, diese Fehler im Nachhinein zu erkennen und zu bewerten, damit sich diese in späteren Projekten nicht wiederholen. So stellte sich im Nachhinein heraus, dass das Team am Anfang sehr viele gute Ideen sammelte, sich jedoch zu ambitionierte Ziele setzte. Mit diversen Features, die dem Benutzer gut gefallen könnten, sollte \emph{MArC} von Anfang an ein Tool werden, welches viele Probleme des "'analogen"' Arbeitsvorgangs der Architekten bei Siedlungsplanungen verhindern oder abschwächen sollte. Z.B. das Speichern und Öffnen von Szenen, was umgesetzt wurde, oder den Import von Höhenmodellen, welcher z.B. nicht umgesetzt wurde.
 Wie sich während der Projektdauer herausstellte, war dies für den gegebenen Zeitraum zu ehrgeizig.
-So wäre es ratsam gewesen zuerst ein funktionierendes Grundgerüst der Anwendung zu bauen und anschließend schrittweise neue Features einzubauen. Kurz vor Ablauf der Entwicklungszeit waren einige grundlegende Funktionen, wie z.B. die Kalibrierung (vgl. Abschnitt \ref{sec:calib} noch nicht fertig gestellt und einzelne Systemkomponenten schienen sich gegenseitig zu behindern. Um das Projekt trotz der gegeben Schwierigkeiten fertig zu stellen, wurde genau diese Herangehensweise umgesetzt. Es wurden alle Menüs und Hardware-Komponenten (bis auf die \textit{HTC Vive}) aus der \textit{Unity}-Simulation entfernt und erst einmal ein funktionierendes Grundgerüst gebaut. Anschließend wurden die Menüs und alle anderen Komponenten schrittweise hinzugefügt. Dies hatte zur Folge, dass Fehlerquellen einfach gefunden werden konnten und die Umsetzung der Anwendung wesentlich strukturierter und somit leichter von der Hand ging.\\
+So wäre es ratsam gewesen zuerst ein funktionierendes Grundgerüst der Anwendung zu bauen und anschließend schrittweise neue Features einzubauen. Kurz vor Ablauf der Entwicklungszeit waren einige grundlegende Funktionen, wie z.B. die Kalibrierung (vgl. Abschnitt~\ref{sec:calib}) noch nicht fertig gestellt und einzelne Systemkomponenten schienen sich gegenseitig zu behindern. Um das Projekt trotz der gegeben Schwierigkeiten fertig zu stellen, wurde genau diese Herangehensweise umgesetzt. Es wurden alle Menüs und Hardware-Komponenten (bis auf die \textit{HTC Vive}) aus der \textit{Unity}-Simulation entfernt und erst einmal ein funktionierendes Grundgerüst gebaut. Anschließend wurden die Menüs und alle anderen Komponenten schrittweise hinzugefügt. Dies hatte zur Folge, dass Fehlerquellen einfach gefunden werden konnten und die Umsetzung der Anwendung wesentlich strukturierter und somit leichter von der Hand ging.\\
 Des weiteren konzentrierten sich die hochmotivierten Teammitglieder zu schnell auf Detailfragen der praktischen Umsetzung. Es wäre besser gewesen, für jedes Teilproblem genaue Analyse und Recherche zu betreiben, um herauszufinden, welche Methode benötigt wird und ob diese schon einmal verwendet wurde. So hätten häufiger bereits fertige, verfügbare Umsetzungen für spezifische Probleme genutzt werden können. Mit einem breiteren und tieferen Vorwissen wären einige Fehler leichter erkennbar gewesen. Zum Beispiel beharrte das Team lange Zeit auf einem markerlosen Tracking. Die wenigen Merkmale der Würfel, die für das System verwendet werden sollten, ließen ein zuverlässiges und performantes, markerloses Tracking jedoch nicht zu, wie sich herausstellte. So wurde viel Zeit auf die Entwicklung eines markerlosen Trackings verwendet, welche besser für die Arbeit an anderen Baustellen hätte genutzt werden können. 
 Auch fand das Team am Anfang das kostenlose Planungstool \textit{Bitrix24}, welches scheinbar schnell und problemlos das Planen solcher Projekte erlaubte. Dass Accounts und Projekte nach einiger Zeit der Nichtbenutzung einfach gelöscht werden wurde dabei völlig übersehen. Glücklicherweise gab es die Planungsunterlagen noch an anderer Stelle, dennoch hätte so etwas nicht passieren dürfen.\\
 Bei der Planung wollte das Team drei Prototypen entwerfen. Die Meilensteine zum Erreichen dieser Prototypen waren jedoch zeitlich zu knapp hintereinander angesetzt und die möglichen technischen Schwierigkeiten wurden dabei unterschätzt. Hier hätte man auf die Erfahrung anderer Kommilitonen oder Professoren setzen müssen, um eine realistischere Einteilung zu erreichen.\\
