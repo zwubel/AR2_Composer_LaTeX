@@ -4,7 +4,7 @@
 \BOOKMARK [2][-]{subsection.1.3}{Projektziel}{section.1}% 4
 \BOOKMARK [1][-]{section.2}{Grundlagen und Stand der Wissenschaft}{}% 5
 \BOOKMARK [2][-]{subsection.2.1}{Architektur von Virtual-Reality-Anwendungen}{section.2}% 6
-\BOOKMARK [2][-]{subsection.2.2}{Haptische Interaktionsmethoden in VR Umgebungen}{section.2}% 7
+\BOOKMARK [2][-]{subsection.2.2}{Haptische Interaktionsmethoden in VR-Umgebungen}{section.2}% 7
 \BOOKMARK [2][-]{subsection.2.3}{Handtracking}{section.2}% 8
 \BOOKMARK [2][-]{subsection.2.4}{ISO/OSI-7-Schichtenmodell}{section.2}% 9
 \BOOKMARK [2][-]{subsection.2.5}{Bedienkonzepte in VR-Umgebungen}{section.2}% 10
@@ -32,8 +32,8 @@
 \BOOKMARK [3][-]{subsubsection.3.3.7}{Leap Motion SDK}{subsection.3.3}% 32
 \BOOKMARK [1][-]{section.4}{System}{}% 33
 \BOOKMARK [2][-]{subsection.4.1}{Aufbau}{section.4}% 34
-\BOOKMARK [3][-]{subsubsection.4.1.1}{Tracking Aufbau}{subsection.4.1}% 35
-\BOOKMARK [3][-]{subsubsection.4.1.2}{Unity Aufbau}{subsection.4.1}% 36
+\BOOKMARK [3][-]{subsubsection.4.1.1}{Tracking-Aufbau}{subsection.4.1}% 35
+\BOOKMARK [3][-]{subsubsection.4.1.2}{Unity-Aufbau}{subsection.4.1}% 36
 \BOOKMARK [2][-]{subsection.4.2}{Systemvoraussetzungen}{section.4}% 37
 \BOOKMARK [2][-]{subsection.4.3}{Netzwerk}{section.4}% 38
 \BOOKMARK [3][-]{subsubsection.4.3.1}{Serverseitige Netzwerkanbindung}{subsection.4.3}% 39
@@ -50,7 +50,7 @@
 \BOOKMARK [3][-]{subsubsection.4.7.1}{Szenen-Management}{subsection.4.7}% 50
 \BOOKMARK [3][-]{subsubsection.4.7.2}{Speichern von Szenen}{subsection.4.7}% 51
 \BOOKMARK [3][-]{subsubsection.4.7.3}{Laden von Szenen}{subsection.4.7}% 52
-\BOOKMARK [3][-]{subsubsection.4.7.4}{Match Modus}{subsection.4.7}% 53
+\BOOKMARK [3][-]{subsubsection.4.7.4}{Match-Modus}{subsection.4.7}% 53
 \BOOKMARK [1][-]{section.5}{Tracking-Anwendung}{}% 54
 \BOOKMARK [2][-]{subsection.5.1}{uEye Ansteuerung}{section.5}% 55
 \BOOKMARK [2][-]{subsection.5.2}{Kalibrierung}{section.5}% 56
@@ -59,12 +59,12 @@
 \BOOKMARK [3][-]{subsubsection.5.2.3}{Kamerakalibrierung}{subsection.5.2}% 59
 \BOOKMARK [3][-]{subsubsection.5.2.4}{Kalibrierung des Arbeitsbereichs}{subsection.5.2}% 60
 \BOOKMARK [3][-]{subsubsection.5.2.5}{Kalibrierungsfehler}{subsection.5.2}% 61
-\BOOKMARK [3][-]{subsubsection.5.2.6}{Schnittstelle der beiden Kalibrierung}{subsection.5.2}% 62
+\BOOKMARK [3][-]{subsubsection.5.2.6}{Schnittstelle der Kalibrierungen}{subsection.5.2}% 62
 \BOOKMARK [3][-]{subsubsection.5.2.7}{Speichern und Laden der Kalibrierungen}{subsection.5.2}% 63
-\BOOKMARK [2][-]{subsection.5.3}{Marker Detektion}{section.5}% 64
+\BOOKMARK [2][-]{subsection.5.3}{Marker-Detektion}{section.5}% 64
 \BOOKMARK [3][-]{subsubsection.5.3.1}{Detektion der gr\374nen Rechtecke}{subsection.5.3}% 65
-\BOOKMARK [3][-]{subsubsection.5.3.2}{ArUco Marker Detektion}{subsection.5.3}% 66
-\BOOKMARK [2][-]{subsection.5.4}{Marker Objekt Definition}{section.5}% 67
+\BOOKMARK [3][-]{subsubsection.5.3.2}{ArUco Marker-Detektion}{subsection.5.3}% 66
+\BOOKMARK [2][-]{subsection.5.4}{Definition des Marker-Objekts}{section.5}% 67
 \BOOKMARK [2][-]{subsection.5.5}{Tracking und Registrierung der Marker}{section.5}% 68
 \BOOKMARK [1][-]{section.6}{Ausblick}{}% 69
 \BOOKMARK [2][-]{subsection.6.1}{Trackingmethoden}{section.6}% 70

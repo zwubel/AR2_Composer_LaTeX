@@ -19,6 +19,7 @@
 \usepackage[space]{grffile}
 \usepackage{setspace}
 \usepackage[T1]{fontenc}
+\usepackage[section]{placeins}
 \usepackage{listings}
 \renewcommand{\lstlistingname}{Quellcode-Auszug}	
 \definecolor{lsgreen}{rgb}{0,.5,0}
@@ -97,6 +98,10 @@
 
 \input{kapitel/deckblatt/deckblatt.tex}
 	\tableofcontents
+	\newpage
+	\listoffigures
+	\newpage
+	\listoftables
 	\newpage
 
 \input{kapitel/einleitung/einleitung.tex}

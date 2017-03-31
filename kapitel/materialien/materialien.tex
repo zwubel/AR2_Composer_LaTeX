@@ -1,12 +1,13 @@
 \section{Materialien}\label{sec:Materialien}
-\todo[inline, color=red]{Laura}
+%\todo[inline, color=red]{Laura}
 In den nachfolgenden Abschnitten, werden Werkzeuge und Hilfsmittel beschrieben, die für die Fertigstellung des Projekts vonnöten waren.\\ Des weiteren werden auch Komponenten vorgestellt, die während der Projektlaufzeit erstellt wurden, wie etwa die Würfel-Marker (vgl. Abbildung~\ref{fig:marker}).
 
 \subsection{Hardware}
-\todo[inline, color=red]{Vera}
+%\todo[inline, color=red]{Vera}
 Zur Ausführung der \emph{MArC}-Software sind diverse Hardware-Komponenten Voraussetzung. Diese Komponenten werden nachfolgend beschrieben und deren Kontext im System näher erläutert.
-\subsubsection{Computer für Unity-Simulation}\label{sec:UnityComp}\todo[inline, color=green] {Lukas}
-\todo[inline, color=red]{Laura}
+
+\subsubsection{Computer für Unity-Simulation}\label{sec:UnityComp}%\todo[inline, color=green] {Lukas}
+%\todo[inline, color=red]{Laura}
 Die Anwendung, welche aus \textit{Unity} \cite{website:Unity} heraus erstellt wurde, benötigt einen Host-Computer, welcher sowohl mit dem \textit{HTC Vive} Head-Mounted Display kompatibel, als auch leistungsstark genug sein muss, um das Rendering der Simulation mit ausreichend hoher Bildrate ausführen zu können.
 
 Für das vorliegende Projekt wurde seitens der Technischen Hochschule Köln ein Computer zur Verfügung gestellt. Die technischen Daten des Geräts sind in Tabelle~\ref{tab:UnityCompParam} aufgeführt.
@@ -29,7 +30,7 @@ Für das vorliegende Projekt wurde seitens der Technischen Hochschule Köln ein 
 		Schnittstellen & $2\times$ USB 3.0, $5\times$ USB 2.0, $1\times $ HDMI\\
 		\hline
 	\end{tabular}
-	\caption{Übersicht der technischen Daten des Computers für die Unity-Simulation.}
+	\caption[Übersicht technische Daten des Computers für \emph{Unity}-Simulation]{Übersicht der technischen Daten des Computers für die \emph{Unity}-Simulation.}
 	\label{tab:UnityCompParam}
 \end{table}
 
@@ -56,12 +57,12 @@ Die Hard- und Software-Voraussetzungen für die Ausführung der \textit{Unity}-A
 		Betriebssystem & Windows 7 SP1, Windows 8.1 oder Windows 10\\
 		\hline
 	\end{tabular}
-	\caption{HTC Vive Systemvoraussetzungen~\cite{website:HTC_Vive_Ready}.}
+	\caption[\emph{HTC Vive} Systemvoraussetzungen]{\emph{HTC Vive} Systemvoraussetzungen~\cite{website:HTC_Vive_Ready}.}
 	\label{tab:viveReq}
 \end{table}
 
-\subsubsection{Computer für Tracking-Anwendung}\label{sec:TrackingComp}\todo[inline, color=green]{Vera}
-\todo[inline, color=red]{Lukas}
+\subsubsection{Computer für Tracking-Anwendung}\label{sec:TrackingComp}%\todo[inline, color=green]{Vera}
+%\todo[inline, color=red]{Lukas}
 Aufgrund der Erfahrung, welche während der Entwicklung gemacht wurden, ist es zwingend notwendig einen weiteren Rechner an das Gesamtsystem zu koppeln, welcher ausschließlich für die Ansteuerung der uEye-Kamera und die Berechnungen des Tracking-Algorithmus zuständig ist. Bei Versuchen mit einem einzelnen Rechner wurde eine erhebliche Reduzierung der Framerate von den angeschlossenen Kameras beobachtet.
 An den Computer für die \textit{Unity}-Simulation sind gezwungenermaßen viele USB-Komponenten angeschlossen, wie zum Beispiel der \textit{Leap Motion} Controller und die \textit{HTC Vive}. Dies kann zu einer hohen Auslastung der Bandbreite von der USB-Karte führen und aufgrund dessen ist es nicht mehr möglich die uEye-Kamera mit der notwendigen maximalen Framerate zu betreiben. Somit wird für ein flüssiges  Tracking der \textit{Acer E5-571G-795A} mit den Eigenschaften aus Tabelle~\ref{tab:TrackingCompParam} verwendet.
 
@@ -83,7 +84,7 @@ An den Computer für die \textit{Unity}-Simulation sind gezwungenermaßen viele 
 		Schnittstellen & $2\times$ USB 2.0, $1\times$ RJ45-Netzwerkanschluss\\
 		\hline
 	\end{tabular}
-	\caption{Auszug aus dem technischen Datenblatt des \textit{Acer E5-571G-795A}.}
+	\caption[Technische Daten des \textit{Acer E5-571G-795A}]{Auszug aus dem technischen Datenblatt des \textit{Acer E5-571G-795A}.}
 	\label{tab:TrackingCompParam}
 \end{table}
 
@@ -93,13 +94,14 @@ An den Computer für die \textit{Unity}-Simulation sind gezwungenermaßen viele 
 %\todo[inline, color=red]{korrigiert: Lukas}
 Die \textit{HTC Vive} ist ein Head-Mounted Display, welches von \textit{HTC} in Kooperation mit \textit{Valve}~\cite{website:Valve} produziert wird. Vorgestellt wurde dieses am 1.\ März 2015 im Vorfeld des \textit{Mobile World Congress}~\cite{website:mobileworldcongress}.\\
 Die Auflösung des Displays beträgt insgesamt $2160\times1200$\,Pixel, was $1080\times1200$\,Pixeln pro Auge enstpricht. Die Brille bietet ein Sichtfeld von bis zu $110^\circ$ bei einer Bildwiederholrate von $90\,Hz$ \cite{website:HTC_Vive}. Alle technischen Systemvoraussetzungen können in Tabelle \ref{tab:viveReq} eingesehen werden. \\
-Zur Positionsbestimmung im Raum wird die Lighthouse-Technologie \cite{website:Lighthouses} von \textit{Valve} genutzt. Zusätzlich sind neben einem Gyroskop auch ein Beschleunigungssensor und ein Laser-Positionsmesser verbaut. Mittels proprietärer Hand-Controller wird bei der \emph{HTC Vive} eine Interaktion mit virtuellen Objekten ermöglicht.
+Zur Positionsbestimmung im Raum wird die Lighthouse-Technologie~\cite{website:Lighthouses} von \textit{Valve} genutzt. Zusätzlich sind neben einem Gyroskop auch ein Beschleunigungssensor und ein Laser-Positionsmesser verbaut. Mittels proprietärer Hand-Controller wird bei der \emph{HTC Vive} eine Interaktion mit virtuellen Objekten ermöglicht.
 
-\subsubsection{IDS uEye 164LE-C}\label{sec:uEye} \todo[inline, color=green] {Vera}
-\todo[inline, color=red]{Lukas}
+\subsubsection{IDS uEye 164LE-C}\label{sec:uEye}%\todo[inline, color=green] {Vera}
+%\todo[inline, color=red]{Lukas}
 Die Kamera \textit{uEye 164LE-C} wurde vom Hersteller \textit{IDS Imaging Development Systems GmbH} entwickelt. Sie besitzt eine Bildauflösung von $1280\times1024$\,Pixel und ermöglicht Live-Videoaufnahmen im RGB-Farbmodus mit maximal $25$ Bildern pro Sekunde. Der integrierte CMOS Bildsensor wird im Rolling-Shutter-Modus betrieben und ermöglicht Belichtungszeiten von $37\,\mu$s bis $10$\,s. Weiterführend kann sie universell mit allen gängigen Computern oder Systemen via USB 2.0 Schnittstelle verbunden werden~\cite{website:UEyeTechSpec}.
 
 Die erforderliche Ansteuerung der \textit{uEye 164LE-C} erfolgt mit Hilfe der bereitgestellten \textit{IDS Software Suite}. In diese Suite ist die \textit{uEye-API} integriert, welche die Entwicklung von eigenen Programmen unter den Betriebsystemen \textit{Windows} und \textit{Linux} mit den Programmiersprachen \textit{C}$++$, \textit{.NET}, \textit{C$\#$} und \textit{C} ermöglicht \cite{website:IDSSuite}. Für das Tracking der Marker in \textit{MArC} wurde eine eigene Schnittstelle in \textit{C}$++$ erstellt, welche die Kamera im Live Modus initialisiert und steuert (vgl. Abschnitt~\ref{sec:UEyeSteu}).
+
 \subsubsection{Leap Motion Controller}\label{sec:LeapMotion} 
 %\todo[inline,color=green]{Paul}	
 %\todo[inline, color=red]{Lukas}
@@ -111,39 +113,39 @@ Für das Projekt wurde der \textit{Leap Motion} Controller zur Interaktion mit d
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=6cm]{Bilder/leap-motion.png}			
-		\caption{Aufbau des \emph{Leap Motion} Controllers~\cite{website:LeapMotionBlog}.}
+		\caption[Aufbau des \emph{Leap Motion} Controllers]{Aufbau des \emph{Leap Motion} Controllers~\cite{website:LeapMotionBlog}.}
 		\label{fig:leapMotion}
 \end{figure}
 
 
-\subsubsection{Würfel-Marker}\label{sec:WürfelMarker} \todo[inline, color=green]{Vera}
-\todo[inline, color=red]{Lukas}
+\subsubsection{Würfel-Marker}\label{sec:WürfelMarker}%\todo[inline, color=green]{Vera}
+%\todo[inline, color=red]{Lukas}
 In vielen VR- oder AR-Umgebungen müssen Nutzer eines Systems häufig nach virtuellen Objekten zur Interaktion greifen, die nicht real existieren. Demzufolge greifen die Personen ins Leere, was die Immersion erheblich stört und zu Irritationen sowie Unsicherheit führt.
 Um den Benutzern von \textit{MArC} für die Positionierung und Orientierung ein reales haptisches Feedback zu ermöglichen, wurden zwölf Aluminumwürfel mit aufgeklebten Markern angefertigt. Diese Würfel können beliebig innerhalb eines zuvor festgelegten Bereiches auf dem realen Tisch verschoben und rotiert werden. An der aktuellen Position und Orientierung des jeweiligen Markers wird in der virtuellen Welt ein explizit zugeordnetes Objekt gerendert. Diese Position wird mit Hilfe der Tracking-Anwendung (vgl. Abschnitt~\ref{sec:Tracking}) aus den Bildern der \emph{uEye}-Kamera ermittelt.
 Alle zwölf Marker stimmen mit der Form und Farbe, sowie Material und Oberflächenbeschaffenheit aus Abbildung~\ref{fig:marker} überein. Sie haben eine Kantenlänge von $46\,mm$ und sind mit einer $0,5\,mm$/$45^\circ$ Fase an allen Kanten versehen. Zur Erzeugung einer matten Oberfläche ist das Aluminium glasperlgestrahlt. Dies vermeidet ungewollte Reflexionen und Überstrahlungen, die unter Umständen den Tracking-Algorithmus beeinflussen können.
 
 Auf die Oberseite des Markers ist mittig ein leuchtend grünes Quadrat mit einer Kantenlänge von $40\,mm$ aufgebracht. Diese grüne Fläche wird für ein Green-Keying benötigt, welches das Tracking der Marker auch bei Bewegungsunschärfe ermöglicht. Die leuchtend grüne Farbe wurde ausgewählt, da sie aufgrund ihrer hohen Leuchtkraft selten in der Natur und vor allem nicht in der Hautfarbe vorkommt. So hebt sie sich stark von ihrer Umgebung ab und erleichtert das Segmentieren der grünen Fläche im Bild. Die rechteckige Form der grünen Flächen hat noch eine weitere Bedeutung. Auf Grund der Geometrie können die äußeren Eckpunkt wie bei den rechteckigen Muster-basierten Markern auch zur Berechnung der Orientierung des Würfel-Markers im Kameraraum verwendet werden.
 
-Ebenfalls mittig ist jeweils ein individueller, $35\,mm$ großer $16$-Bit-ArUco-Marker plan befestigt. Alle verwendeten ArUco-Marker haben einen Rand von einem Bit und wurden jeweils aus dem Marker-Dictionary \texttt{DICT\_4X4\_50} des ArUco-Moduls \cite{website:ArucoDoc} generiert. Die maximale Anzahl von IDs ist mit $50$ ausreichend für den Prototypen von \textit{MArC}, da die Anzahl von $50$ Würfel-Markern die durchschnittliche Tischplattenfläche ausfüllt.
+Ebenfalls mittig ist jeweils ein individueller, $35\,mm$ großer $16$-Bit-ArUco-Marker plan befestigt. Alle verwendeten ArUco-Marker haben einen Rand von einem Bit und wurden jeweils aus dem Marker-Dictionary \texttt{DICT\_4X4\_50} des ArUco-Moduls~\cite{website:ArucoDoc} generiert. Die maximale Anzahl von IDs ist mit $50$ ausreichend für den Prototypen von \textit{MArC}, da die Anzahl von $50$ Würfel-Markern die durchschnittliche Tischplattenfläche ausfüllt.
 Ein weiterer Vorteil dieses verhältnismäßig kleinen Dictonarys ist, dass auch der Aufwand für den entsprechenden Abgleich einer ID mit den potentiellen Mustern im Dictonary erheblich reduziert werden kann. 
 Weiter beinhaltet das $\texttt{DICT\_4X4\_50}$ Dictionary aufgrund seiner $16$-Bit-Kodierung sehr grobe und einfache Muster, welche gegen die mögliche Bewegungsunschärfe der Kamerabilder robuster ist. Bei sehr feinen Strukturen kann es schneller zu einer Verwischung des gesamten Musters kommen und die Wahrscheinlichkeit einer erfolgreichen Erkennung sinkt.
 
 \begin{figure}[H] 
 	\center 
 	\includegraphics[trim = 0mm 280mm 0mm 150mm, clip, width=6cm]{Bilder/tracking-marker.jpg}			
-	\caption{Würfel-Marker mit grüner Fläche und einem ArUco-Marker, die mittig auf dem Aluminumwürfel aufgebracht sind.}
+	\caption[Würfel-Marker]{Würfel-Marker mit grüner Fläche und einem ArUco-Marker, die mittig auf dem Aluminumwürfel aufgebracht sind.}
 	\label{fig:marker}
 \end{figure}
 
 \subsubsection{Schachbrett-Kalibrierungshelfer zur Kamerakalibrierung}\label{sec:SchachbrettKalib} 
 %\todo[inline, color=green]{geschrieben: Laura}
 %\todo[inline, color=red]{korrigiert: Lukas}
-Der in Abbildung~\ref{fig:schachbrettKalib} gezeigte Kalibrierungshelfer wird für die Kamerakalibrierung (vgl. Abschnitt~\ref{sec:camCalib}) der \textit{uEye}-Kamera, deren Eigenschaften in Abschnitt~\ref{sec:uEye} beschrieben werden, verwendet. Dazu wurde eine Tisch-förmige Erhöhung gebaut, die genau so hoch ist wie der \textit{ArUco}-Marker, der an dem Controller zur Arbeitsbereichskalibrierung, wie in Abschnitt \ref{sec:calibController} beschrieben, angebracht ist. Darauf ist ein ausgedrucktes Schachbrettmuster mit $8\times10$ Feldern. Davon werden von dem verwendeten Algorithmus nur die inneren Felder gezählt, also $7\times9$ Felder. Das Schachbrett so wie der zugehörige Download-Link sind im Anhang im Abschnitt \ref{sec:schachPDF} zu finden. 
+Der in Abbildung~\ref{fig:schachbrettKalib} gezeigte Kalibrierungshelfer wird für die Kamerakalibrierung (vgl. Abschnitt~\ref{sec:camCalib}) der \textit{uEye}-Kamera, deren Eigenschaften in Abschnitt~\ref{sec:uEye} beschrieben werden, verwendet. Dazu wurde eine Tisch-förmige Erhöhung gebaut, die genau so hoch ist wie der \textit{ArUco}-Marker, der an dem Controller zur Arbeitsbereichskalibrierung, wie in Abschnitt \ref{sec:calibController} beschrieben, angebracht ist. Darauf ist ein ausgedrucktes Schachbrettmuster mit $8\times10$ Feldern. Davon werden von dem verwendeten Algorithmus nur die inneren Felder gezählt, also $7\times9$ Felder. Das Schachbrett so wie der zugehörige Download-Link sind im Anhang in Abschnitt \ref{sec:schachPDF} zu finden. 
 
 	\begin{figure}[H] 
 	\center 
 	\includegraphics[trim = 0mm 20mm 30mm 40mm, clip]{Bilder/Eigene Fotos/IMG_0004.jpg}			
-	\caption{Schachbrett-Kalibrierungshelfer für die Kamerakalibrierung.}
+	\caption[Schachbrett-Kalibrierungshelfer für die Kamerakalibrierung]{Schachbrett-Kalibrierungshelfer für die Kamerakalibrierung.}
 	\label{fig:schachbrettKalib}
 \end{figure}
 
@@ -156,23 +158,24 @@ Bei der Anbringung des eben erwähnten \textit{ArUco}-Markers, der in Abbildung 
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=4in]{Bilder/Eigene Fotos/IMG_0032.jpg}
-		\caption{Kalibrierungscontroller des \textit{MArC} System mit ArUco Marker.}
+		\caption[Kalibrierungscontroller des \textit{MArC}-Systems]{Kalibrierungscontroller des \textit{MArC}-Systems mit ArUco Marker.}
 		\label{fig:KontrollerMarc}
 	\end{figure}
 	
-\subsection{Obsolete Hardware}\label{sec:obsoleteHardware}\todo[inline, color=green] {Lukas}
-\todo[inline, color=red]{Laura}
+\subsection{Obsolete Hardware}\label{sec:obsoleteHardware}%\todo[inline, color=green] {Lukas}
+%\todo[inline, color=red]{Laura}
 Im Laufe eines Projekts nach Art von \emph{MArC} ist es kaum vermeidbar, dass die gesetzten Projektziele reevaluiert werden müssen. Die Gründe hierfür können vielfältig sein. Beispielsweise könnte die Fertigstellung eines bestimmten Teils des Projekts deutlich länger gedauert haben als geplant, oder es könnte sich herausgestellt haben, dass bestimmte Komponenten zueinander nicht kompatibel sind.
 
-Im vorliegenden Projekt trat eine Kombination der beiden oben genannten Gründe auf. Das Betreiben der \emph{Ovrvision Pro}-Stereokamera, welche in Abschnitt~\ref{sec:ovrvision} kurz vorgestellt wird, am US-Bus verschiedener, während der Entwicklung verwendeter, Computer stellte sich als unberechenbar und damit leider unbenutzbar heraus. Die Kamera sorgte während der Ausführung von \textit{Unity} dafür, dass mit allen anderen Geräten, die ebenfalls per USB angeschlossen waren, unterschiedlichste Probleme auftraten. Als die Situation nach dem Verbinden der Kamera in der teilweisen Zerstörung eines Mainboards gipfelte, wurde die Entscheidung getroffen, die \emph{Ovrvision Pro} nicht länger als Gerät in der Entwicklung von \emph{MArC} zu verwenden.
+Im vorliegenden Projekt trat eine Kombination der beiden oben genannten Gründe auf. Das Betreiben der \emph{Ovrvision Pro} Stereokamera, welche in Abschnitt~\ref{sec:ovrvision} kurz vorgestellt wird, am US-Bus verschiedener, während der Entwicklung verwendeter, Computer stellte sich als unberechenbar und damit leider unbenutzbar heraus. Die Kamera sorgte während der Ausführung von \textit{Unity} dafür, dass mit allen anderen Geräten, die ebenfalls per USB angeschlossen waren, unterschiedlichste Probleme auftraten. Als die Situation nach dem Verbinden der Kamera in der teilweisen Zerstörung eines Mainboards gipfelte, wurde die Entscheidung getroffen, die \emph{Ovrvision Pro} nicht länger als Gerät in der Entwicklung von \emph{MArC} zu verwenden.
 
 Stattdessen reifte zu diesem Zeitpunkt die Idee, eine gewöhnliche Webcam zu verwenden, um die Realisierung von Augmented Reality dennoch zu ermöglichen, wenn auch ohne den Stereo-3D-Effekt, welchen die \emph{Ovrvision Pro} nativ bereitgestellt hätte.
 
 Im weiteren Verlauf des Projekts führte eine, lange Zeit ungeklärte, starke Abweichung der Positionen der realen und virtuellen Marker zur Neuordnung der Projektprioritäten. Dies hatte zur Folge, dass letztendlich auch die Webcam als Plattform für die Umsetzung der AR-Fähigkeiten von \emph{MArC} aufgegeben wurde und stattdessen auf eine reine VR-Lösung der Projekt-Problemstellung umgeschwenkt wurde.
 
 Nachfolgend werden die Eigenschaften und technischen Daten beider Geräte kurz beschrieben.
-\subsubsection{Ovrvision Pro}\label{sec:ovrvision}\todo[inline, color=green]{Lukas}
-\todo[inline, color=red]{Laura}
+
+\subsubsection{Ovrvision Pro}\label{sec:ovrvision}%\todo[inline, color=green]{Lukas}
+%\todo[inline, color=red]{Laura}
 Die \emph{Ovrvision Pro} (vgl. Abb.~\ref{fig:ovr}) ist eine kompakte Stereokamera, welche über USB 3.0 mit einem Computer verbunden wird~\cite{website:ovrvision}. Für die Kamera ist eine Vielzahl an Software-Development-Kits (SDKs) für verschiedene Plattformen und Frameworks, wie etwa Microsoft Windows, Linux, Apple Mac OS X, Unreal Engine oder Unity verfügbar~\cite{website:ovrvisionSetup}.
 
 Die \emph{Ovrvision Pro} ist speziell auf Augmented Reality (AR) Anwendungen ausgelegt. So unterstützt die Kamera natives Stereo-3D und bietet auch Bildmodi mit hohen Bildwiederholraten, welche für die Verwendung mit VR-Hardware wie Oculus Rift oder HTC Vive notwendig sind, um die Immersion des Benutzers nicht durch zu träge Bewegungswiedergabe zu beeinflussen. Die unterstützten Bildmodi der Kamera sind in Tabelle~\ref{tab:ovrRes} aufgeführt. Wie aus Abschnitt~\ref{sec:Vive} hervorgeht, stellt die \textit{HTC Vive} Bildinhalte mit $1080\times1200$\,Pixeln pro Auge bei $90$\,Hz Bildwiederholrate da. Diese Leistung wird von der \emph{Ovrvision Pro} nicht erreicht.
@@ -202,61 +205,59 @@ Die \emph{Ovrvision Pro} ist speziell auf Augmented Reality (AR) Anwendungen aus
 		$320\times240$\,px & $120$\,fps & $115^\circ$ & $105^\circ$\\
 		\hline
 	\end{tabular}
-	\caption{Bildmodi der \emph{Ovrvision Pro} Stereokamera~\cite{website:ovrvisionProduct}.}
+	\caption[Bildmodi der \emph{Ovrvision Pro} Stereokamera]{Bildmodi der \emph{Ovrvision Pro} Stereokamera~\cite{website:ovrvisionProduct}.}
 	\label{tab:ovrRes}
 \end{table}
-
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\textwidth]{Bilder/ovr.jpg}			
-		\caption{\emph{Ovrvision Pro} Stereokamera montiert an \emph{Oculus Rift} (links) und \emph{HTC Vive} (rechts)~\cite{website:ovrvision}.}
+		\caption[\emph{Ovrvision Pro} Stereokamera]{\emph{Ovrvision Pro} Stereokamera montiert an \emph{Oculus Rift} (links) und \emph{HTC Vive} (rechts)~\cite{website:ovrvision}.}
 		\label{fig:ovr}
 \end{figure}
-\subsubsection{Webcam}\label{sec:webcam} \todo[inline, color=green]{Vera}
-\todo[inline, color=red]{Laura}
-Die \textit{Creative Senz3D} ist eine RGB Kamera mit einer zusätzlichen Infrarot-Tiefenkamera. Das generierte RGB-Bild hat eine Auflösung von $1280\times720$ Pixel und ein Tiefenbild von $320\times240$ Pixel bei einer Reichweite von $15\-99\,$cm. Zusätzlich wurde eine Sichtfeld von $74^\circ$ ermittelt. Die Kamera wird über eine USB 2.0 Schnittstelle mit einem Computer verbunden und nimmt Videos mit einer Framerate von bis zu $30$ fps auf \cite{website:Senz3d}. Weiter ist es möglich die Kamera direkt aus Anwendungen per \textit{Intel Perceptual Computing SDK} anzusteuern.
 
-\subsection{Software} \todo[inline, color=green]{Vera}
-\todo[inline, color=red]{Laura}
+\subsubsection{Webcam}\label{sec:webcam}%\todo[inline, color=green]{Vera}
+%\todo[inline, color=red]{Laura}
+Die \textit{Creative Senz3D} ist eine RGB-Kamera mit einer zusätzlichen Infra\-rot-Tie\-fen\-ka\-me\-ra. Das generierte RGB-Bild hat eine Auflösung von $1280\times720$ Pixel und ein Tiefenbild von $320\times240$ Pixel bei einer Reichweite von $15\-99\,$cm. Zusätzlich wurde eine Sichtfeld von $74^\circ$ ermittelt. Die Kamera wird über eine USB 2.0 Schnittstelle mit einem Computer verbunden und nimmt Videos mit einer Framerate von bis zu $30$ fps auf \cite{website:Senz3d}. Weiter ist es möglich die Kamera direkt aus Anwendungen per \textit{Intel Perceptual Computing SDK} anzusteuern.
+
+\subsection{Software}%\todo[inline, color=green]{Vera}
+%\todo[inline, color=red]{Laura}
 Zur Entwicklung der \textit{MArC}-Anwendung sind diverse Software-Komponenten und Bibliotheken notwendig. Die Funktionalitäten und Verwendung dieser Komponenten werden in diesem Kapitel kurz erläutert.
 
+\subsubsection{Unity}\label{sec:unity}%\todo[inline, color=green]{Lukas}
+%\todo[inline, color=red]{Laura}
+\emph{Unity} ist eine sogenannte Spiel-Engine, also eine Entwicklungs- und Laufzeitumgebung, die speziell auf die Entwicklung von 3D-Spielen ausgelegt ist. Die Software wurde am 6. Juni 2005 veröffentlicht \cite{haas2014history} und wird von \textit{Unity Technologies} \cite{website:Unity} entwickelt und vertrieben. In der Spieleentwicklung ist \textit{Unity} weit verbreitet, so werden beispielsweise $34\,\%$ der kostenfreien Top-1000-Spiele im mobilen Sektor mit \textit{Unity} entwickelt \cite{website:UnityPR}.
 
-\subsubsection{Unity}\label{sec:unity}\todo[inline, color=green]{Lukas}
-\todo[inline, color=red]{Laura}
-Unity ist eine sogenannte Spiel-Engine, also eine Entwicklungs- und Laufzeitumgebung, die speziell auf die Entwicklung von 3D-Spielen ausgelegt ist. Die Software wurde am 6. Juni 2005 veröffentlicht \cite{haas2014history} und wird von \textit{Unity Technologies} \cite{website:Unity} entwickelt und vertrieben. In der Spieleentwicklung ist \textit{Unity} weit verbreitet, so werden beispielsweise $34\,\%$ der kostenfreien Top-1000-Spiele im mobilen Sektor mit \textit{Unity} entwickelt \cite{website:UnityPR}.
+\emph{Unity} bietet eine sehr breite Plattformunterstützung \cite{website:UnityMultiPlatform} und erlaubt ebenso die Entwicklung für Head-Mounted Displays, wie etwa die \textit{Oculus Rift} \cite{website:UnityOculus}\cite{website:UnityVRoverview} oder auch die in diesem Projekt verwendete \textit{HTC Vive} \cite{website:UnityVRoverview}.
 
-Unity bietet eine sehr breite Plattformunterstützung \cite{website:UnityMultiPlatform} und erlaubt ebenso die Entwicklung für Head-Mounted-Displays, wie etwa die \textit{Oculus Rift} \cite{website:UnityOculus}\cite{website:UnityVRoverview} oder auch die in diesem Projekt verwendete \textit{HTC Vive} \cite{website:UnityVRoverview}.
+Die zu Beginn des Projekts verwendete Stereokamera \emph{Ovrvision Pro} stellt ein Software-Development-Kit (SDK) für \textit{Unity} (Version 5) zur Verfügung \cite{website:ovrvisionSetup}. Da das endgültige Resultat des Projekts die Verwendung der \emph{Ovrvision Pro} nicht mehr vorsieht, wie in~\ref{sec:obsoleteHardware} beschrieben, wird auf eine weitere Beschreibung dieses SDKs verzichtet.
 
-Die zu Beginn des Projekts verwendete Stereo-Kamera \emph{Ovrvision Pro} stellt ein Software-Development-Kit (SDK) für \textit{Unity} (Version 5) zur Verfügung \cite{website:ovrvisionSetup}. Da das endgültige Resultat des Projekts die Verwendung der \emph{Ovrvision Pro} nicht mehr vorsieht, wie in~\ref{sec:obsoleteHardware} beschrieben, wird auf eine weitere Beschreibung dieses SDKs verzichtet.
+\subsubsection{Visual Studio 2015}\label{sec:VisualStudio}%\todo[inline, color=green] {Vera}
+%\todo[inline, color=red]{Laura}
+\textit{Micosoft Visual Studio 2015} ist eine verbreitete integrierte Entwicklungsumgebung (IDE), welche unter anderem die Programmiersprachen Visual Basic, Visual C$\#$, und Visual C++ unterstützt. Mit Hilfe dieser IDE kann ein Entwickler Win32/ Win64 Anwendungen sowie Web-Applikationen und Webservices \cite{website:VisuStud} programmieren und anschließend kompilieren. Für \textit{MArC} wurde mit der Version~$14.0.\-25123.00$ Update $2$ gearbeitet.
 
-\subsubsection{Visual Studio 2015}\label{sec:VisualStudio} \todo[inline, color=green] {Vera}
-\todo[inline, color=red]{Laura}
-\textit{Micosoft Visual Studio 2015} ist eine verbreitete integrierte Entwicklungsumgebung (IDE), welche unter anderem die Programmiersprachen Visual Basic, Visual C$\#$, und Visual C++ unterstützt. Mit Hilfe dieser IDE kann ein Entwickler Win32/ Win64 Anwendungen sowie weitere Web Applikationen und Webservices \cite{website:VisuStud} programmieren und anschließend compilieren. Für \textit{MArC} wurde mit der Version~$14.0.\-25123.00$ Update $2$ gearbeitet.
-
-\subsubsection{OpenCV} \label{sec:OpenCV} \todo[inline, color=green] {Vera}
-\todo[inline, color=red]{Laura}
+\subsubsection{OpenCV}\label{sec:OpenCV}%\todo[inline, color=green] {Vera}
+%\todo[inline, color=red]{Laura}
 \textit{Open Source Computer Vision} (OpenCV) ist eine Open Source Bibliothek für Bild- und Videoverarbeitung in der Programmiersprache \textit{C}$++$. Vorgestellt wurde sie vor über zehn Jahren von \textit{Intel} und wird seitdem stetig von verschiedenen Programmierern weiterentwickelt. Diese Bibliothek stellt die gängigsten Algorithmen sowie aktuelle Entwicklungen der Bildverarbeitung zur Verfügung
 \cite{article:OpenCV}.\\
-Für dieses System ist vor allem das Modul \texttt{calib3d} \cite{website:Calib3dDoc} und das extra Modul \texttt{aruco} \cite{website:ArucoDoc} verwendet. Das erste Modul \texttt{calib3d}  bietet alle notwendigen Funktionen zur Erstellung, Verwendung und Weiterverarbeitung von intrinsischen und extrinsischen Kamerakalibrierungen an (vgl. Abschnitt~\ref{sec:calib}). Während das Zweite alle benötigten Ressourcen und Funktionalitäten zum Tracking von \textit{ArUco} Markern zur Verfügung stellt (vgl. Abschnitt~\ref{sec:aruco}).
+Für dieses System ist vor allem das Modul \texttt{calib3d}~\cite{website:Calib3dDoc} und das extra Modul \texttt{aruco}~\cite{website:ArucoDoc} verwendet. Das erste Modul \texttt{calib3d}  bietet alle notwendigen Funktionen zur Erstellung, Verwendung und Weiterverarbeitung von intrinsischen und extrinsischen Kamerakalibrierungen an (vgl. Abschnitt~\ref{sec:calib}). Während das Zweite alle benötigten Ressourcen und Funktionalitäten zum Tracking von \textit{ArUco} Markern zur Verfügung stellt (vgl. Abschnitt~\ref{sec:aruco}).
 
-
-\subsubsection{ArUco Bibliothek} \label{sec:aruco} \todo[inline, color=green]{Vera}
-\todo[inline, color=red]{Laura}
-Die \textit{ArUco} Bibliothek ist ein Marker Tracking Modul von \textit{OpenCV} (vgl. Abschnitt \ref{sec:OpenCV}), dass für Augmented Reality (AR) Anwendungen genutzt werden kann. Es stellt für diese Anwendungen alle notwendigen Funktionalitäten zum Orten und Verifizieren der Codes sowie einer Positionsabschätzung der ermittelten Positionen im Kameraraum zur Verfügung \cite{article:Aruco2014}. 
-Die Marker bestehen ähnlich wie QR-Codes aus einer zweidimensionalen Matrix, mit schwarzen oder weißen Feldern, welche die kodierten Daten binär, wie in Abbildung~\ref{fig:AllUsedArucoMarker}, darstellen.  Weiterführend kann die Bitanzahl (vgl. Abbildung~\ref{fig:SizesArucoMarker}) und die gefragte maximale Markeranzahl variabel gewählt werden. An dieser Stelle ist eine kleine Bitanzahl, welche detailarme Muster erzeugt, für eine gute Erkennbarkeit in sehr großen Entfernungen zur Kamera oder kleinen Bildern sinnvoll. Um diese Vielzahl an verschiedenen Größen und IDs zu verwalten wurden sogenannte Dictionaries eingeführt \cite{article:ArucoDictGarridoJurado2015}. Diese Dictionaries bestehen aus Markern mit gleicher Bitanzahl und sind zusätzlich auf eine maximalen Anzahl von IDs begrenzt um ein möglichst hohe Performanz während des Zuordnungsprozesses zu gewährleisten.\\
+\subsubsection{ArUco Bibliothek}\label{sec:aruco}%\todo[inline, color=green]{Vera}
+%\todo[inline, color=red]{Laura}
+Die \textit{ArUco}-Bibliothek ist ein Marker-Tracking-Modul von \textit{OpenCV} (vgl. Abschnitt~\ref{sec:OpenCV}), dass für Augmented Reality (AR) Anwendungen genutzt werden kann. Es stellt für diese Anwendungen alle notwendigen Funktionalitäten zum Orten und Verifizieren der Codes sowie einer Positionsabschätzung der ermittelten Positionen im Kameraraum zur Verfügung \cite{article:Aruco2014}. 
+Die Marker bestehen ähnlich wie QR-Codes aus einer zweidimensionalen Matrix, mit schwarzen oder weißen Feldern, welche die kodierten Daten binär, wie in Abbildung~\ref{fig:AllUsedArucoMarker}, darstellen.  Weiterführend kann die Bitanzahl (vgl. Abbildung~\ref{fig:SizesArucoMarker}) und die gefragte maximale Markeranzahl variabel gewählt werden. An dieser Stelle ist eine kleine Bitanzahl, welche detailarme Muster erzeugt, für eine gute Erkennbarkeit in sehr großen Entfernungen zur Kamera oder kleinen Bildern sinnvoll. Um diese Vielzahl an verschiedenen Größen und IDs zu verwalten wurden sogenannte Dictionaries eingeführt~\cite{article:ArucoDictGarridoJurado2015}. Diese Dictionaries bestehen aus Markern mit gleicher Bitanzahl und sind zusätzlich auf eine maximalen Anzahl von IDs begrenzt um ein möglichst hohe Performanz während des Zuordnungsprozesses zu gewährleisten.\\
 
 \begin{figure}[H] 
 	\center 
 	\includegraphics[width=10cm]{Bilder/Aruco_marker.jpg}			
-	\caption{Alle genutzten 16-bit codierten \textit{ArUco}-Marker des Prototypen. Links die zwölf ID der Würfel-Marker und rechts die ID, welche zur Kalibrierung benötigt wird. Die maximale Anzahl der Marker im Dictionary ist auf $50$ begrenzt.}
+	\caption[Verwendete \textit{ArUco}-Marker]{Alle genutzten 16-Bit-kodierten \textit{ArUco}-Marker des Prototypen. Links die zwölf ID der Würfel-Marker und rechts die ID, welche zur Kalibrierung benötigt wird. Die maximale Anzahl der Marker im Dictionary ist auf $50$ begrenzt.}
 	\label{fig:AllUsedArucoMarker}
 \end{figure}
 
 \begin{figure}[H] 
 	\center 
 	\includegraphics[width=7cm]{Bilder/VerschAruco.jpg}			
-	\caption{\textit{ArUco-Marker} mit unterschiedlicher Bitgröße. Von Links nach Rechts: $n=5$, $n=6$ und $n=8$. Quelle: \cite{article:Aruco2014}}
+	\caption[\textit{ArUco-Marker} mit unterschiedlicher Bitgröße]{\textit{ArUco-Marker} mit unterschiedlicher Bitgröße. Von Links nach Rechts: $n=5$, $n=6$ und $n=8$. Quelle: \cite{article:Aruco2014}}
 	\label{fig:SizesArucoMarker}
 \end{figure}
 
@@ -265,23 +266,22 @@ Die Marker bestehen ähnlich wie QR-Codes aus einer zweidimensionalen Matrix, mi
 %\todo[inline,color=green] {Paul}
 %\todo[inline, color=red]{Laura}
 \textit{Steam VR} \cite{website:steamVR} ist die Schnittstelle zwischen der \textit{HTC Vive} und \textit{Unity}. Um das HMD nutzen zu können, musss \textit{Steam VR} auf dem Computer installiert sein. Für den Nutzer ist ein kleines GUI Element auf dem Monitor sichtbar, welches den Status der Geräte der \textit{Vive} darstellt. Hierdurch werden Fehlermeldungen kommuniziert, Kalibrierungen durchgeführt und eine Kommunikation mit dem HMD bereitgestellt, so dass das Gerät im Fall der Fälle neu gestartet werden kann.\\
-Innerhalb von \textit{Unit} stellt \textit{Steam} ein Plugin zur Verfügung, welches direkt in Szenen in \textit{Unity} eingebettet werden kann. Der Entwickler ist also in der Lage, eine vorhandene \textit{Unity}-Szene um die VR Möglichkeit bequem per Drag and Drop zu erweitern.\\
+Innerhalb von \textit{Unity} stellt \textit{Steam} ein Plugin zur Verfügung, welches direkt in Szenen in \textit{Unity} eingebettet werden kann. Der Entwickler ist also in der Lage, eine vorhandene \textit{Unity}-Szene um die VR Möglichkeit bequem per Drag-and-drop-Technik zu erweitern.\\
 Das bereitgestellte \textit{Unity}-Prefab beinhaltet alle notwendigen Elemente um mit der Hardware kommunizieren zu können. Dabei wird eine Positionsbestimmung ebenso wie ein Kamera Rig für die stereoskopische Bildwiedergabe bereitgestellt, wie auch die Controllereingabe und Weiterverwendung der Daten möglich gemacht.
 
 
 
-\subsubsection{Windows Sockets (Winsock)}\label{sec:Winsock}\todo[inline, color=green] {Lukas}
-\todo[inline, color=red]{Laura}
+\subsubsection{Windows Sockets (Winsock)}\label{sec:Winsock}%\todo[inline, color=green] {Lukas}
+%\todo[inline, color=red]{Laura}
 \textit{Windows Sockets} (abgekürzt \texttt{Winsock}) ist eine API für den Zugriff auf Netzwerkkomponenten in Microsoft Windows Betriebssystemen~\cite{quinn1998windows}. Winsock wird nativ in Microsoft Windows bereitgestellt.\\ 
 Für die unkomplizierte Übertragung zwischen zwei Anwendungen in einem lokalen Netzwerk bieten sich sowohl das \emph{Transmission Control Protocol} (TCP), als auch das User \emph{User Datagram Protocol} (UDP) an (vgl. Abschnitt~\ref{sec:Netzwerk}). Das Erstellen von Netzwerk-Sockets für die Übertragung per TCP und UDP wird von Winsock ermöglicht.\\ Die Umsetzung der Netzwerkverbindung in \emph{MArC} wird in Abschnitt~\ref{sec:netzwerk} näher beschrieben.
 
 \subsubsection{Leap Motion SDK} \label{sec:LeapSDK}
 %\todo[inline, color=green] {Paul}
 %\todo[inline, color=red]{Laura}
-\textit{Leap Motion Inc.} bietet ein vollständiges Software Development Kit (SDK) für den \textit{Leap Motion-Controller} an, welches die \textit{Unity}-Applikation um das Hand- und Fingertracking erweitert \cite{website:leapMotionSDK}. Die Treibersoftware interpretiert die von den Kameras gelieferten Daten und sendet Trackinginformationen an die jeweilige Software. Das \textit{Leap Motion SDK} setzt an dieser Stelle an und verwendet diese eingehenden Daten um sie auf ein Handmodell in \textit{Unity} zu übertragen. Das SDK ist so vorbereitet, dass der Nutzer fertige Bausteine in die virtuelle Szene einbinden kann, die sich dann um die Dateninterpretation und Visualisierung als Handmodelle kümmert. Die Handmodelle, die das SDK liefert, sind mit Collidern ausgestattet. Diese abstrahierte Geometrie lässt \textit{Unity} Kollisionen feststellen. Dieses Feature wird bei \textit{MArC} verwendet, um die Interaktion mit den virtuellen Menüelementen zu realisieren.\\
-
-\textit{Leap Motion Inc.} bietet zudem mehrere sog.  "`Module"'  an, die das SDK erweitern können. Unter anderem auch ein Modul, welches die \textit{Unity}-internen GUI Elemente mit den Handmodellen bedienbar machen. Nach einigen Tests hat sich jedoch herausgestellt, dass diese Interaktionsmöglichkeit für \textit{MArC} ungeeignet ist, da sie zu instabil läuft. Das um das UI Modul erweiterte SDK projiziert die Position der Fingerspitzen auf die UI Ebene, falls sich die Hand in der Nähe dieser befindet. Auf der UI wird dann ein kleiner Kreis angezeigt, um dem Nutzer ein visuelles Feedback zu geben \cite{website:leapMotionSDKUI}.\\
-Im Falle von \textit{MArC} sollten die virtuellen UI Elemente auf den Tisch platziert werden. Hierbei sind die Elemente jedoch immer ein wenig oberhalb des Tisches platziert, damit sie in jedem Fall mit der virtuellen Hand bedient werden können. Zwingend durchdringt die Hand dann die UI Elemente. Mittels des mitgelieferten UI-Modules ist eine Interaktion dann nicht mehr möglich. Daher war eine Bedienung mit Hilfe der Collider sinnvoller.
+\textit{Leap Motion Inc.} bietet ein vollständiges Software Development Kit (SDK) für den \textit{Leap Motion} Controller an, welches die \textit{Unity}-Applikation um das Hand- und Fingertracking erweitert~\cite{website:leapMotionSDK}. Die Treibersoftware interpretiert die von den Kameras gelieferten Daten und sendet Trackinginformationen an die jeweilige Software. Das \textit{Leap Motion SDK} setzt an dieser Stelle an und verwendet diese eingehenden Daten um sie auf ein Handmodell in \textit{Unity} zu übertragen. Das SDK ist so vorbereitet, dass der Nutzer fertige Bausteine in die virtuelle Szene einbinden kann, die sich dann um die Dateninterpretation und Visualisierung als Handmodelle kümmert. Die Handmodelle, die das SDK liefert, sind mit Collidern ausgestattet. Diese abstrahierte Geometrie lässt \textit{Unity} Kollisionen feststellen. Dieses Feature wird bei \textit{MArC} verwendet, um die Interaktion mit den virtuellen Menüelementen zu realisieren.\\
+\textit{Leap Motion Inc.} bietet zudem mehrere sogenannte  "`Module"'  an, die das SDK erweitern können. Unter anderem auch ein Modul, welches die \textit{Unity}-internen GUI Elemente mit den Handmodellen bedienbar machen. Nach einigen Tests hat sich jedoch herausgestellt, dass diese Interaktionsmöglichkeit für \textit{MArC} ungeeignet ist, da sie zu instabil läuft. Das um das UI-Modul erweiterte SDK projiziert die Position der Fingerspitzen auf die UI-Ebene, falls sich die Hand in der Nähe dieser befindet. Auf der UI wird dann ein kleiner Kreis angezeigt, um dem Nutzer ein visuelles Feedback zu geben \cite{website:leapMotionSDKUI}.\\
+Im Falle von \textit{MArC} sollten die virtuellen UI-Elemente auf den Tisch platziert werden. Hierbei sind die Elemente jedoch immer ein wenig oberhalb des Tisches platziert, damit sie in jedem Fall mit der virtuellen Hand bedient werden können. Zwingend durchdringt die Hand dann die UI-Elemente. Mittels des mitgelieferten UI-Modules ist eine Interaktion dann nicht mehr möglich. Daher war eine Bedienung mit Hilfe der Collider sinnvoller.
 
 
 
